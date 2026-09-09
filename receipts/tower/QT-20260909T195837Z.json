@@ -1,0 +1,24 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260909T195837Z",
+ "idle_in": 13,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260909T143126Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20260909T173609Z",
+   "tries": 15,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 候件空；OI-WILDQMERGED01待闭（WILD-Q-MERGED-01更新，34试）；OI-00oilvlu20260910T014000Z待闭（八线-lvlu自治令回执跟销，15试，涉lvlu诉求）。\n\n② 应动OI-WILDQMERGED01与OI-00oilvlu20260910T014000Z，立协同不候。\n\n③ OI-WILDQMERGED01：未闭，下一步更新包落库收敛或降级定版；OI-00oilvlu20260910T014000Z：未闭，下一步触达八线lvlu节点确认回执或通路重试。\n\n④ 生债：lvlu八线自治令回执跟销逾15试未决，待检通路/权限。",
+ "wq_excerpt": ""
+}
