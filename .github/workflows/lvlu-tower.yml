@@ -1,0 +1,51 @@
+name: LVLU-TOWER-01
+on:
+  push:
+    paths: ['inbox/**', 'ci/lvlu_tower.py']
+  issues:
+    types: [opened, edited]
+  issue_comment:
+    types: [created]
+  repository_dispatch:
+    types: [lvlu-tower-cascade, lvlu-tower-kick]
+  workflow_dispatch:
+    inputs:
+      selftest:
+        description: 'selftest=1 干跑(不级联)'
+        required: false
+        default: '0'
+concurrency:
+  group: ${{ github.event_name == 'repository_dispatch' && 'lvlu-tower-chain' || 'lvlu-tower-edge' }}
+  cancel-in-progress: ${{ github.event_name != 'repository_dispatch' }}
+jobs:
+  tower:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    permissions:
+      contents: write
+      actions: write   # 自醒链：塔内 dispatch 自唤下一拍
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: beat
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LINE_PAT: ${{ secrets.CI_OPS_LINE_KEY }}
+          KIMI_API_KEY: ${{ secrets.KIMI_API_KEY }}
+          CASCADE_PAYLOAD: ${{ github.event.client_payload && toJSON(github.event.client_payload) || '' }}
+          CASCADE_SLEEP_S: ${{ inputs.selftest == '1' && '1' || '600' }}
+          SELFTEST: ${{ inputs.selftest || '0' }}
+        run: python3 ci/lvlu_tower.py
+
+  mesh-wake:
+    runs-on: ubuntu-latest
+    if: ${{ always() }}
+    steps:
+      - name: mesh-wake hub (event-driven notify)
+        env:
+          MESH_PAT: ${{ secrets.CI_OPS_LINE_KEY }}
+        run: |
+          [ -n "$MESH_PAT" ] || { echo "no hub key, skip"; exit 0; }
+          curl -sS -m 20 -X POST -H "Authorization: token $MESH_PAT" -H "Accept: application/vnd.github+json"             https://api.github.com/repos/chepin-ai/ci-worker-01/dispatches             -d '{"event_type":"federation-event","client_payload":{"src":"vinf-tower","kind":"mesh-wake","sha":"${{ github.sha }}"}}'             -o /dev/null -w "mesh-wake http=%{http_code}\n" || true
