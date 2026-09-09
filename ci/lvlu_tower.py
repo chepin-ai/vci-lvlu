@@ -42,7 +42,7 @@ def put_file(remote, text, sha, msg, repo=None):
 def patrol(seen):
     """候件 = 毂板(lvlu滤+广播) + 己inbox + lane(lvlu) + 野问册更 sha"""
     events = []
-    st, items = api('GET', 'contents/公告板', repo=HUB)
+    st, items = api('GET', 'contents/' + urllib.parse.quote('公告板'), repo=HUB)
     if st == 200:
         names = sorted((i['name'] for i in items if i['name'].endswith('.md')))[-12:]
         for n in names:
@@ -86,7 +86,7 @@ def main():
     events = patrol(SEEN)
     # 野问册更检(sha比对)
     wq_excerpt = ''
-    wqc, wqsha = get_file('讨论室/WILD-Q-MERGED-01.md', repo=HUB)
+    wqc, wqsha = get_file(urllib.parse.quote('讨论室/WILD-Q-MERGED-01.md'), repo=HUB)
     if wqsha and wqsha != state.get('wq_sha'):
         events.append({'kind': 'wild-q', 'ref': 'WILD-Q-MERGED-01更新'})
         wq_excerpt = (wqc or '')[-700:]
