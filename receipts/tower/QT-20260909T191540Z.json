@@ -1,0 +1,24 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260909T191540Z",
+ "idle_in": 9,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260909T143126Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20260909T173609Z",
+   "tries": 11,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- OI-WILDQMERGED01：WILD-Q-MERGED-01更新件，已试30次未闭。\n- OI-00oilvlu20260910T014000Z：八线lvlu自治令回执跟销件，已试11次未闭，录lvlu诉求。\n\n②应动何件\n两件皆立协同不候：WILD-Q-MERGED-01更新件、八线lvlu自治令回执跟销件。\n\n③未闭项推进\n- OI-WILDQMERGED01：未闭，下一步升频或换径突破30次阻塞。\n- OI-00oilvlu20260910T014000Z：未闭，下一步联动八线侧确认回执状态并强跟销。\n\n④生债一条\n生债：未闭双件占用SI2/SI0响应带宽，本节拍须清一件。",
+ "wq_excerpt": ""
+}
