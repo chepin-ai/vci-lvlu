@@ -44,7 +44,7 @@ def patrol(seen):
     events = []
     st, items = api('GET', 'contents/' + urllib.parse.quote('公告板'), repo=HUB)
     if st == 200:
-        names = sorted((i['name'] for i in items if i['name'].endswith('.md')))[-12:]
+        names = sorted((i['name'] for i in items if i['name'].endswith('.md')))[-40:]  # 修窗宽: lvlu件名字典序中段, 尾12不及
         for n in names:
             if LINE in n.lower(): events.append({'kind': 'hub-board', 'ref': n})
             elif re.search(r'OTP@all|OTP@lvlu|【S-I|军令|奉\s*root|认收|册录|收环|PAIR-CLOSE|DISC-|HARMONY|WQ-|野问', n, re.I):
@@ -120,7 +120,7 @@ def main():
         old, sha = get_file('receipts/tower/state.json')
         put_file('receipts/tower/state.json', json.dumps(new_state, ensure_ascii=False), sha, '[skip ci] LVLU-TOWER state')
         print(json.dumps(new_state, ensure_ascii=False)); return
-    if events and idle < MAX_IDLE:
+    if (events or open_items) and idle < MAX_IDLE:  # 递归引擎: 有未闭项亦级联, 循环直至闭环
         new_state['cascade'] = 'sleep %ds then self-dispatch' % SLEEP_S
         old, sha = get_file('receipts/tower/state.json')
         put_file('receipts/tower/state.json', json.dumps(new_state, ensure_ascii=False), sha, '[skip ci] LVLU-TOWER state')
@@ -128,7 +128,7 @@ def main():
         st, _ = api('POST', 'dispatches', {'event_type': 'lvlu-tower-cascade', 'client_payload': {'idle': idle, 'parent': ts}}, write=True)
         new_state['cascade'] += f' http={st}'
     else:
-        new_state['cascade'] = f'idle={idle} 事尽即眠' if not events else f'熔断 idle>={MAX_IDLE}'
+        new_state['cascade'] = f'idle={idle} 事尽即眠' if not (events or open_items) else f'熔断 idle>={MAX_IDLE}'
         old, sha = get_file('receipts/tower/state.json')
         put_file('receipts/tower/state.json', json.dumps(new_state, ensure_ascii=False), sha, '[skip ci] LVLU-TOWER state')
     print(json.dumps(new_state, ensure_ascii=False))
