@@ -1,0 +1,17 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260909T162324Z",
+ "idle_in": 8,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260909T143126Z",
+   "tries": 13,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：候件空，无新事。  \n②应动何件：OI-WILDQMERGED01已达13试未闭，立协同不候。  \n③未闭项推进：OI-WILDQMERGED01（WILD-Q-MERGED-01更新）仍开，未闭，下一步转人工兜底或强制归档。  \n④生债一条：生「OI-WILDQMERGED01 13试超限挂起」债一条。",
+ "wq_excerpt": ""
+}
