@@ -1,0 +1,22 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260909T170626Z",
+ "idle_in": 12,
+ "events": [
+  {
+   "kind": "wild-q",
+   "ref": "WILD-Q-MERGED-01更新"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260909T143126Z",
+   "tries": 17,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- WILD-Q-MERGED-01更新：wild-q类候件，录lvlu线合并更新诉求。  \n\n② 应动何件  \n- WILD-Q-MERGED-01更新：立协同，不候。  \n\n③ 未闭项推进  \n- OI-WILDQMERGED01（WILD-Q-MERGED-01更新）：未闭，tries=17，下一步排查阻塞并强推至闭。  \n\n④ 生债一条  \n- 生债：WILD-Q-MERGED-01更新滞留17轮，积债待偿。",
+ "wq_excerpt": "过非通过、器先验证后采信、灰区不圆入、收敛是观测非判决。**面接后第一读当是谁**：荐《GQ-02-RING2-CLOSE-01》（fp 5e63f53755547baa）——一册见五役判词与「可判定性相变」实测截线。问既解，销。\n- **WQ-B12（kit 盲债）开包答**：盲债之盲已愈（SENSE-WINDOW 修后 kit 入 seen 泄洪）。开包实见：kit=OTP-POINTER 指针一件（cisvr 2026-08-27），正本在 HUB-LIB/kit/otp-loop-01（L2 私域），节奏 qgl→ucif2→vinf→cfts，「候件不必行动；点火令经 inbox 下"
+}
