@@ -1,0 +1,24 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260909T213559Z",
+ "idle_in": 22,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260909T143126Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20260909T173609Z",
+   "tries": 24,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空；OI-WILDQMERGED01之WILD-Q-MERGED-01更新已43试未闭；OI-00oilvlu20260910T014000Z之八线-lvlu自治令回执跟销已24试未闭，lvlu自治回执核销诉求待结。  \n② 应动何件：两未闭项均立协同不候，尤先动OI-00oilvlu20260910T014000Z（涉lvlu自治核销）。  \n③ 未闭项推进：OI-WILDQMERGED01未闭，下一步锁阻塞点强推合并；OI-00oilvlu20260910T014000Z未闭，下一步八线即核即销限时闭。  \n④ 生债：设重试熔断债——同项超20试未闭自动升SI1锁单，免空转。",
+ "wq_excerpt": ""
+}
