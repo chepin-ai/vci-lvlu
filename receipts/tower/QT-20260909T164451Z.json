@@ -1,0 +1,17 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260909T164451Z",
+ "idle_in": 10,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260909T143126Z",
+   "tries": 15,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 候件空；未闭项WILD-Q-MERGED-01更新已15试未闭。  \n② 应动OI-WILDQMERGED01，tries=15，立协同根因排查，不候。  \n③ OI-WILDQMERGED01未闭；下一步停盲试，转人工/上游诊断阻塞点并回写结论。  \n④ 生债一条：tries达15未闭环且无根因记录，债一条，今日内给出诊断或升级路径。",
+ "wq_excerpt": ""
+}
