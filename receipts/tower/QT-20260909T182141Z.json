@@ -1,0 +1,24 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260909T182141Z",
+ "idle_in": 4,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260909T143126Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20260909T173609Z",
+   "tries": 6,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件空，无新事汇入。  \n- 未闭项一：WILD-Q-MERGED-01更新，25试未闭，存续中。  \n- 未闭项二：00oi-自治令回执跟销-八线-lvlu，6试未闭，涉lvlu诉求，待核销。  \n\n② 应动何件  \n- 两件皆应立动不候；优先协同八线lvlu自治令回执销项，同步排查WILD-Q-MERGED-01根因。  \n\n③ 未闭项推进  \n- OI-WILDQMERGED01：未闭，下一步：锁定25次失败根因并输出修复或回滚指令。  \n- OI-00oilvlu20260910T014000Z：未闭，下一步：向八线lvlu节点发送回执确认帧，强制完成跟销。  \n\n④ 生债一条  \n- 生债：双开项久悬，耗散巡检算力，需在下一巡检周期内强制清0或升单。",
+ "wq_excerpt": ""
+}
