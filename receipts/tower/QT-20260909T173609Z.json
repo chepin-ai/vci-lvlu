@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260909T173609Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260909T143126Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20260909T173609Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件00oi：八线lvlu自治令回执跟销，录lvlu销号诉求。  \n\n②应动何件  \n- 即协同00oi自治令回执跟销，八线lvlu侧立动，不候。  \n\n③未闭项推进  \n- OI-WILDQMERGED01/WILD-Q-MERGED-01更新：未闭，二十试仍开，下一步并线主控或升维排障。  \n- OI-00oilvlu20260910T014000Z/00oi自治令回执跟销：未闭，一试初开，下一步回执核验与八线销号。  \n\n④生债一条  \n- 八线lvlu自治令回执销号逾限未闭，生债一阶。",
+ "wq_excerpt": ""
+}
