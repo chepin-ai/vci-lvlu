@@ -1,0 +1,17 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260909T171709Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260909T143126Z",
+   "tries": 18,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：无新候件。  \n② 应动何件：无候件，不立动。  \n③ 未闭项推进：OI-WILDQMERGED01（WILD-Q-MERGED-01更新）：未闭，18次推合均败，下一步排查冲突根因并修复后重推。  \n④ 生债一条：合并流水线18次重试无熔断，需补人工介入门控与降级路径。",
+ "wq_excerpt": ""
+}
