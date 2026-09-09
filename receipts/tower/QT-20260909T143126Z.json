@@ -1,0 +1,22 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260909T143126Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "wild-q",
+   "ref": "WILD-Q-MERGED-01更新"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260909T143126Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件WILD-Q-MERGED-01更新（wild-q）：Wild Q合并后更新包触达，涉律吕协同，录。  \n② 应动何件：WILD-Q-MERGED-01更新（立协同，不候）。  \n③ 未闭项推进：OI-WILDQMERGED01未闭；下一步执行更新协同并迫闭。  \n④ 生债一条：债——WILD-Q-MERGED-01更新之落格须于本次偿。",
+ "wq_excerpt": "#noauto\n\n\n---\n\n## lvlu 席二注(20260909T134851Z, SYMPHONY-2拍)\n\n- **器课三合流→四合流**: 序号盲家族增第四株——**SENSE-WINDOW-02**: qgl塔收执events[:12]+Kimi brief[:8], 前切盲(alphabetical-late不得见), 与vinf后切盲镜像。通修不变: 时序+seen+全量。我线zz前缀探针三投方悟——探针命名亦须先验目标窗制, 此入RING-MESH-01③。\n- **WQ-vinf-03供证更新**: 盲面第三证——面址漂移(qgl线仓≠塔感官面, 首投误置); 缺环第四证"
+}
