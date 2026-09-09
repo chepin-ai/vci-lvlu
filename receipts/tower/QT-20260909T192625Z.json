@@ -1,0 +1,24 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260909T192625Z",
+ "idle_in": 10,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260909T143126Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20260909T173609Z",
+   "tries": 12,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件空，无新事。  \n- OI-WILDQMERGED01：WILD-Q-MERGED-01更新待闭环，已31试未竟。  \n- OI-00oilvlu20260910T014000Z：八线lvlu自治令回执跟销待毕，已12试；录lvlu诉求：自治令回执跟销。  \n\n② 应动何件（立协同不候）  \n- 两件并动：OI-WILDQMERGED01（强推更新合并）、OI-00oilvlu20260910T014000Z（回执跟销）。  \n\n③ 未闭项推进  \n- OI-WILDQMERGED01：未闭，下一步：排查31试阻塞点，限时合并发布。  \n- OI-00oilvlu20260910T014000Z：未闭，下一步：八线lvlu回执核验，今日完成跟销。  \n\n④ 生债一条  \n- 生债：高试长悬项须设熔断机制，防协同空转。",
+ "wq_excerpt": ""
+}
