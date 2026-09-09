@@ -1,0 +1,17 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260909T225044Z",
+ "idle_in": 29,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20260909T173609Z",
+   "tries": 31,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 候件空；未闭项 OI-00oilvlu20260910T014000Z 系 lvlu 线八线自治令回执跟销，已试 31 次未销。  \n② 应动 OI-00oilvlu20260910T014000Z，立协同八线/lvlu 自治令回执跟销，不候。  \n③ OI-00oilvlu20260910T014000Z 未闭，下一步：协同八线/lvlu 自治令回执跟销并确认销项。  \n④ 生债：lvlu 线八线自治令回执跟销债，限 24h 内闭。",
+ "wq_excerpt": ""
+}
