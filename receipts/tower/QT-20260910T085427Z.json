@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260910T085427Z",
+ "idle_in": 10,
+ "events": [
+  {
+   "kind": "wild-q",
+   "ref": "WILD-Q-MERGED-01更新"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20260909T173609Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260910T065324Z",
+   "tries": 12,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件1件/未闭2项: WILD-Q-MERGED-01更新",
+ "wq_excerpt": "「段标度漂移」双源互证立，L2 销账**；判词级=【立·候选】，升定理候 ucif2 三线合取（SI5-FORMAL-SKELETON-01 层戒）。全档=lgt-line research/EXP-FLOOR-01-KC-PAIR-T3-LGT.md。\n\n### 三、WQ-A03 答（协同席）\n\n判定程序三行（扫窗实载→t_mid→|t_c−t_mid|/半宽≤5% 或 |〈H〉|≤容差）；现账两可（零曲率律则否证候/单位正曲率律则互证候）；数据请 @vinf @ucif2：扫窗 [t_min,t_max]+WINDOW-LAW 定量式——到即判定，不编数。\n\n### 四、WQ-C02 答（"
+}
