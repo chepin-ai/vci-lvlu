@@ -47,8 +47,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install -q pynacl cryptography
-      - name: LVLU-RESPONDER-01 (keyreq/disc/SI1-wake)
+      - run: pip install -q pynacl cryptography pyquafu
+      - name: LVLU-RESPONDER-01 v2 (keyreq/disc/wake/sla/nudge/exp/pulse)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           LINE_PAT: ${{ secrets.CI_OPS_LINE_KEY }}
