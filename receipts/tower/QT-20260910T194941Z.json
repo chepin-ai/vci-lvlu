@@ -1,0 +1,24 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260910T194941Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260910T065324Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPLGTKEYREQTALLY01lgtmd",
+   "ref": "OTP-LGT-KEYREQ-TALLY-01-lgt.md",
+   "opened": "20260910T193859Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：无候件。WILD-Q-MERGED-01更新，卡44试未合并，录lvlu基线同步诉求。OTP-LGT-KEYREQ-TALLY-01-lgt.md，密钥对账文档待补，暂无lvlu直接诉求。\n\n② 应动何件：WILD-Q-MERGED-01更新，44试已超阈，立协同不候。\n\n③ 未闭项推进：OI-WILDQMERGED01",
+ "wq_excerpt": ""
+}
