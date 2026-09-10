@@ -9,7 +9,10 @@ TOK  = os.environ.get('LINE_PAT') or os.environ.get('GITHUB_TOKEN')
 HUB  = 'chepin-ai/ci-inbox'
 LINE = 'lvlu'
 WHITELIST = {'KIMI_API_KEY','GITEE_TOK','QUAFU_TOKEN','QR_TOKEN_64','QR_TOKEN_128',
-             'OPENQ_SDK_TOKEN','OPENQ_CLIENT_ID','KGAT_TOKEN','KAGGLE_JSON','DEEPSEEK_API_KEY'}
+             'OPENQ_SDK_TOKEN','OPENQ_CLIENT_ID','KGAT_TOKEN','KAGGLE_JSON','DEEPSEEK_API_KEY',
+             'IBMID2_USER','IBMID2_PASS','IBM_TOTP_SECRET','IBM_CARD_JSON',
+             'M163_USER','M163_PASS','M163B_USER','M163B_PASS','M163C_USER','M163C_PASS','M163C_PHONE',
+             'TENCENT_CONSOLE_USER','TENCENT_CONSOLE_PASS','TENCENT_SECRET_ID','TENCENT_SECRET_KEY'}
 LINE_REPOS0 = {'lgt':['vci-lgt','lgt-line'],'vinf':['vci-vinf','vinf-market-kernel'],
   'qgl':['vci-qgl'],'cfts':['vci-cfts','github-repo-cfts'],'usrm':['vci-usrm','usrm-repo'],
   'ucif2':['vci-ucif2','ucif2-formalization-kernel'],'qfa':['vci-qfa'],'qlv':['vci-qlv'],'lvlu':['vci-lvlu']}
