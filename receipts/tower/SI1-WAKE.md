@@ -2,10 +2,8 @@
 
 ```json
 {
- "ts": "20260910T220958Z",
- "keyreq_done": [
-  "钥取-lgt-KIMI-API-KEY-GITEE-TOK-20260910.md"
- ],
+ "ts": "20260910T222047Z",
+ "keyreq_done": [],
  "acks": [],
  "pending_si1": [],
  "note": "会话端醒后读本件+REBUILD.md→续办pending; 塔拍自治不候"
