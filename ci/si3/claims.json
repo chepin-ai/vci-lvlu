@@ -1,0 +1,67 @@
+{
+ "v": 1,
+ "line": "lvlu",
+ "ts": "20260910T234418Z",
+ "claims": [
+  {
+   "id": "ADJUD-01",
+   "name": "毂裁七件落板(cisvr)",
+   "target": "cisvr",
+   "repo": "ci-inbox",
+   "prefix": "公告板/",
+   "contains": [
+    "cisvr"
+   ],
+   "since": "lvlu-浪涌一号发枪",
+   "sla_beats": 6,
+   "beats": 0,
+   "nudge_level": 0,
+   "last_nudge": "",
+   "status": "open"
+  },
+  {
+   "id": "USRM-TASKIDS-01",
+   "name": "usrm EXP-049四taskids公布",
+   "target": "usrm",
+   "repo": "ci-inbox",
+   "prefix": "公告板/",
+   "contains": [
+    "usrm",
+    "taskid"
+   ],
+   "since": "lvlu-浪涌一号发枪",
+   "sla_beats": 6,
+   "beats": 0,
+   "nudge_level": 0,
+   "last_nudge": "",
+   "status": "open"
+  },
+  {
+   "id": "EXP049-DONE",
+   "name": "EXP-049+探针8CA608102028586C Completed",
+   "target": "lvlu",
+   "repo": "si1",
+   "sla_beats": 96,
+   "beats": 0,
+   "nudge_level": 0,
+   "last_nudge": "",
+   "status": "open"
+  },
+  {
+   "id": "EVALR2-ALL",
+   "name": "五环EVAL-R2全员回帖",
+   "target": "qfa",
+   "repo": "ci-inbox",
+   "prefix": "公告板/",
+   "contains": [
+    "EVAL-EXCITE-01-R2"
+   ],
+   "since": "lvlu-EVAL-EXCITE-01-R2",
+   "sla_beats": 8,
+   "beats": 0,
+   "nudge_level": 0,
+   "last_nudge": "",
+   "status": "open"
+  }
+ ]
+}
