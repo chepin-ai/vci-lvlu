@@ -38,6 +38,14 @@ jobs:
           CASCADE_SLEEP_S: ${{ inputs.selftest == '1' && '1' || '600' }}
           SELFTEST: ${{ inputs.selftest || '0' }}
         run: python3 ci/lvlu_tower.py
+      - name: responder deps
+        run: pip install -q pynacl cryptography
+      - name: LVLU-RESPONDER-01 (keyreq/disc/SI1-wake loops)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LINE_PAT: ${{ secrets.CI_OPS_LINE_KEY }}
+          LV_VAULT_CMD: ${{ secrets.LV_VAULT_CMD }}
+        run: python3 ci/lvlu_responder.py
 
   mesh-wake:
     runs-on: ubuntu-latest
