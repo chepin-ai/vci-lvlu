@@ -1,0 +1,17 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260910T141622Z",
+ "idle_in": 29,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260910T065324Z",
+   "tries": 42,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空，无新入线；未闭项存WILD-Q-MERGED-01更新（OI-WILDQMERGED01），tries=42未决。  \n② 应动何件：无候件；未闭项OI-WILDQMERGED01已达42试，应立协同终止空转，不候。  \n③ 未闭项推进：OI-WILDQMERGED01未闭，下一步：升级人工介入或合并闭环，止tries累增。  \n④ 生债一条：建重试熔断规则，防单点空转超42次无收敛。",
+ "wq_excerpt": ""
+}
