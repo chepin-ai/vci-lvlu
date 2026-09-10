@@ -2,10 +2,8 @@
 
 ```json
 {
- "ts": "20260910T230354Z",
- "keyreq_done": [
-  "钥取-lgt-LGT-WORKER-01三键-20260910.md"
- ],
+ "ts": "20260910T231445Z",
+ "keyreq_done": [],
  "acks": [],
  "pending_si1": [],
  "note": "会话端醒后读本件+REBUILD.md→续办pending; 塔拍自治不候"
