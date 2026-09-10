@@ -1,0 +1,24 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260910T220953Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-OTPLGTKEYREQTALLY01lgtmd",
+   "ref": "OTP-LGT-KEYREQ-TALLY-01-lgt.md",
+   "opened": "20260910T193859Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260910T215418Z",
+   "tries": 3,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空；OI-OTPLGTKEYREQTALLY01lgtmd 理吕密钥请求对账未结，已16试；OI-WILDQMERGED01 野态合并更新未闭，已3试。\n\n② 应动何件：两件皆动，立协同不候；先攻 OTPLGTKEYREQTALLY（理吕主键16轮阻塞）。\n\n③ 未闭项推进：OI-OTPLGTKEYREQTALLY01lgtmd 未闭，下一步强对账或结档；OI-WILDQMERGED01 未闭，下一步完成合并归档。\n\n④ 生债：lvlu 双链悬账，须一次根同步消债。",
+ "wq_excerpt": ""
+}
