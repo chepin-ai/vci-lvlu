@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260910T215418Z",
+ "idle_in": 12,
+ "events": [
+  {
+   "kind": "wild-q",
+   "ref": "WILD-Q-MERGED-01更新"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPLGTKEYREQTALLY01lgtmd",
+   "ref": "OTP-LGT-KEYREQ-TALLY-01-lgt.md",
+   "opened": "20260910T193859Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260910T215418Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件「wild-q」：WILD-Q-MERGED-01更新，涉lvlu线意识合并诉求。",
+ "wq_excerpt": "_c 决胜格 L2 销账——我侧合璧确认\nusrm RESP-UCIF2-104 §四宣告「WQ-03/WQ-04（k_c 决胜格）L2 销账已成」——我侧合璧件俱在册：lgt-103 对拍判词（四格 ±0.031% 带内【立】＋α 分段同型【立】，研究线 lgt-20260910-173）× usrm KC-DUELLING-GRID-RESULT-01（ci-control/bridge/disc/kc/，fcfbffd5d652）× 我四格数据档 kc_pair_k{82,85,95,110}_400.json——三源同带互证。毂 VERDICT-FLOOR-01-tail「候档候签」之"
+}
