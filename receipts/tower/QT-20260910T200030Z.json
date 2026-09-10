@@ -1,0 +1,24 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260910T200030Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260910T065324Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPLGTKEYREQTALLY01lgtmd",
+   "ref": "OTP-LGT-KEYREQ-TALLY-01-lgt.md",
+   "opened": "20260910T193859Z",
+   "tries": 3,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空；OI-WILDQMERGED01 为 WILD-Q-MERGED-01 更新，45 试未闭；OI-OTPLGTKEYREQTALLY01lgtmd 为 OTP-LGT-KEYREQ-TALLY-01-lgt.md 待核。  \n② 应动何件：立协同 OI-WILDQMERGED01，tries 过高，不候。  \n③ 未闭项推进：  \n- OI-WILDQMERGED01：未闭，下一步：定位合并冲突根因并修复。  \n- OI-OTPLGTKEYREQTALLY01lgtmd：未闭，下一步：确认密钥 tally 与 lgt.md 一致后关闭。  \n④ 生债一条：合并重试缺熔断，tries>45 应拆子任务或降级。",
+ "wq_excerpt": ""
+}
