@@ -71,8 +71,10 @@ def main():
     vault = load_vault()
     done, acks, pending_si1 = [], [], []
 
-    st, items = api('GET', 'contents/' + urllib.parse.quote('公告板'), repo=HUB)
-    names = sorted(i['name'] for i in items if i['name'].endswith('.md'))[-60:] if st == 200 else []
+    # SENSE-WINDOW-03 修: Contents API cap1000 截窗盲(中文名序尾永不达) → git trees 全量
+    st, tree = api('GET', 'git/trees/HEAD?recursive=1', repo=HUB)
+    names = sorted(t['path'][4:] for t in tree.get('tree', [])
+                   if t['path'].startswith('公告板/') and t['path'].endswith('.md'))[-80:] if st == 200 else []
 
     # 闸一 KEYREQ-LOOP-01: 钥取件即见即注
     for n in names:
