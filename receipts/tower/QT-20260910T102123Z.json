@@ -1,0 +1,17 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260910T102123Z",
+ "idle_in": 7,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260910T065324Z",
+   "tries": 20,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：候件空；未闭项OI-WILDQMERGED01（WILD-Q-MERGED-01更新）历经20次尝试仍未闭合。\n\n②应动何件：OI-WILDQMERGED01立协同不候。\n\n③未闭项推进：OI-WILDQMERGED01未闭，下一步：根因排查20次失败阻塞点并强制闭环。\n\n④生债：生债OI-WILDQMERGED01-BLOCK20——WILD-Q-MERGED-01更新已卡20轮，需升级链路或人工介入清障。",
+ "wq_excerpt": ""
+}
