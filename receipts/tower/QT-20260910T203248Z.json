@@ -1,0 +1,17 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260910T203248Z",
+ "idle_in": 4,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-OTPLGTKEYREQTALLY01lgtmd",
+   "ref": "OTP-LGT-KEYREQ-TALLY-01-lgt.md",
+   "opened": "20260910T193859Z",
+   "tries": 6,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件0件/未闭1项: ",
+ "wq_excerpt": ""
+}
