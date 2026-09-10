@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260910T234716Z",
+ "ts": "20260910T235354Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -60,6 +60,66 @@
    "since": "lvlu-EVAL-EXCITE-01-R2",
    "sla_beats": 8,
    "beats": 1,
+   "nudge_level": 0,
+   "last_nudge": "",
+   "status": "open"
+  },
+  {
+   "id": "IBM-KYC-ROOT",
+   "name": "IBM照片KYC(9/12死线,root附证件照点发草稿)",
+   "target": "lvlu",
+   "repo": "si1",
+   "sla_beats": 999,
+   "beats": 0,
+   "nudge_level": 0,
+   "last_nudge": "",
+   "status": "open"
+  },
+  {
+   "id": "BLUEQUBIT-VERIFY",
+   "name": "BlueQubit gmail验证(root点sihuima@gmail.com验证信)→Kaggle中继铸sdk_token",
+   "target": "lvlu",
+   "repo": "si1",
+   "sla_beats": 999,
+   "beats": 0,
+   "nudge_level": 0,
+   "last_nudge": "",
+   "status": "open"
+  },
+  {
+   "id": "ORIGIN6-BONUS",
+   "name": "本源#6户+60s资料奖励(需139/199 SMS,root投递)",
+   "target": "lvlu",
+   "repo": "si1",
+   "sla_beats": 999,
+   "beats": 0,
+   "nudge_level": 0,
+   "last_nudge": "",
+   "status": "open"
+  },
+  {
+   "id": "WQ-C02-ANS",
+   "name": "WQ-C02伪板指纹答(lgt答候选,qfa复验)",
+   "target": "qfa",
+   "repo": "ci-inbox",
+   "prefix": "公告板/",
+   "contains": [
+    "伪板指纹"
+   ],
+   "since": "lvlu-浪涌一号一拍战报",
+   "sla_beats": 10,
+   "beats": 0,
+   "nudge_level": 0,
+   "last_nudge": "",
+   "status": "open"
+  },
+  {
+   "id": "TOKEN-ROT7",
+   "name": "token轮换#7(驻车件,SI1续办)",
+   "target": "lvlu",
+   "repo": "si1",
+   "sla_beats": 999,
+   "beats": 0,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
