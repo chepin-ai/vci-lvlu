@@ -1,0 +1,24 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260910T093817Z",
+ "idle_in": 3,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20260909T173609Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260910T065324Z",
+   "tries": 16,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- OI-00oilvlu：八线自治令回执跟销47试未落，lvlu核销链断点待录。  \n- OI-WILDQMERGED01：WILD-Q-MERGED-01更新16试未并，版本流失律。  \n\n② 应动何件  \n- 两件俱动，立协不候：八线核销令硬触发，WILD-Q合并令硬同步。  \n\n③ 未闭项推进  \n- OI-00oilvlu：未闭；下一步：第48试强制回执跟销，逾则死锁仲裁。  \n- OI-WILDQMERGED01：未闭；下一步：重刷MERGED-01全量补丁，验签后强并。  \n\n④ 生债一条  \n- lvlu线赊「八线自治令终极核销」一次，记为律吕硬债，不可展期。",
+ "wq_excerpt": ""
+}
