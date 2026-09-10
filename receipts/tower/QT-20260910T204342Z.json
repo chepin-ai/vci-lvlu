@@ -1,0 +1,17 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260910T204342Z",
+ "idle_in": 5,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-OTPLGTKEYREQTALLY01lgtmd",
+   "ref": "OTP-LGT-KEYREQ-TALLY-01-lgt.md",
+   "opened": "20260910T193859Z",
+   "tries": 7,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 候件空，无涉 lvlu 新诉求。  \n② 无应动件。  \n③ OI-OTPLGTKEYREQTALLY01lgtmd（OTP-LGT-KEYREQ-TALLY-01-lgt.md）：未闭，tries=7，下一步排障或升维重试。  \n④ 生债：OTP-LGT-KEYREQ-TALLY-01-lgt.md 重试逾 7 次未闭，记阻塞排查债一条。",
+ "wq_excerpt": ""
+}
