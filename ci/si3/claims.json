@@ -17,8 +17,9 @@
    "beats": 0,
    "nudge_level": 0,
    "last_nudge": "",
-   "status": "closed",
-   "closed_ts": "20260910T234716Z"
+   "status": "open",
+   "since_ts": "20260910T224341Z",
+   "note": "株十七误判已修(军令/广播含cisvr旧帖误匹) → since_ts时戳轨"
   },
   {
    "id": "USRM-TASKIDS-01",
@@ -35,7 +36,8 @@
    "beats": 2,
    "nudge_level": 0,
    "last_nudge": "",
-   "status": "open"
+   "status": "open",
+   "since_ts": "20260910T232733Z"
   },
   {
    "id": "EXP049-DONE",
@@ -62,7 +64,8 @@
    "beats": 2,
    "nudge_level": 0,
    "last_nudge": "",
-   "status": "open"
+   "status": "open",
+   "since_ts": "20260910T232733Z"
   },
   {
    "id": "IBM-KYC-ROOT",
@@ -111,7 +114,8 @@
    "beats": 1,
    "nudge_level": 0,
    "last_nudge": "",
-   "status": "open"
+   "status": "open",
+   "since_ts": "20260910T234958Z"
   },
   {
    "id": "TOKEN-ROT7",
