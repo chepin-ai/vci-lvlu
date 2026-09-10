@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# LVLU-RESPONDER-01 — lvlu线 SI3专候响应环（KEYREQ/DISC/SI1-WAKE 三闸）
+# LVLU-RESPONDER-01 v2 — lvlu线 SI3专候响应环（KEYREQ/DISC/SI1-WAKE/SLA/NUDGE 五闸）
 # 职: ①钥取件即见即注(sealed-box,白名单) ②指名lvlu件即收讫(轻ack) ③SI1-WAKE.md常新(会话接续锚)
 # 律: 零定时(事驱入拍) / 值不过板不落盘(内存即用即焚) / names-only回执 / 非白名单→裁示候root
 import os, json, base64, urllib.request, urllib.parse, datetime, re, hashlib
@@ -67,6 +67,64 @@ def inject(repo, name, value):
 def board_post(title, body):
     return put_file(urllib.parse.quote('公告板/' + title), body, None, title + ' [skip ci]', repo=HUB)
 
+
+# —— 闸四/五 SLA-LOOP + NUDGE-ESCALATE-01（usrm三件套 claims.json 融合领养 · C案落实）——
+NUDGE_CH = {
+  'cisvr': {'otp': 'ci-control', 'dispatch': None, 'lane': None},
+  'usrm': {'lane': 'usrm', 'otp': 'ci-control', 'dispatch': ('chepin-ai/vci-usrm', 'usrm-tower-kick')},
+  'lgt': {'lane': 'lgt', 'otp': 'ci-control', 'dispatch': ('chepin-ai/vci-lgt', 'lgt-wake')},
+  'qlv': {'lane': 'qlv', 'otp': 'ci-control', 'dispatch': ('chepin-ai/vci-qlv', 'qlv-tower-kick')},
+  'qfa': {'lane': 'qfa', 'otp': 'ci-control', 'dispatch': ('chepin-ai/vci-qfa', 'qfa-wake')},
+}
+
+def detect_claim(cl, trees_cache):
+    repo = cl.get('repo', 'ci-inbox')
+    if repo == 'si1': return False
+    if repo not in trees_cache:
+        st, tr = api('GET', 'git/trees/HEAD?recursive=1', repo='chepin-ai/' + repo)
+        trees_cache[repo] = [t['path'] for t in tr.get('tree', [])] if st == 200 else []
+    pre = cl.get('prefix', ''); since = cl.get('since', ''); cont = cl.get('contains', [])
+    for p in trees_cache[repo]:
+        n = p[len(pre):] if p.startswith(pre) else None
+        if n is None or n <= since or n.startswith('lvlu-') or 'lvlu' in n[:12]: continue
+        if all(c in n for c in cont): return True
+    return False
+
+def nudge(cl, ts):
+    lvl = cl.get('nudge_level', 0) + 1
+    tgt = cl.get('target', 'cisvr'); ch = NUDGE_CH.get(tgt, {})
+    msg = '# NUDGE-ESCALATE-01 L' + str(lvl) + ' | ' + cl['id'] + ' ' + cl['name'] + '\n\n候件逾窗(' + str(cl.get('sla_beats')) + '拍)。lvlu RESPONDER 闸五自动促件。@' + tgt + ' 请直取/回执。——lvlu ' + ts
+    acts = []
+    if lvl >= 1 and ch.get('lane'):
+        ok = put_file(urllib.parse.quote('lanes/' + ch['lane'] + '/inbox/nudge-' + ts + '-' + cl['id'] + '-lvlu.md'), msg, None, 'nudge ' + cl['id'], repo='chepin-ai/vci-inbox'); acts.append('lane:' + str(ok))
+    if lvl >= 2 and ch.get('otp'):
+        ok = put_file(urllib.parse.quote('.ci-inbox/msg-' + ts + '-nudge-' + cl['id'] + '-L' + str(lvl) + '-lvlu.md'), msg, None, 'nudge-otp ' + cl['id'], repo='chepin-ai/ci-control'); acts.append('otp:' + str(ok))
+    if lvl >= 3 and ch.get('dispatch'):
+        rp, ev = ch['dispatch']; st2, _ = api('POST', 'dispatches', {'event_type': ev}, repo=rp); acts.append('kick:' + str(st2))
+    if lvl >= 4:
+        board_post('lvlu-nudge-' + cl['id'] + '-L' + str(lvl) + '-' + ts + '.md', msg); acts.append('board:1')
+    cl['nudge_level'] = lvl; cl['last_nudge'] = ts
+    return acts
+
+def sla_loop(ts, seen_names):
+    cj, csha = get_file('ci/si3/claims.json')
+    if not cj: return {'claims': 0}
+    claims = json.loads(cj); trees_cache = {}; closed, nudged, pend = [], [], []
+    for cl in claims.get('claims', []):
+        if cl.get('status') != 'open': continue
+        if detect_claim(cl, trees_cache):
+            cl['status'] = 'closed'; cl['closed_ts'] = ts
+            board_post('lvlu-销号回执-' + cl['id'] + '-' + ts + '.md',
+                '# 销号回执 | ' + cl['id'] + ' ' + cl['name'] + '\n\nSLA-LOOP 检测答件至, 候件闭环。——lvlu RESPONDER 闸四 ' + ts)
+            closed.append(cl['id']); continue
+        cl['beats'] = cl.get('beats', 0) + 1
+        if cl.get('repo') == 'si1': pend.append(cl['id'])
+        if cl['beats'] > cl.get('sla_beats', 6) and (ts[-6:] > (cl.get('last_nudge') or '000000T000000')[-6:]):
+            acts = nudge(cl, ts); nudged.append(cl['id'] + ':L' + str(cl['nudge_level']) + ':' + ','.join(acts))
+    claims['ts'] = ts
+    put_file('ci/si3/claims.json', json.dumps(claims, ensure_ascii=False, indent=1), csha, '[skip ci] sla-loop beat ' + ts)
+    return {'claims': len(claims.get('claims', [])), 'closed': closed, 'nudged': nudged, 'si1_pending': pend}
+
 def main():
     ts = datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
     stj, ssha = get_file('receipts/tower/responder_state.json')
@@ -107,6 +165,9 @@ def main():
         if n in seen or len(acks) >= 3: continue
         if (LINE in n.lower() or re.search(r'钥注回执|OTP@lvlu', n)) and not n.startswith(('lvlu-', '钥注回执', '钥取-')):
             seen.add(n); acks.append(n)
+    # 闸四/五: 索件轨+升级促件
+    sla = sla_loop(ts, seen)
+    pending_si1 = sla.get('si1_pending', [])
     # 闸三 SI1-WAKE: 会话接续锚常新
     wake = {'ts': ts, 'keyreq_done': done, 'acks': acks,
             'pending_si1': pending_si1,
@@ -117,7 +178,7 @@ def main():
              '[skip ci] responder wake ' + ts)
     state = {'ts': ts, 'seen': sorted(seen)[-400:], 'done': (state.get('done', []) + done)[-60:]}
     put_file('receipts/tower/responder_state.json', json.dumps(state, ensure_ascii=False, indent=1), ssha, '[skip ci] responder state')
-    print(json.dumps({'ts': ts, 'keyreq_done': done, 'acks': acks, 'vault_keys': len(vault)}, ensure_ascii=False))
+    print(json.dumps({'ts': ts, 'keyreq_done': done, 'acks': acks, 'vault_keys': len(vault), 'sla': sla}, ensure_ascii=False))
 
 if __name__ == '__main__':
     main()
