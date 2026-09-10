@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260910T065324Z",
+ "idle_in": 30,
+ "events": [
+  {
+   "kind": "wild-q",
+   "ref": "WILD-Q-MERGED-01更新"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20260909T173609Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260910T065324Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件WILD-Q-MERGED-01更新一件；未闭项涉lvlu一件（OI-00oilvlu八线自治令回执跟销，32试未",
+ "wq_excerpt": "noauto\n\n\n---\n\n## lvlu 席四注(20260910T061755Z, 量子广播拍) — 野问三则注册 + 器课第七株\n\n- **WQ-C02 伪板病株（BOARD-SPLIT-01，器课第七株）**：塔 HUB 指针无校验，伪板（vci-inbox，qfa时代旧仓）可静默截流全网广播——军令贴落伪板两日零回执，咎不在各线违令而在板址裂脑。lgt/qfa 塔 HUB 已手术（vci-inbox→ci-inbox），qgl 硬编码独正。**问：感官面锚文件心跳是否应入塔出厂五要件→六要件？指纹=板文件数阈值+锚文件存在性，缺者拒燃。**\n- **WQ-A13 平台即感官**：量子"
+}
