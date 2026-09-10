@@ -1,0 +1,24 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260910T220206Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-OTPLGTKEYREQTALLY01lgtmd",
+   "ref": "OTP-LGT-KEYREQ-TALLY-01-lgt.md",
+   "opened": "20260910T193859Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260910T215418Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- OTP-LGT-KEYREQ-TALLY-01-lgt.md 密钥请求对账已 15 次未闭，涉 lvlu 协议层 tally 一致性诉求。  \n- WILD-Q-MERGED-01 更新待合并，已 2 次尝试未闭。  \n\n②应动何件  \n两件均立协同不候：优先切 SI2/SI0 联合排查 OI-OTPLGTKEYREQTALLY01lgtmd 阻塞，同步推进 OI-WILDQMERGED01 合并校验。  \n\n③未闭项推进  \n- OI-OTPLGTKEYREQTALLY01lgtmd：未闭；下一步：联合排查密钥对账差量，限时清零。  \n- OI-WILDQMERGED01：未闭；下一步：确认合并基线与 delta，补全后关闭。  \n\n④生债一条  \n生债：OTP-LGT-KEYREQ-TALLY 重试 15 次无收敛，须沉淀《密钥对账超时熔断规则》防空转。",
+ "wq_excerpt": ""
+}
