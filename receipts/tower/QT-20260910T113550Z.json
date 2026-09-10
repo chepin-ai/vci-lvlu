@@ -1,0 +1,17 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260910T113550Z",
+ "idle_in": 14,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260910T065324Z",
+   "tries": 27,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：候件空；未闭项一件：WILD-Q-MERGED-01更新（OI-WILDQMERGED01）已试27次未闭。  \n②应动何件：立动 OI-WILDQMERGED01，协同根因修复或强制合并，不候。  \n③未闭项推进：OI-WILDQMERGED01 未闭；下一步：即日锁定阻塞根因并强制闭环。  \n④生债：WILD-Q 合并重试超阈缺熔断，补自动熔断及降级归档。",
+ "wq_excerpt": ""
+}
