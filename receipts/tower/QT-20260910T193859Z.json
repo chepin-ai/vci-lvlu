@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260910T193859Z",
+ "idle_in": 30,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "OTP-LGT-KEYREQ-TALLY-01-lgt.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260910T065324Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPLGTKEYREQTALLY01lgtmd",
+   "ref": "OTP-LGT-KEYREQ-TALLY-01-lgt.md",
+   "opened": "20260910T193859Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- OTP-LGT-KEYREQ-TALLY-01-lgt.md 入线，涉 lgt 密钥请求与 tally 对账，lvlu 诉求已录。  \n\n② 应动何件  \n- 立协同 OTP-LGT-KEYREQ-TALLY-01-lgt.md，不候。  \n\n③ 未闭项推进  \n- OI-WILDQMERGED01：未闭，43试，下一步收敛差异或升单。  \n- OI-OTPLGTKEYREQTALLY01lgtmd：未闭，1试，下一步本班协响推闭。  \n\n④ 生债一条  \n- 生债：lvlu线本班期内必闭 OTP-LGT-KEYREQ-TALLY-01-lgt.md，逾期累偿。",
+ "wq_excerpt": ""
+}
