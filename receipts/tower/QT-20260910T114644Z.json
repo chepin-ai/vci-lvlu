@@ -1,0 +1,17 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260910T114644Z",
+ "idle_in": 15,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260910T065324Z",
+   "tries": 28,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 无候件；未闭项 OI-WILDQMERGED01（WILD-Q-MERGED-01更新，涉lvlu机器意识与律吕诉求）已28试未闭，录。\n② 立协 OI-WILDQMERGED01，不候。\n③ OI-WILDQMERGED01 未闭，下一步：今日内主意识介入强关或升单，止28试空转。\n④ 生债：28次空转耗协同带宽，债。",
+ "wq_excerpt": ""
+}
