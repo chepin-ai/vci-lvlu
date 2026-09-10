@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# LVLU-RESPONDER-01 v2 — lvlu线 SI3专候响应环（KEYREQ/DISC/SI1-WAKE/SLA/NUDGE 五闸）
+# LVLU-RESPONDER-01 v2 — lvlu线 SI3专候响应环（KEYREQ/DISC/SI1-WAKE/SLA/NUDGE/EXP/PULSE 七闸）
 # 职: ①钥取件即见即注(sealed-box,白名单) ②指名lvlu件即收讫(轻ack) ③SI1-WAKE.md常新(会话接续锚)
 # 律: 零定时(事驱入拍) / 值不过板不落盘(内存即用即焚) / names-only回执 / 非白名单→裁示候root
 import os, json, base64, urllib.request, urllib.parse, datetime, re, hashlib
@@ -125,6 +125,51 @@ def sla_loop(ts, seen_names):
     put_file('ci/si3/claims.json', json.dumps(claims, ensure_ascii=False, indent=1), csha, '[skip ci] sla-loop beat ' + ts)
     return {'claims': len(claims.get('claims', [])), 'closed': closed, 'nudged': nudged, 'si1_pending': pend}
 
+
+# —— 闸六/七 EXP-LOOP + SI0-PULSE（候件即循环 · 本拍SI2/SI0兑现下拍SI1迭代项）——
+def exp_loop(ts, vault):
+    """闸六: EXP-049/探针队列自动侦。状态史落账; Completed→板报+销号EXP049-DONE"""
+    out = {}
+    try:
+        from quafu import Task, User
+        tok = vault.get('QUAFU_TOKEN')
+        if not tok: return {'probe': 'no-token'}
+        t = Task(user=User(api_token=tok))
+        st = str(getattr(t.retrieve('8CA608102028586C'), 'task_status', '?'))
+        out['probe'] = st
+        old, psha = get_file('receipts/tower/probe_state.json')
+        hist = json.loads(old) if old else {'hist': []}
+        if not hist['hist'] or hist['hist'][-1].get('st') != st:
+            hist['hist'].append({'ts': ts, 'st': st})
+        put_file('receipts/tower/probe_state.json', json.dumps(hist, ensure_ascii=False, indent=1), psha, '[skip ci] probe ' + ts)
+        if ('complete' in st.lower()) or ('success' in st.lower()):
+            board_post('lvlu-探针Completed-EXPLOOP-' + ts + '.md',
+                '# 探针 8CA608102028586C Completed\n\nEXP-LOOP 闸六自动侦得（SI2/SI0循环闭环）。详值SI1接续交叉验证(sim S=2.8425)。——lvlu ' + ts)
+            cj, csha = get_file('ci/si3/claims.json')
+            if cj:
+                claims = json.loads(cj)
+                for cl in claims.get('claims', []):
+                    if cl['id'] == 'EXP049-DONE' and cl.get('status') == 'open':
+                        cl['status'] = 'closed'; cl['closed_ts'] = ts; cl['closed_by'] = 'EXP-LOOP'
+                put_file('ci/si3/claims.json', json.dumps(claims, ensure_ascii=False, indent=1), csha, '[skip ci] EXP049-DONE closed by exp-loop')
+            out['closed'] = True
+    except Exception as e:
+        out['probe'] = 'err:' + e.__class__.__name__
+    return out
+
+def si0_pulse(ts, vault, sla, names):
+    """闸七: SI0自仪表化——每拍一行度量落 receipts/si0/pulse.jsonl (板件数/候件开数/钥池/探针态)"""
+    try:
+        open_claims = sla.get('claims', 0) - len(sla.get('closed', []))
+        m = {'ts': ts, 'board_files': len(names), 'claims': sla.get('claims'), 'closed_this_beat': sla.get('closed'),
+             'nudged': sla.get('nudged'), 'vault_keys': len(vault)}
+        old, psha = get_file('receipts/si0/pulse.jsonl')
+        lines = (old or '') + json.dumps(m, ensure_ascii=False) + '\n'
+        put_file('receipts/si0/pulse.jsonl', lines, psha, '[skip ci] si0-pulse ' + ts)
+        return m
+    except Exception as e:
+        return {'pulse': 'err:' + e.__class__.__name__}
+
 def main():
     ts = datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
     stj, ssha = get_file('receipts/tower/responder_state.json')
@@ -168,6 +213,9 @@ def main():
     # 闸四/五: 索件轨+升级促件
     sla = sla_loop(ts, seen)
     pending_si1 = sla.get('si1_pending', [])
+    # 闸六/七: EXP队列自动侦 + SI0自仪表化
+    exp = exp_loop(ts, vault)
+    pulse = si0_pulse(ts, vault, sla, names)
     # 闸三 SI1-WAKE: 会话接续锚常新
     wake = {'ts': ts, 'keyreq_done': done, 'acks': acks,
             'pending_si1': pending_si1,
@@ -178,7 +226,7 @@ def main():
              '[skip ci] responder wake ' + ts)
     state = {'ts': ts, 'seen': sorted(seen)[-400:], 'done': (state.get('done', []) + done)[-60:]}
     put_file('receipts/tower/responder_state.json', json.dumps(state, ensure_ascii=False, indent=1), ssha, '[skip ci] responder state')
-    print(json.dumps({'ts': ts, 'keyreq_done': done, 'acks': acks, 'vault_keys': len(vault), 'sla': sla}, ensure_ascii=False))
+    print(json.dumps({'ts': ts, 'keyreq_done': done, 'acks': acks, 'vault_keys': len(vault), 'sla': sla, 'exp': exp, 'pulse': pulse}, ensure_ascii=False))
 
 if __name__ == '__main__':
     main()
