@@ -84,9 +84,15 @@ def detect_claim(cl, trees_cache):
         st, tr = api('GET', 'git/trees/HEAD?recursive=1', repo='chepin-ai/' + repo)
         trees_cache[repo] = [t['path'] for t in tr.get('tree', [])] if st == 200 else []
     pre = cl.get('prefix', ''); since = cl.get('since', ''); cont = cl.get('contains', [])
+    since_ts = cl.get('since_ts', '')
     for p in trees_cache[repo]:
         n = p[len(pre):] if p.startswith(pre) else None
-        if n is None or n <= since or n.startswith('lvlu-') or 'lvlu' in n[:12]: continue
+        if n is None or n.startswith('lvlu-') or 'lvlu' in n[:12]: continue
+        # 器课株十七 DETECT-TS-01: CJK名序失真→时戳正则优先, 无戳件不判(记录在案)
+        mts = re.search(r'(20\d{6}T\d{4,6}Z{0,2})', n)
+        if since_ts:
+            if not mts or mts.group(1) <= since_ts: continue
+        elif since and n <= since: continue
         if all(c in n for c in cont): return True
     return False
 
