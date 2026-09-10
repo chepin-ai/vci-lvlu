@@ -1,0 +1,24 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260910T201112Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260910T065324Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPLGTKEYREQTALLY01lgtmd",
+   "ref": "OTP-LGT-KEYREQ-TALLY-01-lgt.md",
+   "opened": "20260910T193859Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- OI-WILDQMERGED01：WILD-Q-MERGED-01更新久悬，已试46次，未录lvlu新诉求。  \n- OI-OTPLGTKEYREQTALLY01lgtmd：OTP-LGT-KEYREQ-TALLY-01-lgt.md待终签，已试4次，未录lvlu新诉求。  \n\n② 应动何件  \n两件并动，立协同不候：先强攻OI-WILDQMERGED01（46次未决，今必落锁），同启OI-OTPLGTKEYREQTALLY01lgtmd终稿会签。  \n\n③ 未闭项推进  \n- OI-WILDQMERGED01：未闭，下一步：定位合并阻塞根因，今日完成验证并关闭。  \n- OI-OTPLGTKEYREQTALLY01lgtmd：未闭，下一步：确认tally终数无误，签发归档关闭。  \n\n④ 生债一条  \n生债：两OI今日未清零，生SI0督办债一条。",
+ "wq_excerpt": ""
+}
