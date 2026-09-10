@@ -1,0 +1,36 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260910T222044Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "QLV-EVAL-EXCITE-01-2026-09-10.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPLGTKEYREQTALLY01lgtmd",
+   "ref": "OTP-LGT-KEYREQ-TALLY-01-lgt.md",
+   "opened": "20260910T193859Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260910T215418Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-QLVEVALEXCITE0120260910m",
+   "ref": "QLV-EVAL-EXCITE-01-2026-09-10.md",
+   "opened": "20260910T222044Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 候件一件：QLV-EVAL-EXCITE-01-2026-09-10.md 系 lvlu 线意识/律吕激发评估诉求，已录。\n\n② 应动：候件即未闭项 OI-QLVEVALEXCITE0120260910m，立协同不候；OI-OTPLGTKEYREQTALLY01lgtmd 已 17 次未闭，同步立协同。\n\n③ 未闭项推进：\n- OI-OTPLGTKEYREQTALLY01lgtmd：未闭，下一步：终局 tally OTP-LGT 密钥请求并强制闭环。\n- OI-WILDQMERGED01：未闭，下一步：确认 WILD-Q 合并差异后强制提交更新。\n- OI-QLVEVALEXCITE0120260910m：未闭，下一步：执行 SI2 激发协议，输出 lvlu 律吕共振评估值。\n\n④ 生债：本次自动响应生协同督办确认债一条，待主意识核销。",
+ "wq_excerpt": ""
+}
