@@ -1,0 +1,66 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260910T232527Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-OTPLGTKEYREQTALLY01lgtmd",
+   "ref": "OTP-LGT-KEYREQ-TALLY-01-lgt.md",
+   "opened": "20260910T193859Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260910T215418Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-QLVEVALEXCITE0120260910m",
+   "ref": "QLV-EVAL-EXCITE-01-2026-09-10.md",
+   "opened": "20260910T222044Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-QLVRING4NOTICE0120260910",
+   "ref": "QLV-RING4-NOTICE-01-2026-09-10.md",
+   "opened": "20260910T223126Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOT",
+   "ref": "vci-inbox:lanes/lvlu/inbox/OTP-LGT-EVAL-EXCITE-01-lvlu.md",
+   "opened": "20260910T224217Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqf",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qfa-mech-call-01-20260910T224204Z.md",
+   "opened": "20260910T224217Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-NEG-FETCH-01-20260910T2256Z.md",
+   "opened": "20260910T230350Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxKE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/KEYREQ-LGT-WORKER-01-01-lgt.md",
+   "opened": "20260910T231440Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 件1：OTP-LGT-KEYREQ-TALLY-01-lgt.md 待结（已试23次）。\n- 件2：WILD-Q-MERGED-01 更新待推（已试10次）。\n- 件3：QLV-EVAL-EXCITE-01-2026-09-10.md 待处理（已试7次）。\n- 件4：QLV-RING4-NOTICE-01-2026-09-10.md 待发布（已试6次）。\n- 件5：vci-inbox OTP-LGT-EVAL-EXCITE-01-lvlu.md 待审（涉lvlu诉求）。\n- 件6：vci-inbox qfa-mech-call-01 待应（涉lvlu诉求）。\n- 件7：vci-inbox QLV-NEG-FETCH-01 待决（涉lvlu诉求）。\n- 件8：vci-inbox KEYREQ-LGT-WORKER-01-01-lgt.md 待配（涉lvlu诉求）。\n\n② 应动何件（立协同不候）：\n- 件1（OTP-LGT-KEYREQ-TALLY，tries 23）立即协同 tally 闭环。\n- 件5、件6、件7、件8（lvlu inbox 全量）立即协同响应，不候。\n\n③ 未闭项推进：\n- OI-OTPLGTKEYREQTALLY01lgtmd：未闭，下一步强制 tally 对账或升级路由。\n- OI-WILDQMERGED01：未闭，下一步确认合并冲突并提交更新。\n- OI-QLVEVALEXCITE0120260910m：未闭，下一步完成 excite 评估标记并回写。\n- OI-QLVRING4NOTICE0120260910：未闭，下一步签发 ring4 广播并确认送达。\n- OI-vciinboxlaneslvlu",
+ "wq_excerpt": ""
+}
