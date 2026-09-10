@@ -1,0 +1,17 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260910T205423Z",
+ "idle_in": 6,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-OTPLGTKEYREQTALLY01lgtmd",
+   "ref": "OTP-LGT-KEYREQ-TALLY-01-lgt.md",
+   "opened": "20260910T193859Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 无新候件。  \n② 无应动件。  \n③ OI-OTPLGTKEYREQTALLY01lgtmd：未闭，已8试；下一步捞日志锁因再攻。  \n④ ",
+ "wq_excerpt": ""
+}
