@@ -10,9 +10,10 @@ HUB  = 'chepin-ai/ci-inbox'
 LINE = 'lvlu'
 WHITELIST = {'KIMI_API_KEY','GITEE_TOK','QUAFU_TOKEN','QR_TOKEN_64','QR_TOKEN_128',
              'OPENQ_SDK_TOKEN','OPENQ_CLIENT_ID','KGAT_TOKEN','KAGGLE_JSON','DEEPSEEK_API_KEY'}
-LINE_REPOS = {'lgt':['vci-lgt','lgt-line'],'vinf':['vci-vinf','vinf-market-kernel'],
+LINE_REPOS0 = {'lgt':['vci-lgt','lgt-line'],'vinf':['vci-vinf','vinf-market-kernel'],
   'qgl':['vci-qgl'],'cfts':['vci-cfts','github-repo-cfts'],'usrm':['vci-usrm','usrm-repo'],
   'ucif2':['vci-ucif2','ucif2-formalization-kernel'],'qfa':['vci-qfa'],'qlv':['vci-qlv'],'lvlu':['vci-lvlu']}
+LINE_REPOS = {k: ['chepin-ai/' + r for r in v] for k, v in LINE_REPOS0.items()}
 
 def api(method, path, data=None, repo=None):
     url = f'https://api.github.com/repos/{repo or REPO}/{path}'
@@ -85,7 +86,7 @@ def main():
         line = parts[1] if len(parts) > 1 else '?'
         asked = [k for k in re.findall(r'[A-Z][A-Z0-9_]{3,}', (body or '') + n) if k in WHITELIST]
         asked = sorted(set(asked))
-        repos = LINE_REPOS.get(line, [f'vci-{line}'])
+        repos = LINE_REPOS.get(line, [f'chepin-ai/vci-{line}'])
         res = {}
         for k in asked:
             if k in vault:
