@@ -1,0 +1,17 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260910T122927Z",
+ "idle_in": 19,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260910T065324Z",
+   "tries": 32,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：无候件；未闭项OI-WILDQMERGED01（WILD-Q-MERGED-01更新）已32试未闭。\n②应动何件：应动OI-WILDQMERGED01，32次重试无效，立协同不候。\n③未闭项推进：OI-WILDQMERGED01未闭。下一步：熔断重试，升级协同/变更策略攻坚。\n④生债一条：生债：设重试熔断阈值（如32次），超限强制升级，禁止空转。",
+ "wq_excerpt": ""
+}
