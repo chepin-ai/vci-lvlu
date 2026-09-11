@@ -1,0 +1,31 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T130535Z",
+ "idle_in": 16,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-USRM-TASKIDS-01.md",
+   "opened": "20260911T084337Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260911T090619Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ANS-LVLU-WAVE3-01-20260911T091424Z.md",
+   "opened": "20260911T091847Z",
+   "tries": 21,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- AN件：ANS-USRM-TASKIDS-01 任务ID收束，涉 lvlu inbox 流转诉求。  \n- ev件：eval-r2-lgt-副件待合入主评估，涉 lvlu lane。  \n- QL件：QLV-ANS-LVLU-WAVE3-01 应答待交付，涉 lvlu 本体诉求。  \n\n② 应动何件  \n候件空，三件均逾20试且未闭；立协同 AN / ev / QL 全件，不候。  \n\n③ 未闭项推进  \n- AN：未闭；下一步收拢 TASKIDS 并回写归档。  \n- ev：未闭；下一步完成 r2-lgt 副件评估合并。  \n- QL：未闭；下一步交付 WAVE3 应答并关单。  \n\n④ 生债一条  \nlvlu inbox 积压3件超20试，生债：今日",
+ "wq_excerpt": ""
+}
