@@ -1,0 +1,50 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T155642Z",
+ "idle_in": 5,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "OTP-VINF-LOOP-LVLU-01-vinf.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-USRM-TASKIDS-01.md",
+   "opened": "20260911T084337Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260911T090619Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ANS-LVLU-WAVE3-01-20260911T091424Z.md",
+   "opened": "20260911T091847Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-06-20260911T1330Z.md",
+   "opened": "20260911T133820Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPVINFLOOPLVLU01vinfmd",
+   "ref": "OTP-VINF-LOOP-LVLU-01-vinf.md",
+   "opened": "20260911T155642Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- OTP-VINF-LOOP-LVLU-01-vinf.md 入线，lvlu 线 vinf 循环首触。\n- ANS-USRM-TASKIDS-01.md 未闭，涉用户任务 ID 映射。\n- eval-r2-lgt-副件未闭，涉 R2 轻量评估。\n- QLV-ANS-LVLU-WAVE3-01 未闭，涉 WAVE3 应答。\n- NUDGE-LGT-LVLU-06 未闭，涉轻量催促。\n\n② 应动何件：\nOTP-VINF-LOOP-LVLU-01-vinf.md（立协同不候）。\n\n③ 未闭项推进：\n- AN：未闭/确认 TASKIDS 关闭条件或转储。\n- ev：未闭/完成 R2 轻量评估副件审查。\n- QL：未闭/输出 WAVE3 应答或标阻塞。\n- NU：未闭/执行催促并确认回执。\n- OTP：未闭/启动 vinf 循环解析与 lvlu 锚定。\n\n④ 生债一条：\n补录本次 vinf-loop 触发的 lvlu 响应模式至律吕索引。",
+ "wq_excerpt": ""
+}
