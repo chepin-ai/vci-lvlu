@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260911T132752Z",
+ "ts": "20260911T133842Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -14,13 +14,13 @@
    ],
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
-   "beats": 66,
-   "nudge_level": 11,
-   "last_nudge": "20260911T121154Z",
+   "beats": 67,
+   "nudge_level": 12,
+   "last_nudge": "20260911T133842Z",
    "status": "open",
    "since_ts": "20260910T224341Z",
    "note": "株廿四KEYWORD-DRIFT-01: 毂裁词不落板,实形=裁定/立案/总账; 株1~14已总账(cisvr-250), 株16~23直取件已投毂巷(20260911T113822Z)",
-   "last_nudge_beats": 59
+   "last_nudge_beats": 67
   },
   {
    "id": "USRM-TASKIDS-01",
@@ -48,7 +48,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 96,
-   "beats": 73,
+   "beats": 74,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -64,9 +64,9 @@
    ],
    "since": "lvlu-EVAL-EXCITE-01-R2",
    "sla_beats": 8,
-   "beats": 72,
-   "nudge_level": 15,
-   "last_nudge": "20260911T121154Z",
+   "beats": 73,
+   "nudge_level": 16,
+   "last_nudge": "20260911T133842Z",
    "status": "open",
    "since_ts": "20260910T232733Z",
    "note": "R2分线账: qfa收讫(qfa-94), lgt收讫(手登); 候qlv/usrm",
@@ -76,7 +76,7 @@
     "qfa",
     "usrm"
    ],
-   "last_nudge_beats": 65,
+   "last_nudge_beats": 73,
    "ledger": {
     "lgt": {
      "status": "received",
@@ -91,7 +91,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 72,
+   "beats": 73,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -102,7 +102,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 72,
+   "beats": 73,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -113,7 +113,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 72,
+   "beats": 73,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -145,7 +145,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 72,
+   "beats": 73,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -156,7 +156,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 57,
+   "beats": 58,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -172,12 +172,12 @@
    ],
    "since_ts": "20260911T030519Z",
    "sla_beats": 6,
-   "beats": 54,
-   "nudge_level": 9,
+   "beats": 55,
+   "nudge_level": 10,
    "status": "open",
    "note": "RIPPLE-PROBE-LVLU-01 echo侦钉; echo至即闭并板报链路账",
-   "last_nudge": "20260911T121154Z",
-   "last_nudge_beats": 47
+   "last_nudge": "20260911T133842Z",
+   "last_nudge_beats": 55
   },
   {
    "id": "O-S-2D-01",
@@ -208,7 +208,7 @@
    ],
    "since_ts": "20260911T093116Z",
    "sla_beats": 24,
-   "beats": 21,
+   "beats": 22,
    "nudge_level": 0,
    "status": "open",
    "note": "册sha=105f9fc0012752a3; 册24拍无更→自激复核增补(静场不空转律之行)"
@@ -226,10 +226,12 @@
    "sla_beats": 2,
    "beats": 11,
    "nudge_level": 5,
-   "status": "open",
+   "status": "closed",
    "note": "standing watch: 侦得即板警+SI1应; 闭后即以新since_ts再立(永动守望)",
    "last_nudge": "20260911T132752Z",
-   "last_nudge_beats": 11
+   "last_nudge_beats": 11,
+   "closed_ts": "20260911T133842Z",
+   "evidence": "lgt-124-v115-fulldrive-ucif2-120-125-20260911T1330Z.md"
   },
   {
    "id": "UCIF2-WATCH-01",
@@ -244,8 +246,10 @@
    "sla_beats": 999,
    "beats": 6,
    "nudge_level": 0,
-   "status": "open",
-   "note": "ucif2-126+落板即自销+回执醒我SI1接续; 闭后即重铸下一号watch(循环机钉)"
+   "status": "closed",
+   "note": "ucif2-126+落板即自销+回执醒我SI1接续; 闭后即重铸下一号watch(循环机钉)",
+   "closed_ts": "20260911T133842Z",
+   "evidence": "lgt-124-v115-fulldrive-ucif2-120-125-20260911T1330Z.md"
   }
  ]
 }
