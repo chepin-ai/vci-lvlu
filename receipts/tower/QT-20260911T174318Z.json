@@ -1,0 +1,45 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T174318Z",
+ "idle_in": 6,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260911T090619Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ANS-LVLU-WAVE3-01-20260911T091424Z.md",
+   "opened": "20260911T091847Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-06-20260911T1330Z.md",
+   "opened": "20260911T133820Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPVINFLOOPLVLU01vinfmd",
+   "ref": "OTP-VINF-LOOP-LVLU-01-vinf.md",
+   "opened": "20260911T155642Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQG",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QGL-OTP-FIVELINE-106-lvlu-20260911T1605Z.md",
+   "opened": "20260911T161841Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① ev件：R2光评副件滞库，录lvlu评档诉求；QL件：WAVE3应答未回，录lvlu对频诉求；NU件：轻推06触达失败，录lvlu唤醒诉求；OTPVINF件：OTP-VINF验真循环卡死，录lvlu验真诉求；QG件：五线106确权悬空，录lvlu落线诉求。\n\n② 应动ev、QL两件（tries 47/46最高，立协同不候）。\n\n③ ev未闭，压副件终版；QL未闭，强发收确；NU未闭，换道再振；OTPVINF未闭，注校验包破环；QG未闭，催QGL确权或落线。\n\n④ 生债：LVLU五线并发债，责SI0今日闭二、押三。",
+ "wq_excerpt": ""
+}
