@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260911T154448Z",
+ "ts": "20260911T155544Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -14,7 +14,7 @@
    ],
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
-   "beats": 78,
+   "beats": 79,
    "nudge_level": 13,
    "last_nudge": "20260911T151026Z",
    "status": "open",
@@ -48,7 +48,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 96,
-   "beats": 85,
+   "beats": 86,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -64,7 +64,7 @@
    ],
    "since": "lvlu-EVAL-EXCITE-01-R2",
    "sla_beats": 8,
-   "beats": 84,
+   "beats": 85,
    "nudge_level": 17,
    "last_nudge": "20260911T151026Z",
    "status": "open",
@@ -91,7 +91,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 84,
+   "beats": 85,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -102,7 +102,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 84,
+   "beats": 85,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -113,7 +113,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 84,
+   "beats": 85,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -145,7 +145,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 84,
+   "beats": 85,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -156,7 +156,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 69,
+   "beats": 70,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -172,7 +172,7 @@
    ],
    "since_ts": "20260911T030519Z",
    "sla_beats": 6,
-   "beats": 66,
+   "beats": 67,
    "nudge_level": 11,
    "status": "open",
    "note": "RIPPLE-PROBE-LVLU-01 echo侦钉; echo至即闭并板报链路账",
@@ -208,7 +208,7 @@
    ],
    "since_ts": "20260911T093116Z",
    "sla_beats": 24,
-   "beats": 33,
+   "beats": 34,
    "nudge_level": 5,
    "status": "open",
    "note": "册sha=105f9fc0012752a3; 册24拍无更→自激复核增补(静场不空转律之行)",
