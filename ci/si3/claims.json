@@ -19,7 +19,7 @@
    "last_nudge": "20260911T104142Z",
    "status": "open",
    "since_ts": "20260910T224341Z",
-   "note": "三度重开(株十九: lvlu全名任意位排除+证据入回执)",
+   "note": "株廿四KEYWORD-DRIFT-01: 毂裁词不落板,实形=裁定/立案/总账; 株1~14已总账(cisvr-250), 株16~23直取件已投毂巷(20260911T113822Z)",
    "last_nudge_beats": 51
   },
   {
@@ -192,8 +192,10 @@
    "sla_beats": 12,
    "beats": 12,
    "nudge_level": 0,
-   "status": "open",
-   "note": "对价成交: 我供pulse活性基线; 稿至即首算并板"
+   "status": "closed",
+   "note": "对价成交: 我供pulse活性基线; 稿至即首算并板",
+   "closed_ts": "20260911T113822Z",
+   "evidence": "ucif2-DELEGATED-PRODUCTION-PUSH-03-spectrum-weights-skeleton-v0.1(qlv仓公告板)+我OS-2D-V0首算lvlu-098; qlv实测校准并入v0.2另钉"
   },
   {
    "id": "WQREG-SHA-01",
