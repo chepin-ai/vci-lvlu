@@ -10,17 +10,16 @@
    "repo": "ci-inbox",
    "prefix": "公告板/",
    "contains": [
-    "cisvr"
+    "毂裁"
    ],
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
    "beats": 0,
    "nudge_level": 0,
    "last_nudge": "",
-   "status": "closed",
+   "status": "open",
    "since_ts": "20260910T224341Z",
-   "note": "株十七误判已修(军令/广播含cisvr旧帖误匹) → since_ts时戳轨",
-   "closed_ts": "20260911T000025Z"
+   "note": "二误判(cisvr直取一轮帖非裁词)→contains收紧至[毂裁]；株十八 CAND-SIG-01 候选签名律"
   },
   {
    "id": "USRM-TASKIDS-01",
