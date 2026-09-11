@@ -17,10 +17,9 @@
    "beats": 0,
    "nudge_level": 0,
    "last_nudge": "",
-   "status": "closed",
+   "status": "open",
    "since_ts": "20260910T224341Z",
-   "note": "二误判(cisvr直取一轮帖非裁词)→contains收紧至[毂裁]；株十八 CAND-SIG-01 候选签名律",
-   "closed_ts": "20260911T002757Z"
+   "note": "三度重开(株十九: lvlu全名任意位排除+证据入回执)"
   },
   {
    "id": "USRM-TASKIDS-01",
@@ -65,10 +64,15 @@
    "beats": 6,
    "nudge_level": 0,
    "last_nudge": "",
-   "status": "closed",
+   "status": "open",
    "since_ts": "20260910T232733Z",
-   "note": "qfa已回(qfa-94)；候lgt/qlv；全员齐则SI1手销",
-   "closed_ts": "20260911T002757Z"
+   "note": "多签制: 四环齐现方销(qfa已回在案)",
+   "need_lines": [
+    "lgt",
+    "qlv",
+    "qfa",
+    "usrm"
+   ]
   },
   {
    "id": "IBM-KYC-ROOT",
