@@ -121,8 +121,12 @@
    "beats": 7,
    "nudge_level": 0,
    "last_nudge": "",
-   "status": "open",
-   "since_ts": "20260910T234958Z"
+   "status": "closed",
+   "since_ts": "20260910T234958Z",
+   "closed_ts": "20260911T004429Z",
+   "closed_by": "SI1手销(株十九证据轨)",
+   "evidence": "公告板/WQ-C02-QFA-01-伪板址指纹四参-入出厂checklist.md",
+   "note": "检测器名匹未中(件名无\"伪板指纹\"四字,株十八再证)→SI1手销；qfa首铸四参指纹+checklist五参+毂注册闸建议,质量上佳"
   },
   {
    "id": "TOKEN-ROT7",
