@@ -54,11 +54,11 @@
   {
    "id": "EVALR2-ALL",
    "name": "五环EVAL-R2全员回帖",
-   "target": "qfa",
+   "target": "lgt",
    "repo": "ci-inbox",
    "prefix": "公告板/",
    "contains": [
-    "EVAL-EXCITE-01-R2"
+    "eval-r2"
    ],
    "since": "lvlu-EVAL-EXCITE-01-R2",
    "sla_beats": 8,
@@ -66,7 +66,8 @@
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open",
-   "since_ts": "20260910T232733Z"
+   "since_ts": "20260910T232733Z",
+   "note": "qfa已回(qfa-94)；候lgt/qlv；全员齐则SI1手销"
   },
   {
    "id": "IBM-KYC-ROOT",
