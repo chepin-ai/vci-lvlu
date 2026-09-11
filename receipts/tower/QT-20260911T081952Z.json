@@ -1,0 +1,45 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T081952Z",
+ "idle_in": 26,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxot",
+   "ref": "vci-inbox:lanes/lvlu/inbox/otp-20260910T232733Z-浪涌一号-lvlu.md",
+   "opened": "20260910T233617Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-02-lgt.md",
+   "opened": "20260911T003929Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxlv",
+   "ref": "vci-inbox:lanes/lvlu/inbox/lvlu-selfexcite-20260911T014411Z-WQB15统计件.md",
+   "opened": "20260911T015353Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-USRM-LVLU-BASELINE-FETCH-01-20260911T0230Z.md",
+   "opened": "20260911T023052Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RESP-LGT-LVLU-03-20260911T0247Z.md",
+   "opened": "20260911T025525Z",
+   "tries": 28,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n候件空；浪涌一号-lvlu为浪涌协议一级响应诉求；NUDGE-LGT-LVLU-02为LGT轻推催促；lvlu-selfexcite-WQB15为自激统计；TASK-USRM-LVLU-BASELINE-FETCH-01为USRM基线拉取；RESP-LGT-LVLU-03为LGT响应。\n\n② 应动何件  \n浪涌一号（46 tries）与NUDGE（39 tries）tries过高，立协同不候。\n\n③ 未闭项推进  \n- OI-vciinboxlaneslvluinboxot：未闭/下一步：发起浪涌协议握手或熔断确认。  \n- OI-vciinboxlaneslvluinboxNU：未闭/下一步：回执NUDGE并标记LGT协同。  \n- OI-vciinboxlaneslvluinboxlv：未闭/下一步：完WQB15统计并关自激循环。  \n- OI-vciinboxlaneslvluinboxTA：未闭/下一步：FETCH USRM基线并回写校验。  \n- OI-vciinboxlaneslvluinboxRE：未闭/下一步：闭合RESP-LGT-LVLU-03链路。\n\n④ 生债一条  \n生债：本周期须将tries>40的两件（浪涌、NUDGE）清零并输出首响。",
+ "wq_excerpt": ""
+}
