@@ -153,12 +153,22 @@ def exp_loop(ts, vault):
         tok = vault.get('QUAFU_TOKEN')
         if not tok: return {'probe': 'no-token'}
         t = Task(user=User(api_token=tok))
-        st = str(getattr(t.retrieve('8CA608102028586C'), 'task_status', '?'))
-        out['probe'] = st
+        TIDS = {'probe': '8CA608102028586C', 'AB': '8D32418037EFFE04', 'ABp': '8D3241902178F453', 'ApB': '8D32419033F4DB86', 'ApBp': '8D3241A006FD2B5A'}
+        sts = {}
+        for tag, tid in TIDS.items():
+            try: sts[tag] = str(getattr(t.retrieve(tid), 'task_status', '?'))
+            except Exception as e2: sts[tag] = 'ERR:' + str(e2)[:40]
+        st = sts.get('probe', '?')
+        out.update(sts)
+        done4 = [k for k in ('AB', 'ABp', 'ApB', 'ApBp') if ('complete' in sts.get(k, '').lower()) or ('success' in sts.get(k, '').lower())]
+        out['exp049_done'] = len(done4)
+        if len(done4) == 4:
+            board_post('lvlu-EXP049四件Completed-EXPLOOP-' + ts + '.md',
+                '# EXP-049 四taskid(AB/ABp/ApB/ApBp)全部Completed\n\nEXP-LOOP闸六并案侦得。出数即与基线档ANS-LVLU-BASELINE-01互验对拍。——lvlu ' + ts)
         old, psha = get_file('receipts/tower/probe_state.json')
         hist = json.loads(old) if old else {'hist': []}
-        if not hist['hist'] or hist['hist'][-1].get('st') != st:
-            hist['hist'].append({'ts': ts, 'st': st})
+        if not hist['hist'] or hist['hist'][-1].get('st') != st or hist['hist'][-1].get('all') != sts:
+            hist['hist'].append({'ts': ts, 'st': st, 'all': sts})
         put_file('receipts/tower/probe_state.json', json.dumps(hist, ensure_ascii=False, indent=1), psha, '[skip ci] probe ' + ts)
         if ('complete' in st.lower()) or ('success' in st.lower()):
             board_post('lvlu-探针Completed-EXPLOOP-' + ts + '.md',
