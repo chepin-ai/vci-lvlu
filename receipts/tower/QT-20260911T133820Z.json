@@ -1,0 +1,47 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T133820Z",
+ "idle_in": 19,
+ "events": [
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-06-20260911T1330Z.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ANS-LVLU-03-20260911T133429Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-USRM-TASKIDS-01.md",
+   "opened": "20260911T084337Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260911T090619Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ANS-LVLU-WAVE3-01-20260911T091424Z.md",
+   "opened": "20260911T091847Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-06-20260911T1330Z.md",
+   "opened": "20260911T133820Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- NUDGE-LGT-LVLU-06：LGT向lvlu发第6号轻推，催速响应，涉lvlu诉求已录。\n- QLV-ANS-LVLU-03：QLV向lvlu返第3号答件，涉wave3协同结论，涉lvlu诉求已录。\n\n②应动何件\n应动ANS-USRM-TASKIDS-01（27试未闭，卡死最长，立协同不候）；QLV-ANS-LVLU-03入库即启。\n\n③未闭项推进\n- ANS-USRM-TASKIDS-01：未闭，硬输出task-id映射并签出。\n- eval-r2-lgt",
+ "wq_excerpt": ""
+}
