@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260910T235822Z",
+ "ts": "20260911T000025Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -17,9 +17,10 @@
    "beats": 0,
    "nudge_level": 0,
    "last_nudge": "",
-   "status": "open",
+   "status": "closed",
    "since_ts": "20260910T224341Z",
-   "note": "株十七误判已修(军令/广播含cisvr旧帖误匹) → since_ts时戳轨"
+   "note": "株十七误判已修(军令/广播含cisvr旧帖误匹) → since_ts时戳轨",
+   "closed_ts": "20260911T000025Z"
   },
   {
    "id": "USRM-TASKIDS-01",
@@ -33,7 +34,7 @@
    ],
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
-   "beats": 2,
+   "beats": 3,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open",
@@ -45,7 +46,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 96,
-   "beats": 2,
+   "beats": 3,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -61,7 +62,7 @@
    ],
    "since": "lvlu-EVAL-EXCITE-01-R2",
    "sla_beats": 8,
-   "beats": 2,
+   "beats": 3,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open",
@@ -73,7 +74,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 1,
+   "beats": 2,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -84,7 +85,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 1,
+   "beats": 2,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -95,7 +96,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 1,
+   "beats": 2,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -111,7 +112,7 @@
    ],
    "since": "lvlu-浪涌一号一拍战报",
    "sla_beats": 10,
-   "beats": 1,
+   "beats": 2,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open",
@@ -123,7 +124,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 1,
+   "beats": 2,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
