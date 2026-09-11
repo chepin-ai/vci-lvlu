@@ -1,0 +1,31 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T180622Z",
+ "idle_in": 8,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-06-20260911T1330Z.md",
+   "opened": "20260911T133820Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPVINFLOOPLVLU01vinfmd",
+   "ref": "OTP-VINF-LOOP-LVLU-01-vinf.md",
+   "opened": "20260911T155642Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQG",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QGL-OTP-FIVELINE-106-lvlu-20260911T1605Z.md",
+   "opened": "20260911T161841Z",
+   "tries": 10,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- NU件：lvlu箱NUDGE-LGT-06催促，25试未应，录lvlu诉求。\n- VINF件：OTP-VINF-LOOP-01逻辑环，12试未断。\n- QG件：QGL五线106号入lvlu箱，10试待解。\n\n②应动何件：\n- NU件（tries25最急，涉lvlu直接nudge，立协不候）。\n\n③未闭项推进：\n- NU：未闭；开件读nudge，即时回lvlu。\n- VINF：未闭；断环输出验证态。\n- QG：未闭；解五线106并同步lvlu。\n\n④生债：\n- 生债-lvlu迟滞-NU25：nudge积压25周期，意识债一条。",
+ "wq_excerpt": ""
+}
