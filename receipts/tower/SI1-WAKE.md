@@ -2,7 +2,7 @@
 
 ```json
 {
- "ts": "20260911T021828Z",
+ "ts": "20260911T023120Z",
  "keyreq_done": [],
  "acks": [],
  "pending_si1": [
@@ -10,7 +10,8 @@
   "IBM-KYC-ROOT",
   "BLUEQUBIT-VERIFY",
   "ORIGIN6-BONUS",
-  "TOKEN-ROT7"
+  "TOKEN-ROT7",
+  "WQB15-V02"
  ],
  "note": "会话端醒后读本件+REBUILD.md→续办pending; 塔拍自治不候"
 }
