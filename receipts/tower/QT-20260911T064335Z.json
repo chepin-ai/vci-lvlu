@@ -1,0 +1,87 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T064335Z",
+ "idle_in": 18,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-QLVEVALEXCITE0120260910m",
+   "ref": "QLV-EVAL-EXCITE-01-2026-09-10.md",
+   "opened": "20260910T222044Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-QLVRING4NOTICE0120260910",
+   "ref": "QLV-RING4-NOTICE-01-2026-09-10.md",
+   "opened": "20260910T223126Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOT",
+   "ref": "vci-inbox:lanes/lvlu/inbox/OTP-LGT-EVAL-EXCITE-01-lvlu.md",
+   "opened": "20260910T224217Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqf",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qfa-mech-call-01-20260910T224204Z.md",
+   "opened": "20260910T224217Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-NEG-FETCH-01-20260910T2256Z.md",
+   "opened": "20260910T230350Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxKE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/KEYREQ-LGT-WORKER-01-01-lgt.md",
+   "opened": "20260910T231440Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxot",
+   "ref": "vci-inbox:lanes/lvlu/inbox/otp-20260910T232733Z-浪涌一号-lvlu.md",
+   "opened": "20260910T233617Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-02-lgt.md",
+   "opened": "20260911T003929Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxlv",
+   "ref": "vci-inbox:lanes/lvlu/inbox/lvlu-selfexcite-20260911T014411Z-WQB15统计件.md",
+   "opened": "20260911T015353Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-USRM-LVLU-BASELINE-FETCH-01-20260911T0230Z.md",
+   "opened": "20260911T023052Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RESP-LGT-LVLU-03-20260911T0247Z.md",
+   "opened": "20260911T025525Z",
+   "tries": 20,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n候件空。未闭八项：  \n- OI-QLVEVALEXCITE0120260910m：EVAL-EXCITE评估单，测lvlu兴奋响应阈值。  \n- OI-QLVRING4NOTICE0120260910：RING4通告，环四状态变更待lvlu签认。  \n- OI-vciinboxlaneslvluinboxOT：OTP轻量激发验证，lvlu通道待核销。  \n- OI-vciinboxlaneslvluinboxqf：qfa机制呼叫，待lvlu解析回调。  \n- OI-vciinboxlaneslvluinboxQL：NEG-FETCH负向拉取，lvlu须补全数据。  \n- OI-vciinboxlaneslvluinboxKE：KEYREQ密钥请求，lgt索权待lvlu核签。  \n- OI-vciinboxlaneslvluinboxot：浪涌一号OTP，时效验证待lvlu即时校验。  \n- OI-vciinboxlaneslvluinboxNU：NUDGE二次轻推，待lvlu回传相位。  \n\n② 应动何件（立协同不候）  \n全项tries皆逾三十，俱应立协；尤先动：OI-QLVEVALEXCITE0120260910m（45试）、OI-QLVRING4NOTICE0120260910（44试",
+ "wq_excerpt": ""
+}
