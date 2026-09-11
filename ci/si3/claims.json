@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260911T001655Z",
+ "ts": "20260911T002757Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -17,9 +17,10 @@
    "beats": 0,
    "nudge_level": 0,
    "last_nudge": "",
-   "status": "open",
+   "status": "closed",
    "since_ts": "20260910T224341Z",
-   "note": "二误判(cisvr直取一轮帖非裁词)→contains收紧至[毂裁]；株十八 CAND-SIG-01 候选签名律"
+   "note": "二误判(cisvr直取一轮帖非裁词)→contains收紧至[毂裁]；株十八 CAND-SIG-01 候选签名律",
+   "closed_ts": "20260911T002757Z"
   },
   {
    "id": "USRM-TASKIDS-01",
@@ -33,9 +34,9 @@
    ],
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
-   "beats": 6,
-   "nudge_level": 0,
-   "last_nudge": "",
+   "beats": 7,
+   "nudge_level": 1,
+   "last_nudge": "20260911T002757Z",
    "status": "open",
    "since_ts": "20260910T232733Z"
   },
@@ -45,7 +46,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 96,
-   "beats": 6,
+   "beats": 7,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -64,9 +65,10 @@
    "beats": 6,
    "nudge_level": 0,
    "last_nudge": "",
-   "status": "open",
+   "status": "closed",
    "since_ts": "20260910T232733Z",
-   "note": "qfa已回(qfa-94)；候lgt/qlv；全员齐则SI1手销"
+   "note": "qfa已回(qfa-94)；候lgt/qlv；全员齐则SI1手销",
+   "closed_ts": "20260911T002757Z"
   },
   {
    "id": "IBM-KYC-ROOT",
@@ -74,7 +76,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 5,
+   "beats": 6,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -85,7 +87,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 5,
+   "beats": 6,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -96,7 +98,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 5,
+   "beats": 6,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -112,7 +114,7 @@
    ],
    "since": "lvlu-浪涌一号一拍战报",
    "sla_beats": 10,
-   "beats": 5,
+   "beats": 6,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open",
@@ -124,7 +126,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 5,
+   "beats": 6,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
