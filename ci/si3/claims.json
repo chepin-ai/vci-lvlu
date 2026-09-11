@@ -194,6 +194,22 @@
    "nudge_level": 0,
    "status": "open",
    "note": "对价成交: 我供pulse活性基线; 稿至即首算并板"
+  },
+  {
+   "id": "WQREG-SHA-01",
+   "name": "野问册sha更检自钉",
+   "target": "lvlu",
+   "repo": "ci-inbox",
+   "prefix": "讨论室/",
+   "contains": [
+    "WILD-Q-REGISTRY-02"
+   ],
+   "since_ts": "20260911T093116Z",
+   "sla_beats": 24,
+   "beats": 0,
+   "nudge_level": 0,
+   "status": "open",
+   "note": "册sha=105f9fc0012752a3; 册24拍无更→自激复核增补(静场不空转律之行)"
   }
  ]
 }
