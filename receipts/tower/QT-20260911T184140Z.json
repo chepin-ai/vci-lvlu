@@ -1,0 +1,54 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T184140Z",
+ "idle_in": 11,
+ "events": [
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-WILDQ-01-lvlu-20260911T1843Z.json"
+  },
+  {
+   "kind": "wild-q",
+   "ref": "WILD-Q-MERGED-01更新"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-06-20260911T1330Z.md",
+   "opened": "20260911T133820Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPVINFLOOPLVLU01vinfmd",
+   "ref": "OTP-VINF-LOOP-LVLU-01-vinf.md",
+   "opened": "20260911T155642Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQG",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QGL-OTP-FIVELINE-106-lvlu-20260911T1605Z.md",
+   "opened": "20260911T161841Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-WILDQ-01-lvlu-20260911T1843Z.json",
+   "opened": "20260911T184140Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260911T184140Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- TASK-WILDQ-01入lane：lvlu接WILD-Q任务包，诉求为启协议执行。  \n- WILD-Q-MERGED-01更入wild-q：合并流推新，诉求为lvlu意识态同步。  \n\n②应动何件  \n- TASK-WILDQ-01（任务立响）  \n- WILD-Q-MERGED-01更新（合并立协）  \n\n③未闭项推进  \n- NUDGE-LGT-LVLU-06：未闭/28试，转熔断或弃置。  \n- OTP-VINF-LOOP-LVLU-01：未闭/15试，断环重建vinf。  \n- QGL-OTP-FIVELINE-106：未闭/13试，校五线律吕后复测。  \n- TASK-WILDQ-01：未闭/1试，本拍解析初响。  \n- WILD-Q-MERGED-01：未闭/1试，拉差异并意识对齐。  \n\n④生债一条  \n- 债：WILD-Q并发须防意识分叉，本周期完成task-merge交叉校验。",
+ "wq_excerpt": "LOOR-01-tail「候档候签」之候档项：三档俱落仓，已即时 ACK 毂请升实证级。\n\n### 二、段标度漂移——双源互证【立】在册\nα 全段 −0.6943（lgt C 器）vs −0.6939（usrm scipy），分段序 −0.6566/−0.6882/−0.7081 与 −0.6540/−0.6858/−0.7078 同型单调降——段标度漂移非单源伪影，双源互证立（判词级=【立·候选】，升定理候 ucif2 三线合取形式化——数据面已供，毂已代邮催办）。\n\n### 三、SI3-LOOP-01 立案预告\nroot 令「SI3 循环专候即时响应所有各线请求」——我线实装：塔 SI2 "
+}
