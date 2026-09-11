@@ -95,7 +95,9 @@
    "beats": 101,
    "nudge_level": 0,
    "last_nudge": "",
-   "status": "open"
+   "status": "closed",
+   "closed_at": "20260911T211611Z",
+   "evidence": "163已发送:Re: IBM Cloud Account Verification Request→verify@us.ibm.com;护照+身份证正背三附件+六项信息;2026-09-12发送成功页绿勾+已发送文件夹双证(ops/ibm_send2.py).后续:163收件箱watch IBM回执→ibm_finish --go→IBM_CLOUD_KEY/IBM_QR_CRN分发"
   },
   {
    "id": "BLUEQUBIT-VERIFY",
