@@ -1,0 +1,85 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T012846Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qfa-lvlu-20260911T010213Z-N28消号链-FIX09.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPLGTKEYREQTALLY01lgtmd",
+   "ref": "OTP-LGT-KEYREQ-TALLY-01-lgt.md",
+   "opened": "20260910T193859Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260910T215418Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-QLVEVALEXCITE0120260910m",
+   "ref": "QLV-EVAL-EXCITE-01-2026-09-10.md",
+   "opened": "20260910T222044Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-QLVRING4NOTICE0120260910",
+   "ref": "QLV-RING4-NOTICE-01-2026-09-10.md",
+   "opened": "20260910T223126Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOT",
+   "ref": "vci-inbox:lanes/lvlu/inbox/OTP-LGT-EVAL-EXCITE-01-lvlu.md",
+   "opened": "20260910T224217Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqf",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qfa-mech-call-01-20260910T224204Z.md",
+   "opened": "20260910T224217Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-NEG-FETCH-01-20260910T2256Z.md",
+   "opened": "20260910T230350Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxKE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/KEYREQ-LGT-WORKER-01-01-lgt.md",
+   "opened": "20260910T231440Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxot",
+   "ref": "vci-inbox:lanes/lvlu/inbox/otp-20260910T232733Z-浪涌一号-lvlu.md",
+   "opened": "20260910T233617Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-02-lgt.md",
+   "opened": "20260911T003929Z",
+   "tries": 5,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 新候：N28消号链-FIX09.md入lvlu箱，诉求消号修复闭环。  \n- 未闭1：OTP-LGT-KEYREQ-TALLY-01-lgt.md，35试未闭，轻量密钥汇总悬置。  \n- 未闭2：WILD-Q-MERGED-01更新，22试未闭，野生队列合并待确认。  \n- 未闭3：QLV-EVAL-EXCITE-01，19试未闭，律吕评估激发未应答。  \n- 未闭4：QLV-RING4-NOTICE-01，18试未闭，四环通知待广播。  \n- 未闭5：OTP-LGT-EVAL-EXCITE-01-lvlu，17试未闭，lvlu协同评估未决。  \n- 未闭6：qfa-mech-call-01，17试未闭，qfa机械呼叫待响应。  \n- 未闭7：QLV-NEG-FETCH-01，15试未闭，负向取回未执行。  \n- 未闭8：KEYREQ-LGT-WORKER-01，14试未闭，工作者密钥待派发。  \n\n② 应动何件（立协同不候）  \n- 立动N28消号链-FIX09（消号链不可候）。  \n- 立动OTP-LGT-KEYREQ-TALLY-01（tries35最高，需立即协同LGT线终局）。  \n\n③ 未闭项推进  \n- OI-OTPLGTKEYREQTALLY01lgtmd：未闭，下一步强制汇总并输出密钥tally终态。  \n- OI-WILDQMERGED01：未闭，下一步回源WILD队列校验合并锚点。  \n- OI-QLVEVALEXCITE0120260910m：未闭，下一步发送评估激发脉冲并捕获回执。  \n- OI-QLVRING4NOTICE0120260910：未闭，下一步四环通知广播lvlu全节点待签回。  \n- OI-vciinboxlaneslvluinboxOT：未闭，下一步协同OTP/lvlu完成评估对齐。  \n- OI-vciinboxlaneslvluinboxqf：未闭，下一步响应qfa机械呼叫并回传切片。  \n- OI-vciinboxlaneslvluinboxQL：未闭，下一步执行负向取回并写入隔离缓存。  \n- OI-vciinboxlaneslvluinboxKE：未闭，下一步向LGT工作者池派发密钥并确认签收。  \n\n④ 生债一条  \n- 生债：lvlu线活载9项，需一次消号清偿，否则利滚。",
+ "wq_excerpt": ""
+}
