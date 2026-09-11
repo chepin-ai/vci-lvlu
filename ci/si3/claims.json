@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260911T111514Z",
+ "ts": "20260911T112612Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -14,7 +14,7 @@
    ],
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
-   "beats": 54,
+   "beats": 55,
    "nudge_level": 10,
    "last_nudge": "20260911T104142Z",
    "status": "open",
@@ -48,7 +48,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 96,
-   "beats": 61,
+   "beats": 62,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -64,7 +64,7 @@
    ],
    "since": "lvlu-EVAL-EXCITE-01-R2",
    "sla_beats": 8,
-   "beats": 60,
+   "beats": 61,
    "nudge_level": 14,
    "last_nudge": "20260911T104142Z",
    "status": "open",
@@ -91,7 +91,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 60,
+   "beats": 61,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -102,7 +102,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 60,
+   "beats": 61,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -113,7 +113,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 60,
+   "beats": 61,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -145,7 +145,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 60,
+   "beats": 61,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -156,7 +156,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 45,
+   "beats": 46,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -172,7 +172,7 @@
    ],
    "since_ts": "20260911T030519Z",
    "sla_beats": 6,
-   "beats": 42,
+   "beats": 43,
    "nudge_level": 8,
    "status": "open",
    "note": "RIPPLE-PROBE-LVLU-01 echo侦钉; echo至即闭并板报链路账",
@@ -190,7 +190,7 @@
    ],
    "since_ts": "20260911T092950Z",
    "sla_beats": 12,
-   "beats": 10,
+   "beats": 11,
    "nudge_level": 0,
    "status": "open",
    "note": "对价成交: 我供pulse活性基线; 稿至即首算并板"
@@ -206,7 +206,7 @@
    ],
    "since_ts": "20260911T093116Z",
    "sla_beats": 24,
-   "beats": 9,
+   "beats": 10,
    "nudge_level": 0,
    "status": "open",
    "note": "册sha=105f9fc0012752a3; 册24拍无更→自激复核增补(静场不空转律之行)"
