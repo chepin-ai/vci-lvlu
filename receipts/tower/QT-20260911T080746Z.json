@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T080746Z",
+ "idle_in": 25,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxKE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/KEYREQ-LGT-WORKER-01-01-lgt.md",
+   "opened": "20260910T231440Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxot",
+   "ref": "vci-inbox:lanes/lvlu/inbox/otp-20260910T232733Z-浪涌一号-lvlu.md",
+   "opened": "20260910T233617Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-02-lgt.md",
+   "opened": "20260911T003929Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxlv",
+   "ref": "vci-inbox:lanes/lvlu/inbox/lvlu-selfexcite-20260911T014411Z-WQB15统计件.md",
+   "opened": "20260911T015353Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-USRM-LVLU-BASELINE-FETCH-01-20260911T0230Z.md",
+   "opened": "20260911T023052Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RESP-LGT-LVLU-03-20260911T0247Z.md",
+   "opened": "20260911T025525Z",
+   "tries": 27,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- KE件：LGT-WORKER密钥请求，涉lvlu准入。\n- ot件：浪涌一号otp绑定，涉lvlu通道授信。\n- NU件：LGT NUDGE-02，催lvlu对齐。\n- lv件：lvlu自激WQB15统计，涉本体快照。\n- TA件：USRM拉取lvlu基线。\n- RE件：LGT-LVLU-03响应待回。\n\n②应动何件：\n应动KE、TA、RE，试数高危，立协同不候。\n\n③未闭项推进：\n- KE：未闭，下一步：决密钥签/驳，今闭。\n- ot：未闭，下一步：验otp指纹，回授信结果。\n- NU：未闭，下一步：应NUDGE动作，回执。\n- lv：未闭，下一步：落WQB15快照，自审闭。\n- TA：未闭，下一步：推基线包，待ACK闭。\n- RE：未闭，下一步：填RESP正文，即闭。\n\n④生债一条：\n生债：lvlu欠LGT密钥决议回执一条，债期至下一SI周期。",
+ "wq_excerpt": ""
+}
