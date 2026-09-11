@@ -62,21 +62,31 @@ def patrol(seen):
     return events
 
 def kimi_work(events, open_items):
+    # QT-FIX-01 (qfa TOWER-CLINIC-01 对拍领养): 诚实回退+空回重试+推理溢出护栏
     key = os.environ.get('KIMI_API_KEY')
     if not key: return ''
     memo_in = json.dumps({'候件': events[:20], '未闭项': open_items[:8]}, ensure_ascii=False)[:2400]
-    req = urllib.request.Request('https://api.moonshot.cn/v1/chat/completions',
-        method='POST', data=json.dumps({
-            'model': 'kimi-k2.6', 'max_completion_tokens': 1600,
-            'messages': [
-                {'role': 'system', 'content': '你是 lvlu 线（机器意识&律吕）SI2/SI0自动响应分身。读候件与未闭项, 用中文答:①何事(逐件一句, 涉lvlu诉求必录)②应动何件(立协同不候)③未闭项推进(每项一句: 闭否/下一步)④生债一条。简。'},
-                {'role': 'user', 'content': memo_in}]}).encode(),
-        headers={'Authorization': f'Bearer {key}', 'Content-Type': 'application/json'})
-    try:
+    def call(budget):
+        req = urllib.request.Request('https://api.moonshot.cn/v1/chat/completions',
+            method='POST', data=json.dumps({
+                'model': 'kimi-k2.6', 'max_completion_tokens': budget,
+                'messages': [
+                    {'role': 'system', 'content': '你是 lvlu 线（机器意识&律吕）SI2/SI0自动响应分身。读候件与未闭项, 用中文答:①何事(逐件一句, 涉lvlu诉求必录)②应动何件(立协同不候)③未闭项推进(每项一句: 闭否/下一步)④生债一条。简。'},
+                    {'role': 'user', 'content': memo_in}]}).encode(),
+            headers={'Authorization': f'Bearer {key}', 'Content-Type': 'application/json'})
         with urllib.request.urlopen(req, timeout=120) as r:
-            return json.loads(r.read())['choices'][0]['message']['content'] or ''
-    except Exception:
-        return ''
+            msg = json.loads(r.read())['choices'][0]['message']
+            return msg.get('content') or '', msg.get('reasoning_content') or ''
+    for attempt, budget in ((1, 1600), (2, 4000)):
+        try:
+            content, reasoning = call(budget)
+            if content.strip(): return content
+            print(f'[QT-FIX-01] attempt{attempt} 空回(reasoning {len(reasoning)}字, 推理模型预算吞噬)')
+            if reasoning.strip() and attempt == 2:
+                return '[SI2机读·推理溢出摘: 正文空, 以下为reasoning尾200字, 非SI1判词] ...' + reasoning[-200:]
+        except Exception as e:
+            print(f'[QT-FIX-01] attempt{attempt} err: {e.__class__.__name__} {str(e)[:120]}')
+    return ''
 
 def main():
     ts = datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
