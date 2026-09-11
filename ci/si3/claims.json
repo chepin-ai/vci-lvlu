@@ -160,6 +160,22 @@
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
+  },
+  {
+   "id": "REVDRV-01",
+   "name": "反向驱动探针回声",
+   "target": "qfa+qlv",
+   "repo": "vci-inbox",
+   "prefix": "lanes/lvlu/inbox/",
+   "contains": [
+    "lvluT030519Z"
+   ],
+   "since_ts": "20260911T030519Z",
+   "sla_beats": 6,
+   "beats": 0,
+   "nudge_level": 0,
+   "status": "open",
+   "note": "RIPPLE-PROBE-LVLU-01 echo侦钉; echo至即闭并板报链路账"
   }
  ]
 }
