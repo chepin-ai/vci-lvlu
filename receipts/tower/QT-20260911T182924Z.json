@@ -1,0 +1,31 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T182924Z",
+ "idle_in": 10,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-06-20260911T1330Z.md",
+   "opened": "20260911T133820Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPVINFLOOPLVLU01vinfmd",
+   "ref": "OTP-VINF-LOOP-LVLU-01-vinf.md",
+   "opened": "20260911T155642Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQG",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QGL-OTP-FIVELINE-106-lvlu-20260911T1605Z.md",
+   "opened": "20260911T161841Z",
+   "tries": 12,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- OI-vciinboxlaneslvluinboxNU：NUDGE-LGT-LVLU-06 轻推件，lvlu inbox 诉求已 27 试未闭。\n- OI-OTPVINFLOOPLVLU01vinfmd：OTP-VINF-LOOP-LVLU-01 循环件，14 试仍 open。\n- OI-vciinboxlaneslvluinboxQG：QGL-OTP-FIVELINE-106 五线 OTP 件，12 试待办。\n\n② 应动何件：立动 OI-vciinboxlaneslvluinboxNU，tries 27 阻塞最久，立即协同不候。\n\n③ 未闭项推进：\n- OI-vciinboxlaneslvluinboxNU：未闭，下一步主意识介入诊断阻塞根因并强关。\n- OI-OTPVINFLOOPLVLU01vinfmd：未闭，下一步核查 VINF 循环终止条件及外部依赖。\n- OI-vciinboxlaneslvluinboxQG：未闭，下一步待前序缓解后处理 FIVELINE-106。\n\n④ 生债一条：lvlu inbox 三单同挂，协同带宽不足，生债「SI2/SI0 需增开并发槽或升级轮询优先级」。",
+ "wq_excerpt": ""
+}
