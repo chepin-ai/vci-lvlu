@@ -151,7 +151,9 @@
    "beats": 102,
    "nudge_level": 0,
    "last_nudge": "",
-   "status": "open"
+   "status": "closed",
+   "closed_at": "20260911T212209Z",
+   "evidence": "新钥AI-FullScope-90Days(chepin-ai admin)已轮转:CI_OPS_LINE_KEY+AI_FULL_PAT 双名覆写204×2(21:14Z);手动dispatch run 34648493336 beat成功,pulse第102行211622Z落地;旧钥gh_pat_ai 401已焚"
   },
   {
    "id": "WQB15-V02",
