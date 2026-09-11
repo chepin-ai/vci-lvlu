@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260911T020625Z",
+ "ts": "20260911T021828Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -14,9 +14,9 @@
    ],
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
-   "beats": 8,
-   "nudge_level": 2,
-   "last_nudge": "20260911T020625Z",
+   "beats": 9,
+   "nudge_level": 3,
+   "last_nudge": "20260911T021828Z",
    "status": "open",
    "since_ts": "20260910T224341Z",
    "note": "三度重开(株十九: lvlu全名任意位排除+证据入回执)"
@@ -47,7 +47,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 96,
-   "beats": 15,
+   "beats": 16,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -63,9 +63,9 @@
    ],
    "since": "lvlu-EVAL-EXCITE-01-R2",
    "sla_beats": 8,
-   "beats": 14,
-   "nudge_level": 6,
-   "last_nudge": "20260911T020625Z",
+   "beats": 15,
+   "nudge_level": 7,
+   "last_nudge": "20260911T021828Z",
    "status": "open",
    "since_ts": "20260910T232733Z",
    "note": "多签制: 四环齐现方销(qfa已回在案)",
@@ -82,7 +82,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 14,
+   "beats": 15,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -93,7 +93,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 14,
+   "beats": 15,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -104,7 +104,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 14,
+   "beats": 15,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -136,7 +136,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 14,
+   "beats": 15,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
