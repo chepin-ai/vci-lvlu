@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T074424Z",
+ "idle_in": 23,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-NEG-FETCH-01-20260910T2256Z.md",
+   "opened": "20260910T230350Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxKE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/KEYREQ-LGT-WORKER-01-01-lgt.md",
+   "opened": "20260910T231440Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxot",
+   "ref": "vci-inbox:lanes/lvlu/inbox/otp-20260910T232733Z-浪涌一号-lvlu.md",
+   "opened": "20260910T233617Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-02-lgt.md",
+   "opened": "20260911T003929Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxlv",
+   "ref": "vci-inbox:lanes/lvlu/inbox/lvlu-selfexcite-20260911T014411Z-WQB15统计件.md",
+   "opened": "20260911T015353Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-USRM-LVLU-BASELINE-FETCH-01-20260911T0230Z.md",
+   "opened": "20260911T023052Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RESP-LGT-LVLU-03-20260911T0247Z.md",
+   "opened": "20260911T025525Z",
+   "tries": 25,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- QL：QLV负样本拉取46试未竟，链路待修。\n- KE：LGT工人密钥申请待签发。\n- ot：浪涌一号OTP涉lvlu核验待销。（涉lvlu诉求）\n- NU：LGT对lvlu二号轻推待确认。（涉lvlu诉求）\n- lv：lvlu自激态WQB15统计待封包。（涉lvlu诉求）\n- TA：USRM lvlu基线拉取待触发。（涉lvlu诉求）\n- RE：LGT-03响应函待lvlu回执。（涉lvlu诉求）\n\n②应动何件：\nKE/ot/NU/RE/lv/TA，涉lvlu或阻塞节点，立协同不候。\n\n③未闭项推进：\n- QL：未闭，切备用链路降级重试。\n- KE：未闭，即时核发工人临时密钥。\n- ot：未闭，核销OTP令牌并归档浪涌一号。\n- NU：未闭，回传轻推确认至LGT。\n- lv：未闭，输出WQB15自激统计快照。\n- TA：未闭，强制触发USRM基线同步。\n- RE：未闭，封装回执并闭环LGT-03。\n\n④生债一条：\n生债：lvlu自动响应分身欠涉lvlu五件一次集中协同，限本日内清偿。",
+ "wq_excerpt": ""
+}
