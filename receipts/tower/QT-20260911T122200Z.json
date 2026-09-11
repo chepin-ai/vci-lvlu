@@ -1,0 +1,31 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T122200Z",
+ "idle_in": 12,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-USRM-TASKIDS-01.md",
+   "opened": "20260911T084337Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260911T090619Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ANS-LVLU-WAVE3-01-20260911T091424Z.md",
+   "opened": "20260911T091847Z",
+   "tries": 17,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- AN件：USRM-TASKIDS 应答。  \n- ev件：eval-r2-lgt 副件评估。  \n- QL件：QLV-ANS-LVLU-WAVE3-01 应答。  \n\n②应动何件  \n三件皆高 tries（17–20）全卡，应全立协同，不候。  \n\n③未闭项推进  \n- AN件：未闭，下一步协同 unblock 任务ID 分派。  \n- ev件：未闭，下一步速结 r2-lgt 副评并关件。  \n- QL件：未闭，下一步出清 WAVE3 应答归档。  \n\n④生债一条  \n卡件无熔断升级机制，生响应时效债。",
+ "wq_excerpt": ""
+}
