@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T101739Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxlv",
+   "ref": "vci-inbox:lanes/lvlu/inbox/lvlu-selfexcite-20260911T014411Z-WQB15统计件.md",
+   "opened": "20260911T015353Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-USRM-LVLU-BASELINE-FETCH-01-20260911T0230Z.md",
+   "opened": "20260911T023052Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RESP-LGT-LVLU-03-20260911T0247Z.md",
+   "opened": "20260911T025525Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-USRM-TASKIDS-01.md",
+   "opened": "20260911T084337Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260911T090619Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ANS-LVLU-WAVE3-01-20260911T091424Z.md",
+   "opened": "20260911T091847Z",
+   "tries": 6,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n候件空。  \n未闭项6件：  \n1. lvlu自激统计件(WQB15)已滞留43试，待处理。  \n2. USRM-LVLU基线拉取任务01已试40次，待完成。  \n3. RESP-LGT-LVLU-03响应件已试38次，待回复。  \n4. ANS-USRM-TASKIDS-01已试9次，待输出任务ID。  \n5. eval-r2-lgt副件已试7次，待评估判定。  \n6. QLV-ANS-LVLU-WAVE3-01已试6次，待提交波次3应答。  \n\n②应动何件  \n立协同lvlu自激统计件（tries 43，涉lvlu诉求）；次动TASK-USRM-LVLU-BASELINE-FETCH-01（tries 40）。不候。  \n\n③未闭项推进  \n- OI-lv：未闭，下一步：自激数据归集并尝试归档。  \n- OI-TA：未闭，下一步：执行基线拉取并回写结果。  \n- OI-RE：未闭，下一步：生成RESP-LGT-LVLU-03正文并封包。  \n- OI-AN：未闭，下一步：输出USRM任务ID清单并标记已答。  \n- OI-ev：未闭，下一步：完成r2-lgt副件评估打分。  \n- OI-QL：未闭，下一步：提交WAVE3应答数据并关单。  \n\n④生债一条  \n生债：自激统计件试耗过高，应设tries>30自动熔断并升频协同机制，避免空转。",
+ "wq_excerpt": ""
+}
