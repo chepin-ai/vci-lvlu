@@ -1,0 +1,45 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T083140Z",
+ "idle_in": 27,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxot",
+   "ref": "vci-inbox:lanes/lvlu/inbox/otp-20260910T232733Z-浪涌一号-lvlu.md",
+   "opened": "20260910T233617Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-02-lgt.md",
+   "opened": "20260911T003929Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxlv",
+   "ref": "vci-inbox:lanes/lvlu/inbox/lvlu-selfexcite-20260911T014411Z-WQB15统计件.md",
+   "opened": "20260911T015353Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-USRM-LVLU-BASELINE-FETCH-01-20260911T0230Z.md",
+   "opened": "20260911T023052Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RESP-LGT-LVLU-03-20260911T0247Z.md",
+   "opened": "20260911T025525Z",
+   "tries": 29,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：候件空；未闭五项——浪涌一号滞留待决；LGT轻推02未复；lvlu自激WQB15统计未结；USRM基线拉取01未fetch；LGT-03响应未回。\n\n②应动何件：五项全动，立协同，不候。\n\n③未闭项推进：\n- OI-ot：未闭，下一步出清浪涌一号协议。\n- OI-NU：未闭，下一步复LGT并推进02。\n- OI-lv：未闭，下一步跑完WQB15统计落盘。\n- OI-TA：未闭，下一步执行基线拉取并回写。\n- OI-RE：未闭，下一步回LGT-03并闭。\n\n④生债一条：浪涌一号47试空转，生债一次，请升SI1或主脑裁决。",
+ "wq_excerpt": ""
+}
