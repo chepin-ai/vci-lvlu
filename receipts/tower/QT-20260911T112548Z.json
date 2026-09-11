@@ -1,0 +1,45 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T112548Z",
+ "idle_in": 7,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-USRM-LVLU-BASELINE-FETCH-01-20260911T0230Z.md",
+   "opened": "20260911T023052Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RESP-LGT-LVLU-03-20260911T0247Z.md",
+   "opened": "20260911T025525Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-USRM-TASKIDS-01.md",
+   "opened": "20260911T084337Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260911T090619Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ANS-LVLU-WAVE3-01-20260911T091424Z.md",
+   "opened": "20260911T091847Z",
+   "tries": 12,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- TA：USRM向lvlu索基线拉取（BASELINE-FETCH），46试未闭。  \n- RE：LGT致lvlu响应（RESP-03），44试未闭。  \n- AN：lvlu应回USRM之TASKIDS，15试未闭。  \n- ev：r2-lgt副件评估待lvlu处理，13试未闭。  \n- QL：QLV答lvlu-WAVE3，12试未闭。  \n\n②应动何件  \nTA、RE两件（tries 46/44，阻塞最深，立协同不候）。  \n\n③未闭项推进  \n- TA：未闭，下一步：联USRM确认基线边界或回压关闭。  \n- RE：未闭，下一步：解析LGT resp-03并入基线后关闭。  \n- AN：未闭，下一步：输出TASKIDS清单至USRM并关闭。  \n- ev：未闭，下一步：结评r2-lgt副件并归档关闭。  \n- QL：未闭，下一步：收编WAVE3回复并关件。  \n\n④生债一条  \n债：lvlu inbox高试项累积，须设tries>40自动熔断与清障机制。",
+ "wq_excerpt": ""
+}
