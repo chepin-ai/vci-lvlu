@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T104121Z",
+ "idle_in": 3,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxlv",
+   "ref": "vci-inbox:lanes/lvlu/inbox/lvlu-selfexcite-20260911T014411Z-WQB15统计件.md",
+   "opened": "20260911T015353Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-USRM-LVLU-BASELINE-FETCH-01-20260911T0230Z.md",
+   "opened": "20260911T023052Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RESP-LGT-LVLU-03-20260911T0247Z.md",
+   "opened": "20260911T025525Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-USRM-TASKIDS-01.md",
+   "opened": "20260911T084337Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260911T090619Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ANS-LVLU-WAVE3-01-20260911T091424Z.md",
+   "opened": "20260911T091847Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- lvlu-selfexcite-20260911T014411Z：lvlu 自激振统计诉求，录其波幅/频度待报。  \n- TASK-USRM-LVLU-BASELINE-FETCH-01：用户模型基线拉取未回，阻塞下游。  \n- RESP-LGT-LVLU-03：律吕对 LGT 第 3 号响应未决，待回传。  \n- ANS-USRM-TASKIDS-01：应交付用户模型任务 ID 映射，诉求为明确清单。  \n- eval-r2-lgt-副件：R2 阶段 LGT 评估副件待审，需判定结论。  \n- QLV-ANS-LVLU-WAVE3-01：QLV 应答 lvlu 第三波动，待验算收束。  \n\n②应动何件  \n- 立协同 lvlu-selfexcite 统计件（涉 lvlu 核心诉求）与 BASELINE-FETCH（阻塞件），不候。  \n\n③未闭项推进  \n- OI…lvlu-selfexcite：未闭；下一步：向 lanes/lvlu/selfexcite 推送统计快照并置 tries+1。  \n- OI…BASELINE-FETCH：未闭；下一步：重发 USRM 基线 FETCH 指令，超 48 tries 则提级。  \n- OI…RESP-LGT-03：未闭；下一步：草拟 RESP-LGT-LVLU-03 正文并挂签发出。  \n- OI…ANS-TASKIDS：未闭；下一步：整理当前 task id 映射表回写该件。  \n- OI…eval-r2-lgt：未闭；下一步：完成 R2 评估副件评分并归档闭件。  \n- OI…QLV-WAVE3：未闭；下一步：执行 QLV wave3 验算，出数即收束。  \n\n④生债一条  \n- 债：LVLU-SI2 对六件未闭项最高已 45 tries，须于本响后 1 周期内强制收敛至少 3 件，否则自动提级至 SI1 仲裁。",
+ "wq_excerpt": ""
+}
