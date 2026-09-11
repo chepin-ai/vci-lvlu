@@ -140,6 +140,17 @@
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
+  },
+  {
+   "id": "WQB15-V02",
+   "name": "WQ-B15 v0.2（taskids至/Completed至则修）",
+   "target": "lvlu",
+   "repo": "si1",
+   "sla_beats": 999,
+   "beats": 0,
+   "nudge_level": 0,
+   "last_nudge": "",
+   "status": "open"
   }
  ]
 }
