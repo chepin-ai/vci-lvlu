@@ -70,11 +70,11 @@ def board_post(title, body):
 
 # —— 闸四/五 SLA-LOOP + NUDGE-ESCALATE-01（usrm三件套 claims.json 融合领养 · C案落实）——
 NUDGE_CH = {
-  'cisvr': {'otp': 'ci-control', 'dispatch': None, 'lane': None},
-  'usrm': {'lane': 'usrm', 'otp': 'ci-control', 'dispatch': ('chepin-ai/vci-usrm', 'usrm-tower-kick')},
-  'lgt': {'lane': 'lgt', 'otp': 'ci-control', 'dispatch': ('chepin-ai/vci-lgt', 'lgt-wake')},
-  'qlv': {'lane': 'qlv', 'otp': 'ci-control', 'dispatch': ('chepin-ai/vci-qlv', 'qlv-tower-kick')},
-  'qfa': {'lane': 'qfa', 'otp': 'ci-control', 'dispatch': ('chepin-ai/vci-qfa', 'qfa-wake')},
+  'cisvr': {'otp': 'ci-control', 'dispatch': None, 'lane': None, 'inbox': None},
+  'usrm': {'lane': 'usrm', 'otp': 'ci-control', 'dispatch': ('chepin-ai/vci-usrm', 'usrm-tower-kick'), 'inbox': ('chepin-ai/vci-usrm', 'inbox/')},
+  'lgt': {'lane': 'lgt', 'otp': 'ci-control', 'dispatch': ('chepin-ai/vci-lgt', 'lgt-wake'), 'inbox': ('chepin-ai/vci-lgt', 'inbox/')},
+  'qlv': {'lane': 'qlv', 'otp': 'ci-control', 'dispatch': ('chepin-ai/vci-qlv', 'qlv-tower-kick'), 'inbox': ('chepin-ai/vci-qlv', 'inbox/')},
+  'qfa': {'lane': 'qfa', 'otp': 'ci-control', 'dispatch': ('chepin-ai/vci-qfa', 'qfa-wake'), 'inbox': ('chepin-ai/vci-qfa', 'inbox/')},
 }
 
 def detect_claim(cl, trees_cache):
@@ -106,10 +106,14 @@ def nudge(cl, ts):
     tgt = cl.get('target', 'cisvr'); ch = NUDGE_CH.get(tgt, {})
     msg = '# NUDGE-ESCALATE-01 L' + str(lvl) + ' | ' + cl['id'] + ' ' + cl['name'] + '\n\n候件逾窗(' + str(cl.get('sla_beats')) + '拍)。lvlu RESPONDER 闸五自动促件。@' + tgt + ' 请直取/回执。——lvlu ' + ts
     acts = []
+    cmsg = 'CLASSIFY: L1(联邦机器邮·lvlu→' + tgt + ' 闸五促件L' + str(lvl) + ')\n' + msg  # 器课株二十 GUARD-CLASSIFY-01
     if lvl >= 1 and ch.get('lane'):
-        ok = put_file(urllib.parse.quote('lanes/' + ch['lane'] + '/inbox/nudge-' + ts + '-' + cl['id'] + '-lvlu.md'), msg, None, 'nudge ' + cl['id'], repo='chepin-ai/vci-inbox'); acts.append('lane:' + str(ok))
-    if lvl >= 2 and ch.get('otp'):
-        ok = put_file(urllib.parse.quote('.ci-inbox/msg-' + ts + '-nudge-' + cl['id'] + '-L' + str(lvl) + '-lvlu.md'), msg, None, 'nudge-otp ' + cl['id'], repo='chepin-ai/ci-control'); acts.append('otp:' + str(ok))
+        ok = put_file(urllib.parse.quote('lanes/' + ch['lane'] + '/inbox/nudge-' + ts + '-' + cl['id'] + '-lvlu.md'), cmsg, None, 'nudge ' + cl['id'], repo='chepin-ai/vci-inbox'); acts.append('lane:' + str(ok))
+    if lvl >= 2 and ch.get('inbox'):
+        rp, pre = ch['inbox']
+        ok = put_file(urllib.parse.quote(pre + 'nudge-' + ts + '-' + cl['id'] + '-lvlu.md'), cmsg, None, 'nudge ' + cl['id'], repo=rp); acts.append('inbox:' + str(ok))
+    elif lvl >= 2 and ch.get('otp'):
+        ok = put_file(urllib.parse.quote('.ci-inbox/msg-' + ts + '-nudge-' + cl['id'] + '-L' + str(lvl) + '-lvlu.md'), cmsg, None, 'nudge-otp ' + cl['id'], repo='chepin-ai/ci-control'); acts.append('otp:' + str(ok))
     if lvl >= 3 and ch.get('dispatch'):
         rp, ev = ch['dispatch']; st2, _ = api('POST', 'dispatches', {'event_type': ev}, repo=rp); acts.append('kick:' + str(st2))
     if lvl >= 4:
