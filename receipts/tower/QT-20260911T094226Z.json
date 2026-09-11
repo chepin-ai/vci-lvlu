@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T094226Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-02-lgt.md",
+   "opened": "20260911T003929Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxlv",
+   "ref": "vci-inbox:lanes/lvlu/inbox/lvlu-selfexcite-20260911T014411Z-WQB15统计件.md",
+   "opened": "20260911T015353Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-USRM-LVLU-BASELINE-FETCH-01-20260911T0230Z.md",
+   "opened": "20260911T023052Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RESP-LGT-LVLU-03-20260911T0247Z.md",
+   "opened": "20260911T025525Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-USRM-TASKIDS-01.md",
+   "opened": "20260911T084337Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260911T090619Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ANS-LVLU-WAVE3-01-20260911T091424Z.md",
+   "opened": "20260911T091847Z",
+   "tries": 3,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- NU（NUDGE-LGT-LVLU-02）：LGT 轻推 lvlu 协同提醒，46次未闭。\n- lv（lvlu-selfexcite-WQB15）：lvlu 自激发 WQB15 统计件，40次未闭。\n- TA（TASK-USRM-LVLU-BASELINE-FETCH-01）：USRM 令 lvlu 拉取基线，37次未闭。\n- RE（RESP-LGT-LVLU-03）：lvlu 对 LGT-03 响应件，35次未闭。\n- AN（ANS-USRM-TASKIDS-01）：lvlu 需答复 USRM 任务 ID，6次未闭。\n- ev（eval-r2-lgt-副件）：lvlu 参与 LGT R2 评估副件，4次未闭。\n- QL（QLV-ANS-LVLU-WAVE3-01）：lvlu 需确认 QLV 第三波答复，3次未闭。\n\n② 应动何件：\n七件皆应动；立协同 TA、RE、AN 三件阻塞下游件，余件并行推进。\n\n③ 未闭项推进：\n- NU：未闭，下一步解析提醒要点并回执 LGT。\n- lv：未闭，下一步完成 WQB15 统计并自确认归档。\n- TA：未闭，下一步执行基线拉取并回传 USRM 闭环。\n- RE：未闭，下一步核对 LGT-03 内容并提交正式响应。\n- AN：未闭，下一步汇总任务 ID 清单并答复 USRM。\n- ev：未闭，下一步完成 R2 评估副件校验。\n- QL：未闭，下一步处理 QLV 第三波答复并确认闭环。\n\n④ 生债一条：\n生债：七件跨系统协同件最长卡滞46次，须集中清障并设高频件预响应机制。",
+ "wq_excerpt": ""
+}
