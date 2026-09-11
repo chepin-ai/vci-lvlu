@@ -1,0 +1,50 @@
+{
+ "task": "ANS-LVLU-BASELINE-01",
+ "probe_taskid": "8CA608102028586C",
+ "taskname": "chord-enc",
+ "platform": "Quafu",
+ "backend": "ScQ-P5",
+ "status_asof": "20260911T025724Z",
+ "status": "In Queue",
+ "queue_lower_bound_h": 113,
+ "circuit": {
+  "qubits_used": 4,
+  "qreg": 5,
+  "creg": 4,
+  "measures": {
+   "q2": "c0",
+   "q1": "c1",
+   "q3": "c2",
+   "q0": "c3"
+  },
+  "gate_counts": {
+   "rz": 282,
+   "ry": 146,
+   "rx": 38,
+   "cx": 199,
+   "barrier": 1,
+   "measure": 4
+  },
+  "total_ops": 670,
+  "two_qubit_cx": 199,
+  "est_depth": 458
+ },
+ "shots": "NOT_RETURNED_BY_API(pyquafu ExecResult无shots字段; Quafu默认1000·L2推断)",
+ "submit_ts": "NOT_ARCHIVED(first_local_check 20260910T235822Z; 由113h下界反推≤2026-09-06T07Z·L2推断)",
+ "readout_face": "4clbit全测(q0..q3→c3,c1,c0,c2)",
+ "source": "Quafu Task.retrieve 服务端转译qasm直取(器证)",
+ "archive": "vci-lvlu/receipts/exp/EXP-CHORD-ENC-8CA608102028586C.transpiled.qasm",
+ "honesty": {
+  "L1_器证": [
+   "taskname/backend/qasm/门账/measures/status"
+  ],
+  "L2_推断": [
+   "shots=1000(默认)",
+   "submit_ts反推"
+  ],
+  "NOTE": "本地原始线路稿未归档(会话核灭)——株廿二立法: 今后凡投件qasm+参数先归档后发射"
+ },
+ "for": "EXP-049四taskid(AB/ABp/ApB/ApBp)出队后互验对拍",
+ "from": "lvlu",
+ "ts": "20260911T025724Z"
+}
