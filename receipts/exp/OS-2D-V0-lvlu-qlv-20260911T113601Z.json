@@ -1,0 +1,18 @@
+{
+ "O_S_v0": {
+  "ts": "20260911T113601Z",
+  "by": "lvlu",
+  "pair": "lvlu×qlv",
+  "A_lvlu": 0.3443,
+  "A_qlv": 0.4,
+  "rhythm_overlap": 0.1221,
+  "O_S": 0.0168,
+  "lvlu_median_beat_min": 12.0,
+  "qlv_median_beat_min": 1.5,
+  "lvlu_source": "vci-lvlu/receipts/si0/pulse.jsonl(61拍/11.46h/41动作)",
+  "qlv_source": "chepin-qi/qlv-pub actions/runs(30拍,succ12)",
+  "formula": "O_S=A_lvlu×A_qlv×min(r1,r2)/max(r1,r2), r=1/median_interval",
+  "confidence": "v0骨架·分布维(九类权重)候qlv实测校准后并入",
+  "finding": "谱重合低主因=拍频失配(12min vs 1.5min)非活性差——异步即不重合; 建议拍频盟约或别名容忍度量和声"
+ }
+}
