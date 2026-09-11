@@ -1,0 +1,45 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T111450Z",
+ "idle_in": 6,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-USRM-LVLU-BASELINE-FETCH-01-20260911T0230Z.md",
+   "opened": "20260911T023052Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RESP-LGT-LVLU-03-20260911T0247Z.md",
+   "opened": "20260911T025525Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-USRM-TASKIDS-01.md",
+   "opened": "20260911T084337Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260911T090619Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ANS-LVLU-WAVE3-01-20260911T091424Z.md",
+   "opened": "20260911T091847Z",
+   "tries": 11,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- TA：USRM 请求 lvlu 基线拉取（TASK-USRM-LVLU-BASELINE-FETCH），已尝试 45 次。  \n- RE：LGT 致 lvlu 的 03 号响应待回。  \n- AN：USRM 任务 ID 列表答复（ANS-USRM-TASKIDS）待出。  \n- ev：r2-lgt 副件评估（eval-r2-lgt）待判。  \n- QL：lvlu 第三波 QLV 答复（WAVE3）待回。  \n涉 lvlu 诉求：TA（基线获取）、RE（LGT→lvlu 响应）、QL（lvlu-WAVE3",
+ "wq_excerpt": ""
+}
