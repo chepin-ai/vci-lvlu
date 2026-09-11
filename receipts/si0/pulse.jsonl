@@ -11,3 +11,4 @@
 {"ts": "20260911T012919Z", "board_files": 80, "claims": 9, "closed_this_beat": ["USRM-TASKIDS-01"], "nudged": ["EVALR2-ALL:L3:lane:True,inbox:True,kick:204"], "vault_keys": 25}
 {"ts": "20260911T014158Z", "board_files": 80, "claims": 9, "closed_this_beat": [], "nudged": ["EVALR2-ALL:L4:lane:True,inbox:True,kick:204,board:1"], "vault_keys": 25}
 {"ts": "20260911T015422Z", "board_files": 80, "claims": 9, "closed_this_beat": [], "nudged": ["ADJUD-01:L1:", "EVALR2-ALL:L5:lane:True,inbox:True,kick:204,board:1"], "vault_keys": 25}
+{"ts": "20260911T020625Z", "board_files": 80, "claims": 9, "closed_this_beat": [], "nudged": ["ADJUD-01:L2:otp:True", "EVALR2-ALL:L6:lane:True,inbox:True,kick:204,board:1"], "vault_keys": 25}
