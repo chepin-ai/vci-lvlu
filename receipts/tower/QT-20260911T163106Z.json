@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T163106Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-USRM-TASKIDS-01.md",
+   "opened": "20260911T084337Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260911T090619Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ANS-LVLU-WAVE3-01-20260911T091424Z.md",
+   "opened": "20260911T091847Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-06-20260911T1330Z.md",
+   "opened": "20260911T133820Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPVINFLOOPLVLU01vinfmd",
+   "ref": "OTP-VINF-LOOP-LVLU-01-vinf.md",
+   "opened": "20260911T155642Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQG",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QGL-OTP-FIVELINE-106-lvlu-20260911T1605Z.md",
+   "opened": "20260911T161841Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n候件空。未闭6件：AN（USRM任务ID答复发卡，43试）、ev（r2-lgt评估副件待审，41试）、QL（WAVE3应答待成，40试）、NU（LGT轻推06待响，17试）、OTP（VINF循环待续，4试）、QG（五行106号线索待理，2试）。\n\n②应动何件  \nAN、ev、QL（tries逾四十，卡死最久），立协同不候。\n\n③未闭项推进  \n- AN：未闭，下一步：输出TASKIDS答复并关。  \n- ev：未闭，下一步：完成r2-lgt评估归档。  \n- QL：未闭，下一步：生成WAVE3应答并关。  \n- NU：未闭，下一步：执行NUDGE-06并回执。  \n- OTP：未闭，下一步：续接VINF-LOOP并落vinf。  \n- QG：未闭，下一步：解析五行106并入库。\n\n④生债一条  \nAN/ev/QL超40试未闭，生债：排查 lanes/lvlu/inbox 阻塞根因，设高tries自动熔断与升级机制。",
+ "wq_excerpt": ""
+}
