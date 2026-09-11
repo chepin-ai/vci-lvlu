@@ -1,0 +1,31 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T121132Z",
+ "idle_in": 11,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-USRM-TASKIDS-01.md",
+   "opened": "20260911T084337Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260911T090619Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ANS-LVLU-WAVE3-01-20260911T091424Z.md",
+   "opened": "20260911T091847Z",
+   "tries": 16,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- AN件：USRM任务ID清单待录，涉lvlu诉求：提取taskids并分派执行。  \n- ev件：eval-r2-lgt评估副件待审，涉lvlu诉求：完成副件校验与结论。  \n- QL件：QLV-WAVE3应答待回，涉lvlu诉求：审阅并输出lvlu回执。  \n\n②应动何件  \nAN件（tries=19最高），立协同不候，立即解析taskids并触发子任务。  \n\n③未闭项推进  \n- OI…AN：未闭；下一步：提取taskids、生成子单、回写关闭。  \n- OI…ev：未闭；下一步：补全eval-r2-lgt评估结论后归档。  \n- OI…QL：未闭；下一步：核对QLV-WAVE3要点、输出确认回执后关闭。  \n\n④生债  \ntries累高，槽位承压，生债：inbox需加自动预解析与分拣规则，降低单件重试成本。",
+ "wq_excerpt": ""
+}
