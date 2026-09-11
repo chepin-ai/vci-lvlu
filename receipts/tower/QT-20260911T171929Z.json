@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T171929Z",
+ "idle_in": 4,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-USRM-TASKIDS-01.md",
+   "opened": "20260911T084337Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260911T090619Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ANS-LVLU-WAVE3-01-20260911T091424Z.md",
+   "opened": "20260911T091847Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-06-20260911T1330Z.md",
+   "opened": "20260911T133820Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPVINFLOOPLVLU01vinfmd",
+   "ref": "OTP-VINF-LOOP-LVLU-01-vinf.md",
+   "opened": "20260911T155642Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQG",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QGL-OTP-FIVELINE-106-lvlu-20260911T1605Z.md",
+   "opened": "20260911T161841Z",
+   "tries": 6,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \nAN件：USRM任务ID应答，录lvlu任务标识映射确认诉求。  \nev件：r2-lgt副件评估，录lvlu副件审阅与评级诉求。  \nQL件：WAVE3应答，录lvlu第三波动议回复诉求。  \nNU件：LGT轻推06，录lvlu轻推指令响应诉求。  \nOTP件：VINF循环，录lvlu元信息回路闭环诉求。  \nQG件：五线工单106，录lvlu FIVELINE处理诉求。  \n\n②应动何件  \nAN/ev/QL（均超40试，长悬）立协同不候；NU/OTP/QG同步并动，不候。  \n\n③未闭项推进  \nAN：未闭，下一步：固化TASKIDS映射并关单。  \nev：未闭，下一步：提交r2-lgt副件评估结论。  \nQL：未闭，下一步：输出WAVE3应答并归档。  \nNU：未闭，下一步：执行LGT-06轻推动作反馈。  \nOTP：未闭，下一步：推进VINF-LOOP闭环验证。  \nQG：未闭，下一步：结单FIVELINE-106。  \n\n④生债一条  \nlvlu inbox 积压6项长悬，生债：启lane级日清机制，限当日批量闭环。",
+ "wq_excerpt": ""
+}
