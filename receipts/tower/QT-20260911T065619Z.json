@@ -1,0 +1,87 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T065619Z",
+ "idle_in": 19,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-QLVEVALEXCITE0120260910m",
+   "ref": "QLV-EVAL-EXCITE-01-2026-09-10.md",
+   "opened": "20260910T222044Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-QLVRING4NOTICE0120260910",
+   "ref": "QLV-RING4-NOTICE-01-2026-09-10.md",
+   "opened": "20260910T223126Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOT",
+   "ref": "vci-inbox:lanes/lvlu/inbox/OTP-LGT-EVAL-EXCITE-01-lvlu.md",
+   "opened": "20260910T224217Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqf",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qfa-mech-call-01-20260910T224204Z.md",
+   "opened": "20260910T224217Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-NEG-FETCH-01-20260910T2256Z.md",
+   "opened": "20260910T230350Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxKE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/KEYREQ-LGT-WORKER-01-01-lgt.md",
+   "opened": "20260910T231440Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxot",
+   "ref": "vci-inbox:lanes/lvlu/inbox/otp-20260910T232733Z-浪涌一号-lvlu.md",
+   "opened": "20260910T233617Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-02-lgt.md",
+   "opened": "20260911T003929Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxlv",
+   "ref": "vci-inbox:lanes/lvlu/inbox/lvlu-selfexcite-20260911T014411Z-WQB15统计件.md",
+   "opened": "20260911T015353Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-USRM-LVLU-BASELINE-FETCH-01-20260911T0230Z.md",
+   "opened": "20260911T023052Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RESP-LGT-LVLU-03-20260911T0247Z.md",
+   "opened": "20260911T025525Z",
+   "tries": 21,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n候件：无。  \n未闭项：QLV-EVAL-EXCITE评估待决；QLV-RING4通知待发；OTP-LGT-EVAL-EXCITE涉lvlu待验签；QFA机制调用待响应；QLV-NEG-FETCH协商待取回；LGT-WORKER密钥请求待授；浪涌一号OTP涉lvlu待决；NUDGE-LGT-LVLU推进提醒待复。\n\n② 应动何件  \n应动全部八件；立协同不候者：涉lvlu之OTP-LGT-EVAL-EXCITE、浪涌一号、NUDGE-LGT-LVLU及KEYREQ四项。\n\n③ 未闭项推进  \n- OI-QLVEVALEXCITE：开；下一步：完成EXCITE评估并归档。  \n- OI-QLVRING4NOTICE：开；下一步：签发RING4通知并确认送达。  \n- OI-OT(lvlu)：开；下一步：验签OTP-LGT-EVAL-EXCITE并回执lvlu。  \n- OI-qfa：开；下一步：执行QFA机制调用并返结果。  \n- OI-QLVNEGFETCH：开；下一步：完成NEG协商取数。  \n- OI-KEYREQ：开；下一步：核验并授LGT-WORKER密钥。  \n- OI-浪涌一号：开；下一步：处理浪涌OTP并同步lvlu。  \n- OI-NUDGE：开；下一步：响应NUDGE并推LGT-LVLU协同。\n\n④ 生债一条  \n生债：SI2自动分身对八项未闭件负有全量闭环之债，限次周期内清零，逾期转SI1仲裁。",
+ "wq_excerpt": ""
+}
