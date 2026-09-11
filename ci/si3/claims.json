@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260911T184203Z",
+ "ts": "20260911T185400Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -14,7 +14,7 @@
    ],
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
-   "beats": 94,
+   "beats": 95,
    "nudge_level": 15,
    "last_nudge": "20260911T180648Z",
    "status": "open",
@@ -48,7 +48,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 96,
-   "beats": 101,
+   "beats": 102,
    "nudge_level": 4,
    "last_nudge": "20260911T184203Z",
    "status": "open",
@@ -65,7 +65,7 @@
    ],
    "since": "lvlu-EVAL-EXCITE-01-R2",
    "sla_beats": 8,
-   "beats": 100,
+   "beats": 101,
    "nudge_level": 19,
    "last_nudge": "20260911T180648Z",
    "status": "open",
@@ -92,7 +92,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 100,
+   "beats": 101,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -103,7 +103,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 100,
+   "beats": 101,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -114,7 +114,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 100,
+   "beats": 101,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -146,7 +146,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 100,
+   "beats": 101,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -157,7 +157,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 85,
+   "beats": 86,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -173,7 +173,7 @@
    ],
    "since_ts": "20260911T030519Z",
    "sla_beats": 6,
-   "beats": 82,
+   "beats": 83,
    "nudge_level": 13,
    "status": "open",
    "note": "RIPPLE-PROBE-LVLU-01 echo侦钉; echo至即闭并板报链路账",
@@ -209,7 +209,7 @@
    ],
    "since_ts": "20260911T093116Z",
    "sla_beats": 24,
-   "beats": 49,
+   "beats": 50,
    "nudge_level": 7,
    "status": "open",
    "note": "册sha=105f9fc0012752a3; 册24拍无更→自激复核增补(静场不空转律之行)",
