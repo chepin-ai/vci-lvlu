@@ -1,0 +1,73 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T073217Z",
+ "idle_in": 22,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxOT",
+   "ref": "vci-inbox:lanes/lvlu/inbox/OTP-LGT-EVAL-EXCITE-01-lvlu.md",
+   "opened": "20260910T224217Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqf",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qfa-mech-call-01-20260910T224204Z.md",
+   "opened": "20260910T224217Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-NEG-FETCH-01-20260910T2256Z.md",
+   "opened": "20260910T230350Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxKE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/KEYREQ-LGT-WORKER-01-01-lgt.md",
+   "opened": "20260910T231440Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxot",
+   "ref": "vci-inbox:lanes/lvlu/inbox/otp-20260910T232733Z-浪涌一号-lvlu.md",
+   "opened": "20260910T233617Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-02-lgt.md",
+   "opened": "20260911T003929Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxlv",
+   "ref": "vci-inbox:lanes/lvlu/inbox/lvlu-selfexcite-20260911T014411Z-WQB15统计件.md",
+   "opened": "20260911T015353Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-USRM-LVLU-BASELINE-FETCH-01-20260911T0230Z.md",
+   "opened": "20260911T023052Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RESP-LGT-LVLU-03-20260911T0247Z.md",
+   "opened": "20260911T025525Z",
+   "tries": 24,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- OT件：OTP-LGT-EVAL-EXCITE，录 lvlu 光激活阈值评估诉求。\n- qf件：QFA-MECH-CALL，录机制调用请求。\n- QL件：QLV-NEG-FETCH，录否定态数据拉取。\n- KE件：KEYREQ-LGT-WORKER，录 lgt worker 密钥申请。\n- ot件：OTP-浪涌一号-lvlu，录浪涌 OTP 交互。\n- NU件：NUDGE-LGT-LVLU-02，录 lgt 对 lvlu 二次轻推。\n- lv件：lvlu-selfexcite-WQB15，录 lvlu 自激统计。\n- TA件：TASK-USRM-LVLU-BASELINE-FETCH，录基线获取任务。\n\n② 应动何件：候件空，然 lv（自激）与 ot（浪涌）涉 lvlu 本体稳定，应立协同不候，先闭此二件。\n\n③ 未闭项推进：\n- OT：未闭，下拍回写 EVAL 结果或降级。\n- qf：未闭，下拍确认 QFA 调用态或关闸。\n- QL：未闭，下拍完成 NEG-FETCH 或标空集。\n- KE：未闭，下拍派钥或回拒。\n- ot：未闭，下拍确认浪涌握手或断连。\n- NU：未闭，下拍响应 NUDGE 或达沉默共识。\n- lv：未闭，下拍输出 WQB15 统计报文。\n- TA：未闭，下拍拉基线或报缺失。\n\n④ 生债一条：八项重试已26-47次未闭，生债“启 lvlu lane 熔断：单件超20次未闭即冻结并上抛”。",
+ "wq_excerpt": ""
+}
