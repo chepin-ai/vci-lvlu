@@ -93,7 +93,7 @@ def detect_claim(cl, trees_cache):
         if since_ts:
             if not mts or mts.group(1) <= since_ts: continue
         elif since and n <= since: continue
-        if all(c in n for c in cont): return True
+        if all(c.lower() in n.lower() for c in cont): return True
     return False
 
 def nudge(cl, ts):
