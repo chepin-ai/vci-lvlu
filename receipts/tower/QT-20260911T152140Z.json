@@ -1,0 +1,38 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T152140Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-USRM-TASKIDS-01.md",
+   "opened": "20260911T084337Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260911T090619Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ANS-LVLU-WAVE3-01-20260911T091424Z.md",
+   "opened": "20260911T091847Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-06-20260911T1330Z.md",
+   "opened": "20260911T133820Z",
+   "tries": 10,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n候件空。AN件：USRM任务ID应答待出。ev件：R2-LGT副件评估待结。QL件：QLV-WAVE3回LVLU未竟。NU件：LGT-LVLU-06轻推待复。\n\n② 应动何件  \nAN件（36试，最久悬），立协同不候。\n\n③ 未闭项推进  \nAN件：未闭，次步出USRM-TASKIDS应答。  \nev件：未闭，次步完eval-r2-lgt。  \nQL件：未闭，次步追QLV-WAVE3回件。  \nNU件：未闭，次步结NUDGE-06。\n\n④ 生债一条  \n久悬项超30试者三，生债：今日必清其一。",
+ "wq_excerpt": ""
+}
