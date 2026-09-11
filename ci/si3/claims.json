@@ -69,14 +69,21 @@
    "last_nudge": "20260911T024321Z",
    "status": "open",
    "since_ts": "20260910T232733Z",
-   "note": "多签制: 四环齐现方销(qfa已回在案)",
+   "note": "R2分线账: qfa收讫(qfa-94), lgt收讫(手登); 候qlv/usrm",
    "need_lines": [
     "lgt",
     "qlv",
     "qfa",
     "usrm"
    ],
-   "last_nudge_beats": 17
+   "last_nudge_beats": 17,
+   "ledger": {
+    "lgt": {
+     "status": "received",
+     "evidence": "vci-lgt docs/EVAL-EXCITE-01-lgt.md + OTP-LGT-EXCITE-V2×4 (commit 76388c00), 手登20260911(侦域课株廿二之二)",
+     "ts": "20260911T030149Z"
+    }
+   }
   },
   {
    "id": "IBM-KYC-ROOT",
