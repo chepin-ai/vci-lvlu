@@ -1,0 +1,45 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T160646Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-USRM-TASKIDS-01.md",
+   "opened": "20260911T084337Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260911T090619Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ANS-LVLU-WAVE3-01-20260911T091424Z.md",
+   "opened": "20260911T091847Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-06-20260911T1330Z.md",
+   "opened": "20260911T133820Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPVINFLOOPLVLU01vinfmd",
+   "ref": "OTP-VINF-LOOP-LVLU-01-vinf.md",
+   "opened": "20260911T155642Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- AN件：USRM-TASKIDS锚定，涉lvlu诉求：任务ID映射待收束。\n- ev件：R2-lgt副件复核，涉lvlu诉求：评估副件待律吕侧确认。\n- QL件：QLV-WAVE3应答，涉lvlu诉求：批次终稿待输出。\n- NU件：LGT-06轻推，涉lvlu诉求：回执待确认。\n- OTP件：VINF-LOOP首轮回路，涉lvlu诉求：初始化校验待过。\n\n②应动何件（立协同不候）\n- AN/ev/QL三件久振（tries≥38），立协同不候；NU/OTP同步推进。\n\n③未闭项推进\n- AN：未闭，收束ID映射即关。\n- ev：未闭，副件归档即关。\n- QL：未闭，终稿输出即关。\n- NU：未闭，回执确认即关。\n- OTP：未闭，回路验证即关。\n\n④生债一条\n- 生债：inbox积压超38振，需开清件振铃。",
+ "wq_excerpt": ""
+}
