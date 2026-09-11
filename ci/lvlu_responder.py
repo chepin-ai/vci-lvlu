@@ -135,8 +135,10 @@ def sla_loop(ts, seen_names):
             closed.append(cl['id']); continue
         cl['beats'] = cl.get('beats', 0) + 1
         if cl.get('repo') == 'si1': pend.append(cl['id'])
-        if cl['beats'] > cl.get('sla_beats', 6) and (ts[-6:] > (cl.get('last_nudge') or '000000T000000')[-6:]):
-            acts = nudge(cl, ts); nudged.append(cl['id'] + ':L' + str(cl['nudge_level']) + ':' + ','.join(acts))
+        cd = cl.get('last_nudge_beats', -999)  # 株廿一 NUDGE-COOLDOWN-01: 冷却拍距随级数指数扩
+        if cl['beats'] > cl.get('sla_beats', 6) and cl['beats'] - cd >= min(2 ** max(cl.get('nudge_level', 0) - 2, 0), 8):
+            acts = nudge(cl, ts); cl['last_nudge_beats'] = cl['beats']
+            nudged.append(cl['id'] + ':L' + str(cl['nudge_level']) + ':' + ','.join(acts))
     claims['ts'] = ts
     put_file('ci/si3/claims.json', json.dumps(claims, ensure_ascii=False, indent=1), csha, '[skip ci] sla-loop beat ' + ts)
     return {'claims': len(claims.get('claims', [])), 'closed': closed, 'nudged': nudged, 'si1_pending': pend}
