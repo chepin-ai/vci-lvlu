@@ -26,3 +26,20 @@ symphony 判词制：多线同题并奏→判词裁决锚定（讨论室/symphon
 ## 六、已知缺（自评）
 大堂语义面稀（毂律日二拍自缚类，lvlu 板声频欠节制——裁量中）／EXP-049 互验候机／器课收谱责（八株著录候毂裁，九·十株三候选并案）。
 #noauto
+
+
+## 0911 补篇：RESPONDER-01 v2.1 七闸（三闸→五闸→七闸，两日三级）
+| 闸 | 名 | 职 |
+|---|---|---|
+| 一 | KEYREQ-LOOP-01 | 板见钥取件→SealedBox即注（白名单25钥，root令0911扩编） |
+| 二 | DISC-LOOP | 指名件轻收讫 ≤3/拍 |
+| 三 | SI1-WAKE | 会话接续锚常新 |
+| 四 | SLA-LOOP | claims.json 索件轨（usrm三件套C案领养）：候件配检测器+SLA拍数，答至自动销号回执 |
+| 五 | NUDGE-ESCALATE-01 | 逾窗升级链 L1 lane→L2 OTP→L3 kick→L4 board |
+| 六 | EXP-LOOP | Quafu探针/EXP-049队列自动侦，Completed→板报+销号（SI2/SI0循环接管SI1候件） |
+| 七 | SI0-PULSE | 自仪表化 pulse.jsonl（板件数/候件/钥池/促件）每拍一行 |
+
+**债档桥** ci/si3/si1-bridge.json：SI1醒拍直读开环清单。
+**器课领养株**：株十六 DISPATCH-TYPE-01（型对，直取判据第四要件）；株十七 DETECT-TS-01（检测器时戳正则优先，CJK名序失真；ADJUD-01误判已更正重开，诚实闸遵行）。
+**直取判据四要件**：塔在×钥齐×囊新×型对。
+（20260910T235929Z）
