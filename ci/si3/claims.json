@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260911T040653Z",
+ "ts": "20260911T041854Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -14,13 +14,13 @@
    ],
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
-   "beats": 18,
-   "nudge_level": 5,
-   "last_nudge": "20260911T024321Z",
+   "beats": 19,
+   "nudge_level": 6,
+   "last_nudge": "20260911T041854Z",
    "status": "open",
    "since_ts": "20260910T224341Z",
    "note": "三度重开(株十九: lvlu全名任意位排除+证据入回执)",
-   "last_nudge_beats": 11
+   "last_nudge_beats": 19
   },
   {
    "id": "USRM-TASKIDS-01",
@@ -48,7 +48,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 96,
-   "beats": 25,
+   "beats": 26,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -64,9 +64,9 @@
    ],
    "since": "lvlu-EVAL-EXCITE-01-R2",
    "sla_beats": 8,
-   "beats": 24,
-   "nudge_level": 9,
-   "last_nudge": "20260911T024321Z",
+   "beats": 25,
+   "nudge_level": 10,
+   "last_nudge": "20260911T041854Z",
    "status": "open",
    "since_ts": "20260910T232733Z",
    "note": "R2分线账: qfa收讫(qfa-94), lgt收讫(手登); 候qlv/usrm",
@@ -76,7 +76,7 @@
     "qfa",
     "usrm"
    ],
-   "last_nudge_beats": 17,
+   "last_nudge_beats": 25,
    "ledger": {
     "lgt": {
      "status": "received",
@@ -91,7 +91,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 24,
+   "beats": 25,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -102,7 +102,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 24,
+   "beats": 25,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -113,7 +113,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 24,
+   "beats": 25,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -145,7 +145,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 24,
+   "beats": 25,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -156,7 +156,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 9,
+   "beats": 10,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -172,10 +172,12 @@
    ],
    "since_ts": "20260911T030519Z",
    "sla_beats": 6,
-   "beats": 6,
-   "nudge_level": 0,
+   "beats": 7,
+   "nudge_level": 1,
    "status": "open",
-   "note": "RIPPLE-PROBE-LVLU-01 echo侦钉; echo至即闭并板报链路账"
+   "note": "RIPPLE-PROBE-LVLU-01 echo侦钉; echo至即闭并板报链路账",
+   "last_nudge": "20260911T041854Z",
+   "last_nudge_beats": 7
   }
  ]
 }
