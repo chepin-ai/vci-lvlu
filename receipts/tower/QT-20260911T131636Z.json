@@ -1,0 +1,31 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T131636Z",
+ "idle_in": 17,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-USRM-TASKIDS-01.md",
+   "opened": "20260911T084337Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260911T090619Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ANS-LVLU-WAVE3-01-20260911T091424Z.md",
+   "opened": "20260911T091847Z",
+   "tries": 22,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n候件空；AN件（ANS-USRM-TASKIDS映射）涉lvlu诉求待决；ev件（r2-lgt副件评估）涉lvlu诉求待决；QL件（WAVE3应答）涉lvlu诉求待决。  \n\n②应动何件  \n立动AN件（tries=25，最久积压，不候）。  \n\n③未闭项推进  \n- AN：未闭；下一步：完成TASKIDS映射协同，今日收束。  \n- ev：未闭；下一步：输出r2-lgt评估结论，副件归档后闭。  \n- QL：未闭；下一步：校验WAVE3应答完整性，确认后闭。  \n\n④生债  \nAN项已积25试未闭，生债：本轮内必须闭环或启动熔断升级，禁止再拖。",
+ "wq_excerpt": ""
+}
