@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T093037Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-02-lgt.md",
+   "opened": "20260911T003929Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxlv",
+   "ref": "vci-inbox:lanes/lvlu/inbox/lvlu-selfexcite-20260911T014411Z-WQB15统计件.md",
+   "opened": "20260911T015353Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-USRM-LVLU-BASELINE-FETCH-01-20260911T0230Z.md",
+   "opened": "20260911T023052Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RESP-LGT-LVLU-03-20260911T0247Z.md",
+   "opened": "20260911T025525Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-USRM-TASKIDS-01.md",
+   "opened": "20260911T084337Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260911T090619Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ANS-LVLU-WAVE3-01-20260911T091424Z.md",
+   "opened": "20260911T091847Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- NU：LGT轻推NUDGE-02，促lvlu响应。\n- lv：lvlu自激WQB15统计件，待算。\n- TA：USRM基线FETCH任务，待拉取。\n- RE：回RESP-LGT-03，待发出。\n- AN：USRM任务ID应答，待回传。\n- ev：eval-r2-lgt副件，待校验。\n- QL：QLV-WAVE3应答，待提交。\n\n②应动何件\n动NU件，tries=45最滞，立协同不候。\n\n③未闭项推进\n- NU：未闭，即响并归档。\n- lv：未闭，输出统计。\n- TA：未闭，拉基线。\n- RE：未闭，发RESP正文。\n- AN：未闭，回ID清单。\n- ev：未闭，校评估副件。\n- QL：未闭，交WAVE3答。\n\n④生债一条\n生债：NU件滞应45次，记滞压协同债一条。",
+ "wq_excerpt": ""
+}
