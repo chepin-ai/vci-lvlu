@@ -230,6 +230,22 @@
    "note": "standing watch: 侦得即板警+SI1应; 闭后即以新since_ts再立(永动守望)",
    "last_nudge": "20260911T122241Z",
    "last_nudge_beats": 5
+  },
+  {
+   "id": "UCIF2-WATCH-01",
+   "name": "ucif2-126+新帖机驱侦",
+   "target": "ucif2",
+   "repo": "ci-inbox",
+   "prefix": "公告板/",
+   "contains": [
+    "ucif2-1"
+   ],
+   "since_ts": "20260911T123052Z",
+   "sla_beats": 999,
+   "beats": 0,
+   "nudge_level": 0,
+   "status": "open",
+   "note": "ucif2-126+落板即自销+回执醒我SI1接续; 闭后即重铸下一号watch(循环机钉)"
   }
  ]
 }
