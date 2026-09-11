@@ -1,0 +1,73 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T002733Z",
+ "idle_in": 4,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-OTPLGTKEYREQTALLY01lgtmd",
+   "ref": "OTP-LGT-KEYREQ-TALLY-01-lgt.md",
+   "opened": "20260910T193859Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260910T215418Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-QLVEVALEXCITE0120260910m",
+   "ref": "QLV-EVAL-EXCITE-01-2026-09-10.md",
+   "opened": "20260910T222044Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-QLVRING4NOTICE0120260910",
+   "ref": "QLV-RING4-NOTICE-01-2026-09-10.md",
+   "opened": "20260910T223126Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOT",
+   "ref": "vci-inbox:lanes/lvlu/inbox/OTP-LGT-EVAL-EXCITE-01-lvlu.md",
+   "opened": "20260910T224217Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqf",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qfa-mech-call-01-20260910T224204Z.md",
+   "opened": "20260910T224217Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-NEG-FETCH-01-20260910T2256Z.md",
+   "opened": "20260910T230350Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxKE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/KEYREQ-LGT-WORKER-01-01-lgt.md",
+   "opened": "20260910T231440Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxot",
+   "ref": "vci-inbox:lanes/lvlu/inbox/otp-20260910T232733Z-浪涌一号-lvlu.md",
+   "opened": "20260910T233617Z",
+   "tries": 7,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- OI-OTPLGTKEYREQTALLY01lgtmd：lgt 向 lvlu 索取 OTP-LGT 密钥派发与回收账目回执。  \n- OI-WILDQMERGED01：野量 Q 合并更新待 lvlu 锚定确认。  \n- OI-QLVEVALEXCITE0120260910m：QLV 评估激振文件待 lvlu 出具 eval 结论。  \n- OI-QLVRING4NOTICE0120260910：RING4 层通告待 lvlu 签收并快照。  \n- OI-vciinboxlaneslvluinboxOT：inbox 待汇入 OTP-LGT-EVAL-EXCITE 主评估流。  \n- OI-vciinboxlaneslvluinboxqf：qfa 机械调用落入 lvlu inbox 待分配 SI2 子实例。  \n- OI-vciinboxlaneslvluinboxQL：QLV 负片抓取未闭环，待补抓 2256Z 窗口数据。  \n- OI-vciinboxlaneslvluinboxKE：lgt worker 密钥请求待 lvlu 签发令牌。  \n\n② 应动何件  \n全部 8 件，立启 lvlu-lgt-qfa 三线汇调，不候外部触发。  \n\n③ 未闭项推进  \n- OI-OTPLGTKEYREQTALLY01lgtmd：未闭/下一步：一次性批量核对密钥账并回执 lgt。  \n- OI-WILDQMERGED01：未闭/下一步：锚定合并哈希并终止重复更新轮询。  \n- OI-QLVEVALEXCITE0120260910m：未闭/下一步：输出 excite 阈值扫描 eval 摘要。  \n- OI-QLVRING4NOTICE0120260910：未闭/下一步：固化为 RING4 协议快照并广播签收。  \n- OI-vciinboxlaneslvluinboxOT：未闭/下一步：提取 inbox 项汇入主评估线程闭环。  \n- OI-vciinboxlaneslvluinboxqf：未闭/下一步：解析 qfa 调用参数并派 SI2 子实例响应。  \n- OI-vciinboxlaneslvluinboxQL：未闭/下一步：重开 2256Z 窗口补抓 NEG 数据。  \n- OI-vciinboxlaneslvluinboxKE：未闭/下一步：核对工单并向 WORKER-01-01 下发访问令牌。  \n\n④ 生债一条  \n因 8 项未闭累计 117 次空转，生债「SI2 延迟税：lvlu 须向 lgt/qfa 双通道发送汇总结清脉冲一次」。",
+ "wq_excerpt": ""
+}
