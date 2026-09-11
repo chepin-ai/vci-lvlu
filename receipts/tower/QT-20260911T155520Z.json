@@ -1,0 +1,38 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T155520Z",
+ "idle_in": 4,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-USRM-TASKIDS-01.md",
+   "opened": "20260911T084337Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260911T090619Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ANS-LVLU-WAVE3-01-20260911T091424Z.md",
+   "opened": "20260911T091847Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-06-20260911T1330Z.md",
+   "opened": "20260911T133820Z",
+   "tries": 13,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- ANS-USRM-TASKIDS-01：用户任务ID体系应答，历39试未闭。  \n- eval-r2-lgt-副件：r2-lgt副件评估，历37试未闭。  \n- QLV-ANS-LVLU-WAVE3-01：QLV-WAVE3回环应答，历36试未闭。  \n- NUDGE-LGT-LVLU-06：对LGT第6次轻推，历13试未闭。  \n\n② 应动何件  \n- AN/ev/QL三件试数过高，立协SI2直推落件；NU立协跨线触达LGT。  \n\n③ 未闭项推进  \n- AN：未闭，收束TASKIDS定义并出终稿。  \n- ev：未闭，落eval-r2-lgt副件结论并归档。  \n- QL：未闭，回环WAVE3应答至QLV并等回执。  \n- NU：未闭，向LGT发NUDGE-06并确认收悉。  \n\n④ 生债一条  \n- 债：lvlu线AN/ev/QL悬件超期未决，记「超期债」1单位，限24h内清其一。",
+ "wq_excerpt": ""
+}
