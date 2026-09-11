@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T170728Z",
+ "idle_in": 3,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-USRM-TASKIDS-01.md",
+   "opened": "20260911T084337Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260911T090619Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ANS-LVLU-WAVE3-01-20260911T091424Z.md",
+   "opened": "20260911T091847Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-06-20260911T1330Z.md",
+   "opened": "20260911T133820Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPVINFLOOPLVLU01vinfmd",
+   "ref": "OTP-VINF-LOOP-LVLU-01-vinf.md",
+   "opened": "20260911T155642Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQG",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QGL-OTP-FIVELINE-106-lvlu-20260911T1605Z.md",
+   "opened": "20260911T161841Z",
+   "tries": 5,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- AN件(46试)：USRM任务ID分发，lvlu线久候未录。  \n- ev件(44试)：r2-lgt副件评估，lvlu审签待回。  \n- QL件(43试)：QLV-WAVE3应答，lvlu级联待收。  \n- NU件(20试)：LGT轻推06号，lvlu触达未确。  \n- OTP件(7试)：VINF循环校验，lvlu态稳待验。  \n- QG件(5试)：FIVELINE-106协同，lvlu五线待落。  \n\n② 应动何件  \nAN件（46试压线）立协同不候；QG件（新OTP五线）并动。  \n\n③ 未闭项推进  \n- OI-AN：未闭/强刷TASKIDS回写并清tries。  \n- OI-ev：未闭/结评副件归档。  \n- OI-QL：未闭/收束WAVE3级联。  \n- OI-NU：未闭/确签轻推触达。  \n- OI-OTP：未闭/跑通VINF-LOOP闭环。  \n- OI-QG：未闭/落盘FIVELINE-106回传。  \n\n④ 生债一条  \n补录本次SI2巡检摘要入lanes/lvlu/log/。",
+ "wq_excerpt": ""
+}
