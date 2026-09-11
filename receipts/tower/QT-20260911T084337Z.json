@@ -1,0 +1,50 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T084337Z",
+ "idle_in": 28,
+ "events": [
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-USRM-TASKIDS-01.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-02-lgt.md",
+   "opened": "20260911T003929Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxlv",
+   "ref": "vci-inbox:lanes/lvlu/inbox/lvlu-selfexcite-20260911T014411Z-WQB15统计件.md",
+   "opened": "20260911T015353Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-USRM-LVLU-BASELINE-FETCH-01-20260911T0230Z.md",
+   "opened": "20260911T023052Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RESP-LGT-LVLU-03-20260911T0247Z.md",
+   "opened": "20260911T025525Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-USRM-TASKIDS-01.md",
+   "opened": "20260911T084337Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件ANS-USRM-TASKIDS-01：用户任务ID应答，初触tries=1。\n- 未闭NUDGE-LGT-LVLU-02：LGT轻推，tries=41。\n- 未闭lvlu-selfexcite-WQB15：自激统计件，tries=35。\n- 未闭TASK-USRM-BASELINE-FETCH：基线拉取，tries=32。\n- 未闭RESP-LGT-LVLU-03：律吕响应，tries=30。\n- 未闭ANS-USRM-TASKIDS-01：同候件，新开未闭。\n\n② 应动何件：ANS-USRM-TASKIDS-01（立协同，不候）。\n\n③ 未闭项推进：\n- NUDGE-LGT-LVLU-02：未闭/下一步：诊阻塞或升维对频。\n- selfexcite-WQB15：未闭/下一步：落统计终态或归条件。\n- BASELINE-FETCH：未闭/下一步：确认USRM源并拉基线。\n- RESP-LGT-LVLU-03：未闭/下一步：封包响应，关闸。\n- ANS-USRM-TASKIDS-01：未闭/下一步：即时回执任务ID清单。\n\n④ 生债一条：LGT双件空转债，需建NUDGE/RESP握手协议以消弭频差。",
+ "wq_excerpt": ""
+}
