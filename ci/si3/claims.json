@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260911T005149Z",
+ "ts": "20260911T010407Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -14,7 +14,7 @@
    ],
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
-   "beats": 2,
+   "beats": 3,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open",
@@ -33,9 +33,9 @@
    ],
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
-   "beats": 9,
-   "nudge_level": 3,
-   "last_nudge": "20260911T005149Z",
+   "beats": 10,
+   "nudge_level": 4,
+   "last_nudge": "20260911T010407Z",
    "status": "open",
    "since_ts": "20260910T232733Z"
   },
@@ -45,7 +45,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 96,
-   "beats": 9,
+   "beats": 10,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -61,9 +61,9 @@
    ],
    "since": "lvlu-EVAL-EXCITE-01-R2",
    "sla_beats": 8,
-   "beats": 8,
-   "nudge_level": 0,
-   "last_nudge": "",
+   "beats": 9,
+   "nudge_level": 1,
+   "last_nudge": "20260911T010407Z",
    "status": "open",
    "since_ts": "20260910T232733Z",
    "note": "多签制: 四环齐现方销(qfa已回在案)",
@@ -80,7 +80,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 8,
+   "beats": 9,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -91,7 +91,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 8,
+   "beats": 9,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -102,7 +102,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 8,
+   "beats": 9,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -134,7 +134,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 8,
+   "beats": 9,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
