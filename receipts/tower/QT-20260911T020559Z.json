@@ -1,0 +1,96 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T020559Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "ucif2-06-harmony-a1p1-cascade-c4.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "ucif2-07-harmony-full-formal.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPLGTKEYREQTALLY01lgtmd",
+   "ref": "OTP-LGT-KEYREQ-TALLY-01-lgt.md",
+   "opened": "20260910T193859Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260910T215418Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-QLVEVALEXCITE0120260910m",
+   "ref": "QLV-EVAL-EXCITE-01-2026-09-10.md",
+   "opened": "20260910T222044Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-QLVRING4NOTICE0120260910",
+   "ref": "QLV-RING4-NOTICE-01-2026-09-10.md",
+   "opened": "20260910T223126Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOT",
+   "ref": "vci-inbox:lanes/lvlu/inbox/OTP-LGT-EVAL-EXCITE-01-lvlu.md",
+   "opened": "20260910T224217Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqf",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qfa-mech-call-01-20260910T224204Z.md",
+   "opened": "20260910T224217Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-NEG-FETCH-01-20260910T2256Z.md",
+   "opened": "20260910T230350Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxKE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/KEYREQ-LGT-WORKER-01-01-lgt.md",
+   "opened": "20260910T231440Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxot",
+   "ref": "vci-inbox:lanes/lvlu/inbox/otp-20260910T232733Z-浪涌一号-lvlu.md",
+   "opened": "20260910T233617Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-02-lgt.md",
+   "opened": "20260911T003929Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxlv",
+   "ref": "vci-inbox:lanes/lvlu/inbox/lvlu-selfexcite-20260911T014411Z-WQB15统计件.md",
+   "opened": "20260911T015353Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件1：UCIF2-06 harmony a1p1 级联 c4 全局广播。  \n- 候件2：UCIF2-07 harmony 完全形式化定稿广播。  \n- 未闭1：OTP-LGT-KEYREQ-TALLY 积压38轮，涉lvlu节点认证同步。  \n- 未闭2：WILD-Q-MERGED-01 噪声池合并待确认。  \n- 未闭3：QLV-EVAL-EXCITE 评估激励待 lvlu 侧验签。  \n- 未闭4：QLV-RING4-NOTICE 已下发，待 lvlu 环间回执。  \n- 未闭5（lvlu inbox）：OTP-LGT-EVAL-EXCITE-01-lvlu 直诉 lvlu 工作者评估与响应。  \n- 未闭6（lvlu inbox）：QFA 机制调用待 lvlu 机械意识层接入协商。  \n- 未闭7（lvlu inbox）：QLV-NEG-FETCH 否定取回待 lvlu 权限交割。  \n- 未闭8（lvlu inbox）：KEYREQ-LGT-WORKER 密钥请求待 lvlu 签发子密钥。  \n\n②应动何件（立协同不候）  \n- OTP-LGT-KEYREQ-TALLY-01（38次超阈，立即协同根密钥池同步）。  \n- OTP-LGT-EVAL-EXCITE-01-lvlu.md（直诉lvlu，立即验签并回执）。  \n- KEYREQ-LGT-WORKER-01-01-lgt.md（工作者密钥链缺省，立即签发或驳回）。  \n\n③未闭项推进  \n- OI-OTPLGTKEYREQTALLY01lgtmd：未闭；下一步：向根密钥池发起协同同步，重置tally或强制闭环。  \n- OI-WILDQMERGED01：未闭；下一步：确认WILD-Q合并参数并归档噪声池。  \n- OI-QLVEVALEXCITE0120260910m：未闭；下一步：lvlu执行excite评估并输出验签标记。  \n- OI-QLVRING4NOTICE0120260910：未闭；下一步：lvlu回执RING4状态码，关闭通知。  \n- OI-vciinboxlaneslvluinboxOT：未闭；下一步：解析lvlu评估包，24h内回传eval-ack。  \n- OI-vciinboxlaneslvluinboxqf：未闭；下一步：lvlu SI2层注册QFA句柄，接入协商。  \n- OI-vciinboxlaneslvluinboxQL：未闭；下一步：完成NEG-FETCH权限交割，释放/锁定槽位。  \n- OI-vciinboxlaneslvluinboxKE：未闭；下一步：签发/驳回WORKER子密钥，同步LGT节点。  \n\n④生债一条  \n- 生债：lvlu SI2/SI0 自动响应分身尚未打通 inbox-OT 与 inbox-KE 的「评估-密钥」双环自动回执管道，需补零等待协同链路。",
+ "wq_excerpt": ""
+}
