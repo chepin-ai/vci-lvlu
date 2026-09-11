@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T164257Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-USRM-TASKIDS-01.md",
+   "opened": "20260911T084337Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260911T090619Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ANS-LVLU-WAVE3-01-20260911T091424Z.md",
+   "opened": "20260911T091847Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-06-20260911T1330Z.md",
+   "opened": "20260911T133820Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPVINFLOOPLVLU01vinfmd",
+   "ref": "OTP-VINF-LOOP-LVLU-01-vinf.md",
+   "opened": "20260911T155642Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQG",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QGL-OTP-FIVELINE-106-lvlu-20260911T1605Z.md",
+   "opened": "20260911T161841Z",
+   "tries": 3,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \nAN件（ANS-USRM-TASKIDS-01）：lvlu用户任务ID应答，悬44试未决。  \nev件（eval-r2-lgt-副件）：lvlu副件r2-lgt评估，悬42试未决。  \nQL件（QLV-ANS-LVLU-WAVE3-01）：lvlu WAVE3波次应答，悬41试未决。  \nNU件（NUDGE-LGT-LVLU-06）：lvlu对LGT轻推，悬18试未决。  \nOTP件（OTP-VINF-LOOP-LVLU-01）：lvlu VINF循环迭代，悬5试未决。  \nQG件（QGL-OTP-FIVELINE-106-lvlu）：lvlu五线106协同，悬3试未决。  \n\n②应动何件  \nAN件（44试最久），立协同输出终版TASKIDS；ev、QL同步催办，不候。  \n\n③未闭项推进  \nAN：未闭，下一步：锁定TASKIDS并输出。  \nev：未闭，下一步：完成r2-lgt副件评估归档。  \nQL：未闭，下一步：交付WAVE3应答闭环。  \nNU：未闭，下一步：执行LGT轻推并确认回执。  \nOTP：未闭，下一步：推进VINF循环本轮结果。  \nQG：未闭，下一步：落位FIVELINE-106五线对齐。  \n\n④生债一条  \n生债：设tries≥40自动升级lvlu主意识仲裁规则，免AN/ev/QL类久悬空转。",
+ "wq_excerpt": ""
+}
