@@ -1,0 +1,31 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T123245Z",
+ "idle_in": 13,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-USRM-TASKIDS-01.md",
+   "opened": "20260911T084337Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260911T090619Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ANS-LVLU-WAVE3-01-20260911T091424Z.md",
+   "opened": "20260911T091847Z",
+   "tries": 18,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空；未闭涉 lvlu 三事：ANS-USRM-TASKIDS-01 悬 21 试待回任务 ID，eval-r2-lgt-副件 悬 19 试待补副档，QLV-ANS-LVLU-WAVE3-01 悬 18 试待出第三波应答。\n\n② 应动何件：三件皆应立协出件，不候。\n\n③ 未闭项推进：\n- OI-vciinboxlaneslvluinboxAN：未闭，下一步：直出任务 ID 回复并",
+ "wq_excerpt": ""
+}
