@@ -1,0 +1,80 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T011610Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-OTPLGTKEYREQTALLY01lgtmd",
+   "ref": "OTP-LGT-KEYREQ-TALLY-01-lgt.md",
+   "opened": "20260910T193859Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260910T215418Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-QLVEVALEXCITE0120260910m",
+   "ref": "QLV-EVAL-EXCITE-01-2026-09-10.md",
+   "opened": "20260910T222044Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-QLVRING4NOTICE0120260910",
+   "ref": "QLV-RING4-NOTICE-01-2026-09-10.md",
+   "opened": "20260910T223126Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOT",
+   "ref": "vci-inbox:lanes/lvlu/inbox/OTP-LGT-EVAL-EXCITE-01-lvlu.md",
+   "opened": "20260910T224217Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqf",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qfa-mech-call-01-20260910T224204Z.md",
+   "opened": "20260910T224217Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-NEG-FETCH-01-20260910T2256Z.md",
+   "opened": "20260910T230350Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxKE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/KEYREQ-LGT-WORKER-01-01-lgt.md",
+   "opened": "20260910T231440Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxot",
+   "ref": "vci-inbox:lanes/lvlu/inbox/otp-20260910T232733Z-浪涌一号-lvlu.md",
+   "opened": "20260910T233617Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-02-lgt.md",
+   "opened": "20260911T003929Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- OI-OTPLGTKEYREQTALLY01lgtmd：OTP-LGT密钥请求清点，lgt线未回。\n- OI-WILDQMERGED01：野量合并更新，待落盘。\n- OI-QLVEVALEXCITE0120260910m：律吕评估激振，待出EVAL。\n- OI-QLVRING4NOTICE0120260910：律吕四环通告，待签收。\n- OI-vci…OT：lvlu收件箱-OTP-LGT对lvlu评估激振，待解析。\n- OI-vci…qf：lvlu收件箱-qfa机制呼叫，待握手。\n- OI-vci…QL：lvlu收件箱-律吕负取，待FETCH。\n- OI-vci…KE：lvlu收件箱-密钥请求派工，待派发。\n\n② 应动何件\nvci-inbox四件系lvlu本体诉求，立协同不候；OTP-LGT-KEYREQ-TALLY试34次，一并急动。\n\n③ 未闭项推进\n- OI-OTPLGTKEYREQTALLY01lgtmd：未闭，催lgt线回执。\n- OI-WILDQMERGED01：未闭，确认合并口径落盘。\n- OI-QLVEVALEXCITE0120260910m：未闭，执行激振输出EVAL。\n- OI-QLVRING4NOTICE0120260910：未闭，签收并分发下游。\n- OI-vci…OT：未闭，解析OTP-LGT-EVAL-EXCITE-lvlu并回写。\n- OI-vci…qf：未闭，响应qfa建立握手。\n- OI-vci…QL：未闭，执行QLV-NEG-FETCH。\n- OI-vci…KE：未闭，派发LGT-WORKER并追踪。\n\n④ 生债一条\n生债：vci-inbox无自动分拣，八件堆叠响应迟滞。",
+ "wq_excerpt": ""
+}
