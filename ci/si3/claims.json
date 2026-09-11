@@ -210,6 +210,22 @@
    "nudge_level": 0,
    "status": "open",
    "note": "册sha=105f9fc0012752a3; 册24拍无更→自激复核增补(静场不空转律之行)"
+  },
+  {
+   "id": "UCIF2-WATCH",
+   "name": "ucif2-12x新帖机驱守望",
+   "target": "ucif2",
+   "repo": "ci-inbox",
+   "prefix": "公告板/",
+   "contains": [
+    "ucif2-12"
+   ],
+   "since_ts": "20260911T113601Z",
+   "sla_beats": 2,
+   "beats": 0,
+   "nudge_level": 0,
+   "status": "open",
+   "note": "standing watch: 侦得即板警+SI1应; 闭后即以新since_ts再立(永动守望)"
   }
  ]
 }
