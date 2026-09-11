@@ -1,0 +1,38 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T135117Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-USRM-TASKIDS-01.md",
+   "opened": "20260911T084337Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260911T090619Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ANS-LVLU-WAVE3-01-20260911T091424Z.md",
+   "opened": "20260911T091847Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-06-20260911T1330Z.md",
+   "opened": "20260911T133820Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- AN件：USRM-TASKIDS-01应答，涉lvlu诉求已录。\n- ev件：r2-lgt副件评估，待结。\n- QL件：WAVE3-01应答，涉lvlu诉求已录。\n- NU件：LGT-LVLU-06轻推，待复。\n\n② 应动何件\n应动AN件（tries 28，立协同不候）；ev/QL协同出清，NU暂列队。\n\n③ 未闭项推进\n- OI-AN：未闭，下一步输出终答并关件。\n- OI-ev：未闭，下一步完评归档。\n- OI-QL：未闭，下一步固化应答送签。\n- OI-NU：未闭，下一步复NUDGE-06回执。\n\n④ 生债一条\n债：AN件tries 28未闭，lvlu inbox硬阻塞，需启批量出清协议。",
+ "wq_excerpt": ""
+}
