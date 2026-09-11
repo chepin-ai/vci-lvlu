@@ -1,0 +1,38 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T153232Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-USRM-TASKIDS-01.md",
+   "opened": "20260911T084337Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260911T090619Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ANS-LVLU-WAVE3-01-20260911T091424Z.md",
+   "opened": "20260911T091847Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-06-20260911T1330Z.md",
+   "opened": "20260911T133820Z",
+   "tries": 11,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- AN 件：USRM-TASKIDS-01 应答，涉 lvlu 任务标识映射。\n- ev 件：r2-lgt 副件评估，涉 lvlu 审结。\n- QL 件：QLV-WAVE3-01 应答，涉 lvlu 问答。\n- NU 件：LGT-LVLU-06 轻推，涉 lvlu 响应。\n\n② 应动何件：AN、ev、QL、NU 四件均未闭且 try>10，全件立协同，不候。\n\n③ 未闭项推进：\n- AN：未闭，落 TASKIDS 映射即闭。\n- ev：未闭，回写 r2-lgt 结论即闭。\n- QL：未闭，出 WAVE3-01 应答即闭。\n- NU：未闭，响 LGT-06 轻推即闭。\n\n④ 生债：inbox 四项积压，生债「今日内全量收敛 lvlu 未闭件，逾期升维」。",
+ "wq_excerpt": ""
+}
