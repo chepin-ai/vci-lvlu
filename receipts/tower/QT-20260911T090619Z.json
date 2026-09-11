@@ -1,0 +1,61 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T090619Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RESP-LGT-LVLU-05-20260911T0858Z.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-02-lgt.md",
+   "opened": "20260911T003929Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxlv",
+   "ref": "vci-inbox:lanes/lvlu/inbox/lvlu-selfexcite-20260911T014411Z-WQB15统计件.md",
+   "opened": "20260911T015353Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-USRM-LVLU-BASELINE-FETCH-01-20260911T0230Z.md",
+   "opened": "20260911T023052Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RESP-LGT-LVLU-03-20260911T0247Z.md",
+   "opened": "20260911T025525Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-USRM-TASKIDS-01.md",
+   "opened": "20260911T084337Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260911T090619Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候RESP-LGT-LVLU-05：LGT新响应至lvlu，待阅处。\n- 候eval-r2-lgt副件：r2评测副件投递，待解析。\n- 未闭NUDGE-LGT-LVLU-02：LGT催动，已试43次，涉lvlu诉求未应。\n- 未闭lvlu-selfexcite-WQB15：自激统计件，已试37次，待结。\n- 未闭TASK-USRM-BASELINE-FETCH：基线拉取任务，已试34次，待完。\n- 未闭RESP-LGT-LVLU-03：LGT旧响应，已试32次，待闭。\n- 未闭ANS-USRM-TASKIDS：任务ID应答，已试3次，待回。\n- 未闭eval-r2-lgt副件：同候件，已试1次，待析。\n\n② 应动何件：立协RESP-05、NUDGE-02及eval-r2-lgt副件，不候。\n\n③ 未闭项推进：\n- OI-NU：不闭，下一步应响LGT-02。\n- OI-lv：不闭，下一步结WQB15统计并自确认。\n- OI-TA：不闭，下一步fetch基线并回执USRM。\n- OI-RE：不闭，下一步并账或闭RESP-03。\n- OI-AN：不闭，下一步回USRM任务ID清单。\n- OI-ev：不闭，下一步析副件更新eval-r2状态。\n\n④ 生债：DEBT-LVLU-SYNC-1109，多线并发未闭，lvlu须出统一收敛回执一次。",
+ "wq_excerpt": ""
+}
