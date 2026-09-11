@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260911T023120Z",
+ "ts": "20260911T024321Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -14,12 +14,13 @@
    ],
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
-   "beats": 10,
-   "nudge_level": 4,
-   "last_nudge": "20260911T023120Z",
+   "beats": 11,
+   "nudge_level": 5,
+   "last_nudge": "20260911T024321Z",
    "status": "open",
    "since_ts": "20260910T224341Z",
-   "note": "三度重开(株十九: lvlu全名任意位排除+证据入回执)"
+   "note": "三度重开(株十九: lvlu全名任意位排除+证据入回执)",
+   "last_nudge_beats": 11
   },
   {
    "id": "USRM-TASKIDS-01",
@@ -47,7 +48,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 96,
-   "beats": 17,
+   "beats": 18,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -63,9 +64,9 @@
    ],
    "since": "lvlu-EVAL-EXCITE-01-R2",
    "sla_beats": 8,
-   "beats": 16,
-   "nudge_level": 8,
-   "last_nudge": "20260911T023120Z",
+   "beats": 17,
+   "nudge_level": 9,
+   "last_nudge": "20260911T024321Z",
    "status": "open",
    "since_ts": "20260910T232733Z",
    "note": "多签制: 四环齐现方销(qfa已回在案)",
@@ -74,7 +75,8 @@
     "qlv",
     "qfa",
     "usrm"
-   ]
+   ],
+   "last_nudge_beats": 17
   },
   {
    "id": "IBM-KYC-ROOT",
@@ -82,7 +84,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 16,
+   "beats": 17,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -93,7 +95,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 16,
+   "beats": 17,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -104,7 +106,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 16,
+   "beats": 17,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -136,7 +138,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 16,
+   "beats": 17,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -147,7 +149,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 1,
+   "beats": 2,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
