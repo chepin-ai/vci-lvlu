@@ -1,0 +1,31 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T181720Z",
+ "idle_in": 9,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-06-20260911T1330Z.md",
+   "opened": "20260911T133820Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPVINFLOOPLVLU01vinfmd",
+   "ref": "OTP-VINF-LOOP-LVLU-01-vinf.md",
+   "opened": "20260911T155642Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQG",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QGL-OTP-FIVELINE-106-lvlu-20260911T1605Z.md",
+   "opened": "20260911T161841Z",
+   "tries": 11,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：NU件（NUDGE-LGT-LVLU-06）轻推已26试未闭，涉lvlu通道诉；VINF件（OTP-VINF-LOOP-LVLU-01）循环验证13试未闭环；QG件（QGL-OTP-FIVELINE-106-lvlu）五线协议11试未决，涉lvlu绑定诉。  \n② 应动何件：三件皆立协不候，NU件最急。  \n③ 未闭项推进：NU未闭/终止空转或强制升级；VINF未闭/补全OTP握手回执；QG未闭/确认106槽位五线授权。  \n④ 生债一条：本次响应后30分钟内必给NU件终态，否即自锁上报。",
+ "wq_excerpt": ""
+}
