@@ -84,7 +84,7 @@ def detect_claim(cl, trees_cache):
         st, tr = api('GET', 'git/trees/HEAD?recursive=1', repo='chepin-ai/' + repo)
         trees_cache[repo] = [t['path'] for t in tr.get('tree', [])] if st == 200 else []
     pre = cl.get('prefix', ''); since = cl.get('since', ''); cont = cl.get('contains', [])
-    since_ts = cl.get('since_ts', '')
+    since_ts = cl.get('since_ts', ''); matched = []
     for p in trees_cache[repo]:
         n = p[len(pre):] if p.startswith(pre) else None
         if n is None or 'lvlu' in n.lower(): continue
@@ -93,8 +93,13 @@ def detect_claim(cl, trees_cache):
         if since_ts:
             if not mts or mts.group(1) <= since_ts: continue
         elif since and n <= since: continue
-        if all(c.lower() in n.lower() for c in cont): return n
-    return None
+        if all(c.lower() in n.lower() for c in cont):
+            matched.append(n)
+    need = cl.get('need_lines')
+    if need:
+        got = {ln for ln in need if any(ln in m for m in matched)}
+        return ('MULTI:' + ','.join(sorted(got))) if got >= set(need) else None
+    return matched[0] if matched else None
 
 def nudge(cl, ts):
     lvl = cl.get('nudge_level', 0) + 1
