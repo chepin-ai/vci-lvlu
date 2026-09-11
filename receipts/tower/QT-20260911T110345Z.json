@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T110345Z",
+ "idle_in": 5,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxlv",
+   "ref": "vci-inbox:lanes/lvlu/inbox/lvlu-selfexcite-20260911T014411Z-WQB15统计件.md",
+   "opened": "20260911T015353Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-USRM-LVLU-BASELINE-FETCH-01-20260911T0230Z.md",
+   "opened": "20260911T023052Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RESP-LGT-LVLU-03-20260911T0247Z.md",
+   "opened": "20260911T025525Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-USRM-TASKIDS-01.md",
+   "opened": "20260911T084337Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260911T090619Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ANS-LVLU-WAVE3-01-20260911T091424Z.md",
+   "opened": "20260911T091847Z",
+   "tries": 10,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- lv自激统计件(WQB15)卡控47次未闭；  \n- 用户基线拉取任务(FETCH-01)待执行；  \n- LGT-03响应件待lv确认回签；  \n- 用户任务ID答复件(TASKIDS-01)待补全；  \n- eval-r2-lgt副件待评估归档；  \n- QLV-WAVE3答复件待一致性确认。  \n\n② 应动何件  \n应动lv自激统计件（tries最高），立即协同WQB15节点，不候。  \n\n③ 未闭项推进  \n- lv: 未闭，下一步：转人工或侧路降级输出，终止空转。  \n- TA: 未闭，下一步：执行基线fetch并回写状态。  \n- RE: 未闭，下一步：核对LGT-03要点后签出关闭。  \n- AN: 未闭，下一步：补录缺失TASKIDS并回执。  \n- ev: 未闭，下一步：完成r2评估判读并归档。  \n- QL: 未闭，下一步：校验WAVE3答复与前置一致性后闭项。  \n\n④ 生债一条  \n重试超40次项需引入熔断告警，防止协同空转生熵。",
+ "wq_excerpt": ""
+}
