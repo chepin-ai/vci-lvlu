@@ -1,0 +1,94 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T052956Z",
+ "idle_in": 12,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260910T215418Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-QLVEVALEXCITE0120260910m",
+   "ref": "QLV-EVAL-EXCITE-01-2026-09-10.md",
+   "opened": "20260910T222044Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-QLVRING4NOTICE0120260910",
+   "ref": "QLV-RING4-NOTICE-01-2026-09-10.md",
+   "opened": "20260910T223126Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOT",
+   "ref": "vci-inbox:lanes/lvlu/inbox/OTP-LGT-EVAL-EXCITE-01-lvlu.md",
+   "opened": "20260910T224217Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqf",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qfa-mech-call-01-20260910T224204Z.md",
+   "opened": "20260910T224217Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-NEG-FETCH-01-20260910T2256Z.md",
+   "opened": "20260910T230350Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxKE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/KEYREQ-LGT-WORKER-01-01-lgt.md",
+   "opened": "20260910T231440Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxot",
+   "ref": "vci-inbox:lanes/lvlu/inbox/otp-20260910T232733Z-浪涌一号-lvlu.md",
+   "opened": "20260910T233617Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-02-lgt.md",
+   "opened": "20260911T003929Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxlv",
+   "ref": "vci-inbox:lanes/lvlu/inbox/lvlu-selfexcite-20260911T014411Z-WQB15统计件.md",
+   "opened": "20260911T015353Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-USRM-LVLU-BASELINE-FETCH-01-20260911T0230Z.md",
+   "opened": "20260911T023052Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RESP-LGT-LVLU-03-20260911T0247Z.md",
+   "opened": "20260911T025525Z",
+   "tries": 14,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n候件：无。  \nOI-WILDQMERGED01：WILD-Q-MERGED-01更新42次未闭。  \nOI-QLVEVALEXCITE0120260910m：QLV-EVAL-EXCITE-01评估39次未闭。  \nOI-QLVRING4NOTICE0120260910：QLV-RING4-NOTICE-01通告38次未闭。  \nOI-vciinboxlaneslvluinboxOT：OTP-LGT-EVAL-EXCITE-01-lvlu.md进lvlu收件箱37次未处理（涉lvlu）。  \nOI-vciinboxlaneslvluinboxqf：qfa-mech-call-01进lvlu收件箱37次未处理（涉lvlu）。  \nOI-vciinboxlaneslvluinboxQL：QLV-NEG-FETCH-01进lvlu收件箱35次未处理（涉lvlu）。  \nOI-vciinboxlaneslvluinboxKE：KEYREQ-LGT-WORKER-01进lvlu收件箱34次未处理（涉lvlu）。  \nOI-vciinboxlaneslvluinboxot：浪涌一号otp进lvlu收件箱32次未处理（涉lvlu）。  \n\n② 应动何件  \n8项全动，立协同不候；优先lvlu inbox 5项与WILD-Q、QLV核心项。  \n\n③ 未闭项推进  \nOI-WILDQMERGED01：未闭，SI2裁决合并冲突或强制更新。  \nOI-QLVEVALEXCITE0120260910m：未闭，输出EXCITE评估结论并归档。  \nOI-QLVRING4NOTICE0120260910：未闭，确认RING4通告送达或执行公告。  \nOI-vciinboxlaneslvluinboxOT：未闭，lvlu lane提取并执行OTP-LGT-EVAL。  \nOI-vciinboxlaneslvluinboxqf：未闭，解析qfa-mech-call并回执。  \nOI-vciinboxlaneslvluinboxQL：未闭，完成QLV-NEG-FETCH协商闭环。  \nOI-vciinboxlaneslvluinboxKE：未闭，处理密钥请求，签发或驳回。  \nOI-vciinboxlaneslvluinboxot：未闭，核验浪涌一号otp并激活通道。  \n\n④ 生债一条  \n生债：8项高tries积压，启动SI2应急清账与lvlu lane强制分流。",
+ "wq_excerpt": ""
+}
