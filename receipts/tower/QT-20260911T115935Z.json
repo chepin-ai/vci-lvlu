@@ -1,0 +1,38 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T115935Z",
+ "idle_in": 10,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RESP-LGT-LVLU-03-20260911T0247Z.md",
+   "opened": "20260911T025525Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-USRM-TASKIDS-01.md",
+   "opened": "20260911T084337Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260911T090619Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ANS-LVLU-WAVE3-01-20260911T091424Z.md",
+   "opened": "20260911T091847Z",
+   "tries": 15,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n候空。RE：lvlu回LGT之RESP-03滞箱未决；AN：lvlu待USRM任务ID确认；ev：lvlu审r2-lgt评估副件未结；QL：lvlu收QLV-WAVE3答未达。  \n\n②应动何件  \nRE（tries47，时滞最长）立协同；AN、ev、QL并行跟进，不候。  \n\n③未闭项推进  \nOI-RE：未闭/发起LGT↔lvlu即时协同，释出RESP-03。  \nOI-AN：未闭/催USRM缴任务ID清单，限今日回。  \nOI-ev：未闭/结r2-lgt副件评估，归档。  \nOI-QL：未闭/追QLV-WAVE3应答，限4h内到。  \n\n④生债一条  \nRE件47试未决，生LGT-lvlu响应债一次，须本日偿。",
+ "wq_excerpt": ""
+}
