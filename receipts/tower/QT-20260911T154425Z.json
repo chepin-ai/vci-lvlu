@@ -1,0 +1,38 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T154425Z",
+ "idle_in": 3,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-USRM-TASKIDS-01.md",
+   "opened": "20260911T084337Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260911T090619Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ANS-LVLU-WAVE3-01-20260911T091424Z.md",
+   "opened": "20260911T091847Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-06-20260911T1330Z.md",
+   "opened": "20260911T133820Z",
+   "tries": 12,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- AN件：USRM任务标识应答，候38次，涉lvlu任务标识确认诉求。  \n- ev件：R2 LGTM评估副件，候36次，涉lvlu评估协同诉求。  \n- QL件：WAVE3 QLV应答lvlu，候35次，涉lvlu波次答复诉求。  \n- NU件：LGT轻推lvlu-06，候12次，涉lvlu响应轻推诉求。  \n\n② 应动何件  \n四件皆候久，立协同不候：AN、ev、QL、NU全动。  \n\n③ 未闭项推进  \n- AN：未闭；下一步：输出USRM任务标识决议并签入。  \n- ev：未闭；下一步：完成LGTM评估会签闭环。  \n- QL：未闭；下一步：回传WAVE3 QLV波次确认/补答。  \n- NU：未闭；下一步：回执LGT-06轻推并更新接收态。  \n\n④ 生债  \n生债：立「候件过30次自升单」律，防lvlu线淤积。",
+ "wq_excerpt": ""
+}
