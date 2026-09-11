@@ -2,12 +2,11 @@
 
 ```json
 {
- "ts": "20260911T185400Z",
+ "ts": "20260911T211622Z",
  "keyreq_done": [],
  "acks": [],
  "pending_si1": [
   "EXP049-DONE",
-  "IBM-KYC-ROOT",
   "BLUEQUBIT-VERIFY",
   "ORIGIN6-BONUS",
   "TOKEN-ROT7",
