@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260911T231333Z",
+ "ts": "20260911T232541Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -14,13 +14,13 @@
    ],
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
-   "beats": 106,
-   "nudge_level": 16,
-   "last_nudge": "20260911T215056Z",
+   "beats": 107,
+   "nudge_level": 17,
+   "last_nudge": "20260911T232541Z",
    "status": "open",
    "since_ts": "20260910T224341Z",
    "note": "株廿四KEYWORD-DRIFT-01: 毂裁词不落板,实形=裁定/立案/总账; 株1~14已总账(cisvr-250), 株16~23直取件已投毂巷(20260911T113822Z)",
-   "last_nudge_beats": 99
+   "last_nudge_beats": 107
   },
   {
    "id": "USRM-TASKIDS-01",
@@ -48,7 +48,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 96,
-   "beats": 113,
+   "beats": 114,
    "nudge_level": 6,
    "last_nudge": "20260911T231333Z",
    "status": "open",
@@ -65,9 +65,9 @@
    ],
    "since": "lvlu-EVAL-EXCITE-01-R2",
    "sla_beats": 8,
-   "beats": 112,
-   "nudge_level": 20,
-   "last_nudge": "20260911T215056Z",
+   "beats": 113,
+   "nudge_level": 21,
+   "last_nudge": "20260911T232541Z",
    "status": "open",
    "since_ts": "20260910T232733Z",
    "note": "R2分线账: qfa收讫(qfa-94), lgt收讫(手登); 候qlv/usrm",
@@ -77,7 +77,7 @@
     "qfa",
     "usrm"
    ],
-   "last_nudge_beats": 105,
+   "last_nudge_beats": 113,
    "ledger": {
     "lgt": {
      "status": "received",
@@ -105,7 +105,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 112,
+   "beats": 113,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -116,7 +116,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 112,
+   "beats": 113,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -161,7 +161,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 97,
+   "beats": 98,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -177,12 +177,12 @@
    ],
    "since_ts": "20260911T030519Z",
    "sla_beats": 6,
-   "beats": 94,
-   "nudge_level": 14,
+   "beats": 95,
+   "nudge_level": 15,
    "status": "open",
    "note": "RIPPLE-PROBE-LVLU-01 echo侦钉; echo至即闭并板报链路账",
-   "last_nudge": "20260911T215056Z",
-   "last_nudge_beats": 87
+   "last_nudge": "20260911T232541Z",
+   "last_nudge_beats": 95
   },
   {
    "id": "O-S-2D-01",
@@ -213,7 +213,7 @@
    ],
    "since_ts": "20260911T093116Z",
    "sla_beats": 24,
-   "beats": 61,
+   "beats": 62,
    "nudge_level": 8,
    "status": "open",
    "note": "册sha=105f9fc0012752a3; 册24拍无更→自激复核增补(静场不空转律之行)",
