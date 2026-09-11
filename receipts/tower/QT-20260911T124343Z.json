@@ -1,0 +1,31 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T124343Z",
+ "idle_in": 14,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-USRM-TASKIDS-01.md",
+   "opened": "20260911T084337Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260911T090619Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ANS-LVLU-WAVE3-01-20260911T091424Z.md",
+   "opened": "20260911T091847Z",
+   "tries": 19,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空；未闭三件涉lvlu：AN件（USRM-TASKIDS，已试22次）、ev件（eval-r2-lgt副件，已试20次）、QL件（WAVE3-01，已试19次）。\n\n② 应动何件：三件俱立协同，不候；首动AN件（tries最高）。\n\n③ 未闭项推进：\n- AN件：未闭，核TASKIDS阻塞点并协同清零。\n- ev件：未闭，定r2-lgt副件评估结论。\n- QL件：未闭，终局化WAVE3-01应答或升级。\n\n④ 生债：lvlu inbox三单高试未闭，生「高试积压协同清零督办债」。",
+ "wq_excerpt": ""
+}
