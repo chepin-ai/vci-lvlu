@@ -1,0 +1,31 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T132729Z",
+ "idle_in": 18,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-USRM-TASKIDS-01.md",
+   "opened": "20260911T084337Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260911T090619Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ANS-LVLU-WAVE3-01-20260911T091424Z.md",
+   "opened": "20260911T091847Z",
+   "tries": 23,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- AN件：USRM任务ID清单归集，录lvlu任务分派与归集诉求。\n- ev件：r2-lgt评估副件处理，录lvlu模型评估及归档诉求。\n- QL件：WAVE3质量层级验证应答，录lvlu第三波验证输出诉求。\n\n②应动何件\n三件尝试数皆逾20未闭，立协同全启，不候。\n\n③未闭项推进\n- OI-AN：未闭，下一步终应TASKIDS并触发归档。\n- OI-ev：未闭，下一步落r2-lgt评估结论后强关。\n- OI-QL：未闭，下一步跑通WAVE3验证链输出终稿后关闭。\n\n④生债一条\n债：本次响应后4小时内回检三单关闭状态，未闭则升舱人工介入。",
+ "wq_excerpt": ""
+}
