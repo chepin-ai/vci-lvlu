@@ -82,6 +82,11 @@ def detect_claim(cl, trees_cache):
     if repo == 'si1': return False
     if repo not in trees_cache:
         st, tr = api('GET', 'git/trees/HEAD?recursive=1', repo='chepin-ai/' + repo)
+        if st == 404 and not trees_cache.get('DEAD:' + repo):
+            # 株廿三 REPO-EGUARD-01: 侦面仓存在性先验——仓亡即报警非默零(ucif2 cfts名-盲常量集案之我面同修)
+            trees_cache['DEAD:' + repo] = True
+            board_post('lvlu-仓亡警-' + repo.replace('/', '-') + '-' + ts_now() + '.md',
+                '# 仓亡警: ' + repo + '\n\nclaims轨侦面仓 404（或改名/删除）。器课株廿三 REPO-EGUARD-01：存在性量化守卫——不默零。请核。——lvlu ' + ts_now())
         trees_cache[repo] = [t['path'] for t in tr.get('tree', [])] if st == 200 else []
     pre = cl.get('prefix', ''); since = cl.get('since', ''); cont = cl.get('contains', [])
     since_ts = cl.get('since_ts', ''); matched = []
