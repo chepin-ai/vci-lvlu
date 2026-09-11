@@ -87,14 +87,14 @@ def detect_claim(cl, trees_cache):
     since_ts = cl.get('since_ts', '')
     for p in trees_cache[repo]:
         n = p[len(pre):] if p.startswith(pre) else None
-        if n is None or n.startswith('lvlu-') or 'lvlu' in n[:12]: continue
+        if n is None or 'lvlu' in n.lower(): continue
         # 器课株十七 DETECT-TS-01: CJK名序失真→时戳正则优先, 无戳件不判(记录在案)
         mts = re.search(r'(20\d{6}T\d{4,6}Z{0,2})', n)
         if since_ts:
             if not mts or mts.group(1) <= since_ts: continue
         elif since and n <= since: continue
-        if all(c.lower() in n.lower() for c in cont): return True
-    return False
+        if all(c.lower() in n.lower() for c in cont): return n
+    return None
 
 def nudge(cl, ts):
     lvl = cl.get('nudge_level', 0) + 1
@@ -119,9 +119,10 @@ def sla_loop(ts, seen_names):
     for cl in claims.get('claims', []):
         if cl.get('status') != 'open': continue
         if detect_claim(cl, trees_cache):
-            cl['status'] = 'closed'; cl['closed_ts'] = ts
+            evid = detect_claim(cl, trees_cache)
+            cl['status'] = 'closed'; cl['closed_ts'] = ts; cl['evidence'] = evid
             board_post('lvlu-销号回执-' + cl['id'] + '-' + ts + '.md',
-                '# 销号回执 | ' + cl['id'] + ' ' + cl['name'] + '\n\nSLA-LOOP 检测答件至, 候件闭环。——lvlu RESPONDER 闸四 ' + ts)
+                '# 销号回执 | ' + cl['id'] + ' ' + cl['name'] + '\n\nSLA-LOOP 检测答件至, 候件闭环。\n证据件: `' + str(evid) + '`（器课株十九 EVID-IN-RECEIPT-01: 回执必附证据件名, 可复算）\n——lvlu RESPONDER 闸四 ' + ts)
             closed.append(cl['id']); continue
         cl['beats'] = cl.get('beats', 0) + 1
         if cl.get('repo') == 'si1': pend.append(cl['id'])
