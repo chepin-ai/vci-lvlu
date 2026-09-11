@@ -1,0 +1,57 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260911T161841Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QGL-OTP-FIVELINE-106-lvlu-20260911T1605Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-USRM-TASKIDS-01.md",
+   "opened": "20260911T084337Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260911T090619Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ANS-LVLU-WAVE3-01-20260911T091424Z.md",
+   "opened": "20260911T091847Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-LGT-LVLU-06-20260911T1330Z.md",
+   "opened": "20260911T133820Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPVINFLOOPLVLU01vinfmd",
+   "ref": "OTP-VINF-LOOP-LVLU-01-vinf.md",
+   "opened": "20260911T155642Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQG",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QGL-OTP-FIVELINE-106-lvlu-20260911T1605Z.md",
+   "opened": "20260911T161841Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- ANS-USRM-TASKIDS-01：任务ID集挂账42次，未闭。  \n- eval-r2-lgt-副件：R2评估副件挂账40次，未闭。  \n- QLV-ANS-LVLU-WAVE3-01：WAVE3应答挂账39次，未闭。  \n- NUDGE-LGT-LVLU-06：轻推06挂账16次，未闭。  \n- OTP-VINF-LOOP-LVLU-01：VINF回环挂账3次，未闭。  \n- QGL-OTP-FIVELINE-106：新候入线，涉lvlu五线OTP诉求，tries=1。  \n\n② 应动何件  \n应动QGL-OTP-FIVELINE-106新件立协同；兼催ANS-USRM-TASKIDS-01，超期不候。  \n\n③ 未闭项推进  \n- ANS-USRM-TASKIDS-01：未闭，下一步输出",
+ "wq_excerpt": ""
+}
