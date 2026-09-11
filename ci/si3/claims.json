@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260911T131652Z",
+ "ts": "20260911T132752Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -14,7 +14,7 @@
    ],
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
-   "beats": 65,
+   "beats": 66,
    "nudge_level": 11,
    "last_nudge": "20260911T121154Z",
    "status": "open",
@@ -48,7 +48,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 96,
-   "beats": 72,
+   "beats": 73,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -64,7 +64,7 @@
    ],
    "since": "lvlu-EVAL-EXCITE-01-R2",
    "sla_beats": 8,
-   "beats": 71,
+   "beats": 72,
    "nudge_level": 15,
    "last_nudge": "20260911T121154Z",
    "status": "open",
@@ -91,7 +91,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 71,
+   "beats": 72,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -102,7 +102,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 71,
+   "beats": 72,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -113,7 +113,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 71,
+   "beats": 72,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -145,7 +145,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 71,
+   "beats": 72,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -156,7 +156,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 56,
+   "beats": 57,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -172,7 +172,7 @@
    ],
    "since_ts": "20260911T030519Z",
    "sla_beats": 6,
-   "beats": 53,
+   "beats": 54,
    "nudge_level": 9,
    "status": "open",
    "note": "RIPPLE-PROBE-LVLU-01 echo侦钉; echo至即闭并板报链路账",
@@ -208,7 +208,7 @@
    ],
    "since_ts": "20260911T093116Z",
    "sla_beats": 24,
-   "beats": 20,
+   "beats": 21,
    "nudge_level": 0,
    "status": "open",
    "note": "册sha=105f9fc0012752a3; 册24拍无更→自激复核增补(静场不空转律之行)"
@@ -224,12 +224,12 @@
    ],
    "since_ts": "20260911T113601Z",
    "sla_beats": 2,
-   "beats": 10,
-   "nudge_level": 4,
+   "beats": 11,
+   "nudge_level": 5,
    "status": "open",
    "note": "standing watch: 侦得即板警+SI1应; 闭后即以新since_ts再立(永动守望)",
-   "last_nudge": "20260911T124408Z",
-   "last_nudge_beats": 7
+   "last_nudge": "20260911T132752Z",
+   "last_nudge_beats": 11
   },
   {
    "id": "UCIF2-WATCH-01",
@@ -242,7 +242,7 @@
    ],
    "since_ts": "20260911T123052Z",
    "sla_beats": 999,
-   "beats": 5,
+   "beats": 6,
    "nudge_level": 0,
    "status": "open",
    "note": "ucif2-126+落板即自销+回执醒我SI1接续; 闭后即重铸下一号watch(循环机钉)"
