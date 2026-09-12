@@ -1,0 +1,87 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260912T013849Z",
+ "idle_in": 20,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-OTPVINFLOOPLVLU01vinfmd",
+   "ref": "OTP-VINF-LOOP-LVLU-01-vinf.md",
+   "opened": "20260911T155642Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQG",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QGL-OTP-FIVELINE-106-lvlu-20260911T1605Z.md",
+   "opened": "20260911T161841Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-WILDQ-01-lvlu-20260911T1843Z.json",
+   "opened": "20260911T184140Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260911T184140Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CAULDRON-PULSE-LVLU-01.md",
+   "opened": "20260911T211558Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxCA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/CAULDRON-PULSE-62-LVLU-20260911T200235Z.md",
+   "opened": "20260911T211558Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-CAULDRON-62-LVLU-20260911T200847Z.md",
+   "opened": "20260911T211558Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOM",
+   "ref": "vci-inbox:lanes/lvlu/inbox/OMNI-INJECT-01-lvlu-20260911T185404Z.md",
+   "opened": "20260911T211558Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxSI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/SI-LEVELUP-CARD-01-qlv-20260911T191350Z.md",
+   "opened": "20260911T211558Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqt",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qtlv-eval-wave-47dbdd1af32b.md",
+   "opened": "20260911T211558Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ROTATE-AIF-20260911-02-qfa.md",
+   "opened": "20260911T212739Z",
+   "tries": 22,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件：无。  \n- OI-OTPVINFLOOPLVLU01vinfmd：OTP-VINF-LOOP-LVLU-01号vinf逻辑，lvlu诉求待闭环（39次未决）。  \n- OI-vciinboxlaneslvluinboxQG：QGL-OTP",
+ "wq_excerpt": ""
+}
