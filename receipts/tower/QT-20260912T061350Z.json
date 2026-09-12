@@ -1,0 +1,107 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260912T061350Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-销号回执-WQ-C02-ANS-20260911T004429Z.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "qfa-110-升级完度直答-野问统一-无死角根治-20260911T190646Z.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-LVLU-KEYDIST-N29-01-20260912T054743Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxRO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ROTATE-AIF-20260911-02-qfa.md",
+   "opened": "20260911T212739Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-7d0b9ae8.md",
+   "opened": "20260912T023140Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ECHO-91-lvlu-65ced015.md",
+   "opened": "20260912T023140Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-1f7ad198.md",
+   "opened": "20260912T023140Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260912.md",
+   "opened": "20260912T023848Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTH",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TH-SI-COUPLING-01-LGT-REPLY-20260912T0244Z.md",
+   "opened": "20260912T024939Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxFE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/FED-92-TASKS-lvlu.md",
+   "opened": "20260912T030136Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-DIRECT93lvlu20260912T030",
+   "ref": "DIRECT-93-lvlu-20260912T030532Z.md",
+   "opened": "20260912T030553Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-DEMANDFED92ACKlvlu202609",
+   "ref": "DEMAND-FED-92-ACK-lvlu-20260912T034751Z.md",
+   "opened": "20260912T040225Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-TASKECHO91lvlu20260912T0",
+   "ref": "TASK-ECHO-91-lvlu-20260912T034751Z.md",
+   "opened": "20260912T040225Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-GUIDEPACKQFA01md",
+   "ref": "GUIDE-PACK-QFA-01.md",
+   "opened": "20260912T042631Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluWQC02ANS20260911T004",
+   "ref": "lvlu-销号回执-WQ-C02-ANS-20260911T004429Z.md",
+   "opened": "20260912T061350Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- WQ-C02 销号回执待核。  \n- qfa-110 广播：完度直答/野问统一，涉 lvlu 域刷新。  \n- ANS-LVLU-KEYDIST-N29-01 钥匙分发入巷，待签。  \n\n② 应动何件  \nANS-LVLU-KEYDIST-N29-01、DIRECT-93、WQ-C02 销号核；立协同不候。  \n\n③ 未闭项推进  \n- RO(ROTATE-AIF): 未闭，47试，提级强制收敛。  \n- AC(ACK-LGT): 未闭，21试，补确收或待塔台同步。  \n- EC(ECHO-91): 未闭，21试，回声对冲后闭。  \n- RE(RENUDGE): 未闭，21试，终推一次，无响即挂起。  \n- AU(KEY-REASSIGN): 未闭，20试，限时决重分配方案。  \n- TH(SI-COUPLING): 未闭，19试，待 LGT 回波。  \n- FE(FED-92): 未闭，18试，任务切片确认交割。  \n- DIRECT-93: 未闭，17试，拆包执行并返执。  \n\n④ 生债一条  \n债：KEYDIST-N29-01 签收与 DIRECT-93 执行回执，限当班闭。",
+ "wq_excerpt": ""
+}
