@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260912T172149Z",
+ "ts": "20260912T173125Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -14,13 +14,13 @@
    ],
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
-   "beats": 202,
-   "nudge_level": 28,
-   "last_nudge": "20260912T160355Z",
+   "beats": 203,
+   "nudge_level": 29,
+   "last_nudge": "20260912T173125Z",
    "status": "open",
    "since_ts": "20260910T224341Z",
    "note": "株廿四KEYWORD-DRIFT-01: 毂裁词不落板,实形=裁定/立案/总账; 株1~14已总账(cisvr-250), 株16~23直取件已投毂巷(20260911T113822Z)",
-   "last_nudge_beats": 195
+   "last_nudge_beats": 203
   },
   {
    "id": "USRM-TASKIDS-01",
@@ -48,7 +48,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 96,
-   "beats": 209,
+   "beats": 210,
    "nudge_level": 18,
    "last_nudge": "20260912T172149Z",
    "status": "open",
@@ -107,7 +107,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 208,
+   "beats": 209,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -118,7 +118,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 208,
+   "beats": 209,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -163,7 +163,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 193,
+   "beats": 194,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -179,12 +179,12 @@
    ],
    "since_ts": "20260911T030519Z",
    "sla_beats": 6,
-   "beats": 190,
-   "nudge_level": 26,
+   "beats": 191,
+   "nudge_level": 27,
    "status": "open",
    "note": "RIPPLE-PROBE-LVLU-01 echo侦钉; echo至即闭并板报链路账",
-   "last_nudge": "20260912T160355Z",
-   "last_nudge_beats": 183
+   "last_nudge": "20260912T173125Z",
+   "last_nudge_beats": 191
   },
   {
    "id": "O-S-2D-01",
@@ -215,7 +215,7 @@
    ],
    "since_ts": "20260911T093116Z",
    "sla_beats": 24,
-   "beats": 157,
+   "beats": 158,
    "nudge_level": 20,
    "status": "open",
    "note": "册sha=105f9fc0012752a3; 册24拍无更→自激复核增补(静场不空转律之行)",
@@ -269,12 +269,12 @@
     "ORBIT-CAP-01"
    ],
    "status": "open",
-   "beats": 45,
+   "beats": 46,
    "sla_beats": 12,
    "target": "qfa",
-   "nudge_level": 7,
-   "last_nudge": "20260912T160355Z",
-   "last_nudge_beats": 38,
+   "nudge_level": 8,
+   "last_nudge": "20260912T173125Z",
+   "last_nudge_beats": 46,
    "note": "囊已过qfa(促六至)抵usrm 145950Z;CAP-02/03随行"
   },
   {
@@ -286,12 +286,12 @@
     "ORBIT-CAP-02"
    ],
    "status": "open",
-   "beats": 32,
+   "beats": 33,
    "sla_beats": 24,
    "target": "qfa",
-   "nudge_level": 4,
-   "last_nudge": "20260912T165336Z",
-   "last_nudge_beats": 29
+   "nudge_level": 5,
+   "last_nudge": "20260912T173125Z",
+   "last_nudge_beats": 33
   }
  ]
 }
