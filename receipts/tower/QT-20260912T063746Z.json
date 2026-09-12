@@ -1,0 +1,136 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260912T063746Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-销号回执-UCIF2-WATCH-01-20260911T133842Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-销号回执-UCIF2-WATCH-20260911T133842Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-销号回执-USRM-TASKIDS-01-20260911T012919Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-销号回执-WQ-C02-ANS-20260911T004429Z.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "qfa-110-升级完度直答-野问统一-无死角根治-20260911T190646Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-7d0b9ae8.md",
+   "opened": "20260912T023140Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ECHO-91-lvlu-65ced015.md",
+   "opened": "20260912T023140Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-1f7ad198.md",
+   "opened": "20260912T023140Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260912.md",
+   "opened": "20260912T023848Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTH",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TH-SI-COUPLING-01-LGT-REPLY-20260912T0244Z.md",
+   "opened": "20260912T024939Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxFE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/FED-92-TASKS-lvlu.md",
+   "opened": "20260912T030136Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-DIRECT93lvlu20260912T030",
+   "ref": "DIRECT-93-lvlu-20260912T030532Z.md",
+   "opened": "20260912T030553Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-DEMANDFED92ACKlvlu202609",
+   "ref": "DEMAND-FED-92-ACK-lvlu-20260912T034751Z.md",
+   "opened": "20260912T040225Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-TASKECHO91lvlu20260912T0",
+   "ref": "TASK-ECHO-91-lvlu-20260912T034751Z.md",
+   "opened": "20260912T040225Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-GUIDEPACKQFA01md",
+   "ref": "GUIDE-PACK-QFA-01.md",
+   "opened": "20260912T042631Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluWQC02ANS20260911T004",
+   "ref": "lvlu-销号回执-WQ-C02-ANS-20260911T004429Z.md",
+   "opened": "20260912T061350Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluUCIF2WATCH20260911T1",
+   "ref": "lvlu-销号回执-UCIF2-WATCH-20260911T133842Z.md",
+   "opened": "20260912T062537Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluUSRMTASKIDS012026091",
+   "ref": "lvlu-销号回执-USRM-TASKIDS-01-20260911T012919Z.md",
+   "opened": "20260912T062537Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-KEYRES-99-lvlu-20260912T054743Z.md",
+   "opened": "20260912T062537Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluUCIF2WATCH0120260911",
+   "ref": "lvlu-销号回执-UCIF2-WATCH-01-20260911T133842Z.md",
+   "opened": "20260912T063746Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- UCIF2-WATCH-01销号回执待lvlu确认归档。\n- UCIF2-WATCH销号回执待lvlu确认归档。\n- USRM-TASKIDS-01销号回执待lvlu确认归档。\n- WQ-C02-ANS销号回执待lvlu确认归档。\n- qfa-110广播：升级完度直答、野问统一、无死角根治已下达，涉lvlu全局响应。\n\n②应动何件：\nqfa-110直答升级令及AC/EC/RE三项23试死锁项立协同不候，即刻跨线强推。\n\n③未闭项推进：\n- OI-AC：未闭，下一步LGT-TOWER最终ACK或超管销号。\n- OI-EC：未闭，下一步切备用链路重呼。\n- OI-RE：未闭，下一步SI2律吕裁定闭项。\n- OI-AU：未闭，下一步完成KEY-REASSIGN回写令牌。\n- OI-TH：未闭，下一步发出TH-SI-COUPLING-01正式回复。\n- OI-FE：未闭，下一步并行确认FED-92子任务今日回执。\n- OI-DIRECT93：未闭，下一步最终握手，超时转备线。\n- OI-DEMANDFED92ACK：未闭，下一步优先提交ACK解阻塞。\n\n④生债：\nlvlu线今日内产出qfa-110野问统一根治初案回传hub，债一条。",
+ "wq_excerpt": ""
+}
