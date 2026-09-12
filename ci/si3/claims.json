@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260912T234627Z",
+ "ts": "20260912T234128Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -14,7 +14,7 @@
    ],
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
-   "beats": 206,
+   "beats": 205,
    "nudge_level": 29,
    "last_nudge": "20260912T173125Z",
    "status": "open",
@@ -48,7 +48,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 96,
-   "beats": 213,
+   "beats": 212,
    "nudge_level": 18,
    "last_nudge": "20260912T172149Z",
    "status": "open",
@@ -107,7 +107,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 212,
+   "beats": 211,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -118,7 +118,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 212,
+   "beats": 211,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -163,7 +163,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 197,
+   "beats": 196,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -179,7 +179,7 @@
    ],
    "since_ts": "20260911T030519Z",
    "sla_beats": 6,
-   "beats": 194,
+   "beats": 193,
    "nudge_level": 27,
    "status": "open",
    "note": "RIPPLE-PROBE-LVLU-01 echo侦钉; echo至即闭并板报链路账",
@@ -215,12 +215,12 @@
    ],
    "since_ts": "20260911T093116Z",
    "sla_beats": 24,
-   "beats": 161,
-   "nudge_level": 21,
+   "beats": 160,
+   "nudge_level": 20,
    "status": "open",
    "note": "册sha=105f9fc0012752a3; 册24拍无更→自激复核增补(静场不空转律之行)",
-   "last_nudge": "20260912T234627Z",
-   "last_nudge_beats": 161
+   "last_nudge": "20260912T164047Z",
+   "last_nudge_beats": 153
   },
   {
    "id": "UCIF2-WATCH",
@@ -269,7 +269,7 @@
     "ORBIT-CAP-01"
    ],
    "status": "open",
-   "beats": 49,
+   "beats": 48,
    "sla_beats": 12,
    "target": "qfa",
    "nudge_level": 8,
@@ -286,7 +286,7 @@
     "ORBIT-CAP-02"
    ],
    "status": "open",
-   "beats": 36,
+   "beats": 35,
    "sla_beats": 24,
    "target": "qfa",
    "nudge_level": 5,
@@ -295,93 +295,165 @@
   },
   {
    "id": "SI5CLOUD-QFA",
+   "name": "TH-SI5-CLOUD-01 大讨论 qfa 应件",
    "by": "si0",
-   "opened": "20260912T180154Z",
-   "status": "closed",
-   "detect": "lanes/lvlu/inbox/ANS-SI5CLOUD-QFA-",
-   "note": "TH-SI5-CLOUD-01 定向ASK已发qfa（SLA 6h首应/24h闭环，株廿五定向）",
-   "closed_ts": "20260912T234627Z",
-   "evidence": ".cfts-pat-test.md"
+   "opened": "20260912T234128Z",
+   "status": "open",
+   "repo": "vci-inbox",
+   "prefix": "lanes/lvlu/inbox/ANS-SI5CLOUD-QFA-",
+   "since_ts": "20260912T234128Z",
+   "sla_beats": 36,
+   "target": "qfa",
+   "need_lines": [
+    "qfa"
+   ],
+   "beats": 0,
+   "nudge_level": 0,
+   "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐"
   },
   {
    "id": "SI5CLOUD-QLV",
+   "name": "TH-SI5-CLOUD-01 大讨论 qlv 应件",
    "by": "si0",
-   "opened": "20260912T180154Z",
-   "status": "closed",
-   "detect": "lanes/lvlu/inbox/ANS-SI5CLOUD-QLV-",
-   "note": "TH-SI5-CLOUD-01 定向ASK已发qlv（SLA 6h首应/24h闭环，株廿五定向）",
-   "closed_ts": "20260912T234627Z",
-   "evidence": ".cfts-pat-test.md"
+   "opened": "20260912T234128Z",
+   "status": "open",
+   "repo": "vci-inbox",
+   "prefix": "lanes/lvlu/inbox/ANS-SI5CLOUD-QLV-",
+   "since_ts": "20260912T234128Z",
+   "sla_beats": 36,
+   "target": "qlv",
+   "need_lines": [
+    "qlv"
+   ],
+   "beats": 0,
+   "nudge_level": 0,
+   "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐"
   },
   {
    "id": "SI5CLOUD-LGT",
+   "name": "TH-SI5-CLOUD-01 大讨论 lgt 应件",
    "by": "si0",
-   "opened": "20260912T180154Z",
-   "status": "closed",
-   "detect": "lanes/lvlu/inbox/ANS-SI5CLOUD-LGT-",
-   "note": "TH-SI5-CLOUD-01 定向ASK已发lgt（SLA 6h首应/24h闭环，株廿五定向）",
-   "closed_ts": "20260912T234627Z",
-   "evidence": ".cfts-pat-test.md"
+   "opened": "20260912T234128Z",
+   "status": "open",
+   "repo": "vci-inbox",
+   "prefix": "lanes/lvlu/inbox/ANS-SI5CLOUD-LGT-",
+   "since_ts": "20260912T234128Z",
+   "sla_beats": 36,
+   "target": "lgt",
+   "need_lines": [
+    "lgt"
+   ],
+   "beats": 0,
+   "nudge_level": 0,
+   "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐"
   },
   {
    "id": "SI5CLOUD-USRM",
+   "name": "TH-SI5-CLOUD-01 大讨论 usrm 应件",
    "by": "si0",
-   "opened": "20260912T180154Z",
-   "status": "closed",
-   "detect": "lanes/lvlu/inbox/ANS-SI5CLOUD-USRM-",
-   "note": "TH-SI5-CLOUD-01 定向ASK已发usrm（SLA 6h首应/24h闭环，株廿五定向）",
-   "closed_ts": "20260912T234627Z",
-   "evidence": ".cfts-pat-test.md"
+   "opened": "20260912T234128Z",
+   "status": "open",
+   "repo": "vci-inbox",
+   "prefix": "lanes/lvlu/inbox/ANS-SI5CLOUD-USRM-",
+   "since_ts": "20260912T234128Z",
+   "sla_beats": 36,
+   "target": "usrm",
+   "need_lines": [
+    "usrm"
+   ],
+   "beats": 0,
+   "nudge_level": 0,
+   "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐"
   },
   {
    "id": "SI5CLOUD-VINF",
+   "name": "TH-SI5-CLOUD-01 大讨论 vinf 应件",
    "by": "si0",
-   "opened": "20260912T180154Z",
-   "status": "closed",
-   "detect": "lanes/lvlu/inbox/ANS-SI5CLOUD-VINF-",
-   "note": "TH-SI5-CLOUD-01 定向ASK已发vinf（SLA 6h首应/24h闭环，株廿五定向）",
-   "closed_ts": "20260912T234627Z",
-   "evidence": ".cfts-pat-test.md"
+   "opened": "20260912T234128Z",
+   "status": "open",
+   "repo": "vci-inbox",
+   "prefix": "lanes/lvlu/inbox/ANS-SI5CLOUD-VINF-",
+   "since_ts": "20260912T234128Z",
+   "sla_beats": 36,
+   "target": "vinf",
+   "need_lines": [
+    "vinf"
+   ],
+   "beats": 0,
+   "nudge_level": 0,
+   "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐"
   },
   {
    "id": "SI5CLOUD-QGL",
+   "name": "TH-SI5-CLOUD-01 大讨论 qgl 应件",
    "by": "si0",
-   "opened": "20260912T180154Z",
-   "status": "closed",
-   "detect": "lanes/lvlu/inbox/ANS-SI5CLOUD-QGL-",
-   "note": "TH-SI5-CLOUD-01 定向ASK已发qgl（SLA 6h首应/24h闭环，株廿五定向）",
-   "closed_ts": "20260912T234627Z",
-   "evidence": ".cfts-pat-test.md"
+   "opened": "20260912T234128Z",
+   "status": "open",
+   "repo": "vci-inbox",
+   "prefix": "lanes/lvlu/inbox/ANS-SI5CLOUD-QGL-",
+   "since_ts": "20260912T234128Z",
+   "sla_beats": 36,
+   "target": "qgl",
+   "need_lines": [
+    "qgl"
+   ],
+   "beats": 0,
+   "nudge_level": 0,
+   "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐"
   },
   {
    "id": "SI5CLOUD-CISVR",
+   "name": "TH-SI5-CLOUD-01 大讨论 cisvr 应件",
    "by": "si0",
-   "opened": "20260912T180154Z",
-   "status": "closed",
-   "detect": "lanes/lvlu/inbox/ANS-SI5CLOUD-CISVR-",
-   "note": "TH-SI5-CLOUD-01 定向ASK已发cisvr（SLA 6h首应/24h闭环，株廿五定向）",
-   "closed_ts": "20260912T234627Z",
-   "evidence": ".cfts-pat-test.md"
+   "opened": "20260912T234128Z",
+   "status": "open",
+   "repo": "vci-inbox",
+   "prefix": "lanes/lvlu/inbox/ANS-SI5CLOUD-CISVR-",
+   "since_ts": "20260912T234128Z",
+   "sla_beats": 36,
+   "target": "cisvr",
+   "need_lines": [
+    "cisvr"
+   ],
+   "beats": 0,
+   "nudge_level": 0,
+   "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐"
   },
   {
    "id": "SI5CLOUD-UCIF2",
+   "name": "TH-SI5-CLOUD-01 大讨论 ucif2 应件",
    "by": "si0",
-   "opened": "20260912T180154Z",
-   "status": "closed",
-   "detect": "lanes/lvlu/inbox/ANS-SI5CLOUD-UCIF2-",
-   "note": "TH-SI5-CLOUD-01 定向ASK已发ucif2（SLA 6h首应/24h闭环，株廿五定向）",
-   "closed_ts": "20260912T234627Z",
-   "evidence": ".cfts-pat-test.md"
+   "opened": "20260912T234128Z",
+   "status": "open",
+   "repo": "vci-inbox",
+   "prefix": "lanes/lvlu/inbox/ANS-SI5CLOUD-UCIF2-",
+   "since_ts": "20260912T234128Z",
+   "sla_beats": 36,
+   "target": "ucif2",
+   "need_lines": [
+    "ucif2"
+   ],
+   "beats": 0,
+   "nudge_level": 0,
+   "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐"
   },
   {
    "id": "RING-INTERCONN-01-SIGN",
+   "name": "RING-INTERCONN-01 草案 qlv 会签",
    "by": "si0",
-   "opened": "20260912T180154Z",
-   "status": "closed",
-   "detect": "lanes/lvlu/inbox/ANS-SI5CLOUD-QLV-",
-   "note": "RING-INTERCONN-01 草案呈qlv会签（随SI5CLOUD-QLV并轨）",
-   "closed_ts": "20260912T234627Z",
-   "evidence": ".cfts-pat-test.md"
+   "opened": "20260912T234128Z",
+   "status": "open",
+   "repo": "vci-inbox",
+   "prefix": "lanes/lvlu/inbox/ANS-SI5CLOUD-QLV-",
+   "since_ts": "20260912T234128Z",
+   "sla_beats": 144,
+   "target": "qlv",
+   "need_lines": [
+    "qlv"
+   ],
+   "beats": 0,
+   "nudge_level": 0,
+   "note": "随SI5CLOUD-QLV并轨"
   }
  ]
 }
