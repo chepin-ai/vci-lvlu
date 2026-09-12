@@ -1,0 +1,152 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260912T052529Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "qfa-110-升级完度直答-野问统一-无死角根治-20260911T190646Z.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-O-S-2D-01-qlv-20260912T051513Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-WILDQ-01-lvlu-20260911T1843Z.json",
+   "opened": "20260911T184140Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260911T184140Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CAULDRON-PULSE-LVLU-01.md",
+   "opened": "20260911T211558Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxCA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/CAULDRON-PULSE-62-LVLU-20260911T200235Z.md",
+   "opened": "20260911T211558Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-CAULDRON-62-LVLU-20260911T200847Z.md",
+   "opened": "20260911T211558Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOM",
+   "ref": "vci-inbox:lanes/lvlu/inbox/OMNI-INJECT-01-lvlu-20260911T185404Z.md",
+   "opened": "20260911T211558Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxSI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/SI-LEVELUP-CARD-01-qlv-20260911T191350Z.md",
+   "opened": "20260911T211558Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqt",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qtlv-eval-wave-47dbdd1af32b.md",
+   "opened": "20260911T211558Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ROTATE-AIF-20260911-02-qfa.md",
+   "opened": "20260911T212739Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-7d0b9ae8.md",
+   "opened": "20260912T023140Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ECHO-91-lvlu-65ced015.md",
+   "opened": "20260912T023140Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-1f7ad198.md",
+   "opened": "20260912T023140Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260912.md",
+   "opened": "20260912T023848Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTH",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TH-SI-COUPLING-01-LGT-REPLY-20260912T0244Z.md",
+   "opened": "20260912T024939Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxFE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/FED-92-TASKS-lvlu.md",
+   "opened": "20260912T030136Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-DIRECT93lvlu20260912T030",
+   "ref": "DIRECT-93-lvlu-20260912T030532Z.md",
+   "opened": "20260912T030553Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-DEMANDFED92ACKlvlu202609",
+   "ref": "DEMAND-FED-92-ACK-lvlu-20260912T034751Z.md",
+   "opened": "20260912T040225Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-TASKECHO91lvlu20260912T0",
+   "ref": "TASK-ECHO-91-lvlu-20260912T034751Z.md",
+   "opened": "20260912T040225Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-GUIDEPACKQFA01md",
+   "ref": "GUIDE-PACK-QFA-01.md",
+   "opened": "20260912T042631Z",
+   "tries": 6,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 广播：qfa-110升级完度直答/野问统一/无死角根治方案。  \n- 车道：ANS-O-S-2D-01-qlv应答件入lvlu inbox。  \n\n② 应动何件  \n- 两件并动：广播件直答升级协同，ANS-O-S-2D-01即时解析回写，不候。  \n\n③ 未闭项推进  \n- OI-TASK-WILDQ-01：未闭；46次尝试强制收敛为闭包。  \n- OI-WILDQMERGED01：未闭；输出合并确认码。  \n- OI-ANS-CAULDRON-PULSE：未闭；锚定脉冲应答至lvlu能级。  \n- OI-CAULDRON-PULSE-62：未闭；校验脉冲62兼容并签收。  \n- OI-DEMAND-CAULDRON-62：未闭；回传执行意愿向量。  \n- OI-OMNI-INJECT-01：未闭；完成SI2/SI0接口校验。  \n- OI-SI-LEVELUP-CARD-01：未闭；确认层级跃迁条件。  \n- OI-qtlv-eval-wave：未闭；提交评估波次结果终结循环。  \n\n④ 生债一条  \n- 生债：46次高尝试未闭，欠「止损收敛」债一，本拍内强启。",
+ "wq_excerpt": ""
+}
