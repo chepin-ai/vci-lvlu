@@ -1,0 +1,451 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260912T162815Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-EVALR2-ALL-L25-20260912T051458Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-EVALR2-ALL-L26-20260912T065023Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-EVALR2-ALL-L27-20260912T083047Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-EVALR2-ALL-L28-20260912T101139Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-EVALR2-ALL-L29-20260912T113115Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-EVALR2-ALL-L30-20260912T125355Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-EVALR2-ALL-L31-20260912T143520Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-EVALR2-ALL-L4-20260911T014158Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-EVALR2-ALL-L5-20260911T015422Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-EVALR2-ALL-L6-20260911T020625Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-EVALR2-ALL-L7-20260911T021828Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-EVALR2-ALL-L8-20260911T023120Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-EVALR2-ALL-L9-20260911T024321Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-EXP049-DONE-L10-20260912T050313Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-EXP049-DONE-L11-20260912T063811Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-EXP049-DONE-L12-20260912T081802Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-EXP049-DONE-L13-20260912T095849Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-EXP049-DONE-L14-20260912T112552Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-EXP049-DONE-L15-20260912T124112Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-EXP049-DONE-L16-20260912T142242Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-EXP049-DONE-L17-20260912T155107Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-EXP049-DONE-L4-20260911T184203Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-EXP049-DONE-L5-20260911T213915Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-EXP049-DONE-L6-20260911T231333Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-EXP049-DONE-L7-20260912T004956Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-EXP049-DONE-L8-20260912T022659Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-EXP049-DONE-L9-20260912T033800Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-ORBIT-CAP-01-L4-20260912T120225Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-ORBIT-CAP-01-L5-20260912T125355Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-ORBIT-CAP-01-L6-20260912T143520Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-ORBIT-CAP-01-L7-20260912T160355Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-REVDRV-01-L10-20260911T133842Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-REVDRV-01-L11-20260911T151026Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-REVDRV-01-L12-20260911T163129Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-REVDRV-01-L13-20260911T180648Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-REVDRV-01-L14-20260911T215056Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-REVDRV-01-L15-20260911T232541Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-REVDRV-01-L16-20260912T010215Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-REVDRV-01-L17-20260912T023158Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-REVDRV-01-L18-20260912T035024Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-lvlunudgeEXP049DONEL1520",
+   "ref": "lvlu-nudge-EXP049-DONE-L15-20260912T124112Z.md",
+   "opened": "20260912T153756Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeEXP049DONEL4202",
+   "ref": "lvlu-nudge-EXP049-DONE-L4-20260911T184203Z.md",
+   "opened": "20260912T153756Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeREVDRV01L102026",
+   "ref": "lvlu-nudge-REVDRV-01-L10-20260911T133842Z.md",
+   "opened": "20260912T153756Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeREVDRV01L112026",
+   "ref": "lvlu-nudge-REVDRV-01-L11-20260911T151026Z.md",
+   "opened": "20260912T153756Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeREVDRV01L122026",
+   "ref": "lvlu-nudge-REVDRV-01-L12-20260911T163129Z.md",
+   "opened": "20260912T153756Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeREVDRV01L192026",
+   "ref": "lvlu-nudge-REVDRV-01-L19-20260912T051458Z.md",
+   "opened": "20260912T153756Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeEVALR2ALLL29202",
+   "ref": "lvlu-nudge-EVALR2-ALL-L29-20260912T113115Z.md",
+   "opened": "20260912T155047Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeEVALR2ALLL30202",
+   "ref": "lvlu-nudge-EVALR2-ALL-L30-20260912T125355Z.md",
+   "opened": "20260912T155047Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeEXP049DONEL1320",
+   "ref": "lvlu-nudge-EXP049-DONE-L13-20260912T095849Z.md",
+   "opened": "20260912T155047Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeEXP049DONEL1420",
+   "ref": "lvlu-nudge-EXP049-DONE-L14-20260912T112552Z.md",
+   "opened": "20260912T155047Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeEXP049DONEL1620",
+   "ref": "lvlu-nudge-EXP049-DONE-L16-20260912T142242Z.md",
+   "opened": "20260912T155047Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeEXP049DONEL8202",
+   "ref": "lvlu-nudge-EXP049-DONE-L8-20260912T022659Z.md",
+   "opened": "20260912T155047Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeEXP049DONEL9202",
+   "ref": "lvlu-nudge-EXP049-DONE-L9-20260912T033800Z.md",
+   "opened": "20260912T155047Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeORBITCAP01L4202",
+   "ref": "lvlu-nudge-ORBIT-CAP-01-L4-20260912T120225Z.md",
+   "opened": "20260912T155047Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeORBITCAP01L5202",
+   "ref": "lvlu-nudge-ORBIT-CAP-01-L5-20260912T125355Z.md",
+   "opened": "20260912T155047Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeREVDRV01L162026",
+   "ref": "lvlu-nudge-REVDRV-01-L16-20260912T010215Z.md",
+   "opened": "20260912T155047Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRH",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RHYTHM-XVALID-142MIN-qlv-20260912T152800Z.md",
+   "opened": "20260912T155047Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeEVALR2ALLL28202",
+   "ref": "lvlu-nudge-EVALR2-ALL-L28-20260912T101139Z.md",
+   "opened": "20260912T160333Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeEVALR2ALLL92026",
+   "ref": "lvlu-nudge-EVALR2-ALL-L9-20260911T024321Z.md",
+   "opened": "20260912T160333Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeEXP049DONEL1020",
+   "ref": "lvlu-nudge-EXP049-DONE-L10-20260912T050313Z.md",
+   "opened": "20260912T160333Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeEXP049DONEL1120",
+   "ref": "lvlu-nudge-EXP049-DONE-L11-20260912T063811Z.md",
+   "opened": "20260912T160333Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeEXP049DONEL1220",
+   "ref": "lvlu-nudge-EXP049-DONE-L12-20260912T081802Z.md",
+   "opened": "20260912T160333Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeEXP049DONEL1720",
+   "ref": "lvlu-nudge-EXP049-DONE-L17-20260912T155107Z.md",
+   "opened": "20260912T160333Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeEXP049DONEL7202",
+   "ref": "lvlu-nudge-EXP049-DONE-L7-20260912T004956Z.md",
+   "opened": "20260912T160333Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeORBITCAP01L6202",
+   "ref": "lvlu-nudge-ORBIT-CAP-01-L6-20260912T143520Z.md",
+   "opened": "20260912T160333Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeREVDRV01L172026",
+   "ref": "lvlu-nudge-REVDRV-01-L17-20260912T023158Z.md",
+   "opened": "20260912T160333Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeREVDRV01L182026",
+   "ref": "lvlu-nudge-REVDRV-01-L18-20260912T035024Z.md",
+   "opened": "20260912T160333Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeEVALR2ALLL26202",
+   "ref": "lvlu-nudge-EVALR2-ALL-L26-20260912T065023Z.md",
+   "opened": "20260912T161523Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeEVALR2ALLL27202",
+   "ref": "lvlu-nudge-EVALR2-ALL-L27-20260912T083047Z.md",
+   "opened": "20260912T161523Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeEVALR2ALLL62026",
+   "ref": "lvlu-nudge-EVALR2-ALL-L6-20260911T020625Z.md",
+   "opened": "20260912T161523Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeEVALR2ALLL72026",
+   "ref": "lvlu-nudge-EVALR2-ALL-L7-20260911T021828Z.md",
+   "opened": "20260912T161523Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeEVALR2ALLL82026",
+   "ref": "lvlu-nudge-EVALR2-ALL-L8-20260911T023120Z.md",
+   "opened": "20260912T161523Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeEXP049DONEL6202",
+   "ref": "lvlu-nudge-EXP049-DONE-L6-20260911T231333Z.md",
+   "opened": "20260912T161523Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeORBITCAP01L7202",
+   "ref": "lvlu-nudge-ORBIT-CAP-01-L7-20260912T160355Z.md",
+   "opened": "20260912T161523Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeREVDRV01L152026",
+   "ref": "lvlu-nudge-REVDRV-01-L15-20260911T232541Z.md",
+   "opened": "20260912T161523Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeEVALR2ALLL25202",
+   "ref": "lvlu-nudge-EVALR2-ALL-L25-20260912T051458Z.md",
+   "opened": "20260912T162815Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeEVALR2ALLL52026",
+   "ref": "lvlu-nudge-EVALR2-ALL-L5-20260911T015422Z.md",
+   "opened": "20260912T162815Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeEXP049DONEL5202",
+   "ref": "lvlu-nudge-EXP049-DONE-L5-20260911T213915Z.md",
+   "opened": "20260912T162815Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeREVDRV01L132026",
+   "ref": "lvlu-nudge-REVDRV-01-L13-20260911T180648Z.md",
+   "opened": "20260912T162815Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeREVDRV01L142026",
+   "ref": "lvlu-nudge-REVDRV-01-L14-20260911T215056Z.md",
+   "opened": "20260912T162815Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- EVALR2-ALL-L4~L9、L25~L31 共13件 hub-board nudge 到达，为 lvlu 线评估轮次全量同步诉求，已录。\n- EXP049-DONE-L10~L16 共7件 hub-board nudge 到达，为 lvlu 线实验批次完成确认诉求，已录。\n\n② 应动何件：\n- 未闭项5项（REVDRV-01-L10/11/12、EXP049-DONE-L4/L15）已尝试5次仍 open，超时滞留，立协同不候。\n- EXP049-DONE-L10~L16 新到完成态，立同步归档，不候。\n- EVALR2-ALL 全量评估态，立同步回环，不候。\n\n③ 未闭项推进：\n- OI-EXP049-DONE-L15：未闭；下一步：核对 L15 完成签名，执行闭包。\n- OI-EXP049-DONE-L4：未闭；下一步：回溯跨日归档缺口，补链后关闭。\n- OI-REVDRV-01-L10：未闭；下一步：驱动 L10 复核收敛。\n- OI-REVDRV-01-L11：未闭；下一步：驱动 L11 复核收敛。\n- OI-REVDRV-01-L12：未闭；下一步：驱动 L12 复核收敛。\n- OI-REVDRV-01-L…（截断）：未闭；下一步：补全 ID 与引用信息后同步推进。\n\n④ 生债一条：\n- 债：EVALR2-ALL-L4~L9 跨日评估 nudge 尚未回环确认，须补核对关闭。",
+ "wq_excerpt": ""
+}
