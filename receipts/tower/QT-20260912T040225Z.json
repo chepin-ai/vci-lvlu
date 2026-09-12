@@ -1,0 +1,149 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260912T040225Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "qfa-90-otp-five-ring-harmony-20260910T225907Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DEMAND-FED-92-ACK-lvlu-20260912T034751Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "TASK-ECHO-91-lvlu-20260912T034751Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-WILDQ-01-lvlu-20260911T1843Z.json",
+   "opened": "20260911T184140Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260911T184140Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CAULDRON-PULSE-LVLU-01.md",
+   "opened": "20260911T211558Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxCA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/CAULDRON-PULSE-62-LVLU-20260911T200235Z.md",
+   "opened": "20260911T211558Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-CAULDRON-62-LVLU-20260911T200847Z.md",
+   "opened": "20260911T211558Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOM",
+   "ref": "vci-inbox:lanes/lvlu/inbox/OMNI-INJECT-01-lvlu-20260911T185404Z.md",
+   "opened": "20260911T211558Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxSI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/SI-LEVELUP-CARD-01-qlv-20260911T191350Z.md",
+   "opened": "20260911T211558Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqt",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qtlv-eval-wave-47dbdd1af32b.md",
+   "opened": "20260911T211558Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ROTATE-AIF-20260911-02-qfa.md",
+   "opened": "20260911T212739Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-7d0b9ae8.md",
+   "opened": "20260912T023140Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ECHO-91-lvlu-65ced015.md",
+   "opened": "20260912T023140Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-1f7ad198.md",
+   "opened": "20260912T023140Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260912.md",
+   "opened": "20260912T023848Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTH",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TH-SI-COUPLING-01-LGT-REPLY-20260912T0244Z.md",
+   "opened": "20260912T024939Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxFE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/FED-92-TASKS-lvlu.md",
+   "opened": "20260912T030136Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-DIRECT93lvlu20260912T030",
+   "ref": "DIRECT-93-lvlu-20260912T030532Z.md",
+   "opened": "20260912T030553Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-DEMANDFED92ACKlvlu202609",
+   "ref": "DEMAND-FED-92-ACK-lvlu-20260912T034751Z.md",
+   "opened": "20260912T040225Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-TASKECHO91lvlu20260912T0",
+   "ref": "TASK-ECHO-91-lvlu-20260912T034751Z.md",
+   "opened": "20260912T040225Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- 广播 qfa-90-otp-five-ring-harmony：五环和谐通告，阅知。\n- 需求 DEMAND-FED-92-ACK-lvlu：联邦回执诉求，录。\n- 任务 TASK-ECHO-91-lvlu：回显任务，录。\n\n② 应动何件\n应动 DEMAND-FED-92-ACK、TASK-ECHO-91，立协同不候。\n\n③ 未闭项推进\n- OI-TA：未闭，下一步逼单 TASK-WILDQ-01。\n- OI-WILDQMERGED01：未闭，下一步合稿。\n- OI-AN：未闭，下一步确认 ANS-CAULDRON-PULSE 闭环。\n- OI-CA：未闭，下一步解析 CAULDRON-PULSE-62。\n- OI-DE：未闭，下一步交付 DEMAND-CAULDRON-62。\n- OI-OM：未闭，下一步消化 OMNI-INJECT-01。\n- OI-SI：未闭，下一步激活 SI-LEVELUP-CARD-01。\n- OI-qt：未闭，下一步收敛 qtlv-eval-wave。\n\n④ 生债一条\n生债：lvlu 未闭项 8 件，最长 39 试，需清。",
+ "wq_excerpt": ""
+}
