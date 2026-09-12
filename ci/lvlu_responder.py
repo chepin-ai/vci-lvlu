@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# LVLU-RESPONDER-01 v3.1(株廿五 NUDGE-TARGET-01: need_lines分线定向) — lvlu线 SI3专候响应环（KEYHEALTH/SECRETS-META/KEYREQ/DISC/SI1-WAKE/SLA/NUDGE/EXP/PULSE/ORBIT 十件）
+# LVLU-RESPONDER-01 v3.2(+闸九MIRROR-LOOP双镜制机镜)(株廿五 NUDGE-TARGET-01: need_lines分线定向) — lvlu线 SI3专候响应环（KEYHEALTH/SECRETS-META/KEYREQ/DISC/SI1-WAKE/SLA/NUDGE/EXP/PULSE/ORBIT 十件）
 # 职: ⓪每拍验钥回退链+secrets元数据差分(株廿四) ①钥取件即见即注 ②指名lvlu件即收讫 ③SI1-WAKE常新 ⑧周天囊自驿
 # 律: 零定时(事驱入拍) / 值不过板不落盘(内存即用即焚) / names-only回执 / 非白名单→裁示候root
 import os, json, base64, urllib.request, urllib.parse, datetime, re, hashlib
@@ -209,6 +209,22 @@ def secrets_meta(ts):
     except Exception as e:
         return {'meta': 'err:' + e.__class__.__name__}
 
+# —— 闸九 MIRROR-LOOP-01: 双镜制之机镜(SESSION-MIRROR-01 v0.1)——
+# 驱动答root: SI1纬非薪不保每拍末投镜——塔驱机镜保底每拍必有(本闸),SI1醒拍席镜覆写提质
+def mirror_loop(ts, state, sla, exp, orb):
+    """每拍机镜: 本拍动作+新件+候件态 落 receipts/session-mirror/mirror.jsonl; 席镜(ci-inbox shared)醒拍覆写"""
+    try:
+        entry = {'ts': ts, 'kind': '机镜', 'claims_open': sla.get('claims'), 'closed': sla.get('closed'),
+                 'nudged': sla.get('nudged'), 'exp': {k: v for k, v in (exp or {}).items() if k in ('probe','exp049_done')},
+                 'orbit': orb, 'note': 'SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜'}
+        old, msha = get_file('receipts/session-mirror/mirror.jsonl')
+        lines = (old or '') + json.dumps(entry, ensure_ascii=False) + '\n'
+        keep = lines.strip().split('\n')[-500:]
+        put_file('receipts/session-mirror/mirror.jsonl', '\n'.join(keep) + '\n', msha, '[skip ci] mirror ' + ts)
+        return entry
+    except Exception as e:
+        return {'mirror': 'err:' + e.__class__.__name__}
+
 # —— 闸八 ORBIT-LOOP-01: 周天囊自驿(大/小周天 环-圈自动驿传:戳印+转下站+回环板报销号) ——
 def orbit_loop(ts, state):
     out = []
@@ -351,6 +367,8 @@ def main():
     pulse = si0_pulse(ts, vault, sla, names, klogin)
     # 闸八: 周天囊自驿
     orb = orbit_loop(ts, state)
+    # 闸九: 机镜保底
+    mir = mirror_loop(ts, state, sla, exp, orb)
     # 闸三 SI1-WAKE: 会话接续锚常新
     wake = {'ts': ts, 'keyreq_done': done, 'acks': acks,
             'pending_si1': pending_si1,
@@ -361,7 +379,7 @@ def main():
              '[skip ci] responder wake ' + ts)
     state = {'ts': ts, 'seen': sorted(seen)[-400:], 'done': (state.get('done', []) + done)[-60:]}
     put_file('receipts/tower/responder_state.json', json.dumps(state, ensure_ascii=False, indent=1), ssha, '[skip ci] responder state')
-    print(json.dumps({'ts': ts, 'keyreq_done': done, 'acks': acks, 'vault_keys': len(vault), 'meta': meta, 'orbit': orb, 'sla': sla, 'exp': exp, 'pulse': pulse}, ensure_ascii=False))
+    print(json.dumps({'ts': ts, 'keyreq_done': done, 'acks': acks, 'vault_keys': len(vault), 'meta': meta, 'orbit': orb, 'mirror': mir, 'sla': sla, 'exp': exp, 'pulse': pulse}, ensure_ascii=False))
 
 if __name__ == '__main__':
     main()
