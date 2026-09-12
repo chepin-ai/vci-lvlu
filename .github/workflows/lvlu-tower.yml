@@ -52,6 +52,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           LINE_PAT: ${{ secrets.AI_FULL_PAT }}  # NAME-HYGIENE-97(qfa代改,覆写权归原线): CI_OPS_LINE_KEY=线App PEM(root复位中),PAT面归AI_FULL_PAT
+          CI_OPS_LINE_KEY: ${{ secrets.CI_OPS_LINE_KEY }}  # 株廿四律三 KEYHEALTH-01: 验钥回退链第二环
           LV_VAULT_CMD: ${{ secrets.LV_VAULT_CMD }}
         run: python3 ci/lvlu_responder.py
 
