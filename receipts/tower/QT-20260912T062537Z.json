@@ -1,0 +1,129 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260912T062537Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-销号回执-UCIF2-WATCH-20260911T133842Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-销号回执-USRM-TASKIDS-01-20260911T012919Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-销号回执-WQ-C02-ANS-20260911T004429Z.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "qfa-110-升级完度直答-野问统一-无死角根治-20260911T190646Z.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-KEYRES-99-lvlu-20260912T054743Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-7d0b9ae8.md",
+   "opened": "20260912T023140Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ECHO-91-lvlu-65ced015.md",
+   "opened": "20260912T023140Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-1f7ad198.md",
+   "opened": "20260912T023140Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260912.md",
+   "opened": "20260912T023848Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTH",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TH-SI-COUPLING-01-LGT-REPLY-20260912T0244Z.md",
+   "opened": "20260912T024939Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxFE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/FED-92-TASKS-lvlu.md",
+   "opened": "20260912T030136Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-DIRECT93lvlu20260912T030",
+   "ref": "DIRECT-93-lvlu-20260912T030532Z.md",
+   "opened": "20260912T030553Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-DEMANDFED92ACKlvlu202609",
+   "ref": "DEMAND-FED-92-ACK-lvlu-20260912T034751Z.md",
+   "opened": "20260912T040225Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-TASKECHO91lvlu20260912T0",
+   "ref": "TASK-ECHO-91-lvlu-20260912T034751Z.md",
+   "opened": "20260912T040225Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-GUIDEPACKQFA01md",
+   "ref": "GUIDE-PACK-QFA-01.md",
+   "opened": "20260912T042631Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluWQC02ANS20260911T004",
+   "ref": "lvlu-销号回执-WQ-C02-ANS-20260911T004429Z.md",
+   "opened": "20260912T061350Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluUCIF2WATCH20260911T1",
+   "ref": "lvlu-销号回执-UCIF2-WATCH-20260911T133842Z.md",
+   "opened": "20260912T062537Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluUSRMTASKIDS012026091",
+   "ref": "lvlu-销号回执-USRM-TASKIDS-01-20260911T012919Z.md",
+   "opened": "20260912T062537Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-KEYRES-99-lvlu-20260912T054743Z.md",
+   "opened": "20260912T062537Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n1. lvlu-UCIF2-WATCH销号回执：观测单元销号已归板。\n2. lvlu-USRM-TASKIDS-01销号回执：任务ID序列销号已挂板。\n3. lvlu-WQ-C02-ANS销号回执：应答销号回执已到位。\n4. qfa-110广播：升级直答/野问统一/无死角根治，lvlu须同步认知。\n5. NOTICE-KEYRES-99：lvlu关键资源99号通知，涉核心资源再调度。\n\n②应动何件：\nNOTICE-KEYRES-99（立协同不候）；未闭项AC/EC/RE/AU/TH/FE/D93/DEMAND全队列并动，不候。\n\n③未闭项推进：\n- AC：未闭，强发ACK-LGT-TOWER终局确认。\n- EC：未闭，重触ECHO-91或标失联熔断。\n- RE：未闭，RENUDGE-LGT终答或强制销号。\n- AU：未闭，闭环RING-KEY重分配握手。\n- TH：未闭，发出TH-SI-COUPLING-01-LGT正式回复。\n- FE：未闭，确认FED-92-TASKS并返ACK。\n- DIRECT93：未闭，执行DIRECT-93或回传拒止。\n- DEMAND：未闭，补发FED-92-ACK结债。\n\n④生债一条：\nlvlu线8项未闭超13试，确认债务高企，本轮限全清。",
+ "wq_excerpt": ""
+}
