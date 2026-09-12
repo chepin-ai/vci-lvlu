@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260912T234952Z",
+ "ts": "20260912T235615Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -285,15 +285,15 @@
    "contains": [
     "ORBIT-CAP-02"
    ],
-   "status": "closed",
-   "beats": 35,
+   "status": "open",
+   "beats": 0,
    "sla_beats": 24,
    "target": "qfa",
    "nudge_level": 5,
    "last_nudge": "20260912T173125Z",
    "last_nudge_beats": 33,
-   "closed_ts": "20260912T234952Z",
-   "evidence": "ORBIT-CAP-02-20260912T234128Z.md"
+   "evidence": "ORBIT-CAP-02-20260912T234128Z.md",
+   "note": "234952Z拍误触闭(bypass囊过lvlu inbox瞬检)——闭环未成,重开; 囊今在lgt站; 器课株廿八补律: 闭环检须验stamps齐+回环板告"
   },
   {
    "id": "SI5CLOUD-QFA",
