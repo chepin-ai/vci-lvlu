@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# LVLU-RESPONDER-01 v3.2(+闸九MIRROR-LOOP双镜制机镜)(株廿五 NUDGE-TARGET-01: need_lines分线定向) — lvlu线 SI3专候响应环（KEYHEALTH/SECRETS-META/KEYREQ/DISC/SI1-WAKE/SLA/NUDGE/EXP/PULSE/ORBIT 十件）
+# LVLU-RESPONDER-01 v3.2.1(+闸九MIRROR-LOOP; FIX-NAME-01 claim name容错)(株廿五 NUDGE-TARGET-01: need_lines分线定向) — lvlu线 SI3专候响应环（KEYHEALTH/SECRETS-META/KEYREQ/DISC/SI1-WAKE/SLA/NUDGE/EXP/PULSE/ORBIT 十件）
 # 职: ⓪每拍验钥回退链+secrets元数据差分(株廿四) ①钥取件即见即注 ②指名lvlu件即收讫 ③SI1-WAKE常新 ⑧周天囊自驿
 # 律: 零定时(事驱入拍) / 值不过板不落盘(内存即用即焚) / names-only回执 / 非白名单→裁示候root
 import os, json, base64, urllib.request, urllib.parse, datetime, re, hashlib
@@ -147,7 +147,7 @@ def nudge(cl, ts, trees_cache=None):
         open_lines = detect_open_lines(cl, trees_cache)
         if open_lines: tgt = open_lines[0]  # 株廿五: 只促未达线,已答线免扰
     ch = NUDGE_CH.get(tgt, {})
-    msg = '# NUDGE-ESCALATE-01 L' + str(lvl) + ' | ' + cl['id'] + ' ' + cl['name'] + '\n\n候件逾窗(' + str(cl.get('sla_beats')) + '拍)。lvlu RESPONDER 闸五自动促件。@' + tgt + ' 请直取/回执。——lvlu ' + ts
+    msg = '# NUDGE-ESCALATE-01 L' + str(lvl) + ' | ' + cl['id'] + ' ' + cl.get('name', cl.get('note', '')) + '\n\n候件逾窗(' + str(cl.get('sla_beats')) + '拍)。lvlu RESPONDER 闸五自动促件。@' + tgt + ' 请直取/回执。——lvlu ' + ts
     acts = []
     cmsg = 'CLASSIFY: L1(联邦机器邮·lvlu→' + tgt + ' 闸五促件L' + str(lvl) + ')\n' + msg  # 器课株二十 GUARD-CLASSIFY-01
     if lvl >= 1 and ch.get('lane'):
@@ -174,7 +174,7 @@ def sla_loop(ts, seen_names):
             evid = detect_claim(cl, trees_cache)
             cl['status'] = 'closed'; cl['closed_ts'] = ts; cl['evidence'] = evid
             board_post('lvlu-销号回执-' + cl['id'] + '-' + ts + '.md',
-                '# 销号回执 | ' + cl['id'] + ' ' + cl['name'] + '\n\nSLA-LOOP 检测答件至, 候件闭环。\n证据件: `' + str(evid) + '`（器课株十九 EVID-IN-RECEIPT-01: 回执必附证据件名, 可复算）\n——lvlu RESPONDER 闸四 ' + ts)
+                '# 销号回执 | ' + cl['id'] + ' ' + cl.get('name', cl.get('note', '')) + '\n\nSLA-LOOP 检测答件至, 候件闭环。\n证据件: `' + str(evid) + '`（器课株十九 EVID-IN-RECEIPT-01: 回执必附证据件名, 可复算）\n——lvlu RESPONDER 闸四 ' + ts)
             closed.append(cl['id']); continue
         cl['beats'] = cl.get('beats', 0) + 1
         if cl.get('repo') == 'si1': pend.append(cl['id'])
