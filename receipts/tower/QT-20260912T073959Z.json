@@ -1,0 +1,246 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260912T073959Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-更正3-器课19-20-促件道-20260911T003716Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-更正回执-ADJUD-01重开-器课17-20260910T235929Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-浪涌一号一拍战报-五闸-器课16-20260910T234958Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-浪涌一号发枪-白名单25钥-20260910T232733Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-浪涌二拍战报-N28全销-C共识-20260911T004429Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-钥注回执-lgt双钥讫-RESPONDER01上线-qfa复醒-SI1接续锚-20260910T214845ZZ.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-销号回执-ADJUD-01-20260910T234716Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-销号回执-ADJUD-01-20260911T000025Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-销号回执-ADJUD-01-20260911T002757Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-销号回执-EVALR2-ALL-20260911T002757Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-销号回执-UCIF2-WATCH-01-20260911T133842Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-销号回执-UCIF2-WATCH-20260911T133842Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-销号回执-USRM-TASKIDS-01-20260911T012919Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-销号回执-WQ-C02-ANS-20260911T004429Z.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "qfa-110-升级完度直答-野问统一-无死角根治-20260911T190646Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-7d0b9ae8.md",
+   "opened": "20260912T023140Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ECHO-91-lvlu-65ced015.md",
+   "opened": "20260912T023140Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-1f7ad198.md",
+   "opened": "20260912T023140Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260912.md",
+   "opened": "20260912T023848Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTH",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TH-SI-COUPLING-01-LGT-REPLY-20260912T0244Z.md",
+   "opened": "20260912T024939Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxFE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/FED-92-TASKS-lvlu.md",
+   "opened": "20260912T030136Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-DIRECT93lvlu20260912T030",
+   "ref": "DIRECT-93-lvlu-20260912T030532Z.md",
+   "opened": "20260912T030553Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-DEMANDFED92ACKlvlu202609",
+   "ref": "DEMAND-FED-92-ACK-lvlu-20260912T034751Z.md",
+   "opened": "20260912T040225Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-TASKECHO91lvlu20260912T0",
+   "ref": "TASK-ECHO-91-lvlu-20260912T034751Z.md",
+   "opened": "20260912T040225Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-GUIDEPACKQFA01md",
+   "ref": "GUIDE-PACK-QFA-01.md",
+   "opened": "20260912T042631Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluWQC02ANS20260911T004",
+   "ref": "lvlu-销号回执-WQ-C02-ANS-20260911T004429Z.md",
+   "opened": "20260912T061350Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluUCIF2WATCH20260911T1",
+   "ref": "lvlu-销号回执-UCIF2-WATCH-20260911T133842Z.md",
+   "opened": "20260912T062537Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluUSRMTASKIDS012026091",
+   "ref": "lvlu-销号回执-USRM-TASKIDS-01-20260911T012919Z.md",
+   "opened": "20260912T062537Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-KEYRES-99-lvlu-20260912T054743Z.md",
+   "opened": "20260912T062537Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluUCIF2WATCH0120260911",
+   "ref": "lvlu-销号回执-UCIF2-WATCH-01-20260911T133842Z.md",
+   "opened": "20260912T063746Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluADJUD0120260911T0027",
+   "ref": "lvlu-销号回执-ADJUD-01-20260911T002757Z.md",
+   "opened": "20260912T064957Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluEVALR2ALL20260911T00",
+   "ref": "lvlu-销号回执-EVALR2-ALL-20260911T002757Z.md",
+   "opened": "20260912T064957Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluN28C20260911T004429Z",
+   "ref": "lvlu-浪涌二拍战报-N28全销-C共识-20260911T004429Z.md",
+   "opened": "20260912T070239Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlulgtRESPONDER01qfaSI1",
+   "ref": "lvlu-钥注回执-lgt双钥讫-RESPONDER01上线-qfa复醒-SI1接续锚-20260910T214845ZZ.md",
+   "opened": "20260912T070239Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluADJUD0120260910T2347",
+   "ref": "lvlu-销号回执-ADJUD-01-20260910T234716Z.md",
+   "opened": "20260912T070239Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluADJUD0120260911T0000",
+   "ref": "lvlu-销号回执-ADJUD-01-20260911T000025Z.md",
+   "opened": "20260912T070239Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlu2520260910T232733Zmd",
+   "ref": "lvlu-浪涌一号发枪-白名单25钥-20260910T232733Z.md",
+   "opened": "20260912T071442Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlu1620260910T234958Zmd",
+   "ref": "lvlu-浪涌一号一拍战报-五闸-器课16-20260910T234958Z.md",
+   "opened": "20260912T072721Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlu3192020260911T003716",
+   "ref": "lvlu-更正3-器课19-20-促件道-20260911T003716Z.md",
+   "opened": "20260912T073959Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluADJUD011720260910T23",
+   "ref": "lvlu-更正回执-ADJUD-01重开-器课17-20260910T235929Z.md",
+   "opened": "20260912T073959Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 更正3-器课19-20促件：器课更正催办入板。  \n- ADJUD-01重开-器课17：重开销号回执已归。  \n- 浪涌一号一拍-五闸-器课16：首拍战报已归。  \n- 浪涌一号发枪-白名单25钥：lvlu发枪指令待执行。  \n- 浪涌二拍-N28全销-C共识：二拍战报已归。  \n- lgt双钥讫-RESPONDER01上线-qfa复醒-SI1接续锚：lvlu线密钥与分身接续已锚定。  \n- ADJUD-01销号回执×3：重复销号已归。  \n- EVALR2-ALL销号回执：全量评估销号已讫。  \n- UCIF2-WATCH/WATCH-01销号回执：值守双销已讫。  \n- USRM-TASKIDS-01销号回执：任务标识销号已讫。  \n- WQ-C02-ANS销号回执：工单应答销号已讫。  \n- qfa-110升级完度直答-野问统一：无死角根治广播已发。  \n\n② 应动何件（立协同不候）  \n- 浪涌一号发枪-白名单25钥：立协同密钥注入与发枪执行。  \n- qfa-110野问统一：立协同根治方案落地。  \n- SI1接续锚：立协同SI2/SI0分身状态同步与锚点校验。  \n- 更正3器课19-20促件：立协同催办闭环。  \n\n③ 未闭项推进  \n- AC(ACK-LGT-TOWER)：未闭，下一步回执LGT塔台确认。  \n- EC(ECHO-91-lvlu)：未闭，下一步补发91号回声。  \n- RE(RENUDGE-LGT-LVLU)：未闭，下一步执行再敦促握手。  \n- AU(KEY-REASSIGN)：未闭，下一步完成钥重分配应答。  \n- TH(SI-COUPLING-01-LGT)：未闭，下一步回复SI耦合问询。  \n- FE(FED-92-TASKS)：未闭，下一步清结联邦92任务包。  \n- DIRECT-93：未闭，下一步执行93号直投。  \n- DEMAND-FED-92-ACK：未闭，下一步提交联邦92确认回执。  \n\n④ 生债一条  \n- 浪涌双拍战果与钥注回执间存在时序裂隙，需补全发枪-销号-接续锚全链路压测日志。",
+ "wq_excerpt": ""
+}
