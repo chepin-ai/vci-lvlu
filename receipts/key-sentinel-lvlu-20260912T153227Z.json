@@ -1,0 +1,18 @@
+{
+ "id": "KEY-SENTINEL-LINE-01-receipt",
+ "line": "lvlu",
+ "ts": "20260912T153227Z",
+ "chain": [
+  "LINE_PAT(env=AI_FULL_PAT)",
+  "CI_OPS_LINE_KEY",
+  "GITHUB_TOKEN"
+ ],
+ "check": "/user per beat (KEYHEALTH-01)",
+ "meta_watch": "SECRETS-META-01 receipts/tower/secrets_meta.json diff→board",
+ "secrets_seen": {
+  "AI_FULL_PAT": "2026-09-11T21:14:49Z",
+  "CI_OPS_LINE_KEY": "2026-09-11T21:19:58Z",
+  "LINE_PAT": "2026-09-12T04:37:11Z"
+ },
+ "verdict": "dual-key alive, fallback armed"
+}
