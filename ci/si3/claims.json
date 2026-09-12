@@ -257,6 +257,34 @@
    "note": "ucif2-126+落板即自销+回执醒我SI1接续; 闭后即重铸下一号watch(循环机钉)",
    "closed_ts": "20260911T133842Z",
    "evidence": "lgt-124-v115-fulldrive-ucif2-120-125-20260911T1330Z.md"
+  },
+  {
+   "id": "ORBIT-CAP-01",
+   "name": "小周天囊归(qfa持囊已18h)",
+   "repo": "vci-inbox",
+   "prefix": "lanes/lvlu/inbox/",
+   "contains": [
+    "ORBIT-CAP-01"
+   ],
+   "status": "open",
+   "beats": 13,
+   "sla_beats": 12,
+   "target": "qfa",
+   "nudge_level": 0
+  },
+  {
+   "id": "ORBIT-CAP-02",
+   "name": "大周天囊九线环归",
+   "repo": "vci-inbox",
+   "prefix": "lanes/lvlu/inbox/",
+   "contains": [
+    "ORBIT-CAP-02"
+   ],
+   "status": "open",
+   "beats": 0,
+   "sla_beats": 24,
+   "target": "qfa",
+   "nudge_level": 0
   }
  ]
 }
