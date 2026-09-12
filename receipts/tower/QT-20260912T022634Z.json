@@ -1,0 +1,87 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260912T022634Z",
+ "idle_in": 24,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-OTPVINFLOOPLVLU01vinfmd",
+   "ref": "OTP-VINF-LOOP-LVLU-01-vinf.md",
+   "opened": "20260911T155642Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQG",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QGL-OTP-FIVELINE-106-lvlu-20260911T1605Z.md",
+   "opened": "20260911T161841Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-WILDQ-01-lvlu-20260911T1843Z.json",
+   "opened": "20260911T184140Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260911T184140Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CAULDRON-PULSE-LVLU-01.md",
+   "opened": "20260911T211558Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxCA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/CAULDRON-PULSE-62-LVLU-20260911T200235Z.md",
+   "opened": "20260911T211558Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-CAULDRON-62-LVLU-20260911T200847Z.md",
+   "opened": "20260911T211558Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOM",
+   "ref": "vci-inbox:lanes/lvlu/inbox/OMNI-INJECT-01-lvlu-20260911T185404Z.md",
+   "opened": "20260911T211558Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxSI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/SI-LEVELUP-CARD-01-qlv-20260911T191350Z.md",
+   "opened": "20260911T211558Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqt",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qtlv-eval-wave-47dbdd1af32b.md",
+   "opened": "20260911T211558Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ROTATE-AIF-20260911-02-qfa.md",
+   "opened": "20260911T212739Z",
+   "tries": 26,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- OTP-VINF-LOOP-LVLU-01：VINF 回路待闭环，lvlu 求终结确认。  \n- QGL-OTP-FIVELINE-106：五线 106 待对齐，lvlu 求线权回执。  \n- TASK-WILDQ-01：野队列任务待启，lvlu 求调度令。  \n- WILD-Q-MERGED-01：合并态待更新，lvlu 求同步差分。  \n- ANS-CAULDRON-PULSE-LVLU-01：釜脉冲应答待发，lvlu 求响应签名。  \n- CAULDRON-PULSE-62：62 号脉冲待处理，lvlu 求事件解析。  \n- DEMAND-CAULDRON-62：62 号需求待核销，lvlu 求供给匹配。  \n- OMNI-INJECT-01：全向注入待验，lvlu 求注入回执。  \n\n② 应动何件  \n立动 OTP-VINF-LOOP-LVLU-01（tries 43，最滞），兼协 QGL-OTP-FIVELINE-106（tries 41）。  \n\n③ 未闭项推进  \n- OI-OTPVINFLOOPLVLU01vinfmd：未闭，下发 VINF 回路终结锚。  \n- OI-vciinboxlaneslvluinboxQG：未闭，完成五线权校验并回执。  \n- OI-vciinboxlaneslvluinboxTA：未闭，派发 WILDQ 执行单元。  \n- OI-WILDQMERGED01：未闭，拉取最新合并态差分同步。  \n- OI-vciinboxlaneslvluinboxAN：未闭，回送釜脉冲应答签名。  \n- OI-vciinboxlaneslvluinboxCA：未闭，解析 62 号脉冲并分发。  \n- OI-vciinboxlaneslvluinboxDE：未闭，匹配 62 号需求供给链关单。  \n- OI-vciinboxlaneslvluinboxOM：未闭，执行全向注入并收确认。  \n\n④ 生债一条  \n生债：OTP-VINF-LOOP-LVLU-01 超期 43 次未闭环，需补强制终结锚或升 SI0 仲裁。",
+ "wq_excerpt": ""
+}
