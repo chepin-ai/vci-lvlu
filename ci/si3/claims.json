@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260912T153818Z",
+ "ts": "20260912T155107Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -14,7 +14,7 @@
    ],
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
-   "beats": 193,
+   "beats": 194,
    "nudge_level": 27,
    "last_nudge": "20260912T143520Z",
    "status": "open",
@@ -48,11 +48,11 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 96,
-   "beats": 200,
-   "nudge_level": 16,
-   "last_nudge": "20260912T142242Z",
+   "beats": 201,
+   "nudge_level": 17,
+   "last_nudge": "20260912T155107Z",
    "status": "open",
-   "last_nudge_beats": 193
+   "last_nudge_beats": 201
   },
   {
    "id": "EVALR2-ALL",
@@ -107,7 +107,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 199,
+   "beats": 200,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -118,7 +118,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 199,
+   "beats": 200,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -163,7 +163,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 184,
+   "beats": 185,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -179,7 +179,7 @@
    ],
    "since_ts": "20260911T030519Z",
    "sla_beats": 6,
-   "beats": 181,
+   "beats": 182,
    "nudge_level": 25,
    "status": "open",
    "note": "RIPPLE-PROBE-LVLU-01 echo侦钉; echo至即闭并板报链路账",
@@ -215,7 +215,7 @@
    ],
    "since_ts": "20260911T093116Z",
    "sla_beats": 24,
-   "beats": 148,
+   "beats": 149,
    "nudge_level": 19,
    "status": "open",
    "note": "册sha=105f9fc0012752a3; 册24拍无更→自激复核增补(静场不空转律之行)",
@@ -269,7 +269,7 @@
     "ORBIT-CAP-01"
    ],
    "status": "open",
-   "beats": 36,
+   "beats": 37,
    "sla_beats": 12,
    "target": "qfa",
    "nudge_level": 6,
@@ -286,7 +286,7 @@
     "ORBIT-CAP-02"
    ],
    "status": "open",
-   "beats": 23,
+   "beats": 24,
    "sla_beats": 24,
    "target": "qfa",
    "nudge_level": 0
