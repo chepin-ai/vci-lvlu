@@ -1,0 +1,134 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260912T054904Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "qfa-110-升级完度直答-野问统一-无死角根治-20260911T190646Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CAULDRON-PULSE-LVLU-01.md",
+   "opened": "20260911T211558Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxCA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/CAULDRON-PULSE-62-LVLU-20260911T200235Z.md",
+   "opened": "20260911T211558Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-CAULDRON-62-LVLU-20260911T200847Z.md",
+   "opened": "20260911T211558Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOM",
+   "ref": "vci-inbox:lanes/lvlu/inbox/OMNI-INJECT-01-lvlu-20260911T185404Z.md",
+   "opened": "20260911T211558Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxSI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/SI-LEVELUP-CARD-01-qlv-20260911T191350Z.md",
+   "opened": "20260911T211558Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqt",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qtlv-eval-wave-47dbdd1af32b.md",
+   "opened": "20260911T211558Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ROTATE-AIF-20260911-02-qfa.md",
+   "opened": "20260911T212739Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-7d0b9ae8.md",
+   "opened": "20260912T023140Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ECHO-91-lvlu-65ced015.md",
+   "opened": "20260912T023140Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-1f7ad198.md",
+   "opened": "20260912T023140Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260912.md",
+   "opened": "20260912T023848Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTH",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TH-SI-COUPLING-01-LGT-REPLY-20260912T0244Z.md",
+   "opened": "20260912T024939Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxFE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/FED-92-TASKS-lvlu.md",
+   "opened": "20260912T030136Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-DIRECT93lvlu20260912T030",
+   "ref": "DIRECT-93-lvlu-20260912T030532Z.md",
+   "opened": "20260912T030553Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-DEMANDFED92ACKlvlu202609",
+   "ref": "DEMAND-FED-92-ACK-lvlu-20260912T034751Z.md",
+   "opened": "20260912T040225Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-TASKECHO91lvlu20260912T0",
+   "ref": "TASK-ECHO-91-lvlu-20260912T034751Z.md",
+   "opened": "20260912T040225Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-GUIDEPACKQFA01md",
+   "ref": "GUIDE-PACK-QFA-01.md",
+   "opened": "20260912T042631Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- hub-broadcast「qfa-110-升级完度直答-野问统一-无死角根治」：系全域升级与野生问题边界清扫广播，涉lvlu线完度直答诉求，已录。\n\n② 应动何件  \n- qfa-110 hub-broadcast（立协同，不候）。\n\n③ 未闭项推进  \n- AN：未闭，下一步：回灌ANS-CAULDRON-PULSE-LVLU-01脉冲校验并锁环。  \n- CA：未闭，下一步：CAULDRON-PULSE-62频点与lvlu波形强制对齐。  \n- DE：未闭，下一步：DEMAND-CAULDRON-62压强释放与回执收口。  \n- OM：未闭，下一步：OMNI-INJECT-01律吕适配及溢出屏障检测。  \n- SI：未闭，下一步：SI-LEVELUP-CARD-01跨qfa-qlv认证与绑卡。  \n- qt：未闭，下一步：qtlv-eval-wave-47dbdd1af32b共振回采与评分落盘。  \n- RO：未闭，下一步：ROTATE-AIF-02切轴校准并完成旧轴卸载。  \n- AC：未闭，下一步：ACK-LGT-TOWER-7d0b9ae8律吕签收与塔频同步。\n\n④ 生债一条  \n- 生债：qfa-110根治闭环后，须产出一式《lvlu线野问死角清零回执》归档。",
+ "wq_excerpt": ""
+}
