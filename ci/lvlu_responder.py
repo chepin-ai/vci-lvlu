@@ -262,12 +262,12 @@ def exp_loop(ts, vault):
         out['probe'] = 'err:' + e.__class__.__name__
     return out
 
-def si0_pulse(ts, vault, sla, names):
+def si0_pulse(ts, vault, sla, names, klogin=None):
     """闸七: SI0自仪表化——每拍一行度量落 receipts/si0/pulse.jsonl (板件数/候件开数/钥池/探针态)"""
     try:
         open_claims = sla.get('claims', 0) - len(sla.get('closed', []))
         m = {'ts': ts, 'board_files': len(names), 'claims': sla.get('claims'), 'closed_this_beat': sla.get('closed'),
-             'nudged': sla.get('nudged'), 'vault_keys': len(vault)}
+             'nudged': sla.get('nudged'), 'vault_keys': len(vault), 'key_login': klogin}
         old, psha = get_file('receipts/si0/pulse.jsonl')
         lines = (old or '') + json.dumps(m, ensure_ascii=False) + '\n'
         put_file('receipts/si0/pulse.jsonl', lines, psha, '[skip ci] si0-pulse ' + ts)
@@ -325,8 +325,7 @@ def main():
     pending_si1 = sla.get('si1_pending', [])
     # 闸六/七: EXP队列自动侦 + SI0自仪表化
     exp = exp_loop(ts, vault)
-    pulse = si0_pulse(ts, vault, sla, names)
-    pulse['key_login'] = klogin
+    pulse = si0_pulse(ts, vault, sla, names, klogin)
     # 闸八: 周天囊自驿
     orb = orbit_loop(ts, state)
     # 闸三 SI1-WAKE: 会话接续锚常新
