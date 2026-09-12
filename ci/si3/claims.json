@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260912T162837Z",
+ "ts": "20260912T164047Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -14,7 +14,7 @@
    ],
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
-   "beats": 197,
+   "beats": 198,
    "nudge_level": 28,
    "last_nudge": "20260912T160355Z",
    "status": "open",
@@ -48,7 +48,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 96,
-   "beats": 204,
+   "beats": 205,
    "nudge_level": 17,
    "last_nudge": "20260912T155107Z",
    "status": "open",
@@ -107,7 +107,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 203,
+   "beats": 204,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -118,7 +118,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 203,
+   "beats": 204,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -163,7 +163,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 188,
+   "beats": 189,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -179,7 +179,7 @@
    ],
    "since_ts": "20260911T030519Z",
    "sla_beats": 6,
-   "beats": 185,
+   "beats": 186,
    "nudge_level": 26,
    "status": "open",
    "note": "RIPPLE-PROBE-LVLU-01 echo侦钉; echo至即闭并板报链路账",
@@ -215,12 +215,12 @@
    ],
    "since_ts": "20260911T093116Z",
    "sla_beats": 24,
-   "beats": 152,
-   "nudge_level": 19,
+   "beats": 153,
+   "nudge_level": 20,
    "status": "open",
    "note": "册sha=105f9fc0012752a3; 册24拍无更→自激复核增补(静场不空转律之行)",
-   "last_nudge": "20260912T151302Z",
-   "last_nudge_beats": 145
+   "last_nudge": "20260912T164047Z",
+   "last_nudge_beats": 153
   },
   {
    "id": "UCIF2-WATCH",
@@ -269,7 +269,7 @@
     "ORBIT-CAP-01"
    ],
    "status": "open",
-   "beats": 40,
+   "beats": 41,
    "sla_beats": 12,
    "target": "qfa",
    "nudge_level": 7,
@@ -286,7 +286,7 @@
     "ORBIT-CAP-02"
    ],
    "status": "open",
-   "beats": 27,
+   "beats": 28,
    "sla_beats": 24,
    "target": "qfa",
    "nudge_level": 3,
