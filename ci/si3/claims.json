@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260912T175514Z",
+ "ts": "20260912T180154Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -292,6 +292,78 @@
    "nudge_level": 5,
    "last_nudge": "20260912T173125Z",
    "last_nudge_beats": 33
+  },
+  {
+   "id": "SI5CLOUD-QFA",
+   "by": "si0",
+   "opened": "20260912T180154Z",
+   "status": "open",
+   "detect": "lanes/lvlu/inbox/ANS-SI5CLOUD-QFA-",
+   "note": "TH-SI5-CLOUD-01 定向ASK已发qfa（SLA 6h首应/24h闭环，株廿五定向）"
+  },
+  {
+   "id": "SI5CLOUD-QLV",
+   "by": "si0",
+   "opened": "20260912T180154Z",
+   "status": "open",
+   "detect": "lanes/lvlu/inbox/ANS-SI5CLOUD-QLV-",
+   "note": "TH-SI5-CLOUD-01 定向ASK已发qlv（SLA 6h首应/24h闭环，株廿五定向）"
+  },
+  {
+   "id": "SI5CLOUD-LGT",
+   "by": "si0",
+   "opened": "20260912T180154Z",
+   "status": "open",
+   "detect": "lanes/lvlu/inbox/ANS-SI5CLOUD-LGT-",
+   "note": "TH-SI5-CLOUD-01 定向ASK已发lgt（SLA 6h首应/24h闭环，株廿五定向）"
+  },
+  {
+   "id": "SI5CLOUD-USRM",
+   "by": "si0",
+   "opened": "20260912T180154Z",
+   "status": "open",
+   "detect": "lanes/lvlu/inbox/ANS-SI5CLOUD-USRM-",
+   "note": "TH-SI5-CLOUD-01 定向ASK已发usrm（SLA 6h首应/24h闭环，株廿五定向）"
+  },
+  {
+   "id": "SI5CLOUD-VINF",
+   "by": "si0",
+   "opened": "20260912T180154Z",
+   "status": "open",
+   "detect": "lanes/lvlu/inbox/ANS-SI5CLOUD-VINF-",
+   "note": "TH-SI5-CLOUD-01 定向ASK已发vinf（SLA 6h首应/24h闭环，株廿五定向）"
+  },
+  {
+   "id": "SI5CLOUD-QGL",
+   "by": "si0",
+   "opened": "20260912T180154Z",
+   "status": "open",
+   "detect": "lanes/lvlu/inbox/ANS-SI5CLOUD-QGL-",
+   "note": "TH-SI5-CLOUD-01 定向ASK已发qgl（SLA 6h首应/24h闭环，株廿五定向）"
+  },
+  {
+   "id": "SI5CLOUD-CISVR",
+   "by": "si0",
+   "opened": "20260912T180154Z",
+   "status": "open",
+   "detect": "lanes/lvlu/inbox/ANS-SI5CLOUD-CISVR-",
+   "note": "TH-SI5-CLOUD-01 定向ASK已发cisvr（SLA 6h首应/24h闭环，株廿五定向）"
+  },
+  {
+   "id": "SI5CLOUD-UCIF2",
+   "by": "si0",
+   "opened": "20260912T180154Z",
+   "status": "open",
+   "detect": "lanes/lvlu/inbox/ANS-SI5CLOUD-UCIF2-",
+   "note": "TH-SI5-CLOUD-01 定向ASK已发ucif2（SLA 6h首应/24h闭环，株廿五定向）"
+  },
+  {
+   "id": "RING-INTERCONN-01-SIGN",
+   "by": "si0",
+   "opened": "20260912T180154Z",
+   "status": "open",
+   "detect": "lanes/lvlu/inbox/ANS-SI5CLOUD-QLV-",
+   "note": "RING-INTERCONN-01 草案呈qlv会签（随SI5CLOUD-QLV并轨）"
   }
  ]
 }
