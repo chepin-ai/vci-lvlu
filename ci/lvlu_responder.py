@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# LVLU-RESPONDER-01 v3 — lvlu线 SI3专候响应环（KEYHEALTH/SECRETS-META/KEYREQ/DISC/SI1-WAKE/SLA/NUDGE/EXP/PULSE/ORBIT 十件）
+# LVLU-RESPONDER-01 v3.1(株廿五 NUDGE-TARGET-01: need_lines分线定向) — lvlu线 SI3专候响应环（KEYHEALTH/SECRETS-META/KEYREQ/DISC/SI1-WAKE/SLA/NUDGE/EXP/PULSE/ORBIT 十件）
 # 职: ⓪每拍验钥回退链+secrets元数据差分(株廿四) ①钥取件即见即注 ②指名lvlu件即收讫 ③SI1-WAKE常新 ⑧周天囊自驿
 # 律: 零定时(事驱入拍) / 值不过板不落盘(内存即用即焚) / names-only回执 / 非白名单→裁示候root
 import os, json, base64, urllib.request, urllib.parse, datetime, re, hashlib
@@ -121,9 +121,32 @@ def detect_claim(cl, trees_cache):
         return ('MULTI:' + ','.join(sorted(got))) if got >= set(need) else None
     return matched[0] if matched else None
 
-def nudge(cl, ts):
+def detect_open_lines(cl, trees_cache):
+    """株廿五 NUDGE-TARGET-01: need_lines候件之未达线集(分线定向促件,治连坐误伤——lgt案)"""
+    need = cl.get('need_lines')
+    if not need: return []
+    hit = detect_claim(cl, trees_cache)
+    got = set()
+    if isinstance(hit, str) and hit.startswith('MULTI:'):
+        got = set(hit[6:].split(','))
+    repo = cl.get('repo', 'ci-inbox')
+    if repo in trees_cache:
+        pre = cl.get('prefix', ''); cont = cl.get('contains', [])
+        for p in trees_cache[repo]:
+            n = p[len(pre):] if p.startswith(pre) else None
+            if n is None or 'lvlu' in n.lower(): continue
+            if all(c.lower() in n.lower() for c in cont):
+                got |= {ln for ln in need if ln in n}
+    cl['legs_got'] = sorted(got)
+    return [ln for ln in need if ln not in got]
+
+def nudge(cl, ts, trees_cache=None):
     lvl = cl.get('nudge_level', 0) + 1
-    tgt = cl.get('target', 'cisvr'); ch = NUDGE_CH.get(tgt, {})
+    tgt = cl.get('target', 'cisvr')
+    if cl.get('need_lines') and trees_cache is not None:
+        open_lines = detect_open_lines(cl, trees_cache)
+        if open_lines: tgt = open_lines[0]  # 株廿五: 只促未达线,已答线免扰
+    ch = NUDGE_CH.get(tgt, {})
     msg = '# NUDGE-ESCALATE-01 L' + str(lvl) + ' | ' + cl['id'] + ' ' + cl['name'] + '\n\n候件逾窗(' + str(cl.get('sla_beats')) + '拍)。lvlu RESPONDER 闸五自动促件。@' + tgt + ' 请直取/回执。——lvlu ' + ts
     acts = []
     cmsg = 'CLASSIFY: L1(联邦机器邮·lvlu→' + tgt + ' 闸五促件L' + str(lvl) + ')\n' + msg  # 器课株二十 GUARD-CLASSIFY-01
@@ -157,7 +180,7 @@ def sla_loop(ts, seen_names):
         if cl.get('repo') == 'si1': pend.append(cl['id'])
         cd = cl.get('last_nudge_beats', -999)  # 株廿一 NUDGE-COOLDOWN-01: 冷却拍距随级数指数扩
         if cl['beats'] > cl.get('sla_beats', 6) and cl['beats'] - cd >= min(2 ** max(cl.get('nudge_level', 0) - 2, 0), 8):
-            acts = nudge(cl, ts); cl['last_nudge_beats'] = cl['beats']
+            acts = nudge(cl, ts, trees_cache); cl['last_nudge_beats'] = cl['beats']
             nudged.append(cl['id'] + ':L' + str(cl['nudge_level']) + ':' + ','.join(acts))
     claims['ts'] = ts
     put_file('ci/si3/claims.json', json.dumps(claims, ensure_ascii=False, indent=1), csha, '[skip ci] sla-loop beat ' + ts)
