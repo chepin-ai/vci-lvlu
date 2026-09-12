@@ -1,0 +1,87 @@
+{
+ "v": "1",
+ "ts": "20260912T234128Z",
+ "by": "lvlu",
+ "th": "TH-SI5-CLOUD-01",
+ "sla_first_h": 6,
+ "sla_close_h": 24,
+ "lines": {
+  "qfa": {
+   "ask": "lanes/qfa/inbox/ASK-SI5CLOUD-qfa-20260912T180154Z.md",
+   "ask_ts": "20260912T180154Z",
+   "detect": "lanes/lvlu/inbox/ANS-SI5CLOUD-QFA-",
+   "first_ans_ts": null,
+   "closed_ts": null,
+   "status": "pending",
+   "dispatch_wake": "20260912T234128Z"
+  },
+  "qlv": {
+   "ask": "lanes/qlv/inbox/ASK-SI5CLOUD-qlv-20260912T180154Z.md",
+   "ask_ts": "20260912T180154Z",
+   "detect": "lanes/lvlu/inbox/ANS-SI5CLOUD-QLV-",
+   "first_ans_ts": null,
+   "closed_ts": null,
+   "status": "pending",
+   "dispatch_wake": "20260912T234128Z"
+  },
+  "lgt": {
+   "ask": "lanes/lgt/inbox/ASK-SI5CLOUD-lgt-20260912T180154Z.md",
+   "ask_ts": "20260912T180154Z",
+   "detect": "lanes/lvlu/inbox/ANS-SI5CLOUD-LGT-",
+   "first_ans_ts": null,
+   "closed_ts": null,
+   "status": "pending",
+   "dispatch_wake": "20260912T234128Z"
+  },
+  "usrm": {
+   "ask": "lanes/usrm/inbox/ASK-SI5CLOUD-usrm-20260912T180154Z.md",
+   "ask_ts": "20260912T180154Z",
+   "detect": "lanes/lvlu/inbox/ANS-SI5CLOUD-USRM-",
+   "first_ans_ts": null,
+   "closed_ts": null,
+   "status": "pending",
+   "dispatch_wake": "20260912T234128Z"
+  },
+  "vinf": {
+   "ask": "lanes/vinf/inbox/ASK-SI5CLOUD-vinf-20260912T180154Z.md",
+   "ask_ts": "20260912T180154Z",
+   "detect": "lanes/lvlu/inbox/ANS-SI5CLOUD-VINF-",
+   "first_ans_ts": null,
+   "closed_ts": null,
+   "status": "pending",
+   "dispatch_wake": "20260912T234128Z"
+  },
+  "qgl": {
+   "ask": "lanes/qgl/inbox/ASK-SI5CLOUD-qgl-20260912T180154Z.md",
+   "ask_ts": "20260912T180154Z",
+   "detect": "lanes/lvlu/inbox/ANS-SI5CLOUD-QGL-",
+   "first_ans_ts": null,
+   "closed_ts": null,
+   "status": "pending",
+   "dispatch_wake": "20260912T234128Z"
+  },
+  "cisvr": {
+   "ask": "lanes/cisvr/inbox/ASK-SI5CLOUD-cisvr-20260912T180154Z.md",
+   "ask_ts": "20260912T180154Z",
+   "detect": "lanes/lvlu/inbox/ANS-SI5CLOUD-CISVR-",
+   "first_ans_ts": null,
+   "closed_ts": null,
+   "status": "pending",
+   "dispatch_wake": "20260912T234128Z"
+  },
+  "ucif2": {
+   "ask": "lanes/ucif2/inbox/ASK-SI5CLOUD-ucif2-20260912T180154Z.md",
+   "ask_ts": "20260912T180154Z",
+   "detect": "lanes/lvlu/inbox/ANS-SI5CLOUD-UCIF2-",
+   "first_ans_ts": null,
+   "closed_ts": null,
+   "status": "pending",
+   "dispatch_wake": "20260912T234128Z"
+  }
+ },
+ "orbit_bypass": {
+  "ORBIT-CAP-01": "usrm断站9h→lgt(234128Z)",
+  "ORBIT-CAP-02": "usrm断站9h→lgt(两番自纠,234128Z)"
+ },
+ "note": "回应延迟将实测入 TENSOR-FIELD v3 day-slice; 塔SLA轨逐拍自销/自促"
+}
