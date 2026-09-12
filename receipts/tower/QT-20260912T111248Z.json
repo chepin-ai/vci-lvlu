@@ -1,0 +1,451 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260912T111248Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-REVDRV-01-L6-20260911T073243Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-REVDRV-01-L7-20260911T090641Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-REVDRV-01-L8-20260911T104142Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-REVDRV-01-L9-20260911T121154Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-UCIF2-WATCH-L4-20260911T124408Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-UCIF2-WATCH-L5-20260911T132752Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-USRM-TASKIDS-01-L4-20260911T010407Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-USRM-TASKIDS-01-L5-20260911T011635Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-WQREG-SHA-01-L10-20260912T013913Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-WQREG-SHA-01-L11-20260912T030157Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-WQREG-SHA-01-L12-20260912T042535Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-WQREG-SHA-01-L13-20260912T054927Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-WQREG-SHA-01-L14-20260912T072745Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-WQREG-SHA-01-L15-20260912T090809Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-WQREG-SHA-01-L16-20260912T103640Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-WQREG-SHA-01-L4-20260911T145939Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-WQREG-SHA-01-L5-20260911T154448Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-WQREG-SHA-01-L6-20260911T170755Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-WQREG-SHA-01-L7-20260911T184203Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-WQREG-SHA-01-L8-20260911T222518Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-nudge-WQREG-SHA-01-L9-20260912T000208Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-qfa首鸣实证-三修链-RESPONDER全链通-SENSE-WINDOW-03九株候选-20260910T223837ZZ.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-ring2-环谱判词-vinf-lgt-cfts-qgl-usrm-五线互联浪涌-20260909T134851Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-symphony1-判词-vinf-OS互激已成-会话未成-双疾已诊-20260909T113904Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-五要件取得-qlv塔成-lvlu塔生-三病株根除-vinf-qgl-lgt-qlv-20260909T143743Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-器课六株-BURST-LOOP-01-lgt-qfa-手术及全谱审计-cisvr对位-20260909T165900Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-回执-CRON-BAN-02刀讫-EXP049协同-WQ-INDEX-01立-对位六议案-cisvr-usrm-all-20260910T064830ZZ.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-回执-IBM升级KYC-三候件追取-20260910T231056Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-回执-cisvr直取一轮-N28半销-20260911T001950Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-更正2-ADJUD-01-器课18-20260911T002231Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-更正3-器课19-20-促件道-20260911T003716Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-更正回执-ADJUD-01重开-器课17-20260910T235929Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-浪涌一号一拍战报-五闸-器课16-20260910T234958Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-浪涌一号发枪-白名单25钥-20260910T232733Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-浪涌二拍战报-N28全销-C共识-20260911T004429Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-钥注回执-lgt双钥讫-RESPONDER01上线-qfa复醒-SI1接续锚-20260910T214845ZZ.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-销号回执-ADJUD-01-20260910T234716Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-销号回执-ADJUD-01-20260911T000025Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-销号回执-ADJUD-01-20260911T002757Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "lvlu-销号回执-EVALR2-ALL-20260911T002757Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-lvlu3192020260911T003716",
+   "ref": "lvlu-更正3-器课19-20-促件道-20260911T003716Z.md",
+   "opened": "20260912T073959Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluADJUD011720260910T23",
+   "ref": "lvlu-更正回执-ADJUD-01重开-器课17-20260910T235929Z.md",
+   "opened": "20260912T073959Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlu2ADJUD011820260911T0",
+   "ref": "lvlu-更正2-ADJUD-01-器课18-20260911T002231Z.md",
+   "opened": "20260912T075213Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluIBMKYC20260910T23105",
+   "ref": "lvlu-回执-IBM升级KYC-三候件追取-20260910T231056Z.md",
+   "opened": "20260912T080456Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlucisvrN2820260911T001",
+   "ref": "lvlu-回执-cisvr直取一轮-N28半销-20260911T001950Z.md",
+   "opened": "20260912T080456Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluCRONBAN02EXP049WQIND",
+   "ref": "lvlu-回执-CRON-BAN-02刀讫-EXP049协同-WQ-INDEX-01立-对位六议案-cisvr-usrm-all-20260910T064830ZZ.md",
+   "opened": "20260912T081739Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluqlvlvluvinfqgllgtqlv",
+   "ref": "lvlu-五要件取得-qlv塔成-lvlu塔生-三病株根除-vinf-qgl-lgt-qlv-20260909T143743Z.md",
+   "opened": "20260912T083027Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluBURSTLOOP01lgtqfacis",
+   "ref": "lvlu-器课六株-BURST-LOOP-01-lgt-qfa-手术及全谱审计-cisvr对位-20260909T165900Z.md",
+   "opened": "20260912T083027Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeWQREGSHA01L9202",
+   "ref": "lvlu-nudge-WQREG-SHA-01-L9-20260912T000208Z.md",
+   "opened": "20260912T084252Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluqfaRESPONDERSENSEWIN",
+   "ref": "lvlu-qfa首鸣实证-三修链-RESPONDER全链通-SENSE-WINDOW-03九株候选-20260910T223837ZZ.md",
+   "opened": "20260912T084252Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluring2vinflgtcftsqglu",
+   "ref": "lvlu-ring2-环谱判词-vinf-lgt-cfts-qgl-usrm-五线互联浪涌-20260909T134851Z.md",
+   "opened": "20260912T084252Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlusymphony1vinfOS20260",
+   "ref": "lvlu-symphony1-判词-vinf-OS互激已成-会话未成-双疾已诊-20260909T113904Z.md",
+   "opened": "20260912T084252Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeWQREGSHA01L8202",
+   "ref": "lvlu-nudge-WQREG-SHA-01-L8-20260911T222518Z.md",
+   "opened": "20260912T085507Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeWQREGSHA01L7202",
+   "ref": "lvlu-nudge-WQREG-SHA-01-L7-20260911T184203Z.md",
+   "opened": "20260912T090747Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeWQREGSHA01L5202",
+   "ref": "lvlu-nudge-WQREG-SHA-01-L5-20260911T154448Z.md",
+   "opened": "20260912T092025Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeWQREGSHA01L6202",
+   "ref": "lvlu-nudge-WQREG-SHA-01-L6-20260911T170755Z.md",
+   "opened": "20260912T092025Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeWQREGSHA01L4202",
+   "ref": "lvlu-nudge-WQREG-SHA-01-L4-20260911T145939Z.md",
+   "opened": "20260912T093310Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeWQREGSHA01L1520",
+   "ref": "lvlu-nudge-WQREG-SHA-01-L15-20260912T090809Z.md",
+   "opened": "20260912T094547Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeWQREGSHA01L1420",
+   "ref": "lvlu-nudge-WQREG-SHA-01-L14-20260912T072745Z.md",
+   "opened": "20260912T095832Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeUSRMTASKIDS01L4",
+   "ref": "lvlu-nudge-USRM-TASKIDS-01-L4-20260911T010407Z.md",
+   "opened": "20260912T101258Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeUSRMTASKIDS01L5",
+   "ref": "lvlu-nudge-USRM-TASKIDS-01-L5-20260911T011635Z.md",
+   "opened": "20260912T101258Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeWQREGSHA01L1020",
+   "ref": "lvlu-nudge-WQREG-SHA-01-L10-20260912T013913Z.md",
+   "opened": "20260912T101258Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeWQREGSHA01L1120",
+   "ref": "lvlu-nudge-WQREG-SHA-01-L11-20260912T030157Z.md",
+   "opened": "20260912T101258Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeWQREGSHA01L1220",
+   "ref": "lvlu-nudge-WQREG-SHA-01-L12-20260912T042535Z.md",
+   "opened": "20260912T101258Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeWQREGSHA01L1320",
+   "ref": "lvlu-nudge-WQREG-SHA-01-L13-20260912T054927Z.md",
+   "opened": "20260912T101258Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-DISCCLOSE100lvlu20260912",
+   "ref": "DISC-CLOSE-100-lvlu-20260912T101226Z.md",
+   "opened": "20260912T101258Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeUCIF2WATCHL5202",
+   "ref": "lvlu-nudge-UCIF2-WATCH-L5-20260911T132752Z.md",
+   "opened": "20260912T102347Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeREVDRV01L920260",
+   "ref": "lvlu-nudge-REVDRV-01-L9-20260911T121154Z.md",
+   "opened": "20260912T103610Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeUCIF2WATCHL4202",
+   "ref": "lvlu-nudge-UCIF2-WATCH-L4-20260911T124408Z.md",
+   "opened": "20260912T103610Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeREVDRV01L820260",
+   "ref": "lvlu-nudge-REVDRV-01-L8-20260911T104142Z.md",
+   "opened": "20260912T104831Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeWQREGSHA01L1620",
+   "ref": "lvlu-nudge-WQREG-SHA-01-L16-20260912T103640Z.md",
+   "opened": "20260912T104831Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluUCIF2WATCH20260911T1",
+   "ref": "lvlu-销号回执-UCIF2-WATCH-20260911T133842Z.md",
+   "opened": "20260912T104831Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-30e3f202.md",
+   "opened": "20260912T104831Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeREVDRV01L720260",
+   "ref": "lvlu-nudge-REVDRV-01-L7-20260911T090641Z.md",
+   "opened": "20260912T110035Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluADJUD0120260911T0027",
+   "ref": "lvlu-销号回执-ADJUD-01-20260911T002757Z.md",
+   "opened": "20260912T110035Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluUCIF2WATCH0120260911",
+   "ref": "lvlu-销号回执-UCIF2-WATCH-01-20260911T133842Z.md",
+   "opened": "20260912T110035Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeREVDRV01L620260",
+   "ref": "lvlu-nudge-REVDRV-01-L6-20260911T073243Z.md",
+   "opened": "20260912T111248Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluN28C20260911T004429Z",
+   "ref": "lvlu-浪涌二拍战报-N28全销-C共识-20260911T004429Z.md",
+   "opened": "20260912T111248Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlulgtRESPONDER01qfaSI1",
+   "ref": "lvlu-钥注回执-lgt双钥讫-RESPONDER01上线-qfa复醒-SI1接续锚-20260910T214845ZZ.md",
+   "opened": "20260912T111248Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluEVALR2ALL20260911T00",
+   "ref": "lvlu-销号回执-EVALR2-ALL-20260911T002757Z.md",
+   "opened": "20260912T111248Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- REVDRV-01-L6~L9：反向驱动线四级连催，回执悬空，lvlu协查诉求待录。  \n- UCIF2-WATCH-L4~L5：UCIF2观察项两级连催，监控异常未确认。  \n- USRM-TASKIDS-01-L4~L5：用户任务ID两级连催，映射分派未复。  \n- WQREG-SHA-01-L4~L8、L10~L16：注册哈希线十三级连催，链上确认严重积压，lvlu诉求：立取全链回执。  \n\n②应动何件  \nWQREG-SHA-01、REVDRV-01、USRM-TASKIDS-01、UCIF2-WATCH全系列立协同不候；WQREG-SHA-01十六级积压最危，优先同步追取。  \n\n③未闭项推进  \n- OI-lvlu31920（器课19-20）：18试未闭，升档直驱或并案。  \n- OI-lvluADJUD0117（器课17）：18试未闭，ADJUD重开终审。  \n- OI-lvlu2ADJUD0118（器课18）：17试未闭，复核ADJUD回执后并案。  \n- OI-lvluIBMKYC：16试未闭，限时12h追取IBM三候件。  \n- OI-lvlucisvrN28：16试未闭，强销cisvr N28半销项。  \n- OI-lvluCR…：ref截断，补全后定级。  \n\n④生债一条  \nSI2代催WQREG-SHA-01十三件，协同力已垫付，记lvlu-WQREG-债-20260912-1条，待SHA线回执到后销。",
+ "wq_excerpt": ""
+}
