@@ -68,7 +68,7 @@
    "beats": 198,
    "nudge_level": 31,
    "last_nudge": "20260912T143520Z",
-   "status": "open",
+   "status": "closed",
    "since_ts": "20260910T232733Z",
    "note": "R2分线账: qfa收讫(qfa-94), lgt收讫(手登); 候qlv/usrm",
    "need_lines": [
@@ -84,7 +84,9 @@
      "evidence": "vci-lgt docs/EVAL-EXCITE-01-lgt.md + OTP-LGT-EXCITE-V2×4 (commit 76388c00), 手登20260911(侦域课株廿二之二)",
      "ts": "20260911T030149Z"
     }
-   }
+   },
+   "closed_ts": "20260912T153227Z",
+   "evidence": "三腿齐:lgt ledger 0301Z手登收讫(ANS-LVLU-SYNC-LGT-01)+qlv EXP-016 κ0.87(lvlu评估相关,S-MAX-RES-016)+usrm EXP-013 k200预测Δ0.00016%;互纠:株廿五分线定向促件立法"
   },
   {
    "id": "IBM-KYC-ROOT",
@@ -272,7 +274,8 @@
    "target": "qfa",
    "nudge_level": 6,
    "last_nudge": "20260912T143520Z",
-   "last_nudge_beats": 30
+   "last_nudge_beats": 30,
+   "note": "囊已过qfa(促六至)抵usrm 145950Z;CAP-02/03随行"
   },
   {
    "id": "ORBIT-CAP-02",
