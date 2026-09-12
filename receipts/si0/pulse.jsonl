@@ -118,3 +118,4 @@
 {"ts": "20260912T002623Z", "board_files": 80, "claims": 15, "closed_this_beat": [], "nudged": [], "vault_keys": 25}
 {"ts": "20260912T003804Z", "board_files": 80, "claims": 15, "closed_this_beat": [], "nudged": [], "vault_keys": 25}
 {"ts": "20260912T004956Z", "board_files": 80, "claims": 15, "closed_this_beat": [], "nudged": ["EXP049-DONE:L7:board:1"], "vault_keys": 25}
+{"ts": "20260912T010215Z", "board_files": 80, "claims": 15, "closed_this_beat": [], "nudged": ["ADJUD-01:L18:otp:True,board:1", "EVALR2-ALL:L22:lane:True,inbox:True,kick:204,board:1", "REVDRV-01:L16:board:1"], "vault_keys": 25}
