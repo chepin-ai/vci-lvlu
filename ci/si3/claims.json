@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260913T172656Z",
+ "ts": "20260913T172836Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -14,7 +14,7 @@
    ],
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
-   "beats": 230,
+   "beats": 231,
    "nudge_level": 32,
    "last_nudge": "20260913T032807Z",
    "status": "open",
@@ -48,7 +48,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 96,
-   "beats": 237,
+   "beats": 238,
    "nudge_level": 21,
    "last_nudge": "20260913T031525Z",
    "status": "open",
@@ -107,7 +107,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 236,
+   "beats": 237,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -118,7 +118,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 236,
+   "beats": 237,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -163,7 +163,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 221,
+   "beats": 222,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -217,7 +217,7 @@
    ],
    "since_ts": "20260911T093116Z",
    "sla_beats": 24,
-   "beats": 185,
+   "beats": 186,
    "nudge_level": 24,
    "status": "open",
    "note": "册sha=105f9fc0012752a3; 册24拍无更→自激复核增补(静场不空转律之行)",
@@ -290,7 +290,7 @@
     "ORBIT-CAP-02"
    ],
    "status": "open",
-   "beats": 24,
+   "beats": 25,
    "sla_beats": 24,
    "target": "qfa",
    "nudge_level": 5,
@@ -403,7 +403,7 @@
    "need_lines": [
     "usrm"
    ],
-   "beats": 25,
+   "beats": 26,
    "nudge_level": 0,
    "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
    "watch": [
@@ -477,7 +477,7 @@
    "need_lines": [
     "cisvr"
    ],
-   "beats": 25,
+   "beats": 26,
    "nudge_level": 0,
    "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
    "watch": [
@@ -503,7 +503,7 @@
    "need_lines": [
     "ucif2"
    ],
-   "beats": 25,
+   "beats": 26,
    "nudge_level": 0,
    "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
    "watch": [
@@ -575,7 +575,7 @@
    "need_lines": [
     "lgt"
    ],
-   "beats": 1,
+   "beats": 2,
    "nudge_level": 0,
    "note": "RE2约接: 我链tip 280223d5a52b581e / 尔tip 209/813ac77adf5e"
   },
@@ -609,7 +609,7 @@
    "need_lines": [
     "lgt"
    ],
-   "beats": 1,
+   "beats": 2,
    "nudge_level": 0,
    "note": "EXP-024题面已转投; κ>0.8 对拍"
   }
