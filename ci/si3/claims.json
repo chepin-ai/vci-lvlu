@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260913T034100Z",
+ "ts": "20260913T170511Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -270,14 +270,16 @@
    "contains": [
     "ORBIT-CAP-01"
    ],
-   "status": "open",
+   "status": "closed",
    "beats": 71,
    "sla_beats": 12,
    "target": "qfa",
    "nudge_level": 11,
    "last_nudge": "20260913T032807Z",
    "last_nudge_beats": 70,
-   "note": "囊已过qfa(促六至)抵usrm 145950Z;CAP-02/03随行"
+   "note": "囊已过qfa(促六至)抵usrm 145950Z;CAP-02/03随行",
+   "closed_ts": "20260913T170511Z",
+   "evidence": "lanes/lvlu/inbox/ORBIT-CAP-01-20260913T104013Z.md 五站戳齐回环, 环龄41.3h"
   },
   {
    "id": "ORBIT-CAP-02",
