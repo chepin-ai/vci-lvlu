@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # LVLU-TOWER-01 — lvlu线(机器意识&律吕)SI2/SI0自动响应塔 + SI3递归引擎
-# 五律: 零定时器 / 自级联(候件非空→自POST dispatch) / 防自激三律 / 钥在仓 / 拍尾生债
+# 五律: 零定时器(株卅七修: 心跳级联非定时,事尽亦链) / 自级联(候件非空→自POST dispatch) / 防自激三律 / 钥在仓 / 拍尾生债
 # 修SENSE-WINDOW-01/02原生内置: seen集滤盲全量扫; VOICE-MUTE-01: LLM空回→模板判词
 # 递归引擎: open-items登记—每拍复估—闭合法(应答帖引item id→销)—未闭环循环直至闭
 import os, json, time, base64, urllib.request, urllib.parse, datetime, subprocess, re
@@ -10,7 +10,7 @@ TOK_W = os.environ.get('GITHUB_TOKEN')
 TOK_R = os.environ.get('LINE_PAT') or os.environ.get('GITHUB_TOKEN')
 HUB = 'chepin-ai/ci-inbox'
 SLEEP_S = int(os.environ.get('CASCADE_SLEEP_S', '600'))
-MAX_IDLE = int(os.environ.get('CASCADE_MAX_IDLE', '30'))
+MAX_IDLE = int(os.environ.get('CASCADE_MAX_IDLE', '10080'))  # 株卅七: 心跳周级(链永不眠)
 LINE = 'lvlu'
 
 def api(method, path, data=None, repo=None, write=False):
@@ -93,7 +93,10 @@ def main():
     stj, _ = get_file('receipts/tower/state.json')
     state = json.loads(stj) if stj else {'idle': 0}
     SEEN = set(state.get('seen', []))
-    events = patrol(SEEN)
+    try:
+        events = patrol(SEEN)
+    except Exception as _e:  # 株卅七 KEEPALIVE-01: 巡崩亦成件(链不死+可见)
+        events = [{'kind': 'err', 'ref': 'patrol-crash:' + _e.__class__.__name__}]
     # 野问册更检(sha比对)
     wq_excerpt = ''
     wqc, wqsha = get_file(urllib.parse.quote('讨论室/WILD-Q-MERGED-01.md'), repo=HUB)
@@ -130,7 +133,7 @@ def main():
         old, sha = get_file('receipts/tower/state.json')
         put_file('receipts/tower/state.json', json.dumps(new_state, ensure_ascii=False), sha, '[skip ci] LVLU-TOWER state')
         print(json.dumps(new_state, ensure_ascii=False)); return
-    if (events or open_items) and idle < MAX_IDLE:  # 递归引擎: 有未闭项亦级联, 循环直至闭环
+    if idle < MAX_IDLE:  # 株卅七 KEEPALIVE-01: 事尽亦级联(心跳拍)链永不眠; 递归引擎未闭项照常
         new_state['cascade'] = 'sleep %ds then self-dispatch' % SLEEP_S
         old, sha = get_file('receipts/tower/state.json')
         put_file('receipts/tower/state.json', json.dumps(new_state, ensure_ascii=False), sha, '[skip ci] LVLU-TOWER state')
