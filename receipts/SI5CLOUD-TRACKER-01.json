@@ -59,7 +59,7 @@
    "ask": "lanes/qgl/inbox/ASK-SI5CLOUD-qgl-20260912T180154Z.md",
    "ask_ts": "20260912T180154Z",
    "detect": "lanes/lvlu/inbox/ANS-SI5CLOUD-QGL-",
-   "first_ans_ts": "20260912T1855Z",
+   "first_ans_ts": "20260912T185500Z",
    "closed_ts": "20260913T000131Z",
    "status": "closed",
    "dispatch_wake": "20260912T234128Z",
@@ -95,7 +95,7 @@
   "lgt": 463.1,
   "usrm": null,
   "vinf": 360.1,
-  "qgl": 3.2,
+  "qgl": 53.1,
   "cisvr": null,
   "ucif2": null
  }
