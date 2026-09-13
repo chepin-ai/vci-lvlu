@@ -20,3 +20,4 @@
 {"ts": "20260913T023836Z", "kind": "机镜", "claims_open": 26, "closed": [], "nudged": [], "exp": {"probe": "In Queue", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
 {"ts": "20260913T025034Z", "kind": "机镜", "claims_open": 26, "closed": [], "nudged": [], "exp": {"probe": "In Queue", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
 {"ts": "20260913T030238Z", "kind": "机镜", "claims_open": 26, "closed": [], "nudged": [], "exp": {"probe": "In Queue", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
+{"ts": "20260913T031525Z", "kind": "机镜", "claims_open": 26, "closed": [], "nudged": ["EXP049-DONE:L21:board:1"], "exp": {"probe": "In Queue", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
