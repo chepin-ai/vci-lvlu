@@ -210,19 +210,24 @@
    "id": "WQREG-SHA-01",
    "name": "野问册sha更检自钉",
    "target": "lvlu",
-   "repo": "ci-inbox",
-   "prefix": "讨论室/",
-   "contains": [
-    "WILD-Q-REGISTRY-02"
-   ],
    "since_ts": "20260911T093116Z",
    "sla_beats": 24,
    "beats": 189,
    "nudge_level": 24,
    "status": "open",
-   "note": "册sha=105f9fc0012752a3; 册24拍无更→自激复核增补(静场不空转律之行)",
+   "note": "册sha=105f9fc0012752a3; 册24拍无更→自激复核增补(静场不空转律之行) | v3.5转sha_neq闸(株卅五附): 唯blob sha异为更据",
    "last_nudge": "20260913T172656Z",
-   "last_nudge_beats": 185
+   "last_nudge_beats": 185,
+   "watch": [
+    {
+     "repo": "ci-inbox",
+     "prefix": "讨论室/",
+     "contains": [
+      "WILD-Q-REGISTRY-02"
+     ],
+     "sha_neq": "20821481203bd1b2"
+    }
+   ]
   },
   {
    "id": "UCIF2-WATCH",
