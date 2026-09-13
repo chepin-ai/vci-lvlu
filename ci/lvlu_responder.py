@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# LVLU-RESPONDER-01 v3.5(株卅五无戳contains补检+h_key分级健康; 株卅四need_lines检全径+株卅二contains兜底; 闸十INBOX-SWEEP; watch双道)(株廿五 NUDGE-TARGET-01: need_lines分线定向) — lvlu线 SI3专候响应环（KEYHEALTH/SECRETS-META/KEYREQ/DISC/SI1-WAKE/SLA/NUDGE/EXP/PULSE/ORBIT 十件）
+# LVLU-RESPONDER-01 v3.6(SCAN-OWN-KEYS-01写前闸装讫; v3.5株卅五无戳contains补检+h_key分级健康; 株卅四need_lines检全径+株卅二contains兜底; 闸十INBOX-SWEEP; watch双道)(株廿五 NUDGE-TARGET-01: need_lines分线定向) — lvlu线 SI3专候响应环（KEYHEALTH/SECRETS-META/KEYREQ/DISC/SI1-WAKE/SLA/NUDGE/EXP/PULSE/ORBIT 十件）
 # 职: ⓪每拍验钥回退链+secrets元数据差分(株廿四) ①钥取件即见即注 ②指名lvlu件即收讫 ③SI1-WAKE常新 ⑧周天囊自驿
 # 律: 零定时(事驱入拍) / 值不过板不落盘(内存即用即焚) / names-only回执 / 非白名单→裁示候root
 import os, json, base64, urllib.request, urllib.parse, datetime, re, hashlib
@@ -89,7 +89,26 @@ def inject(repo, name, value):
     except Exception as e:
         return f'err:{e.__class__.__name__}'
 
+# —— SCAN-OWN-KEYS-01 写前闸(qfa GUIDE参考实现+泛型七模式; 片段运行时派生永不落仓)——
+VAULT_G = {}
+GENERIC_PATS = [r'ghp_[A-Za-z0-9]{30,}', r'gho_[A-Za-z0-9]{30,}', r'ghs_[A-Za-z0-9]{30,}',
+                r'ghu_[A-Za-z0-9]{30,}', r'github_pat_[A-Za-z0-9_]{30,}', r'sk-[A-Za-z0-9]{20,}', r'AKID[A-Za-z0-9]{13,}']
+def scan_out(text):
+    """SCAN-OWN-KEYS-01: 凡出文先扫自钥环派生片段+泛型钥形; BLOCK即不放行(机旗永不录子串)"""
+    import hashlib as _hs
+    for k in list(VAULT_G.values()) + ([TOK] if TOK else []):
+        if not k: continue
+        for f in (k[:8], k[-8:], _hs.sha256(k.encode()).hexdigest()[:8]):
+            if f and f in text: return 'BLOCK: own-key fragment'
+    for p in GENERIC_PATS:
+        if re.search(p, text): return 'BLOCK: generic-pattern'
+    return None
+
 def board_post(title, body):
+    blk = scan_out((title or '') + (body or ''))
+    if blk:
+        print('SCAN-OWN-KEYS-01 BLOCK(board_post):', blk)  # 机旗永不录子串
+        return None
     return put_file(urllib.parse.quote('公告板/' + title), body, None, title + ' [skip ci]', repo=HUB)
 
 
@@ -376,6 +395,7 @@ def main():
         print('KEYHEALTH: ALL KEYS DEAD — 钥亡红拍(株廿四律三:禁静默死)')
         raise SystemExit(1)
     vault = load_vault()
+    VAULT_G.update(vault)  # SCAN-OWN-KEYS-01: 自钥环供扫(内存即用)
     meta = secrets_meta(ts)
     done, acks, pending_si1 = [], [], []
 
