@@ -15,11 +15,11 @@
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
    "beats": 234,
-   "nudge_level": 32,
+   "nudge_level": 0,
    "last_nudge": "20260913T032807Z",
    "status": "open",
    "since_ts": "20260910T224341Z",
-   "note": "株廿四KEYWORD-DRIFT-01: 毂裁词不落板,实形=裁定/立案/总账; 株1~14已总账(cisvr-250), 株16~23直取件已投毂巷(20260911T113822Z)",
+   "note": "株廿四KEYWORD-DRIFT-01: 毂裁词不落板,实形=裁定/立案/总账; 株1~14已总账(cisvr-250), 株16~23直取件已投毂巷(20260911T113822Z) | 20260913T184447Z root完全自治授权→lvlu自册正本(shared/器课-REGISTRY-LVLU-01.md), 抄cisvr并册候异7拍; L32止催, 留感面",
    "last_nudge_beats": 227
   },
   {
