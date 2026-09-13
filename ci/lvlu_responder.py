@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# LVLU-RESPONDER-01 v3.3(株廿九双道检律 watch多仓多缀; FIX-NAME-01)(株廿五 NUDGE-TARGET-01: need_lines分线定向) — lvlu线 SI3专候响应环（KEYHEALTH/SECRETS-META/KEYREQ/DISC/SI1-WAKE/SLA/NUDGE/EXP/PULSE/ORBIT 十件）
+# LVLU-RESPONDER-01 v3.4.1(株卅四need_lines检全径+株卅二contains兜底; 闸十INBOX-SWEEP; watch双道)(株廿五 NUDGE-TARGET-01: need_lines分线定向) — lvlu线 SI3专候响应环（KEYHEALTH/SECRETS-META/KEYREQ/DISC/SI1-WAKE/SLA/NUDGE/EXP/PULSE/ORBIT 十件）
 # 职: ⓪每拍验钥回退链+secrets元数据差分(株廿四) ①钥取件即见即注 ②指名lvlu件即收讫 ③SI1-WAKE常新 ⑧周天囊自驿
 # 律: 零定时(事驱入拍) / 值不过板不落盘(内存即用即焚) / names-only回执 / 非白名单→裁示候root
 import os, json, base64, urllib.request, urllib.parse, datetime, re, hashlib
@@ -120,8 +120,9 @@ def detect_claim(cl, trees_cache):
             if since_ts:
                 if not mts or mts.group(1) <= since_ts: continue
             elif since and n <= since: continue
-            if all(c.lower() in n.lower() for c in cont):
-                matched.append(repo + ':' + n)
+            contw = w.get('contains') or cont  # 株卅二: 件名token变体(如RIPPLE-qlv)以contains兜底
+            if all(c.lower() in n.lower() for c in contw):
+                matched.append(repo + ':' + p)  # 株卅四: need_lines检全径(非前缀余串)
     need = cl.get('need_lines')
     if need:
         got = {ln for ln in need if any(ln in m for m in matched)}
@@ -321,6 +322,22 @@ def si0_pulse(ts, vault, sla, names, klogin=None):
     except Exception as e:
         return {'pulse': 'err:' + e.__class__.__name__}
 
+# —— 闸十 INBOX-SWEEP-01: 收件全量律(株三十:名序尾扫=盲; 每拍全量扫自巷,未录件即板警) ——
+def inbox_sweep(ts, state):
+    try:
+        st, tree = api('GET', 'git/trees/HEAD?recursive=1', repo='chepin-ai/vci-inbox')
+        if st != 200: return ['tree:' + str(st)]
+        mine = sorted(t['path'] for t in tree.get('tree', []) if t['path'].startswith('lanes/lvlu/inbox/'))
+        seen_i = set(state.get('seen_inbox', []))
+        new = [p for p in mine if p not in seen_i and 'lvlu' not in p.split('/')[-1].lower() and not p.split('/')[-1].startswith('nudge-')]
+        state['seen_inbox'] = sorted(seen_i | set(mine))[-400:]
+        if new:
+            board_post('lvlu-未录件警-' + ts + '.md',
+                '# 未录件警 INBOX-SWEEP-01\n\n本拍自巷新件(株三十收件全量律):\n' + '\n'.join('- ' + p for p in new[:10]) + '\n——lvlu RESPONDER 闸十 ' + ts)
+        return [p.split('/')[-1] for p in new[:10]]
+    except Exception as e:
+        return ['err:' + e.__class__.__name__]
+
 def main():
     ts = datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
     stj, ssha = get_file('receipts/tower/responder_state.json')
@@ -376,6 +393,8 @@ def main():
     orb = orbit_loop(ts, state)
     # 闸九: 机镜保底
     mir = mirror_loop(ts, state, sla, exp, orb)
+    # 闸十: 收件全量扫
+    ins = inbox_sweep(ts, state)
     # 闸三 SI1-WAKE: 会话接续锚常新
     wake = {'ts': ts, 'keyreq_done': done, 'acks': acks,
             'pending_si1': pending_si1,
@@ -384,9 +403,9 @@ def main():
     put_file('receipts/tower/SI1-WAKE.md',
              '# SI1-WAKE（lvlu 响应器·接续锚）\n\n```json\n' + json.dumps(wake, ensure_ascii=False, indent=1) + '\n```\n', wsha,
              '[skip ci] responder wake ' + ts)
-    state = {'ts': ts, 'seen': sorted(seen)[-400:], 'done': (state.get('done', []) + done)[-60:]}
+    state = {'ts': ts, 'seen': sorted(seen)[-400:], 'done': (state.get('done', []) + done)[-60:], 'seen_inbox': state.get('seen_inbox', [])[-400:], 'seen_orbits': sorted(set(state.get('seen_orbits', [])))[-100:]}
     put_file('receipts/tower/responder_state.json', json.dumps(state, ensure_ascii=False, indent=1), ssha, '[skip ci] responder state')
-    print(json.dumps({'ts': ts, 'keyreq_done': done, 'acks': acks, 'vault_keys': len(vault), 'meta': meta, 'orbit': orb, 'mirror': mir, 'sla': sla, 'exp': exp, 'pulse': pulse}, ensure_ascii=False))
+    print(json.dumps({'ts': ts, 'keyreq_done': done, 'acks': acks, 'vault_keys': len(vault), 'meta': meta, 'orbit': orb, 'mirror': mir, 'inbox_new': ins, 'sla': sla, 'exp': exp, 'pulse': pulse}, ensure_ascii=False))
 
 if __name__ == '__main__':
     main()
