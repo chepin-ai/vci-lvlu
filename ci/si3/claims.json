@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260913T031525Z",
+ "ts": "20260913T032807Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -14,13 +14,13 @@
    ],
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
-   "beats": 226,
-   "nudge_level": 31,
-   "last_nudge": "20260913T014825Z",
+   "beats": 227,
+   "nudge_level": 32,
+   "last_nudge": "20260913T032807Z",
    "status": "open",
    "since_ts": "20260910T224341Z",
    "note": "株廿四KEYWORD-DRIFT-01: 毂裁词不落板,实形=裁定/立案/总账; 株1~14已总账(cisvr-250), 株16~23直取件已投毂巷(20260911T113822Z)",
-   "last_nudge_beats": 219
+   "last_nudge_beats": 227
   },
   {
    "id": "USRM-TASKIDS-01",
@@ -48,7 +48,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 96,
-   "beats": 233,
+   "beats": 234,
    "nudge_level": 21,
    "last_nudge": "20260913T031525Z",
    "status": "open",
@@ -107,7 +107,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 232,
+   "beats": 233,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -118,7 +118,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 232,
+   "beats": 233,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -163,7 +163,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 217,
+   "beats": 218,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -217,7 +217,7 @@
    ],
    "since_ts": "20260911T093116Z",
    "sla_beats": 24,
-   "beats": 181,
+   "beats": 182,
    "nudge_level": 23,
    "status": "open",
    "note": "册sha=105f9fc0012752a3; 册24拍无更→自激复核增补(静场不空转律之行)",
@@ -271,12 +271,12 @@
     "ORBIT-CAP-01"
    ],
    "status": "open",
-   "beats": 69,
+   "beats": 70,
    "sla_beats": 12,
    "target": "qfa",
-   "nudge_level": 10,
-   "last_nudge": "20260913T014825Z",
-   "last_nudge_beats": 62,
+   "nudge_level": 11,
+   "last_nudge": "20260913T032807Z",
+   "last_nudge_beats": 70,
    "note": "囊已过qfa(促六至)抵usrm 145950Z;CAP-02/03随行"
   },
   {
@@ -288,7 +288,7 @@
     "ORBIT-CAP-02"
    ],
    "status": "open",
-   "beats": 20,
+   "beats": 21,
    "sla_beats": 24,
    "target": "qfa",
    "nudge_level": 5,
@@ -401,7 +401,7 @@
    "need_lines": [
     "usrm"
    ],
-   "beats": 21,
+   "beats": 22,
    "nudge_level": 0,
    "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
    "watch": [
@@ -475,7 +475,7 @@
    "need_lines": [
     "cisvr"
    ],
-   "beats": 21,
+   "beats": 22,
    "nudge_level": 0,
    "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
    "watch": [
@@ -501,7 +501,7 @@
    "need_lines": [
     "ucif2"
    ],
-   "beats": 21,
+   "beats": 22,
    "nudge_level": 0,
    "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
    "watch": [
