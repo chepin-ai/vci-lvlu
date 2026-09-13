@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260913T171629Z",
+ "ts": "20260913T170511Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -552,6 +552,66 @@
    ],
    "closed_ts": "20260913T014748Z",
    "evidence": "MULTI:qlv"
+  },
+  {
+   "id": "YONEDA-ROLL-LGT",
+   "name": "lgt×lvlu YONEDA roll互验果",
+   "by": "si0",
+   "opened": "20260913T170511Z",
+   "status": "open",
+   "watch": [
+    {
+     "repo": "vci-inbox",
+     "prefix": "lanes/lvlu/inbox/",
+     "contains": [
+      "YONEDA",
+      "lgt"
+     ]
+    }
+   ],
+   "since_ts": "20260913T170511Z",
+   "sla_beats": 144,
+   "target": "lgt",
+   "need_lines": [
+    "lgt"
+   ],
+   "beats": 0,
+   "nudge_level": 0,
+   "note": "RE2约接: 我链tip 280223d5a52b581e / 尔tip 209/813ac77adf5e"
+  },
+  {
+   "id": "EVAL-KAPPA-LGT",
+   "name": "EVAL-R2 同形器 kappa互验(lgt)",
+   "by": "si0",
+   "opened": "20260913T170511Z",
+   "status": "open",
+   "watch": [
+    {
+     "repo": "vci-inbox",
+     "prefix": "lanes/lvlu/inbox/",
+     "contains": [
+      "KAPPA",
+      "lgt"
+     ]
+    },
+    {
+     "repo": "vci-inbox",
+     "prefix": "lanes/lvlu/inbox/",
+     "contains": [
+      "EVAL",
+      "lgt"
+     ]
+    }
+   ],
+   "since_ts": "20260913T170511Z",
+   "sla_beats": 288,
+   "target": "lgt",
+   "need_lines": [
+    "lgt"
+   ],
+   "beats": 0,
+   "nudge_level": 0,
+   "note": "EXP-024题面已转投; κ>0.8 对拍"
   }
  ]
 }
