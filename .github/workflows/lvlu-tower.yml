@@ -43,7 +43,7 @@ jobs:
 
   responder:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 12  # 株卅九: 殉拍之治(5min墙连杀6拍 1841~1917), 时箱律+此额双保
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
