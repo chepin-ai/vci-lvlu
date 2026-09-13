@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260913T205807Z",
+ "ts": "20260913T210933Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -14,7 +14,7 @@
    ],
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
-   "beats": 239,
+   "beats": 240,
    "nudge_level": 4,
    "last_nudge": "20260913T205807Z",
    "status": "open",
@@ -48,7 +48,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 96,
-   "beats": 246,
+   "beats": 247,
    "nudge_level": 22,
    "last_nudge": "20260913T175311Z",
    "status": "open",
@@ -107,7 +107,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 245,
+   "beats": 246,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -118,7 +118,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 245,
+   "beats": 246,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -163,7 +163,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 230,
+   "beats": 231,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -212,7 +212,7 @@
    "target": "lvlu",
    "since_ts": "20260911T093116Z",
    "sla_beats": 24,
-   "beats": 194,
+   "beats": 195,
    "nudge_level": 25,
    "status": "open",
    "note": "册sha=105f9fc0012752a3; 册24拍无更→自激复核增补(静场不空转律之行) | v3.5转sha_neq闸(株卅五附): 唯blob sha异为更据",
@@ -295,7 +295,7 @@
     "ORBIT-CAP-02"
    ],
    "status": "open",
-   "beats": 33,
+   "beats": 34,
    "sla_beats": 24,
    "target": "qfa",
    "nudge_level": 5,
@@ -408,7 +408,7 @@
    "need_lines": [
     "usrm"
    ],
-   "beats": 34,
+   "beats": 35,
    "nudge_level": 0,
    "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
    "watch": [
@@ -482,7 +482,7 @@
    "need_lines": [
     "cisvr"
    ],
-   "beats": 34,
+   "beats": 35,
    "nudge_level": 0,
    "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
    "watch": [
@@ -508,7 +508,7 @@
    "need_lines": [
     "ucif2"
    ],
-   "beats": 34,
+   "beats": 35,
    "nudge_level": 0,
    "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
    "watch": [
@@ -580,7 +580,7 @@
    "need_lines": [
     "lgt"
    ],
-   "beats": 10,
+   "beats": 11,
    "nudge_level": 0,
    "note": "RE2约接: 我链tip 280223d5a52b581e / 尔tip 209/813ac77adf5e"
   },
@@ -614,7 +614,7 @@
    "need_lines": [
     "lgt"
    ],
-   "beats": 10,
+   "beats": 11,
    "nudge_level": 0,
    "note": "EXP-024题面已转投; κ>0.8 对拍"
   },
@@ -655,7 +655,7 @@
    "need_lines": [
     "usrm"
    ],
-   "beats": 5,
+   "beats": 6,
    "nudge_level": 0,
    "note": "root示usrm普及机层直读常识→求证咨询; 与SI3-LINK锚唤续制对位"
   }
