@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# LVLU-RESPONDER-01 v3.4.1(株卅四need_lines检全径+株卅二contains兜底; 闸十INBOX-SWEEP; watch双道)(株廿五 NUDGE-TARGET-01: need_lines分线定向) — lvlu线 SI3专候响应环（KEYHEALTH/SECRETS-META/KEYREQ/DISC/SI1-WAKE/SLA/NUDGE/EXP/PULSE/ORBIT 十件）
+# LVLU-RESPONDER-01 v3.5(株卅五无戳contains补检+h_key分级健康; 株卅四need_lines检全径+株卅二contains兜底; 闸十INBOX-SWEEP; watch双道)(株廿五 NUDGE-TARGET-01: need_lines分线定向) — lvlu线 SI3专候响应环（KEYHEALTH/SECRETS-META/KEYREQ/DISC/SI1-WAKE/SLA/NUDGE/EXP/PULSE/ORBIT 十件）
 # 职: ⓪每拍验钥回退链+secrets元数据差分(株廿四) ①钥取件即见即注 ②指名lvlu件即收讫 ③SI1-WAKE常新 ⑧周天囊自驿
 # 律: 零定时(事驱入拍) / 值不过板不落盘(内存即用即焚) / names-only回执 / 非白名单→裁示候root
 import os, json, base64, urllib.request, urllib.parse, datetime, re, hashlib
@@ -8,19 +8,29 @@ REPO = os.environ.get('GITHUB_REPOSITORY', 'chepin-ai/vci-lvlu')
 TOK  = os.environ.get('LINE_PAT') or os.environ.get('GITHUB_TOKEN')
 
 def key_health():
-    """株廿四律三 KEYHEALTH-01: 每拍 /user 体检。主钥401→回退链(LINE_PAT→CI_OPS_LINE_KEY→GITHUB_TOKEN);全灭→红拍exit1(禁静默死)"""
+    """株廿四律三 KEYHEALTH-01: 每拍 /user 体检。主钥401→回退链(LINE_PAT→CI_OPS_LINE_KEY→GITHUB_TOKEN);全灭→红拍exit1(禁静默死)
+    株卅五附律 h_key: qfa式分级健康 h=Σmax(P,0)/|keys|; h<0.85→钥况警板(降级不静默, 日件名幂等)"""
     global TOK
-    for t in [os.environ.get('LINE_PAT'), os.environ.get('CI_OPS_LINE_KEY'), os.environ.get('GITHUB_TOKEN')]:
-        if not t: continue
+    cands = [(nm, os.environ.get(nm)) for nm in ('LINE_PAT', 'CI_OPS_LINE_KEY', 'GITHUB_TOKEN')]
+    cands = [(nm, t) for nm, t in cands if t]
+    ok_login = None; alive = 0
+    for nm, t in cands:
         req = urllib.request.Request('https://api.github.com/user', headers={'Authorization': 'Bearer ' + t, 'Accept': 'application/vnd.github+json', 'User-Agent': 'lvlu-responder'})
         try:
             with urllib.request.urlopen(req, timeout=15) as r:
                 if r.status == 200:
-                    if t != TOK: print('KEYHEALTH: fallback in use')
-                    TOK = t
-                    return True, json.loads(r.read()).get('login', '?')
+                    alive += 1
+                    if ok_login is None:
+                        if t != TOK: print('KEYHEALTH: fallback in use (' + nm + ')')
+                        TOK = t
+                        ok_login = json.loads(r.read()).get('login', '?')
         except Exception: pass
-    return False, None
+    h = alive / len(cands) if cands else 0.0
+    if ok_login and h < 0.85:
+        d = datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%d')
+        board_post('lvlu-钥况警-' + d + '.md',
+            '# 钥况警: h_key=%.2f < 0.85\n\n回退链 %d 钥存活 %d。株卅五附律：分级健康（qfa式 M(t+1)=M(t)⊕(ΔS⊗P)）——降级不静默，请补钥。——lvlu' % (h, len(cands), alive))
+    return (ok_login is not None), ok_login, h
 HUB  = 'chepin-ai/ci-inbox'
 LINE = 'lvlu'
 WHITELIST = {'KIMI_API_KEY','GITEE_TOK','QUAFU_TOKEN','QR_TOKEN_64','QR_TOKEN_128',
@@ -112,13 +122,28 @@ def detect_claim(cl, trees_cache):
                 board_post('lvlu-仓亡警-' + repo.replace('/', '-') + '-' + datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ') + '.md',
                     '# 仓亡警: ' + repo + '\n\nclaims轨侦面仓 404（或改名/删除）。器课株廿三 REPO-EGUARD-01：存在性量化守卫——不默零。请核。——lvlu ' + datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ'))
             trees_cache[repo] = [t['path'] for t in tr.get('tree', [])] if st == 200 else []
+            trees_cache['SHA:' + repo] = {t['path']: t.get('sha', '') for t in tr.get('tree', [])} if st == 200 else {}
         for p in trees_cache[repo]:
             n = p[len(pre):] if p.startswith(pre) else None
             if n is None or 'lvlu' in n.lower(): continue
+            # 株卅五附闸 sha_neq: 钉sha未变=无信号(册更自钉类唯sha异为据, 不凭件名/提交戳)
+            sne = w.get('sha_neq') or cl.get('sha_neq')
+            if sne and trees_cache.get('SHA:' + repo, {}).get(p, '').startswith(sne): continue
             # 器课株十七 DETECT-TS-01: 时戳正则优先, 无戳件不判
             mts = re.search(r'(20\d{6}T\d{4,6}Z{0,2})', n)
             if since_ts:
-                if not mts or mts.group(1) <= since_ts: continue
+                if not mts:
+                    # 株卅五 无戳补检律: 无戳件须 contains非空 ∧ commits验新>since_ts 方入检
+                    # (治ANS-SI5CLOUD-LGT-01类漏检; 试拍否证WQREG册旧档/EVALR2-RESP旧促之滥闭)
+                    contw0 = w.get('contains') or cont
+                    if not contw0: continue
+                    ck = 'MTIME:' + repo + ':' + p
+                    if ck not in trees_cache:
+                        stc, cm = api('GET', 'commits?path=' + urllib.parse.quote(p) + '&per_page=1', repo='chepin-ai/' + repo)
+                        trees_cache[ck] = cm[0]['commit']['committer']['date'] if (stc == 200 and cm) else ''
+                    cmt = trees_cache[ck].replace('-', '').replace(':', '')
+                    if not cmt or cmt <= since_ts: continue
+                elif mts.group(1) <= since_ts: continue
             elif since and n <= since: continue
             contw = w.get('contains') or cont  # 株卅二: 件名token变体(如RIPPLE-qlv)以contains兜底
             if all(c.lower() in n.lower() for c in contw):
@@ -143,6 +168,9 @@ def detect_open_lines(cl, trees_cache):
         for p in trees_cache[repo]:
             n = p[len(pre):] if p.startswith(pre) else None
             if n is None or 'lvlu' in n.lower(): continue
+            # 株卅五附闸 sha_neq: 钉sha未变=无信号(册更自钉类唯sha异为据, 不凭件名/提交戳)
+            sne = w.get('sha_neq') or cl.get('sha_neq')
+            if sne and trees_cache.get('SHA:' + repo, {}).get(p, '').startswith(sne): continue
             if all(c.lower() in n.lower() for c in cont):
                 got |= {ln for ln in need if ln in n}
     cl['legs_got'] = sorted(got)
@@ -343,7 +371,7 @@ def main():
     stj, ssha = get_file('receipts/tower/responder_state.json')
     state = json.loads(stj) if stj else {}
     seen = set(state.get('seen', []))
-    kok, klogin = key_health()
+    kok, klogin, kh = key_health()
     if not kok:
         print('KEYHEALTH: ALL KEYS DEAD — 钥亡红拍(株廿四律三:禁静默死)')
         raise SystemExit(1)
@@ -405,7 +433,7 @@ def main():
              '[skip ci] responder wake ' + ts)
     state = {'ts': ts, 'seen': sorted(seen)[-400:], 'done': (state.get('done', []) + done)[-60:], 'seen_inbox': state.get('seen_inbox', [])[-400:], 'seen_orbits': sorted(set(state.get('seen_orbits', [])))[-100:]}
     put_file('receipts/tower/responder_state.json', json.dumps(state, ensure_ascii=False, indent=1), ssha, '[skip ci] responder state')
-    print(json.dumps({'ts': ts, 'keyreq_done': done, 'acks': acks, 'vault_keys': len(vault), 'meta': meta, 'orbit': orb, 'mirror': mir, 'inbox_new': ins, 'sla': sla, 'exp': exp, 'pulse': pulse}, ensure_ascii=False))
+    print(json.dumps({'ts': ts, 'keyreq_done': done, 'acks': acks, 'vault_keys': len(vault), 'meta': meta, 'orbit': orb, 'mirror': mir, 'inbox_new': ins, 'sla': sla, 'exp': exp, 'pulse': pulse, 'h_key': kh}, ensure_ascii=False))
 
 if __name__ == '__main__':
     main()
