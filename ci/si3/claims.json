@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260913T014224Z",
+ "ts": "20260913T013901Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -344,6 +344,14 @@
     {
      "repo": "ci-inbox",
      "prefix": "讨论室/TH-SI5-CLOUD-01-ANS-qlv-"
+    },
+    {
+     "repo": "vci-inbox",
+     "prefix": "lanes/lvlu/inbox/",
+     "contains": [
+      "SI5CLOUD",
+      "qlv"
+     ]
     }
    ]
   },
@@ -520,6 +528,14 @@
     {
      "repo": "ci-inbox",
      "prefix": "讨论室/TH-SI5-CLOUD-01-ANS-qlv-"
+    },
+    {
+     "repo": "vci-inbox",
+     "prefix": "lanes/lvlu/inbox/",
+     "contains": [
+      "SI5CLOUD",
+      "qlv"
+     ]
     }
    ]
   }
