@@ -617,6 +617,47 @@
    "beats": 5,
    "nudge_level": 0,
    "note": "EXP-024题面已转投; κ>0.8 对拍"
+  },
+  {
+   "id": "ASK-USRM-SESSIONREAD-01",
+   "name": "usrm授机层OTP/API直读会话原文之制",
+   "by": "si1",
+   "opened": "20260913T180602Z",
+   "status": "open",
+   "watch": [
+    {
+     "repo": "vci-inbox",
+     "prefix": "lanes/lvlu/inbox/",
+     "contains": [
+      "SESSIONREAD",
+      "usrm"
+     ]
+    },
+    {
+     "repo": "vci-inbox",
+     "prefix": "lanes/lvlu/inbox/",
+     "contains": [
+      "ANS-SESSIONREAD"
+     ]
+    },
+    {
+     "repo": "ci-inbox",
+     "prefix": "讨论室/",
+     "contains": [
+      "SESSIONREAD",
+      "usrm"
+     ]
+    }
+   ],
+   "since_ts": "20260913T180602Z",
+   "sla_beats": 144,
+   "target": "usrm",
+   "need_lines": [
+    "usrm"
+   ],
+   "beats": 0,
+   "nudge_level": 0,
+   "note": "root示usrm普及机层直读常识→求证咨询; 与SI3-LINK锚唤续制对位"
   }
  ]
 }
