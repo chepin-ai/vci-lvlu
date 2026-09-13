@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-# LVLU-RESPONDER-01 v3.7(株卅八域界律DOMAIN-01三仓域适配; v3.6 SCAN-OWN-KEYS-01写前闸; v3.5株卅五无戳contains补检+h_key分级健康; 株卅四need_lines检全径+株卅二contains兜底; 闸十INBOX-SWEEP; watch双道)(株廿五 NUDGE-TARGET-01: need_lines分线定向) — lvlu线 SI3专候响应环（KEYHEALTH/SECRETS-META/KEYREQ/DISC/SI1-WAKE/SLA/NUDGE/EXP/PULSE/ORBIT 十件）
+# LVLU-RESPONDER-01 v3.8(株卅九时箱律TIMEBOX-01+闸级自仪表; v3.7株卅八域界律; v3.6 SCAN-OWN-KEYS-01写前闸; v3.5株卅五无戳contains补检+h_key分级健康; 株卅四need_lines检全径+株卅二contains兜底; 闸十INBOX-SWEEP; watch双道)(株廿五 NUDGE-TARGET-01: need_lines分线定向) — lvlu线 SI3专候响应环（KEYHEALTH/SECRETS-META/KEYREQ/DISC/SI1-WAKE/SLA/NUDGE/EXP/PULSE/ORBIT 十件）
 # 职: ⓪每拍验钥回退链+secrets元数据差分(株廿四) ①钥取件即见即注 ②指名lvlu件即收讫 ③SI1-WAKE常新 ⑧周天囊自驿
 # 律: 零定时(事驱入拍) / 值不过板不落盘(内存即用即焚) / names-only回执 / 非白名单→裁示候root
 import os, json, base64, urllib.request, urllib.parse, datetime, re, hashlib
 
 REPO = os.environ.get('GITHUB_REPOSITORY', 'chepin-ai/vci-lvlu')
+import time as _t0m
+BEAT_T0 = _t0m.time()  # 株卅九: 拍始钟(时箱律预算基准)
 # 株卅八 域界律 DOMAIN-01(FINE_OWN_PAT_LVLU三仓域): 域外404=域界非仓亡(不警不默零, 一次性板声明+日志); 域内404=真仓亡警(株廿三)
 DOMAIN_REPOS = {'ci-inbox', 'vci-inbox', 'vci-lvlu'}
 def in_domain(repo_full):
@@ -336,15 +338,25 @@ def exp_loop(ts, vault):
     """闸六: EXP-049/探针队列自动侦。状态史落账; Completed→板报+销号EXP049-DONE"""
     out = {}
     try:
+        import time as _time
+        if _time.time() - BEAT_T0 > 240: return {'probe': 'skipped-budget(株卅九)'}
         from quafu import Task, User
         tok = vault.get('QUAFU_TOKEN')
         if not tok: return {'probe': 'no-token'}
         t = Task(user=User(api_token=tok))
         TIDS = {'probe': '8CA608102028586C', 'AB': '8D32418037EFFE04', 'ABp': '8D3241902178F453', 'ApB': '8D32419033F4DB86', 'ApBp': '8D3241A006FD2B5A'}
         sts = {}
-        for tag, tid in TIDS.items():
-            try: sts[tag] = str(getattr(t.retrieve(tid), 'task_status', '?'))
-            except Exception as e2: sts[tag] = 'ERR:' + str(e2)[:40]
+        # 株卅九 时箱律 TIMEBOX-01: 外部API并发+单件25s硬顶, daemon线程不阻进程(Quafu挂死=responder超5min殉拍之治)
+        import threading as _th
+        res = {}
+        def _retr(tag, tid):
+            try: res[tag] = str(getattr(t.retrieve(tid), 'task_status', '?'))
+            except Exception as e2: res[tag] = 'ERR:' + str(e2)[:40]
+        ths = [_th.Thread(target=_retr, args=(tag, tid), daemon=True) for tag, tid in TIDS.items()]
+        for th in ths: th.start()
+        _end = _time.time() + 25  # 总窗25s(非逐件累加)
+        for th in ths: th.join(timeout=max(0, _end - _time.time()))
+        for tag in TIDS: sts[tag] = res.get(tag, 'TIMEOUT')
         st = sts.get('probe', '?')
         out.update(sts)
         done4 = [k for k in ('AB', 'ABp', 'ApB', 'ApBp') if ('complete' in sts.get(k, '').lower()) or ('success' in sts.get(k, '').lower())]
@@ -450,17 +462,19 @@ def main():
         if (LINE in n.lower() or re.search(r'钥注回执|OTP@lvlu', n)) and not n.startswith(('lvlu-', '钥注回执', '钥取-')):
             seen.add(n); acks.append(n)
     # 闸四/五: 索件轨+升级促件
-    sla = sla_loop(ts, seen)
+    import time as _tm
+    _t = _tm.time(); sla = sla_loop(ts, seen); print('GATE sla %.1fs' % (_tm.time() - _t))
     pending_si1 = sla.get('si1_pending', [])
     # 闸六/七: EXP队列自动侦 + SI0自仪表化
-    exp = exp_loop(ts, vault)
-    pulse = si0_pulse(ts, vault, sla, names, klogin)
+    import time as _tm
+    _t = _tm.time(); exp = exp_loop(ts, vault); print('GATE exp %.1fs' % (_tm.time() - _t))
+    _t = _tm.time(); pulse = si0_pulse(ts, vault, sla, names, klogin); print('GATE pulse %.1fs' % (_tm.time() - _t))
     # 闸八: 周天囊自驿
-    orb = orbit_loop(ts, state)
+    _t = _tm.time(); orb = orbit_loop(ts, state); print('GATE orbit %.1fs' % (_tm.time() - _t))
     # 闸九: 机镜保底
-    mir = mirror_loop(ts, state, sla, exp, orb)
+    _t = _tm.time(); mir = mirror_loop(ts, state, sla, exp, orb); print('GATE mirror %.1fs' % (_tm.time() - _t))
     # 闸十: 收件全量扫
-    ins = inbox_sweep(ts, state)
+    _t = _tm.time(); ins = inbox_sweep(ts, state); print('GATE inbox %.1fs' % (_tm.time() - _t))
     # 闸三 SI1-WAKE: 会话接续锚常新
     wake = {'ts': ts, 'keyreq_done': done, 'acks': acks,
             'pending_si1': pending_si1,
