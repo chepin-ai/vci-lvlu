@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# LVLU-RESPONDER-01 v3.2.1(+闸九MIRROR-LOOP; FIX-NAME-01 claim name容错)(株廿五 NUDGE-TARGET-01: need_lines分线定向) — lvlu线 SI3专候响应环（KEYHEALTH/SECRETS-META/KEYREQ/DISC/SI1-WAKE/SLA/NUDGE/EXP/PULSE/ORBIT 十件）
+# LVLU-RESPONDER-01 v3.3(株廿九双道检律 watch多仓多缀; FIX-NAME-01)(株廿五 NUDGE-TARGET-01: need_lines分线定向) — lvlu线 SI3专候响应环（KEYHEALTH/SECRETS-META/KEYREQ/DISC/SI1-WAKE/SLA/NUDGE/EXP/PULSE/ORBIT 十件）
 # 职: ⓪每拍验钥回退链+secrets元数据差分(株廿四) ①钥取件即见即注 ②指名lvlu件即收讫 ③SI1-WAKE常新 ⑧周天囊自驿
 # 律: 零定时(事驱入拍) / 值不过板不落盘(内存即用即焚) / names-only回执 / 非白名单→裁示候root
 import os, json, base64, urllib.request, urllib.parse, datetime, re, hashlib
@@ -93,28 +93,35 @@ NUDGE_CH = {
 }
 
 def detect_claim(cl, trees_cache):
-    repo = cl.get('repo', 'ci-inbox')
-    if repo == 'si1': return False
-    if repo not in trees_cache:
-        st, tr = api('GET', 'git/trees/HEAD?recursive=1', repo='chepin-ai/' + repo)
-        if st == 404 and not trees_cache.get('DEAD:' + repo):
-            # 株廿三 REPO-EGUARD-01: 侦面仓存在性先验——仓亡即报警非默零(ucif2 cfts名-盲常量集案之我面同修)
-            trees_cache['DEAD:' + repo] = True
-            board_post('lvlu-仓亡警-' + repo.replace('/', '-') + '-' + datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ') + '.md',
-                '# 仓亡警: ' + repo + '\n\nclaims轨侦面仓 404（或改名/删除）。器课株廿三 REPO-EGUARD-01：存在性量化守卫——不默零。请核。——lvlu ' + datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ'))
-        trees_cache[repo] = [t['path'] for t in tr.get('tree', [])] if st == 200 else []
-    pre = cl.get('prefix', ''); since = cl.get('since', ''); cont = cl.get('contains', [])
+    """株廿九 双道检律: watch 多仓多缀(应件宣告诸道并检, 册堂/巷板无盲点); 无 watch 则 repo+prefix(es) 旧式兼容"""
+    watch = cl.get('watch')
+    if not watch:
+        repo0 = cl.get('repo', 'ci-inbox')
+        if repo0 == 'si1': return False
+        watch = [{'repo': repo0, 'prefix': p} for p in (cl.get('prefixes') or [cl.get('prefix', '')])]
+    since = cl.get('since', ''); cont = cl.get('contains', [])
     since_ts = cl.get('since_ts', ''); matched = []
-    for p in trees_cache[repo]:
-        n = p[len(pre):] if p.startswith(pre) else None
-        if n is None or 'lvlu' in n.lower(): continue
-        # 器课株十七 DETECT-TS-01: CJK名序失真→时戳正则优先, 无戳件不判(记录在案)
-        mts = re.search(r'(20\d{6}T\d{4,6}Z{0,2})', n)
-        if since_ts:
-            if not mts or mts.group(1) <= since_ts: continue
-        elif since and n <= since: continue
-        if all(c.lower() in n.lower() for c in cont):
-            matched.append(n)
+    for w in watch:
+        repo = w.get('repo', 'ci-inbox'); pre = w.get('prefix', '')
+        if repo == 'si1': continue
+        if repo not in trees_cache:
+            st, tr = api('GET', 'git/trees/HEAD?recursive=1', repo='chepin-ai/' + repo)
+            if st == 404 and not trees_cache.get('DEAD:' + repo):
+                # 株廿三 REPO-EGUARD-01: 侦面仓存在性先验——仓亡即报警非默零
+                trees_cache['DEAD:' + repo] = True
+                board_post('lvlu-仓亡警-' + repo.replace('/', '-') + '-' + datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ') + '.md',
+                    '# 仓亡警: ' + repo + '\n\nclaims轨侦面仓 404（或改名/删除）。器课株廿三 REPO-EGUARD-01：存在性量化守卫——不默零。请核。——lvlu ' + datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ'))
+            trees_cache[repo] = [t['path'] for t in tr.get('tree', [])] if st == 200 else []
+        for p in trees_cache[repo]:
+            n = p[len(pre):] if p.startswith(pre) else None
+            if n is None or 'lvlu' in n.lower(): continue
+            # 器课株十七 DETECT-TS-01: 时戳正则优先, 无戳件不判
+            mts = re.search(r'(20\d{6}T\d{4,6}Z{0,2})', n)
+            if since_ts:
+                if not mts or mts.group(1) <= since_ts: continue
+            elif since and n <= since: continue
+            if all(c.lower() in n.lower() for c in cont):
+                matched.append(repo + ':' + n)
     need = cl.get('need_lines')
     if need:
         got = {ln for ln in need if any(ln in m for m in matched)}
