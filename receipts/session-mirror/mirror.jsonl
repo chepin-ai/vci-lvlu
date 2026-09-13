@@ -15,3 +15,4 @@
 {"ts": "20260913T014748Z", "kind": "机镜", "claims_open": 26, "closed": ["SI5CLOUD-QFA", "SI5CLOUD-QLV", "SI5CLOUD-VINF", "RING-INTERCONN-01-SIGN"], "nudged": ["EXP049-DONE:L20:board:1"], "exp": {"probe": "err:ModuleNotFoundError"}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
 {"ts": "20260913T014825Z", "kind": "机镜", "claims_open": 26, "closed": [], "nudged": ["ADJUD-01:L31:otp:True,board:1", "REVDRV-01:L29:board:1", "ORBIT-CAP-01:L10:lane:True,inbox:True,kick:204,board:1"], "exp": {"probe": "In Queue", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
 {"ts": "20260913T020042Z", "kind": "机镜", "claims_open": 26, "closed": [], "nudged": [], "exp": {"probe": "In Queue", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
+{"ts": "20260913T021328Z", "kind": "机镜", "claims_open": 26, "closed": [], "nudged": [], "exp": {"probe": "In Queue", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
