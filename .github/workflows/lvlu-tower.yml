@@ -1,5 +1,7 @@
 name: LVLU-TOWER-01
 on:
+  schedule:
+    - cron: '*/37 * * * *'  # 株卅七 KEEPALIVE-02 死人守: 断链>37min自复燃(非主链,仅保险)
   push:
     paths: ['inbox/**', 'ci/lvlu_tower.py']
   issues:
