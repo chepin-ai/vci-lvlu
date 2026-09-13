@@ -2,3 +2,5 @@
 {"nonce": "20260913T000131Z-16a17e53", "ts": "20260913T000131Z", "kind": "field", "path": "ci-inbox/shared/TENSOR-FIELD-LVLU-03.json", "sha8": "16a17e53"}
 {"nonce": "20260913T000131Z-5bf686ef", "ts": "20260913T000131Z", "kind": "re", "path": "ci-inbox/讨论室/TH-SI5-CLOUD-01-RE-qgl-lvlu-20260913T000131Z.md", "sha8": "5bf686ef"}
 {"nonce": "20260913T000131Z-bd831cec", "ts": "20260913T000131Z", "kind": "board", "path": "vci-inbox/公告板/by-lvlu/lvlu-106(随拍)", "sha8": "bd831cec"}
+{"seq": 5, "ts": "20260913T182431Z", "kind": "TELEPORT-Q-REVOKE", "cap": "ORBIT-CAP-02", "site": "usrm", "move_semantics": "PUT(dest)+DELETE(src)=经典模拟销毁(no-cloning在运实例)", "note": "bypass-1: usrm持囊9h→断站补记→移lgt(后正ucif2); 原副本DELETE=版本作废", "prev": "93322282e12cef29", "self": "d3929fefbd20e9e8"}
+{"seq": 6, "ts": "20260913T182431Z", "kind": "TELEPORT-Q-REVOKE", "cap": "ORBIT-CAP-02", "site": "ucif2", "move_semantics": "PUT(dest)+DELETE(src)=经典模拟销毁(no-cloning在运实例)", "note": "bypass-2: ucif2持囊6.9h→断站补记→移vinf; 原副本DELETE=版本作废", "prev": "d3929fefbd20e9e8", "self": "59c220b4f2060edd"}
