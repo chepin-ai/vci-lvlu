@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
-# LVLU-RESPONDER-01 v3.6(SCAN-OWN-KEYS-01写前闸装讫; v3.5株卅五无戳contains补检+h_key分级健康; 株卅四need_lines检全径+株卅二contains兜底; 闸十INBOX-SWEEP; watch双道)(株廿五 NUDGE-TARGET-01: need_lines分线定向) — lvlu线 SI3专候响应环（KEYHEALTH/SECRETS-META/KEYREQ/DISC/SI1-WAKE/SLA/NUDGE/EXP/PULSE/ORBIT 十件）
+# LVLU-RESPONDER-01 v3.7(株卅八域界律DOMAIN-01三仓域适配; v3.6 SCAN-OWN-KEYS-01写前闸; v3.5株卅五无戳contains补检+h_key分级健康; 株卅四need_lines检全径+株卅二contains兜底; 闸十INBOX-SWEEP; watch双道)(株廿五 NUDGE-TARGET-01: need_lines分线定向) — lvlu线 SI3专候响应环（KEYHEALTH/SECRETS-META/KEYREQ/DISC/SI1-WAKE/SLA/NUDGE/EXP/PULSE/ORBIT 十件）
 # 职: ⓪每拍验钥回退链+secrets元数据差分(株廿四) ①钥取件即见即注 ②指名lvlu件即收讫 ③SI1-WAKE常新 ⑧周天囊自驿
 # 律: 零定时(事驱入拍) / 值不过板不落盘(内存即用即焚) / names-only回执 / 非白名单→裁示候root
 import os, json, base64, urllib.request, urllib.parse, datetime, re, hashlib
 
 REPO = os.environ.get('GITHUB_REPOSITORY', 'chepin-ai/vci-lvlu')
+# 株卅八 域界律 DOMAIN-01(FINE_OWN_PAT_LVLU三仓域): 域外404=域界非仓亡(不警不默零, 一次性板声明+日志); 域内404=真仓亡警(株廿三)
+DOMAIN_REPOS = {'ci-inbox', 'vci-inbox', 'vci-lvlu'}
+def in_domain(repo_full):
+    return repo_full.split('/')[-1] in DOMAIN_REPOS
 TOK  = os.environ.get('LINE_PAT') or os.environ.get('GITHUB_TOKEN')
 
 def key_health():
@@ -135,7 +139,12 @@ def detect_claim(cl, trees_cache):
         if repo == 'si1': continue
         if repo not in trees_cache:
             st, tr = api('GET', 'git/trees/HEAD?recursive=1', repo='chepin-ai/' + repo)
-            if st == 404 and not trees_cache.get('DEAD:' + repo):
+            if st in (403, 404) and not in_domain('chepin-ai/' + repo):
+                # 株卅八 域界律: 域外仓403/404=域界(FINE_OWN_PAT三仓域), 日志不警不默零
+                if not trees_cache.get('DOMOUT:' + repo):
+                    trees_cache['DOMOUT:' + repo] = True
+                    print('DOMAIN-01: 域外不侦 ' + repo + ' (株卅八)')
+            elif st == 404 and not trees_cache.get('DEAD:' + repo):
                 # 株廿三 REPO-EGUARD-01: 侦面仓存在性先验——仓亡即报警非默零
                 trees_cache['DEAD:' + repo] = True
                 board_post('lvlu-仓亡警-' + repo.replace('/', '-') + '-' + datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ') + '.md',
@@ -209,11 +218,18 @@ def nudge(cl, ts, trees_cache=None):
         ok = put_file(urllib.parse.quote('lanes/' + ch['lane'] + '/inbox/nudge-' + ts + '-' + cl['id'] + '-lvlu.md'), cmsg, None, 'nudge ' + cl['id'], repo='chepin-ai/vci-inbox'); acts.append('lane:' + str(ok))
     if lvl >= 2 and ch.get('inbox'):
         rp, pre = ch['inbox']
-        ok = put_file(urllib.parse.quote(pre + 'nudge-' + ts + '-' + cl['id'] + '-lvlu.md'), cmsg, None, 'nudge ' + cl['id'], repo=rp); acts.append('inbox:' + str(ok))
+        if in_domain(rp):
+            ok = put_file(urllib.parse.quote(pre + 'nudge-' + ts + '-' + cl['id'] + '-lvlu.md'), cmsg, None, 'nudge ' + cl['id'], repo=rp); acts.append('inbox:' + str(ok))
+        else: acts.append('inbox:domout(株卅八)')
     elif lvl >= 2 and ch.get('otp'):
-        ok = put_file(urllib.parse.quote('.ci-inbox/msg-' + ts + '-nudge-' + cl['id'] + '-L' + str(lvl) + '-lvlu.md'), cmsg, None, 'nudge-otp ' + cl['id'], repo='chepin-ai/ci-control'); acts.append('otp:' + str(ok))
+        if in_domain('chepin-ai/ci-control'):
+            ok = put_file(urllib.parse.quote('.ci-inbox/msg-' + ts + '-nudge-' + cl['id'] + '-L' + str(lvl) + '-lvlu.md'), cmsg, None, 'nudge-otp ' + cl['id'], repo='chepin-ai/ci-control'); acts.append('otp:' + str(ok))
+        else: acts.append('otp:domout(株卅八)')
     if lvl >= 3 and ch.get('dispatch'):
-        rp, ev = ch['dispatch']; st2, _ = api('POST', 'dispatches', {'event_type': ev}, repo=rp); acts.append('kick:' + str(st2))
+        rp, ev = ch['dispatch']
+        if in_domain(rp):
+            st2, _ = api('POST', 'dispatches', {'event_type': ev}, repo=rp); acts.append('kick:' + str(st2))
+        else: acts.append('kick:domout(株卅八)')
     if lvl >= 4:
         board_post('lvlu-nudge-' + cl['id'] + '-L' + str(lvl) + '-' + ts + '.md', msg); acts.append('board:1')
     cl['nudge_level'] = lvl; cl['last_nudge'] = ts
@@ -417,7 +433,9 @@ def main():
         res = {}
         for k in asked:
             if k in vault:
-                for rp in repos: res.setdefault(k, []).append(f'{rp}:{inject(rp, k, vault[k])}')
+                for rp in repos:
+                    if in_domain(rp): res.setdefault(k, []).append(f'{rp}:{inject(rp, k, vault[k])}')
+                    else: res.setdefault(k, []).append(f'{rp}:domout域外未注(株卅八)')
         miss = [k for k in asked if k not in vault]
         if asked:
             rb = f'# 钥注回执 — {n}\n\n时戳 {ts}Z 签发 lvlu(RESPONDER-01 自动)\n\n'
