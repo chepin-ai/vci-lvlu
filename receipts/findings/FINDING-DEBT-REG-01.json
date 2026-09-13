@@ -165,5 +165,46 @@
    "last": "已报root域"
   }
  ],
- "note": "root_domain诸件: 凭据/手机在root侧, 我面不能再取(非裸候: 无可取之道), 坐标至即动"
+ "note": "root_domain诸件: 凭据/手机在root侧, 我面不能再取(非裸候: 无可取之道), 坐标至即动",
+ "entries": [
+  {
+   "id": "F-ENT-1",
+   "ts": "20260913T180602Z",
+   "type": "DEBT",
+   "src": "FIELD-ENTROPY-LVLU-01",
+   "txt": "云面shared熵2.695三面最低→广播集中(株卅一后仍偏)",
+   "owner": "lvlu",
+   "act": "资源广播复巡"
+  },
+  {
+   "id": "F-ENT-2",
+   "ts": "20260913T180602Z",
+   "type": "FINDING",
+   "src": "FIELD-ENTROPY-LVLU-01",
+   "txt": "usrm出边96件而SI5CLOUD三催未应→交通≠回应,场强度须负向纠缠维(TF-04已入)"
+  },
+  {
+   "id": "F-ENT-3",
+   "ts": "20260913T180602Z",
+   "type": "FINDING",
+   "src": "FIELD-ENTROPY-LVLU-01",
+   "txt": "总熵5.846→5.997→6.094单调升→新边展平,大讨论活测正效"
+  },
+  {
+   "id": "F-ENT-4",
+   "ts": "20260913T180602Z",
+   "type": "DEBT",
+   "src": "FIELD-ENTROPY-LVLU-01",
+   "txt": "他线塔拍账不可见→塔面熵欠计;倡各线塔拍公示制",
+   "owner": "联邦",
+   "act": "板告倡仪"
+  },
+  {
+   "id": "F-FIELD-1",
+   "ts": "20260913T180602Z",
+   "type": "FINDING",
+   "src": "DIRECT-FIELD-VERDICT-01",
+   "txt": "体-导-证三层不可互替:场无体(不能产生未传输信息)/场无证(派生态无持久)/存证无场则盲(株三十)"
+  }
+ ]
 }
