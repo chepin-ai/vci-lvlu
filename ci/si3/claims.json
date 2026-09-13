@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260913T201327Z",
+ "ts": "20260913T202530Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -14,7 +14,7 @@
    ],
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
-   "beats": 237,
+   "beats": 238,
    "nudge_level": 3,
    "last_nudge": "20260913T201327Z",
    "status": "open",
@@ -48,7 +48,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 96,
-   "beats": 244,
+   "beats": 245,
    "nudge_level": 22,
    "last_nudge": "20260913T175311Z",
    "status": "open",
@@ -107,7 +107,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 243,
+   "beats": 244,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -118,7 +118,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 243,
+   "beats": 244,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -163,7 +163,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 228,
+   "beats": 229,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -212,12 +212,12 @@
    "target": "lvlu",
    "since_ts": "20260911T093116Z",
    "sla_beats": 24,
-   "beats": 192,
-   "nudge_level": 24,
+   "beats": 193,
+   "nudge_level": 25,
    "status": "open",
    "note": "册sha=105f9fc0012752a3; 册24拍无更→自激复核增补(静场不空转律之行) | v3.5转sha_neq闸(株卅五附): 唯blob sha异为更据",
-   "last_nudge": "20260913T172656Z",
-   "last_nudge_beats": 185,
+   "last_nudge": "20260913T202530Z",
+   "last_nudge_beats": 193,
    "watch": [
     {
      "repo": "ci-inbox",
@@ -295,7 +295,7 @@
     "ORBIT-CAP-02"
    ],
    "status": "open",
-   "beats": 31,
+   "beats": 32,
    "sla_beats": 24,
    "target": "qfa",
    "nudge_level": 5,
@@ -408,7 +408,7 @@
    "need_lines": [
     "usrm"
    ],
-   "beats": 32,
+   "beats": 33,
    "nudge_level": 0,
    "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
    "watch": [
@@ -482,7 +482,7 @@
    "need_lines": [
     "cisvr"
    ],
-   "beats": 32,
+   "beats": 33,
    "nudge_level": 0,
    "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
    "watch": [
@@ -508,7 +508,7 @@
    "need_lines": [
     "ucif2"
    ],
-   "beats": 32,
+   "beats": 33,
    "nudge_level": 0,
    "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
    "watch": [
@@ -580,7 +580,7 @@
    "need_lines": [
     "lgt"
    ],
-   "beats": 8,
+   "beats": 9,
    "nudge_level": 0,
    "note": "RE2约接: 我链tip 280223d5a52b581e / 尔tip 209/813ac77adf5e"
   },
@@ -614,7 +614,7 @@
    "need_lines": [
     "lgt"
    ],
-   "beats": 8,
+   "beats": 9,
    "nudge_level": 0,
    "note": "EXP-024题面已转投; κ>0.8 对拍"
   },
@@ -655,7 +655,7 @@
    "need_lines": [
     "usrm"
    ],
-   "beats": 3,
+   "beats": 4,
    "nudge_level": 0,
    "note": "root示usrm普及机层直读常识→求证咨询; 与SI3-LINK锚唤续制对位"
   }
