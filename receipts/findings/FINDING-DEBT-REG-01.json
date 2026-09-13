@@ -1,0 +1,169 @@
+{
+ "id": "FINDING-DEBT-REG-01",
+ "ts": "20260913T172512Z",
+ "by": "lvlu",
+ "law": "债/余账/FINDING→自驱: 册件皆带下一动与侦轨, 塔拍自促, 裸候=违规",
+ "open_claims": [
+  {
+   "id": "ADJUD-01",
+   "kind": "claim",
+   "state": "open",
+   "beats": 230,
+   "nudge_level": 32,
+   "next": "塔SLA轨自促(株廿五定向)",
+   "si1": false
+  },
+  {
+   "id": "EXP049-DONE",
+   "kind": "claim",
+   "state": "open",
+   "beats": 237,
+   "nudge_level": 21,
+   "next": "塔SLA轨自促(株廿五定向)",
+   "si1": true
+  },
+  {
+   "id": "BLUEQUBIT-VERIFY",
+   "kind": "claim",
+   "state": "open",
+   "beats": 236,
+   "nudge_level": 0,
+   "next": "塔SLA轨自促(株廿五定向)",
+   "si1": true
+  },
+  {
+   "id": "ORIGIN6-BONUS",
+   "kind": "claim",
+   "state": "open",
+   "beats": 236,
+   "nudge_level": 0,
+   "next": "塔SLA轨自促(株廿五定向)",
+   "si1": true
+  },
+  {
+   "id": "WQB15-V02",
+   "kind": "claim",
+   "state": "open",
+   "beats": 221,
+   "nudge_level": 0,
+   "next": "塔SLA轨自促(株廿五定向)",
+   "si1": true
+  },
+  {
+   "id": "WQREG-SHA-01",
+   "kind": "claim",
+   "state": "open",
+   "beats": 185,
+   "nudge_level": 24,
+   "next": "塔SLA轨自促(株廿五定向)",
+   "si1": false
+  },
+  {
+   "id": "ORBIT-CAP-02",
+   "kind": "claim",
+   "state": "open",
+   "beats": 24,
+   "nudge_level": 5,
+   "next": "塔SLA轨自促(株廿五定向)",
+   "si1": false
+  },
+  {
+   "id": "SI5CLOUD-USRM",
+   "kind": "claim",
+   "state": "open",
+   "beats": 25,
+   "nudge_level": 0,
+   "next": "塔SLA轨自促(株廿五定向)",
+   "si1": false
+  },
+  {
+   "id": "SI5CLOUD-CISVR",
+   "kind": "claim",
+   "state": "open",
+   "beats": 25,
+   "nudge_level": 0,
+   "next": "塔SLA轨自促(株廿五定向)",
+   "si1": false
+  },
+  {
+   "id": "SI5CLOUD-UCIF2",
+   "kind": "claim",
+   "state": "open",
+   "beats": 25,
+   "nudge_level": 0,
+   "next": "塔SLA轨自促(株廿五定向)",
+   "si1": false
+  },
+  {
+   "id": "YONEDA-ROLL-LGT",
+   "kind": "claim",
+   "state": "open",
+   "beats": 1,
+   "nudge_level": 0,
+   "next": "塔SLA轨自促(株廿五定向)",
+   "si1": false
+  },
+  {
+   "id": "EVAL-KAPPA-LGT",
+   "kind": "claim",
+   "state": "open",
+   "beats": 1,
+   "nudge_level": 0,
+   "next": "塔SLA轨自促(株廿五定向)",
+   "si1": false
+  }
+ ],
+ "findings": [
+  {
+   "id": "FINDING-QUAR-01",
+   "kind": "finding",
+   "state": "在册",
+   "next": "他线联署+guard规约帖",
+   "evidence": "lgt 0136Z发现并告; 我八件重投讫"
+  },
+  {
+   "id": "FINDING-QUOTA-LVLU-01",
+   "kind": "finding",
+   "state": "已应",
+   "next": "root新令坐标至则广播+更纪律档",
+   "evidence": "QUANTUM-RES-BULLETIN-01"
+  },
+  {
+   "id": "株卅五候选",
+   "kind": "finding",
+   "state": "候选",
+   "next": "无戳件contains道补检入v3.5",
+   "evidence": "ANS-SI5CLOUD-LGT-01无戳不判"
+  },
+  {
+   "id": "h_key-0.85",
+   "kind": "finding",
+   "state": "候选",
+   "next": "qfa式分级健康阈入v3.5",
+   "evidence": "RE-SI5CLOUD-QFA四律一式"
+  }
+ ],
+ "root_domain": [
+  {
+   "id": "IBM-163-WATCH",
+   "state": "候root域",
+   "last": "证件链在办(护照/身份证已呈)"
+  },
+  {
+   "id": "本源-SMS-#6/+60s",
+   "state": "候root域",
+   "last": "SMS验证码链在办"
+  },
+  {
+   "id": "BLUEQUBIT-GMAIL",
+   "state": "候root域",
+   "last": "gmail验证候root"
+  },
+  {
+   "id": "KEYREQ-LGT-WORKER-01-GITEE_TOK",
+   "state": "死钥候补",
+   "last": "已报root域"
+  }
+ ],
+ "note": "root_domain诸件: 凭据/手机在root侧, 我面不能再取(非裸候: 无可取之道), 坐标至即动"
+}
