@@ -1,0 +1,30 @@
+name: LVLU-RESPONDER-01
+# 株四十 闸流分立律: 响应环独立工作流+独立并发组(chain不消拍, cancel-in-progress:false)——塔链自级联之拥不再杀闸
+on:
+  schedule:
+    - cron: '*/21 * * * *'  # 闸件常拍21min(独立于塔*/37, 互质错峰)
+  push:
+    paths: ['ci/lvlu_responder.py', 'ci/si3/claims.json', '.github/workflows/lvlu-responder.yml']
+  repository_dispatch:
+    types: [lvlu-tower-cascade, lvlu-tower-kick, lvlu-responder-kick]
+  workflow_dispatch: {}
+concurrency:
+  group: lvlu-responder-chain
+  cancel-in-progress: false  # 闸拍排队不互杀(株四十: 殉拍根因=并发组内消拍)
+jobs:
+  responder:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12  # 株卅九双保: 内有时箱律TIMEBOX-01
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -q pynacl cryptography pyquafu
+      - name: LVLU-RESPONDER-01 v3.8 (keyreq/disc/wake/sla/nudge/exp/pulse/orbit/mirror/inbox)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LINE_PAT: ${{ secrets.AI_FULL_PAT }}  # FINE_OWN_PAT_LVLU(root铸20260913T1857Z, 三仓域)
+          CI_OPS_LINE_KEY: ${{ secrets.CI_OPS_LINE_KEY }}
+          LV_VAULT_CMD: ${{ secrets.LV_VAULT_CMD }}
+        run: python3 ci/lvlu_responder.py
