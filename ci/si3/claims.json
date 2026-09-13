@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260913T012530Z",
+ "ts": "20260913T013730Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -14,7 +14,7 @@
    ],
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
-   "beats": 215,
+   "beats": 216,
    "nudge_level": 30,
    "last_nudge": "20260913T003449Z",
    "status": "open",
@@ -48,7 +48,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 96,
-   "beats": 222,
+   "beats": 223,
    "nudge_level": 19,
    "last_nudge": "20260913T002203Z",
    "status": "open",
@@ -107,7 +107,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 221,
+   "beats": 222,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -118,7 +118,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 221,
+   "beats": 222,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -163,7 +163,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 206,
+   "beats": 207,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -179,7 +179,7 @@
    ],
    "since_ts": "20260911T030519Z",
    "sla_beats": 6,
-   "beats": 203,
+   "beats": 204,
    "nudge_level": 28,
    "status": "open",
    "note": "RIPPLE-PROBE-LVLU-01 echo侦钉; echo至即闭并板报链路账",
@@ -215,7 +215,7 @@
    ],
    "since_ts": "20260911T093116Z",
    "sla_beats": 24,
-   "beats": 170,
+   "beats": 171,
    "nudge_level": 22,
    "status": "open",
    "note": "册sha=105f9fc0012752a3; 册24拍无更→自激复核增补(静场不空转律之行)",
@@ -269,7 +269,7 @@
     "ORBIT-CAP-01"
    ],
    "status": "open",
-   "beats": 58,
+   "beats": 59,
    "sla_beats": 12,
    "target": "qfa",
    "nudge_level": 9,
@@ -286,7 +286,7 @@
     "ORBIT-CAP-02"
    ],
    "status": "open",
-   "beats": 9,
+   "beats": 10,
    "sla_beats": 24,
    "target": "qfa",
    "nudge_level": 5,
@@ -307,7 +307,7 @@
    "need_lines": [
     "qfa"
    ],
-   "beats": 10,
+   "beats": 11,
    "nudge_level": 0,
    "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
    "watch": [
@@ -333,7 +333,7 @@
    "need_lines": [
     "qlv"
    ],
-   "beats": 10,
+   "beats": 11,
    "nudge_level": 0,
    "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
    "watch": [
@@ -359,7 +359,7 @@
    "need_lines": [
     "lgt"
    ],
-   "beats": 10,
+   "beats": 11,
    "nudge_level": 0,
    "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
    "watch": [
@@ -385,7 +385,7 @@
    "need_lines": [
     "usrm"
    ],
-   "beats": 10,
+   "beats": 11,
    "nudge_level": 0,
    "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
    "watch": [
@@ -411,7 +411,7 @@
    "need_lines": [
     "vinf"
    ],
-   "beats": 10,
+   "beats": 11,
    "nudge_level": 0,
    "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
    "watch": [
@@ -457,7 +457,7 @@
    "need_lines": [
     "cisvr"
    ],
-   "beats": 10,
+   "beats": 11,
    "nudge_level": 0,
    "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
    "watch": [
@@ -483,7 +483,7 @@
    "need_lines": [
     "ucif2"
    ],
-   "beats": 10,
+   "beats": 11,
    "nudge_level": 0,
    "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
    "watch": [
@@ -509,7 +509,7 @@
    "need_lines": [
     "qlv"
    ],
-   "beats": 10,
+   "beats": 11,
    "nudge_level": 0,
    "note": "随SI5CLOUD-QLV并轨",
    "watch": [
