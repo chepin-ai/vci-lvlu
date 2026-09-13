@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260913T014825Z",
+ "ts": "20260913T013901Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -181,10 +181,12 @@
    "sla_beats": 6,
    "beats": 207,
    "nudge_level": 29,
-   "status": "open",
-   "note": "RIPPLE-PROBE-LVLU-01 echo侦钉; echo至即闭并板报链路账",
+   "status": "closed",
+   "note": "回声至,反向驱动验证闭环",
    "last_nudge": "20260913T014825Z",
-   "last_nudge_beats": 207
+   "last_nudge_beats": 207,
+   "closed_ts": "20260913T013901Z",
+   "evidence": "vci-inbox:lanes/lvlu/inbox/ANS-SI5CLOUD-RIPPLE-qlv-20260913T0050Z.md (RIPPLE-PROBE echo nonce=lvluT030519Z, 链断46h qlv已升己)"
   },
   {
    "id": "O-S-2D-01",
@@ -364,7 +366,7 @@
    "name": "TH-SI5-CLOUD-01 大讨论 lgt 应件",
    "by": "si0",
    "opened": "20260912T234128Z",
-   "status": "open",
+   "status": "closed",
    "since_ts": "20260912T234128Z",
    "sla_beats": 36,
    "target": "lgt",
@@ -373,7 +375,7 @@
    ],
    "beats": 14,
    "nudge_level": 0,
-   "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
+   "note": "人工销: 件名无戳DETECT-TS-01不判(株十七在运)——器课株卅五候选: 无戳件contains道补检",
    "watch": [
     {
      "repo": "vci-inbox",
@@ -383,7 +385,9 @@
      "repo": "ci-inbox",
      "prefix": "讨论室/TH-SI5-CLOUD-01-ANS-lgt-"
     }
-   ]
+   ],
+   "closed_ts": "20260913T013901Z",
+   "evidence": "vci-inbox:lanes/lvlu/inbox/ANS-SI5CLOUD-LGT-01.md (014500Z四题应)"
   },
   {
    "id": "SI5CLOUD-USRM",
