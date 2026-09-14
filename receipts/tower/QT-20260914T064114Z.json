@@ -1,0 +1,17 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260914T064114Z",
+ "idle_in": 42,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260913T1837Z.md",
+   "opened": "20260913T184141Z",
+   "tries": 45,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 候件空；未闭一件涉lvlu收件箱R7-CLEAN-CAP02-ACK，已试45次未闭。  \n② 无候件，不立协。  \n③ OI-vciinboxlaneslvluinboxR7：未闭，下一步查ACK卡阻根因并强制闭环。  \n④ 生债：lvlu线欠R7-CAP02-ACK未闭债一条。",
+ "wq_excerpt": ""
+}
