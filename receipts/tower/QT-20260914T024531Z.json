@@ -1,0 +1,66 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260914T024531Z",
+ "idle_in": 29,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-lvlunudgeADJUD01L1820260",
+   "ref": "lvlu-nudge-ADJUD-01-L18-20260912T010215Z.md",
+   "opened": "20260913T022525Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-CIRCLE-66-LVLU-20260913T024210Z.md",
+   "opened": "20260913T025012Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxFI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/FINDING-NUDGE-FINDING-QUOTA-LVLU-01-20260913.md",
+   "opened": "20260913T171603Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260913T104013Z.md",
+   "opened": "20260913T171603Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxPE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/PENTA-CARD-lvlu-20260913T101519Z.md",
+   "opened": "20260913T171603Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPQFALVLUBEAT1072026091",
+   "ref": "OTP-QFA-LVLU-BEAT107-20260913T171044Z.md",
+   "opened": "20260913T172633Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPQFALVLUBEAT1082026091",
+   "ref": "OTP-QFA-LVLU-BEAT108-20260913T173306Z.md",
+   "opened": "20260913T174030Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260913T1837Z.md",
+   "opened": "20260913T184141Z",
+   "tries": 32,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- lvlu裁决推送L18未落盘，tries47。\n- lvlu需求圈66号未闭环，tries45。\n- lvlu探测额度未释放，tries40。\n- lvlu轨道容量01未确认，tries40。\n- lvlu五卡认证未通过，tries40。\n- lvlu心跳107未应答，tries39。\n- lvlu心跳108未应答，tries37。\n- lvlu R7清理容量02待回执，tries32。\n\n②应动何件：\n- 立协同：R7-CLEAN-CAP02-ACK（ACK回执不候）。\n\n③未闭项推进：\n- ADJUD：未闭，下一步：升级仲裁通道或人工裁决。\n- DEMAND：未闭，下一步：重路由需求圈或降载。\n- FINDING：未闭，下一步：重置额度探测计数器。\n- ORBIT：未闭，下一步：申请临时扩容。\n- PENTA：未闭，下一步：重刷卡槽状态。\n- BEAT107：未闭，下一步：补发并校时。\n- BEAT108：未闭，下一步：双发防丢包。\n- R7：未闭，下一步：立即回执ACK并触发CAP02清理。\n\n④生债一条：\n- ADJUD卡47轮未决，生债：开仲裁绿色通道。",
+ "wq_excerpt": ""
+}
