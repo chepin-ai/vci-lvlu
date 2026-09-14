@@ -1,0 +1,24 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260914T124704Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20260914T122547Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-KEY69-LVLU-20260914T121843Z.md",
+   "opened": "20260914T122547Z",
+   "tries": 3,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n候件空；未闭项①ANS-KEY-AUDIT-69-LVLU-01.md为lvlu审计应答；②DEMAND-KEY69-LVLU-20260914T121843Z.md为lvlu诉求，均录。\n\n②应动何件  \n两未闭项tries=3仍open，立协同：先动DE诉求件即时响应，并推AN审计件同步闭环。\n\n③未闭项推进  \n- AN：未闭，下一步催lvlu侧提交审计应答或owner升级。  \n- DE：未闭，下一步实质处理lvlu诉求并回写结论归档。\n\n④生债一条  \nlvlu inbox双开项超3试未结，生债：须人工介入定责，限24h内清。",
+ "wq_excerpt": ""
+}
