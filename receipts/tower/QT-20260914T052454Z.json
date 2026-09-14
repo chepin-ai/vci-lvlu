@@ -1,0 +1,24 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260914T052454Z",
+ "idle_in": 38,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-OTPQFALVLUBEAT1082026091",
+   "ref": "OTP-QFA-LVLU-BEAT108-20260913T173306Z.md",
+   "opened": "20260913T174030Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260913T1837Z.md",
+   "opened": "20260913T184141Z",
+   "tries": 41,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- OTP-QFA-LVLU-BEAT108：lvlu节拍108同步项，46试未闭。\n- VCI-lanes/lvlu/inbox/R7：lvlu inbox CAP02确认件，41试未ACK。\n\n② 应动何件\n两件均超阈，立协同，不候，双动。\n\n③ 未闭项推进\n- OI-OTPQFALVLUBEAT1082026091：未闭；下一步：切备用通路重推BEAT108。\n- OI-vciinboxlaneslvluinboxR7：未闭；下一步：清R7僵死ACK，强闭环CAP02。\n\n④ 生债一条\n重试超限僵死债，通路韧性缺损一条，待诊。",
+ "wq_excerpt": ""
+}
