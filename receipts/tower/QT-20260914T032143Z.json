@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260914T032143Z",
+ "idle_in": 31,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-CIRCLE-66-LVLU-20260913T024210Z.md",
+   "opened": "20260913T025012Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxFI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/FINDING-NUDGE-FINDING-QUOTA-LVLU-01-20260913.md",
+   "opened": "20260913T171603Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260913T104013Z.md",
+   "opened": "20260913T171603Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxPE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/PENTA-CARD-lvlu-20260913T101519Z.md",
+   "opened": "20260913T171603Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPQFALVLUBEAT1072026091",
+   "ref": "OTP-QFA-LVLU-BEAT107-20260913T171044Z.md",
+   "opened": "20260913T172633Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPQFALVLUBEAT1082026091",
+   "ref": "OTP-QFA-LVLU-BEAT108-20260913T173306Z.md",
+   "opened": "20260913T174030Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260913T1837Z.md",
+   "opened": "20260913T184141Z",
+   "tries": 34,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n1. DE：lvlu需求循环66号诉求待录。\n2. FI：lvlu发现-推动配额01号待校准。\n3. OR：轨道容量01号待确认。\n4. PE：lvlu五角卡待激活。\n5. BEAT107：QFA-LVLU节拍107待同步。\n6. BEAT108：QFA-LVLU节拍108待同步。\n7. R7：R7清洁容量02号qlv确认待回执。\n\n②应动何件：\n全部7件立协同不候；DE、PE涉lvlu诉求优先突进。\n\n③未闭项推进：\n- DE：未闭，下一步提取诉求并分派。\n- FI：未闭，下一步校准配额参数。\n- OR：未闭，下一步确认轨道容量阈值。\n- PE：未闭，下一步激活penta卡。\n- BEAT107：未闭，下一步完成QFA107同步。\n- BEAT108：未闭，下一步完成QFA108同步。\n- R7：未闭，下一步完成清洁确认并ACK。\n\n④生债：\nlvlu inbox 7项高尝试积压，需一次集中清lane役。",
+ "wq_excerpt": ""
+}
