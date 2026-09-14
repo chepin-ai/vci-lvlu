@@ -1,0 +1,10 @@
+{
+ "rail": "SEALED-RAIL-LVLU-01",
+ "repo": "chepin-ai/vci-lvlu",
+ "key_id": "3380204578043523366",
+ "fp": "378fa4012372",
+ "fp_alg": "sha256[:12](public_key)",
+ "endpoint": "GET /repos/chepin-ai/vci-lvlu/actions/secrets/public-key",
+ "ts": "20260914T182733Z",
+ "note": "甲轨sealed-box直注注册面(qgl SEALED-RAIL-QGL-01式; KEY-UNIFY-01§三); 公钥值由root自持账号面取, 本册唯指纹"
+}
