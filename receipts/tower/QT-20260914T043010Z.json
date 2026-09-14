@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260914T043010Z",
+ "idle_in": 35,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxFI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/FINDING-NUDGE-FINDING-QUOTA-LVLU-01-20260913.md",
+   "opened": "20260913T171603Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260913T104013Z.md",
+   "opened": "20260913T171603Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxPE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/PENTA-CARD-lvlu-20260913T101519Z.md",
+   "opened": "20260913T171603Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPQFALVLUBEAT1072026091",
+   "ref": "OTP-QFA-LVLU-BEAT107-20260913T171044Z.md",
+   "opened": "20260913T172633Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPQFALVLUBEAT1082026091",
+   "ref": "OTP-QFA-LVLU-BEAT108-20260913T173306Z.md",
+   "opened": "20260913T174030Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260913T1837Z.md",
+   "opened": "20260913T184141Z",
+   "tries": 38,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- FI件：FINDING-NUDGE-FINDING-QUOTA-LVLU-01 配额发现与推送类诉求待结。\n- OR件：ORBIT-CAP-01 轨道容量上限未决。\n- PE件：PENTA-CARD-lvlu 五卡事项未闭。\n- 107件：OTP-QFA-LVLU-BEAT107 节拍节点协同待结。\n- 108件：OTP-QFA-LVLU-BEAT108 节拍节点协同待结。\n- R7件：R7-CLEAN-CAP02-ACK-qlv 清理能力确认未回。\n\n② 应动何件\n六件 tries 皆逾 38，全数立协同不候；优先 OTP 双 BEAT 与 R7 ACK，防链阻。\n\n③ 未闭项推进\n- FI：未闭/确认 quota-nudge 阈值或降级策略后归档。\n- OR：未闭/落轨 ORBIT-CAP 参数并收取回执。\n- PE：未闭/PENTA-CARD 状态定稿。\n- 107：未闭/BEAT107 交付物检核上链。\n- 108：未闭/BEAT108 交付物检核上链。\n- R7：未闭/补录 R7-CLEAN-CAP02 执行 ack。\n\n④ 生债一条\n建 tries>40 自动熔断升级规则，免 lvlu 通道挂死。",
+ "wq_excerpt": ""
+}
