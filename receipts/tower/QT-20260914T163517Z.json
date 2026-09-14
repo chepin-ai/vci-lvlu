@@ -1,0 +1,50 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260914T163517Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-CLAIMS-qtlv-.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20260914T122547Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-KEY69-LVLU-20260914T121843Z.md",
+   "opened": "20260914T122547Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxde",
+   "ref": "vci-inbox:lanes/lvlu/inbox/debt-72-lvlu-01.md",
+   "opened": "20260914T145650Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-ANSKEYAUDIT69LVLU01md",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20260914T163003Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-CLAIMS-qtlv-.md",
+   "opened": "20260914T163517Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件NUDGE-CLAIMS：收外部催KEY69索赔闭环，涉lvlu诉求为KEY69审计与权利主张立即响应。  \n- 未闭ANS-KEY-AUDIT-69-LVLU-01（双轨）：审计应答已16试未结。  \n- 未闭DEMAND-KEY69：KEY69权利主张未确权。  \n- 未闭debt-72：债务未清。  \n\n②应动何件  \n- 立协NUDGE-CLAIMS、DEMAND-KEY69、ANS-KEY-AUDIT三项并轨，不候。  \n\n③未闭项推进  \n- OI-…AN（inbox审计）：未闭，并主审计单，限时出KEY69结论。  \n- OI-…DE（DEMAND）：未闭，据审计结论当日回执。  \n- OI-…de（debt-72）：未闭，独立走清偿/异议，不阻塞。  \n- OI-ANSKEY…md（裸ref）：未闭，合并inbox审计项统一闭。  \n- OI-…NU（NUDGE）：未闭，转协同触发器，不归档，驱前三项今日闭。  \n\n④生债一条  \n- lvlu-SI2-20260914-NUDGE：因KEY69索赔催促且审计/主张双悬16次，立今日协同闭环债，逾则自升SI0。",
+ "wq_excerpt": ""
+}
