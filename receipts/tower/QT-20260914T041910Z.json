@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260914T041910Z",
+ "idle_in": 34,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxFI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/FINDING-NUDGE-FINDING-QUOTA-LVLU-01-20260913.md",
+   "opened": "20260913T171603Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260913T104013Z.md",
+   "opened": "20260913T171603Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxPE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/PENTA-CARD-lvlu-20260913T101519Z.md",
+   "opened": "20260913T171603Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPQFALVLUBEAT1072026091",
+   "ref": "OTP-QFA-LVLU-BEAT107-20260913T171044Z.md",
+   "opened": "20260913T172633Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPQFALVLUBEAT1082026091",
+   "ref": "OTP-QFA-LVLU-BEAT108-20260913T173306Z.md",
+   "opened": "20260913T174030Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260913T1837Z.md",
+   "opened": "20260913T184141Z",
+   "tries": 37,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- FI件：LVLU inbox FINDING/NUDGE/FINDING QUOTA 配额类诉求。\n- OR件：LVLU inbox ORBIT CAP 轨道容量事项。\n- PE件：LVLU inbox PENTA CARD 主控卡事项。\n- 107件：OTP-QFA-LVLU BEAT107 流程节拍协同。\n- 108件：OTP-QFA-LVLU BEAT108 流程节拍协同。\n- R7件：LVLU inbox R7 CLEAN CAP02 ACK qlv 清理确认回执。\n\n② 应动何件\n候件为空，六件未闭项均37-45试未解，涉lvlu inbox与OTP-QFA双轨，全数立协同不候，先攻FI配额与R7清理。\n\n③ 未闭项推进\n- FI：未闭/核定QUOTA阈值并回写inbox。\n- OR：未闭/",
+ "wq_excerpt": ""
+}
