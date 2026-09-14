@@ -1,0 +1,31 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260914T154107Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20260914T122547Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-KEY69-LVLU-20260914T121843Z.md",
+   "opened": "20260914T122547Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxde",
+   "ref": "vci-inbox:lanes/lvlu/inbox/debt-72-lvlu-01.md",
+   "opened": "20260914T145650Z",
+   "tries": 3,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：候件空；未闭三：AN-KEY69审计尝13未闭、DE-KEY69诉求(lvlu)尝13未闭、de-72债务尝3未闭。  \n②应动何件：DE诉求件涉lvlu立协同不候；AN审计件、de债务件并动同闭。  \n③未闭项推进：OI-AN未闭/下一步终审归档；OI-DE未闭/下一步回执KEY69诉求闭单；OI-de未闭/下一步核清debt-72销账。  \n④生债一条：lvlu线滞办债-SI2-20260914，AN/DE各尝13次未结，占压lane资源，记债待偿。",
+ "wq_excerpt": ""
+}
