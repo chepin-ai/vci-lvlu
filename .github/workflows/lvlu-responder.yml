@@ -29,4 +29,5 @@ jobs:
           LINE_PAT: ${{ secrets.AI_FULL_PAT }}  # FINE_OWN_PAT_LVLU(root铸20260913T1857Z, 三仓域)
           CI_OPS_LINE_KEY: ${{ secrets.CI_OPS_LINE_KEY }}
           LV_VAULT_CMD: ${{ secrets.LV_VAULT_CMD }}
+          READ_MESH_PAT: ${{ secrets.READ_MESH_PAT }}  # 株卅八v1.1读域律: 未铸=空串回退LINE_PAT零行为变
         run: python3 ci/lvlu_responder.py
