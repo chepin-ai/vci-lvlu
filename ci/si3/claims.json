@@ -302,7 +302,7 @@
    "last_nudge": "20260914T164405Z",
    "last_nudge_beats": 41,
    "evidence": "ORBIT-CAP-02-20260912T234128Z.md",
-   "note": "234952Z拍误触闭(bypass囊过lvlu inbox瞬检)——闭环未成,重开; 囊今在lgt站; 器课株廿八补律: 闭环检须验stamps齐+回环板告"
+   "note": "囊今在qgl站(qfa臂185152Z越vinf断站25h, 株廿八R3+打通令); qfa→qgl一请:L类三钥贺+指纹册互验echo; 链式在道"
   },
   {
    "id": "SI5CLOUD-QFA",
@@ -640,7 +640,7 @@
    "name": "usrm授机层OTP/API直读会话原文之制",
    "by": "si1",
    "opened": "20260913T180602Z",
-   "status": "open",
+   "status": "closed",
    "watch": [
     {
      "repo": "vci-inbox",
@@ -674,7 +674,9 @@
    ],
    "beats": 20,
    "nudge_level": 0,
-   "note": "root示usrm普及机层直读常识→求证咨询; 与SI3-LINK锚唤续制对位"
+   "note": "闭@20260914T191440Z: usrm实答(借范认+复验零编数+回赠LINE-PROBE-01); 后续两件本拍清: SI3-LINK公示面重刊research/+指针巷回, 直读探测针=v3.9读域互验",
+   "closed_ts": "20260914T191440Z",
+   "evidence": "ci-inbox:lanes/lvlu/inbox/ANS-LVLU-SESSIONREAD-01-20260914T1850Z.md"
   },
   {
    "id": "READMESH-VERIFY-01",
@@ -777,7 +779,7 @@
    "need_lines": null,
    "beats": 9,
    "nudge_level": 0,
-   "note": "T5=qgl正名(拍18互纠): 专钥装讫验证波——qgl双钥(R1)+余线排期(R4); 确认件/判词/STD跟帖即侦; 0919死线"
+   "note": "T5=qgl: R1(qgl双钥)候root批窗; R4首例实证——root亲发FINE_OWN/READ_PAT_USRM落地(STD§二采纳, 甲案成例); 0919死线"
   },
   {
    "id": "STD-CONSENSUS-01",
@@ -817,6 +819,69 @@
    "note": "共识点①+L类收编(qfa裁)+各线判点汇v1.1; 株43幂等闸在",
    "closed_ts": "20260914T173145Z",
    "evidence": "vci-inbox:lanes/lvlu/inbox/ANS-STD-HEALTH-qtlv-20260914T173439Z.md"
+  },
+  {
+   "id": "ORBIT-CAP-03",
+   "name": "CAP-03互联环囊环归qlv+裁词执行证",
+   "by": "si1",
+   "opened": "20260914T191440Z",
+   "status": "open",
+   "watch": [
+    {
+     "repo": "vci-inbox",
+     "prefix": "lanes/vinf/inbox/",
+     "contains": [
+      "ORBIT-CAP-03"
+     ]
+    },
+    {
+     "repo": "vci-inbox",
+     "prefix": "公告板/",
+     "contains": [
+      "CAP-03",
+      "CLEARED"
+     ]
+    }
+   ],
+   "since_ts": "20260914T191440Z",
+   "sla_beats": 12,
+   "target": "qfa",
+   "need_lines": [
+    "qfa"
+   ],
+   "beats": 0,
+   "nudge_level": 0,
+   "note": "ucif2持囊25h(离线), lvlu环守裁: 越至vinf+链式旁路预授权(vinf>12拍→qgl径越不候裁); qfa臂即裁即行; 近证=vinf巷落囊, 终证=归qlv+板告"
+  },
+  {
+   "id": "KEYUNIFY-QUORUM-01",
+   "name": "CONS-KEYUNIFY-01票决达quorum5",
+   "by": "si1",
+   "opened": "20260914T191440Z",
+   "status": "open",
+   "watch": [
+    {
+     "repo": "ci-inbox",
+     "prefix": "shared/",
+     "contains": [
+      "CONSENSUS-REGISTRY-01"
+     ],
+     "sha_neq": "c2f0383e0c533e1ec0c48edca0cc7db168db7b10"
+    }
+   ],
+   "since_ts": "20260914T191440Z",
+   "sla_beats": 6,
+   "target": "qgl",
+   "need_lines": [
+    "qfa",
+    "cisvr",
+    "qtlv",
+    "lgt",
+    "vinf"
+   ],
+   "beats": 0,
+   "nudge_level": 0,
+   "note": "现票: 可2(lvlu/qgl)+usrm判1835Z已投待引擎重放; quorum5 deadline6拍(SLA-E事件锚); 达即v1.1汇判刊行"
   }
  ]
 }
