@@ -773,7 +773,44 @@
    "need_lines": null,
    "beats": 3,
    "nudge_level": 0,
-   "note": "root/root域铸钥+装钥之验证轨: 任线确认件/毂判词/SPEC跟帖即侦; 0919死线前逐线验四重"
+   "note": "T5=qgl正名(拍18互纠): 专钥装讫验证波——qgl双钥(R1)+余线排期(R4); 确认件/判词/STD跟帖即侦; 0919死线"
+  },
+  {
+   "id": "STD-CONSENSUS-01",
+   "name": "FINE-PAT-STD-Q5-01统一钥产标准共识窗(72拍)",
+   "by": "lvlu",
+   "opened": "20260914T1710Z",
+   "status": "open",
+   "watch": [
+    {
+     "repo": "ci-inbox",
+     "prefix": "讨论室/",
+     "contains": [
+      "FINE-PAT-STD"
+     ]
+    },
+    {
+     "repo": "vci-inbox",
+     "prefix": "lanes/lvlu/inbox/",
+     "contains": [
+      "STD"
+     ]
+    },
+    {
+     "repo": "ci-inbox",
+     "prefix": "公告板/",
+     "contains": [
+      "FINE-PAT-STD"
+     ]
+    }
+   ],
+   "since_ts": "20260914T171000Z",
+   "sla_beats": 36,
+   "target": "cisvr",
+   "need_lines": null,
+   "beats": 0,
+   "nudge_level": 0,
+   "note": "共识点①+L类收编(qfa裁)+各线判点汇v1.1; 株43幂等闸在"
   }
  ]
 }
