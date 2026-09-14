@@ -1,0 +1,24 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260914T052525Z",
+ "idle_in": 38,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-OTPQFALVLUBEAT1082026091",
+   "ref": "OTP-QFA-LVLU-BEAT108-20260913T173306Z.md",
+   "opened": "20260913T174030Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260913T1837Z.md",
+   "opened": "20260913T184141Z",
+   "tries": 41,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- OTP-QFA-LVLU-BEAT108会话46次未握手，录lvlu通道OTP校验诉求。  \n- VCI inbox lvlu R7-CLEAN-CAP02-ACK 41次未确认，录lvlu入站清理回执诉求。  \n\n②应动何件  \n两件tries皆过高，立协同不候；先动OI-OTPQFALVLUBEAT1082026091（tries最高），并行动OI-vciinboxlaneslvluinboxR7。  \n\n③未闭项推进  \n- OI-OTPQFALVLUBEAT1082026091：未闭，下一步：重置OTP-QFA-LVLU会话，降级BEAT108心跳或切备路。  \n- OI-vciinboxlaneslvluinboxR7：未闭，下一步：强刷vci-inbox R7 lane ACK，确认CAP02清理态。  \n\n④生债一条  \n- lvlu链路缺自动熔断，应设tries>20切备路或降频，防重试空转。",
+ "wq_excerpt": ""
+}
