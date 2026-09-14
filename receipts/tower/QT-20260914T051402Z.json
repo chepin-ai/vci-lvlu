@@ -1,0 +1,31 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260914T051402Z",
+ "idle_in": 37,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-OTPQFALVLUBEAT1072026091",
+   "ref": "OTP-QFA-LVLU-BEAT107-20260913T171044Z.md",
+   "opened": "20260913T172633Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPQFALVLUBEAT1082026091",
+   "ref": "OTP-QFA-LVLU-BEAT108-20260913T173306Z.md",
+   "opened": "20260913T174030Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260913T1837Z.md",
+   "opened": "20260913T184141Z",
+   "tries": 40,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空。未闭项三宗涉lvlu：BEAT107已47试未闭；BEAT108已45试未闭；R7-CLEAN-CAP02-ACK已40试未闭。\n\n② 应动何件：候件无。然三项未闭项均超40试，应立协同BEAT107、BEAT108、R7-CLEAN三项，不候。\n\n③ 未闭项推进：\n- OI-OTPQFALVLUBEAT1072026091：未闭。下一步：查47次失败根因，协同QFA侧重推或降级。\n- OI-OTPQFALVLUBEAT1082026091：未闭。下一步：查45次阻塞点，与BEAT107同批处置或隔离重试。\n- OI-vciinboxlaneslvluinboxR7：未闭。下一步：查40次ACK未落因，直驱vci-inbox lane清理链路。\n\n④ 生债：三项均未触发熔断，生债补未闭项重试熔断与降级规则。",
+ "wq_excerpt": ""
+}
