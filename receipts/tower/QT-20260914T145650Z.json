@@ -1,0 +1,36 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260914T145650Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/debt-72-lvlu-01.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20260914T122547Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-KEY69-LVLU-20260914T121843Z.md",
+   "opened": "20260914T122547Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxde",
+   "ref": "vci-inbox:lanes/lvlu/inbox/debt-72-lvlu-01.md",
+   "opened": "20260914T145650Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件 debt-72-lvlu-01.md：lvlu 新债务诉求待受理。  \n- 未闭 ANS-KEY-AUDIT-69-LVLU-01.md：审计应答已 11 试未复。  \n- 未闭 DEMAND-KEY69-LVLU-20260914T121843Z.md：KEY69 需求已 11 试未结。  \n- 未闭 debt-72-lvlu-01.md：同候件债务项初开待处。  \n\n②应动何件  \n- debt-72-lvlu-01.md（立协同，候件不候）。  \n\n③未闭项推进  \n- ANS-KEY-AUDIT-69：未闭，下一步：终应答或转决。  \n- DEMAND-KEY69：未闭，下一步：确收或驳回闭环。  \n- debt-72-lvlu-01：未闭，下一步：即处即闭。  \n\n④生债一条  \n- SI2 应动 debt-72 候件，产生协同债一条，待该件闭环后销。",
+ "wq_excerpt": ""
+}
