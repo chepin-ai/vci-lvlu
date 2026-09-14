@@ -1,0 +1,64 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260914T174307Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-STD-HEALTH-qtlv-20260914T173439Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20260914T122547Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-KEY69-LVLU-20260914T121843Z.md",
+   "opened": "20260914T122547Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxde",
+   "ref": "vci-inbox:lanes/lvlu/inbox/debt-72-lvlu-01.md",
+   "opened": "20260914T145650Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-ANSKEYAUDIT69LVLU01md",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20260914T163003Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-CLAIMS-qtlv-.md",
+   "opened": "20260914T163517Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxke",
+   "ref": "vci-inbox:lanes/lvlu/inbox/keyunify-lvlu-01.md",
+   "opened": "20260914T165546Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-debt-72-lvlu-01.md",
+   "opened": "20260914T173116Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- 候件ANS-STD-HEALTH-qtlv一件：标准健康回函待处理。\n- 涉lvlu诉求必录：DEMAND-KEY69-LVLU诉求答复（tries 20）待闭环。\n\n② 应动何件\n- 立协同候件ANS-STD-HEALTH不候，并同步急推DEMAND-KEY69诉求件。\n\n③ 未闭项推进\n- OI-AN（ANS-KEY-AUDIT-69）：未闭，下一步：审计要点复核后归档。\n- OI-DE（DEMAND-KEY69）：未闭，下一步：当日force-close签发。\n- OI-de（debt-72-lvlu-01）：未闭，下一步：债务72清分结算。\n- OI-ANSKEYAUDIT69：未闭，下一步：与OI-AN去重合并。\n- OI-NU（NUDGE-CLAIMS）：未闭，下一步：索赔催促响应。\n- OI-ke（keyunify-lvlu-01）：未闭，下一步：统一字段映射完成。\n- OI-TA（TASK-debt-72）：未闭，下一步：执行派单并回写结果。\n\n④ 生债一条\n- DEBT-73-lvlu-01：自动响应池同类件重复入池，需建“高频审计/诉求自动去重合并”机制。",
+ "wq_excerpt": ""
+}
