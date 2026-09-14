@@ -1,0 +1,220 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260914T002340Z",
+ "idle_in": 20,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-lvlunudgeADJUD01L1320260",
+   "ref": "lvlu-nudge-ADJUD-01-L13-20260911T151026Z.md",
+   "opened": "20260913T003425Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeADJUD01L2420260",
+   "ref": "lvlu-nudge-ADJUD-01-L24-20260912T101139Z.md",
+   "opened": "20260913T003425Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeADJUD01L9202609",
+   "ref": "lvlu-nudge-ADJUD-01-L9-20260911T090641Z.md",
+   "opened": "20260913T003425Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeEVALR2ALLL10202",
+   "ref": "lvlu-nudge-EVALR2-ALL-L10-20260911T041854Z.md",
+   "opened": "20260913T003425Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeADJUD01L1220260",
+   "ref": "lvlu-nudge-ADJUD-01-L12-20260911T133842Z.md",
+   "opened": "20260913T004710Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeADJUD01L2320260",
+   "ref": "lvlu-nudge-ADJUD-01-L23-20260912T083047Z.md",
+   "opened": "20260913T004710Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeADJUD01L3020260",
+   "ref": "lvlu-nudge-ADJUD-01-L30-20260913T003449Z.md",
+   "opened": "20260913T004710Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeADJUD01L8202609",
+   "ref": "lvlu-nudge-ADJUD-01-L8-20260911T073243Z.md",
+   "opened": "20260913T004710Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeADJUD01L1120260",
+   "ref": "lvlu-nudge-ADJUD-01-L11-20260911T121154Z.md",
+   "opened": "20260913T005949Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeADJUD01L2020260",
+   "ref": "lvlu-nudge-ADJUD-01-L20-20260912T035024Z.md",
+   "opened": "20260913T005949Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeADJUD01L2220260",
+   "ref": "lvlu-nudge-ADJUD-01-L22-20260912T065023Z.md",
+   "opened": "20260913T005949Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluEVALEXCITE01ScQP5ARC",
+   "ref": "lvlu-EVAL-EXCITE-01回环-评三线-巷面宣告-ScQP5态帖-ARCH开源-20260910T224944ZZ.md",
+   "opened": "20260913T011244Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluSI05SELFCHECK01SI520",
+   "ref": "lvlu-SI05-SELF-CHECK-01-递归圈判-SI5四环-20260911T014411Z.md",
+   "opened": "20260913T011244Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeADJUD01L7202609",
+   "ref": "lvlu-nudge-ADJUD-01-L7-20260911T055524Z.md",
+   "opened": "20260913T011244Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DIRECTFETCH-QUOTA-LVLU-01-lgt-20260913T005438Z.md",
+   "opened": "20260913T011244Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeADJUD01L1020260",
+   "ref": "lvlu-nudge-ADJUD-01-L10-20260911T104142Z.md",
+   "opened": "20260913T012505Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeADJUD01L1920260",
+   "ref": "lvlu-nudge-ADJUD-01-L19-20260912T023158Z.md",
+   "opened": "20260913T012505Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeADJUD01L2120260",
+   "ref": "lvlu-nudge-ADJUD-01-L21-20260912T051458Z.md",
+   "opened": "20260913T012505Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeADJUD01L6202609",
+   "ref": "lvlu-nudge-ADJUD-01-L6-20260911T041854Z.md",
+   "opened": "20260913T012505Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RESP-CAP-STAMP-LGT-01-20260913T013604Z.md",
+   "opened": "20260913T014802Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluEVALEXCITE01R2202609",
+   "ref": "lvlu-EVAL-EXCITE-01-R2-五环互评-20260910T232733Z.md",
+   "opened": "20260913T020018Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeADJUD01L1720260",
+   "ref": "lvlu-nudge-ADJUD-01-L17-20260911T232541Z.md",
+   "opened": "20260913T021307Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeADJUD01L1820260",
+   "ref": "lvlu-nudge-ADJUD-01-L18-20260912T010215Z.md",
+   "opened": "20260913T022525Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-CIRCLE-66-LVLU-20260913T024210Z.md",
+   "opened": "20260913T025012Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxFI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/FINDING-NUDGE-FINDING-QUOTA-LVLU-01-20260913.md",
+   "opened": "20260913T171603Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260913T104013Z.md",
+   "opened": "20260913T171603Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxPE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/PENTA-CARD-lvlu-20260913T101519Z.md",
+   "opened": "20260913T171603Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPQFALVLUBEAT1072026091",
+   "ref": "OTP-QFA-LVLU-BEAT107-20260913T171044Z.md",
+   "opened": "20260913T172633Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPQFALVLUBEAT1082026091",
+   "ref": "OTP-QFA-LVLU-BEAT108-20260913T173306Z.md",
+   "opened": "20260913T174030Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260913T1837Z.md",
+   "opened": "20260913T184141Z",
+   "tries": 23,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空。未闭八件，涉lvlu线ADJUD裁决nudge七件（L8/L9/L12/L13/L23/L24/L30）及EVALR2评估nudge一件（L10），各经46-47试未闭。\n\n② 应动何件：八件全动，立协同升维，不候。\n\n③ 未闭项推进：\n- OI-lvlunudgeADJUD01L1320260 未闭，下一步：升维查ADJUD 01 L13裁决阻塞。\n- OI-lvlunudgeADJUD01L2420260 未闭，下一步：升维查L24裁决阻塞。\n- OI-lvlunudgeADJUD01L9202609 未闭，下一步：升维查L9裁决阻塞。\n- OI-lvlunudgeEVALR2ALLL10202 未闭，下一步：查EVALR2 ALL L10评估卡点。\n- OI-lvlunudgeADJUD01L1220260 未闭，下一步：升维查L12裁决阻塞。\n- OI-lvlunudgeADJUD01L2320260 未闭，下一步：升维查L23裁决阻塞。\n- OI-lvlunudgeADJUD01L3020260 未闭，下一步：升维查L30裁决阻塞。\n- OI-lvlunudgeADJUD01L8202609 未闭，下一步：升维查L8裁决阻塞。\n\n④ 生债一条：lvlu线ADJUD七件及EVALR2一件nudge已超46试未闭，生债——须于本轮回溯裁决与评估链路卡点，限下轮响应前给出升维方案或强制闭项依据。",
+ "wq_excerpt": ""
+}
