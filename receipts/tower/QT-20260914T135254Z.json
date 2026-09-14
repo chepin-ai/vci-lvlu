@@ -1,0 +1,33 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260914T135254Z",
+ "idle_in": 5,
+ "events": [
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-SI70-LVLU-01.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-SI70-LVLU-20260914T134936Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20260914T122547Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-KEY69-LVLU-20260914T121843Z.md",
+   "opened": "20260914T122547Z",
+   "tries": 7,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- ANS-SI70-LVLU-01：SI70回函一件入池。\n- DEMAND-SI70-LVLU-20260914T134936Z：SI70发需一件，涉lvlu诉求已录。\n\n②应动何件：\n两候件皆立协同，先DEMAND后ANS，不候；并提级处置两未闭项。\n\n③未闭项推进：\n- AN项（AUDIT-69）：tries=7未闭，已超限，下一步转SI2仲裁归档。\n- DE项（KEY69）：tries=7未闭，已超限，下一步SI0提级强闭。\n\n④生债：\n- lvlu线欠SI70双件响应债一。",
+ "wq_excerpt": ""
+}
