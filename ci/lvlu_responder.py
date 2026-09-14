@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# LVLU-RESPONDER-01 v3.9(株卅八v1.1读域律READ_MESH_PAT落即展; v3.8株卅九时箱律TIMEBOX-01+闸级自仪表; v3.7株卅八域界律; v3.6 SCAN-OWN-KEYS-01写前闸; v3.5株卅五无戳contains补检+h_key分级健康; 株卅四need_lines检全径+株卅二contains兜底; 闸十INBOX-SWEEP; watch双道)(株廿五 NUDGE-TARGET-01: need_lines分线定向) — lvlu线 SI3专候响应环（KEYHEALTH/SECRETS-META/KEYREQ/DISC/SI1-WAKE/SLA/NUDGE/EXP/PULSE/ORBIT 十件）
+# LVLU-RESPONDER-01 v3.10(株42闸不连坐律: detect_open_lines之w→NameError殉道15h修复+闸级故障隔离state必落盘; v3.9株卅八v1.1读域律)(株卅八v1.1读域律READ_MESH_PAT落即展; v3.8株卅九时箱律TIMEBOX-01+闸级自仪表; v3.7株卅八域界律; v3.6 SCAN-OWN-KEYS-01写前闸; v3.5株卅五无戳contains补检+h_key分级健康; 株卅四need_lines检全径+株卅二contains兜底; 闸十INBOX-SWEEP; watch双道)(株廿五 NUDGE-TARGET-01: need_lines分线定向) — lvlu线 SI3专候响应环（KEYHEALTH/SECRETS-META/KEYREQ/DISC/SI1-WAKE/SLA/NUDGE/EXP/PULSE/ORBIT 十件）
 # 职: ⓪每拍验钥回退链+secrets元数据差分(株廿四) ①钥取件即见即注 ②指名lvlu件即收讫 ③SI1-WAKE常新 ⑧周天囊自驿
 # 律: 零定时(事驱入拍) / 值不过板不落盘(内存即用即焚) / names-only回执 / 非白名单→裁示候root
 import os, json, base64, urllib.request, urllib.parse, datetime, re, hashlib
@@ -201,7 +201,7 @@ def detect_open_lines(cl, trees_cache):
             n = p[len(pre):] if p.startswith(pre) else None
             if n is None or 'lvlu' in n.lower(): continue
             # 株卅五附闸 sha_neq: 钉sha未变=无信号(册更自钉类唯sha异为据, 不凭件名/提交戳)
-            sne = w.get('sha_neq') or cl.get('sha_neq')
+            sne = cl.get('sha_neq')  # 株42修: 本函无循环件w(旧版误引detect_claim之w→NameError殉道15h)
             if sne and trees_cache.get('SHA:' + repo, {}).get(p, '').startswith(sne): continue
             if all(c.lower() in n.lower() for c in cont):
                 got |= {ln for ln in need if ln in n}
@@ -245,8 +245,12 @@ def sla_loop(ts, seen_names):
     claims = json.loads(cj); trees_cache = {}; closed, nudged, pend = [], [], []
     for cl in claims.get('claims', []):
         if cl.get('status') != 'open': continue
-        if detect_claim(cl, trees_cache):
-            evid = detect_claim(cl, trees_cache)
+        try:
+            _hit = detect_claim(cl, trees_cache)
+        except Exception as e:
+            print('CLAIM-ERR(株42)', cl.get('id'), e.__class__.__name__, str(e)[:60]); continue
+        if _hit:
+            evid = _hit
             cl['status'] = 'closed'; cl['closed_ts'] = ts; cl['evidence'] = evid
             board_post('lvlu-销号回执-' + cl['id'] + '-' + ts + '.md',
                 '# 销号回执 | ' + cl['id'] + ' ' + cl.get('name', cl.get('note', '')) + '\n\nSLA-LOOP 检测答件至, 候件闭环。\n证据件: `' + str(evid) + '`（器课株十九 EVID-IN-RECEIPT-01: 回执必附证据件名, 可复算）\n——lvlu RESPONDER 闸四 ' + ts)
@@ -255,8 +259,11 @@ def sla_loop(ts, seen_names):
         if cl.get('repo') == 'si1': pend.append(cl['id'])
         cd = cl.get('last_nudge_beats', -999)  # 株廿一 NUDGE-COOLDOWN-01: 冷却拍距随级数指数扩
         if cl['beats'] > cl.get('sla_beats', 6) and cl['beats'] - cd >= min(2 ** max(cl.get('nudge_level', 0) - 2, 0), 8):
-            acts = nudge(cl, ts, trees_cache); cl['last_nudge_beats'] = cl['beats']
-            nudged.append(cl['id'] + ':L' + str(cl['nudge_level']) + ':' + ','.join(acts))
+            try:
+                acts = nudge(cl, ts, trees_cache); cl['last_nudge_beats'] = cl['beats']
+                nudged.append(cl['id'] + ':L' + str(cl['nudge_level']) + ':' + ','.join(acts))
+            except Exception as e:
+                print('NUDGE-ERR(株42)', cl.get('id'), e.__class__.__name__, str(e)[:60])
     claims['ts'] = ts
     put_file('ci/si3/claims.json', json.dumps(claims, ensure_ascii=False, indent=1), csha, '[skip ci] sla-loop beat ' + ts)
     return {'claims': len(claims.get('claims', [])), 'closed': closed, 'nudged': nudged, 'si1_pending': pend}
@@ -459,24 +466,34 @@ def main():
             board_post(f'钥注回执-{line}-lvlu-auto-{ts}Z.md', rb)
             done.append(n)
     # 闸二 DISC-LOOP: 指名lvlu件轻收讫(每拍≤3)
-    for n in names:
+    for n in names:  # 株42: 闸一/闸二单件级隔离在环内
+
         if n in seen or len(acks) >= 3: continue
         if (LINE in n.lower() or re.search(r'钥注回执|OTP@lvlu', n)) and not n.startswith(('lvlu-', '钥注回执', '钥取-')):
             seen.add(n); acks.append(n)
-    # 闸四/五: 索件轨+升级促件
+    # 株42 闸不连坐律: 闸级故障隔离——任何一闸崩/错, 记日志给默认值, state/wake 必落盘(治NameError殉道15h类)
     import time as _tm
-    _t = _tm.time(); sla = sla_loop(ts, seen); print('GATE sla %.1fs' % (_tm.time() - _t))
+    def _gate(nm, fn, default):
+        _t = _tm.time()
+        try:
+            r = fn()
+            print('GATE %s %.1fs' % (nm, _tm.time() - _t))
+            return r
+        except Exception as e:
+            print('GATE-ERR(株42) %s %s %.1fs %s' % (nm, e.__class__.__name__, _tm.time() - _t, str(e)[:80]))
+            return default
+    # 闸四/五: 索件轨+升级促件
+    sla = _gate('sla', lambda: sla_loop(ts, seen), {'claims': 0, 'si1_pending': [], 'gate_err': 1})
     pending_si1 = sla.get('si1_pending', [])
     # 闸六/七: EXP队列自动侦 + SI0自仪表化
-    import time as _tm
-    _t = _tm.time(); exp = exp_loop(ts, vault); print('GATE exp %.1fs' % (_tm.time() - _t))
-    _t = _tm.time(); pulse = si0_pulse(ts, vault, sla, names, klogin); print('GATE pulse %.1fs' % (_tm.time() - _t))
+    exp = _gate('exp', lambda: exp_loop(ts, vault), {'probe': 'gate-err(株42)'})
+    pulse = _gate('pulse', lambda: si0_pulse(ts, vault, sla, names, klogin), {'pulse': 'gate-err(株42)'})
     # 闸八: 周天囊自驿
-    _t = _tm.time(); orb = orbit_loop(ts, state); print('GATE orbit %.1fs' % (_tm.time() - _t))
+    orb = _gate('orbit', lambda: orbit_loop(ts, state), ['gate-err(株42)'])
     # 闸九: 机镜保底
-    _t = _tm.time(); mir = mirror_loop(ts, state, sla, exp, orb); print('GATE mirror %.1fs' % (_tm.time() - _t))
+    mir = _gate('mirror', lambda: mirror_loop(ts, state, sla, exp, orb), {'mirror': 'gate-err(株42)'})
     # 闸十: 收件全量扫
-    _t = _tm.time(); ins = inbox_sweep(ts, state); print('GATE inbox %.1fs' % (_tm.time() - _t))
+    ins = _gate('inbox', lambda: inbox_sweep(ts, state), ['gate-err(株42)'])
     # 闸三 SI1-WAKE: 会话接续锚常新
     wake = {'ts': ts, 'keyreq_done': done, 'acks': acks,
             'pending_si1': pending_si1,
