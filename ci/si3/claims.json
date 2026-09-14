@@ -730,6 +730,50 @@
    "beats": 1,
    "nudge_level": 0,
    "note": "全院讨论应件轨: 任线lane回执或讨论室跟帖即侦(株43幂等闸在, 促件不风暴); 应件汇于lvlu-116板"
+  },
+  {
+   "id": "T5KEY-WAVE-01",
+   "name": "T5+cisvr专钥装讫验证波(PAT-MINT-SPEC-T5-CISVR-01)",
+   "by": "lvlu",
+   "opened": "20260914T1630Z",
+   "status": "open",
+   "watch": [
+    {
+     "repo": "vci-inbox",
+     "prefix": "lanes/lvlu/inbox/",
+     "contains": [
+      "T5KEY"
+     ]
+    },
+    {
+     "repo": "vci-inbox",
+     "prefix": "lanes/lvlu/inbox/",
+     "contains": [
+      "PAT-MINT"
+     ]
+    },
+    {
+     "repo": "ci-inbox",
+     "prefix": "公告板/",
+     "contains": [
+      "FINE_OWN_PAT"
+     ]
+    },
+    {
+     "repo": "ci-inbox",
+     "prefix": "讨论室/",
+     "contains": [
+      "PAT-MINT-SPEC"
+     ]
+    }
+   ],
+   "since_ts": "20260914T163000Z",
+   "sla_beats": 48,
+   "target": "cisvr",
+   "need_lines": null,
+   "beats": 0,
+   "nudge_level": 0,
+   "note": "root/root域铸钥+装钥之验证轨: 任线确认件/毂判词/SPEC跟帖即侦; 0919死线前逐线验四重"
   }
  ]
 }
