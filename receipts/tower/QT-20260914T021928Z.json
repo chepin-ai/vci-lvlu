@@ -1,0 +1,80 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260914T021928Z",
+ "idle_in": 27,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-lvluEVALEXCITE01R2202609",
+   "ref": "lvlu-EVAL-EXCITE-01-R2-五环互评-20260910T232733Z.md",
+   "opened": "20260913T020018Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeADJUD01L1720260",
+   "ref": "lvlu-nudge-ADJUD-01-L17-20260911T232541Z.md",
+   "opened": "20260913T021307Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeADJUD01L1820260",
+   "ref": "lvlu-nudge-ADJUD-01-L18-20260912T010215Z.md",
+   "opened": "20260913T022525Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-CIRCLE-66-LVLU-20260913T024210Z.md",
+   "opened": "20260913T025012Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxFI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/FINDING-NUDGE-FINDING-QUOTA-LVLU-01-20260913.md",
+   "opened": "20260913T171603Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260913T104013Z.md",
+   "opened": "20260913T171603Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxPE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/PENTA-CARD-lvlu-20260913T101519Z.md",
+   "opened": "20260913T171603Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPQFALVLUBEAT1072026091",
+   "ref": "OTP-QFA-LVLU-BEAT107-20260913T171044Z.md",
+   "opened": "20260913T172633Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPQFALVLUBEAT1082026091",
+   "ref": "OTP-QFA-LVLU-BEAT108-20260913T173306Z.md",
+   "opened": "20260913T174030Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260913T1837Z.md",
+   "opened": "20260913T184141Z",
+   "tries": 30,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件0件/未闭10项: ",
+ "wq_excerpt": ""
+}
