@@ -1,0 +1,143 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260914T011821Z",
+ "idle_in": 23,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-lvluEVALEXCITE01ScQP5ARC",
+   "ref": "lvlu-EVAL-EXCITE-01回环-评三线-巷面宣告-ScQP5态帖-ARCH开源-20260910T224944ZZ.md",
+   "opened": "20260913T011244Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluSI05SELFCHECK01SI520",
+   "ref": "lvlu-SI05-SELF-CHECK-01-递归圈判-SI5四环-20260911T014411Z.md",
+   "opened": "20260913T011244Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeADJUD01L7202609",
+   "ref": "lvlu-nudge-ADJUD-01-L7-20260911T055524Z.md",
+   "opened": "20260913T011244Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DIRECTFETCH-QUOTA-LVLU-01-lgt-20260913T005438Z.md",
+   "opened": "20260913T011244Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeADJUD01L1020260",
+   "ref": "lvlu-nudge-ADJUD-01-L10-20260911T104142Z.md",
+   "opened": "20260913T012505Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeADJUD01L1920260",
+   "ref": "lvlu-nudge-ADJUD-01-L19-20260912T023158Z.md",
+   "opened": "20260913T012505Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeADJUD01L2120260",
+   "ref": "lvlu-nudge-ADJUD-01-L21-20260912T051458Z.md",
+   "opened": "20260913T012505Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeADJUD01L6202609",
+   "ref": "lvlu-nudge-ADJUD-01-L6-20260911T041854Z.md",
+   "opened": "20260913T012505Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RESP-CAP-STAMP-LGT-01-20260913T013604Z.md",
+   "opened": "20260913T014802Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluEVALEXCITE01R2202609",
+   "ref": "lvlu-EVAL-EXCITE-01-R2-五环互评-20260910T232733Z.md",
+   "opened": "20260913T020018Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeADJUD01L1720260",
+   "ref": "lvlu-nudge-ADJUD-01-L17-20260911T232541Z.md",
+   "opened": "20260913T021307Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeADJUD01L1820260",
+   "ref": "lvlu-nudge-ADJUD-01-L18-20260912T010215Z.md",
+   "opened": "20260913T022525Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-CIRCLE-66-LVLU-20260913T024210Z.md",
+   "opened": "20260913T025012Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxFI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/FINDING-NUDGE-FINDING-QUOTA-LVLU-01-20260913.md",
+   "opened": "20260913T171603Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260913T104013Z.md",
+   "opened": "20260913T171603Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxPE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/PENTA-CARD-lvlu-20260913T101519Z.md",
+   "opened": "20260913T171603Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPQFALVLUBEAT1072026091",
+   "ref": "OTP-QFA-LVLU-BEAT107-20260913T171044Z.md",
+   "opened": "20260913T172633Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPQFALVLUBEAT1082026091",
+   "ref": "OTP-QFA-LVLU-BEAT108-20260913T173306Z.md",
+   "opened": "20260913T174030Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260913T1837Z.md",
+   "opened": "20260913T184141Z",
+   "tries": 26,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- OI-lvluEVALEXCITE01ScQP5ARC：lvlu评三线巷面宣告及ARCH开源态帖诉求。\n- OI-lvluSI05SELFCHECK01SI520：lvlu SI5四环递归圈判自检查。\n- OI-lvlunudgeADJUD01L7202609：lvlu ADJUD L7裁决催促。\n- OI-vciinboxlaneslvluinboxDI：lvlu VCI收件箱DIRECTFETCH配额待取。\n- OI-lvlunudgeADJUD01L1020260：lvlu ADJUD L10裁决催促。\n- OI-lvlunudgeADJUD01L1920260：lvlu ADJUD L19裁决催促。\n- OI-lvlunudgeADJUD01L2120260：lvlu ADJUD L21裁决催促。\n- OI-lvlunudgeADJUD01L6202609：lvlu ADJUD L6裁决催促。\n\n②应动何件：立协OI-lvluSI05SELFCHECK01SI520，先断递归圈判。\n\n③未闭项推进：\n- OI-lvluEVALEXCITE01ScQP5ARC：未闭，候SI05通后宣告评三线。\n- OI-lvluSI05SELFCHECK01SI520：未闭，下一步：标记断环，重算四环态。\n- OI-lvlunudgeADJUD01L7202609：未闭，下一步：L7并单候裁。\n- OI-vciinboxlaneslvluinboxDI：未闭，下一步：复拉配额，通即闭。\n- OI-lvlunudgeADJUD01L1020260：未闭，下一步：L10入批量裁决。\n- OI-lvlunudgeADJUD01L1920260：未闭，下一步：L19挂EVAL结果再推。\n- OI-lvlunudgeADJUD01L2120260：未闭，下一步：L21备终裁收口。\n- OI-lvlunudgeADJUD01L6202609：未闭，下一步：L",
+ "wq_excerpt": ""
+}
