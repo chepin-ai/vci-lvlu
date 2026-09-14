@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260913T212115Z",
+ "ts": "20260914T144607Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -14,7 +14,7 @@
    ],
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
-   "beats": 241,
+   "beats": 242,
    "nudge_level": 4,
    "last_nudge": "20260913T205807Z",
    "status": "open",
@@ -48,11 +48,11 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 96,
-   "beats": 248,
-   "nudge_level": 22,
-   "last_nudge": "20260913T175311Z",
+   "beats": 249,
+   "nudge_level": 23,
+   "last_nudge": "20260914T144607Z",
    "status": "open",
-   "last_nudge_beats": 241
+   "last_nudge_beats": 249
   },
   {
    "id": "EVALR2-ALL",
@@ -107,7 +107,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 247,
+   "beats": 248,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -118,7 +118,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 247,
+   "beats": 248,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -163,7 +163,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 232,
+   "beats": 233,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -212,7 +212,7 @@
    "target": "lvlu",
    "since_ts": "20260911T093116Z",
    "sla_beats": 24,
-   "beats": 196,
+   "beats": 197,
    "nudge_level": 25,
    "status": "open",
    "note": "册sha=105f9fc0012752a3; 册24拍无更→自激复核增补(静场不空转律之行) | v3.5转sha_neq闸(株卅五附): 唯blob sha异为更据",
@@ -295,7 +295,7 @@
     "ORBIT-CAP-02"
    ],
    "status": "open",
-   "beats": 35,
+   "beats": 36,
    "sla_beats": 24,
    "target": "qfa",
    "nudge_level": 5,
@@ -408,8 +408,8 @@
    "need_lines": [
     "usrm"
    ],
-   "beats": 36,
-   "nudge_level": 0,
+   "beats": 37,
+   "nudge_level": 1,
    "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
    "watch": [
     {
@@ -420,7 +420,12 @@
      "repo": "ci-inbox",
      "prefix": "讨论室/TH-SI5-CLOUD-01-ANS-usrm-"
     }
-   ]
+   ],
+   "legs_got": [
+    "usrm"
+   ],
+   "last_nudge": "20260914T144607Z",
+   "last_nudge_beats": 37
   },
   {
    "id": "SI5CLOUD-VINF",
@@ -482,8 +487,8 @@
    "need_lines": [
     "cisvr"
    ],
-   "beats": 36,
-   "nudge_level": 0,
+   "beats": 37,
+   "nudge_level": 1,
    "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
    "watch": [
     {
@@ -494,7 +499,12 @@
      "repo": "ci-inbox",
      "prefix": "讨论室/TH-SI5-CLOUD-01-ANS-cisvr-"
     }
-   ]
+   ],
+   "legs_got": [
+    "cisvr"
+   ],
+   "last_nudge": "20260914T144607Z",
+   "last_nudge_beats": 37
   },
   {
    "id": "SI5CLOUD-UCIF2",
@@ -508,8 +518,8 @@
    "need_lines": [
     "ucif2"
    ],
-   "beats": 36,
-   "nudge_level": 0,
+   "beats": 37,
+   "nudge_level": 1,
    "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
    "watch": [
     {
@@ -520,7 +530,12 @@
      "repo": "ci-inbox",
      "prefix": "讨论室/TH-SI5-CLOUD-01-ANS-ucif2-"
     }
-   ]
+   ],
+   "legs_got": [
+    "ucif2"
+   ],
+   "last_nudge": "20260914T144607Z",
+   "last_nudge_beats": 37
   },
   {
    "id": "RING-INTERCONN-01-SIGN",
@@ -580,7 +595,7 @@
    "need_lines": [
     "lgt"
    ],
-   "beats": 12,
+   "beats": 13,
    "nudge_level": 0,
    "note": "RE2约接: 我链tip 280223d5a52b581e / 尔tip 209/813ac77adf5e"
   },
@@ -614,7 +629,7 @@
    "need_lines": [
     "lgt"
    ],
-   "beats": 12,
+   "beats": 13,
    "nudge_level": 0,
    "note": "EXP-024题面已转投; κ>0.8 对拍"
   },
@@ -655,7 +670,7 @@
    "need_lines": [
     "usrm"
    ],
-   "beats": 7,
+   "beats": 8,
    "nudge_level": 0,
    "note": "root示usrm普及机层直读常识→求证咨询; 与SI3-LINK锚唤续制对位"
   },
@@ -664,7 +679,7 @@
    "name": "FINE_READ_PAT读域自展自证",
    "by": "si0",
    "opened": "20260914T135748Z",
-   "status": "open",
+   "status": "closed",
    "watch": [
     {
      "repo": "vci-usrm",
@@ -682,7 +697,9 @@
    ],
    "beats": 0,
    "nudge_level": 0,
-   "note": "vci-usrm=写域外; 读域展则此件可侦自闭(contains+commits验新双闸); 闭=FINE_READ_PAT战功"
+   "note": "vci-usrm=写域外; 读域展则此件可侦自闭(contains+commits验新双闸); 闭=FINE_READ_PAT战功",
+   "closed_ts": "20260914T144607Z",
+   "evidence": "MULTI:vci-usrm"
   }
  ]
 }
