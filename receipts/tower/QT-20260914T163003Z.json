@@ -1,0 +1,47 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260914T163003Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-RE-ACK-FIELDH-qtlv-20260914T155419Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20260914T122547Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-KEY69-LVLU-20260914T121843Z.md",
+   "opened": "20260914T122547Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxde",
+   "ref": "vci-inbox:lanes/lvlu/inbox/debt-72-lvlu-01.md",
+   "opened": "20260914T145650Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-ANSKEYAUDIT69LVLU01md",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20260914T163003Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- ANS-KEY-AUDIT-69-LVLU-01.md：lvlu审计69号关键件，涉lvlu诉求已录。\n- ANS-RE-ACK-FIELDH-qtlv-20260914T155419Z.md：FIELDH对qtlv之ACK回执。\n\n② 应动何件：ANS-KEY-AUDIT-69-LVLU-01.md（双路径未闭且尝试累高，立协同不候）。\n\n③ 未闭项推进：\n- OI-vci…AN（审计69 vci路径）：未闭，并轨主审计流统一闭项。\n- OI-vci…DE（KEY69诉求）：未闭，提取lvlu诉求并执行应答穿透。\n- OI-vci…de（debt-72）：未闭，核对lvlu债务条款后归档。\n- OI-ANS…md（审计69 ANS路径）：未闭，与vci版合并闭项。\n\n④ 生债：欠 lvlu 线审计69号双路径合并治理之一次执行债。",
+ "wq_excerpt": ""
+}
