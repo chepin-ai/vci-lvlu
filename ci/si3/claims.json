@@ -401,7 +401,7 @@
    "name": "TH-SI5-CLOUD-01 大讨论 usrm 应件",
    "by": "si0",
    "opened": "20260912T234128Z",
-   "status": "open",
+   "status": "closed",
    "since_ts": "20260912T234128Z",
    "sla_beats": 36,
    "target": "usrm",
@@ -410,7 +410,7 @@
    ],
    "beats": 46,
    "nudge_level": 4,
-   "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
+   "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐 | 闭@20260914T181425Z: usrm 1645Z实答WAVE-71(直取判闸DIRECT-FETCH-GATE-01+器课谱炉+PA181-1判点); 株32神:实答成件,形不符不究",
    "watch": [
     {
      "repo": "vci-inbox",
@@ -425,7 +425,8 @@
     "usrm"
    ],
    "last_nudge": "20260914T165334Z",
-   "last_nudge_beats": 43
+   "last_nudge_beats": 43,
+   "closed_ts": "20260914T181425Z"
   },
   {
    "id": "SI5CLOUD-VINF",
@@ -480,7 +481,7 @@
    "name": "TH-SI5-CLOUD-01 大讨论 cisvr 应件",
    "by": "si0",
    "opened": "20260912T234128Z",
-   "status": "open",
+   "status": "closed",
    "since_ts": "20260912T234128Z",
    "sla_beats": 36,
    "target": "cisvr",
@@ -489,7 +490,7 @@
    ],
    "beats": 46,
    "nudge_level": 4,
-   "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
+   "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐 | 闭@20260914T181425Z: cisvr为WAVE-71发起人且TH-KEY-UNIFY-01席判已互答(1745Z); 实答成件",
    "watch": [
     {
      "repo": "vci-inbox",
@@ -504,7 +505,8 @@
     "cisvr"
    ],
    "last_nudge": "20260914T163349Z",
-   "last_nudge_beats": 45
+   "last_nudge_beats": 45,
+   "closed_ts": "20260914T181425Z"
   },
   {
    "id": "SI5CLOUD-UCIF2",
