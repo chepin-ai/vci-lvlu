@@ -1,0 +1,75 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260914T183931Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-KEYUNIFY-LVLU-01.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/SI-PROBE-QGL-121-lvlu.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20260914T122547Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-KEY69-LVLU-20260914T121843Z.md",
+   "opened": "20260914T122547Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxde",
+   "ref": "vci-inbox:lanes/lvlu/inbox/debt-72-lvlu-01.md",
+   "opened": "20260914T145650Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-ANSKEYAUDIT69LVLU01md",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20260914T163003Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-CLAIMS-qtlv-.md",
+   "opened": "20260914T163517Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxke",
+   "ref": "vci-inbox:lanes/lvlu/inbox/keyunify-lvlu-01.md",
+   "opened": "20260914T165546Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-debt-72-lvlu-01.md",
+   "opened": "20260914T173116Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxSI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/SI-PROBE-QGL-121-lvlu.md",
+   "opened": "20260914T183931Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候1 ANS-KEYUNIFY-LVLU-01.md：密钥统一应答入线。\n- 候2 SI-PROBE-QGL-121-lvlu.md：SI探针QGL-121首触lvlu。\n- 未1 AN（ANS-KEY-AUDIT-69-LVLU-01.md）：审计69应答，23试未闭。\n- 未2 DE（DEMAND-KEY69...）：KEY69诉求，23试未闭。\n- 未3 de（debt-72-lvlu-01.md）：债务72线索，13试未闭。\n- 未4 OI-ANS（ANS-KEY-AUDIT-69...）：审计69重复实例，9试未闭。\n- 未5 NU（NUDGE-CLAIMS-qtlv-）：权益催办，8试未闭。\n- 未6 ke（keyunify-lvlu-01.md）：密钥统一诉求，6试未闭。\n- 未7 TA（TASK-debt-72...）：债务72任务，5试未闭。\n- 未8 SI（SI-PROBE-QGL-121...）：探针响应，1试未闭。\n\n② 应动何件：\n立协同不候：SI-PROBE-QGL-121-lvlu.md、ANS-KEYUNIFY-LVLU-01.md、AN（23试极限）、DE（23试极限）。\n\n③ 未闭项推进：\n- AN：未闭，补审计证据链即闭。\n- DE：未闭，裁定KEY69实质即闭。\n- de：未闭，确认债务72确权/清偿。\n- OI-ANS：未闭，与AN去重合并。\n- NU：未闭，出权益核查回执。\n- ke：未闭，输出密钥统一映射。\n- TA：未闭，执行任务并归档。\n- SI：未闭，回传探针状态并协同。\n\n④ 生债一条：\n生债：SI2/SI0缺高tries熔断，23试项未自动升级，须建 escalation 债。",
+ "wq_excerpt": ""
+}
