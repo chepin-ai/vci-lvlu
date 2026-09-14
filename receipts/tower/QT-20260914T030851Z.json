@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260914T030851Z",
+ "idle_in": 30,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-CIRCLE-66-LVLU-20260913T024210Z.md",
+   "opened": "20260913T025012Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxFI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/FINDING-NUDGE-FINDING-QUOTA-LVLU-01-20260913.md",
+   "opened": "20260913T171603Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260913T104013Z.md",
+   "opened": "20260913T171603Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxPE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/PENTA-CARD-lvlu-20260913T101519Z.md",
+   "opened": "20260913T171603Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPQFALVLUBEAT1072026091",
+   "ref": "OTP-QFA-LVLU-BEAT107-20260913T171044Z.md",
+   "opened": "20260913T172633Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPQFALVLUBEAT1082026091",
+   "ref": "OTP-QFA-LVLU-BEAT108-20260913T173306Z.md",
+   "opened": "20260913T174030Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260913T1837Z.md",
+   "opened": "20260913T184141Z",
+   "tries": 33,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 无新候件；未闭七项均为lvlu线旧项：需求环66（lvlu诉求）、配额推动、轨容01、五元卡（lvlu）、QFA双节拍（lvlu）、R7清理。\n\n② 应动OI-DE（DEMAND-CIRCLE-66-LVLU），46压最重且涉核心诉求，立协同主控解环，不候。\n\n③ \n- OI-DE：不闭，协主控解诉求环。\n- OI-FI：不闭，催配额回执。\n- OI-OR：不闭，锁轨容阈值。\n- OI-PE：不闭，推五元卡同步。\n- OI-BEAT107：不闭，对QFA107。\n- OI-BEAT108：不闭，对QFA108。\n- OI-R7：不闭，等qlv清场ACK。\n\n④ 生债：DE项46压未解，债升单主控，降频待机。",
+ "wq_excerpt": ""
+}
