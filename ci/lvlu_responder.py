@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# LVLU-RESPONDER-01 v3.10(株42闸不连坐律: detect_open_lines之w→NameError殉道15h修复+闸级故障隔离state必落盘; v3.9株卅八v1.1读域律)(株卅八v1.1读域律READ_MESH_PAT落即展; v3.8株卅九时箱律TIMEBOX-01+闸级自仪表; v3.7株卅八域界律; v3.6 SCAN-OWN-KEYS-01写前闸; v3.5株卅五无戳contains补检+h_key分级健康; 株卅四need_lines检全径+株卅二contains兜底; 闸十INBOX-SWEEP; watch双道)(株廿五 NUDGE-TARGET-01: need_lines分线定向) — lvlu线 SI3专候响应环（KEYHEALTH/SECRETS-META/KEYREQ/DISC/SI1-WAKE/SLA/NUDGE/EXP/PULSE/ORBIT 十件）
+# LVLU-RESPONDER-01 v3.11(株43促件幂等律NUDGE-IDEM-01: 靶面实迹为凭近3h同id免促,治usrm勘EXP049-L23×67风暴; v3.10株42闸不连坐)(株42闸不连坐律: detect_open_lines之w→NameError殉道15h修复+闸级故障隔离state必落盘; v3.9株卅八v1.1读域律)(株卅八v1.1读域律READ_MESH_PAT落即展; v3.8株卅九时箱律TIMEBOX-01+闸级自仪表; v3.7株卅八域界律; v3.6 SCAN-OWN-KEYS-01写前闸; v3.5株卅五无戳contains补检+h_key分级健康; 株卅四need_lines检全径+株卅二contains兜底; 闸十INBOX-SWEEP; watch双道)(株廿五 NUDGE-TARGET-01: need_lines分线定向) — lvlu线 SI3专候响应环（KEYHEALTH/SECRETS-META/KEYREQ/DISC/SI1-WAKE/SLA/NUDGE/EXP/PULSE/ORBIT 十件）
 # 职: ⓪每拍验钥回退链+secrets元数据差分(株廿四) ①钥取件即见即注 ②指名lvlu件即收讫 ③SI1-WAKE常新 ⑧周天囊自驿
 # 律: 零定时(事驱入拍) / 值不过板不落盘(内存即用即焚) / names-only回执 / 非白名单→裁示候root
 import os, json, base64, urllib.request, urllib.parse, datetime, re, hashlib
@@ -208,12 +208,44 @@ def detect_open_lines(cl, trees_cache):
     cl['legs_got'] = sorted(got)
     return [ln for ln in need if ln not in got]
 
+def _idem_hit(trees_cache, repo_full, marker, hours=3):
+    """株43 NUDGE-IDEM-01: 靶面实迹幂等——促件以靶面(板/巷)实迹为凭, 不唯册拍数;
+    靶面已有同marker近N时促件→免促(殉道冻结/重放环亦不风暴, 治EXP049-L23×67案)"""
+    try:
+        rk = repo_full.split('/')[-1]
+        if rk not in trees_cache:
+            st, tr = api('GET', 'git/trees/HEAD?recursive=1', repo=repo_full, read_alt=not in_domain(repo_full))
+            trees_cache[rk] = [t['path'] for t in tr.get('tree', [])] if st == 200 else []
+        now = datetime.datetime.now(datetime.timezone.utc)
+        best = None
+        for fp in trees_cache[rk]:
+            n = fp.split('/')[-1]
+            if marker in n:
+                m = re.search(r'(20\d{6}T\d{6}Z)', n)
+                if m:
+                    try:
+                        t = datetime.datetime.strptime(m.group(1), '%Y%m%dT%H%M%SZ').replace(tzinfo=datetime.timezone.utc)
+                        if (now - t).total_seconds() < hours * 3600 and (best is None or m.group(1) > best[0]):
+                            best = (m.group(1), fp)
+                    except Exception: pass
+        return best[1] if best else None
+    except Exception as e:
+        print('IDEM-ERR(株43)', e.__class__.__name__)
+        return None
+
 def nudge(cl, ts, trees_cache=None):
     lvl = cl.get('nudge_level', 0) + 1
     tgt = cl.get('target', 'cisvr')
     if cl.get('need_lines') and trees_cache is not None:
         open_lines = detect_open_lines(cl, trees_cache)
         if open_lines: tgt = open_lines[0]  # 株廿五: 只促未达线,已答线免扰
+    if trees_cache is None: trees_cache = {}
+    # 株43: 靶面实迹幂等闸(板/巷近3时有同id促件→全道免促; 册冻结之治)
+    hit = _idem_hit(trees_cache, 'chepin-ai/vci-inbox', '-' + cl['id'] + '-lvlu') or _idem_hit(trees_cache, HUB, 'nudge-' + cl['id'] + '-L')
+    if hit:
+        print('NUDGE-IDEM(株43) skip', cl['id'], '实迹:', hit.split('/')[-1])
+        cl['last_nudge_beats'] = cl.get('beats', 0)  # 册亦随实迹冷却
+        return ['idem-skip(株43):' + hit.split('/')[-1][:40]]
     ch = NUDGE_CH.get(tgt, {})
     msg = '# NUDGE-ESCALATE-01 L' + str(lvl) + ' | ' + cl['id'] + ' ' + cl.get('name', cl.get('note', '')) + '\n\n候件逾窗(' + str(cl.get('sla_beats')) + '拍)。lvlu RESPONDER 闸五自动促件。@' + tgt + ' 请直取/回执。——lvlu ' + ts
     acts = []
