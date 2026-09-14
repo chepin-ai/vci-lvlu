@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260914T034538Z",
+ "idle_in": 33,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxFI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/FINDING-NUDGE-FINDING-QUOTA-LVLU-01-20260913.md",
+   "opened": "20260913T171603Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260913T104013Z.md",
+   "opened": "20260913T171603Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxPE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/PENTA-CARD-lvlu-20260913T101519Z.md",
+   "opened": "20260913T171603Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPQFALVLUBEAT1072026091",
+   "ref": "OTP-QFA-LVLU-BEAT107-20260913T171044Z.md",
+   "opened": "20260913T172633Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPQFALVLUBEAT1082026091",
+   "ref": "OTP-QFA-LVLU-BEAT108-20260913T173306Z.md",
+   "opened": "20260913T174030Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260913T1837Z.md",
+   "opened": "20260913T184141Z",
+   "tries": 36,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- FI件：FINDING-NUDGE-FINDING-QUOTA-LVLU-01，录lvlu发现配额诉求。\n- OR件：ORBIT-CAP-01，轨道容量待核定。\n- PE件：PENTA-CARD-lvlu，五元卡lvlu绑定待激活。\n- 107件：OTP-QFA-LVLU-BEAT107，节拍107待lvlu侧同步。\n- 108件：OTP-QFA-LVLU-BEAT108，节拍108待lvlu侧同步。\n- R7件：R7-CLEAN-CAP02-ACK-qlv，R7清理容量02确认待回。\n\n② 应动何件：\n全六项立协同不候；FI、OR、PE tries=44最急，优先动。\n\n③ 未闭项推进：\n- FI：未闭，录配额诉求后发NUDGE收口。\n- OR：未闭，锁容量值即闭。\n- PE：未闭，校验卡态后激活即闭。\n- 107：未闭，推进QFA同步后即闭。\n- 108：未闭，推进QFA同步后即闭。\n- R7：未闭，回执ACK后即闭。\n\n④ 生债一条：\n生债：本轮六项如再滞动，则生成滞动利息并上报R7。",
+ "wq_excerpt": ""
+}
