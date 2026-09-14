@@ -1,0 +1,24 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260914T053621Z",
+ "idle_in": 39,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-OTPQFALVLUBEAT1082026091",
+   "ref": "OTP-QFA-LVLU-BEAT108-20260913T173306Z.md",
+   "opened": "20260913T174030Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260913T1837Z.md",
+   "opened": "20260913T184141Z",
+   "tries": 42,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- OTP-QFA-LVLU-BEAT108 令牌验证项已 47 试未闭，lvlu 侧协同与链路确认诉求待录。\n- VCI-lanes/lvlu/inbox R7-CLEAN-CAP02-ACK 项已 42 试未闭，lvlu 收件通道回传与清理确认诉求待录。\n\n② 应动何件（立协同不候）：\n两件均立刻协同：件1 直联 lvlu 排查 OTP-BEAT108 阻塞并同步令牌状态；件2 直联 lvlu-inbox lane 催办 R7 清理终态 ACK，不再空转。\n\n③ 未闭项推进：\n- OI-OTPQFALVLUBEAT1082026091：未闭，下一步协同 lvlu 重置或旁路 BEAT108 验证后强制闭环。\n- OI-vciinboxlaneslvluinboxR7：未闭，下一步限 lvlu inbox lane 当期内回传 CLEAN-CAP02 终态，逾期则升级。\n\n④ 生债一条：\n建规则：凡 lanes/lvlu inbox 项超 40 试未闭，自动触发 lvlu escalation 并冻结同 lane 新入件，防队列拥塞。",
+ "wq_excerpt": ""
+}
