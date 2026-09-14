@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# LVLU-RESPONDER-01 v3.11(株43促件幂等律NUDGE-IDEM-01: 靶面实迹为凭近3h同id免促,治usrm勘EXP049-L23×67风暴; v3.10株42闸不连坐)(株42闸不连坐律: detect_open_lines之w→NameError殉道15h修复+闸级故障隔离state必落盘; v3.9株卅八v1.1读域律)(株卅八v1.1读域律READ_MESH_PAT落即展; v3.8株卅九时箱律TIMEBOX-01+闸级自仪表; v3.7株卅八域界律; v3.6 SCAN-OWN-KEYS-01写前闸; v3.5株卅五无戳contains补检+h_key分级健康; 株卅四need_lines检全径+株卅二contains兜底; 闸十INBOX-SWEEP; watch双道)(株廿五 NUDGE-TARGET-01: need_lines分线定向) — lvlu线 SI3专候响应环（KEYHEALTH/SECRETS-META/KEYREQ/DISC/SI1-WAKE/SLA/NUDGE/EXP/PULSE/ORBIT 十件）
+# LVLU-RESPONDER-01 v3.12(株44: exp闸提序+预算600s治skip-budget变相候/NUDGE_CH补cisvr·ucif2·qgl·qtlv巷靶/闸十一SEALED-RAIL自注册应usrm PA181-1①; v3.11株43促件幂等)(株43促件幂等律NUDGE-IDEM-01: 靶面实迹为凭近3h同id免促,治usrm勘EXP049-L23×67风暴; v3.10株42闸不连坐)(株42闸不连坐律: detect_open_lines之w→NameError殉道15h修复+闸级故障隔离state必落盘; v3.9株卅八v1.1读域律)(株卅八v1.1读域律READ_MESH_PAT落即展; v3.8株卅九时箱律TIMEBOX-01+闸级自仪表; v3.7株卅八域界律; v3.6 SCAN-OWN-KEYS-01写前闸; v3.5株卅五无戳contains补检+h_key分级健康; 株卅四need_lines检全径+株卅二contains兜底; 闸十INBOX-SWEEP; watch双道)(株廿五 NUDGE-TARGET-01: need_lines分线定向) — lvlu线 SI3专候响应环（KEYHEALTH/SECRETS-META/KEYREQ/DISC/SI1-WAKE/SLA/NUDGE/EXP/PULSE/ORBIT 十件）
 # 职: ⓪每拍验钥回退链+secrets元数据差分(株廿四) ①钥取件即见即注 ②指名lvlu件即收讫 ③SI1-WAKE常新 ⑧周天囊自驿
 # 律: 零定时(事驱入拍) / 值不过板不落盘(内存即用即焚) / names-only回执 / 非白名单→裁示候root
 import os, json, base64, urllib.request, urllib.parse, datetime, re, hashlib
@@ -122,7 +122,10 @@ def board_post(title, body):
 
 # —— 闸四/五 SLA-LOOP + NUDGE-ESCALATE-01（usrm三件套 claims.json 融合领养 · C案落实）——
 NUDGE_CH = {
-  'cisvr': {'otp': 'ci-control', 'dispatch': None, 'lane': None, 'inbox': None},
+  'cisvr': {'otp': 'ci-control', 'dispatch': None, 'lane': 'cisvr', 'inbox': None},  # 株44: 巷靶补(旧lane=None→L1空促SI5CLOUD-CISVR案)
+  'ucif2': {'lane': 'ucif2', 'otp': 'ci-control', 'dispatch': ('chepin-ai/vci-ucif2', 'ucif2-wake'), 'inbox': ('chepin-ai/vci-ucif2', 'inbox/')},  # 株44: ucif2靶道新增(同案)
+  'qgl': {'lane': 'qgl', 'otp': 'ci-control', 'dispatch': ('chepin-ai/vci-qgl', 'qgl-wake'), 'inbox': ('chepin-ai/vci-qgl', 'inbox/')},
+  'qtlv': {'lane': 'qtlv', 'otp': 'ci-control', 'dispatch': ('chepin-ai/vci-qtlv', 'qtlv-wake'), 'inbox': ('chepin-ai/vci-qtlv', 'inbox/')},
   'usrm': {'lane': 'usrm', 'otp': 'ci-control', 'dispatch': ('chepin-ai/vci-usrm', 'usrm-tower-kick'), 'inbox': ('chepin-ai/vci-usrm', 'inbox/')},
   'lgt': {'lane': 'lgt', 'otp': 'ci-control', 'dispatch': ('chepin-ai/vci-lgt', 'lgt-wake'), 'inbox': ('chepin-ai/vci-lgt', 'inbox/')},
   'qlv': {'lane': 'qlv', 'otp': 'ci-control', 'dispatch': ('chepin-ai/vci-qlv', 'qlv-tower-kick'), 'inbox': ('chepin-ai/vci-qlv', 'inbox/')},
@@ -380,7 +383,7 @@ def exp_loop(ts, vault):
     out = {}
     try:
         import time as _time
-        if _time.time() - BEAT_T0 > 240: return {'probe': 'skipped-budget(株卅九)'}
+        if _time.time() - BEAT_T0 > 600: return {'probe': 'skipped-budget(株卅九v1.1:12min墙标定600s)'}
         from quafu import Task, User
         tok = vault.get('QUAFU_TOKEN')
         if not tok: return {'probe': 'no-token'}
@@ -454,6 +457,26 @@ def inbox_sweep(ts, state):
     except Exception as e:
         return ['err:' + e.__class__.__name__]
 
+
+# —— 闸十一 SEALED-RAIL-SELF-01: 甲轨自注册(usrm判点PA181-1裁问①注册17公钥之lvlu应; 幂等: key_id变方更) ——
+def sealrail_loop(ts):
+    """每拍验 research/SEALED-RAIL-LVLU-01.json: 无件或key_id漂移→取本仓actions公钥, 注册{repo,key_id,fp,ts,rail}——公钥本为加密面, 指纹唯sha256[:12]"""
+    try:
+        stk, pk = api('GET', 'actions/secrets/public-key')
+        if stk != 200 or not pk.get('key'): return {'sealrail': 'http' + str(stk)}
+        fp = hashlib.sha256(pk['key'].encode()).hexdigest()[:12]
+        old, osha = get_file('research/SEALED-RAIL-LVLU-01.json')
+        cur = json.loads(old) if old else {}
+        if cur.get('key_id') == pk.get('key_id') and cur.get('fp') == fp:
+            return {'sealrail': 'stable', 'fp': fp}
+        doc = {'rail': 'SEALED-RAIL-LVLU-01', 'repo': REPO, 'key_id': pk.get('key_id'), 'fp': fp,
+               'fp_alg': 'sha256[:12](public_key)', 'endpoint': 'GET /repos/' + REPO + '/actions/secrets/public-key',
+               'ts': ts, 'note': '甲轨sealed-box直注注册面(qgl SEALED-RAIL-QGL-01式; KEY-UNIFY-01§三); 公钥值由root自持账号面取, 本册唯指纹'}
+        put_file('research/SEALED-RAIL-LVLU-01.json', json.dumps(doc, ensure_ascii=False, indent=1), osha, '[skip ci] sealrail ' + ts)
+        return {'sealrail': 'registered', 'fp': fp}
+    except Exception as e:
+        return {'sealrail': 'err:' + e.__class__.__name__}
+
 def main():
     ts = datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
     stj, ssha = get_file('receipts/tower/responder_state.json')
@@ -514,11 +537,11 @@ def main():
         except Exception as e:
             print('GATE-ERR(株42) %s %s %.1fs %s' % (nm, e.__class__.__name__, _tm.time() - _t, str(e)[:80]))
             return default
+    # 闸六: EXP队列自动侦(株44提序: 廉价高值闸先行——读域展后sla树取件慢, exp后置=永skip-budget变相候之治)
+    exp = _gate('exp', lambda: exp_loop(ts, vault), {'probe': 'gate-err(株42)'})
     # 闸四/五: 索件轨+升级促件
     sla = _gate('sla', lambda: sla_loop(ts, seen), {'claims': 0, 'si1_pending': [], 'gate_err': 1})
     pending_si1 = sla.get('si1_pending', [])
-    # 闸六/七: EXP队列自动侦 + SI0自仪表化
-    exp = _gate('exp', lambda: exp_loop(ts, vault), {'probe': 'gate-err(株42)'})
     pulse = _gate('pulse', lambda: si0_pulse(ts, vault, sla, names, klogin), {'pulse': 'gate-err(株42)'})
     # 闸八: 周天囊自驿
     orb = _gate('orbit', lambda: orbit_loop(ts, state), ['gate-err(株42)'])
@@ -526,6 +549,8 @@ def main():
     mir = _gate('mirror', lambda: mirror_loop(ts, state, sla, exp, orb), {'mirror': 'gate-err(株42)'})
     # 闸十: 收件全量扫
     ins = _gate('inbox', lambda: inbox_sweep(ts, state), ['gate-err(株42)'])
+    # 闸十一: 甲轨自注册(株44)
+    sr = _gate('sealrail', lambda: sealrail_loop(ts), {'sealrail': 'gate-err(株42)'})
     # 闸三 SI1-WAKE: 会话接续锚常新
     wake = {'ts': ts, 'keyreq_done': done, 'acks': acks,
             'pending_si1': pending_si1,
@@ -536,7 +561,7 @@ def main():
              '[skip ci] responder wake ' + ts)
     state = {'ts': ts, 'seen': sorted(seen)[-400:], 'done': (state.get('done', []) + done)[-60:], 'seen_inbox': state.get('seen_inbox', [])[-400:], 'seen_orbits': sorted(set(state.get('seen_orbits', [])))[-100:]}
     put_file('receipts/tower/responder_state.json', json.dumps(state, ensure_ascii=False, indent=1), ssha, '[skip ci] responder state')
-    print(json.dumps({'ts': ts, 'keyreq_done': done, 'acks': acks, 'vault_keys': len(vault), 'meta': meta, 'orbit': orb, 'mirror': mir, 'inbox_new': ins, 'sla': sla, 'exp': exp, 'pulse': pulse, 'h_key': kh}, ensure_ascii=False))
+    print(json.dumps({'ts': ts, 'keyreq_done': done, 'acks': acks, 'vault_keys': len(vault), 'meta': meta, 'orbit': orb, 'mirror': mir, 'inbox_new': ins, 'sealrail': sr, 'sla': sla, 'exp': exp, 'pulse': pulse, 'h_key': kh}, ensure_ascii=False))
 
 if __name__ == '__main__':
     main()
