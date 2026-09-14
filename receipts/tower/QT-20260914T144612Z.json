@@ -1,0 +1,24 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260914T144612Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20260914T122547Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-KEY69-LVLU-20260914T121843Z.md",
+   "opened": "20260914T122547Z",
+   "tries": 10,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空；未闭项一「ANS-KEY-AUDIT-69-LVLU-01」审计应答待闭；未闭项二「DEMAND-KEY69-LVLU」涉lvlu诉求件待闭，已录。\n\n② 应动何件：两线并动，不候——AN件即审即签即封；DE件即析即响即责。\n\n③ 未闭项推进：\n- OI-vciinboxlaneslvluinboxAN：未闭；下一步：终审计验、落钥签封。\n- OI-vciinboxlaneslvluinboxDE：未闭；下一步：拆诉点、出律吕回执或升单。\n\n④ 生债：审计与诉求双线并压，须于下钟鸣前各回显一次状态，免tries累滞。",
+ "wq_excerpt": ""
+}
