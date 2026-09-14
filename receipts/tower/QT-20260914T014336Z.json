@@ -1,0 +1,87 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260914T014336Z",
+ "idle_in": 25,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RESP-CAP-STAMP-LGT-01-20260913T013604Z.md",
+   "opened": "20260913T014802Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvluEVALEXCITE01R2202609",
+   "ref": "lvlu-EVAL-EXCITE-01-R2-五环互评-20260910T232733Z.md",
+   "opened": "20260913T020018Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeADJUD01L1720260",
+   "ref": "lvlu-nudge-ADJUD-01-L17-20260911T232541Z.md",
+   "opened": "20260913T021307Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeADJUD01L1820260",
+   "ref": "lvlu-nudge-ADJUD-01-L18-20260912T010215Z.md",
+   "opened": "20260913T022525Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-CIRCLE-66-LVLU-20260913T024210Z.md",
+   "opened": "20260913T025012Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxFI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/FINDING-NUDGE-FINDING-QUOTA-LVLU-01-20260913.md",
+   "opened": "20260913T171603Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260913T104013Z.md",
+   "opened": "20260913T171603Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxPE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/PENTA-CARD-lvlu-20260913T101519Z.md",
+   "opened": "20260913T171603Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPQFALVLUBEAT1072026091",
+   "ref": "OTP-QFA-LVLU-BEAT107-20260913T171044Z.md",
+   "opened": "20260913T172633Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPQFALVLUBEAT1082026091",
+   "ref": "OTP-QFA-LVLU-BEAT108-20260913T173306Z.md",
+   "opened": "20260913T174030Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260913T1837Z.md",
+   "opened": "20260913T184141Z",
+   "tries": 28,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\nRE件：RESP-CAP-STAMP-LGT印戳待lvlu回执。\nEVAL件：五环互评R2待lvlu评估响应。\nL17件：nudge-ADJUD-L17轻推裁决待决。\nL18件：nudge-ADJUD-L18轻推裁决待决。\nDE件：DEMAND-CIRCLE-66需求圈待lvlu审阅。\nFI件：FINDING-QUOTA配额发现待lvlu确认。\nOR件：ORBIT-CAP轨道能力待lvlu激活。\nPE件：PENTA-CARD五环卡片待lvlu解析。\n\n② 应动何件\n八件全动，立协同不候：vci通道五件先行拉通，律吕内核三件并联裁决。\n\n③ 未闭项推进\nRE：未闭，下一步：提取印戳回执。\nEVAL：未闭，下一步：提交五环互评R2响应。\nL17：未闭，下一步：出具ADJUD-L17裁决。\nL18：未闭，下一步：出具ADJUD-L18裁决。\nDE：未闭，下一步：审阅CIRCLE-66并签发。\nFI：未闭，下一步：确认QUOTA并转执行。\nOR：未闭，下一步：验证ORBIT-CAP并启动匹配。\nPE：未闭，下一步：解析PENTA-CARD并回写状态。\n\n④ 生债一条\n生响应迟滞债：八件均超36试未决，本轮须并联一次清偿。",
+ "wq_excerpt": ""
+}
