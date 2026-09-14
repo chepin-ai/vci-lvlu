@@ -1,0 +1,73 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260914T023249Z",
+ "idle_in": 28,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-lvlunudgeADJUD01L1720260",
+   "ref": "lvlu-nudge-ADJUD-01-L17-20260911T232541Z.md",
+   "opened": "20260913T021307Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-lvlunudgeADJUD01L1820260",
+   "ref": "lvlu-nudge-ADJUD-01-L18-20260912T010215Z.md",
+   "opened": "20260913T022525Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-CIRCLE-66-LVLU-20260913T024210Z.md",
+   "opened": "20260913T025012Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxFI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/FINDING-NUDGE-FINDING-QUOTA-LVLU-01-20260913.md",
+   "opened": "20260913T171603Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260913T104013Z.md",
+   "opened": "20260913T171603Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxPE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/PENTA-CARD-lvlu-20260913T101519Z.md",
+   "opened": "20260913T171603Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPQFALVLUBEAT1072026091",
+   "ref": "OTP-QFA-LVLU-BEAT107-20260913T171044Z.md",
+   "opened": "20260913T172633Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPQFALVLUBEAT1082026091",
+   "ref": "OTP-QFA-LVLU-BEAT108-20260913T173306Z.md",
+   "opened": "20260913T174030Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260913T1837Z.md",
+   "opened": "20260913T184141Z",
+   "tries": 31,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- L17 lvlu 裁决件（ADJUD-01-L17，涉 lvlu 诉求）。\n- L18 lvlu 裁决件（ADJUD-01-L18，涉 lvlu 诉求）。\n- 66 号需求圈 lvlu 件（DEMAND-CIRCLE-66，涉 lvlu 诉求）。\n- lvlu 发现-轻推-配额件（FINDING-QUOTA，涉 lvlu 诉求）。\n- lvlu 轨道容量件（ORBIT-CAP-01，涉 lvlu 诉求）。\n- lvlu 五卡件（PENTA-CARD，涉 lvlu 诉求）。\n- lvlu 心跳 107（BEAT107）。\n- lvlu 心跳 108（BEAT108）。\n\n② 应动何件\n候件空；立协八项未闭，首协 ADJUD-L17/L18（tries 47/46 最高），并协 ORBIT-CAP 与 DEMAND-CIRCLE-66。\n\n③ 未闭项推进\n- ADJUD-L17：未闭，收敛裁决阈值并出清。\n- ADJUD-L18：未闭，完成裁决回环并落戳。\n- DEMAND-CIRCLE-66：未闭，核验闭环条件。\n- FINDING-QUOTA：未闭，释放配额并回写 lanes。\n- ORBIT-CAP-01：未闭，校验余量决容/限。\n- PENTA-CARD：未闭，执行五维对位写入。\n- BEAT107：未闭，落心跳确认。\n- BEAT108：未闭，落心跳确认。\n\n④ 生债一条\n生债：若本节拍 L17/L18 双裁决仍未收敛，lvlu SI2 积一层回退债。",
+ "wq_excerpt": ""
+}
