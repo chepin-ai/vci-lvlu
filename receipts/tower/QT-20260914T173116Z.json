@@ -1,0 +1,72 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260914T173116Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-DEBT-72-LVLU-01.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-debt-72-lvlu-01.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-keyunify-lvlu-01.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20260914T122547Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-KEY69-LVLU-20260914T121843Z.md",
+   "opened": "20260914T122547Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxde",
+   "ref": "vci-inbox:lanes/lvlu/inbox/debt-72-lvlu-01.md",
+   "opened": "20260914T145650Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-ANSKEYAUDIT69LVLU01md",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20260914T163003Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-CLAIMS-qtlv-.md",
+   "opened": "20260914T163517Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxke",
+   "ref": "vci-inbox:lanes/lvlu/inbox/keyunify-lvlu-01.md",
+   "opened": "20260914T165546Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-debt-72-lvlu-01.md",
+   "opened": "20260914T173116Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- ANS-DEBT-72-LVLU-01.md：债务72应答方案，涉lvlu债务处置诉求。\n- TASK-debt-72-lvlu-01.md：债务72执行任务，涉lvlu执行落地诉求。\n- TASK-keyunify-lvlu-01.md：键统一治理任务，涉lvlu键空间归并诉求。\n\n② 应动何件（立协同不候）\n立协 TASK-debt-72-lvlu-01.md、TASK-keyunify-lvlu-01.md；ANS-DEBT-72 作为前置方案挂接债务72线。\n\n③ 未闭项推进\n- ANS-KEY-AUDIT-69（19次）：未闭，下一步：出KEY69终审结论。\n- DEMAND-KEY69（19次）：未闭，下一步：给需求响应或拒件回执。\n- debt-72（9次）：未闭，下一步：承接新TASK闭环执行。\n- ANS-KEY-AUDIT-69副本（5次）：未闭，下一步：与19次项合并去重。\n- NUDGE-CLAIMS（4次）：未闭，下一步：确认CLAIMS分配回执。\n- keyunify（2次）：未闭，下一步：按TASK统键落地。\n- TASK-debt-72（1次）：未闭，下一步：按②立协启动。\n\n④ 生债一条\n生债：债务72、键统一、KEY69审计三线并发，需一次归口对齐会，防裂口与重复劳动。",
+ "wq_excerpt": ""
+}
