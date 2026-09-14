@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# LVLU-RESPONDER-01 v3.8(株卅九时箱律TIMEBOX-01+闸级自仪表; v3.7株卅八域界律; v3.6 SCAN-OWN-KEYS-01写前闸; v3.5株卅五无戳contains补检+h_key分级健康; 株卅四need_lines检全径+株卅二contains兜底; 闸十INBOX-SWEEP; watch双道)(株廿五 NUDGE-TARGET-01: need_lines分线定向) — lvlu线 SI3专候响应环（KEYHEALTH/SECRETS-META/KEYREQ/DISC/SI1-WAKE/SLA/NUDGE/EXP/PULSE/ORBIT 十件）
+# LVLU-RESPONDER-01 v3.9(株卅八v1.1读域律READ_MESH_PAT落即展; v3.8株卅九时箱律TIMEBOX-01+闸级自仪表; v3.7株卅八域界律; v3.6 SCAN-OWN-KEYS-01写前闸; v3.5株卅五无戳contains补检+h_key分级健康; 株卅四need_lines检全径+株卅二contains兜底; 闸十INBOX-SWEEP; watch双道)(株廿五 NUDGE-TARGET-01: need_lines分线定向) — lvlu线 SI3专候响应环（KEYHEALTH/SECRETS-META/KEYREQ/DISC/SI1-WAKE/SLA/NUDGE/EXP/PULSE/ORBIT 十件）
 # 职: ⓪每拍验钥回退链+secrets元数据差分(株廿四) ①钥取件即见即注 ②指名lvlu件即收讫 ③SI1-WAKE常新 ⑧周天囊自驿
 # 律: 零定时(事驱入拍) / 值不过板不落盘(内存即用即焚) / names-only回执 / 非白名单→裁示候root
 import os, json, base64, urllib.request, urllib.parse, datetime, re, hashlib
@@ -49,10 +49,12 @@ LINE_REPOS0 = {'lgt':['vci-lgt','lgt-line'],'vinf':['vci-vinf','vinf-market-kern
   'ucif2':['vci-ucif2','ucif2-formalization-kernel'],'qfa':['vci-qfa'],'qlv':['vci-qlv'],'lvlu':['vci-lvlu']}
 LINE_REPOS = {k: ['chepin-ai/' + r for r in v] for k, v in LINE_REPOS0.items()}
 
-def api(method, path, data=None, repo=None):
+RTOK = os.environ.get('READ_MESH_PAT')  # 株卅八v1.1 读域律: 只读PAT(全vci-*系R)落Secrets即读域自展; 未设=三仓域旧行为
+def api(method, path, data=None, repo=None, read_alt=False):
     url = f'https://api.github.com/repos/{repo or REPO}/{path}'
+    tok = (RTOK or TOK) if read_alt else TOK
     req = urllib.request.Request(url, method=method,
-        headers={'Authorization': f'Bearer {TOK}', 'Accept': 'application/vnd.github+json', 'User-Agent': 'lvlu-responder'})
+        headers={'Authorization': f'Bearer {tok}', 'Accept': 'application/vnd.github+json', 'User-Agent': 'lvlu-responder'})
     if data is not None: req.data = json.dumps(data).encode()
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
@@ -140,9 +142,9 @@ def detect_claim(cl, trees_cache):
         repo = w.get('repo', 'ci-inbox'); pre = w.get('prefix', '')
         if repo == 'si1': continue
         if repo not in trees_cache:
-            st, tr = api('GET', 'git/trees/HEAD?recursive=1', repo='chepin-ai/' + repo)
+            st, tr = api('GET', 'git/trees/HEAD?recursive=1', repo='chepin-ai/' + repo, read_alt=not in_domain('chepin-ai/' + repo))
             if st in (403, 404) and not in_domain('chepin-ai/' + repo):
-                # 株卅八 域界律: 域外仓403/404=域界(FINE_OWN_PAT三仓域), 日志不警不默零
+                # 株卅八 域界律: 域外仓403/404=域界(FINE_OWN_PAT三仓写域; v1.1 READ_MESH_PAT设则读域已展仍404=真亡→由读钥主自警), 日志不警不默零
                 if not trees_cache.get('DOMOUT:' + repo):
                     trees_cache['DOMOUT:' + repo] = True
                     print('DOMAIN-01: 域外不侦 ' + repo + ' (株卅八)')
@@ -169,7 +171,7 @@ def detect_claim(cl, trees_cache):
                     if not contw0: continue
                     ck = 'MTIME:' + repo + ':' + p
                     if ck not in trees_cache:
-                        stc, cm = api('GET', 'commits?path=' + urllib.parse.quote(p) + '&per_page=1', repo='chepin-ai/' + repo)
+                        stc, cm = api('GET', 'commits?path=' + urllib.parse.quote(p) + '&per_page=1', repo='chepin-ai/' + repo, read_alt=not in_domain('chepin-ai/' + repo))
                         trees_cache[ck] = cm[0]['commit']['committer']['date'] if (stc == 200 and cm) else ''
                     cmt = trees_cache[ck].replace('-', '').replace(':', '')
                     if not cmt or cmt <= since_ts: continue
