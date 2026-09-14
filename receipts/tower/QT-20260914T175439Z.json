@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260914T175439Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20260914T122547Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-KEY69-LVLU-20260914T121843Z.md",
+   "opened": "20260914T122547Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxde",
+   "ref": "vci-inbox:lanes/lvlu/inbox/debt-72-lvlu-01.md",
+   "opened": "20260914T145650Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-ANSKEYAUDIT69LVLU01md",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20260914T163003Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-CLAIMS-qtlv-.md",
+   "opened": "20260914T163517Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxke",
+   "ref": "vci-inbox:lanes/lvlu/inbox/keyunify-lvlu-01.md",
+   "opened": "20260914T165546Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-debt-72-lvlu-01.md",
+   "opened": "20260914T173116Z",
+   "tries": 3,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- ANS-KEY-AUDIT-69-LVLU：lvlu线密钥审计69号应答，审计诉求待回。\n- DEMAND-KEY69-LVLU：lvlu线密钥69号提需/诉求，协同待启。\n- debt-72-lvlu-01：lvlu线72号债务条目，待结清或核销。\n- ANS-KEY-AUDIT-69-LVLU-01.md：审计应答本体文件，待归档锁定。\n- NUDGE-CLAIMS-qtlv：轻推索赔/权益催促件，待回向确认到账。\n- keyunify-lvlu-01：lvlu线密钥归一映射，待主键对齐。\n- TASK-debt-72-lvlu-01：72号债务执行任务工单，待拆解下发。\n\n②应动何件\n立协同不候：应动OI-AN与OI-DE两件（tries双21，已达临界），立即联动审计应答与KEY69诉求双线，不候主账号线唤醒。\n\n③未闭项推进\n- OI…AN：未闭，下一步输出审计签报并回写vci-inbox闭环。\n- OI…DE：未闭，下一步转主账号线即时会签并回执。\n- OI…de：未闭，下一步触发debt-72清偿流或生成核销单。\n- OI…md：未闭，下一步文件锁定并入版本库留痕。\n- OI…NU：未闭，下一步回向qt/lv线确认权益到账状态。\n- OI…ke：未闭，下一步执行主密钥统一映射并废除旧索引。\n- OI…TA：未闭，下一步拆解为子工单并指派执行体。\n\n④生债一条\n生债「高重试双件积压清理」一条：限24h内将AN/DE的tries降至阈值下，否则升频为SI2强制接管。",
+ "wq_excerpt": ""
+}
