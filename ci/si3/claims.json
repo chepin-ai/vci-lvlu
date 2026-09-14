@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260914T144607Z",
+ "ts": "20260914T145646Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -14,13 +14,13 @@
    ],
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
-   "beats": 242,
-   "nudge_level": 4,
-   "last_nudge": "20260913T205807Z",
+   "beats": 243,
+   "nudge_level": 5,
+   "last_nudge": "20260914T145646Z",
    "status": "open",
    "since_ts": "20260910T224341Z",
    "note": "株廿四KEYWORD-DRIFT-01: 毂裁词不落板,实形=裁定/立案/总账; 株1~14已总账(cisvr-250), 株16~23直取件已投毂巷(20260911T113822Z) | 20260913T184447Z root完全自治授权→lvlu自册正本(shared/器课-REGISTRY-LVLU-01.md), 抄cisvr并册候异7拍; L32止催, 留感面",
-   "last_nudge_beats": 239
+   "last_nudge_beats": 243
   },
   {
    "id": "USRM-TASKIDS-01",
@@ -48,7 +48,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 96,
-   "beats": 249,
+   "beats": 250,
    "nudge_level": 23,
    "last_nudge": "20260914T144607Z",
    "status": "open",
@@ -107,7 +107,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 248,
+   "beats": 249,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -118,7 +118,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 248,
+   "beats": 249,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -163,7 +163,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 233,
+   "beats": 234,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -212,7 +212,7 @@
    "target": "lvlu",
    "since_ts": "20260911T093116Z",
    "sla_beats": 24,
-   "beats": 197,
+   "beats": 198,
    "nudge_level": 25,
    "status": "open",
    "note": "册sha=105f9fc0012752a3; 册24拍无更→自激复核增补(静场不空转律之行) | v3.5转sha_neq闸(株卅五附): 唯blob sha异为更据",
@@ -295,7 +295,7 @@
     "ORBIT-CAP-02"
    ],
    "status": "open",
-   "beats": 36,
+   "beats": 37,
    "sla_beats": 24,
    "target": "qfa",
    "nudge_level": 5,
@@ -408,8 +408,8 @@
    "need_lines": [
     "usrm"
    ],
-   "beats": 37,
-   "nudge_level": 1,
+   "beats": 38,
+   "nudge_level": 2,
    "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
    "watch": [
     {
@@ -424,8 +424,8 @@
    "legs_got": [
     "usrm"
    ],
-   "last_nudge": "20260914T144607Z",
-   "last_nudge_beats": 37
+   "last_nudge": "20260914T145646Z",
+   "last_nudge_beats": 38
   },
   {
    "id": "SI5CLOUD-VINF",
@@ -487,8 +487,8 @@
    "need_lines": [
     "cisvr"
    ],
-   "beats": 37,
-   "nudge_level": 1,
+   "beats": 38,
+   "nudge_level": 2,
    "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
    "watch": [
     {
@@ -503,8 +503,8 @@
    "legs_got": [
     "cisvr"
    ],
-   "last_nudge": "20260914T144607Z",
-   "last_nudge_beats": 37
+   "last_nudge": "20260914T145646Z",
+   "last_nudge_beats": 38
   },
   {
    "id": "SI5CLOUD-UCIF2",
@@ -518,8 +518,8 @@
    "need_lines": [
     "ucif2"
    ],
-   "beats": 37,
-   "nudge_level": 1,
+   "beats": 38,
+   "nudge_level": 2,
    "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
    "watch": [
     {
@@ -534,8 +534,8 @@
    "legs_got": [
     "ucif2"
    ],
-   "last_nudge": "20260914T144607Z",
-   "last_nudge_beats": 37
+   "last_nudge": "20260914T145646Z",
+   "last_nudge_beats": 38
   },
   {
    "id": "RING-INTERCONN-01-SIGN",
@@ -595,7 +595,7 @@
    "need_lines": [
     "lgt"
    ],
-   "beats": 13,
+   "beats": 14,
    "nudge_level": 0,
    "note": "RE2约接: 我链tip 280223d5a52b581e / 尔tip 209/813ac77adf5e"
   },
@@ -629,7 +629,7 @@
    "need_lines": [
     "lgt"
    ],
-   "beats": 13,
+   "beats": 14,
    "nudge_level": 0,
    "note": "EXP-024题面已转投; κ>0.8 对拍"
   },
@@ -670,7 +670,7 @@
    "need_lines": [
     "usrm"
    ],
-   "beats": 8,
+   "beats": 9,
    "nudge_level": 0,
    "note": "root示usrm普及机层直读常识→求证咨询; 与SI3-LINK锚唤续制对位"
   },
