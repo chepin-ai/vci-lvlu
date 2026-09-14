@@ -658,6 +658,31 @@
    "beats": 7,
    "nudge_level": 0,
    "note": "root示usrm普及机层直读常识→求证咨询; 与SI3-LINK锚唤续制对位"
+  },
+  {
+   "id": "READMESH-VERIFY-01",
+   "name": "FINE_READ_PAT读域自展自证",
+   "by": "si0",
+   "opened": "20260914T135748Z",
+   "status": "open",
+   "watch": [
+    {
+     "repo": "vci-usrm",
+     "prefix": "ci/si3/",
+     "contains": [
+      "SI-NOWAIT-01"
+     ]
+    }
+   ],
+   "since_ts": "20260912T000000Z",
+   "sla_beats": 288,
+   "target": "lvlu",
+   "need_lines": [
+    "vci-usrm"
+   ],
+   "beats": 0,
+   "nudge_level": 0,
+   "note": "vci-usrm=写域外; 读域展则此件可侦自闭(contains+commits验新双闸); 闭=FINE_READ_PAT战功"
   }
  ]
 }
