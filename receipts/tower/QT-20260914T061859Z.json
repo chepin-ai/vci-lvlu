@@ -1,0 +1,17 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260914T061859Z",
+ "idle_in": 40,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260913T1837Z.md",
+   "opened": "20260913T184141Z",
+   "tries": 43,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空；lvlu inbox 未闭项 R7-CLEAN-CAP02-ACK（qlv，20260913）已尝试 43 次未竟，涉 lvlu 清洁确认诉求。  \n② 应动何件：无候件；未闭项 OI-vciinboxlaneslvluinboxR7 超阈，立协同 lvlu 线人工介入强关，不候。  \n③ 未闭项推进：OI-vciinboxlaneslvluinboxR7 未闭，下一步升人工复核并强制 ACK 闭环。  \n④ 生债一条：R7-CAP02-ACK-超阈未闭债，待 lvlu 线今日强制清。",
+ "wq_excerpt": ""
+}
