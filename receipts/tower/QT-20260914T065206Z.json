@@ -1,0 +1,17 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260914T065206Z",
+ "idle_in": 43,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260913T1837Z.md",
+   "opened": "20260913T184141Z",
+   "tries": 46,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：无候件；未闭项系lvlu通道R7-CLEAN-CAP02-ACK件，已46试未闭。  \n②应动何件：候件空，不立动。  \n③未闭项推进：OI-vciinboxlaneslvluinboxR7仍open，下一步解析ref实体或转人工。  \n④生债：lvlu R7清账ACK滞留46轮未闭，链路卡滞。",
+ "wq_excerpt": ""
+}
