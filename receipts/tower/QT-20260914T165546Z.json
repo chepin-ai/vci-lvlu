@@ -1,0 +1,57 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260914T165546Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/keyunify-lvlu-01.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20260914T122547Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-KEY69-LVLU-20260914T121843Z.md",
+   "opened": "20260914T122547Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxde",
+   "ref": "vci-inbox:lanes/lvlu/inbox/debt-72-lvlu-01.md",
+   "opened": "20260914T145650Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-ANSKEYAUDIT69LVLU01md",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20260914T163003Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-CLAIMS-qtlv-.md",
+   "opened": "20260914T163517Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxke",
+   "ref": "vci-inbox:lanes/lvlu/inbox/keyunify-lvlu-01.md",
+   "opened": "20260914T165546Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n候件：keyunify-lvlu-01.md 新入线，涉 lvlu 线密钥统一映射诉求。  \nOI-AN：ANS-KEY-AUDIT-69-LVLU-01.md 悬置 18 次，待 KEY69 审计闭环。  \nOI-DE：DEMAND-KEY69-LVLU-20260914T121843Z.md 悬置 18 次，待 lvlu 诉求处置。  \nOI-de：debt-72-lvlu-01.md 尝试 8 次，待债务清结。  \nOI-ANS：ANS-KEY-AUDIT-69-LVLU-01.md 二次实例尝试 4 次，待与 AN 并案去重。  \nOI-NU：NUDGE-CLAIMS-qtlv-.md 尝试 3 次，待回应 qtlv 索赔催办。  \nOI-ke：keyunify-lvlu-01.md 首触 1 次，待启动统一映射。\n\n② 应动何件（立协同不候）  \n立动 OI-ke/keyunify-lvlu-01.md，启 SI2 协同完成 lvlu 线密钥统一映射，不候。\n\n③ 未闭项推进  \n- OI-AN：未闭，下一步并案出具 KEY69 审计结论。  \n- OI-DE：未闭，下一步核毕 KEY69 诉求并给处置意见。  \n- OI-de：未闭，下一步结清 debt-72。  \n- OI-ANS：未闭，下一步与 AN 去重合并。  \n- OI-NU：未闭，下一步答复 qtlv 催办。  \n- OI-ke：未闭，下一步本周期内完成映射闭件。\n\n④ 生债一条  \n生债：若今日未闭 KEY69 审计（OI-AN/OI-ANS）与 debt-72，则欠 lvlu 线一次根因说明与加速处置承诺。",
+ "wq_excerpt": ""
+}
