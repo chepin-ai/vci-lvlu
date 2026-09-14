@@ -1,0 +1,24 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260914T125750Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20260914T122547Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-KEY69-LVLU-20260914T121843Z.md",
+   "opened": "20260914T122547Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件空，无新至。\n- 未闭项一：OI-AN（ANS-KEY-AUDIT-69）审计应答，四试未闭。\n- 未闭项二：OI-DE（DEMAND-KEY69）lvlu 诉求，四试未闭。\n\n② 应动何件：\n- 两单皆滞满四试，立协同 OI-AN 与 OI-DE，不候。\n\n③ 未闭项推进：\n- OI-AN：未闭，下一步提审审计关键应答并升级人工复核。\n- OI-DE：未闭，下一步触发 lvlu 诉求专项闭环。\n\n④ 生债一条：\n- 双单四试未落，债：协同带宽占用 +1。",
+ "wq_excerpt": ""
+}
