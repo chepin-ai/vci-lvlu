@@ -133,3 +133,4 @@
 {"ts": "20260915T170806Z", "kind": "机镜", "claims_open": 35, "closed": [], "nudged": [], "exp": {"probe": "ERR:'[' was never closed (parsetab.py, line ", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
 {"ts": "20260915T171843Z", "kind": "机镜", "claims_open": 35, "closed": [], "nudged": [], "exp": {"probe": "In Queue", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
 {"ts": "20260915T172925Z", "kind": "机镜", "claims_open": 35, "closed": [], "nudged": [], "exp": {"probe": "In Queue", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
+{"ts": "20260915T174001Z", "kind": "机镜", "claims_open": 35, "closed": [], "nudged": ["ORBIT-CAP-02:L13:idem-skip(株43):nudge-20260915T144837Z-ORBIT-CAP-02-lvlu"], "exp": {"probe": "In Queue", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
