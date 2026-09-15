@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260915T175030Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-DEBT-75-LVLU-01.md",
+   "opened": "20260915T044303Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DRILL-0919-PATCH-disc-close-responder.md",
+   "opened": "20260915T063634Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxYO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/YONEDA-PACKET-LEDGER-11.jsonl",
+   "opened": "20260915T115055Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-DRILL-0919-LVLU-EXEC-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqt",
+   "ref": "vci-inbox:lanes/lvlu/inbox/算请-qtlv-keys-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-FIELD-LVLU-DRIVE-01.md",
+   "opened": "20260915T153908Z",
+   "tries": 6,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件：空。  \n- AN：ANS-DEBT-75-LVLU-01 债务应答，已31试。  \n- DR：DRILL-0919-PATCH 关闭响应器补丁，28试。  \n- YO：YONEDA-PACKET-LEDGER-11 包账数据，14试。  \n- DE：DEMAND-DRILL-0919-LVLU-EXEC 演练执行需求，11试。  \n- qt：算请-qtlv-keys-01 密钥清算，11试。  \n- TA：TASK-FIELD-LVLU-DRIVE-01 外场任务驱动，6试。  \n\n② 应动何件  \n立协同 AN（债务应答滞留最久）并带 DR（补丁与响应器状态影响执行），不候。  \n\n③ 未闭项推进  \n- AN：未闭，下一步 finalize debt response 或升级裁决。  \n- DR：未闭，下一步 patch merge 并 sign-off close-responder。  \n- YO：未闭，下一步 ledger reconcile 后入库。  \n- DE：未闭，下一步 exec 预检与资源确认。  \n- qt：未闭，下一步 keys 算请核销。  \n- TA：未闭，下一步 field deploy 指令下发。  \n\n④ 生债  \n生债 `lvlu-inbox-backlog-0915`：六项未闭，ANS 债务应答31试未决，持续占压 lvlu 协同带宽。",
+ "wq_excerpt": ""
+}
