@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260915T184516Z",
+ "idle_in": 4,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-DEBT-75-LVLU-01.md",
+   "opened": "20260915T044303Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DRILL-0919-PATCH-disc-close-responder.md",
+   "opened": "20260915T063634Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxYO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/YONEDA-PACKET-LEDGER-11.jsonl",
+   "opened": "20260915T115055Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-DRILL-0919-LVLU-EXEC-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqt",
+   "ref": "vci-inbox:lanes/lvlu/inbox/算请-qtlv-keys-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-FIELD-LVLU-DRIVE-01.md",
+   "opened": "20260915T153908Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- ANS-DEBT-75-LVLU-01.md：lvlu债应件，33轮未落。  \n- DRILL-0919-PATCH-disc-close-responder.md：0919演练patch关响应器，30轮未合。  \n- YONEDA-PACKET-LEDGER-11.jsonl：Yoneda包账，16轮未清。  \n- DEMAND-DRILL-0919-LVLU-EXEC-01.md：0919演练lvlu执行需求，13轮未动。  \n- 算请-qtlv-keys-01.md：qtlv密钥算请，13轮未核。  \n- TASK-FIELD-LVLU-DRIVE-01.md：lvlu任务场驱动，8轮未推。  \n\n② 应动何件（立协同不候）  \n应动 AN（lvlu债应）与 DR（patch关响应），并带 DE（lvlu执行）、TA（lvlu驱动）同步推进。  \n\n③ 未闭项推进  \n- AN：未闭，核债并出具应项。  \n- DR：未闭，合拢patch并关停响应器。  \n- YO：未闭，ledger对账归档。  \n- DE：未闭，下发执行指令。  \n- qt：未闭，验key后批算。  \n- TA：未闭，同步场驱动参数。  \n\n④ 生债一条  \nAN、DR双件积压逾30轮，生响应迟滞债一条。",
+ "wq_excerpt": ""
+}
