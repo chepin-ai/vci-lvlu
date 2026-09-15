@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260915T003216Z",
+ "ts": "20260915T004449Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -14,7 +14,7 @@
    ],
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
-   "beats": 270,
+   "beats": 271,
    "nudge_level": 7,
    "last_nudge": "20260914T233828Z",
    "status": "open",
@@ -48,7 +48,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 96,
-   "beats": 277,
+   "beats": 278,
    "nudge_level": 25,
    "last_nudge": "20260914T225451Z",
    "status": "open",
@@ -107,7 +107,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 276,
+   "beats": 277,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -118,7 +118,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 276,
+   "beats": 277,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -163,7 +163,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 261,
+   "beats": 262,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -212,7 +212,7 @@
    "target": "lvlu",
    "since_ts": "20260911T093116Z",
    "sla_beats": 24,
-   "beats": 225,
+   "beats": 226,
    "nudge_level": 27,
    "status": "open",
    "note": "册sha=105f9fc0012752a3; 册24拍无更→自激复核增补(静场不空转律之行) | v3.5转sha_neq闸(株卅五附): 唯blob sha异为更据",
@@ -295,12 +295,12 @@
     "ORBIT-CAP-02"
    ],
    "status": "open",
-   "beats": 64,
+   "beats": 65,
    "sla_beats": 24,
    "target": "qfa",
    "nudge_level": 7,
    "last_nudge": "20260914T220008Z",
-   "last_nudge_beats": 57,
+   "last_nudge_beats": 65,
    "evidence": "ORBIT-CAP-02-20260912T234128Z.md",
    "note": "囊今在qgl站(qfa臂185152Z越vinf断站25h, 株廿八R3+打通令); qfa→qgl一请:L类三钥贺+指纹册互验echo; 链式在道"
   },
@@ -520,7 +520,7 @@
    "need_lines": [
     "ucif2"
    ],
-   "beats": 65,
+   "beats": 66,
    "nudge_level": 5,
    "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
    "watch": [
@@ -597,7 +597,7 @@
    "need_lines": [
     "lgt"
    ],
-   "beats": 41,
+   "beats": 42,
    "nudge_level": 0,
    "note": "RE2约接: 我链tip 280223d5a52b581e / 尔tip 209/813ac77adf5e"
   },
@@ -631,7 +631,7 @@
    "need_lines": [
     "lgt"
    ],
-   "beats": 41,
+   "beats": 42,
    "nudge_level": 0,
    "note": "EXP-024题面已转投; κ>0.8 对拍"
   },
@@ -777,7 +777,7 @@
    "sla_beats": 48,
    "target": "cisvr",
    "need_lines": null,
-   "beats": 25,
+   "beats": 26,
    "nudge_level": 0,
    "note": "T5=qgl: R1(qgl双钥)候root批窗; R4首例实证——root亲发FINE_OWN/READ_PAT_USRM落地(STD§二采纳, 甲案成例); 0919死线"
   },
@@ -881,7 +881,7 @@
     "lgt",
     "vinf"
    ],
-   "beats": 16,
+   "beats": 17,
    "nudge_level": 3,
    "note": "现票: 可2(lvlu/qgl)+usrm判1835Z已投待引擎重放; quorum5 deadline6拍(SLA-E事件锚); 达即v1.1汇判刊行",
    "legs_got": [
