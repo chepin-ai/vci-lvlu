@@ -1,0 +1,8 @@
+{
+ "v": "SESSDELIV-SEALED-01",
+ "alg": "RSA-OAEP-SHA256",
+ "pubkey_fp": "eaf972ab8cd2",
+ "ts": "20260915T033544Z",
+ "b64": "cKUSRja9vmlgoJ3tO44YkEzToIkKx5XaZwgthWLrYrBikLH/LajwEyUAxic3uHUh2YSGfDQ1c16n4EXnxf/oeRRh91Z9WbCmyjkEyUvAazYHOttoOd3KsBfLHAnpqDjrFdTRBrbc3m5dRbILaPyPBKIhseDCP8yegQ0fjUKO2ihb2oEu7hAW483i32KmCep9wTjEBL1C8I87llp1RVhz/NqCP/ItDLqLCJ4DPHRKnyyLQEdSCFStNli/nL6w58sKy8iTPfWbcQRQPXGhe/CFsrsS8BimmI+m//94oU+uEAvZtaLoeRn6KDotQiXpMAHefAVM0VevnyJos7RIiVV6G2P+FfLiXibSYxfQBmZhWPycw7aiTn051jXxFo+hQhT5HnXhKmR9++l1R9TxSU7m8oi4vZaKCJZtlDO+HV99PQmvtlfdkD8Bgzubh1SZATOVmDGwPh1nB+Bt/Tyx18r4lydk7rDfAK1f8mV3J9v1nliqUnlXEyU/yaHjCdWcwkhMTyycE0pGvmmAHYXz0aV9OYQkmXmaQw9Us51Q8HFes/CXj1rut62QxBSI8AlnlXXlza3P8ITJXEJ6zar5eV3Pds3q5yzHfxbVQJZ24LwxqjUOL+QTE2nMHPVi21UyZiu0BqGSMlqxszAt1JXNtytNwMJV75ED9W9p1a73pW8G518=",
+ "note": "道乙sealed投递(株45): 会话公钥密封FINE_OWN_PAT_LVLU, 取件即焚; 焚标志=research/SESSDELIV-BURN-01.json; 值域律: 密文非值, 全程无明文"
+}
