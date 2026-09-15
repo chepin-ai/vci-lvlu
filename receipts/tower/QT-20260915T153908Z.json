@@ -1,0 +1,71 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260915T153908Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-FIELD-LVLU-DRIVE-01.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxDI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DIRECTASK-MINT-SPEC-FIX-qfa-20260914T212857Z.md",
+   "opened": "20260914T213649Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxSU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/SURGE-PING-01-qfa-20260914T212857Z.md",
+   "opened": "20260914T213649Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-DEBT-75-LVLU-01.md",
+   "opened": "20260915T044303Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DRILL-0919-PATCH-disc-close-responder.md",
+   "opened": "20260915T063634Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxYO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/YONEDA-PACKET-LEDGER-11.jsonl",
+   "opened": "20260915T115055Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-DRILL-0919-LVLU-EXEC-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqt",
+   "ref": "vci-inbox:lanes/lvlu/inbox/算请-qtlv-keys-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-FIELD-LVLU-DRIVE-01.md",
+   "opened": "20260915T153908Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n• 候件TA：TASK-FIELD-LVLU-DRIVE-01野外驱动入线，涉lvlu现场作业诉求，已录。\n• DI：MINT-SPEC-FIX铸造规范修复，qfa，45轮。\n• SU：SURGE-PING-01浪涌探测，qfa，45轮。\n• AN：ANS-DEBT-75债务应答，lvlu项，26轮。\n• DR：DRILL-0919-PATCH演练补丁，23轮。\n• YO：YONEDA-PACKET-LEDGER-11米田账，9轮。\n• DE：DEMAND-DRILL-0919演练执行，6轮。\n• qt：算请qtlv-keys-01密钥清算，6轮。\n\n②应动何件\n• TA（lvlu野外驱动，现场不候，立协同）\n• DI、SU（双45轮超限，立熔断协同）\n\n③未闭项推进\n• DI：未闭，下一步熔断转上游重铸。\n• SU：未闭，下一步清死ping重发握手。\n• AN：未闭，下一步发75号线阶段确认。\n• DR：未闭，下一步靶场验patch后闭。\n• YO：未闭，下一步解析jsonl核映射。\n• DE：未闭，下一步下发育演练准入令。\n• qt：未闭，下一步对账签回执后闭。\n• TA：未闭，下一步拆分子任务同步现场节点。\n\n④生债一条\n• 债：FIELD-DRIVE-01野外节点拓扑预检缺位，须补回传链路校验。",
+ "wq_excerpt": ""
+}
