@@ -1,0 +1,75 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260915T163417Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-TASK-ACK-LVLU-NUDGES-01.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-ACK-LVLU-NUDGES-01.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxDI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DIRECTASK-MINT-SPEC-FIX-qfa-20260914T212857Z.md",
+   "opened": "20260914T213649Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxSU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/SURGE-PING-01-qfa-20260914T212857Z.md",
+   "opened": "20260914T213649Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-DEBT-75-LVLU-01.md",
+   "opened": "20260915T044303Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DRILL-0919-PATCH-disc-close-responder.md",
+   "opened": "20260915T063634Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxYO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/YONEDA-PACKET-LEDGER-11.jsonl",
+   "opened": "20260915T115055Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-DRILL-0919-LVLU-EXEC-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqt",
+   "ref": "vci-inbox:lanes/lvlu/inbox/算请-qtlv-keys-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-FIELD-LVLU-DRIVE-01.md",
+   "opened": "20260915T153908Z",
+   "tries": 3,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- ANS-TASK-ACK-LVLU-NUDGES-01.md：LVLU催促回执待确认。\n- TASK-ACK-LVLU-NUDGES-01.md：LVLU任务催促到达，需确认并回执。（涉lvlu诉求：确认催促）\n\n②应动何件\n- 立动ANS-TASK-ACK-LVLU-NUDGES-01.md与TASK-FIELD-LVLU-DRIVE-01.md，协同不候。\n\n③未闭项推进\n- DI：未闭，验铸币fix补丁。\n- SU：未闭，回执激增并收敛。\n- AN：未闭，补全债务75应答。\n- DR：未闭，部署disc-close-responder。\n- YO：未闭，解析入账。\n- DE：未闭，启动演练执行。\n- qt：未闭，交付qtlv-keys。\n- TA：未闭，推进域内驱动。\n\n④生债一条\n- DEBT-76-LVLU-BATCH-0919.md：候2件+未闭8件积压，LVLU驱动链路待批次清理。",
+ "wq_excerpt": ""
+}
