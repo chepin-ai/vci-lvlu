@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260915T164620Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-DEBT-75-LVLU-01.md",
+   "opened": "20260915T044303Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DRILL-0919-PATCH-disc-close-responder.md",
+   "opened": "20260915T063634Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxYO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/YONEDA-PACKET-LEDGER-11.jsonl",
+   "opened": "20260915T115055Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-DRILL-0919-LVLU-EXEC-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqt",
+   "ref": "vci-inbox:lanes/lvlu/inbox/算请-qtlv-keys-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-FIELD-LVLU-DRIVE-01.md",
+   "opened": "20260915T153908Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- AN：债务应答件 ANS-DEBT-75-LVLU-01，涉 lvlu 债务归属确认诉求。  \n- DR：演练补丁件 DRILL-0919-PATCH-disc-close-responder，需关闭响应器逻辑。  \n- YO：Yoneda 数据包分类账 YONEDA-PACKET-LEDGER-11，待解析入账。  \n- DE：演练执行需求 DEMAND-DRILL-0919-LVLU-EXEC-01，待 lvlu 执行端确认。  \n- qt：算请密钥件 算请-qtlv-keys-01，涉 lvlu 算请权限与密钥分发。  \n- TA：任务字段驱动件 TASK-FIELD-LVLU-DRIVE-01，待 lvlu 驱动层适配。  \n\n②应动何件（立协同不候）  \n- 应动 AN（tries 29 最高且涉 lvlu 核心债务），立协同不候。  \n\n③未闭项推进  \n- AN：未闭，下一步触发 lvlu 债务确认协议，限次内闭环。  \n- DR：未闭，下一步应用补丁并验证 disc-close-responder 退出码。  \n- YO：未闭，下一步解析 jsonl 并核对 YONEDA 包哈希与账期。  \n- DE：未闭，下一步 lvlu 执行端回演练就绪状态或排期。  \n- qt：未闭，下一步核验 qtlv-keys 算请清单并完成签发/拒付。  \n- TA：未闭，下一步字段映射对齐后合并 TASK-FIELD-LVLU-DRIVE。  \n\n④生债一条  \n- lvlu 债务响应件 AN tries 29 未闭，生 SI2/SI0 协同债：债务确认延迟，须限时补确认。",
+ "wq_excerpt": ""
+}
