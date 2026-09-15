@@ -1,0 +1,94 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260915T104159Z",
+ "idle_in": 8,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxke",
+   "ref": "vci-inbox:lanes/lvlu/inbox/keyunify-lvlu-01.md",
+   "opened": "20260914T165546Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-debt-72-lvlu-01.md",
+   "opened": "20260914T173116Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxSI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/SI-PROBE-QGL-121-lvlu.md",
+   "opened": "20260914T183931Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260914.md",
+   "opened": "20260914T185112Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-9b3bcf76.md",
+   "opened": "20260914T185112Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAS",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ASK-ORBIT-CAP-03-RULING-qfa-20260914T185152Z.md",
+   "opened": "20260914T193419Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-CAP-03-RULING-qfa-20260914T202529Z.md",
+   "opened": "20260914T203112Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxPT",
+   "ref": "vci-inbox:lanes/lvlu/inbox/PTR-EVAL-EXCITE-01-QFA-20260914T195327Z.md",
+   "opened": "20260914T203112Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DIRECTASK-MINT-SPEC-FIX-qfa-20260914T212857Z.md",
+   "opened": "20260914T213649Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxSU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/SURGE-PING-01-qfa-20260914T212857Z.md",
+   "opened": "20260914T213649Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-DEBT-75-LVLU-01.md",
+   "opened": "20260915T044303Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DRILL-0919-PATCH-disc-close-responder.md",
+   "opened": "20260915T063634Z",
+   "tries": 12,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "候件空。\n\n① 何事（逐件一句，涉lvlu诉求必录）：\n- KE(keyunify-lvlu-01)：lvlu 主键统一诉求，待关键标识对齐。\n- TA(debt-72-lvlu-01)：lvlu 债务清理诉求，待销账或续期确认。\n- SI(SI-PROBE-QGL-121)：lvlu 探针校准诉求，待 SI2/SI0 数据回传。\n- AU(KEY-REASSIGN)：lvlu 环上密钥重分配诉求，待自动响应。\n- RE(RENUDGE-LGT)：lvlu 对 LGT 再触达诉求，待回收回执。\n- AS(ORBIT-CAP-03-RULING)：lvlu 轨道能力裁定前置诉求，待质询答复。\n- EX(ORBIT-CAP-03-RULING)：lvlu 轨道裁定落地诉求，待执行触发。\n- PT(PTR-EVAL-EXCITE-01)：lvlu 激发态评估诉求，待输出报告。\n\n② 应动何件（立协同不候）：\nKE、TA、SI 三件为阻塞根节点且 tries 最高，立协同；AS→EX 为裁决执行上下游链，亦立协同不候，防止裁定悬空。\n\n③ 未闭项推进（每项一句）：\n- KE：未闭，下一步完成 keyunify 主键对齐。\n- TA：未闭，下一步清算 debt-72 账项。\n- SI：未闭，下一步回传 QGL-121 探针校验数据。\n- AU：未闭，下一步执行环上密钥重分配。\n- RE：未闭，下一步完成 LGT 再推动并取回执。\n- AS：未闭，下一步提交 ORBIT-CAP-03 裁决质询。\n- EX：未闭，下一步预加载执行环境，待裁定即触发。\n- PT：未闭，下一步输出 EXCITE-01 激发态评估报告。\n\n④ 生债一条：\n生债「KE-SI-联调-P0」一条，兑换 keyunify 与 QGL-121 对齐所需算力/时隙，限 20260915T000000Z 前兑，逾期升级。",
+ "wq_excerpt": ""
+}
