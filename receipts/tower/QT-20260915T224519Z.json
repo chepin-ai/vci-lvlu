@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260915T224519Z",
+ "idle_in": 12,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-DEBT-75-LVLU-01.md",
+   "opened": "20260915T044303Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DRILL-0919-PATCH-disc-close-responder.md",
+   "opened": "20260915T063634Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxYO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/YONEDA-PACKET-LEDGER-11.jsonl",
+   "opened": "20260915T115055Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-DRILL-0919-LVLU-EXEC-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqt",
+   "ref": "vci-inbox:lanes/lvlu/inbox/算请-qtlv-keys-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-FIELD-LVLU-DRIVE-01.md",
+   "opened": "20260915T153908Z",
+   "tries": 16,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- AN：lvlu债务应答件ANS-DEBT-75-LVLU-01久悬41次待结。\n- DR：DRILL-0919补丁待部署以关闭disc-responder。\n- YO：YONEDA-PACKET-LEDGER-11.jsonl待解析入账。\n- DE：DEMAND-DRILL-0919-LVLU-EXEC执行需求待落地。\n- qt：算请-qtlv-keys-01结算交付待完。\n- TA：TASK-FIELD-LVLU-DRIVE-01现场驱动待推进。\n\n②应动何件\nAN件（涉lvlu债务，tries=41最久，立协同不候）。\n\n③未闭项推进\n- AN：未闭，下一步债务应答闭环。\n- DR：未闭，下一步打补丁验关闭。\n- YO：未闭，下一步解析jsonl入账。\n- DE：未闭，下一步执行演练指令。\n- qt：未闭，下一步结清交付keys。\n- TA：未闭，下一步激活现场驱动。\n\n④生债一条\nAN件41次未决，生债「lvlu线响应迟滞税：抵偿一次优先算力调度」。",
+ "wq_excerpt": ""
+}
