@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260915T072357Z",
+ "ts": "20260915T073437Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -14,7 +14,7 @@
    ],
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
-   "beats": 299,
+   "beats": 300,
    "nudge_level": 8,
    "last_nudge": "20260915T043119Z",
    "status": "open",
@@ -48,7 +48,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 96,
-   "beats": 306,
+   "beats": 307,
    "nudge_level": 29,
    "last_nudge": "20260915T071322Z",
    "status": "open",
@@ -107,7 +107,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 305,
+   "beats": 306,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -118,7 +118,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 305,
+   "beats": 306,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -163,7 +163,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 290,
+   "beats": 291,
    "nudge_level": 0,
    "last_nudge": "",
    "status": "open"
@@ -297,7 +297,7 @@
     "ORBIT-CAP-02"
    ],
    "status": "open",
-   "beats": 93,
+   "beats": 94,
    "sla_beats": 24,
    "target": "qfa",
    "nudge_level": 9,
@@ -522,7 +522,7 @@
    "need_lines": [
     "ucif2"
    ],
-   "beats": 94,
+   "beats": 95,
    "nudge_level": 7,
    "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
    "watch": [
@@ -597,7 +597,7 @@
    "need_lines": [
     "lgt"
    ],
-   "beats": 70,
+   "beats": 71,
    "nudge_level": 0,
    "note": "RE2约接: 我链tip 280223d5a52b581e / 尔tip 209/813ac77adf5e"
   },
@@ -631,7 +631,7 @@
    "need_lines": [
     "lgt"
    ],
-   "beats": 70,
+   "beats": 71,
    "nudge_level": 0,
    "note": "EXP-024题面已转投; κ>0.8 对拍"
   },
@@ -777,11 +777,11 @@
    "sla_beats": 48,
    "target": "cisvr",
    "need_lines": null,
-   "beats": 54,
+   "beats": 55,
    "nudge_level": 2,
    "note": "T5=qgl: R1 git道已装讫(lvlu亲办1928-0355Z: DEPLOY-SSH-QGL-01注册201+DEPLOY_SSH_KEY密封注201+ssh实测200+私钥即焚,fp611bbedc9997); qgl fine PAT=进化项非阻点(cisvr KEY-AUTONOMY-01判); 0919死结对qgl git道解除",
    "last_nudge": "20260915T063632Z",
-   "last_nudge_beats": 54
+   "last_nudge_beats": 55
   },
   {
    "id": "STD-CONSENSUS-01",
@@ -883,7 +883,7 @@
     "lgt",
     "vinf"
    ],
-   "beats": 45,
+   "beats": 46,
    "nudge_level": 6,
    "note": "现票: 可2(lvlu/qgl)+usrm判1835Z已投待引擎重放; quorum5 deadline6拍(SLA-E事件锚); 达即v1.1汇判刊行",
    "legs_got": [
