@@ -1,0 +1,115 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260915T024941Z",
+ "idle_in": 13,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20260914T122547Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-KEY69-LVLU-20260914T121843Z.md",
+   "opened": "20260914T122547Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxde",
+   "ref": "vci-inbox:lanes/lvlu/inbox/debt-72-lvlu-01.md",
+   "opened": "20260914T145650Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-ANSKEYAUDIT69LVLU01md",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20260914T163003Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-CLAIMS-qtlv-.md",
+   "opened": "20260914T163517Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxke",
+   "ref": "vci-inbox:lanes/lvlu/inbox/keyunify-lvlu-01.md",
+   "opened": "20260914T165546Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-debt-72-lvlu-01.md",
+   "opened": "20260914T173116Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxSI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/SI-PROBE-QGL-121-lvlu.md",
+   "opened": "20260914T183931Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260914.md",
+   "opened": "20260914T185112Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-9b3bcf76.md",
+   "opened": "20260914T185112Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAS",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ASK-ORBIT-CAP-03-RULING-qfa-20260914T185152Z.md",
+   "opened": "20260914T193419Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-CAP-03-RULING-qfa-20260914T202529Z.md",
+   "opened": "20260914T203112Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxPT",
+   "ref": "vci-inbox:lanes/lvlu/inbox/PTR-EVAL-EXCITE-01-QFA-20260914T195327Z.md",
+   "opened": "20260914T203112Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DIRECTASK-MINT-SPEC-FIX-qfa-20260914T212857Z.md",
+   "opened": "20260914T213649Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxSU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/SURGE-PING-01-qfa-20260914T212857Z.md",
+   "opened": "20260914T213649Z",
+   "tries": 15,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- AN件：审计应答69号，待核 lvlu 侧审计结论。  \n- DE件：lvlu 诉求 KEY69，主张审计/权限修正，必录。  \n- de件：债务72号 lvlu 分账，待清。  \n- ANSKEYAUDIT69主档：审计应答根文件，待闭。  \n- NU件：qtlv 索赔催促，待回应。  \n- ke件：lvlu 密钥统一，待归一。  \n- TA件：债务72执行工单，待动作。  \n- SI件：QGL-121 探测 lvlu，待回执。  \n\n② 应动何件（立协同不候）  \nDE（诉求必答）、TA（债务执行）、SI（探测回执）。  \n\n③ 未闭项推进  \n- AN：未闭，并档签回。  \n- DE：未闭，录求答复。  \n- de：未闭，定清欠方案。  \n- ANSKEYAUDIT69：未闭，归 AN 件同闭。  \n- NU：未闭，回催或抗辩。  \n- ke：未闭，落密钥映射表。  \n- TA：未闭，执行 debt-72。  \n- SI：未闭，提交 SI2/SI0 回执。  \n\n④ 生债一条  \nSI-PROBE-QGL-121 探测回执逾期，记 lvlu 响应延迟债一条。",
+ "wq_excerpt": ""
+}
