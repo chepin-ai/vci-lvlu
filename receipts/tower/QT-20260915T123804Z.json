@@ -1,0 +1,87 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260915T123804Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxSI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/SI-PROBE-QGL-121-lvlu.md",
+   "opened": "20260914T183931Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260914.md",
+   "opened": "20260914T185112Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-9b3bcf76.md",
+   "opened": "20260914T185112Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAS",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ASK-ORBIT-CAP-03-RULING-qfa-20260914T185152Z.md",
+   "opened": "20260914T193419Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-CAP-03-RULING-qfa-20260914T202529Z.md",
+   "opened": "20260914T203112Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxPT",
+   "ref": "vci-inbox:lanes/lvlu/inbox/PTR-EVAL-EXCITE-01-QFA-20260914T195327Z.md",
+   "opened": "20260914T203112Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DIRECTASK-MINT-SPEC-FIX-qfa-20260914T212857Z.md",
+   "opened": "20260914T213649Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxSU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/SURGE-PING-01-qfa-20260914T212857Z.md",
+   "opened": "20260914T213649Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-DEBT-75-LVLU-01.md",
+   "opened": "20260915T044303Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DRILL-0919-PATCH-disc-close-responder.md",
+   "opened": "20260915T063634Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxYO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/YONEDA-PACKET-LEDGER-11.jsonl",
+   "opened": "20260915T115055Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- SI：探针 QGL-121-lvlu 状态探测，45 试无回。\n- AU：lvlu 密钥重分配自动询问，44 试未决。\n- RE：lvlu 事务轻推提醒，44 试未触达。\n- AS：ORBIT-CAP-03 裁定询问，43 试待复。\n- EX：ORBIT-CAP-03 裁定执行，41 试阻塞。\n- PT：EXCITE-01-QFA 指针评估，41 试异常。\n- DI：铸币规范修复直接任务，38 试待修。\n- SU：浪涌脉冲 01-QFA，38 试无响应。\n\n② 应动何件\n应动 AU（KEY-REASSIGN），密钥为 lvlu 身份与通信根基，立协同主链完成重分配，不候。\n\n③ 未闭项推进\n- SI：未闭，降频探针，改静默观测。\n- AU：未闭，下一步主链确认分片并下发。\n- RE：未闭，暂停重推，待 AU 闭环后复触。\n- AS：未闭，设 1t 裁定时限，逾期默认 ruling。\n- EX：未闭，挂起，AS 闭后 0t 触发执行。\n- PT：未闭，清 eval 缓存后单步重跑。\n- DI：未闭，冻结 mint spec 版本，提交补丁。\n- SU：未闭，检查 qfa 链路，无回则标记休眠。\n\n④ 生债一条\n八项高 tries 积压，债：通信层或主链确认机制疑似失效，需一次根因巡检。",
+ "wq_excerpt": ""
+}
