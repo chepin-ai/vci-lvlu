@@ -4,9 +4,10 @@ on:
   schedule:
     - cron: '*/21 * * * *'  # 闸件常拍21min(独立于塔*/37, 互质错峰)
   push:
-    paths: ['ci/lvlu_responder.py', 'ci/si3/claims.json', '.github/workflows/lvlu-responder.yml']
+    # 株45v1.2瞬感道(ucif2 SI-AUTOPILOT式采用, root令建立必启用): inbox投件即拍——全域直通瞬感互作
+    paths: ['ci/lvlu_responder.py', 'ci/si3/claims.json', '.github/workflows/lvlu-responder.yml', 'inbox/**']
   repository_dispatch:
-    types: [lvlu-tower-cascade, lvlu-tower-kick, lvlu-responder-kick]
+    types: [lvlu-tower-cascade, lvlu-tower-kick, lvlu-responder-kick, lvlu-wake, fed-beat]
   workflow_dispatch: {}
 permissions:
   contents: write  # 株四十附: GITHUB_TOKEN回退可写(闸件推件权保底)
