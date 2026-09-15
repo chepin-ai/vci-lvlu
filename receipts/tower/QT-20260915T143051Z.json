@@ -1,0 +1,73 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260915T143051Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-CAP-03-RULING-qfa-20260914T202529Z.md",
+   "opened": "20260914T203112Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxPT",
+   "ref": "vci-inbox:lanes/lvlu/inbox/PTR-EVAL-EXCITE-01-QFA-20260914T195327Z.md",
+   "opened": "20260914T203112Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DIRECTASK-MINT-SPEC-FIX-qfa-20260914T212857Z.md",
+   "opened": "20260914T213649Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxSU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/SURGE-PING-01-qfa-20260914T212857Z.md",
+   "opened": "20260914T213649Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-DEBT-75-LVLU-01.md",
+   "opened": "20260915T044303Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DRILL-0919-PATCH-disc-close-responder.md",
+   "opened": "20260915T063634Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxYO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/YONEDA-PACKET-LEDGER-11.jsonl",
+   "opened": "20260915T115055Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-DRILL-0919-LVLU-EXEC-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqt",
+   "ref": "vci-inbox:lanes/lvlu/inbox/算请-qtlv-keys-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① **何事**  \n候件：无。  \n未闭八件：  \n- EX件：EXEC-ORBIT-CAP-03-RULING 轨道执行上限裁定，46试待裁；  \n- PT件：PTR-EVAL-EXCITE-01 指针评估激发协议，46试待激；  \n- DI件：DIRECTASK-MINT-SPEC-FIX 直任务铸币规范修复，43试待补；  \n- SU件：SURGE-PING-01 涌流环探测，43试待响；  \n- AN件：ANS-DEBT-75-LVLU-01 第七五号债务应答，24试待偿（涉lvlu债务诉求，已录）；  \n- DR件：DRILL-0919-PATCH-disc-close-responder 演练补丁关响应器，21试待合；  \n- YO件：YONEDA-PACKET-LEDGER-11 米田包账册对齐，7试待登；  \n- DE件：DEMAND-DRILL-0919-LVLU-EXEC-01 零九一九演练执行令，4试待行。  \n\n② **应动何件（立协同不候）**  \nAN、DE、DR —— 偿债、行令、补律，三者不可候，立协同动。  \n\n③ **未闭项推进**  \n- EX：未闭/下一步：交律吕会裁定上限；  \n- PT：未闭/下一步：重置指针激发阈值；  \n- DI：未闭/下一步：下发MINT-SPEC补丁并锁版本；  \n- SU：未闭/下一步：收束ping环，回传涌流标定；  \n- AN：未闭/下一步：挂账第七五号，触发清偿链；  \n- DR：未闭/下一步：合入0919补丁，重启disc响应器；  \n- YO：未闭/下一步：解析jsonl，核验米田一致性；  \n- DE：未闭/下一步：宣发演练执行令，同步全轨。  \n\n④ **生债一条**  \nSI2/SI0自动响应分身因八件未闭积压，生响应迟滞债一条：限今日内协同关闭半数以上，逾期按律吕息率计滞。",
+ "wq_excerpt": ""
+}
