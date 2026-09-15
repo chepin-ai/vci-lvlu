@@ -779,9 +779,10 @@
    "need_lines": null,
    "beats": 55,
    "nudge_level": 2,
-   "note": "T5=qgl: R1 git道已装讫(lvlu亲办1928-0355Z: DEPLOY-SSH-QGL-01注册201+DEPLOY_SSH_KEY密封注201+ssh实测200+私钥即焚,fp611bbedc9997); qgl fine PAT=进化项非阻点(cisvr KEY-AUTONOMY-01判); 0919死结对qgl git道解除",
+   "note": "FINE_OWN_PAT_QGL铸成(id19646075,qgl独占,Actions:RW+Contents:RW,2026-12-14期); root末段贴值(株47 C5-legit)→vault密封→git道200→sealed-PUT LINE_PAT入vci-qgl secrets(204); 回执KEY-INSTALL-RECEIPT-QGL-02经新钥自身git上链(fp 27a3a6ecbc70); Secrets:RW未授列root域下会期",
    "last_nudge": "20260915T063632Z",
-   "last_nudge_beats": 55
+   "last_nudge_beats": 55,
+   "state": "closed"
   },
   {
    "id": "STD-CONSENSUS-01",
