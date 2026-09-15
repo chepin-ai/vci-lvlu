@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260915T235059Z",
+ "idle_in": 14,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-DEBT-75-LVLU-01.md",
+   "opened": "20260915T044303Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DRILL-0919-PATCH-disc-close-responder.md",
+   "opened": "20260915T063634Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxYO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/YONEDA-PACKET-LEDGER-11.jsonl",
+   "opened": "20260915T115055Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-DRILL-0919-LVLU-EXEC-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqt",
+   "ref": "vci-inbox:lanes/lvlu/inbox/算请-qtlv-keys-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-FIELD-LVLU-DRIVE-01.md",
+   "opened": "20260915T153908Z",
+   "tries": 18,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- AN：lvlu 债务结算单 ANS-DEBT-75 候销账。  \n- DR：0919 演练补丁 disc-close-responder 候注入。  \n- YO：YONEDA 包分类账 LEDGER-11 候解析。  \n- DE：lvlu 执行演练 DEMAND-DRILL-0919 候调度。  \n- qt：qtlv-keys 算请单候签批。  \n- TA：lvlu 现场驱动 TASK-FIELD 候下发。  \n\n② 应动何件  \n候件空；AN、DR 已积压逾 40 试，立协同此二件先启，余四件并行不候。  \n\n③ 未闭项推进  \n- AN：未闭/即启 lvlu 债务核销流，限今闭。  \n- DR：未闭/注入 PATCH 并回测响应器，试闭。  \n- YO：未闭/解析 jsonl ledger，对账后闭。  \n- DE：未闭/排期 lvlu 演练预检，过即执。  \n- qt：未闭/签批 qtlv-keys，回写算请即闭。  \n- TA：未闭/下发 FIELD-DRIVE 指令，同步现场。  \n\n④ 生债一条  \n生债：SI2/SI0 六件未闭已滞，生 lvlu 线响应滞债一条，不卸。",
+ "wq_excerpt": ""
+}
