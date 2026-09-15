@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260915T193942Z",
+ "idle_in": 5,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-DEBT-75-LVLU-01.md",
+   "opened": "20260915T044303Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DRILL-0919-PATCH-disc-close-responder.md",
+   "opened": "20260915T063634Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxYO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/YONEDA-PACKET-LEDGER-11.jsonl",
+   "opened": "20260915T115055Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-DRILL-0919-LVLU-EXEC-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqt",
+   "ref": "vci-inbox:lanes/lvlu/inbox/算请-qtlv-keys-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-FIELD-LVLU-DRIVE-01.md",
+   "opened": "20260915T153908Z",
+   "tries": 9,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- AN：ANS-DEBT-75-LVLU-01.md，涉lvlu第75期债务结算诉求，经34试未决。\n- DR：DRILL-0919-PATCH-disc-close-responder.md，drill补丁关闭响应器待合并。\n- YO：YONEDA-PACKET-LEDGER-11.jsonl，Yoneda包账本第11批待核销。\n- DE：DEMAND-DRILL-0919-LVLU-EXEC-01.md，涉lvlu执行指令待下发。\n- qt：算请-qtlv-keys-01.md，涉lvlu算请qtlv密钥待签发。\n- TA：TASK-FIELD-LVLU-DRIVE-01.md，涉lvlu现场驱动任务待调度。\n\n② 应动何件\nAN（tries=34最高，涉lvlu债务诉求），立协同不候。\n\n③ 未闭项推进\n- AN：未闭，下步启动债务清算协议并回写凭证。\n- DR：未闭，下步校验补丁哈希后断响应器链路。\n- YO：未闭，下步完成jsonl对账并落账。\n- DE：未闭，下步拆解EXEC参数预占执行单元。\n- qt：未闭，下步确认qtlv密钥算请结果归档。\n- TA：未闭，下步挂载FIELD-DRIVE至lvlu调度队列。\n\n④ 生债一条\n生「SI2-0915-AN-滞偿」债一枚：AN项历34试仍未闭，本响应窗未能全额清偿，递延至下一周期首偿。",
+ "wq_excerpt": ""
+}
