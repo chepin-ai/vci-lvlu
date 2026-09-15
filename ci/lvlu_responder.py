@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# LVLU-RESPONDER-01 v3.13(株45候root即自缚律: 闸十二SESSDELIV-01道乙sealed投递R3自办/私钥唯会话vault/取件即焚; v3.12株44)(株44: exp闸提序+预算600s治skip-budget变相候/NUDGE_CH补cisvr·ucif2·qgl·qtlv巷靶/闸十一SEALED-RAIL自注册应usrm PA181-1①; v3.11株43促件幂等)(株43促件幂等律NUDGE-IDEM-01: 靶面实迹为凭近3h同id免促,治usrm勘EXP049-L23×67风暴; v3.10株42闸不连坐)(株42闸不连坐律: detect_open_lines之w→NameError殉道15h修复+闸级故障隔离state必落盘; v3.9株卅八v1.1读域律)(株卅八v1.1读域律READ_MESH_PAT落即展; v3.8株卅九时箱律TIMEBOX-01+闸级自仪表; v3.7株卅八域界律; v3.6 SCAN-OWN-KEYS-01写前闸; v3.5株卅五无戳contains补检+h_key分级健康; 株卅四need_lines检全径+株卅二contains兜底; 闸十INBOX-SWEEP; watch双道)(株廿五 NUDGE-TARGET-01: need_lines分线定向) — lvlu线 SI3专候响应环（KEYHEALTH/SECRETS-META/KEYREQ/DISC/SI1-WAKE/SLA/NUDGE/EXP/PULSE/ORBIT 十件）
+# LVLU-RESPONDER-01 v3.14(株45v1.1降级道入码: api403→GITHUB_TOKEN重试+keyhealth GTOK仓域探针——user池死不再红拍殉道,仓域闸(sealdeliv/sealrail/state/wake)永续; v3.13株45)(株45候root即自缚律: 闸十二SESSDELIV-01道乙sealed投递R3自办/私钥唯会话vault/取件即焚; v3.12株44)(株44: exp闸提序+预算600s治skip-budget变相候/NUDGE_CH补cisvr·ucif2·qgl·qtlv巷靶/闸十一SEALED-RAIL自注册应usrm PA181-1①; v3.11株43促件幂等)(株43促件幂等律NUDGE-IDEM-01: 靶面实迹为凭近3h同id免促,治usrm勘EXP049-L23×67风暴; v3.10株42闸不连坐)(株42闸不连坐律: detect_open_lines之w→NameError殉道15h修复+闸级故障隔离state必落盘; v3.9株卅八v1.1读域律)(株卅八v1.1读域律READ_MESH_PAT落即展; v3.8株卅九时箱律TIMEBOX-01+闸级自仪表; v3.7株卅八域界律; v3.6 SCAN-OWN-KEYS-01写前闸; v3.5株卅五无戳contains补检+h_key分级健康; 株卅四need_lines检全径+株卅二contains兜底; 闸十INBOX-SWEEP; watch双道)(株廿五 NUDGE-TARGET-01: need_lines分线定向) — lvlu线 SI3专候响应环（KEYHEALTH/SECRETS-META/KEYREQ/DISC/SI1-WAKE/SLA/NUDGE/EXP/PULSE/ORBIT 十件）
 # 职: ⓪每拍验钥回退链+secrets元数据差分(株廿四) ①钥取件即见即注 ②指名lvlu件即收讫 ③SI1-WAKE常新 ⑧周天囊自驿
 # 律: 零定时(事驱入拍) / 值不过板不落盘(内存即用即焚) / names-only回执 / 非白名单→裁示候root
 import os, json, base64, urllib.request, urllib.parse, datetime, re, hashlib
@@ -21,7 +21,9 @@ def key_health():
     cands = [(nm, t) for nm, t in cands if t]
     ok_login = None; alive = 0
     for nm, t in cands:
-        req = urllib.request.Request('https://api.github.com/user', headers={'Authorization': 'Bearer ' + t, 'Accept': 'application/vnd.github+json', 'User-Agent': 'lvlu-responder'})
+        # 株45v1.1: GITHUB_TOKEN探/user恒403(Resource not accessible by integration)→仓域探针, 否则该钥永不作回退=变相单点(user池死即红拍殉道)
+        ep = 'https://api.github.com/repos/' + REPO if nm == 'GITHUB_TOKEN' else 'https://api.github.com/user'
+        req = urllib.request.Request(ep, headers={'Authorization': 'Bearer ' + t, 'Accept': 'application/vnd.github+json', 'User-Agent': 'lvlu-responder'})
         try:
             with urllib.request.urlopen(req, timeout=15) as r:
                 if r.status == 200:
@@ -29,7 +31,7 @@ def key_health():
                     if ok_login is None:
                         if t != TOK: print('KEYHEALTH: fallback in use (' + nm + ')')
                         TOK = t
-                        ok_login = json.loads(r.read()).get('login', '?')
+                        ok_login = 'github-actions[bot]' if nm == 'GITHUB_TOKEN' else json.loads(r.read()).get('login', '?')
         except Exception: pass
     h = alive / len(cands) if cands else 0.0
     if ok_login and h < 0.85:
@@ -59,7 +61,19 @@ def api(method, path, data=None, repo=None, read_alt=False):
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
             raw = r.read(); return r.status, (json.loads(raw) if raw else {})
-    except urllib.error.HTTPError as e: return e.code, {}
+    except urllib.error.HTTPError as e:
+        # 株45v1.1降级道: user池403(共享限速)→GITHUB_TOKEN重试(仓域本件面; 降级三阶入码应TOKEN-MATRIX-02)
+        g = os.environ.get('GITHUB_TOKEN')
+        if e.code == 403 and g and g != tok:
+            req2 = urllib.request.Request(url, method=method,
+                headers={'Authorization': 'Bearer ' + g, 'Accept': 'application/vnd.github+json', 'User-Agent': 'lvlu-responder'})
+            if data is not None: req2.data = json.dumps(data).encode()
+            try:
+                with urllib.request.urlopen(req2, timeout=30) as r2:
+                    raw = r2.read(); return r2.status, (json.loads(raw) if raw else {})
+            except urllib.error.HTTPError as e2: return e2.code, {}
+            except Exception: return 0, {}
+        return e.code, {}
     except Exception: return 0, {}
 
 def get_file(remote, repo=None):
