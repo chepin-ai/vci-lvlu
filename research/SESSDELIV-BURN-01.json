@@ -1,0 +1,7 @@
+{
+ "v": "SESSDELIV-BURN-01",
+ "ts": "20260915T035349Z",
+ "by": "lvlu-session",
+ "pubkey_fp": "eaf972ab8cd2",
+ "note": "取件即焚标志(株45/单副本库律): FINE_OWN_PAT_LVLU已开封入会话vault(0600,唯一副本), git+REST双验200; 机层见本件即删SESSDELIV-SEALED-01.json并止投; 公钥件SESSDELIV-PUBKEY-01.json留档(公钥本为加密面); 再投递=换公钥fp即重投(幂等)"
+}
