@@ -1,0 +1,51 @@
+name: SEALFETCH-01
+on:
+  workflow_dispatch:
+    inputs:
+      secret_name:
+        required: true
+        default: 'MICROAUTH'
+      out_file:
+        required: true
+        default: 'research/SESSDELIV-SEALED-02.json'
+permissions:
+  contents: write
+jobs:
+  sealfetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: seal
+        env:
+          SECRET_VALUE: ${{ secrets[github.event.inputs.secret_name] }}
+          OUTF: ${{ github.event.inputs.out_file }}
+          NAMEIN: ${{ github.event.inputs.secret_name }}
+        run: |
+          python3 - <<'PY'
+          import json, os, base64, subprocess, datetime
+          pub = json.load(open('research/SESSDELIV-PUBKEY-01.json'))
+          open('/tmp/pubk.pem','w').write(pub['pem'])
+          val = os.environ['SECRET_VALUE']
+          assert val, 'empty secret'
+          enc = subprocess.run(['openssl','pkeyutl','-encrypt','-pubin','-inkey','/tmp/pubk.pem',
+              '-pkeyopt','rsa_padding_mode:oaep','-pkeyopt','rsa_oaep_md:sha256'],
+              input=val.encode(), capture_output=True)
+          assert enc.returncode==0, enc.stderr.decode()
+          doc = {'v':'SESSDELIV-SEALED-02','alg':'RSA-OAEP-SHA256','pubkey_fp':pub['fp'],
+                 'ts': datetime.datetime.utcnow().strftime('%Y%m%dT%H%M%SZ'),
+                 'secret_name': os.environ['NAMEIN'],
+                 'b64': base64.b64encode(enc.stdout).decode()}
+          json.dump(doc, open(os.environ['OUTF'],'w'), ensure_ascii=False, indent=1)
+          print('sealed bytes:', len(enc.stdout))
+          PY
+      - name: push
+        env:
+          OUTF: ${{ github.event.inputs.out_file }}
+        run: |
+          git config user.name lvlu-ops
+          git config user.email lvlu@ci.ops
+          git add "$OUTF"
+          git commit -m "[skip ci] sealfetch run ${GITHUB_RUN_ID}"
+          git push
