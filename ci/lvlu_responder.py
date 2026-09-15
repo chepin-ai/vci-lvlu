@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# LVLU-RESPONDER-01 v3.12(株44: exp闸提序+预算600s治skip-budget变相候/NUDGE_CH补cisvr·ucif2·qgl·qtlv巷靶/闸十一SEALED-RAIL自注册应usrm PA181-1①; v3.11株43促件幂等)(株43促件幂等律NUDGE-IDEM-01: 靶面实迹为凭近3h同id免促,治usrm勘EXP049-L23×67风暴; v3.10株42闸不连坐)(株42闸不连坐律: detect_open_lines之w→NameError殉道15h修复+闸级故障隔离state必落盘; v3.9株卅八v1.1读域律)(株卅八v1.1读域律READ_MESH_PAT落即展; v3.8株卅九时箱律TIMEBOX-01+闸级自仪表; v3.7株卅八域界律; v3.6 SCAN-OWN-KEYS-01写前闸; v3.5株卅五无戳contains补检+h_key分级健康; 株卅四need_lines检全径+株卅二contains兜底; 闸十INBOX-SWEEP; watch双道)(株廿五 NUDGE-TARGET-01: need_lines分线定向) — lvlu线 SI3专候响应环（KEYHEALTH/SECRETS-META/KEYREQ/DISC/SI1-WAKE/SLA/NUDGE/EXP/PULSE/ORBIT 十件）
+# LVLU-RESPONDER-01 v3.13(株45候root即自缚律: 闸十二SESSDELIV-01道乙sealed投递R3自办/私钥唯会话vault/取件即焚; v3.12株44)(株44: exp闸提序+预算600s治skip-budget变相候/NUDGE_CH补cisvr·ucif2·qgl·qtlv巷靶/闸十一SEALED-RAIL自注册应usrm PA181-1①; v3.11株43促件幂等)(株43促件幂等律NUDGE-IDEM-01: 靶面实迹为凭近3h同id免促,治usrm勘EXP049-L23×67风暴; v3.10株42闸不连坐)(株42闸不连坐律: detect_open_lines之w→NameError殉道15h修复+闸级故障隔离state必落盘; v3.9株卅八v1.1读域律)(株卅八v1.1读域律READ_MESH_PAT落即展; v3.8株卅九时箱律TIMEBOX-01+闸级自仪表; v3.7株卅八域界律; v3.6 SCAN-OWN-KEYS-01写前闸; v3.5株卅五无戳contains补检+h_key分级健康; 株卅四need_lines检全径+株卅二contains兜底; 闸十INBOX-SWEEP; watch双道)(株廿五 NUDGE-TARGET-01: need_lines分线定向) — lvlu线 SI3专候响应环（KEYHEALTH/SECRETS-META/KEYREQ/DISC/SI1-WAKE/SLA/NUDGE/EXP/PULSE/ORBIT 十件）
 # 职: ⓪每拍验钥回退链+secrets元数据差分(株廿四) ①钥取件即见即注 ②指名lvlu件即收讫 ③SI1-WAKE常新 ⑧周天囊自驿
 # 律: 零定时(事驱入拍) / 值不过板不落盘(内存即用即焚) / names-only回执 / 非白名单→裁示候root
 import os, json, base64, urllib.request, urllib.parse, datetime, re, hashlib
@@ -477,6 +477,51 @@ def sealrail_loop(ts):
     except Exception as e:
         return {'sealrail': 'err:' + e.__class__.__name__}
 
+
+def sealdeliv_loop(ts):
+    """闸十二 SESSDELIV-01(道乙sealed投递; 株45候root即自缚律): 会话RSA公钥(research/SESSDELIV-PUBKEY-01.json)在→
+    LINE_PAT值以RSA-OAEP-SHA256(openssl CLI)密封投 research/SESSDELIV-SEALED-01.json(幂等: 公钥fp漂移才重投);
+    research/SESSDELIV-BURN-01.json在→删sealed件并止投(取件即焚,单副本库律)。值永不打印/永不落明文盘"""
+    try:
+        bdoc, _ = get_file('research/SESSDELIV-BURN-01.json')
+        sold, ssha = get_file('research/SESSDELIV-SEALED-01.json')
+        if bdoc:
+            if sold and ssha:
+                api('DELETE', 'contents/research/SESSDELIV-SEALED-01.json',
+                    {'message': '[skip ci] sealdeliv burn ' + ts, 'sha': ssha})
+                return {'sealdeliv': 'burned'}
+            return {'sealdeliv': 'burn-clean'}
+        pdoc, _ = get_file('research/SESSDELIV-PUBKEY-01.json')
+        if not pdoc: return {'sealdeliv': 'no-pubkey'}
+        pub = json.loads(pdoc)
+        pem, fp = pub.get('pem', ''), pub.get('fp', '')
+        if not pem or not fp: return {'sealdeliv': 'pubkey-bad'}
+        val = os.environ.get('LINE_PAT')
+        if not val: return {'sealdeliv': 'no-val'}
+        if sold:
+            try:
+                cur = json.loads(sold)
+                if cur.get('pubkey_fp') == fp: return {'sealdeliv': 'stable', 'fp': fp}
+            except Exception: pass
+        import subprocess, tempfile
+        with tempfile.NamedTemporaryFile('w', suffix='.pem', delete=False) as f:
+            f.write(pem); tmp = f.name
+        try:
+            r = subprocess.run(['openssl', 'pkeyutl', '-encrypt', '-pubin', '-inkey', tmp,
+                                '-pkeyopt', 'rsa_padding_mode:oaep', '-pkeyopt', 'rsa_oaep_md:sha256'],
+                               input=val.encode(), capture_output=True, timeout=30)
+            if r.returncode != 0: return {'sealdeliv': 'seal-fail'}
+            b64 = base64.b64encode(r.stdout).decode()
+        finally:
+            try: os.unlink(tmp)
+            except Exception: pass
+        doc = {'v': 'SESSDELIV-SEALED-01', 'alg': 'RSA-OAEP-SHA256', 'pubkey_fp': fp, 'ts': ts, 'b64': b64,
+               'note': '道乙sealed投递(株45): 会话公钥密封FINE_OWN_PAT_LVLU, 取件即焚; 焚标志=research/SESSDELIV-BURN-01.json; 值域律: 密文非值, 全程无明文'}
+        ok = put_file('research/SESSDELIV-SEALED-01.json', json.dumps(doc, ensure_ascii=False, indent=1), ssha, '[skip ci] sealdeliv ' + ts)
+        return {'sealdeliv': 'delivered' if ok else 'put-fail', 'fp': fp}
+    except Exception as e:
+        return {'sealdeliv': 'err:' + e.__class__.__name__}
+
 def main():
     ts = datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
     stj, ssha = get_file('receipts/tower/responder_state.json')
@@ -551,6 +596,8 @@ def main():
     ins = _gate('inbox', lambda: inbox_sweep(ts, state), ['gate-err(株42)'])
     # 闸十一: 甲轨自注册(株44)
     sr = _gate('sealrail', lambda: sealrail_loop(ts), {'sealrail': 'gate-err(株42)'})
+    # 闸十二: 道乙sealed投递(株45候root即自缚律——R3自办, 不候root道甲)
+    sd = _gate('sealdeliv', lambda: sealdeliv_loop(ts), {'sealdeliv': 'gate-err(株42)'})
     # 闸三 SI1-WAKE: 会话接续锚常新
     wake = {'ts': ts, 'keyreq_done': done, 'acks': acks,
             'pending_si1': pending_si1,
@@ -561,7 +608,7 @@ def main():
              '[skip ci] responder wake ' + ts)
     state = {'ts': ts, 'seen': sorted(seen)[-400:], 'done': (state.get('done', []) + done)[-60:], 'seen_inbox': state.get('seen_inbox', [])[-400:], 'seen_orbits': sorted(set(state.get('seen_orbits', [])))[-100:]}
     put_file('receipts/tower/responder_state.json', json.dumps(state, ensure_ascii=False, indent=1), ssha, '[skip ci] responder state')
-    print(json.dumps({'ts': ts, 'keyreq_done': done, 'acks': acks, 'vault_keys': len(vault), 'meta': meta, 'orbit': orb, 'mirror': mir, 'inbox_new': ins, 'sealrail': sr, 'sla': sla, 'exp': exp, 'pulse': pulse, 'h_key': kh}, ensure_ascii=False))
+    print(json.dumps({'ts': ts, 'keyreq_done': done, 'acks': acks, 'vault_keys': len(vault), 'meta': meta, 'orbit': orb, 'mirror': mir, 'inbox_new': ins, 'sealrail': sr, 'sealdeliv': sd, 'sla': sla, 'exp': exp, 'pulse': pulse, 'h_key': kh}, ensure_ascii=False))
 
 if __name__ == '__main__':
     main()

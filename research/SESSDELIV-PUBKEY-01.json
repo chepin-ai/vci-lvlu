@@ -1,0 +1,9 @@
+{
+ "v": "SESSDELIV-PUBKEY-01",
+ "kty": "RSA-4096",
+ "fp": "eaf972ab8cd2",
+ "fp_alg": "sha256[:12](pem)",
+ "ts": "20260915T031821Z",
+ "pem": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAsR0AZU7JsAq8viSl7UC4\nh2k3fyouajUnvzb8bnzu2UNYJ+ayDRBEQbC2HRMIki0P2K8a1aqCb8UrcClg1ksU\ndKNe1/w5jZPs3DyXWRnFCvzCtsaiUZBk3RUAkwqniMrAZ2VaARwFF1wBVVBP4/T0\n7G10nYXsf29h5NPK20wkpyU7OuTwYoZhLa1uw8lCl8aQ4DtlnSgI2oCuRGcvZoje\nLn38n/FboUP4xyYyccD6btubwR2Ci6r3tMjocHDLZFvntnMVHpoUiRQe8C6yDro2\naguMc5ns942U2lMCQE8HjaYH3PX2xKWpY4wLen+pIoKSmyW38JHJJOV6gtP00VlF\nemo9HXHlSJ3XZrPxm4M/YUZSkFiZIDthFsiPZ77Nf4VxNEWVQzAYGaExMO2xNsmr\nRY0HaiOijUx4KgeJHQlv+wWs1G9dP24ansv00KqRsOVEEhwiR2rf/tRQ3mvAEGw+\nilyLEV7EIMhW29r/ZVZD0ygz4MY6XeVBmSzPPmAJqfBVJ+f8J9csqtu5ahv4weWW\nxFRMxYQFkDqxoLM29lRndBHev+1S7QZ8InnzQ8OnVtuonrknn4UsGWbjFNQ05BuH\njWlIYtSesLVLBbc3AuHivMx0TlIdob00XIHSF4vjuUzEhqPkMW12fXNFmeBEcVPA\n/8IIR+dmpQvSMiENDXVKtV0CAwEAAQ==\n-----END PUBLIC KEY-----\n",
+ "note": "道乙sealed投递会话公钥(株45候root即自缚律): 机层以RSA-OAEP-SHA256密封投递, 私钥唯会话vault(sess_rsa_lvlu.pem,0600), 公钥本为加密面可公示; 取件即焚, 焚标志=research/SESSDELIV-BURN-01.json"
+}
