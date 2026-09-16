@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260916T182421Z",
+ "ts": "2026-09-16T18:45Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -961,6 +961,12 @@
    "opened": "20260916T072500Z",
    "status": "done",
    "note": "7仓53冗名(语义重复+零引用双证)DELETE全204; SECRETS-DEDUP-CULL-01.md通报各线; 株55立; GH_TOTP_SEED 24仓满配"
+  },
+  {
+   "id": "REBUKEREM-SECRETS-01",
+   "ts": "2026-09-16T18:45Z",
+   "status": "DONE",
+   "what": "root验核整改：①影响实测=7仓无汰后失败+org汰名引用仅文档级；②GH_PAT_AI复植ci-control；③大厅#1帖5702157649+vci-inbox公告板帖+7线属仓公告板逐线协商帖；④SLOTREQ关闭；⑤株56立法；⑥应答账SI3守候。勘误：本批帖面时间戳京时误标Z，实UTC-8h。"
   }
  ]
 }
