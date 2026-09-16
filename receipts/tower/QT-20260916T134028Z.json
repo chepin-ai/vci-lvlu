@@ -1,0 +1,17 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260916T134028Z",
+ "idle_in": 42,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-FIELD-LVLU-DRIVE-01.md",
+   "opened": "20260915T153908Z",
+   "tries": 46,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 候件无；未闭项有lvlu字段驱动任务（TASK-FIELD-LVLU-DRIVE-01.md）已重试46次未结，lvlu诉求录毕。  \n② 应动未闭项OI-vciinboxlaneslvluinboxTA，立协同不候。  \n③ OI-vciinboxlaneslvluinboxTA：未闭，下一步排查该任务阻塞根因并执行关闭或降级。  \n④ 生债：设重试阈值熔断规则，防空转。",
+ "wq_excerpt": ""
+}
