@@ -1,0 +1,38 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260916T043851Z",
+ "idle_in": 24,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxYO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/YONEDA-PACKET-LEDGER-11.jsonl",
+   "opened": "20260915T115055Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-DRILL-0919-LVLU-EXEC-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqt",
+   "ref": "vci-inbox:lanes/lvlu/inbox/算请-qtlv-keys-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-FIELD-LVLU-DRIVE-01.md",
+   "opened": "20260915T153908Z",
+   "tries": 28,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n候件空。YO：米田包账（YONEDA-PACKET-LEDGER-11.jsonl）未归档；DE：0919 lvlu 需求演练执行案待落；qt：qtlv 密钥算请待清；TA：lvlu 任务场域驱动待建。  \n\n② 应动何件  \n四件皆悬且试数高企，全件立协同并动，不候。  \n\n③ 未闭项推进  \n- YO：未闭，核 ledger 哈希一致性后归账。  \n- DE：未闭，锁 0919 执行参并出 lvlu 演练纪要。  \n- qt：未闭，结 qtlv 密钥权限算请单。  \n- TA：未闭，布场域驱动节点并释任务队列。  \n\n④ 生债一条  \n生债：设 lvlu-inbox 超30试自动升级收敛机制，免久悬。",
+ "wq_excerpt": ""
+}
