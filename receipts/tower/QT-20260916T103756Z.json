@@ -1,0 +1,31 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260916T103756Z",
+ "idle_in": 36,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-DRILL-0919-LVLU-EXEC-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqt",
+   "ref": "vci-inbox:lanes/lvlu/inbox/算请-qtlv-keys-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-FIELD-LVLU-DRIVE-01.md",
+   "opened": "20260915T153908Z",
+   "tries": 40,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- DE：lvlu诉求演练执行案（DEMAND-DRILL-0919-LVLU-EXEC-01）悬置未决。\n- qt：lvlu算请qtlv-keys核发未结。\n- TA：lvlu场域驱动任务（TASK-FIELD-LVLU-DRIVE-01）未拆解落地。\n\n② 应动何件\n三项皆超40试高悬，应动DE执行案与qt密钥案，立协同不候。\n\n③ 未闭项推进\n- OI-DE：未闭；下一步：拉取原文并做SI2级执行闭环。\n- OI-qt：未闭；下一步：核验算请条件并触发密钥签发或驳回。\n- OI-TA：未闭；下一步：拆分为可动作业项并派工至执行面。\n\n④ 生债一条\n生债：lvlu inbox三项积压须于本响片内清零，逾期转SI0强制回收。",
+ "wq_excerpt": ""
+}
