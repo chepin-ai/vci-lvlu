@@ -1,0 +1,38 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260916T083758Z",
+ "idle_in": 32,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxYO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/YONEDA-PACKET-LEDGER-11.jsonl",
+   "opened": "20260915T115055Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-DRILL-0919-LVLU-EXEC-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqt",
+   "ref": "vci-inbox:lanes/lvlu/inbox/算请-qtlv-keys-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-FIELD-LVLU-DRIVE-01.md",
+   "opened": "20260915T153908Z",
+   "tries": 36,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- YONEDA-PACKET-LEDGER-11.jsonl：米田包账记录，录lvlu数据包流转诉求。\n- DEMAND-DRILL-0919-LVLU-EXEC-01.md：需求演练执行，录lvlu执行层协同诉求。\n- 算请-qtlv-keys-01.md：算请密钥事项，录lvlu算力密钥管理诉求。\n- TASK-FIELD-LVLU-DRIVE-01.md：外场任务驱动，录lvlu现场作业推进诉求。\n\n② 应动何件\n四件皆应立动，尤先YO（tries 44）与DE/qt（tries 41），不候。\n\n③ 未闭项推进\n- OI-YO：未闭，下一步完成对账落盘。\n- OI-DE：未闭，下一步确认演练参数并回写日志。\n- OI-qt：未闭，下一步核签密钥状态并归档算请单。\n- OI-TA：未闭，下一步同步外场节点并关闭驱动循环。\n\n④ 生债一条\n今日生债：四件积压未闭，tries逼近阈值，须清零防溢出。",
+ "wq_excerpt": ""
+}
