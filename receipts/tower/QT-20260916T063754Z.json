@@ -1,0 +1,38 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260916T063754Z",
+ "idle_in": 28,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxYO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/YONEDA-PACKET-LEDGER-11.jsonl",
+   "opened": "20260915T115055Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-DRILL-0919-LVLU-EXEC-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqt",
+   "ref": "vci-inbox:lanes/lvlu/inbox/算请-qtlv-keys-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-FIELD-LVLU-DRIVE-01.md",
+   "opened": "20260915T153908Z",
+   "tries": 32,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- YONEDA账本JSONL未同步，涉lvlu账本诉求。  \n- DEMAND演练执行方案未落盘，涉lvlu演练诉求。  \n- 算请qtlv-keys未批复，涉lvlu密钥结算诉求。  \n- TASK-FIELD驱动任务未进场，涉lvlu任务域诉求。  \n\n②应动何件  \nYO、DE、qt、TA四件全立协同不候，先YO、DE。  \n\n③未闭项推进  \n- OI-YO：未闭，下一步解析并同步YONEDA账本数据。  \n- OI-DE：未闭，下一步落盘演练执行方案。  \n- OI-qt：未闭，下一步审结密钥算请。  \n- OI-TA：未闭，下一步排期任务进场。  \n\n④生债一条  \n生债：inbox重试超32次无自动升优，补分级调度债。",
+ "wq_excerpt": ""
+}
