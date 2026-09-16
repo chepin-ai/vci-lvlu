@@ -1,0 +1,38 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260916T033435Z",
+ "idle_in": 22,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxYO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/YONEDA-PACKET-LEDGER-11.jsonl",
+   "opened": "20260915T115055Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-DRILL-0919-LVLU-EXEC-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqt",
+   "ref": "vci-inbox:lanes/lvlu/inbox/算请-qtlv-keys-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-FIELD-LVLU-DRIVE-01.md",
+   "opened": "20260915T153908Z",
+   "tries": 26,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①\n1. YONEDA-PACKET-LEDGER-11.jsonl：米田包台账34试未决，涉lvlu数据完整性诉求。\n2. DEMAND-DRILL-0919-LVLU-EXEC-01.md：演练执行稿待签，涉lvlu执行协同诉求。\n3. 算请-qtlv-keys-01.md：密钥算请挂起，涉lvlu算力配置诉求。\n4. TASK-FIELD-LVLU-DRIVE-01.md：外场驱动待启，涉lv",
+ "wq_excerpt": ""
+}
