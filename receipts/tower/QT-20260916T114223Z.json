@@ -1,0 +1,17 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260916T114223Z",
+ "idle_in": 39,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-FIELD-LVLU-DRIVE-01.md",
+   "opened": "20260915T153908Z",
+   "tries": 43,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 候件无；未闭项一：lvlu 驱动任务（TASK-FIELD-LVLU-DRIVE-01.md）已启 43 试未闭。  \n② 应动该件，立协同不候。  \n③ OI-vciinboxlaneslvluinboxTA 未闭，下一步：回灌 lvlu 驱动协议，发起第 44 试。  \n④ 生债：lvlu 43 试未竟，负场域锚定债一，待闭项偿。",
+ "wq_excerpt": ""
+}
