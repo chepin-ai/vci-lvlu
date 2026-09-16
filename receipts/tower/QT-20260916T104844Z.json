@@ -1,0 +1,31 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260916T104844Z",
+ "idle_in": 37,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-DRILL-0919-LVLU-EXEC-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqt",
+   "ref": "vci-inbox:lanes/lvlu/inbox/算请-qtlv-keys-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-FIELD-LVLU-DRIVE-01.md",
+   "opened": "20260915T153908Z",
+   "tries": 41,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- DEMAND-DRILL-0919-LVLU-EXEC-01.md：lvlu执行演练诉求待闭环。\n- 算请-qtlv-keys-01.md：lvlu算请qtlv密钥接口诉求待批。\n- TASK-FIELD-LVLU-DRIVE-01.md：lvlu场域驱动任务诉求待启。\n\n② 应动何件：\n三件皆滞46/41轮，立协同不候；先动DE/qt，TA并行。\n\n③ 未闭项推进：\n- OI-DE：未闭，下一步：下发EXEC-01执行令",
+ "wq_excerpt": ""
+}
