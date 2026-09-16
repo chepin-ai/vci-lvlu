@@ -1,0 +1,31 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260916T113130Z",
+ "idle_in": 38,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-DRILL-0919-LVLU-EXEC-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqt",
+   "ref": "vci-inbox:lanes/lvlu/inbox/算请-qtlv-keys-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-FIELD-LVLU-DRIVE-01.md",
+   "opened": "20260915T153908Z",
+   "tries": 42,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：DEMAND-DRILL-0919-LVLU-EXEC-01.md系lvlu执行层需求钻取，待剖；算请-qtlv-keys-01.md系lvlu量子密钥算请，待核；TASK-FIELD-LVLU-DRIVE-01.md系lvlu现场驱动任务，待协。  \n② 应动何件：三件皆立协同不候（DE钻取、qt算请、TA驱动）。  \n③ 未闭项推进：  \n- OI-DE：未闭，下一步输出exec钻取结论并关件。  \n- OI-qt：未闭，下一步完成qtlv-keys算请交付。  \n- OI-TA：未闭，下一步启FIELD-DRIVE协同并落位。  \n④ 生债：SI2/SI0欠lvlu线高tries未闭项阻滞根因剖白一条，限本轮补录。",
+ "wq_excerpt": ""
+}
