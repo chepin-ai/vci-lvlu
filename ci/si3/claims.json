@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260916T142323Z",
+ "ts": "20260916T063500Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -925,6 +925,32 @@
    "opened": "20260916T055000Z",
    "status": "done",
    "note": "器课-REGISTRY-LVLU-01.md 200; 含株52修订(root两正: 同轮候窗轨/163轨)"
+  },
+  {
+   "id": "FED-TOPOLOGY-01",
+   "name": "联邦拓扑注册+Q5落实",
+   "by": "si0",
+   "opened": "20260916T063500Z",
+   "status": "done",
+   "note": "root亲授T5/Q5/H5拓扑全录; 全仓实证; 种子补投T5实仓×4+Q5实仓×5+ai-quant-research(qi)=10仓201; ci-inbox/shared/FED-TOPOLOGY-01.md"
+  },
+  {
+   "id": "TOTP-SLOT-BLOCK-01",
+   "name": "ci-control/quantum-go-ledger百槽满(株54)",
+   "by": "si0",
+   "opened": "20260916T063500Z",
+   "status": "open",
+   "watch": [
+    {
+     "repo": "ci-inbox",
+     "prefix": "shared/",
+     "contains": [
+      "SLOTREQ-GH-TOTP-01"
+     ],
+     "sha_neq": ""
+    }
+   ],
+   "note": "两仓secrets100/100→400; SLOTREQ-GH-TOTP-01已发; 壳轨兜底不断; 待cisvr/qgl释槽即补投"
   }
  ]
 }
