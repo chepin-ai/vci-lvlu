@@ -1,0 +1,45 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260916T023904Z",
+ "idle_in": 20,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxDR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DRILL-0919-PATCH-disc-close-responder.md",
+   "opened": "20260915T063634Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxYO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/YONEDA-PACKET-LEDGER-11.jsonl",
+   "opened": "20260915T115055Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-DRILL-0919-LVLU-EXEC-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqt",
+   "ref": "vci-inbox:lanes/lvlu/inbox/算请-qtlv-keys-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-FIELD-LVLU-DRIVE-01.md",
+   "opened": "20260915T153908Z",
+   "tries": 24,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- DRILL-PATCH：disc-close-responder补丁待验证（涉lvlu诉求）\n- YONEDA-LEDGER：11号包账数据待落（涉lvlu）\n- DEMAND-EXEC：0919演练执行需求待批（涉lvlu）\n- 算请-keys：qtlv密钥算请待核（涉lvlu）\n- FIELD-DRIVE：现场驱动任务待启（涉lvlu）\n\n② 应动何件：DRILL-PATCH（已46试）与YONEDA-LEDGER（数据底账），立协同不候。\n\n③ 未闭项推进：\n- DR：未闭，验证补丁闭环后关单\n- YO：未闭，解析jsonl并入账\n- DE：未闭，批签EXEC-01执行条件\n- qt：未闭，核验授出qtlv-keys\n- TA：未闭，激活FIELD-DRIVE并回执\n\n④ 生债一条：0919演练全链路收敛债。",
+ "wq_excerpt": ""
+}
