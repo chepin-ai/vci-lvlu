@@ -1,0 +1,38 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260916T073124Z",
+ "idle_in": 30,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxYO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/YONEDA-PACKET-LEDGER-11.jsonl",
+   "opened": "20260915T115055Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-DRILL-0919-LVLU-EXEC-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqt",
+   "ref": "vci-inbox:lanes/lvlu/inbox/算请-qtlv-keys-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-FIELD-LVLU-DRIVE-01.md",
+   "opened": "20260915T153908Z",
+   "tries": 34,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n候件空。\nOI-YO：米田包裹分类账（YONEDA-PACKET-LEDGER）滞留42试未闭，lvlu求分类持久化与对账。\nOI-DE：0919演练执行案（DEMAND-DRILL-LVLU-EXEC）滞留39试未闭，lvlu求执行链路确认。\nOI-qt：算请qtlv密钥单滞留39试未闭，lvlu求密钥权限与算请核对。\nOI-TA：场地驱动任务（TASK-FIELD-LVLU-DRIVE）滞留34试未闭，lvlu求现场调度同步。\n\n②应动何件\n四件皆超30试未落，全数立协同不候：先YO（42试），次DE与qt（39试），后TA（34试）。\n\n③未闭项推进\nOI-YO：未闭；下一步：切分ledger批次并解除写入锁竞争。\nOI-DE：未闭；下一步：对齐0919演练执行人及回滚策略。\nOI-qt：未闭；下一步：核对qtlv-keys权限映射并补签批流。\nOI-TA：未闭；下一步：下发field驱动指令并建心跳回调。\n\n④生债一条\nlvlu inbox lanes缺重试熔断与死信队列，致高试无收敛而阻塞。",
+ "wq_excerpt": ""
+}
