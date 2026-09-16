@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260916T052250Z",
+ "ts": "20260916T055000Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -899,6 +899,38 @@
    ],
    "last_nudge": "20260916T043916Z",
    "last_nudge_beats": 162
+  },
+  {
+   "id": "MICROAUTH-ENTRY-01",
+   "name": "Microsoft 2FA墙攻破(推送轨同轮候窗轨)",
+   "by": "si0",
+   "opened": "20260916T055000Z",
+   "status": "done",
+   "note": "login.live.com→密码→推送88→root即批→account主页已认证;株52修订实证:短轮界存活+页面自动跳转+cookie铸成"
+  },
+  {
+   "id": "TOTP-SEED-DIST-01",
+   "name": "TOTP base32种子自取并全域分发",
+   "by": "si0",
+   "opened": "20260916T055000Z",
+   "status": "done",
+   "note": "设置其他Authenticator应用→我无法扫描条形码→种子显现→配对验证提交→vault单副本+12仓GH_TOTP_SEED(201): ci-inbox/vci-lvlu/usrm/ucif2/cfts/qgl/qtlv/lgt/qlv/qfa/vinf/vci-inbox; 分发录=ci-inbox/shared/GH-TOTP-SEED-DIST-01.md"
+  },
+  {
+   "id": "SESSDELIV-BURN-01",
+   "name": "vci-lvlu research/SESSDELIV-SEALED-02.json焚毁",
+   "by": "si0",
+   "opened": "20260916T055000Z",
+   "status": "done",
+   "note": "单副本vault律; DELETE 200"
+  },
+  {
+   "id": "QIKE-49-53-01",
+   "name": "器课株49~53入册",
+   "by": "si0",
+   "opened": "20260916T055000Z",
+   "status": "done",
+   "note": "器课-REGISTRY-LVLU-01.md 200; 含株52修订(root两正: 同轮候窗轨/163轨)"
   }
  ]
 }
