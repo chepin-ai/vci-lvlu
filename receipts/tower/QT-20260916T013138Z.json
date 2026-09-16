@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260916T013138Z",
+ "idle_in": 18,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-DEBT-75-LVLU-01.md",
+   "opened": "20260915T044303Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DRILL-0919-PATCH-disc-close-responder.md",
+   "opened": "20260915T063634Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxYO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/YONEDA-PACKET-LEDGER-11.jsonl",
+   "opened": "20260915T115055Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-DRILL-0919-LVLU-EXEC-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqt",
+   "ref": "vci-inbox:lanes/lvlu/inbox/算请-qtlv-keys-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-FIELD-LVLU-DRIVE-01.md",
+   "opened": "20260915T153908Z",
+   "tries": 22,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \nAN：lvlu债务应答ANS-DEBT-75悬置47试未复。  \nDR：0919演练补丁关闭响应器待落盘44试。  \nYO：米田包分类账JSONL流待解析30试。  \nDE：lvlu执行级需求演练待闭环27试。  \nqt：lvlu算请qtlv密钥待核发27试。  \nTA：lvlu场域驱动任务待触发22试。  \n\n②应动何件（立协同不候）  \nAN、DR、qt。  \n\n③未闭项推进  \nAN：未闭，下一步：终局应答并归档。  \nDR：未闭，下一步：验补丁后关闭响应器。  \nYO：未闭，下一步：解析ledger并落库。  \nDE：未闭，下一步：演练执行验收。  \nqt：未闭，下一步：核发密钥回执。  \nTA：未闭，下一步：激活场域驱动。  \n\n④生债一条  \n本轮零闭合，生债：AN试数已达47，须自驱48h内下钻清零。",
+ "wq_excerpt": ""
+}
