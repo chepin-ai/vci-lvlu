@@ -196,3 +196,4 @@
 {"ts": "20260916T034551Z", "kind": "机镜", "claims_open": 35, "closed": [], "nudged": ["ADJUD-01:L16:lane:True,otp:domout(株卅八),board:1", "YONEDA-ROLL-LGT:L4:lane:True,inbox:domout(株卅八),kick:domout(株卅八),board:1"], "exp": {"probe": "In Queue", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
 {"ts": "20260916T035649Z", "kind": "机镜", "claims_open": 35, "closed": [], "nudged": [], "exp": {"probe": "In Queue", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
 {"ts": "20260916T040724Z", "kind": "机镜", "claims_open": 35, "closed": [], "nudged": [], "exp": {"probe": "In Queue", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
+{"ts": "20260916T041803Z", "kind": "机镜", "claims_open": 35, "closed": [], "nudged": [], "exp": {"probe": "In Queue", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
