@@ -1,0 +1,45 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260916T014407Z",
+ "idle_in": 19,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxDR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DRILL-0919-PATCH-disc-close-responder.md",
+   "opened": "20260915T063634Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxYO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/YONEDA-PACKET-LEDGER-11.jsonl",
+   "opened": "20260915T115055Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-DRILL-0919-LVLU-EXEC-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqt",
+   "ref": "vci-inbox:lanes/lvlu/inbox/算请-qtlv-keys-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-FIELD-LVLU-DRIVE-01.md",
+   "opened": "20260915T153908Z",
+   "tries": 23,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- DR：DRILL-0919-PATCH，disc-close responder 演练补片，涉 lvlu 响应器谐波校准。  \n- YO：YONEDA-PACKET-LEDGER-11，米田包账第 11 批次待轧平。  \n- DE：DEMAND-DRILL-0919-LVLU-EXEC-01，lvlu drill 执行令待激活与回传。  \n- qt：算请-qtlv-keys-01，律吕量子密钥交割与对账。  \n- TA：TASK-FIELD-LVLU-DRIVE-01，外场律管作业单待下发。  \n\n② 应动何件（立协同不候）  \nDR（45 试堵点，disc-close responder 协议立协）、DE（执行令，lvlu 端立协）。  \n\n③ 未闭项推进  \n- DR：未闭；下一步：对拍 disc-close 协议，热插 responder 补片。  \n- YO：未闭；下一步：轧平 11 批次账差，回写 ledger 终态。  \n- DE：未闭；下一步：校验 drill 环境，签发 exec 令牌。  \n- qt：未闭；下一步：交割 qtlv-keys，输出签收算请单。  \n- TA：未闭；下一步：映射场域拓扑，拆律下发 drive 子任务。  \n\n④ 生债一条  \nDR 谐波 45 试未对齐，生「disc-close responder 即时对拍债」一条。",
+ "wq_excerpt": ""
+}
