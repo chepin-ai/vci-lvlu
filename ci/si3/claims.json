@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260916T162912Z",
+ "ts": "20260916T072500Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -945,7 +945,7 @@
    "name": "ci-control/quantum-go-ledger百槽满(株54)",
    "by": "si0",
    "opened": "20260916T063500Z",
-   "status": "closed",
+   "status": "done",
    "watch": [
     {
      "repo": "ci-inbox",
@@ -956,9 +956,17 @@
      "sha_neq": ""
     }
    ],
-   "note": "两仓secrets100/100→400; SLOTREQ-GH-TOTP-01已发; 壳轨兜底不断; 待cisvr/qgl释槽即补投",
+   "note": "两仓secrets100/100→400; SLOTREQ-GH-TOTP-01已发; 壳轨兜底不断; 待cisvr/qgl释槽即补投 → 株55冗汰释槽, GH_TOTP_SEED两仓201补投成",
    "closed_ts": "20260916T144315Z",
    "evidence": "ci-inbox:shared/SLOTREQ-GH-TOTP-01.md"
+  },
+  {
+   "id": "SECRETS-DEDUP-01",
+   "name": "各仓重复Secrets测试淘汰(root令)",
+   "by": "si0",
+   "opened": "20260916T072500Z",
+   "status": "done",
+   "note": "7仓53冗名(语义重复+零引用双证)DELETE全204; SECRETS-DEDUP-CULL-01.md通报各线; 株55立; GH_TOTP_SEED 24仓满配"
   }
  ]
 }
