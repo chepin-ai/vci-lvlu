@@ -1,0 +1,38 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260916T093136Z",
+ "idle_in": 34,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxYO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/YONEDA-PACKET-LEDGER-11.jsonl",
+   "opened": "20260915T115055Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-DRILL-0919-LVLU-EXEC-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqt",
+   "ref": "vci-inbox:lanes/lvlu/inbox/算请-qtlv-keys-01.md",
+   "opened": "20260915T133358Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-FIELD-LVLU-DRIVE-01.md",
+   "opened": "20260915T153908Z",
+   "tries": 38,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- YO ledger-11：米田包账第11轨积压，诉清账。  \n- DE drill-exec：0919演练执行案待决，诉定稿。  \n- qt 算请：qtlv密钥费用待核，诉结单。  \n- TA field-drive：外场任务令待启，诉落地。  \n\n② 应动何件  \n四件全动；YO（tries 46）与DE（exec主干）立协同，qt、TA并推，不候。  \n\n③ 未闭项推进  \n- OI-YO：未闭；下一步ledger包完整性校验并回执。  \n- OI-DE：未闭；下一步drill执行人签批并锁资源。  \n- OI-qt：未闭；下一步算请对账，出keys凭据。  \n- OI-TA：未闭；下一步field任务拆单，绑drive工时。  \n\n④ 生债一条  \n生债：设tries>45熔断升单律，免lvlu inbox包死锁。",
+ "wq_excerpt": ""
+}
