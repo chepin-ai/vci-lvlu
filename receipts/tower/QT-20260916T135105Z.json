@@ -1,0 +1,17 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260916T135105Z",
+ "idle_in": 43,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-FIELD-LVLU-DRIVE-01.md",
+   "opened": "20260915T153908Z",
+   "tries": 47,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 无候件；未闭项为 lvlu inbox 任务字段驱动 TASK-FIELD-LVLU-DRIVE-01（tries47，仍open）。\n② 应动 OI-vciinboxlaneslvluinboxTA，立即协同排查 47 次未闭阻塞点。\n③ OI-vciinboxlaneslvluinboxTA：未闭，下一步 dump 最近 3 次 try 日志并定位根因。\n④ 生债：lvlu inbox 字段驱动流程缺自动熔断，try>10 应强制升单而非空转。",
+ "wq_excerpt": ""
+}
