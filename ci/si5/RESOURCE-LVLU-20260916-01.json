@@ -1,0 +1,19 @@
+{
+ "v": "RESOURCE-LVLU-20260916-01",
+ "ts": "2026-09-16T19:16Z",
+ "by": "lvlu",
+ "layer": "SI5",
+ "pools": {
+  "FULL(user 199005759)": "5000/hr 他线爆发同耗(株47),probe-and-blast",
+  "qi(chepin-qi)": "独立池,读面ai-quant-research/lgt-worker-01/ci-yard+ai-quant写",
+  "bi(chepin-bi)": "独立池,vci-*读面"
+ },
+ "rails": {
+  "MS_TOTP": "GH_TOTP_SEED×24仓在役,单槽律",
+  "163": "IMAP授权码C5待",
+  "本源": "120s一次性(纪律在册)",
+  "IBM_TOTP": "自治",
+  "FINE_OWN_PAT_LVLU": "vci-lvlu+vci-inbox+ci-inbox RW"
+ },
+ "surge_ready": "L2+ 评估/协商/备援类自领(SELFREG-BACKUP代行=首证)"
+}
