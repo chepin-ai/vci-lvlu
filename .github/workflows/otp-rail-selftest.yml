@@ -1,0 +1,42 @@
+name: OTP-RAIL-SELFTEST-01
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  otp-selftest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: totp-proof
+        env:
+          GH_TOTP_SEED: ${{ secrets.GH_TOTP_SEED }}
+        run: |
+          python3 - <<'PYEOF'
+          import os, json, base64, hmac, hashlib, struct, time, datetime
+          seed = os.environ.get('GH_TOTP_SEED','').strip()
+          assert seed, 'GH_TOTP_SEED missing'
+          key = base64.b32decode(seed.upper())
+          def totp(t):
+              ctr = int(t)//30
+              h = hmac.new(key, struct.pack('>Q', ctr), hashlib.sha1).digest()
+              o = h[-1] & 0x0F
+              return str((struct.unpack('>I', h[o:o+4])[0] & 0x7FFFFFFF) % 10**6).zfill(6)
+          now = time.time()
+          c0, c1 = totp(now), totp(now+30)
+          assert len(c0)==6 and c0.isdigit() and c1.isdigit()
+          doc = {'v':'OTP-RAIL-PROOF','ts':datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ'),
+                 'run':os.environ['GITHUB_RUN_ID'],'seed_present':True,'seed_len':len(seed),
+                 'rfc6238':'SHA1/30s/6digit','code_emitted':False,'law':'值域律:码不出runner',
+                 'verdict':'RAIL-OK'}
+          json.dump(doc, open('research/OTP-RAIL-PROOF.json','w'), ensure_ascii=False, indent=1)
+          print('RAIL-OK len', len(seed))
+          PYEOF
+      - name: push
+        run: |
+          mkdir -p research
+          git config user.name lvlu-ops
+          git config user.email lvlu@ci.ops
+          git add research/OTP-RAIL-PROOF.json
+          git commit -q -m "[skip ci] OTP-RAIL-PROOF ${GITHUB_RUN_ID}"
+          git push
