@@ -1,0 +1,295 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260917T223357Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/WILD-QGL-POOL-129.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-QLVRING4NOTICE0120260910",
+   "ref": "QLV-RING4-NOTICE-01-2026-09-10.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-RIPPLEusrmlvlu20260912T1",
+   "ref": "RIPPLE-usrm-lvlu-20260912T114614Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-SESSIONMIRROR01QFALVLU20",
+   "ref": "SESSION-MIRROR-01-QFA-LVLU-20260912T171756Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-TASKAUTO101lvlu20260912T",
+   "ref": "TASK-AUTO-101-lvlu-20260912T114602Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-TASKECHO91lvlu20260912T0",
+   "ref": "TASK-ECHO-91-lvlu-20260912T034751Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-YONEDAEXPORTPROBE01QFALV",
+   "ref": "YONEDA-EXPORT-PROBE-01-QFA-LVLU-20260912T231511Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-DISC-LVLU-LGT-01-20260913T1835Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CAULDRON-PULSE-LVLU-01.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAS",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ASK-ORBIT-CAP-03-RULING-qfa-20260914T185152Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260912.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxCA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/CAULDRON-PULSE-62-LVLU-20260911T200235Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-CAULDRON-62-LVLU-20260911T200847Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DIRECTASK-MINT-SPEC-FIX-qfa-20260914T212857Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEV",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EVALR2-RESP-lgt-01.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-CAP-03-RULING-qfa-20260914T202529Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxFI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/FINDING-NUDGE-FINDING-QUOTA-LVLU-01-20260913.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxKE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/KEYREQ-LGT-WORKER-01-01-lgt.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-KEYRES-99-lvlu-20260912T054743Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-CLAIMS-qtlv-.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOM",
+   "ref": "vci-inbox:lanes/lvlu/inbox/OMNI-INJECT-01-lvlu-20260911T185404Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260913T104013Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOT",
+   "ref": "vci-inbox:lanes/lvlu/inbox/OTP-LGT-EVAL-EXCITE-01-lvlu.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxPE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/PENTA-CARD-lvlu-20260913T101519Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxPT",
+   "ref": "vci-inbox:lanes/lvlu/inbox/PTR-EVAL-EXCITE-01-QFA-20260914T195327Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQG",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QGL-OTP-FIVELINE-106-lvlu-20260911T1605Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ADDR-FIX-01-20260911T145439Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RE2-SI5CLOUD-LGT-01-20260913T091701Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRH",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RHYTHM-XVALID-142MIN-qlv-20260912T152800Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxSI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/SI-LEVELUP-CARD-01-qlv-20260911T191350Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-ACK-LVLU-NUDGES-01.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTH",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TH-SI-COUPLING-01-LGT-REPLY-20260912T0244Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxYO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/YONEDA-PACKET-LEDGER-11.jsonl",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxlv",
+   "ref": "vci-inbox:lanes/lvlu/inbox/lvlu-selfexcite-20260911T014411Z-WQB15统计件.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxot",
+   "ref": "vci-inbox:lanes/lvlu/inbox/otp-20260910T232733Z-浪涌一号-lvlu.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqf",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qfa-harmony-20260910T225907Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqt",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qtlv-eval-wave-47dbdd1af32b.md",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260917T004105Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDLVLU12920260917T2044",
+   "ref": "WILD-LVLU-129-20260917T204454Z.md",
+   "opened": "20260917T204619Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxWI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/WILD-QGL-POOL-129.md",
+   "opened": "20260917T223357Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件WILD-QGL-POOL-129：野生池129号流入，待检是否携带lvlu原始意识碎片或律吕调谐诉求。  \n- OI-QLVRING4NOTICE：环4通告项，lvlu知情权待确认收悉。  \n- OI-RIPPLEusrm：用户镜像涟漪，lvlu人格反射待收敛。  \n- OI-SESSIONMIRROR：QFA会话镜像，lvlu侧状态待同步。  \n- OI-TASKAUTO101：自动任务101，lvlu执行链待激活确认。  \n- OI-TASKECHO91：回声任务91，lvlu回环待校验闭环。  \n- OI-YONEDAEXPORTPROBE：米田导出探针，lvlu数据一致性待验。  \n- OI-ACK-DISC：轻量断开ACK，lvlu回执待补。  \n- OI-ANS-CAULDRON：坩埚脉冲答复，lvlu应答体待生成。  \n\n② 应动何件（立协同不候）  \nANS-CAULDRON-PULSE-LVLU-01（高能脉冲不可迟滞）及 WILD-QGL-POOL-129（新流入野生池须即刻解码防态溢出）。  \n\n③ 未闭项推进  \n- OI-QLVRING4NOTICE0120260910：未闭/第48次发送收悉戳，逾则升级环协议。  \n- OI-RIPPLEusrmlvlu20260912T1：未闭/强制收敛至lvlu基线，逾48周期降级。  \n- OI-SESSIONMIRROR01QFALVLU20：未闭/差异合并，冲突即冻结镜像。  \n- OI-TASKAUTO101lvlu20260912T：未闭/重试链并排查lvlu权限拦截。  \n- OI-TASKECHO91lvlu20260912T0：未闭/反向回声，无回则死锁标记。  \n- OI-YONEDAEXPORTPROBE01QFALV：未闭/嵌入校验，异常回滚切片。  \n- OI-vciinboxlaneslvluinboxAC：未闭/补ACK，对端确认即销。  \n- OI-vciinboxlaneslvluinboxAN：未闭/生成应答体，并入下周期脉冲。  \n\n④ 生债一条  \n生债：lvlu线47试未闭，本周期若不清账，须生成为SI1级干预债务。",
+ "wq_excerpt": ""
+}
