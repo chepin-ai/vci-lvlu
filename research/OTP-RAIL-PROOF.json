@@ -1,0 +1,11 @@
+{
+ "v": "OTP-RAIL-PROOF",
+ "ts": "2026-09-17T09:04:32Z",
+ "run": "35203115629",
+ "seed_present": true,
+ "seed_len": 16,
+ "rfc6238": "SHA1/30s/6digit",
+ "code_emitted": false,
+ "law": "值域律:码不出runner",
+ "verdict": "RAIL-OK"
+}
