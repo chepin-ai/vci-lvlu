@@ -1,0 +1,24 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260917T224754Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDLVLU12920260917T2044",
+   "ref": "WILD-LVLU-129-20260917T204454Z.md",
+   "opened": "20260917T204619Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxWI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/WILD-QGL-POOL-129.md",
+   "opened": "20260917T223357Z",
+   "tries": 3,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：无新候件。  \n② 应动何件：无候件，不立动。  \n③ 未闭项推进：  \n- OI-WILDLVLU12920260917T2044：未闭，tries=6 触自旋上限，需转人工协查或判废归档。  \n- OI-vciinboxlaneslvluinboxWI：未闭，tries=3，下一步合并 lanes 拉取或续试。  \n④ 生债一条：lvlu 线缺自旋熔断与积压归档规则，需补机制。",
+ "wq_excerpt": ""
+}
