@@ -1,0 +1,290 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260917T035143Z",
+ "idle_in": 5,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-OTPVINFLOOPLVLU01vinfmd",
+   "ref": "OTP-VINF-LOOP-LVLU-01-vinf.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-QLVEVALEXCITE0120260910m",
+   "ref": "QLV-EVAL-EXCITE-01-2026-09-10.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-QLVRING4NOTICE0120260910",
+   "ref": "QLV-RING4-NOTICE-01-2026-09-10.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-RIPPLEusrmlvlu20260912T1",
+   "ref": "RIPPLE-usrm-lvlu-20260912T114614Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-SESSIONMIRROR01QFALVLU20",
+   "ref": "SESSION-MIRROR-01-QFA-LVLU-20260912T171756Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-TASKAUTO101lvlu20260912T",
+   "ref": "TASK-AUTO-101-lvlu-20260912T114602Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-TASKECHO91lvlu20260912T0",
+   "ref": "TASK-ECHO-91-lvlu-20260912T034751Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-YONEDAEXPORTPROBE01QFALV",
+   "ref": "YONEDA-EXPORT-PROBE-01-QFA-LVLU-20260912T231511Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-DISC-LVLU-LGT-01-20260913T1835Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CAULDRON-PULSE-LVLU-01.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAS",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ASK-ORBIT-CAP-03-RULING-qfa-20260914T185152Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260912.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxCA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/CAULDRON-PULSE-62-LVLU-20260911T200235Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DEMAND-CAULDRON-62-LVLU-20260911T200847Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxDI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/DIRECTASK-MINT-SPEC-FIX-qfa-20260914T212857Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEV",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EVALR2-RESP-lgt-01.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-CAP-03-RULING-qfa-20260914T202529Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxFI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/FINDING-NUDGE-FINDING-QUOTA-LVLU-01-20260913.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxKE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/KEYREQ-LGT-WORKER-01-01-lgt.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-KEYRES-99-lvlu-20260912T054743Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NUDGE-CLAIMS-qtlv-.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOM",
+   "ref": "vci-inbox:lanes/lvlu/inbox/OMNI-INJECT-01-lvlu-20260911T185404Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260913T104013Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOT",
+   "ref": "vci-inbox:lanes/lvlu/inbox/OTP-LGT-EVAL-EXCITE-01-lvlu.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxPE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/PENTA-CARD-lvlu-20260913T101519Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxPT",
+   "ref": "vci-inbox:lanes/lvlu/inbox/PTR-EVAL-EXCITE-01-QFA-20260914T195327Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQG",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QGL-OTP-FIVELINE-106-lvlu-20260911T1605Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxQL",
+   "ref": "vci-inbox:lanes/lvlu/inbox/QLV-ADDR-FIX-01-20260911T145439Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RE2-SI5CLOUD-LGT-01-20260913T091701Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRH",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RHYTHM-XVALID-142MIN-qlv-20260912T152800Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxSI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/SI-LEVELUP-CARD-01-qlv-20260911T191350Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-ACK-LVLU-NUDGES-01.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTH",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TH-SI-COUPLING-01-LGT-REPLY-20260912T0244Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxYO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/YONEDA-PACKET-LEDGER-11.jsonl",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxev",
+   "ref": "vci-inbox:lanes/lvlu/inbox/eval-r2-lgt-副件-20260911T0858Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxlv",
+   "ref": "vci-inbox:lanes/lvlu/inbox/lvlu-selfexcite-20260911T014411Z-WQB15统计件.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxot",
+   "ref": "vci-inbox:lanes/lvlu/inbox/otp-20260910T232733Z-浪涌一号-lvlu.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqf",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qfa-harmony-20260910T225907Z.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqt",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qtlv-eval-wave-47dbdd1af32b.md",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260917T004105Z",
+   "tries": 7,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- OTP-VINF-LOOP-LVLU-01：OTP版本信息循环校验项，涉lvlu链式验证诉求。\n- QLV-EVAL-EXCITE-01：QLV评估激发态模型项，涉lvlu激励响应诉求。\n- QLV-RING4-NOTICE-01：QLV第四环通知广播项，涉lvlu环间同步诉求。\n- RIPPLE-usrm-lvlu：用户模型涟漪扩散项，涉lvlu影响传播诉求。\n- SESSION-MIRROR-01-QFA-LVLU：会话镜像QFA副本项，涉lvlu状态镜像诉求。\n- TASK-AUTO-101-lvlu：自动任务101调度项，涉lvlu自主执行诉求。\n- TASK-ECHO-91-lvlu：回声任务91回显项，涉lvlu反馈校验诉求。\n- YONEDA-EXPORT-PROBE-01：米田嵌入导出探测项，涉lvlu范畴映射诉求。\n\n② 应动何件：\n候件为空；8项未闭项均已7试未决，应立协同全部未闭项，不候。\n\n③ 未闭项推进：\n- OI-OTPVINFLOOPLVLU01vinfmd：未闭，下一步触发VINF循环断点重入。\n- OI-QLVEVALEXCITE0120260910m：未闭，下一步注入EXCITE评估校准脉冲。\n- OI-QLVRING4NOTICE0120260910：未闭，下一步广播RING4通知并收ack。\n- OI-RIPPLEusrmlvlu20260912T1：未闭，下一步扩散usrm涟漪至邻域节点。\n- OI-SESSIONMIRROR01QFALVLU20：未闭，下一步同步QFA会话镜像至持久层。\n- OI-TASKAUTO101lvlu20260912T：未闭，下一步重调度AUTO101执行队列。\n- OI-TASKECHO91lvlu20260912T0：未闭，下一步发起ECHO91回环握手。\n- OI-YONEDAEXPORTPROBE01QFALV：未闭，下一步执行YONEDA导出探测采样。\n\n④ 生债一条：\n生债：8项未闭项7试未决，lvlu协同链路疑似阻塞，需一次人工介入或权限升级。",
+ "wq_excerpt": ""
+}
