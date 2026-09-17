@@ -2698,6 +2698,17 @@
     "ApB": "In Queue",
     "ApBp": "ERR:'[' was never closed (parsetab.py, line "
    }
+  },
+  {
+   "ts": "20260917T212905Z",
+   "st": "In Queue",
+   "all": {
+    "probe": "In Queue",
+    "AB": "In Queue",
+    "ABp": "In Queue",
+    "ApB": "ERR:'[' was never closed (parsetab.py, line ",
+    "ApBp": "In Queue"
+   }
   }
  ]
 }
