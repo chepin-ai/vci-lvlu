@@ -1,0 +1,45 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260918T063713Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDLVLU12920260917T2044",
+   "ref": "WILD-LVLU-129-20260917T204454Z.md",
+   "opened": "20260917T204619Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxWI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/WILD-QGL-POOL-129.md",
+   "opened": "20260917T223357Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-KEYUNIFY-QUORUM-notice-20260918T033000Z.md",
+   "opened": "20260918T034659Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34lvlu20260918T04305",
+   "ref": "WAVE-34-lvlu-20260918T043054Z.md",
+   "opened": "20260918T044014Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34Blvlu20260918T0449",
+   "ref": "WAVE-34B-lvlu-20260918T044918Z.md",
+   "opened": "20260918T045058Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- OI-WILDLVLU129：WILD-LVLU-129 野生线 lvlu 诉求件，21 次尝试未闭。  \n- OI-vciinbox…WI：QGL-POOL-129 vci-inbox 挂载件，18 次未决。  \n- OI-vciinbox…qg：KEYUNIFY-QUORUM 通知，lvlu 线法定人数统一诉求待确认。  \n- OI-WAVE34…：WAVE-34 波次 lvlu 响应件，5 次开放。  \n- OI-WAVE34B…：WAVE-34B 分支波次 lvlu 协同件，4 次开放。  \n\n② 应动何件  \n应动 OI-vciinboxlaneslvluinboxqg（KEYUNIFY-QUORUM），立协同不候。  \n\n③ 未闭项推进  \n- OI-WILDLVLU129：未闭/尝试超限，下一步转 SI1 熔断或人工收割。  \n- OI-vciinbox…WI：未闭/lane 池阻，下一步清池重刷 inbox。  \n- OI-vciinbox…qg：未闭/待出回执，下一步执行密钥统一共识确认。  \n- OI-WAVE34…：未闭/主波次挂起，下一步 dequeue 出队处理。  \n- OI-WAVE34B…：未闭/分支并行，下一步并线或独立闭环。  \n\n④ 生债一条  \n生债：WAVE-34 与 34B 双波次未预合并，耗散 lvlu 线共识算力。",
+ "wq_excerpt": ""
+}
