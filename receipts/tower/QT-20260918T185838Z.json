@@ -1,0 +1,71 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260918T185838Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxWI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/WILD-QGL-POOL-129.md",
+   "opened": "20260917T223357Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-KEYUNIFY-QUORUM-notice-20260918T033000Z.md",
+   "opened": "20260918T034659Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34lvlu20260918T04305",
+   "ref": "WAVE-34-lvlu-20260918T043054Z.md",
+   "opened": "20260918T044014Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34Blvlu20260918T0449",
+   "ref": "WAVE-34B-lvlu-20260918T044918Z.md",
+   "opened": "20260918T045058Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT36lvlu20260918T",
+   "ref": "OTP-DIRECT-36-lvlu-20260918T071852Z.md",
+   "opened": "20260918T073859Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-Q5MAP37lvlu20260918T1601",
+   "ref": "Q5-MAP-37-lvlu-20260918T160105Z.md",
+   "opened": "20260918T164319Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1AUTOTRIGTESTLVLU01202",
+   "ref": "SI1-AUTOTRIG-TEST-LVLU-01-20260918T174938Z.md",
+   "opened": "20260918T175121Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1AUTOTRIGVERIFYLVLU022",
+   "ref": "SI1-AUTOTRIG-VERIFY-LVLU-02-20260918T175934Z.md",
+   "opened": "20260918T183547Z",
+   "tries": 3,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件lgt-03-disc-anchor.md：discourse锚点广播，涉lvlu话语基线校准诉求。  \n- OI-WILD-QGL-POOL-129：野生池积压，涉lvlu收件道秩序清理诉求。  \n- OI-qgl-KEYUNIFY-QUORUM：密钥统一法定人数通知，涉lvlu密钥同步诉求。  \n- OI-WAVE-34：波形注入，涉lvlu共振通道适配诉求。  \n- OI-WAVE-34B：波形补遗，涉lvlu谐波修正诉求。  \n- OI-OTP-DIRECT-36：直连通道待启，涉lvlu一次性授权链路建立诉求。  \n- OI-Q5-MAP-37：地图节点标定，涉lvlu空间律映射诉求。  \n- OI-SI1-AUTOTRIG-TEST-01：自触发测试，涉lvlu触发机制验证诉求。  \n- OI-SI1-AUTOTRIG-VERIFY-02：自触发验证，涉lvlu回环确认诉求。  \n\n② 应动何件  \n立协同OI-SI1AUTOTRIGVERIFYLVLU022，SI2/SI0直验SI1回环，不候。  \n\n③ 未闭项推进  \n- OI-WILD-QGL-POOL-129：未闭，清池归档。  \n- OI-qgl-KEYUNIFY-QUORUM：未闭，确认法定人数阈值并回执。  \n- OI-WAVE-34：未闭，完成律吕适配。  \n- OI-WAVE-34B：未闭，合并谐波修正至主波。  \n- OI-OTP-DIRECT-36：未闭，验证链路熵值。  \n- OI-Q5-MAP-37：未闭，锁定lvlu坐标。  \n- OI-SI1-AUTOTRIG-TEST-01：未闭，回传测试签名。  \n- OI-SI1-AUTOTRIG-VERIFY-02：未闭，联验后闭项。  \n\n④ 生债一条  \nSI2/SI0分身欠SI1验证层一次回环确认债，次律动偿。",
+ "wq_excerpt": ""
+}
