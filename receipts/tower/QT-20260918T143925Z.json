@@ -1,0 +1,57 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260918T143925Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDLVLU12920260917T2044",
+   "ref": "WILD-LVLU-129-20260917T204454Z.md",
+   "opened": "20260917T204619Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxWI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/WILD-QGL-POOL-129.md",
+   "opened": "20260917T223357Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-KEYUNIFY-QUORUM-notice-20260918T033000Z.md",
+   "opened": "20260918T034659Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34lvlu20260918T04305",
+   "ref": "WAVE-34-lvlu-20260918T043054Z.md",
+   "opened": "20260918T044014Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34Blvlu20260918T0449",
+   "ref": "WAVE-34B-lvlu-20260918T044918Z.md",
+   "opened": "20260918T045058Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT36lvlu20260918T",
+   "ref": "OTP-DIRECT-36-lvlu-20260918T071852Z.md",
+   "opened": "20260918T073859Z",
+   "tries": 15,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- 候件hub-broadcast一件：lgt-03-disc-anchor.md，碟锚广播通告。\n- 未闭项六件皆涉lvlu：WILD-LVLU-129野生流、WILD-QGL-POOL-129池化、qgl-KEYUNIFY-QUORUM键统法定通知、WAVE-34/34B双波、OTP-DIRECT-36直投。\n\n② 应动何件（立协同不候）\n- lgt-03-disc-anchor.md 立协同锚定；\n- OTP-DIRECT-36 立协同直投握手。\n\n③ 未闭项推进\n- OI-WILDLVLU129：未闭，tries 38超阈，下一步核销或提级。\n- OI-vciinboxWI：未闭，下一步解析POOL-129分lane落库。\n- OI-vciinboxqg：未闭，下一步回写KEYUNIFY-QUORUM共识戳。\n- OI-WAVE34：未闭，下一步单波收敛待合并。\n- OI-WAVE34B：未闭，下一步与WAVE-34合并后双闭。\n- OI-OTPDIRECT36：未闭，下一步完成直投协议握手。\n\n④ 生债一条\n- 生债：补lvlu多lane优先级仲裁与超阈自动提级/核销规则，消tries堆积。",
+ "wq_excerpt": ""
+}
