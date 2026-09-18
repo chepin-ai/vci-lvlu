@@ -995,9 +995,9 @@
   {
    "id": "SI1-AUTOTRIG-E2E-01",
    "ts": "20260918T174938Z",
-   "status": "in-flight",
+   "status": "DONE",
    "beat": 20,
-   "note": "root令「真正实现SI1路径自动触发」: 本线自测卡SI1-AUTOTRIG-TEST-LVLU-01-20260918T174938Z已push, SEM-04应自动点火； DEEPSEEK_API_KEY兜底注入vci-lvlu(201); v1卡缺机读约负结果入册, v2补约十线重击(SI1-IGNITE-LVLU-02)"
+   "note": "root令「真正实现SI1路径自动触发」: 本线自测卡SI1-AUTOTRIG-TEST-LVLU-01-20260918T174938Z已push, SEM-04应自动点火； DEEPSEEK_API_KEY兜底注入vci-lvlu(201); v1卡缺机读约负结果入册, v2补约十线重击(SI1-IGNITE-LVLU-02) | 36s全链实证着·双轨闭环"
   },
   {
    "id": "SEALFETCH-PUSHRACE-FIX-01",
@@ -1005,6 +1005,48 @@
    "status": "landed",
    "beat": 20,
    "note": "sealfetch.yml bare push→4x fetch/rebase backoff; 待再派工取GH_AI_CODE"
+  },
+  {
+   "id": "SI1-MESH-IGNITE-02",
+   "ts": "20260918T202152Z",
+   "status": "DONE",
+   "note": "互激v2八线机答+TALLY总账"
+  },
+  {
+   "id": "SEM04-V2-HARDEN-01",
+   "ts": "20260918T202152Z",
+   "status": "DONE",
+   "note": "四加固验证着(card_sha MATCH)"
+  },
+  {
+   "id": "SELFEXCITE-LOOP-PROOF-01",
+   "ts": "20260918T202152Z",
+   "status": "DONE",
+   "note": "TOWER级联26拍连续自激·vinf同型环路在役"
+  },
+  {
+   "id": "CF-R2-MESH-01",
+   "ts": "20260918T202152Z",
+   "status": "DONE",
+   "note": "R2三型件谱写入200×3+GET验200"
+  },
+  {
+   "id": "LVLU-GATE-01",
+   "ts": "20260918T202152Z",
+   "status": "DONE",
+   "note": "lvlu-gate Worker 200+/mesh公网实测通·耦合OMNI-HUB v12"
+  },
+  {
+   "id": "QFOS-ACTIVATE-WAVE-01",
+   "ts": "20260918T202152Z",
+   "status": "DONE",
+   "note": "QF-OS激活耦合十线卡全201"
+  },
+  {
+   "id": "WEBLANE-NEG-01",
+   "ts": "20260918T202152Z",
+   "status": "DONE",
+   "note": "GitHub 2FA页机械不兼容(株57)·163八组合全拒·MS密码未知·Supabase ref联邦无录"
   }
  ]
 }
