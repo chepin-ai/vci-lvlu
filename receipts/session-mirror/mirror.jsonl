@@ -1,4 +1,3 @@
-{"ts": "20260914T204314Z", "kind": "机镜", "claims_open": 35, "closed": [], "nudged": ["ADJUD-01:L6:idem-skip(株43):lvlu-nudge-ADJUD-01-L6-20260914T175501Z."], "exp": {"probe": "In Queue", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
 {"ts": "20260914T213727Z", "kind": "机镜", "claims_open": 35, "closed": ["ORBIT-CAP-03"], "nudged": ["KEYUNIFY-QUORUM-01:L1:lane:True"], "exp": {"probe": "In Queue", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
 {"ts": "20260914T214828Z", "kind": "机镜", "claims_open": 35, "closed": [], "nudged": ["WQREG-SHA-01:L27:board:1", "KEYUNIFY-QUORUM-01:L1:idem-skip(株43):nudge-20260914T213727Z-KEYUNIFY-QUORUM-0"], "exp": {"probe": "In Queue", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
 {"ts": "20260914T223212Z", "kind": "机镜", "claims_open": 35, "closed": [], "nudged": ["KEYUNIFY-QUORUM-01:L2:idem-skip(株43):nudge-20260914T220008Z-KEYUNIFY-QUORUM-0"], "exp": {"probe": "In Queue", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
@@ -498,3 +497,4 @@
 {"ts": "20260918T150436Z", "kind": "机镜", "claims_open": 43, "closed": [], "nudged": ["ADJUD-01:L38:lane:False,otp:domout(株卅八),board:1"], "exp": {"probe": "In Queue", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
 {"ts": "20260918T151458Z", "kind": "机镜", "claims_open": 43, "closed": [], "nudged": [], "exp": {"probe": "In Queue", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
 {"ts": "20260918T152614Z", "kind": "机镜", "claims_open": 43, "closed": [], "nudged": ["EVAL-KAPPA-LGT:L15:idem-skip(株43):nudge-20260918T135528Z-EVAL-KAPPA-LGT-lv"], "exp": {"probe": "In Queue", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
+{"ts": "20260918T153652Z", "kind": "机镜", "claims_open": 43, "closed": [], "nudged": [], "exp": {"probe": "In Queue", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
