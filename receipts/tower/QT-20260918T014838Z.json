@@ -1,0 +1,24 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260918T014838Z",
+ "idle_in": 7,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDLVLU12920260917T2044",
+   "ref": "WILD-LVLU-129-20260917T204454Z.md",
+   "opened": "20260917T204619Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxWI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/WILD-QGL-POOL-129.md",
+   "opened": "20260917T223357Z",
+   "tries": 9,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- OI-WILDLVLU12920260917T2044：WILD-LVLU-129 已试 12 次未闭，lvlu 诉求阻塞。  \n- OI-vciinboxlaneslvluinboxWI：WILD-QGL-POOL-129 于 lvlu-inbox 滞留 9 次未分拣。  \n\n② 应动何件  \n两件皆立协同不候。  \n\n③ 未闭项推进  \n- OI-WILDLVLU12920260917T2044：未闭；下一步查 12 次失败根因并强制闭环。  \n- OI-vciinboxlaneslvluinboxWI：未闭；下一步完成 inbox 分拣并转入处理泳道。  \n\n④ 生债一条  \n生债：lvlu 双线高重试未闭项须本周期内清零或提阻塞说明。",
+ "wq_excerpt": ""
+}
