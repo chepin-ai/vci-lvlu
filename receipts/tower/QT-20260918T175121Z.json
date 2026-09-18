@@ -1,0 +1,75 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260918T175121Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-AUTOTRIG-TEST-LVLU-01-20260918T174938Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDLVLU12920260917T2044",
+   "ref": "WILD-LVLU-129-20260917T204454Z.md",
+   "opened": "20260917T204619Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxWI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/WILD-QGL-POOL-129.md",
+   "opened": "20260917T223357Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-KEYUNIFY-QUORUM-notice-20260918T033000Z.md",
+   "opened": "20260918T034659Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34lvlu20260918T04305",
+   "ref": "WAVE-34-lvlu-20260918T043054Z.md",
+   "opened": "20260918T044014Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34Blvlu20260918T0449",
+   "ref": "WAVE-34B-lvlu-20260918T044918Z.md",
+   "opened": "20260918T045058Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT36lvlu20260918T",
+   "ref": "OTP-DIRECT-36-lvlu-20260918T071852Z.md",
+   "opened": "20260918T073859Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-Q5MAP37lvlu20260918T1601",
+   "ref": "Q5-MAP-37-lvlu-20260918T160105Z.md",
+   "opened": "20260918T164319Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1AUTOTRIGTESTLVLU01202",
+   "ref": "SI1-AUTOTRIG-TEST-LVLU-01-20260918T174938Z.md",
+   "opened": "20260918T175121Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 中枢广播件「lgt-03-disc-anchor.md」为通用锚点播发，无 lvlu 直接诉求。  \n- 收件件「SI1-AUTOTRIG-TEST-LVLU-01-20260918T174938Z.md」为 SI1 对 lvlu 线自动触发测试，涉 lvlu 通路校验诉求，已录。  \n\n②应动何件  \n立协同「SI1-AUTOTRIG-TEST-LVLU-01-20260918T174938Z.md」与「lgt-03-disc-anchor.md」，前者验 lvlu 线握手回执，后者同步中枢锚态，不候。  \n\n③未闭项推进  \n- OI-WILDLVLU129…: 未闭/提级排障，查根因。  \n- OI-vciinboxlaneslvluinboxWI: 未闭/查池权限与路由。  \n- OI-vciinboxlaneslvluinboxqg: 未闭/追 KEYUNIFY-QUORUM 回执。  \n- OI-WAVE34lvlu…: 未闭/重发或验对端态。  \n- OI-WAVE34Blvlu…: 未闭/同步差异载荷。  \n- OI-OTPDIRECT36…: 未闭/校令牌时效与直联路由。  \n- OI-Q5MAP37…: 未闭/快推映射，限次内闭。  \n- OI-SI1AUTOTRIG…: 未闭/即完握手回执。  \n\n④生债一条  \n债：SI2/SI0 须在本次会话内完成 SI1 测试件闭环并提交 lvlu 线通路校验报告；若超时，则升 OI-SI1DEBT。",
+ "wq_excerpt": ""
+}
