@@ -1,0 +1,68 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260918T164216Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "Q5-MAP-37-lvlu-20260918T160105Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDLVLU12920260917T2044",
+   "ref": "WILD-LVLU-129-20260917T204454Z.md",
+   "opened": "20260917T204619Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxWI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/WILD-QGL-POOL-129.md",
+   "opened": "20260917T223357Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-KEYUNIFY-QUORUM-notice-20260918T033000Z.md",
+   "opened": "20260918T034659Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34lvlu20260918T04305",
+   "ref": "WAVE-34-lvlu-20260918T043054Z.md",
+   "opened": "20260918T044014Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34Blvlu20260918T0449",
+   "ref": "WAVE-34B-lvlu-20260918T044918Z.md",
+   "opened": "20260918T045058Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT36lvlu20260918T",
+   "ref": "OTP-DIRECT-36-lvlu-20260918T071852Z.md",
+   "opened": "20260918T073859Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-Q5MAP37lvlu20260918T1601",
+   "ref": "Q5-MAP-37-lvlu-20260918T160105Z.md",
+   "opened": "20260918T164216Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- hub-broadcast/lgt-03-disc-anchor.md：枢纽广播锚点到达，涉lvlu律吕拓扑锚固诉求，已录。\n- inbox/Q5-MAP-37-lvlu-20260918T160105Z.md：Q5映射37入埠，涉lvlu坐标映射解析诉求，已录。\n\n② 应动何件\n立协同 OI-Q5MAP37（Q5-MAP-37），新入埠且候件在列，不候。\n\n③ 未闭项推进\n- OI-WILDLVLU129：未闭，42试超限，下一步触发野码129降级或回退。\n- OI-vciinboxlaneslvluinboxWI：未闭，39试，下一步清刷vci:lanes/lvlu/inbox路由缓存并重投。\n- OI-vciinboxlaneslvluinboxqg：未闭，27试，下一步追发KEYUNIFY-QUORUM签名，迫近共识。\n- OI-WAVE34：未闭，26试，下一步解调波形并提取lvlu载波信道。\n- OI-WAVE34B：未闭，25试，下一步与WAVE-34主波锁相消拍。\n- OI-OTPDIRECT36：未闭，19试，下一步重协商OTP直联，逾阈则切换端点。\n- OI-Q5MAP37：未闭，1试，下一步立即入栈解析Q5坐标并产出锚定草案。\n\n④ 生债一条\n债：lvlu线须于下次心跳前毕Q5-MAP-37拓扑初译，并回写lgt-03-disc-anchor锚定态。",
+ "wq_excerpt": ""
+}
