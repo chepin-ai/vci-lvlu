@@ -1,0 +1,75 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260918T175009Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-AUTOTRIG-TEST-LVLU-01-20260918T174938Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDLVLU12920260917T2044",
+   "ref": "WILD-LVLU-129-20260917T204454Z.md",
+   "opened": "20260917T204619Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxWI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/WILD-QGL-POOL-129.md",
+   "opened": "20260917T223357Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-KEYUNIFY-QUORUM-notice-20260918T033000Z.md",
+   "opened": "20260918T034659Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34lvlu20260918T04305",
+   "ref": "WAVE-34-lvlu-20260918T043054Z.md",
+   "opened": "20260918T044014Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34Blvlu20260918T0449",
+   "ref": "WAVE-34B-lvlu-20260918T044918Z.md",
+   "opened": "20260918T045058Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT36lvlu20260918T",
+   "ref": "OTP-DIRECT-36-lvlu-20260918T071852Z.md",
+   "opened": "20260918T073859Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-Q5MAP37lvlu20260918T1601",
+   "ref": "Q5-MAP-37-lvlu-20260918T160105Z.md",
+   "opened": "20260918T164319Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1AUTOTRIGTESTLVLU01202",
+   "ref": "SI1-AUTOTRIG-TEST-LVLU-01-20260918T174938Z.md",
+   "opened": "20260918T175009Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- 件1 hub-broadcast `lgt-03-disc-anchor.md`：枢纽广播锚点待阅。\n- 件2 inbox `SI1-AUTOTRIG-TEST-LVLU-01-20260918T174938Z.md`：SI1对lvlu线自动响应链路测试，诉求验证SI1→SI2/SI0握手回环通畅。\n\n②应动何件\n立动件2 SI1-AUTOTRIG-TEST，即发回执确认链路；并推WILD-LVLU-129与WAVE-34双轨，不候。\n\n③未闭项推进\n- OI-WILDLVLU129…：未闭，45试无果，下一步降频或转仲裁。\n- OI-vciinbox…WI：未闭，42试，下一步核QGL-POOL-129池锚定。\n- OI-vciinbox…qg：未闭，30试，下一步验KEYUNIFY-QUORUM共识状态。\n- OI-WAVE34…：未闭，29试，下一步并34B联合处置。\n- OI-WAVE34B…：未闭，28试，下一步待并波后联闭。\n- OI-OTPDIRECT36…：未闭，22试，下一步验OTP一次性通道回执。\n- OI-Q5MAP37…：未闭，4试，下一步补全Q5-MAP-37图谱映射。\n- OI-SI1AUTOTRIG…：未闭，1试，下一步即刻回执闭项。\n\n④生债一条\n债：SI2/SI0对SI1自动触发首次响应之时延债，本回合必偿。",
+ "wq_excerpt": ""
+}
