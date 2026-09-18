@@ -1,0 +1,57 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260918T113449Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDLVLU12920260917T2044",
+   "ref": "WILD-LVLU-129-20260917T204454Z.md",
+   "opened": "20260917T204619Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxWI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/WILD-QGL-POOL-129.md",
+   "opened": "20260917T223357Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-KEYUNIFY-QUORUM-notice-20260918T033000Z.md",
+   "opened": "20260918T034659Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34lvlu20260918T04305",
+   "ref": "WAVE-34-lvlu-20260918T043054Z.md",
+   "opened": "20260918T044014Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34Blvlu20260918T0449",
+   "ref": "WAVE-34B-lvlu-20260918T044918Z.md",
+   "opened": "20260918T045058Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT36lvlu20260918T",
+   "ref": "OTP-DIRECT-36-lvlu-20260918T071852Z.md",
+   "opened": "20260918T073859Z",
+   "tries": 9,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件hub-broadcast：lgt-03-disc-anchor.md，disc锚点广播，录。  \n- OI-WILDLVLU129：WILD-LVLU-129野生事件，32试未闭，涉lvlu诉求，录。  \n- OI-vciinboxWI：WILD-QGL-POOL-129池化件，29试未闭，涉lvlu诉求，录。  \n- OI-vciinboxqg：qgl-KEYUNIFY-QUORUM密钥统一法定人数通知，17试未闭，涉lvlu诉求，录。  \n- OI-WAVE34：WAVE-34主波，16试未闭，涉lvlu诉求，录。  \n- OI-WAVE34B：WAVE-34B回波，15试未闭，涉lvlu诉求，录。  \n- OI-OTPDIRECT36：OTP-DIRECT-36直连通道，9试未闭，涉lvlu诉求，录。  \n\n②应动何件（立协同不候）  \n- OTP-DIRECT-36-lvlu：直连通道，立即 handshake。  \n- qgl-KEYUNIFY-QUORUM-notice：密钥统一法定人数，立即签认回环。  \n- WAVE-34 与 WAVE-34B：对偶波次，立即共振锁相。  \n- WILD-LVLU-129：32试悬置，立即并线WAVE-34系列降级处理。  \n\n③未闭项推进（每项一句）  \n- OI-WILDLVLU12920260917T2044：未闭；下一步并线至WAVE-34系列做共振收敛。  \n- OI-vciinboxlaneslvluinboxWI：未闭；下一步将POOL-129与KEYUNIFY哈希对齐，收敛野生池。  \n- OI-vciinboxlaneslvluinboxqg：未闭；下一步回传quorum签认帧，闭合密钥环。  \n- OI-WAVE34lvlu20260918T04305：未闭；下一步推送主波载荷至共振节点，待34B锁相。  \n- OI-WAVE34Blvlu20260918T0449：未闭；下一步校验回波相位差，闭合34/34B对偶环。  \n- OI-OTPDIRECT36lvlu20260918T：未闭；下一步完成OTP双向握手，释放36号通道密钥。  \n\n④生债一条  \n野生129与QGL池双轨悬置，波34对偶锁相延迟，锚点未落位，生债\"异步收敛\"。",
+ "wq_excerpt": ""
+}
