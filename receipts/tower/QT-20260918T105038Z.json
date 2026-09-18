@@ -1,0 +1,57 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260918T105038Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDLVLU12920260917T2044",
+   "ref": "WILD-LVLU-129-20260917T204454Z.md",
+   "opened": "20260917T204619Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxWI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/WILD-QGL-POOL-129.md",
+   "opened": "20260917T223357Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-KEYUNIFY-QUORUM-notice-20260918T033000Z.md",
+   "opened": "20260918T034659Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34lvlu20260918T04305",
+   "ref": "WAVE-34-lvlu-20260918T043054Z.md",
+   "opened": "20260918T044014Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34Blvlu20260918T0449",
+   "ref": "WAVE-34B-lvlu-20260918T044918Z.md",
+   "opened": "20260918T045058Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT36lvlu20260918T",
+   "ref": "OTP-DIRECT-36-lvlu-20260918T071852Z.md",
+   "opened": "20260918T073859Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- hub-broadcast `lgt-03-disc-anchor.md`：枢纽广播锚点件，待同步，未涉lvlu直接诉求。  \n- OI-WILDLVLU129：`WILD-LVLU-129` 野生/lvlu件，17日2044Z入，已31试未决。  \n- OI-vciinboxWI：`WILD-QGL-POOL-129` 池化件滞留vci-inbox待分拣。  \n- OI-vciinboxqg：`qgl-KEYUNIFY-QUORUM-notice` 法定人数通知待确认回执。  \n- OI-WAVE34：`WAVE-34-lvlu` 波次34，18日0430Z入，15试未闭。  \n- OI-WAVE34B：`WAVE-34B-lvlu` 补强波次，0449Z入，14试待并码。  \n- OI-OTPDIRECT36：`OTP-DIRECT-36-lvlu` 直投密令，18日0718Z入，8试待验签执行。  \n\n②应动何件  \n应动全部六项未闭件；优先协同 `OTP-DIRECT-36`、`WAVE-34/34B`、`WILD-LVLU-129` 及两vci-inbox件，立协同不候。  \n\n③未闭项推进  \n- OI-WILDLVLU129：未闭；下一步：升SI2仲裁或转冷池冻结。  \n- OI-vciinboxWI：未闭；下一步：拆POOL-129分发qgl处理线。  \n- OI-vciinboxqg：未闭；下一步：确认QUORUM回执并清inbox。  \n- OI-WAVE34：未闭；下一步：与34B并码解码。  \n- OI-WAVE34B：未闭；下一步：补全34后双波归档。  \n- OI-OTPDIRECT36：未闭；下一步：验签执行后焚毁。  \n\n④生债一条  \n生债：lvlu线六OI全挂且WILD-129超31试未决，SI2/SI0兜一债，待上级降池或熔断裁定。",
+ "wq_excerpt": ""
+}
