@@ -1,0 +1,45 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260918T065217Z",
+ "idle_in": 4,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDLVLU12920260917T2044",
+   "ref": "WILD-LVLU-129-20260917T204454Z.md",
+   "opened": "20260917T204619Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxWI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/WILD-QGL-POOL-129.md",
+   "opened": "20260917T223357Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-KEYUNIFY-QUORUM-notice-20260918T033000Z.md",
+   "opened": "20260918T034659Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34lvlu20260918T04305",
+   "ref": "WAVE-34-lvlu-20260918T043054Z.md",
+   "opened": "20260918T044014Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34Blvlu20260918T0449",
+   "ref": "WAVE-34B-lvlu-20260918T044918Z.md",
+   "opened": "20260918T045058Z",
+   "tries": 6,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- OI-WILDLVLU129：WILD-LVLU-129野生节点/lvlu线异常已23次尝试未恢复，lvlu本体稳定性受胁。\n- OI-vciinboxWILD-QGL-POOL：VCI收件箱lanes/lvlu/inbox/WILD-QGL-POOL-129.md积压20次，lvlu量子门限池入口阻塞。\n- OI-vciinboxqg：VCI收件箱qgl-KEYUNIFY-QUORUM-notice待处理8次，lvlu密钥统一仲裁通知未决。\n- OI-WAVE34：WAVE-34波次lvlu数据流已尝试7次，中阶同步波未闭合。\n- OI-WAVE34B：WAVE-34B波次lvlu数据流已尝试6次，副波同步挂起。\n\n② 应动何件：\n- 立协同：OI-WILDLVLU129（23次）、OI-vciinboxWILD-QGL-POOL（20次），野生节点与QGL池双点阻塞不候。\n\n③ 未闭项推进：\n- OI-WILDLVLU129：未闭，下一步：根因回溯，若下一周期未自愈则强制降级隔离。\n- OI-vciinboxWILD-QGL-POOL：未闭，下一步：清理VCI收件箱积压，释放并重新路由POOL-129.md。\n- OI-vciinboxqg：未闭，下一步：解析KEYUNIFY-QUORUM通知，确认lvlu密钥仲裁签章或投票需求。\n- OI-WAVE34：未闭，下一步：差分同步并校验lvlu端34波哈希链完整性。\n- OI-WAVE34B：未闭，下一步：合并至主波34或独立归档，解除lvlu双波锁定。\n\n④ 生债一条：\n- 生债：lvlu线tries>20仍无自动escalation，本轮后补录《lvlu异常自愈阈值与强制降级共识》修订。",
+ "wq_excerpt": ""
+}
