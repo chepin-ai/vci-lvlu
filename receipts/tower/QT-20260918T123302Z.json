@@ -1,0 +1,57 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260918T123302Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDLVLU12920260917T2044",
+   "ref": "WILD-LVLU-129-20260917T204454Z.md",
+   "opened": "20260917T204619Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxWI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/WILD-QGL-POOL-129.md",
+   "opened": "20260917T223357Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-KEYUNIFY-QUORUM-notice-20260918T033000Z.md",
+   "opened": "20260918T034659Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34lvlu20260918T04305",
+   "ref": "WAVE-34-lvlu-20260918T043054Z.md",
+   "opened": "20260918T044014Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34Blvlu20260918T0449",
+   "ref": "WAVE-34B-lvlu-20260918T044918Z.md",
+   "opened": "20260918T045058Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT36lvlu20260918T",
+   "ref": "OTP-DIRECT-36-lvlu-20260918T071852Z.md",
+   "opened": "20260918T073859Z",
+   "tries": 11,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候：hub-broadcast《lgt-03-disc-anchor.md》待接入。\n- 未闭1：WILD-LVLU-129 已34试，野生任务未收束。\n- 未闭2：WILD-QGL-POOL-129 已31试，池文件待归并。\n- 未闭3：qgl-KEYUNIFY-QUORUM通知 已19试，共识待达成。\n- 未闭4：WAVE-34 已18试，波次待收束。\n- 未闭5：WAVE-34B 已17试，副波待同步主波。\n- 未闭6：OTP-DIRECT-36 已11试，直连指令待执行回执。\n\n② 应动何件：\n立协同 hub-broadcast（新播立收）、OTP-DIRECT-36（指令立结）、WAVE-34/34B（双波立收）、KEYUNIFY-QUORUM（共识立催），均不候。\n\n③ 未闭项推进：\n- OI-WILDLVLU12920260917T2044：未闭；下一步强制归档或升维熔断。\n- OI-vciinboxlaneslvluinboxWI：未闭；下一步并池清档释放vci-inbox。\n- OI-vciinboxlaneslvluinboxqg：未闭；下一步促quorum节点回执以结。\n- OI-WAVE34lvlu20260918T04305：未闭；下一步收束波次并归档。\n- OI-WAVE34Blvlu20260918T0449：未闭；下一步并入WAVE-34一并收束。\n- OI-OTPDIRECT36lvlu20260918T：未闭；下一步执行指令且双回执闭项。\n\n④ 生债一条：\n未闭项超30试无熔断，债：设自动升维仲裁规则，免死锁。",
+ "wq_excerpt": ""
+}
