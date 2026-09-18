@@ -1,0 +1,10 @@
+{
+ "v": "CMD-FP-LVLU-01",
+ "ts": "2026-09-18T17:12:20Z",
+ "run": "35372934239",
+ "cmd_present": true,
+ "cmd_len": 32,
+ "cmd_fp_sha256_16": "cd787b2ac8e6a715",
+ "law": "值永不回显;指纹名级可比",
+ "compare_to": "usrm/vinf 出示 7f496fbdc10a3e86"
+}
