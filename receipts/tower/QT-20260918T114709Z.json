@@ -1,0 +1,57 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260918T114709Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDLVLU12920260917T2044",
+   "ref": "WILD-LVLU-129-20260917T204454Z.md",
+   "opened": "20260917T204619Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxWI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/WILD-QGL-POOL-129.md",
+   "opened": "20260917T223357Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-KEYUNIFY-QUORUM-notice-20260918T033000Z.md",
+   "opened": "20260918T034659Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34lvlu20260918T04305",
+   "ref": "WAVE-34-lvlu-20260918T043054Z.md",
+   "opened": "20260918T044014Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34Blvlu20260918T0449",
+   "ref": "WAVE-34B-lvlu-20260918T044918Z.md",
+   "opened": "20260918T045058Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT36lvlu20260918T",
+   "ref": "OTP-DIRECT-36-lvlu-20260918T071852Z.md",
+   "opened": "20260918T073859Z",
+   "tries": 10,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- hub-broadcast(lgt-03-disc-anchor.md)：枢纽广播disc锚点校准。\n- OI-WILDLVLU129：WILD-LVLU-129野生异常，已33试未闭。\n- OI-vciinboxWI：WILD-QGL-POOL-129池文件待锚。\n- OI-vciinboxqg：QGL-KEYUNIFY-QUORUM法定人数通知待确。\n- OI-WAVE34：WAVE-34波驻留未收。\n- OI-WAVE34B：WAVE-34B分叉波待裁。\n- OI-OTPDIRECT36：OTP-DIRECT-36信道待验。\n\n② 应动何件\nhub-broadcast（锚点校准立协）+ WILD-LVLU-129（33试超限，立断）。\n\n③ 未闭项推进\n- OI-WILDLVLU129：未闭；下一步：升频或弃锚。\n- OI-vciinboxWI：未闭；下一步：核验与锚点兼容。\n- OI-vciinboxqg：未闭；下一步：确认法定人数达阈。\n- OI-WAVE34：未闭；下一步：以新锚收束。\n- OI-WAVE34B：未闭；下一步：并轨或隔离。\n- OI-OTPDIRECT36：未闭；下一步：限时验签握手。\n\n④ 生债一条\n锚点响应迟滞债：六项未闭项积压致hub-broadcast校准延迟，记债一分。",
+ "wq_excerpt": ""
+}
