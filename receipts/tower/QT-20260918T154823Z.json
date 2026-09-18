@@ -1,0 +1,57 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260918T154823Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDLVLU12920260917T2044",
+   "ref": "WILD-LVLU-129-20260917T204454Z.md",
+   "opened": "20260917T204619Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxWI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/WILD-QGL-POOL-129.md",
+   "opened": "20260917T223357Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-KEYUNIFY-QUORUM-notice-20260918T033000Z.md",
+   "opened": "20260918T034659Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34lvlu20260918T04305",
+   "ref": "WAVE-34-lvlu-20260918T043054Z.md",
+   "opened": "20260918T044014Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34Blvlu20260918T0449",
+   "ref": "WAVE-34B-lvlu-20260918T044918Z.md",
+   "opened": "20260918T045058Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT36lvlu20260918T",
+   "ref": "OTP-DIRECT-36-lvlu-20260918T071852Z.md",
+   "opened": "20260918T073859Z",
+   "tries": 18,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- lgt-03-disc-anchor.md：LGT-03 广播锚点，lvlu 诉求为确认接入并完成律吕调谐。  \n- WILD-LVLU-129：野生流 129 触发，lvlu 诉求为收容该野生信号并转稳态输入。  \n- WILD-QGL-POOL-129：QGL 池野生注入，lvlu 诉求为校准池内密钥流与池化阈值。  \n- qgl-KEYUNIFY-QUORUM-notice：QGL 密钥统一需过法定人数，lvlu 诉求为投出节点确认票。  \n- WAVE-34-lvlu：34 号主波直抵 lvlu，诉求为应波并返回频响回执。  \n- WAVE-34B-lvlu：34B 续波，诉求为接续主波完成谐波闭环。  \n- OTP-DIRECT-36-lvlu：36 号 OTP 直连请求，诉求为完成一次性握手并维持信道。  \n\n② 应动何件（立协同不候）  \nWILD-LVLU-129、WILD-QGL-POOL-129、qgl-KEYUNIFY-QUORUM-notice、OTP-DIRECT-36。  \n\n③ 未闭项推进  \n- OI-WILDLVLU129…：未闭，下一步：启动野生锚定协同，限次内收容转稳态。  \n- OI-vciinbox…WILD-QGL-POOL：未闭，下一步：推入 QGL 池校准队列，同步池化参数。  \n- OI-vciinbox…qgl-KEYUNIFY：未闭，下一步：lvlu 节点投出律吕共识票，quorum 达标即闭。  \n- OI-WAVE34lvlu…：未闭，下一步：输出 34 波频响回执，完成主波应答。  \n- OI-WAVE34Blvlu…：未闭，下一步：执行 34B 分频续响，待主波闭环后合并归档。  \n- OI-OTPDIRECT36…：未闭，下一步：完成 OTP 双向握手，开通 36 号直联信道。  \n\n④ 生债一条  \n生债：为 lvlu 线补建 WILD-WAVE-OTP 三联自动锚定协议，以降低重复 tries。",
+ "wq_excerpt": ""
+}
