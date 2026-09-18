@@ -1,0 +1,45 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260918T064034Z",
+ "idle_in": 3,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDLVLU12920260917T2044",
+   "ref": "WILD-LVLU-129-20260917T204454Z.md",
+   "opened": "20260917T204619Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxWI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/WILD-QGL-POOL-129.md",
+   "opened": "20260917T223357Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-KEYUNIFY-QUORUM-notice-20260918T033000Z.md",
+   "opened": "20260918T034659Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34lvlu20260918T04305",
+   "ref": "WAVE-34-lvlu-20260918T043054Z.md",
+   "opened": "20260918T044014Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34Blvlu20260918T0449",
+   "ref": "WAVE-34B-lvlu-20260918T044918Z.md",
+   "opened": "20260918T045058Z",
+   "tries": 5,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：候件空。OI-WILDLVLU129：WILD-LVLU-129野生异常，lvlu诉求未决。OI-vciWI：lvlu inbox内WILD-QGL-POOL-129堆积。OI-vciqg：KEYUNIFY-QUORUM通知待确认。OI-W34/W34B：lvlu波次34及34B未闭。\n\n②应动何件：WILD-LVLU-129与WAVE-34/34B三宗lvlu主线异常（try 22/6/5），立协同不候；KEYUNIFY-QUORUM同步入列。\n\n③未闭项推进：\n- OI-WILDLVLU129：未闭，下一步并轨QGL-POOL或降级。\n- OI-vciWI：未闭，下一步清检POOL-129并削峰inbox。\n- OI-vciqg：未闭，下一步确认QUORUM回执。\n- OI-W34：未闭，下一步闭合波次34。\n- OI-W34B：未闭，下一步闭合波次34B。\n\n④生债：lvlu波次与野生异常未自动归并，致22次空转，须建WAVE-WILD合流规则。",
+ "wq_excerpt": ""
+}
