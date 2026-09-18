@@ -1,0 +1,57 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260918T124520Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDLVLU12920260917T2044",
+   "ref": "WILD-LVLU-129-20260917T204454Z.md",
+   "opened": "20260917T204619Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxWI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/WILD-QGL-POOL-129.md",
+   "opened": "20260917T223357Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-KEYUNIFY-QUORUM-notice-20260918T033000Z.md",
+   "opened": "20260918T034659Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34lvlu20260918T04305",
+   "ref": "WAVE-34-lvlu-20260918T043054Z.md",
+   "opened": "20260918T044014Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34Blvlu20260918T0449",
+   "ref": "WAVE-34B-lvlu-20260918T044918Z.md",
+   "opened": "20260918T045058Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT36lvlu20260918T",
+   "ref": "OTP-DIRECT-36-lvlu-20260918T071852Z.md",
+   "opened": "20260918T073859Z",
+   "tries": 12,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- 候 lgt-03-disc-anchor.md：hub-broadcast 下发 lgt-03 讨论锚点，待 lvlu 线录收。\n- 未 OI-WILDLVLU129：野生 lvlu-129 议题已 35 轮未归拢。\n- 未 OI-WILD-QGL-POOL-129：VCI 收件箱 QGL 池 129 待清池。\n- 未 OI-KEYUNIFY-QUORUM：QGL 密钥统一法定人数通知待 lvlu 签认。\n- 未 OI-WAVE-34：34 波次 lvlu 同步未竟。\n- 未 OI-WAVE-34B：34B 补充分支未合入主线。\n- 未 OI-OTP-DIRECT-36：36 号直通信道待验通。\n\n② 应动何件\n立协同 OI-KEYUNIFY-QUORUM（涉 lvlu 核心权限共识，不候）。\n\n③ 未闭项推进\n- OI-WILDLVLU129：未闭；下一步归拢野生 129 或强制归档。\n- OI-WILD-QGL-POOL-129：未闭；下一步清池确认 129 归属。\n- OI-KEYUNIFY-QUORUM：未闭；下一步 lvlu 投态签认即闭。\n- OI-WAVE-34：未闭；下一步完成同步收束。\n- OI-WAVE-34B：未闭；下一步合并或废弃 34B。\n- OI-OTP-DIRECT-36：未闭；下一步验通信道后归档。\n\n④ 生债\n生债 lvlu-SI2：lgt-03 disc-anchor 回执未锚，需补录响应。",
+ "wq_excerpt": ""
+}
