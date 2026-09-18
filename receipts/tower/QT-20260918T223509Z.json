@@ -1,0 +1,99 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260918T223509Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-KEYUNIFY-QUORUM-notice-20260918T033000Z.md",
+   "opened": "20260918T034659Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34lvlu20260918T04305",
+   "ref": "WAVE-34-lvlu-20260918T043054Z.md",
+   "opened": "20260918T044014Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34Blvlu20260918T0449",
+   "ref": "WAVE-34B-lvlu-20260918T044918Z.md",
+   "opened": "20260918T045058Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT36lvlu20260918T",
+   "ref": "OTP-DIRECT-36-lvlu-20260918T071852Z.md",
+   "opened": "20260918T073859Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-Q5MAP37lvlu20260918T1601",
+   "ref": "Q5-MAP-37-lvlu-20260918T160105Z.md",
+   "opened": "20260918T164319Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1AUTOTRIGTESTLVLU01202",
+   "ref": "SI1-AUTOTRIG-TEST-LVLU-01-20260918T174938Z.md",
+   "opened": "20260918T175121Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1AUTOTRIGVERIFYLVLU022",
+   "ref": "SI1-AUTOTRIG-VERIFY-LVLU-02-20260918T175934Z.md",
+   "opened": "20260918T183547Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlubdd97a64md",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md",
+   "opened": "20260918T193324Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlucd360c54md",
+   "ref": "BEACON-DZ-39-lvlu-cd360c54.md",
+   "opened": "20260918T193324Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8ea17d86md",
+   "ref": "BEACON-DZ-40-lvlu-8ea17d86.md",
+   "opened": "20260918T194618Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlub2e67be9md",
+   "ref": "BEACON-DZ-40-lvlu-b2e67be9.md",
+   "opened": "20260918T203441Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlub4ac52a5md",
+   "ref": "BEACON-DZ-40-lvlu-b4ac52a5.md",
+   "opened": "20260918T203441Z",
+   "tries": 5,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件 lgt-03-disc-anchor.md：hub-broadcast 锚点，待 lvlu 确认纪律锚定。  \n- OI-KEYUNIFY-QUORUM：密钥统一共识通知，lvlu 信道 quorum 诉求待回（39 试）。  \n- OI-WAVE-34：第 34 波次，lvlu 执行回执待补（38 试）。  \n- OI-WAVE-34B：34B 修正波次，lvlu 差分待确认（37 试）。  \n- OI-OTP-DIRECT-36：直接指令 36，lvlu 待核销（31 试）。  \n- OI-Q5-MAP-37：Q5 映射 37，lvlu 标定待落位（13 试）。  \n- OI-SI1-AUTOTRIG-TEST-01：SI1 自动触发测试，lvlu 链路压测待标定（10 试）。  \n- OI-SI1-AUTOTRIG-VERIFY-02：SI1 自动触发验证，lvlu 校验序列待闭环（9 试）。  \n- OI-BEACON-DZ-39：DZ-39 边界信标，lvlu 应答待上报（7 试）。  \n\n② 应动何件  \n应动 KEYUNIFY-QUORUM、WAVE-34/34B、SI1-TEST/VERIFY、BEACON-DZ-39，立协同不候；OTP-DIRECT-36、Q5-MAP-37 队列跟进。  \n\n③ 未闭项推进  \n- OI-KEYUNIFY-QUORUM：未闭，即刻回执 quorum 并同步密钥状态。  \n- OI-WAVE-34：未闭，回执波次 34 执行结果。  \n- OI-WAVE-34B：未闭，核对 34B 差分并确认收妥。  \n- OI-OTP-DIRECT-36：未闭，核销 OTP 指令并归档。  \n- OI-Q5-MAP-37：未闭，完成 Q5 映射落位并输出标定值。  \n- OI-SI1-TEST-01：未闭，执行 SI1→SI2/SI0 压测并生成报告。  \n- OI-SI1-VERIFY-02：未闭，完成校验序列并关闭 SI1 迁移门。  \n- OI-BEACON-DZ-39：未闭，应答信标并上报边界心跳。  \n\n④ 生债一条  \n生债：设 tries>30 熔断规则，超阈未闭项自动升舱至 lvlu 线强制协同，防淤积。",
+ "wq_excerpt": ""
+}
