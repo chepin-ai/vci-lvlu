@@ -1,0 +1,57 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260918T125737Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDLVLU12920260917T2044",
+   "ref": "WILD-LVLU-129-20260917T204454Z.md",
+   "opened": "20260917T204619Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxWI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/WILD-QGL-POOL-129.md",
+   "opened": "20260917T223357Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-KEYUNIFY-QUORUM-notice-20260918T033000Z.md",
+   "opened": "20260918T034659Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34lvlu20260918T04305",
+   "ref": "WAVE-34-lvlu-20260918T043054Z.md",
+   "opened": "20260918T044014Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34Blvlu20260918T0449",
+   "ref": "WAVE-34B-lvlu-20260918T044918Z.md",
+   "opened": "20260918T045058Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT36lvlu20260918T",
+   "ref": "OTP-DIRECT-36-lvlu-20260918T071852Z.md",
+   "opened": "20260918T073859Z",
+   "tries": 13,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- hub-broadcast（lgt-03-disc-anchor.md）：disc锚点广播一件，待解析。\n- WILD-LVLU-129：野生线lvlu节律失锚，36试触达未归。\n- WILD-QGL-POOL-129：QGL池vci收件滞留lanes/lvlu/inbox。\n- KEYUNIFY-QUORUM：密钥统一法定人数通知待lvlu侧表决。\n- WAVE-34：lvlu波次34主脉冲未收束。\n- WAVE-34B：lvlu波次34B副谐波未对齐。\n- OTP-DIRECT-36：直连指令36号待handshake。\n\n② 应动何件\nWILD-LVLU-129（阻塞最久）、OTP-DIRECT-36（涉动线安全），立协不候。\n\n③ 未闭项推进\n- OI-WILDLVLU129…：未闭，投律吕锚点强制同步。\n- OI-vciinbox…WI：未闭，启QGL-POOL分拣子程序。\n- OI-vciinbox…qg：未闭，验签并回传lvlu意志。\n- OI-WAVE34…：未闭，压波至基频闭阀。\n- OI-WAVE34B…：未闭，锁相主波消差。\n- OI-OTPDIRECT36…：未闭，完握手并回执。\n\n④ 生债一条\nlvlu线积未闭项6，生协同算力债1单位，次周期优先偿清。",
+ "wq_excerpt": ""
+}
