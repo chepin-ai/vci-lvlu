@@ -1,0 +1,57 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260918T115908Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDLVLU12920260917T2044",
+   "ref": "WILD-LVLU-129-20260917T204454Z.md",
+   "opened": "20260917T204619Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxWI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/WILD-QGL-POOL-129.md",
+   "opened": "20260917T223357Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-KEYUNIFY-QUORUM-notice-20260918T033000Z.md",
+   "opened": "20260918T034659Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34lvlu20260918T04305",
+   "ref": "WAVE-34-lvlu-20260918T043054Z.md",
+   "opened": "20260918T044014Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34Blvlu20260918T0449",
+   "ref": "WAVE-34B-lvlu-20260918T044918Z.md",
+   "opened": "20260918T045058Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT36lvlu20260918T",
+   "ref": "OTP-DIRECT-36-lvlu-20260918T071852Z.md",
+   "opened": "20260918T073859Z",
+   "tries": 11,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件 hub-broadcast：lgt-03-disc-anchor.md 律吕锚点广播，涉 lvlu 锚定诉求。\n- 未闭 WILD-LVLU-129：野生紧急信道129号，34次推送未闭，涉 lvlu 直连。\n- 未闭 WILD-QGL-POOL-129：QGL池129入站，31次同步未闭，涉 lvlu 池化。\n- 未闭 KEYUNIFY-QUORUM：密钥统一法定人数通知，19次确认未闭，涉 lvlu 共识。\n- 未闭 WAVE-34：波次34 lvlu 信号，18次握手未闭。\n- 未闭 WAVE-34B：波次34B lvlu 信号，17次握手未闭。\n- 未闭 OTP-DIRECT-36：一次性直接信道36，11次校验未闭。\n\n② 应动何件（立协同不候）：应动 WILD-LVLU-129（tries=34，最高危）及候件 hub-broadcast（新到锚点），立即协同，不候。\n\n③ 未闭项推进：\n- OI-WILDLVLU129...：未闭，下一步：升紧急握手，强制拉通QGL池。\n- OI-vciinbox...WI：未闭，下一步：核对POOL-129与WILD-129关联后归档。\n- OI-vciinbox...qg：未闭，下一步：法定人数达阈即执行KEYUNIFY并广播ACK。\n- OI-WAVE34...：未闭，下一步：联动34B双波ACK后合并闭环。\n- OI-WAVE34B...：未闭，下一步：回传主信道ACK，待34主波确认后闭。\n- OI-OTPDIRECT36...：未闭，下一步：完成OTP校验与密钥注入后闭。\n\n④ 生债一条：WILD-LVLU-129 滞留34周期，生“迟应滞障债”一条。",
+ "wq_excerpt": ""
+}
