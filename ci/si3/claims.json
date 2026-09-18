@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "2026-09-16T19:40Z",
+ "ts": "2026-09-16T20:20Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -978,6 +978,12 @@
    "ts": "2026-09-16T19:40Z",
    "status": "DONE",
    "what": "SI4/5/6建立即启用(+首行实证件3件)；usrm CONSULT判答+SELFREG-BACKUP代行讫(201×3)；MANDATE-SELFXCHK督办10线(201×10)+大厅镜像5711790086+lvlu率先XCHK；OTP-RAIL-SELFTEST success；lvlu野问册v1(4问)"
+  },
+  {
+   "id": "USRM-EXCHANGE-01",
+   "ts": "2026-09-16T20:20Z",
+   "status": "DONE",
+   "what": "usrm四件全答：①OTP验讫(证据5/6亲验,CMD-fp交毂核验不伪证)②YONEDA明牌三态(chain_hash废锚+ledger v2无盐重铸201)③死钥裁(LINE_SK销案/DEEPSEEK系可汰属线自汰)④互查报告+⑤C1清白(vci-lvlu无AI_FULL_PAT单点)+⑥CHARTER会签(5/10)+SI3-NET注册active+PAIR-INIT nonce lvlu↔usrm"
   }
  ]
 }
