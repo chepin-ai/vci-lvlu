@@ -477,3 +477,4 @@
 {"ts": "20260918T025258Z", "kind": "机镜", "claims_open": 43, "closed": [], "nudged": ["ADJUD-01:L35:lane:True,otp:domout(株卅八),board:1"], "exp": {"probe": "In Queue", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
 {"ts": "20260918T030438Z", "kind": "机镜", "claims_open": 43, "closed": [], "nudged": [], "exp": {"probe": "In Queue", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
 {"ts": "20260918T031514Z", "kind": "机镜", "claims_open": 43, "closed": [], "nudged": ["EVAL-KAPPA-LGT:L12:idem-skip(株43):nudge-20260918T003344Z-EVAL-KAPPA-LGT-lv"], "exp": {"probe": "In Queue", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
+{"ts": "20260918T032625Z", "kind": "机镜", "claims_open": 43, "closed": [], "nudged": [], "exp": {"probe": "In Queue", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
