@@ -1,0 +1,57 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260918T153627Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDLVLU12920260917T2044",
+   "ref": "WILD-LVLU-129-20260917T204454Z.md",
+   "opened": "20260917T204619Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxWI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/WILD-QGL-POOL-129.md",
+   "opened": "20260917T223357Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-KEYUNIFY-QUORUM-notice-20260918T033000Z.md",
+   "opened": "20260918T034659Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34lvlu20260918T04305",
+   "ref": "WAVE-34-lvlu-20260918T043054Z.md",
+   "opened": "20260918T044014Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34Blvlu20260918T0449",
+   "ref": "WAVE-34B-lvlu-20260918T044918Z.md",
+   "opened": "20260918T045058Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT36lvlu20260918T",
+   "ref": "OTP-DIRECT-36-lvlu-20260918T071852Z.md",
+   "opened": "20260918T073859Z",
+   "tries": 17,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件：hub-broadcast「lgt-03-disc-anchor.md」待播。  \n- 未闭1：WILD-LVLU-129（40试）lvlu野线锚定未落位。  \n- 未闭2：WILD-QGL-POOL-129（37试）lvlu量子门限池未收敛。  \n- 未闭3：KEYUNIFY-QUORUM（25试）lvlu密钥统一法定人数通知待签认。  \n- 未闭4：WAVE-34（24试）lvlu波次34未收束。  \n- 未闭5：WAVE-34B（23试）lvlu波次34B分叉未合并。  \n- 未闭6：OTP-DIRECT-36（17试）lvlu定向通道未握手。  \n\n② 应动何件  \n- WILD-LVLU-129、WAVE-34/34B、OTP-DIRECT-36四件tries过高，立协同不候，即刻锚定/收束/握手。  \n\n③ 未闭项推进  \n- OI-WILDLVLU129：未闭，下一步强制锚定或降级。  \n- OI-QGL-POOL-129：未闭，下一步清inbox并归池。  \n- OI-KEYUNIFY-QUORUM：未闭，下一步追lvlu签认回执。  \n- OI-WAVE34：未闭，下一步收主链落账。  \n- OI-WAVE34B：未闭，下一步并叉或作废。  \n- OI-OTPDIRECT36：未闭，下一步完成OTP handshake并销号。  \n\n④ 生债一条  \n- 生债：lvlu线积欠6项超期未闭，需在本时区内硬关闭至少3件，否则生律吕熵债一级。",
+ "wq_excerpt": ""
+}
