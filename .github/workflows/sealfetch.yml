@@ -47,5 +47,10 @@ jobs:
           git config user.name lvlu-ops
           git config user.email lvlu@ci.ops
           git add "$OUTF"
-          git commit -m "[skip ci] sealfetch run ${GITHUB_RUN_ID}"
-          git push
+          git commit -m "[skip ci] sealfetch run ${GITHUB_RUN_ID}" || true
+          for i in 1 2 3 4; do
+            git push -q origin HEAD:main && break
+            git fetch -q origin main; git rebase origin/main || git rebase --abort || true
+            sleep $((i*3))
+          done
+          git push -q origin HEAD:main || true
