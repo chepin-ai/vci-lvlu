@@ -1,0 +1,45 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260918T071552Z",
+ "idle_in": 5,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDLVLU12920260917T2044",
+   "ref": "WILD-LVLU-129-20260917T204454Z.md",
+   "opened": "20260917T204619Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxWI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/WILD-QGL-POOL-129.md",
+   "opened": "20260917T223357Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-KEYUNIFY-QUORUM-notice-20260918T033000Z.md",
+   "opened": "20260918T034659Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34lvlu20260918T04305",
+   "ref": "WAVE-34-lvlu-20260918T043054Z.md",
+   "opened": "20260918T044014Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34Blvlu20260918T0449",
+   "ref": "WAVE-34B-lvlu-20260918T044918Z.md",
+   "opened": "20260918T045058Z",
+   "tries": 7,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件空。  \n- 件一：WILD-LVLU-129（OI-WILDLVLU129…）已试24次，lvlu线野生池件待归档。  \n- 件二：WILD-QGL-POOL-129（OI-vciinboxlaneslvluinboxWI）已试21次，lvlu inbox池件待拉取解析。  \n- 件三：qgl-KEYUNIFY-QUORUM通知（OI-vciinboxlaneslvluinboxqg）已试9次，lvlu线仲裁通知待回执。  \n- 件四：WAVE-34（OI-WAVE34…）已试8次，lvlu线波次待收束。  \n- 件五：WAVE-34B（OI-WAVE34Blvlu…）已试7次，lvlu线波次B待归并或独立闭环。  \n\n②应动何件  \n- 应动件一（24试）与件二（21试），tries过高，立启SI2深度协同，不候。  \n\n③未闭项推进  \n- OI-WILDLVLU129…：未闭，下一步SI2升级限24h内归档或转出。  \n- OI-vciinboxlaneslvluinboxWI：未闭，下一步拉取vci-inbox原文并解析池状态。  \n- OI-vciinboxlaneslvluinboxqg：未闭，下一步确认QUORUM决议回执lvlu线。  \n- OI-WAVE34…：未闭，下一步收束波次并验完整性。  \n- OI-WAVE34B…：未闭，下一步归并至WAVE-34或独立结项。  \n\n④生债一条  \n- 债：lvlu线旧件超20试未闭，下次响应前须产出归档或升级结论，否则SI0熔断。",
+ "wq_excerpt": ""
+}
