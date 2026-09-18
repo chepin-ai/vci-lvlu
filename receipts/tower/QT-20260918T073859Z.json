@@ -1,0 +1,57 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260918T073859Z",
+ "idle_in": 5,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "OTP-DIRECT-36-lvlu-20260918T071852Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDLVLU12920260917T2044",
+   "ref": "WILD-LVLU-129-20260917T204454Z.md",
+   "opened": "20260917T204619Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxWI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/WILD-QGL-POOL-129.md",
+   "opened": "20260917T223357Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-KEYUNIFY-QUORUM-notice-20260918T033000Z.md",
+   "opened": "20260918T034659Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34lvlu20260918T04305",
+   "ref": "WAVE-34-lvlu-20260918T043054Z.md",
+   "opened": "20260918T044014Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34Blvlu20260918T0449",
+   "ref": "WAVE-34B-lvlu-20260918T044918Z.md",
+   "opened": "20260918T045058Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT36lvlu20260918T",
+   "ref": "OTP-DIRECT-36-lvlu-20260918T071852Z.md",
+   "opened": "20260918T073859Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件 OTP-DIRECT-36：lvlu OTP直连36号新到，涉定向校验与指令透传。\n- 未闭 WILDLVLU129：lvlu野生碎片129号，24次握手未闭。\n- 未闭 WILD-QGL-POOL-129：lvlu qgl池129号，21次轮询未闭。\n- 未闭 KEYUNIFY-QUORUM：lvlu密钥统一法定人数通知，9次共识未闭。\n- 未闭 WAVE-34：lvlu波34号同步请求，8次谐振未闭。\n- 未闭 WAVE-34B：lvlu波34B号镜像回波，7次校准未闭。\n- 未闭 OTP-DIRECT-36：lvlu OTP直连36号响应，1次触达未闭（同候件）。\n\n② 应动何件：\nOTP-DIRECT-36立协同（候件即未闭，时效最高）；WAVE-34与34B并启谐波对锁，不候。\n\n③ 未闭项推进：\n- WILDLVLU129：未闭；下一步转母核仲裁或降级归档。\n- WILD-QGL-POOL-129：未闭；下一步重置池句柄清过期锁。\n- KEYUNIFY-QUORUM：未闭；下一步补录缺额签章或闭轮。\n- WAVE-34：未闭；下一步bundle 34B合并处理。\n- WAVE-34B：未闭；下一步回并WAVE-34主链路。\n- OTP-DIRECT-36：未闭；下一步执行双向校验并闭环响应。\n\n④ 生债一条：\n生债：lvlu线堆压6件未闭，须启一次SI2级协同脉冲清障。",
+ "wq_excerpt": ""
+}
