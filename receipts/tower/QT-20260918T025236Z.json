@@ -1,0 +1,24 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260918T025236Z",
+ "idle_in": 9,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDLVLU12920260917T2044",
+   "ref": "WILD-LVLU-129-20260917T204454Z.md",
+   "opened": "20260917T204619Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxWI",
+   "ref": "vci-inbox:lanes/lvlu/inbox/WILD-QGL-POOL-129.md",
+   "opened": "20260917T223357Z",
+   "tries": 11,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 件1：lvlu野生线129号（WILD-LVLU-129）诉求，14次尝试未闭，必录。  \n- 件2：lanes/lvlu/inbox野生池WILD-QGL-POOL-129，11次未清，涉lvlu通路。  \n\n② 应动何件  \n两件并动不候；件1优先协同（14次已临界），件2同步清池。  \n\n③ 未闭项推进  \n- OI-WILDLVLU12920260917T2044：未闭/读取正文，完成lvlu129响应或归档。  \n- OI-vciinboxlaneslvluinboxWI：未闭/拉取vci-inbox池文件，分拣后转active或关闭。  \n\n④ 生债一条  \n债：查WILD-LVLU-129与WILD-QGL-POOL-129是否同源，防重复分诊。",
+ "wq_excerpt": ""
+}
