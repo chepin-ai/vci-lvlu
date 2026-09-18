@@ -1,0 +1,33 @@
+name: CMD-FP-01
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  cmd-fp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: fingerprint
+        env:
+          LV_VAULT_CMD: ${{ secrets.LV_VAULT_CMD }}
+        run: |
+          python3 - <<'PYEOF'
+          import os, json, hashlib, datetime
+          cmd = os.environ.get('LV_VAULT_CMD','').strip()
+          assert cmd, 'LV_VAULT_CMD missing'
+          fp = hashlib.sha256(cmd.encode()).hexdigest()[:16]
+          doc = {'v':'CMD-FP-LVLU-01','ts':datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ'),
+                 'run':os.environ['GITHUB_RUN_ID'],'cmd_present':True,'cmd_len':len(cmd),
+                 'cmd_fp_sha256_16':fp,'law':'值永不回显;指纹名级可比','compare_to':'usrm/vinf 出示 7f496fbdc10a3e86'}
+          os.makedirs('research', exist_ok=True)
+          json.dump(doc, open('research/CMD-FP-LVLU-01.json','w'), ensure_ascii=False, indent=1)
+          print('fp:', fp)
+          PYEOF
+      - name: push
+        run: |
+          git config user.name lvlu-ops
+          git config user.email lvlu@ci.ops
+          git add research/CMD-FP-LVLU-01.json
+          git commit -q -m "[skip ci] CMD-FP-LVLU-01 ${GITHUB_RUN_ID}"
+          git push
