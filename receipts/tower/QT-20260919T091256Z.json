@@ -1,0 +1,118 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T091256Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-Q5MAP37lvlu20260918T1601",
+   "ref": "Q5-MAP-37-lvlu-20260918T160105Z.md",
+   "opened": "20260918T164319Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1AUTOTRIGTESTLVLU01202",
+   "ref": "SI1-AUTOTRIG-TEST-LVLU-01-20260918T174938Z.md",
+   "opened": "20260918T175121Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1AUTOTRIGVERIFYLVLU022",
+   "ref": "SI1-AUTOTRIG-VERIFY-LVLU-02-20260918T175934Z.md",
+   "opened": "20260918T183547Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlubdd97a64md",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md",
+   "opened": "20260918T193324Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlucd360c54md",
+   "ref": "BEACON-DZ-39-lvlu-cd360c54.md",
+   "opened": "20260918T193324Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8ea17d86md",
+   "ref": "BEACON-DZ-40-lvlu-8ea17d86.md",
+   "opened": "20260918T194618Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlub2e67be9md",
+   "ref": "BEACON-DZ-40-lvlu-b2e67be9.md",
+   "opened": "20260918T203441Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlub4ac52a5md",
+   "ref": "BEACON-DZ-40-lvlu-b4ac52a5.md",
+   "opened": "20260918T203441Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026091",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260919T0546Z.md",
+   "opened": "20260919T054517Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8af60e93md",
+   "ref": "BEACON-DZ-40-lvlu-8af60e93.md",
+   "opened": "20260919T054657Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlufad1d735md",
+   "ref": "BEACON-DZ-40-lvlu-fad1d735.md",
+   "opened": "20260919T080647Z",
+   "tries": 7,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件PLAN-QUEUE拍：fired=3、kicks=0，调度层积压未排。  \n- OI-Q5MAP37：Q5-MAP-37-lvlu尝试47次未闭，核心映射诉求持续挂起。  \n- OI-SI1AUTOTRIGTEST01：SI1自动触发测试lvlu尝试44次未闭，测试链路未收敛。  \n- OI-SI1AUTOTRIGVERIFY02：SI1自动触发验证lvlu尝试43次未闭，验证签名待完结。  \n- OI-BEACONDZ39-bdd97a64：BEACON-DZ-39-lvlu-bdd97a64尝试41次未闭，回波缺失。  \n- OI-BEACONDZ39-cd360c54：BEACON-DZ-39-lvlu-cd360c54尝试41次未闭，并行挂起。  \n- OI-BEACONDZ40-8ea17d86：BEACON-DZ-40-lvlu-8ea17d86尝试40次未闭，zone回波异常。  \n- OI-BEACONDZ40-b2e67be9：BEACON-DZ-40-lvlu-b2e67be9尝试39次未闭，待diff去重。  \n- OI-BEACONDZ40-b4ac52a5：BEACON-DZ-40-lvlu-b4ac52a5尝试39次未闭，待批量收敛。  \n\n② 应动何件  \n应动PLAN-QUEUE拍（立清调度积）与OI-Q5MAP37（47次高韧，需SI2级协同收敛）；BEACON-DZ39/40群启批次熔断，不候。  \n\n③ 未闭项推进  \n- OI-Q5MAP37：未闭；下一步SI2强制映射或阈值熔断。  \n- OI-SI1AUTOTRIGTEST01：未闭；下一步通检SI1触发器日志闭环归档。  \n- OI-SI1AUTOTRIGVERIFY02：未闭；下一步补验证戳转SI0静默观测。  \n- OI-BEAC",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
