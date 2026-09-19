@@ -1,0 +1,13 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T053011Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [],
+ "verdict_memo": "",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "note": "no PLAN-QUEUE.json"
+ }
+}
