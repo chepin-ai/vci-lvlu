@@ -1047,6 +1047,24 @@
    "ts": "20260918T202152Z",
    "status": "DONE",
    "note": "GitHub 2FA页机械不兼容(株57)·163八组合全拒·MS密码未知·Supabase ref联邦无录"
+  },
+  {
+   "id": "MS-AUTH-OUTLOOK-01",
+   "ts": "20260919T0635Z",
+   "status": "DONE",
+   "note": "root批OMZI9推送→MS会话认证→Outlook邮箱轨LIVE(89未读可检索); TOTP种与本账号条目不配(3码拒,推送为正轨); Azure堵TOU渲染404"
+  },
+  {
+   "id": "RESOURCE-WAVE-01",
+   "ts": "20260919T0635Z",
+   "status": "MOSTLY-DONE",
+   "note": "KAGGLE 46/46; IBM登录+账单成/卡步BXNIM0109E环境堵; 册+镜像落"
+  },
+  {
+   "id": "QRING-SIM-16",
+   "ts": "20260919T0635Z",
+   "status": "DONE",
+   "note": "16比特numpy 65536幅值 exact 8/8; move/swap差分修复"
   }
  ]
 }
