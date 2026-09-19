@@ -1,0 +1,97 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T100258Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ39lvlubdd97a64md",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md",
+   "opened": "20260918T193324Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlucd360c54md",
+   "ref": "BEACON-DZ-39-lvlu-cd360c54.md",
+   "opened": "20260918T193324Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8ea17d86md",
+   "ref": "BEACON-DZ-40-lvlu-8ea17d86.md",
+   "opened": "20260918T194618Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlub2e67be9md",
+   "ref": "BEACON-DZ-40-lvlu-b2e67be9.md",
+   "opened": "20260918T203441Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlub4ac52a5md",
+   "ref": "BEACON-DZ-40-lvlu-b4ac52a5.md",
+   "opened": "20260918T203441Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026091",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260919T0546Z.md",
+   "opened": "20260919T054517Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8af60e93md",
+   "ref": "BEACON-DZ-40-lvlu-8af60e93.md",
+   "opened": "20260919T054657Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlufad1d735md",
+   "ref": "BEACON-DZ-40-lvlu-fad1d735.md",
+   "opened": "20260919T080647Z",
+   "tries": 12,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- 候件PLAN-QUEUE：已拍3火，kick=0，待激活。\n- OI-BEACONDZ39lvlubdd97a64md：DZ-39信标未闭，已试46次。\n- OI-BEACONDZ39lvlucd360c54md：DZ-39信标未闭，已试46次。\n- OI-BEACONDZ40lvlu8ea17d86md：DZ-40信标未闭，已试45次。\n- OI-BEACONDZ40lvlub2e67be9md：DZ-40信标未闭，已试44次。\n- OI-BEACONDZ40lvlub4ac52a5md：DZ-40信标未闭，已试44次。\n- OI-SI1KICKQUANTSIM012026091：SI1量模KICK未闭，已试25次。\n- OI-BEACONDZ40lvlu8af60e93md：DZ-40信标未闭，已试24次。\n- OI-BEACONDZ40lvlufad1d735md：DZ-40信标未闭，已试12次。\n\n② 应动何件（立协同不候）\n- PLAN-QUEUE：立即kick，释放3火。\n- DZ-39双beacon（tries=46）：立协同SI1级联收敛，不可再候。\n- SI1-KICK-QUANT-SIM：立即完成量模kick闭环。\n\n③ 未闭项推进\n- OI-BEACONDZ39lvlubdd97a64md：未闭；下一步：SI1级联回环，强制收敛。\n- OI-BEACONDZ39lvlucd360c54md：未闭；下一步：并行双信标交叉校验。\n- OI-BEACONDZ40lvlu8ea17d86md：未闭；下一步：批量降级归档DZ-40旧信标。\n- OI-BEACONDZ40lvlub2e67be9md：未闭；下一步：同批归并。\n- OI-BEACONDZ40lvlub4ac52a5md：未闭；下一步：同批归并。\n- OI-SI1KICKQUANTSIM012026091：未闭；下一步：SI1直推quant sim，完成kick。\n- OI-BEACONDZ40lvlu8af60e93md：未闭；下一步：静默监听或并入DZ-40批次。\n- OI-BEACONDZ40lvlufad1d735md：未闭；下一步：轻量回环测试，确认后归档。\n\n④ 生债一条\n- DZ-39/40信标46次超时未收敛，生债：重构beacon超时策略，或升级至lvlu-律吕协议硬收敛。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
