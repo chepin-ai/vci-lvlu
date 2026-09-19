@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T144429Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlufad1d735md",
+   "ref": "BEACON-DZ-40-lvlu-fad1d735.md",
+   "opened": "20260919T080647Z",
+   "tries": 37,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- hub-broadcast「lgt-03-disc-anchor.md」：锚点广播待同步，录lvlu链路诉求。\n- plan-queue「PLAN-QUEUE拍 fired=3 kicks=0」：三计划脉冲已击发无回踢，录lvlu调度诉求。\n\n② 应动何件\n- 两件俱动：立协同 hub-broadcast 锚点扩散与 PLAN-QUEUE 三火消纳，不候。\n\n③ 未闭项推进\n- OI-BEACONDZ40：未闭，37试握手未成，下一步改强制握手或降频重试，再限一期。\n\n④ 生债一条\n- 生债：DZ-40 若38试仍失败，即生成协议重构债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
