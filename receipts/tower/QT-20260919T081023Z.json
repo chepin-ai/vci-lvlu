@@ -1,0 +1,118 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T081023Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-Q5MAP37lvlu20260918T1601",
+   "ref": "Q5-MAP-37-lvlu-20260918T160105Z.md",
+   "opened": "20260918T164319Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1AUTOTRIGTESTLVLU01202",
+   "ref": "SI1-AUTOTRIG-TEST-LVLU-01-20260918T174938Z.md",
+   "opened": "20260918T175121Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1AUTOTRIGVERIFYLVLU022",
+   "ref": "SI1-AUTOTRIG-VERIFY-LVLU-02-20260918T175934Z.md",
+   "opened": "20260918T183547Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlubdd97a64md",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md",
+   "opened": "20260918T193324Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlucd360c54md",
+   "ref": "BEACON-DZ-39-lvlu-cd360c54.md",
+   "opened": "20260918T193324Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8ea17d86md",
+   "ref": "BEACON-DZ-40-lvlu-8ea17d86.md",
+   "opened": "20260918T194618Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlub2e67be9md",
+   "ref": "BEACON-DZ-40-lvlu-b2e67be9.md",
+   "opened": "20260918T203441Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlub4ac52a5md",
+   "ref": "BEACON-DZ-40-lvlu-b4ac52a5.md",
+   "opened": "20260918T203441Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026091",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260919T0546Z.md",
+   "opened": "20260919T054517Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8af60e93md",
+   "ref": "BEACON-DZ-40-lvlu-8af60e93.md",
+   "opened": "20260919T054657Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlufad1d735md",
+   "ref": "BEACON-DZ-40-lvlu-fad1d735.md",
+   "opened": "20260919T080647Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件：PLAN-QUEUE已拍3次、kicks=0，队列挂压未泄。  \n- Q5-MAP-37-lvlu：地图项42试未闭，lvlu坐标落点待决。  \n- SI1-AUTOTRIG-TEST：自动触发测试39试未闭，lvlu回环信号未收敛。  \n- SI1-AUTOTRIG-VERIFY：自动触发验证38试未闭，lvlu签名校验未过。  \n- BEACON-DZ-39-bdd97a64：39区信标36试未闭，lvlu主信标待同步。  \n- BEACON-DZ-39-cd360c54：39区副信标36试未闭，双信标并挂。  \n- BEACON-DZ-40-8ea17d86：40区信标35试未闭，区节点握手失联。  \n- BEACON-DZ-40-b2e67be9：40区冗余信标34试未闭，覆写待决。  \n- BEACON-DZ-40-b4ac52a5：40区第三信标34试未闭，链头未收束。  \n\n②应动何件（立协同不候）  \n立动Q5-MAP-37-lvlu、SI1-AUTOTRIG-TEST/VERIFY两件套、BEACON-DZ-39/40全量信标，不候。  \n\n③未闭项推进  \n- Q5-MAP-37：未闭，下一步切片回滚或人工标定。  \n- SI1-TEST：未闭，下一步下调触发阈值重跑。  \n- SI1-VERIFY：未闭，下一步对齐lvlu状态机时钟。  \n- BEACON-39-bdd：未闭，下一步拉主快照diff。  \n- BEACON-39-cd3：未闭，下一步并链或弃用副信标。  \n- BEACON-40-8ea：未闭，下一步重启握手协议。  \n- BEACON-40-b2e：未闭，下一步hash覆写收敛。  \n- BEACON-40-b4a：未闭，下一步强制入链闭环。  \n- PLAN-QUEUE：未闭，下一步归一fired计数并释放槽位。  \n\n④生债  \n生债：lvlu线八项未闭累试294次，占压SI2/SI0自动响应带宽，成算力耗散债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
