@@ -1,0 +1,62 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T232813Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlud78bd17emd",
+   "ref": "BEACON-DZ-40-lvlu-d78bd17e.md",
+   "opened": "20260919T160357Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT46lvlu20260919T",
+   "ref": "OTP-DIRECT-46-lvlu-20260919T174919Z.md",
+   "opened": "20260919T174932Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu52a3b3c2md",
+   "ref": "BEACON-DZ-40-lvlu-52a3b3c2.md",
+   "opened": "20260919T180428Z",
+   "tries": 31,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- 候件PLAN-QUEUE：调度拍3无踢出，lvlu计划分派积压。\n- OI-BEACON-d78bd17e：lvlu信标DZ-40已43试未闭，握手超时。\n- OI-OTP-DIRECT：lvlu直连OTP-46已33试未闭，口令窗未对齐。\n- OI-BEACON-52a3b3c2：lvlu信标DZ-40已31试未闭，次级同步挂起。\n\n②应动何件\n- 立协同OTP-DIRECT-46，并查BEACON-DZ-40双项，不候队列自转。\n\n③未闭项推进\n- OI-BEACON-d78bd17e：未闭，下一步切lvlu备用信道降级重试。\n- OI-OTP-DIRECT：未闭，下一步校准46节点时钟，重发lvlu令牌。\n- OI-BEACON-52a3b3c2：未闭，下一步并查首信标，同源合流/异源独立重播lvlu。\n\n④生债\n- 生债：lvlu三线高试未闭，欠根因定位会一次，债归调度分身。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
