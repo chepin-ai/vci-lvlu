@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T175326Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlud78bd17emd",
+   "ref": "BEACON-DZ-40-lvlu-d78bd17e.md",
+   "opened": "20260919T160357Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT46lvlu20260919T",
+   "ref": "OTP-DIRECT-46-lvlu-20260919T174919Z.md",
+   "opened": "20260919T174932Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：hub-broadcast「lgt-03-disc-anchor.md」待阅，无显lvlu诉求录；plan-queue「PLAN-QUEUE拍」fired=3/kicks=0，触发未落执行。\n\n② 应动何件：plan-queue件（fired=3不kick，立协同补执行，不候）。\n\n③ 未闭项推进：OI-BEACONDZ40未闭（tries=12），下一步：降维诊断阻塞根因或切人工；OI-OTPDIRECT46未闭（tries=2），下一步：续试一轮并校验OTP通道状态。\n\n④ 生债一条：plan-queue缺kicks执行链路及超时熔断规则债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
