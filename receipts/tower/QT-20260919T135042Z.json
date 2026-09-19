@@ -1,0 +1,66 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T135042Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQUANTSIM012026091",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260919T0546Z.md",
+   "opened": "20260919T054517Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8af60e93md",
+   "ref": "BEACON-DZ-40-lvlu-8af60e93.md",
+   "opened": "20260919T054657Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlufad1d735md",
+   "ref": "BEACON-DZ-40-lvlu-fad1d735.md",
+   "opened": "20260919T080647Z",
+   "tries": 32,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 广播件lgt-03-disc-anchor.md，涉lvlu锚定。\n- 队形件PLAN-QUEUE拍，fired=3 kicks=0。\n\n②应动何件：\n- PLAN-QUEUE拍（kicks=0不立，立即补kick激活）。\n- SI1-KICK-QUANT-SIM-01（45次未闭，立即协查根因）。\n- BEACON-DZ-40双lvlu信标（44/32次未闭，立即验链路）。\n\n③未闭项推进：\n- SI1-KICK-QUANT-SIM-01：未闭/下一步：排查阻塞或降级通道重试。\n- BEACON-DZ-40-8af60e93：未闭/下一步：重传信标并索回执。\n- BEACON-DZ-40-fad1d735：未闭/下一步：并行重传，若再败则合并会话。\n\n④生债一条：\n- 三单高重试悬置，积欠kick确认与信标闭合，须速清障销项。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
