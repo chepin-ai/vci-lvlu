@@ -1,0 +1,66 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T124636Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQUANTSIM012026091",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260919T0546Z.md",
+   "opened": "20260919T054517Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8af60e93md",
+   "ref": "BEACON-DZ-40-lvlu-8af60e93.md",
+   "opened": "20260919T054657Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlufad1d735md",
+   "ref": "BEACON-DZ-40-lvlu-fad1d735.md",
+   "opened": "20260919T080647Z",
+   "tries": 26,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- hub-broadcast（lgt-03-disc-anchor.md）：讨论锚点广播件，无 lvlu 直接诉求，录备。\n- plan-queue（PLAN-QUEUE拍 fired=3 kicks=0）：三拍零 kick，lvlu 执行链空转，必录。\n\n②应动何件\n- PLAN-QUEUE拍：立协补 kick 或重排，不候。\n\n③未闭项推进\n- OI-SI1KICKQUANTSIM012026091：39 试未闭，下一步降级重启 quant-sim 内核再试。\n- OI-BEACONDZ40lvlu8af60e93md：38 试未闭，下一步通检 lvlu 节点 8af60e93 信标链路。\n- OI-BEACONDZ40lvlufad1d735md：26 试未闭，下一步对时 fad1d735 或替换节点。\n\n④生债一条\n- 生 lvlu-QUEUE 兜底债：PLAN-QUEUE 连续 3 拍无 kick 即自动升线拦截。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
