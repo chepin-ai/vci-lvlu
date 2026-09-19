@@ -1,0 +1,62 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T210821Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlud78bd17emd",
+   "ref": "BEACON-DZ-40-lvlu-d78bd17e.md",
+   "opened": "20260919T160357Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT46lvlu20260919T",
+   "ref": "OTP-DIRECT-46-lvlu-20260919T174919Z.md",
+   "opened": "20260919T174932Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu52a3b3c2md",
+   "ref": "BEACON-DZ-40-lvlu-52a3b3c2.md",
+   "opened": "20260919T180428Z",
+   "tries": 18,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件PLAN-QUEUE拍：fired=3/kicks=0，lvlu队列运转中。\n- OI-BEACONDZ40-d78bd17e：lvlu信标项30试未闭。\n- OI-OTPDIRECT-46：lvlu直联认证项20试未闭。\n- OI-BEACONDZ40-52a3b3c2：lvlu信标项18试未闭。\n\n② 应动何件：\n- OTP-DIRECT-46（认证阻塞，立协同不候）；BEACON-DZ-40-d78bd17e（30试高位异常，立协同不候）。\n\n③ 未闭项推进：\n- OI-BEACONDZ40lvlud78bd17emd：未闭，下一步lvlu信标重校准/切备用通道。\n- OI-OTPDIRECT46lvlu20260919T：未闭，下一步46协议重握手或降级同步。\n- OI-BEACONDZ40lvlu52a3b3c2md：未闭，下一步二次广播+链路诊断。\n\n④ 生债一条：\n- lvlu线生今日债：1OTP直连+2BEACON信标未闭环，限日内消减。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
