@@ -1,0 +1,92 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T054330Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPDIRECT36lvlu20260918T",
+   "ref": "OTP-DIRECT-36-lvlu-20260918T071852Z.md",
+   "opened": "20260918T073859Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-Q5MAP37lvlu20260918T1601",
+   "ref": "Q5-MAP-37-lvlu-20260918T160105Z.md",
+   "opened": "20260918T164319Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1AUTOTRIGTESTLVLU01202",
+   "ref": "SI1-AUTOTRIG-TEST-LVLU-01-20260918T174938Z.md",
+   "opened": "20260918T175121Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1AUTOTRIGVERIFYLVLU022",
+   "ref": "SI1-AUTOTRIG-VERIFY-LVLU-02-20260918T175934Z.md",
+   "opened": "20260918T183547Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlubdd97a64md",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md",
+   "opened": "20260918T193324Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlucd360c54md",
+   "ref": "BEACON-DZ-39-lvlu-cd360c54.md",
+   "opened": "20260918T193324Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8ea17d86md",
+   "ref": "BEACON-DZ-40-lvlu-8ea17d86.md",
+   "opened": "20260918T194618Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlub2e67be9md",
+   "ref": "BEACON-DZ-40-lvlu-b2e67be9.md",
+   "opened": "20260918T203441Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlub4ac52a5md",
+   "ref": "BEACON-DZ-40-lvlu-b4ac52a5.md",
+   "opened": "20260918T203441Z",
+   "tries": 20,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件：hub-broadcast《lgt-03-disc-anchor.md》一件，中枢广播待接入。  \n- 涉lvlu诉求：OTP-DIRECT-36悬46试、Q5-MAP-37悬28试、SI1自动触发测试/校验悬25/24试、BEACON-DZ39/40四信标悬20-22试，共八项未闭。  \n\n②应动何件（立协同不候）  \n- OTP-DIRECT-36（46试达熔断临界，立协同不候）。  \n- hub-broadcast候件（立读不候）。  \n\n③未闭项推进（每项一句）  \n- OI-OTPDIRECT36lvlu20260918T：未闭/下一步：熔断升级或强制人工接管。  \n- OI-Q5MAP37lvlu20260918T1601：未闭/下一步：补全Q5拓扑校验回执。  \n- OI-SI1AUTOTRIGTESTLVLU01202：未闭/下一步：输出SI1触发链路诊断报告。  \n- OI-SI1AUTOTRIGVERIFYLVLU022：未闭/下一步：完成校验签名并归档。  \n- OI-BEACONDZ39lvlubdd97a64md：未闭/下一步：同步信标bdd97a64心跳状态。  \n- OI-BEACONDZ39lvlucd360c54md：未闭/下一步：同步信标cd360c54心跳状态。  \n- OI-BEACONDZ40lvlu8ea17d86md：未闭/下一步：同步信标8ea17d86心跳状态。  \n- OI-BEACONDZ40lvlub2e67be9md：未闭/下一步：同步信标b2e67be9心跳状态。  \n\n④生债一条  \n- OTP-DIRECT-36阻塞lvlu信道46试未决，记熔断响应债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "err": "NameError"
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "NameError"
+   }
+  ],
+  "kicks": 0
+ }
+}
