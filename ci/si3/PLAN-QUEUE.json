@@ -1,0 +1,58 @@
+{
+ "v": "PLAN-QUEUE-01",
+ "ts": "20260919T052643Z",
+ "line": "lvlu",
+ "law": "下拍自推进机制·株45非候root·防自激三律(每拍≤2踢·命中去重·每类闸)",
+ "items": [
+  {
+   "id": "VINF-CHASE-01",
+   "kind": "watch",
+   "repo": "vci-vinf",
+   "dir": "outbox",
+   "pattern": "SI1-IGNITE-LVLU-02-VINF|CHASE",
+   "since": "20260918T174938Z",
+   "status": "open",
+   "note": "vinf互激追答",
+   "hits": []
+  },
+  {
+   "id": "QFOS-COLLECT-01",
+   "kind": "watch-multi",
+   "repos": [
+    "vci-usrm",
+    "vci-vinf",
+    "vci-ucif2",
+    "vci-cfts",
+    "vci-qgl",
+    "vci-qtlv",
+    "vci-qlv",
+    "vci-lgt",
+    "vci-qfa"
+   ],
+   "dir": "outbox",
+   "pattern": "ANS-QFOS-",
+   "since": "20260918T202152Z",
+   "status": "open",
+   "note": "QF-OS激活答集",
+   "hits": []
+  },
+  {
+   "id": "FIELDNET-BEAT-01",
+   "kind": "every-n",
+   "n": 6,
+   "action": "fieldnet->R2",
+   "status": "open",
+   "note": "场网边录每6拍重算入R2",
+   "last_run": ""
+  },
+  {
+   "id": "QUANT-SIM-01",
+   "kind": "every-n",
+   "n": 12,
+   "action": "qring-sim->R2",
+   "status": "open",
+   "note": "8比特环态矢仿真每12拍入R2 quantum/(本源纪律:仿真先行)",
+   "last_run": ""
+  }
+ ]
+}
