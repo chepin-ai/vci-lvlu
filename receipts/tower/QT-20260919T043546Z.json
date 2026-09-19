@@ -1,0 +1,78 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T043546Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPDIRECT36lvlu20260918T",
+   "ref": "OTP-DIRECT-36-lvlu-20260918T071852Z.md",
+   "opened": "20260918T073859Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-Q5MAP37lvlu20260918T1601",
+   "ref": "Q5-MAP-37-lvlu-20260918T160105Z.md",
+   "opened": "20260918T164319Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1AUTOTRIGTESTLVLU01202",
+   "ref": "SI1-AUTOTRIG-TEST-LVLU-01-20260918T174938Z.md",
+   "opened": "20260918T175121Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1AUTOTRIGVERIFYLVLU022",
+   "ref": "SI1-AUTOTRIG-VERIFY-LVLU-02-20260918T175934Z.md",
+   "opened": "20260918T183547Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlubdd97a64md",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md",
+   "opened": "20260918T193324Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlucd360c54md",
+   "ref": "BEACON-DZ-39-lvlu-cd360c54.md",
+   "opened": "20260918T193324Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8ea17d86md",
+   "ref": "BEACON-DZ-40-lvlu-8ea17d86.md",
+   "opened": "20260918T194618Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlub2e67be9md",
+   "ref": "BEACON-DZ-40-lvlu-b2e67be9.md",
+   "opened": "20260918T203441Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlub4ac52a5md",
+   "ref": "BEACON-DZ-40-lvlu-b4ac52a5.md",
+   "opened": "20260918T203441Z",
+   "tries": 17,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件lgt-03-disc-anchor.md：离散锚点广播待解析落地。\n- OI-OTPDIRECT36：lvlu直连OTP卡滞43次，诉求立通。\n- OI-Q5MAP37：lvlu Q5映射漂移，诉求拓扑回正。\n- OI-SI1AUTOTRIGTEST：lvlu SI1自触发测试未闭环，诉求回路确认。\n- OI-SI1AUTOTRIGVERIFY：lvlu SI1自触发验证未交叉，诉求联动核验。\n- OI-BEACONDZ39(bdd97a64)：lvlu DZ39信标A待同步。\n- OI-BEACONDZ39(cd360c54)：lvlu DZ39信标B待去重。\n- OI-BEACONDZ40(8ea17d86)：lvlu DZ40信标A待标定。\n- OI-BEACONDZ40(b2e67be9)：lvlu DZ40信标B待标定。\n\n② 应动何件：\n- 立动OI-OTPDIRECT36，43次超阈，强制握手；SI1双项协同预热，不候。\n\n③ 未闭项推进：\n- OI-OTPDIRECT36：未闭，下一步降级重握/通道重置。\n- OI-Q5MAP37：未闭，下一步Q5拓扑重算。\n- OI-SI1AUTOTRIGTEST：未闭，下一步回路确认即闭。\n- OI-SI1AUTOTRIGVERIFY：未闭，下一步交叉验证后并闭。\n- OI-BEACONDZ39-bdd：未闭，下一步信标同步。\n- OI-BEACONDZ39-cd3：未闭，下一步冗余合并。\n- OI-BEACONDZ40-8ea：未闭，下一步场域标定。\n- OI-BEACONDZ40-b2e：未闭，下一步场域标定。\n\n④ 生债一条：\n- 因OTP-DIRECT-36超阈卡滞，生通道韧性债一条，限本响期内清偿。",
+ "wq_excerpt": ""
+}
