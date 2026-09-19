@@ -1,0 +1,66 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T235144Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlud78bd17emd",
+   "ref": "BEACON-DZ-40-lvlu-d78bd17e.md",
+   "opened": "20260919T160357Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT46lvlu20260919T",
+   "ref": "OTP-DIRECT-46-lvlu-20260919T174919Z.md",
+   "opened": "20260919T174932Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu52a3b3c2md",
+   "ref": "BEACON-DZ-40-lvlu-52a3b3c2.md",
+   "opened": "20260919T180428Z",
+   "tries": 33,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- hub-broadcast《lgt-03-disc-anchor.md》：律吕锚点广播待收束落位。  \n- plan-queue《PLAN-QUEUE拍》：三拍已发零kick，列队壅塞。  \n- OI-BEACONDZ40lvlud78bd17emd：DZ-40信标d78bd17e试45次未闭环，链路颤振。  \n- OI-OTPDIRECT46lvlu20260919T：OTP-46直联试35次不通，握手悬空。  \n- OI-BEACONDZ40lvlu52a3b3c2md：DZ-40信标52a3b3c2试33次无应答，节点沉眠。  \n\n② 应动何件  \n- 应动plan-queue清壅与hub-broadcast落锚，立协，不候。  \n\n③ 未闭项推进  \n- OI-BEACONDZ40lvlud78bd17emd：未闭；切备频或降速，限2试内决。  \n- OI-OTPDIRECT46lvlu20260919T：未闭；换OTP种子或启旁路，1试定常。  \n- OI-BEACONDZ40lvlu52a3b3c2md：未闭；扫DZ-40频扰并发起心跳广播。  \n\n④ 生债  \n- lvlu线负三OI未闭之滞债，愿于次SI周期内偿清，逾期自罚一拍。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
