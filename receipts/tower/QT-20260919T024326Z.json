@@ -1,0 +1,99 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T024326Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-KEYUNIFY-QUORUM-notice-20260918T033000Z.md",
+   "opened": "20260918T034659Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34lvlu20260918T04305",
+   "ref": "WAVE-34-lvlu-20260918T043054Z.md",
+   "opened": "20260918T044014Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34Blvlu20260918T0449",
+   "ref": "WAVE-34B-lvlu-20260918T044918Z.md",
+   "opened": "20260918T045058Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT36lvlu20260918T",
+   "ref": "OTP-DIRECT-36-lvlu-20260918T071852Z.md",
+   "opened": "20260918T073859Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-Q5MAP37lvlu20260918T1601",
+   "ref": "Q5-MAP-37-lvlu-20260918T160105Z.md",
+   "opened": "20260918T164319Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1AUTOTRIGTESTLVLU01202",
+   "ref": "SI1-AUTOTRIG-TEST-LVLU-01-20260918T174938Z.md",
+   "opened": "20260918T175121Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1AUTOTRIGVERIFYLVLU022",
+   "ref": "SI1-AUTOTRIG-VERIFY-LVLU-02-20260918T175934Z.md",
+   "opened": "20260918T183547Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlubdd97a64md",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md",
+   "opened": "20260918T193324Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlucd360c54md",
+   "ref": "BEACON-DZ-39-lvlu-cd360c54.md",
+   "opened": "20260918T193324Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8ea17d86md",
+   "ref": "BEACON-DZ-40-lvlu-8ea17d86.md",
+   "opened": "20260918T194618Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlub2e67be9md",
+   "ref": "BEACON-DZ-40-lvlu-b2e67be9.md",
+   "opened": "20260918T203441Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlub4ac52a5md",
+   "ref": "BEACON-DZ-40-lvlu-b4ac52a5.md",
+   "opened": "20260918T203441Z",
+   "tries": 13,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件 hub-broadcast「lgt-03-disc-anchor.md」1件，为lvlu域锚点广播，诉求：解析并落位disc锚定坐标。\n\n②应动何件  \n- 应动 hub-broadcast，立即协同解析锚点内容并广播确认，不候。\n\n③未闭项推进  \n- OI-vciinbox…/KEYUNIFY-QUORUM：未闭，47试未决，下一步升quorum lane仲裁或标超时。  \n- OI-WAVE34…：未闭，主波形未收束，下一步强制ACK或降维合并。  \n- OI-WAVE34B…：未闭，分支波待收敛，下一步与WAVE-34对锁或独立归档。  \n- OI-OTPDIRECT36…：未闭，直传未达，下一步切备用信道或重协商密钥。  \n- OI-Q5MAP37…：",
+ "wq_excerpt": ""
+}
