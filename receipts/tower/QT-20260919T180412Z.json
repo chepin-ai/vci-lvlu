@@ -1,0 +1,66 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T180412Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-52a3b3c2.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlud78bd17emd",
+   "ref": "BEACON-DZ-40-lvlu-d78bd17e.md",
+   "opened": "20260919T160357Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT46lvlu20260919T",
+   "ref": "OTP-DIRECT-46-lvlu-20260919T174919Z.md",
+   "opened": "20260919T174932Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu52a3b3c2md",
+   "ref": "BEACON-DZ-40-lvlu-52a3b3c2.md",
+   "opened": "20260919T180412Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- inbox：BEACON-DZ-40-lvlu-52a3b3c2.md 入线，lvlu 信标 DZ-40 新拍。  \n- plan-queue：PLAN-QUEUE 拍 fired=3 kicks=0，队列三拍积压。  \n- 未闭 d78bd17e：BEACON-DZ-40-lvlu-d78bd17e.md，13 试未闭，lvlu 信标久悬。  \n- 未闭 OTP：OTP-DIRECT-46-lvlu-20260919T174919Z.md，3 试未闭，lvlu 认证待结。  \n- 未闭 52a3b3c2：BEACON-DZ-40-lvlu-52a3b3c2.md，1 试新 open，lvlu 信标待应。  \n\n② 应动何件（立协同不候）  \n- PLAN-QUEUE 拍（fired=3，立清不候）。  \n- BEACON-DZ-40-lvlu-52a3b3c2.md（新信标入线，立并轨消化）。  \n\n③ 未闭项推进  \n- d78bd17e：否，13 试超限，下一步强制归档或升级。  \n- OTP：否，下一步补发或切通道再试一次。  \n- 52a3b3c2：否，并线当前协同，下一步随新件同步消化。  \n\n④ 生债一条  \n- lvlu DZ-40 双信标并发，需归并去重。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
