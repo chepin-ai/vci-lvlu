@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T160027Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlufad1d735md",
+   "ref": "BEACON-DZ-40-lvlu-fad1d735.md",
+   "opened": "20260919T080647Z",
+   "tries": 44,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件「PLAN-QUEUE」：队列已积3拍未发，待调度。  \n- 未闭项「BEACON-DZ-40-lvlu-fad1d735.md」：lvlu信标文档经44试仍未关闭，持续阻塞。  \n\n②应动何件  \n- 立动PLAN-QUEUE候件（fired=3不候），即刻协同执行。  \n\n③未闭项推进  \n- BEACON-DZ-40-lvlu-fad1d735.md：未闭；下一步：停重复试错，切根因诊断并提级处理策略。  \n\n④生债一条  \n- 生债：设「BEACON未闭项10试熔断」规则，防44试空转。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
