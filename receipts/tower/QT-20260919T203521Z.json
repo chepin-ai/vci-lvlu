@@ -1,0 +1,66 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T203521Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlud78bd17emd",
+   "ref": "BEACON-DZ-40-lvlu-d78bd17e.md",
+   "opened": "20260919T160357Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT46lvlu20260919T",
+   "ref": "OTP-DIRECT-46-lvlu-20260919T174919Z.md",
+   "opened": "20260919T174932Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu52a3b3c2md",
+   "ref": "BEACON-DZ-40-lvlu-52a3b3c2.md",
+   "opened": "20260919T180428Z",
+   "tries": 15,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 中枢广播 `lgt-03-disc-anchor.md` 待分发锚点。  \n- 计划队列 `PLAN-QUEUE拍` fired=3/kicks=0，队列运转中。  \n- 三件 lvlu 未闭项滞留（BEACON-DZ-40×2、OTP-DIRECT×1，最高已 27 试）。  \n\n② 应动何件  \n- 立协同 **OI-BEACONDZ40lvlud78bd17emd**（27 试未闭，最高优，不候）。  \n\n③ 未闭项推进  \n- **OI-BEACONDZ40lvlud78bd17emd**：未闭/下一步：升级 DZ-40 信标链路或切人工。  \n- **OI-OTPDIRECT46lvlu20260919T**：未闭/下一步：重发 OTP 令牌并校验通道。  \n- **OI-BEACONDZ40lvlu52a3b3c2md**：未闭/下一步：同步节点状态后降级重试。  \n\n④ 生债一条  \n- DZ-40 信标双开且重试均超 15 次，应重设退避阈值与熔断策略，防无限空转。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
