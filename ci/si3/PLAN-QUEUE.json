@@ -43,7 +43,7 @@
    "action": "fieldnet->R2",
    "status": "open",
    "note": "场网边录每6拍重算入R2",
-   "last_run": "20260919T054517Z"
+   "last_run": "20260919T054657Z"
   },
   {
    "id": "QUANT-SIM-01",
@@ -52,7 +52,7 @@
    "action": "qring-sim->R2",
    "status": "open",
    "note": "8比特环态矢仿真每12拍入R2 quantum/(本源纪律:仿真先行)",
-   "last_run": "20260919T054517Z"
+   "last_run": "20260919T054657Z"
   }
  ]
 }
