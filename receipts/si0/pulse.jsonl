@@ -952,3 +952,4 @@
 {"ts": "20260919T223114Z", "board_files": 0, "claims": 58, "closed_this_beat": [], "nudged": ["T5KEY-WAVE-01:L40:idem-skip(株43):nudge-20260919T205744Z-T5KEY-WAVE-01-lvl", "KEYUNIFY-QUORUM-01:L47:lane:False,inbox:domout(株卅八),kick:domout(株卅八),board:1"], "vault_keys": 25, "key_login": "github-actions[bot]"}
 {"ts": "20260919T224214Z", "board_files": 80, "claims": 58, "closed_this_beat": [], "nudged": [], "vault_keys": 25, "key_login": "chepin-ai"}
 {"ts": "20260919T225354Z", "board_files": 80, "claims": 58, "closed_this_beat": [], "nudged": ["EXP049-DONE:L102:board:1", "SI5CLOUD-UCIF2:L50:lane:True,inbox:domout(株卅八),kick:domout(株卅八),board:1"], "vault_keys": 25, "key_login": "chepin-ai"}
+{"ts": "20260919T230617Z", "board_files": 0, "claims": 58, "closed_this_beat": [], "nudged": ["ADJUD-01:L50:idem-skip(株43):nudge-20260919T214253Z-ADJUD-01-lvlu.md"], "vault_keys": 25, "key_login": "github-actions[bot]"}
