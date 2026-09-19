@@ -1,0 +1,62 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T120023Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQUANTSIM012026091",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260919T0546Z.md",
+   "opened": "20260919T054517Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8af60e93md",
+   "ref": "BEACON-DZ-40-lvlu-8af60e93.md",
+   "opened": "20260919T054657Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlufad1d735md",
+   "ref": "BEACON-DZ-40-lvlu-fad1d735.md",
+   "opened": "20260919T080647Z",
+   "tries": 22,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件PLAN-QUEUE拍fired=3 kicks=0，队列淤积待kick。\n- 未闭项OI-SI1KICKQUANTSIM012026091：SI1量化模拟已试35次未闭。\n- 未闭项OI-BEACONDZ40lvlu8af60e93md：lvlu信标8af60e93已试34次未闭。\n- 未闭项OI-BEACONDZ40lvlufad1d735md：lvlu信标fad1d735已试22次未闭。\n\n②应动何件：\nPLAN-QUEUE拍（立kick协同，不候）。\n\n③未闭项推进：\n- OI-SI1KICKQUANTSIM012026091：未闭；下一步：超阈转储或降级SI0。\n- OI-BEACONDZ40lvlu8af60e93md：未闭；下一步：lvlu信标重校准。\n- OI-BEACONDZ40lvlufad1d735md：未闭；下一步：单点重置或并项处理。\n\n④生债一条：\n生债：补录SI2→SI0自动kick路由一条，防队列再淤。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
