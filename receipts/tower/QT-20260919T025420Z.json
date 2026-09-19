@@ -1,0 +1,92 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T025420Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WAVE34lvlu20260918T04305",
+   "ref": "WAVE-34-lvlu-20260918T043054Z.md",
+   "opened": "20260918T044014Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-WAVE34Blvlu20260918T0449",
+   "ref": "WAVE-34B-lvlu-20260918T044918Z.md",
+   "opened": "20260918T045058Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT36lvlu20260918T",
+   "ref": "OTP-DIRECT-36-lvlu-20260918T071852Z.md",
+   "opened": "20260918T073859Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-Q5MAP37lvlu20260918T1601",
+   "ref": "Q5-MAP-37-lvlu-20260918T160105Z.md",
+   "opened": "20260918T164319Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1AUTOTRIGTESTLVLU01202",
+   "ref": "SI1-AUTOTRIG-TEST-LVLU-01-20260918T174938Z.md",
+   "opened": "20260918T175121Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1AUTOTRIGVERIFYLVLU022",
+   "ref": "SI1-AUTOTRIG-VERIFY-LVLU-02-20260918T175934Z.md",
+   "opened": "20260918T183547Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlubdd97a64md",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md",
+   "opened": "20260918T193324Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlucd360c54md",
+   "ref": "BEACON-DZ-39-lvlu-cd360c54.md",
+   "opened": "20260918T193324Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8ea17d86md",
+   "ref": "BEACON-DZ-40-lvlu-8ea17d86.md",
+   "opened": "20260918T194618Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlub2e67be9md",
+   "ref": "BEACON-DZ-40-lvlu-b2e67be9.md",
+   "opened": "20260918T203441Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlub4ac52a5md",
+   "ref": "BEACON-DZ-40-lvlu-b4ac52a5.md",
+   "opened": "20260918T203441Z",
+   "tries": 14,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件 hub-broadcast「lgt-03-disc-anchor.md」：disc-anchor 锚点广播待 lvlu 线确认接入。  \n- OI-WAVE34：WAVE-34 主波第47次未闭，lvlu 波形链路挂起。  \n- OI-WAVE34B：WAVE-34B 辅波第46次未闭，lvlu 分支波未收敛。  \n- OI-OTPDIRECT36：OTP-DIRECT-36 握手第40次超时，lvlu 密钥交换未完成。  \n- OI-Q5MAP37：Q5-MAP-37 拓扑解析第22次失败，lvlu 映射未锁定。  \n- OI-SI1AUTOTRIGTEST：SI1 触发测试第19次未过，lvlu 感知验证阻塞。  \n- OI-SI1AUTOTRIGVERIFY：SI1 触发验证第18次未确认，lvlu 响应签名待验。  \n- OI-BEACONDZ39-bdd97a64：信标节点 bdd97a64 第16次无应答，lvlu 信标离线。  \n- OI-BEACONDZ39-cd360c54：信标节点 cd360c54 第16次无应答，lvlu 冗余信标亦离线。  \n\n②应动何件（立协同不候）  \nhub-broadcast、SI1AUTOTRIGTEST、SI1AUTOTRIGVERIFY（SI2/SI0 直管链路），并协 BEACON-DZ-39 双节点；余者候轮询。  \n\n③未闭项推进  \n- WAVE34：未闭/降级 WAVE-33 基准重握手。  \n- WAVE34B：未闭/回滚 34A 帧隔离分支噪声。  \n- OTPDIRECT36：未闭/重置 OTP 槽位，切 DIRECT-35 备用密钥。  \n- Q5MAP37：未闭/回退 Q4 快照重收敛拓扑。  \n- SI1AUTOTRIGTEST：未闭/SI2/SI0 分身接管，绕开 SI1 阻塞直推验证。  \n- SI1AUTOTRIGVERIFY：未闭/SI0 并行签名强制覆盖未确认态。  \n- BEACON-bdd97a64：未闭/探活一次，不应答即标废切冗余。  \n- BEACON-cd360c54：未闭/反向追踪锁定离线根因。  \n\n④生债一条  \nlvlu 线 SI1/SI2/SI0 跨层自动触发缺熔断，须建级联降权机制。",
+ "wq_excerpt": ""
+}
