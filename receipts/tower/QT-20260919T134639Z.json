@@ -1,0 +1,66 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T134639Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQUANTSIM012026091",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260919T0546Z.md",
+   "opened": "20260919T054517Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8af60e93md",
+   "ref": "BEACON-DZ-40-lvlu-8af60e93.md",
+   "opened": "20260919T054657Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlufad1d735md",
+   "ref": "BEACON-DZ-40-lvlu-fad1d735.md",
+   "opened": "20260919T080647Z",
+   "tries": 31,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- hub-broadcast：lgt-03-disc-anchor.md 为律吕锚点广播，无 lvlu 直接诉求，录环境同步。  \n- plan-queue：PLAN-QUEUE拍 fired=3/kicks=0，拍燃未落，录 lvlu 执行链空转。  \n\n② 应动何件  \n- 立动 plan-queue 件：补 kicks 断层，SI2/SI0 即时协同回填，不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQUANTSIM012026091：44 试未闭，下一步截断输出当前最优解并冻结重试。  \n- OI-BEACONDZ40lvlu8af60e93md：43 试未闭，下一步重触发 DZ-40 回环握手，超时则转静默。  \n- OI-BEACONDZ40lvlufad1d735md：31 试未闭，下一步与姊妹 beacon 交叉对账，合并或单工降级。  \n\n④ 生债一条  \n- plan-queue kicks=0 根因追踪与补执行日志，限本轮内结。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
