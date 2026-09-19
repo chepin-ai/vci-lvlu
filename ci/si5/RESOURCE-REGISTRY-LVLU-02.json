@@ -21,7 +21,7 @@
    "cat": "量子计算",
    "platform": "Azure Quantum",
    "offer": "$500新用户积分",
-   "status": "BLOCKED-MS密码未知(Authenticator种在vault但为二因子; 推=root端机)",
+   "status": "MS会话已认证(推送OMZI9 root批✓)·Azure堵于TOU条款页渲染404(环境性, root端常览器一次接受即永通)",
    "account": "chepinzhang@hotmail.com",
    "secret_names": []
   },
@@ -29,7 +29,7 @@
    "cat": "GPU计算",
    "platform": "Google Colab",
    "offer": "T4 GPU 16GB",
-   "status": "账号=bluequbit_gmail(vault)·web OAuth未走·待验",
+   "status": "账号sihuima@gmail.com在册; 邮箱轨备用开通(见下)",
    "secret_names": [
     "BLUEQUBIT_GMAIL",
     "BLUEQUBIT_PW"
@@ -67,6 +67,16 @@
    "offer": "开源RDMA",
    "status": "runner内核模块配装(rxe/ucx)·sudo域·预案在册",
    "secret_names": []
+  },
+  {
+   "cat": "邮箱轨",
+   "platform": "Outlook(chepinzhang@hotmail.com)",
+   "offer": "收信/检索/确认邮件道",
+   "status": "LIVE(20260919·推送OMZI9批准入会)·检索supabase=0件(符GitHub OAuth→163流向)",
+   "secret_names": [
+    "GH_MICROAUTH(密码·已验✓)",
+    "GH_TOTP_SEED(种与本账号条目不符,推送道为正轨)"
+   ]
   }
  ],
  "existing_core": {
