@@ -15,7 +15,8 @@ LINE = 'lvlu'
 
 def api(method, path, data=None, repo=None, write=False):
     url = f'https://api.github.com/repos/{repo or REPO}/{path}'
-    tok = TOK_W if (write or ((repo or REPO) == REPO and method in ('PUT','POST','DELETE'))) else TOK_R
+    own = (repo or REPO) == REPO
+    tok = TOK_W if own else TOK_R  # POOLWAR-SELF-SUFF-01(株47): 己仓读写皆用runner GITHUB_TOKEN(独立配额), LINE_PAT仅跨仓毂道
     req = urllib.request.Request(url, method=method,
         headers={'Authorization': f'Bearer {tok}', 'Accept': 'application/vnd.github+json', 'User-Agent': 'lvlu-tower'})
     if data is not None: req.data = json.dumps(data).encode()
