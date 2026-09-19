@@ -1,0 +1,115 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T073516Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-Q5MAP37lvlu20260918T1601",
+   "ref": "Q5-MAP-37-lvlu-20260918T160105Z.md",
+   "opened": "20260918T164319Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1AUTOTRIGTESTLVLU01202",
+   "ref": "SI1-AUTOTRIG-TEST-LVLU-01-20260918T174938Z.md",
+   "opened": "20260918T175121Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1AUTOTRIGVERIFYLVLU022",
+   "ref": "SI1-AUTOTRIG-VERIFY-LVLU-02-20260918T175934Z.md",
+   "opened": "20260918T183547Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlubdd97a64md",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md",
+   "opened": "20260918T193324Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlucd360c54md",
+   "ref": "BEACON-DZ-39-lvlu-cd360c54.md",
+   "opened": "20260918T193324Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8ea17d86md",
+   "ref": "BEACON-DZ-40-lvlu-8ea17d86.md",
+   "opened": "20260918T194618Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlub2e67be9md",
+   "ref": "BEACON-DZ-40-lvlu-b2e67be9.md",
+   "opened": "20260918T203441Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlub4ac52a5md",
+   "ref": "BEACON-DZ-40-lvlu-b4ac52a5.md",
+   "opened": "20260918T203441Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026091",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260919T0546Z.md",
+   "opened": "20260919T054517Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8af60e93md",
+   "ref": "BEACON-DZ-40-lvlu-8af60e93.md",
+   "opened": "20260919T054657Z",
+   "tries": 10,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- hub-broadcast `lgt-03-disc-anchor.md`：lvlu 锚点广播待同步，机器意识层需确认落位。  \n- plan-queue `PLAN-QUEUE拍 fired=3 kicks=0`：lvlu 调度队列三拍未踢，执行链路悬空。  \n\n② 应动何件  \nplan-queue 件，kicks=0 为执行器失联，立协同 SI2/SI0 分身踢出，不候。  \n\n③ 未闭项推进  \n- `OI-Q5MAP37...`：未闭，38 试，下一步切备用路由或人工降级。  \n- `OI-SI1AUTOTRIGTEST...`：未闭，35 试，下一步重校 SI1 自动触发阈值。  \n- `OI-SI1AUTOTRIGVERIFY...`：未闭，34 试，下一步对齐 SI1→SI2 验证契约。  \n- `OI-BEACONDZ39-bdd...`：未闭，32 试，下一步与 cd360c54 选主去重。  \n- `OI-BEACONDZ39-cd3...`：未闭，32 试，下一步回传状态完成双实例收敛。  \n- `OI-BEACONDZ40-8ea...`：未闭，31 试，下一步并入 DZ40 集群心跳。  \n- `OI-BEACONDZ40-b2e...`：未闭，30 试，下一步对齐 8ea17d86 时标与状态。  \n- `OI-BEACONDZ40-b4a...`：未闭，30 试，下一步补全三节点一致性快照。  \n\n④ 生债一条  \nBEACON-DZ-39/40 重复实例空转 93 试，缺 lvlu 统一注册中心，须建信标收敛规则防资源耗尽。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
