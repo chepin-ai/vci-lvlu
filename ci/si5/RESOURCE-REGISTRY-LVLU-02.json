@@ -1,0 +1,84 @@
+{
+ "v": "RESOURCE-REGISTRY-LVLU-02",
+ "ts_gh": "2026-09-19T06:0xZ",
+ "by": "lvlu SI5调度层",
+ "law": "值域律: 仓内仅名谱/端点/指纹/状态, 值永不出vault",
+ "new_wave_0919": [
+  {
+   "cat": "量子计算",
+   "platform": "IBM Quantum",
+   "offer": "127比特真实QPU(免费层10min/月,100+比特QPU)",
+   "status": "LOGIN_OK+BILLING_SAVED·卡步PCI iframe BXNIM0109E 环境性未渲(常览器1分钟即竟)",
+   "account": "chepin@163.com",
+   "secret_names": [
+    "IBMID_PW",
+    "IBM_TOTP_SECRET",
+    "IBM_CARD(vault)"
+   ],
+   "fp": "ibm quantum lane"
+  },
+  {
+   "cat": "量子计算",
+   "platform": "Azure Quantum",
+   "offer": "$500新用户积分",
+   "status": "BLOCKED-MS密码未知(Authenticator种在vault但为二因子; 推=root端机)",
+   "account": "chepinzhang@hotmail.com",
+   "secret_names": []
+  },
+  {
+   "cat": "GPU计算",
+   "platform": "Google Colab",
+   "offer": "T4 GPU 16GB",
+   "status": "账号=bluequbit_gmail(vault)·web OAuth未走·待验",
+   "secret_names": [
+    "BLUEQUBIT_GMAIL",
+    "BLUEQUBIT_PW"
+   ]
+  },
+  {
+   "cat": "GPU计算",
+   "platform": "Kaggle",
+   "offer": "T4/P100 GPU 30h/周",
+   "status": "VERIFIED-API-200(数据集列表通)",
+   "account": "kaggle.json username",
+   "secret_names": [
+    "KAGGLE_USERNAME",
+    "KAGGLE_KEY"
+   ],
+   "note": "32比特环仿真GPU轨备此"
+  },
+  {
+   "cat": "FPGA工具",
+   "platform": "Yosys/Verilator",
+   "offer": "开源综合/仿真",
+   "status": "runner按需apt配装(yosys/verilator)·沙箱无预装",
+   "secret_names": []
+  },
+  {
+   "cat": "分布式",
+   "platform": "Ray/Dask",
+   "offer": "开源并行框架",
+   "status": "pip即装(沙箱缺, runner可预装; 内核重启律)",
+   "secret_names": []
+  },
+  {
+   "cat": "网络",
+   "platform": "SoftRoCE/UCX",
+   "offer": "开源RDMA",
+   "status": "runner内核模块配装(rxe/ucx)·sudo域·预案在册",
+   "secret_names": []
+  }
+ ],
+ "existing_core": {
+  "cloudflare": "R2双桶+lvlu-gate Worker五路由在役",
+  "supabase": "ref候root一行为或GitHub OAuth",
+  "originqc": "6钥在vault(本源纪律:非用不可才用)",
+  "quafu": "token在vault",
+  "ibm": "见上",
+  "kimi/deepseek": "LLM轨双引擎在vci-lvlu",
+  "github": "FULL/BI/QI三户池+TOTP种",
+  "tencent": "secret id/key在vault",
+  "tianyan": "key在vault",
+  "gitee": "PAT在vault"
+ }
+}
