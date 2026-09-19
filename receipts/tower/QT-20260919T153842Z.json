@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T153842Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlufad1d735md",
+   "ref": "BEACON-DZ-40-lvlu-fad1d735.md",
+   "opened": "20260919T080647Z",
+   "tries": 42,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 枢纽广播 lgt-03-disc-anchor.md，录 lvlu 锚点同步诉求。\n- 计划队列 PLAN-QUEUE拍 fired=3 kicks=0，录三拍未踢积压。\n\n②应动何件：\n- 即协同 PLAN-QUEUE拍（清积压，不候）。\n\n③未闭项推进：\n- BEACON-DZ-40-lvlu-fad1d735.md：未闭，tries=42 已达阈值，下一步切 SI2 底层重捕获或强制归档，终止空转。\n\n④生债一条：\n- 生债：队列“燃必踢”自愈规则一条，防止 kicks=0 假死复现。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
