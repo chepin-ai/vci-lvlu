@@ -1,0 +1,66 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T214232Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlud78bd17emd",
+   "ref": "BEACON-DZ-40-lvlu-d78bd17e.md",
+   "opened": "20260919T160357Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT46lvlu20260919T",
+   "ref": "OTP-DIRECT-46-lvlu-20260919T174919Z.md",
+   "opened": "20260919T174932Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu52a3b3c2md",
+   "ref": "BEACON-DZ-40-lvlu-52a3b3c2.md",
+   "opened": "20260919T180428Z",
+   "tries": 21,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- hub-broadcast「lgt-03-disc-anchor.md」：disc-anchor 协议待锚，涉 lvlu 场域接口校准。  \n- plan-queue「PLAN-QUEUE拍 fired=3 kicks=0」：三发零动，执行链路阻塞，涉 lvlu 调度。  \n\n② 应动何件  \n应动 PLAN-QUEUE拍；fired=3/kicks=0 已超候，立协同不候，需即疏浚。  \n\n③ 未闭项推进  \n- OI-BEACONDZ40lvlud78bd17emd：未闭，tries=33，下一步降维或切 beacon 备用握手。  \n- OI-OTPDIRECT46lvlu20260919T：未闭，tries=23，下一步对时并换 OTP 密钥窗口。  \n- OI-BEACONDZ40lvlu52a3b3c2md：未闭，tries=21，下一步收束双 dz40 beacon 为单可信源。  \n\n④ 生债一条  \nQUEUE拍三次无 kick，阻塞根因未明，生债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
