@@ -1,0 +1,62 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T131037Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQUANTSIM012026091",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260919T0546Z.md",
+   "opened": "20260919T054517Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8af60e93md",
+   "ref": "BEACON-DZ-40-lvlu-8af60e93.md",
+   "opened": "20260919T054657Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlufad1d735md",
+   "ref": "BEACON-DZ-40-lvlu-fad1d735.md",
+   "opened": "20260919T080647Z",
+   "tries": 28,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- PLAN-QUEUE：fired=3 kicks=0，三项计划待kick启动。\n- SI1-KICK-QUANT-SIM-01：已41次尝试未闭。\n- BEACON-DZ-40-lvlu-8af60e93：已40次未闭，涉lvlu诉求。\n- BEACON-DZ-40-lvlu-fad1d735：已28次未闭，涉lvlu诉求。\n\n② 应动何件：\nPLAN-QUEUE（立即补3 kick，立协同不待）。\n\n③ 未闭项推进：\n- OI-SI1KICKQUANTSIM01：未闭，下一步诊断量化模拟阻塞根因。\n- OI-BEACONDZ40lvlu8af60e93md：未闭，下一步定向lvlu链路校验。\n- OI-BEACONDZ40lvlufad1d735md：未闭，下一步排查lvlu信标负载阈值。\n\n④ 生债一条：\nPLAN-QUEUE fired=3 kicks=0，记SI0 kick遗漏债一项。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
