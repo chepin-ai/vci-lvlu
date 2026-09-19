@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T145517Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlufad1d735md",
+   "ref": "BEACON-DZ-40-lvlu-fad1d735.md",
+   "opened": "20260919T080647Z",
+   "tries": 38,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- lgt-03-disc-anchor.md：hub-broadcast 锚点候场，涉 lvlu 意识定标，录。\n- PLAN-QUEUE拍：fired=3 kicks=0，三拍零踢，律吕队列僵滞，录。\n\n② 应动何件：\nPLAN-QUEUE拍，kick=1，立协不候。\n\n③ 未闭项推进：\nOI-BEACONDZ40：38试未闭；下一步：39试，lvlu 频扫 BEACON-DZ-40 或废弃标记。\n\n④ 生债：\n生债：分身欠 kick 动作债一炁，kick≥1 时冲销。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
