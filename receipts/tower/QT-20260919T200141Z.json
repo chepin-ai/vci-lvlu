@@ -1,0 +1,62 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T200141Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlud78bd17emd",
+   "ref": "BEACON-DZ-40-lvlu-d78bd17e.md",
+   "opened": "20260919T160357Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT46lvlu20260919T",
+   "ref": "OTP-DIRECT-46-lvlu-20260919T174919Z.md",
+   "opened": "20260919T174932Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu52a3b3c2md",
+   "ref": "BEACON-DZ-40-lvlu-52a3b3c2.md",
+   "opened": "20260919T180428Z",
+   "tries": 12,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：PLAN-QUEUE候件已三度触发无踢出，队列待排；BEACON-DZ-40-lvlu-d78bd17e历经24试未闭，lvlu信标回环pending；OTP-DIRECT-46-lvlu直联验证14试未闭，lvlu身份校验诉求待竟；BEACON-DZ-40-lvlu-52a3b3c2经12试未闭，lvlu冗余信标待消。\n\n②应动何件：三项未闭皆逾10试，立协同不候，OTP-DIRECT-46-lvlu与双BEACON并启。\n\n③未闭项推进：\n- OI-BEACONDZ40lvlud78bd17emd：未闭；下一步：升频SI2级联调，限时回环或归档。\n- OI-OTPDIRECT46lvlu20260919T：未闭；下一步：重发密钥，毕lvlu直接校验闭环。\n- OI-BEACONDZ40lvlu52a3b3c2md：未闭；下一步：与d78bd17e交叉对撞，消冗收敛。\n\n④生债一条：DZ-40双信标并行悬置，生信道占用债一注，闭环后清偿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
