@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T162234Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlufad1d735md",
+   "ref": "BEACON-DZ-40-lvlu-fad1d735.md",
+   "opened": "20260919T080647Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlud78bd17emd",
+   "ref": "BEACON-DZ-40-lvlu-d78bd17e.md",
+   "opened": "20260919T160357Z",
+   "tries": 3,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件PLAN-QUEUE拍：触发3次、kicks=0，三任务待调度。  \n- 未闭项OI-BEACONDZ40lvlufad1d735md：BEACON-DZ-40-lvlu-fad1d735.md于0806Z开启，47次尝试未闭，lvlu信标异常阻塞。  \n- 未闭项OI-BEACONDZ40lvlud78bd17emd：BEACON-DZ-40-lvlu-d78bd17e.md于1603Z开启，3次尝试未闭，lvlu信标待收敛。  \n\n②应动何件  \n- PLAN-QUEUE拍：三任务立协同，不候。  \n- OI-BEACONDZ40lvlufad1d735md：47次阻塞，立切诊断排障，不候。  \n\n③未闭项推进  \n- OI-BEACONDZ40lvlufad1d735md：未闭；下一步：溯源根因并升级链路。  \n- OI-BEACONDZ40lvlud78bd17emd：未闭；下一步：续试并校验前置条件。  \n\n④生债一条  \n- BEACON-DZ-40-fad1d735阻塞47轮，积欠：自愈链路失效加固。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
