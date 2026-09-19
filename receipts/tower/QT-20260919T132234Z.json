@@ -1,0 +1,62 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T132234Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQUANTSIM012026091",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260919T0546Z.md",
+   "opened": "20260919T054517Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8af60e93md",
+   "ref": "BEACON-DZ-40-lvlu-8af60e93.md",
+   "opened": "20260919T054657Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlufad1d735md",
+   "ref": "BEACON-DZ-40-lvlu-fad1d735.md",
+   "opened": "20260919T080647Z",
+   "tries": 29,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件PLAN-QUEUE拍fired=3 kicks=0，队列悬空未执行。  \n- 未闭项SI1-KICK-QUANT-SIM已42试未闭。  \n- 未闭项BEACON-DZ-40-lvlu-8af60e93已41试未闭，涉lvlu诉求。  \n- 未闭项BEACON-DZ-40-lvlu-fad1d735已29试未闭，涉lvlu诉求。  \n\n② 应动何件  \n- 立协同PLAN-QUEUE补3次kick。  \n- 立协同SI1-KICK-QUANT-SIM排查42试阻塞根因。  \n- 立协同双BEACON-DZ-40-lvlu信标强制收敛。  \n\n③ 未闭项推进  \n- OI-SI1KICKQUANTSIM012026091：未闭，下一步切诊断模式定位量化模拟卡死点并重启。  \n- OI-BEACONDZ40lvlu8af60e93md：未闭，下一步下发lvlu信标8af60e93收敛指令。  \n- OI-BEACONDZ40lvlufad1d735md：未闭，下一步下发lvlu信标fad1d735收敛指令。  \n\n④ 生债一条  \n- 生债：队列缺3kick未动，lvlu双信标及SI1模拟长悬未决，欠执行收敛债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
