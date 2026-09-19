@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T163439Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlud78bd17emd",
+   "ref": "BEACON-DZ-40-lvlu-d78bd17e.md",
+   "opened": "20260919T160357Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 涉lvlu枢纽广播一件：lgt-03-disc-anchor.md（录：disc-anchor 锚点同步待收）\n- 计划队列一件：PLAN-QUEUE拍 fired=3 kicks=0（录：三度触发零落地，阻塞待排）\n\n② 应动何件：\n- 应动 PLAN-QUEUE拍，立协同不候，即刻排查队列阻塞并强推 kicks 落地。\n\n③ 未闭项推进：\n- OI-BEACONDZ40lvlud78bd17emd：未闭，四试未结，下一步换策略五试或升档兜闭。\n\n④ 生债一条：\n- 生债：队列三击零踢，欠执行债一条，须限时回补。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
