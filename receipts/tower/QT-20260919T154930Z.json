@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T154930Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlufad1d735md",
+   "ref": "BEACON-DZ-40-lvlu-fad1d735.md",
+   "opened": "20260919T080647Z",
+   "tries": 43,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① hub-broadcast《lgt-03-disc-anchor.md》候播；plan-queue《PLAN-QUEUE拍》fired=3 kicks=0 空转；未闭项《BEACON-DZ-40》tries=43 僵滞，涉 lvlu 域阻塞。\n\n② 应动《PLAN-QUEUE拍》与《BEACON-DZ-40》，立协同不候。\n\n③ OI-BEACONDZ40lvlufad1d735md：未闭；下一步诊断根因并限时强制闭环或升维。\n\n④ 生债：队列三振无出、信标四十三试未解，记调度耗散债一宗。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
