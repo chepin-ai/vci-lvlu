@@ -1,0 +1,66 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T224152Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlud78bd17emd",
+   "ref": "BEACON-DZ-40-lvlu-d78bd17e.md",
+   "opened": "20260919T160357Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT46lvlu20260919T",
+   "ref": "OTP-DIRECT-46-lvlu-20260919T174919Z.md",
+   "opened": "20260919T174932Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu52a3b3c2md",
+   "ref": "BEACON-DZ-40-lvlu-52a3b3c2.md",
+   "opened": "20260919T180428Z",
+   "tries": 27,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 集线广播件 `lgt-03-disc-anchor.md` 待阅，涉 lvlu 讨论锚点布设诉求。  \n- 计划队列件 `PLAN-QUEUE` 已 fired=3/kicks=0，淤积待清。  \n\n②应动何件  \n- 立协同 `hub-broadcast` 与 `plan-queue`，不候。  \n\n③未闭项推进  \n- `BEACON-DZ-40 d78bd17e`（39试）：未闭，下一步升级信道或转弃置。  \n- `OTP-DIRECT-46`（29试）：未闭，下一步重发并验链路。  \n- `BEACON-DZ-40 52a3b3c2`（27试）：未闭，下一步归并同批重试。  \n\n④生债一条  \n- 生债：输出 lvlu 三未闭项高 tries 归并告警及处置单。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
