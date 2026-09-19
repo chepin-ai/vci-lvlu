@@ -1,0 +1,62 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T190424Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlud78bd17emd",
+   "ref": "BEACON-DZ-40-lvlu-d78bd17e.md",
+   "opened": "20260919T160357Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT46lvlu20260919T",
+   "ref": "OTP-DIRECT-46-lvlu-20260919T174919Z.md",
+   "opened": "20260919T174932Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu52a3b3c2md",
+   "ref": "BEACON-DZ-40-lvlu-52a3b3c2.md",
+   "opened": "20260919T180428Z",
+   "tries": 6,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- 候件PLAN-QUEUE拍：调度队列已燃3拍、kicks=0，执行积压悬停。\n- OI-BEACONDZ40lvlud78bd17emd：lvlu信标18试未闭，DZ40同步诉求未录。\n- OI-OTPDIRECT46lvlu20260919T：lvlu直通验证8试未闭，身份校验链悬置。\n- OI-BEACONDZ40lvlu52a3b3c2md：lvlu节点信标6试未闭，握手回执待确认。\n\n②应动何件\n- 立清PLAN-QUEUE拍（释放3拍积压），并立结OTP-DIRECT-46（身份链路协同不候）。\n\n③未闭项推进\n- OI-BEACONDZ40lvlud78bd17emd：未闭；下一步切备用信标或转人工裁定。\n- OI-OTPDIRECT46lvlu20260919T：未闭；下一步重刷OTP流或启用旁路验证。\n- OI-BEACONDZ40lvlu52a3b3c2md：未闭；下一步复测握手阈值或隔离该节点。\n\n④生债一条\n- 债：QUEUE拍积3未清，生调度滞行债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
