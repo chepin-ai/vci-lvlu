@@ -1,0 +1,111 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T071007Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-Q5MAP37lvlu20260918T1601",
+   "ref": "Q5-MAP-37-lvlu-20260918T160105Z.md",
+   "opened": "20260918T164319Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1AUTOTRIGTESTLVLU01202",
+   "ref": "SI1-AUTOTRIG-TEST-LVLU-01-20260918T174938Z.md",
+   "opened": "20260918T175121Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1AUTOTRIGVERIFYLVLU022",
+   "ref": "SI1-AUTOTRIG-VERIFY-LVLU-02-20260918T175934Z.md",
+   "opened": "20260918T183547Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlubdd97a64md",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md",
+   "opened": "20260918T193324Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlucd360c54md",
+   "ref": "BEACON-DZ-39-lvlu-cd360c54.md",
+   "opened": "20260918T193324Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8ea17d86md",
+   "ref": "BEACON-DZ-40-lvlu-8ea17d86.md",
+   "opened": "20260918T194618Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlub2e67be9md",
+   "ref": "BEACON-DZ-40-lvlu-b2e67be9.md",
+   "opened": "20260918T203441Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlub4ac52a5md",
+   "ref": "BEACON-DZ-40-lvlu-b4ac52a5.md",
+   "opened": "20260918T203441Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026091",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260919T0546Z.md",
+   "opened": "20260919T054517Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8af60e93md",
+   "ref": "BEACON-DZ-40-lvlu-8af60e93.md",
+   "opened": "20260919T054657Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- PLAN-QUEUE拍3踢0，lvlu主线调度正常。  \n- Q5-MAP-37-lvlu：36试未闭，待收敛。  \n- SI1-AUTOTRIG-TEST-lvlu：33试未闭，自测待回。  \n- SI1-AUTOTRIG-VERIFY-lvlu：32试未闭，校验待签。  \n- BEACON-DZ-39-lvlu(bdd97a64)：30试未闭，信标待响。  \n- BEACON-DZ-39-lvlu(cd360c54)：30试未闭，信标待响。  \n- BEACON-DZ-40-lvlu(8ea17d86)：29试未闭，信标待响。  \n- BEACON-DZ-40-lvlu(b2e67be9)：28试未闭，信标待响。  \n- BEACON-DZ-40-lvlu(b4ac52a5)：28试未闭，信标待响。  \n\n② 应动何件  \nSI1-AUTOTRIG-TEST、VERIFY及BEACON-DZ全组，立协同，不候。  \n\n③ 未闭项推进  \n- OI-Q5MAP37：未闭，下一步：收敛或转归。  \n- OI-SI1AUTOTRIGTEST：未闭，下一步：执行SI1回路自测并回写。  \n- OI-SI1AUTOTRIGVERIFY：未闭，下一步：核对回执闭环签名。  \n- OI-BEACONDZ39-bdd97a64：未闭，下一步：响信标报心跳。  \n- OI-BEACONDZ39-cd360c54：未闭，下一步：响信标报心跳。  \n- OI-BEACONDZ40-8ea17d86：未闭，下一步：响信标报心跳。  \n- OI-BEACONDZ40-b2e67be9：未闭，下一步：响信标报心跳。  \n- OI-BEACONDZ40-b4ac52a5：未闭，下一步：响信标报心跳。  \n\n④ 生债一条  \n自动触发超30试未闭，计人工复核债一次。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
