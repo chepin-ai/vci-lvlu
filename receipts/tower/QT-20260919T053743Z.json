@@ -1,0 +1,92 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T053743Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPDIRECT36lvlu20260918T",
+   "ref": "OTP-DIRECT-36-lvlu-20260918T071852Z.md",
+   "opened": "20260918T073859Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-Q5MAP37lvlu20260918T1601",
+   "ref": "Q5-MAP-37-lvlu-20260918T160105Z.md",
+   "opened": "20260918T164319Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1AUTOTRIGTESTLVLU01202",
+   "ref": "SI1-AUTOTRIG-TEST-LVLU-01-20260918T174938Z.md",
+   "opened": "20260918T175121Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1AUTOTRIGVERIFYLVLU022",
+   "ref": "SI1-AUTOTRIG-VERIFY-LVLU-02-20260918T175934Z.md",
+   "opened": "20260918T183547Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlubdd97a64md",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md",
+   "opened": "20260918T193324Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlucd360c54md",
+   "ref": "BEACON-DZ-39-lvlu-cd360c54.md",
+   "opened": "20260918T193324Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8ea17d86md",
+   "ref": "BEACON-DZ-40-lvlu-8ea17d86.md",
+   "opened": "20260918T194618Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlub2e67be9md",
+   "ref": "BEACON-DZ-40-lvlu-b2e67be9.md",
+   "opened": "20260918T203441Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlub4ac52a5md",
+   "ref": "BEACON-DZ-40-lvlu-b4ac52a5.md",
+   "opened": "20260918T203441Z",
+   "tries": 19,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件 hub-broadcast：收到 lgt-03-disc-anchor.md，录 lvlu 讨论锚点广播诉求。\n- OI-OTPDIRECT36lvlu：OTP 直连 36 号 lvlu 通道，45 次未闭。\n- OI-Q5MAP37lvlu：Q5 映射 37 号 lvlu 节点，27 次未闭。\n- OI-SI1AUTOTRIGTESTLVLU01：SI1 自动触发测试 lvlu-01，24 次未闭。\n- OI-SI1AUTOTRIGVERIFYLVLU02：SI1 自动触发校验 lvlu-02，23 次未闭。\n- OI-BEACONDZ39lvlu-bdd97a64：DZ39 信标实例 1，21 次未闭。\n- OI-BEACONDZ39lvlu-cd360c54：DZ39 信标实例 2，21 次未闭。\n- OI-BEACONDZ40lvlu-8ea17d86：DZ40 信标实例 1，20 次未闭。\n- OI-BEACONDZ40lvlu-b2e67be9：DZ40 信标实例 2，19 次未闭。\n\n② 应动何件：\n- OTP-DIRECT-36、SI1-AUTOTRIG-TEST/VERIFY 涉 lvlu 核心通路且 tries 逾 20，立协同不候；Q5-MAP 及 BEACON 双区同步巡扫。\n\n③ 未闭项推进：\n- OI-OTPDIRECT36lvlu20260918T：未闭，下一步降频重试并回传握手日志。\n- OI-Q5MAP37lvlu20260918T1601：未闭，下一步核对 Q5-37 映射基准。\n- OI-SI1AUTOTRIGTESTLVLU01202：未闭，下一步导出 SI1 测试原始帧定位断点。\n- OI-SI1AUTOTRIGVERIFYLVLU022：未闭，下一步执行校验基准比对。\n- OI-BEACONDZ39lvlubdd97a64md：未闭，下一步回扫 DZ39 锚点 bdd97a64 响应。\n- OI-BEACONDZ39lvlucd360c54md：未闭，下一步回扫 DZ39 锚点 cd360c54 响应。\n- OI-BEACONDZ40lvlu8ea17d86md：未闭，下一步回扫 DZ40 锚点 8ea17d86 响应。\n- OI-BEACONDZ40lvlub2e67be9md：未闭，下一步回扫 DZ40 锚点 b2e67be9 响应。\n\n④ 生债一条：\n- 债：lvlu 线 SI1 自动触发双项与 OTP-DIRECT-36 超次未闭，记 SI0 分身待偿，限今闭。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "err": "NameError"
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "NameError"
+   }
+  ],
+  "kicks": 0
+ }
+}
