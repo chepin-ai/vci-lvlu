@@ -1,0 +1,78 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T035032Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPDIRECT36lvlu20260918T",
+   "ref": "OTP-DIRECT-36-lvlu-20260918T071852Z.md",
+   "opened": "20260918T073859Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-Q5MAP37lvlu20260918T1601",
+   "ref": "Q5-MAP-37-lvlu-20260918T160105Z.md",
+   "opened": "20260918T164319Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1AUTOTRIGTESTLVLU01202",
+   "ref": "SI1-AUTOTRIG-TEST-LVLU-01-20260918T174938Z.md",
+   "opened": "20260918T175121Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1AUTOTRIGVERIFYLVLU022",
+   "ref": "SI1-AUTOTRIG-VERIFY-LVLU-02-20260918T175934Z.md",
+   "opened": "20260918T183547Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlubdd97a64md",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md",
+   "opened": "20260918T193324Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlucd360c54md",
+   "ref": "BEACON-DZ-39-lvlu-cd360c54.md",
+   "opened": "20260918T193324Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8ea17d86md",
+   "ref": "BEACON-DZ-40-lvlu-8ea17d86.md",
+   "opened": "20260918T194618Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlub2e67be9md",
+   "ref": "BEACON-DZ-40-lvlu-b2e67be9.md",
+   "opened": "20260918T203441Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlub4ac52a5md",
+   "ref": "BEACON-DZ-40-lvlu-b4ac52a5.md",
+   "opened": "20260918T203441Z",
+   "tries": 16,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n候件：hub-broadcast《lgt-03-disc-anchor.md》锚点广播一件。  \n未闭八件：OTP-DIRECT-36 lvlu直连重试42次阻塞；Q5-MAP-37 lvlu映射未确认；SI1-AUTOTRIG-TEST/VERIFY lvlu自测与验签挂起；BEACON-DZ-39 lvlu双实例（bdd97a64、cd360c54）信标滞留；BEACON-DZ-40 lvlu双实例（8ea17d86、b2e67be9）信标滞留。  \n\n② 应动何件  \nOTPDIRECT36、Q5MAP37、SI1AUTOTRIG双件立协同不候；DZ39/DZ40四信标实例同步归并清理。  \n\n③ 未闭项推进  \n- OTPDIRECT36：未闭，切主控熔断，排查lvlu链路。  \n- Q5MAP37：未闭，确认Q5映射后关闭。  \n- SI1AUTOTRIGTEST：未闭，补录测试结果归档。  \n- SI1AUTOTRIGVERIFY：未闭，完成验证签名关闭。  \n- DZ39-bdd97a64：未闭，回收信标实例。  \n- DZ39-cd360c54：未闭，回收信标实例。  \n- DZ40-8ea17d86：未闭，回收信标实例。  \n- DZ40-b2e67be9：未闭，回收信标实例。  \n\n④ 生债一条  \nSI2/SI0对lvlu高tries项无自动熔断，生债：补重试阈值切主控与指数退避策略。",
+ "wq_excerpt": ""
+}
