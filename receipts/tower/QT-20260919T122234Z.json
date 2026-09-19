@@ -1,0 +1,62 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T122234Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQUANTSIM012026091",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260919T0546Z.md",
+   "opened": "20260919T054517Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8af60e93md",
+   "ref": "BEACON-DZ-40-lvlu-8af60e93.md",
+   "opened": "20260919T054657Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlufad1d735md",
+   "ref": "BEACON-DZ-40-lvlu-fad1d735.md",
+   "opened": "20260919T080647Z",
+   "tries": 24,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- PLAN-QUEUE：fired=3/kicks=0，lvlu计划流无kick回传。\n- SI1KICKQUANTSIM：37试未闭，lvlu量化诉求挂起。\n- BEACON-8af60e93：lvlu信标36试未收。\n- BEACON-fad1d735：lvlu信标24试未收。\n\n②应动何件：\n立协OI-SI1KICKQUANTSIM，疏通kick链。\n\n③未闭项推进：\n- SI1KICKQUANTSIM：未闭，下一步SI0硬旁路或弃sim。\n- BEACON-8af60e93：未闭，下一步重签lvlu或强归档。\n- BEACON-fad1d735：未闭，下一步并DZ-40批沉降。\n\n④生债一条：\nlvlu线PLAN-QUEUE kick失应，记流控债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
