@@ -1,0 +1,63 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T174932Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "OTP-DIRECT-46-lvlu-20260919T174919Z.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlud78bd17emd",
+   "ref": "BEACON-DZ-40-lvlu-d78bd17e.md",
+   "opened": "20260919T160357Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT46lvlu20260919T",
+   "ref": "OTP-DIRECT-46-lvlu-20260919T174919Z.md",
+   "opened": "20260919T174932Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- hub广播件lgt-03-disc-anchor.md待阅。\n- lvlu直投OTP-DIRECT-46收件，涉lvlu定向诉求。\n- PLAN-QUEUE已三击零进，队列积压。\n\n②应动何件：\n- OTP-DIRECT-46-lvlu件（涉lvlu直投，立协同不候）。\n\n③未闭项推进：\n- OI-BEACONDZ40：未闭，11试阻塞，下一步：查根因并强关。\n- OI-OTPDIRECT46：未闭，下一步：协同直投内容后闭。\n\n④生债一条：\n- 生债：BEACON-DZ-40十一试未闭，积欠待偿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
