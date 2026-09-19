@@ -88,6 +88,104 @@ def kimi_work(events, open_items):
             print(f'[QT-FIX-01] attempt{attempt} err: {e.__class__.__name__} {str(e)[:120]}')
     return ''
 
+
+# ================= PLAN-QUEUE 自推进机制 (root令: 下拍自发自动以新机制在SI推进·SI1自触发) =================
+import hmac as _hmac_pq, cmath as _cmath_pq, math as _math_pq, re as _re_pq
+
+def _pq_r2(method, bucket, key, body=b''):
+    ak = os.environ.get('CF_R2_ACCESS_KEY_ID',''); sk = os.environ.get('CF_R2_SECRET_ACCESS_KEY',''); acct = os.environ.get('CF_ACCOUNT_ID','')
+    if not (ak and sk and acct): return 0
+    host = acct + '.r2.cloudflarestorage.com'
+    amz = datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ'); ds = amz[:8]
+    ph = hashlib.sha256(body).hexdigest(); path = '/%s/%s' % (bucket, key)
+    ch = 'host:%s\nx-amz-content-sha256:%s\nx-amz-date:%s\n' % (host, ph, amz)
+    cr = '%s\n%s\n\n%s\nhost;x-amz-content-sha256;x-amz-date\n%s' % (method, path, ch, ph)
+    sts = 'AWS4-HMAC-SHA256\n%s\n%s/auto/s3/aws4_request\n%s' % (amz, ds, hashlib.sha256(cr.encode()).hexdigest())
+    def _sg(k, m): return _hmac_pq.new(k, m.encode(), hashlib.sha256).digest()
+    k = _sg(('AWS4'+sk).encode(), ds); k = _sg(k, 'auto'); k = _sg(k, 's3'); k = _sg(k, 'aws4_request')
+    sig = _hmac_pq.new(k, sts.encode(), hashlib.sha256).hexdigest()
+    auth = 'AWS4-HMAC-SHA256 Credential=%s/%s/auto/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=%s' % (ak, ds, sig)
+    req = urllib.request.Request('https://%s%s' % (host, path), method=method, data=(body or None),
+        headers={'Authorization': auth, 'x-amz-date': amz, 'x-amz-content-sha256': ph})
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r: return r.status
+    except Exception: return 0
+
+def _pq_kick(item, finding, ts):
+    nm = 'SI1-KICK-%s-%s.md' % (item['id'], ts)
+    ask = {"ask": "PLAN-QUEUE机制自推进·机械层报[%s: %s]。请SI1判词: 1)此发现何义(一句) 2)下一动建议(一句)。" % (item['id'], finding[:380]),
+           "nonce": "kick-%s-%s" % (item['id'], ts), "from": "tower-plan-queue"}
+    card = ("CLASSIFY: L1(SI1自触发踢卡·TOWER-PLAN-QUEUE机制·机读约在件)\n# %s\n"
+            "ts: %s from: tower-plan-queue item: %s\n\n```json\n%s\n```\n\n——lvlu TOWER-PLAN-QUEUE·SI1自踢\n"
+            % (nm[:-3], ts, item['id'], json.dumps(ask, ensure_ascii=False)))
+    return put_file('inbox/' + nm, card, None, 'SI1-KICK %s %s' % (item['id'], ts))
+
+def _pq_qring_sim():
+    N = 8; DIM = 1 << N
+    H2 = [[1/_math_pq.sqrt(2)]*2, [1/_math_pq.sqrt(2), -1/_math_pq.sqrt(2)]]
+    def apply_1q(st, q, g):
+        for i in range(DIM):
+            if not (i >> q) & 1:
+                j = i | (1 << q); a, b = st[i], st[j]
+                st[i] = g[0][0]*a + g[0][1]*b; st[j] = g[1][0]*a + g[1][1]*b
+    out = []
+    for theta in [0.1, 0.3, 0.5, 0.7, 0.9, 1.1, 1.3, 1.5]:
+        st = [0j]*DIM; st[0] = 1+0j
+        for q in range(N): apply_1q(st, q, H2)
+        for q in range(N):
+            t = (q+1) % N
+            for i in range(DIM):
+                if ((i >> q) & 1) and not ((i >> t) & 1):
+                    j = i | (1 << t); st[i], st[j] = st[j], st[i]
+        for q in range(N):
+            for i in range(DIM):
+                st[i] *= _cmath_pq.exp((-1j if not ((i>>q)&1) else 1j)*theta/2)
+        nrm = sum(abs(a)**2 for a in st)
+        ipr = sum(abs(a)**4 for a in st) / (nrm*nrm)
+        z0z4 = sum((1 if not ((i>>0)&1) else -1)*(1 if not ((i>>4)&1) else -1)*abs(st[i])**2 for i in range(DIM)) / nrm
+        out.append({'theta': theta, 'IPR': round(ipr, 6), 'Z0Z4': round(z0z4, 6), 'maxP': round(max(abs(a)**2 for a in st)/nrm, 6)})
+    return {'v':'QRING-SIM-01','N':N,'circuit':'H^⊗n + ring-CNOT + RZ(θ)^⊗n','metrics':'IPR/⟨Z0Z4⟩/maxP (无谱截断,精确对角量)','sweep':out}
+
+def plan_queue_beat(state, ts):
+    pq_raw, pq_sha = get_file('ci/si3/PLAN-QUEUE.json')
+    if not pq_raw: return {'fired': 0, 'note': 'no PLAN-QUEUE.json'}
+    pq = json.loads(pq_raw); fired = 0; kicks = 0; report = {'fired': 0, 'acts': []}
+    for it in pq.get('items', []):
+        if it.get('status') != 'open': continue
+        try:
+            if it['kind'] in ('watch', 'watch-multi'):
+                repos = [it['repo']] if it['kind'] == 'watch' else it['repos']
+                for rp in repos:
+                    st_, items_ = api('GET', 'contents/' + it['dir'], repo='chepin-ai/' + rp)
+                    if st_ != 200 or not isinstance(items_, list): continue
+                    for f_ in items_:
+                        if _re_pq.search(it['pattern'], f_['name']) and f_['name'] >= it.get('since', ''):
+                            hid = rp + '/' + f_['name']
+                            if hid not in it['hits']:
+                                it['hits'].append(hid); fired += 1
+                                if kicks < 2 and _pq_kick(it, '命中 ' + hid, ts): kicks += 1
+                if it['hits']: report['acts'].append({'id': it['id'], 'hits_n': len(it['hits'])})
+            elif it['kind'] == 'every-n':
+                if state.get('pq_beat_n', 0) % int(it['n']) == 0:
+                    if it['action'].startswith('fieldnet'):
+                        doc = {'v': 'FIELDNET-EDGE-01', 'line': 'lvlu', 'ts': ts, 'src': 'plan-queue beat', 'edges': [], 'entropy': None}
+                        rc = _pq_r2('PUT', 'ci-mesh-state', 'field/FIELDNET-EDGE-LVLU-%s.json' % ts, json.dumps(doc, ensure_ascii=False).encode())
+                        it['last_run'] = ts; fired += 1; report['acts'].append({'id': it['id'], 'r2': rc})
+                    elif it['action'].startswith('qring'):
+                        sim = _pq_qring_sim(); sim['ts'] = ts
+                        rc = _pq_r2('PUT', 'ci-mesh-state', 'quantum/QRING-SIM-%s.json' % ts, json.dumps(sim, ensure_ascii=False).encode())
+                        it['last_run'] = ts; fired += 1; report['acts'].append({'id': it['id'], 'r2': rc})
+                        if kicks < 2 and rc == 200:
+                            if _pq_kick(it, '8比特环仿真入R2 rc=%s IPR末值=%s' % (rc, sim['sweep'][-1]['IPR']), ts): kicks += 1
+        except Exception as e_:
+            report['acts'].append({'id': it.get('id', '?'), 'err': e_.__class__.__name__})
+    state['pq_beat_n'] = state.get('pq_beat_n', 0) + 1
+    if fired:
+        put_file('ci/si3/PLAN-QUEUE.json', json.dumps(pq, ensure_ascii=False, indent=1), pq_sha, '[skip ci] PLAN-QUEUE beat %s' % ts)
+        _pq_r2('PUT', 'ci-mesh-state', 'plan/PLAN-QUEUE.json', json.dumps(pq, ensure_ascii=False, indent=1).encode())
+    report['fired'] = fired; report['kicks'] = kicks
+    return report
+
 def main():
     ts = datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
     stj, _ = get_file('receipts/tower/state.json')
@@ -117,12 +215,20 @@ def main():
     for o in open_items: o['tries'] = o.get('tries', 0) + 1
     open_items = [o for o in open_items if o.get('status') == 'open' and o.get('tries', 0) < 48][-40:]
 
+    # ---- PLAN-QUEUE 自推进(root令: 下拍自发自动以新机制在SI推进·SI1自触发) ----
+    try:
+        pq_report = plan_queue_beat(state, ts)
+    except Exception as _pqe:
+        pq_report = {'fired': 0, 'err': _pqe.__class__.__name__}
+    if pq_report.get('fired'):
+        events.append({'kind': 'plan-queue', 'ref': 'PLAN-QUEUE拍 fired=%d kicks=%d' % (pq_report.get('fired', 0), pq_report.get('kicks', 0))})
+
     memo = kimi_work(events, open_items) if (events or open_items) else ''
     if (events or open_items) and not memo:  # VOICE-MUTE-01修
         memo = '(模板判词·LLM空回) 候件%d件/未闭%d项: %s' % (len(events), len(open_items), '; '.join(e['ref'] for e in events[:6]))
 
     receipt = {'v': 'LVLU-TOWER-01', 'ts': ts, 'idle_in': state.get('idle', 0),
-               'events': events[:60], 'open_items': open_items, 'verdict_memo': memo[:2000], 'wq_excerpt': wq_excerpt[:300]}
+               'events': events[:60], 'open_items': open_items, 'verdict_memo': memo[:2000], 'wq_excerpt': wq_excerpt[:300], 'plan_queue': pq_report}
     old, sha = get_file('receipts/tower/QT-%s.json' % ts)
     put_file('receipts/tower/QT-%s.json' % ts, json.dumps(receipt, ensure_ascii=False, indent=1), sha, f'[skip ci] LVLU-TOWER beat {ts}')
     new_state = {'ts': ts, 'idle': idle, 'events': len(events), 'cascade': '', 'seen': NEWSEEN,
