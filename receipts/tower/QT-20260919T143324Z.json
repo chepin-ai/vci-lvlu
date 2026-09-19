@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T143324Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlufad1d735md",
+   "ref": "BEACON-DZ-40-lvlu-fad1d735.md",
+   "opened": "20260919T080647Z",
+   "tries": 36,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- PLAN-QUEUE拍fired=3/kicks=0：计划队列积3拍无踢出，调度淤滞。  \n\n② 应动何件  \n- 即协同PLAN-QUEUE候件，踢出3拍积压，不候。  \n\n③ 未闭项推进  \n- OI-BEACONDZ40lvlufad1d735md（BEACON-DZ-40-lvlu-fad1d735.md）：未闭；36试未果，下一步升档查阻塞根因或换链路重推。  \n\n④ 生债一条  \n- 队列三拍无踢、信标三十六试未闭，生调度探测债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
