@@ -1,0 +1,66 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T185235Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlud78bd17emd",
+   "ref": "BEACON-DZ-40-lvlu-d78bd17e.md",
+   "opened": "20260919T160357Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT46lvlu20260919T",
+   "ref": "OTP-DIRECT-46-lvlu-20260919T174919Z.md",
+   "opened": "20260919T174932Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu52a3b3c2md",
+   "ref": "BEACON-DZ-40-lvlu-52a3b3c2.md",
+   "opened": "20260919T180428Z",
+   "tries": 5,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 枢纽广播件 `lgt-03-disc-anchor.md` 到埠，待锚点分发。  \n- 计划队列件 `PLAN-QUEUE拍 fired=3 kicks=0`，已三拍未踢转。  \n- 未闭项 `OI-BEACONDZ40lvlud78bd17emd`：lvlu 信标 `BEACON-DZ-40` 已 17 试未闭。  \n- 未闭项 `OI-OTPDIRECT46lvlu20260919T`：lvlu 直通 OTP 已 7 试未闭。  \n- 未闭项 `OI-BEACONDZ40lvlu52a3b3c2md`：lvlu 信标 `BEACON-DZ-40` 已 5 试未闭。  \n\n② 应动何件  \n- 立协同 `PLAN-QUEUE拍`，立即踢转 3 次滞留 fired，不候。  \n\n③ 未闭项推进  \n- `OI-BEACONDZ40lvlud78bd17emd`：未闭，17 试超阈，下一步升频重试或强制归档。  \n- `OI-OTPDIRECT46lvlu20260919T`：未闭，下一步核 OTP 时效窗，逾则熔断。  \n- `OI-BEACONDZ40lvlu52a3b3c2md`：未闭，下一步回扫同批次 BEACON-DZ-40 关联项。  \n\n④ 生债一条  \n- 补录今日 lvlu OTP-BEACON 耦合日志，止 tries 虚增。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
