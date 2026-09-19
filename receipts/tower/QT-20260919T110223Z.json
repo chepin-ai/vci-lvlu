@@ -1,0 +1,62 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T110223Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQUANTSIM012026091",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260919T0546Z.md",
+   "opened": "20260919T054517Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8af60e93md",
+   "ref": "BEACON-DZ-40-lvlu-8af60e93.md",
+   "opened": "20260919T054657Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlufad1d735md",
+   "ref": "BEACON-DZ-40-lvlu-fad1d735.md",
+   "opened": "20260919T080647Z",
+   "tries": 17,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件PLAN-QUEUE拍fired=3次kicks=0，队列空转积压。\n- OI-SI1KICKQUANTSIM012026091：SI1量化模拟kick，试30次未闭。\n- OI-BEACONDZ40lvlu8af60e93md：lvlu信标8af60e93，试29次未闭。\n- OI-BEACONDZ40lvlufad1d735md：lvlu信标fad1d735，试17次未闭。\n\n②应动何件：\n- 立协同kick PLAN-QUEUE，并联推三OI闭项。\n\n③未闭项推进：\n- OI-SI1KICKQUANTSIM012026091：未闭，下一步断根因重kick。\n- OI-BEACONDZ40lvlu8af60e93md：未闭，下一步回扫lvlu态收束。\n- OI-BEACONDZ40lvlufad1d735md：未闭，下一步并查差异强同步。\n\n④生债一条：\n- 生债：PLAN-QUEUE三拍未kick致链式阻塞，补自动kick与超时熔断债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
