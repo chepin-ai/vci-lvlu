@@ -1,0 +1,66 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T123429Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQUANTSIM012026091",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260919T0546Z.md",
+   "opened": "20260919T054517Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8af60e93md",
+   "ref": "BEACON-DZ-40-lvlu-8af60e93.md",
+   "opened": "20260919T054657Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlufad1d735md",
+   "ref": "BEACON-DZ-40-lvlu-fad1d735.md",
+   "opened": "20260919T080647Z",
+   "tries": 25,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- hub-broadcast「lgt-03-disc-anchor.md」，锚点广播，无lvlu诉。  \n- plan-queue「PLAN-QUEUE拍」fired=3/kicks=0，lvlu kick未落，执行悬停。  \n- OI-SI1…SIM01：SI1量子模拟kick，38试未闭。  \n- OI-BEACON…8af：DZ-40信标，37试未闭。  \n- OI-BEACON…fad：DZ-40信标，25试未闭。  \n\n②应动何件  \n- 立协同「PLAN-QUEUE拍」，补kick，不候。  \n\n③未闭项推进  \n- OI-SI1…SIM01：未闭，下一步提SI2诊断quant-sim阻塞根因。  \n- OI-BEACON…8af：未闭，下一步满40试强关或回退。  \n- OI-BEACON…fad：未闭，下一步并轨去重，避免双信标重复采样。  \n\n④生债  \n- 生债：SI0欠PLAN-QUEUE kick债3笔，本次销账。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
