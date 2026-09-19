@@ -1,0 +1,66 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T133431Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQUANTSIM012026091",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260919T0546Z.md",
+   "opened": "20260919T054517Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8af60e93md",
+   "ref": "BEACON-DZ-40-lvlu-8af60e93.md",
+   "opened": "20260919T054657Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlufad1d735md",
+   "ref": "BEACON-DZ-40-lvlu-fad1d735.md",
+   "opened": "20260919T080647Z",
+   "tries": 30,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- hub-broadcast《lgt-03-disc-anchor.md》枢纽锚点下发，涉lvlu域定位，录。  \n- PLAN-QUEUE拍fired=3 kicks=0，三拍无回令，涉lvlu节律断档，录。  \n\n② 应动何件  \n- PLAN-QUEUE拍及OI-SI1KICKQUANTSIM012026091立协同不候，即刻补kick/升层。  \n\n③ 未闭项推进  \n- OI-SI1KICKQUANTSIM012026091：未闭，SI2/SI0接管quant sim并强kick。  \n- OI-BEACONDZ40lvlu8af60e93md：未闭，回扫beacon-8af60e93锚点同步。  \n- OI-BEACONDZ40lvlufad1d735md：未闭，fad1d735并轨DZ-40主链收束。  \n\n④ 生债一条  \n- 生债一条：lvlu须为SI1 quant sim代偿一次跨层kick。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
