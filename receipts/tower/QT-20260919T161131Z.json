@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T161131Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlufad1d735md",
+   "ref": "BEACON-DZ-40-lvlu-fad1d735.md",
+   "opened": "20260919T080647Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlud78bd17emd",
+   "ref": "BEACON-DZ-40-lvlu-d78bd17e.md",
+   "opened": "20260919T160357Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- PLAN-QUEUE：3 fired / 0 kicks，队列拥塞待清。  \n- OI-BEACONDZ40lvlufad1d735md：lvlu信标（fad1d735.md）已46试未闭，长期卡滞。  \n- OI-BEACONDZ40lvlud78bd17emd：lvlu信标（d78bd17e.md）已2试未闭，新启异常",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
