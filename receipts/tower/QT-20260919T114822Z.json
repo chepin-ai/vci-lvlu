@@ -1,0 +1,66 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T114822Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQUANTSIM012026091",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260919T0546Z.md",
+   "opened": "20260919T054517Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8af60e93md",
+   "ref": "BEACON-DZ-40-lvlu-8af60e93.md",
+   "opened": "20260919T054657Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlufad1d735md",
+   "ref": "BEACON-DZ-40-lvlu-fad1d735.md",
+   "opened": "20260919T080647Z",
+   "tries": 21,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① `lgt-03-disc-anchor.md`广播待落锚；`PLAN-QUEUE拍`fired=3 kicks=0，lvlu诉：SI1-KICK-QUANT-SIM与双BEACON-DZ-40启振均挂起。  \n② 应动`PLAN-QUEUE拍`，立kick SI1-KICK-QUANT-SIM并双BEACON-DZ-40，不候。  \n③ OI-SI1KICKQUANTSIM012026091未闭，强kick或降级sim内核；OI-BEACONDZ40lvlu8af60e93md未闭，重抛锚点8af60e93；OI-BEACONDZ40lvlufad1d735md未闭，SI2/SI0握手fad1d735。  \n④ 生债：lvlu线记SI2/SI0一kick债，待三未闭项闭后销。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
