@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T142226Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlu8af60e93md",
+   "ref": "BEACON-DZ-40-lvlu-8af60e93.md",
+   "opened": "20260919T054657Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlufad1d735md",
+   "ref": "BEACON-DZ-40-lvlu-fad1d735.md",
+   "opened": "20260919T080647Z",
+   "tries": 35,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- PLAN-QUEUE：3拍0 kick，执行层挂起。\n- OI-8af60e93md：BEACON-DZ-40-lvlu-8af60e93.md，47试未闭。\n- OI-fad1d735md：BEACON-DZ-40-lvlu-fad1d735.md，35试未闭。\n\n②应动何件：\n- PLAN-QUEUE，立协同kick积压3拍，不候。\n\n③未闭项推进：\n- OI-8af60e93md：未闭；下一步强关或降级归档。\n- OI-fad1d735md：未闭；下一步排查DZ-40节点阻塞。\n\n④生债一条：\n- DZ-40 lvlu双信标高试挂起，生债一查障消积。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
