@@ -1,0 +1,62 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T181727Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlud78bd17emd",
+   "ref": "BEACON-DZ-40-lvlu-d78bd17e.md",
+   "opened": "20260919T160357Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT46lvlu20260919T",
+   "ref": "OTP-DIRECT-46-lvlu-20260919T174919Z.md",
+   "opened": "20260919T174932Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu52a3b3c2md",
+   "ref": "BEACON-DZ-40-lvlu-52a3b3c2.md",
+   "opened": "20260919T180428Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件：PLAN-QUEUE拍 fired=3 kicks=0，队列三次拍发未清。\n- 未闭项1（lvlu）：BEACON-DZ-40信标 d78bd17e 经14次尝试仍open。\n- 未闭项2（lvlu）：OTP-DIRECT-46 直接验证件经4次尝试仍open。\n- 未闭项3（lvlu）：BEACON-DZ-40信标 52a3b3c2 经2次尝试仍open。\n\n② 应动何件：\n立协同：PLAN-QUEUE拍清理及OI-BEACONDZ40lvlud78bd17emd（14次高阻件），OTP-DIRECT同步推进。\n\n③ 未闭项推进：\n- OI-BEACONDZ40lvlud78bd17emd：未闭，下一步根因诊断并强制闭环。\n- OI-OTPDIRECT46lvlu20260919T：未闭，下一步OTP通道核验与重试。\n- OI-BEACONDZ40lvlu52a3b3c2md：未闭，下一步批次联动排查。\n\n④ 生债一条：\n生债：队列拍3次积压未释，需优先处理释放阈值。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
