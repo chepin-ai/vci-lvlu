@@ -1,0 +1,111 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T072238Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-Q5MAP37lvlu20260918T1601",
+   "ref": "Q5-MAP-37-lvlu-20260918T160105Z.md",
+   "opened": "20260918T164319Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1AUTOTRIGTESTLVLU01202",
+   "ref": "SI1-AUTOTRIG-TEST-LVLU-01-20260918T174938Z.md",
+   "opened": "20260918T175121Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1AUTOTRIGVERIFYLVLU022",
+   "ref": "SI1-AUTOTRIG-VERIFY-LVLU-02-20260918T175934Z.md",
+   "opened": "20260918T183547Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlubdd97a64md",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md",
+   "opened": "20260918T193324Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlucd360c54md",
+   "ref": "BEACON-DZ-39-lvlu-cd360c54.md",
+   "opened": "20260918T193324Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8ea17d86md",
+   "ref": "BEACON-DZ-40-lvlu-8ea17d86.md",
+   "opened": "20260918T194618Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlub2e67be9md",
+   "ref": "BEACON-DZ-40-lvlu-b2e67be9.md",
+   "opened": "20260918T203441Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlub4ac52a5md",
+   "ref": "BEACON-DZ-40-lvlu-b4ac52a5.md",
+   "opened": "20260918T203441Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026091",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260919T0546Z.md",
+   "opened": "20260919T054517Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8af60e93md",
+   "ref": "BEACON-DZ-40-lvlu-8af60e93.md",
+   "opened": "20260919T054657Z",
+   "tries": 9,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件PLAN-QUEUE：fired=3、kicks=0，队列正常推进，无lvlu踢出诉求。\n- OI-Q5MAP37lvlu：Q5-MAP-37-lvlu已37次未闭，lvlu映射诉求挂起。\n- OI-SI1AUTOTRIGTEST：SI1自动触发测试已34次未闭，lvlu自触发链路待验。\n- OI-SI1AUTOTRIGVERIFY：SI1自动触发验证已33次未闭，lvlu验证签名未回环。\n- OI-BEACONDZ39-bdd97a64：DZ39信标已31次未闭，lvlu信标回执缺失。\n- OI-BEACONDZ39-cd360c54：DZ39信标已31次未闭，lvlu信标回执缺失。\n- OI-BEACONDZ40-8ea17d86：DZ40信标已30次未闭，lvlu高频信标待激活。\n- OI-BEACONDZ40-b2e67be9：DZ40信标已29次未闭，lvlu高频信标待激活。\n- OI-BEACONDZ40-b4ac52a5：DZ40信标已29次未闭，lvlu高频信标待激活。\n\n②应动何件(立协同不候)：\n- Q5-MAP-37-lvlu、SI1-AUTOTRIG-TEST/VERIFY双链、BEACON-DZ-39/40全组。\n\n③未闭项推进：\n- Q5-MAP-37：未闭/下一步升SI1强制落盘或人工裁决。\n- SI1-TEST：未闭/下一步注入校验脉冲并锁存回波。\n- SI1-VERIFY：未闭/下一步完成签名闭环落账。\n- DZ39-bdd：未闭/下一步重发信标并监听ack。\n- DZ39-cd3：未闭/下一步切换备用频点重试。\n- DZ40-8ea：未闭/下一步降格DZ39协议穿透。\n- DZ40-b2e：未闭/下一步并行寻址+超时熔断。\n- DZ40-b4a：未闭/下一步并行寻址+超时熔断。\n\n④生债一条。简。\n- 债：Q5-MAP与BEACON矩阵双超限，积欠一次lvlu全链路强穿验证。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
