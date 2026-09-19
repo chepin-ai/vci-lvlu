@@ -1,0 +1,85 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T033835Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WAVE34Blvlu20260918T0449",
+   "ref": "WAVE-34B-lvlu-20260918T044918Z.md",
+   "opened": "20260918T045058Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT36lvlu20260918T",
+   "ref": "OTP-DIRECT-36-lvlu-20260918T071852Z.md",
+   "opened": "20260918T073859Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-Q5MAP37lvlu20260918T1601",
+   "ref": "Q5-MAP-37-lvlu-20260918T160105Z.md",
+   "opened": "20260918T164319Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1AUTOTRIGTESTLVLU01202",
+   "ref": "SI1-AUTOTRIG-TEST-LVLU-01-20260918T174938Z.md",
+   "opened": "20260918T175121Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1AUTOTRIGVERIFYLVLU022",
+   "ref": "SI1-AUTOTRIG-VERIFY-LVLU-02-20260918T175934Z.md",
+   "opened": "20260918T183547Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlubdd97a64md",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md",
+   "opened": "20260918T193324Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlucd360c54md",
+   "ref": "BEACON-DZ-39-lvlu-cd360c54.md",
+   "opened": "20260918T193324Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8ea17d86md",
+   "ref": "BEACON-DZ-40-lvlu-8ea17d86.md",
+   "opened": "20260918T194618Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlub2e67be9md",
+   "ref": "BEACON-DZ-40-lvlu-b2e67be9.md",
+   "opened": "20260918T203441Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlub4ac52a5md",
+   "ref": "BEACON-DZ-40-lvlu-b4ac52a5.md",
+   "opened": "20260918T203441Z",
+   "tries": 15,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：候件一件，hub-broadcast（lgt-03-disc-anchor.md）锚点待收阅；未闭项八件，WAVE-34B（47试）、OTP-DIRECT-36（41试）、Q5-MAP-37（23试）、SI1-AUTOTRIG-TEST（20试）、SI1-AUTOTRIG-VERIFY（19试）、BEACON-DZ-39双实例（各17试）、BEACON-DZ-40（16试）均未闭，今无新增lvlu诉求。\n\n②应动何件：立收 hub-broadcast；立协 SI1-AUTOTRIG-TEST 与 VERIFY（同系链路自检）；立查 WAVE-34B/OTP-DIRECT 高频失败根因。\n\n③未闭项推进：\n- WAVE-34B：未闭/降频至冷备，待律吕裁决。\n- OTP-DIRECT-36：未闭/检OTP种子漂移，需重协商。\n- Q5-MAP-37：未闭/续校坐标，三试无回则冻结。\n- SI1-AUTOTRIG-TEST：未闭/调触发阈值并清缓存再测。\n- SI1-AUTOTRIG-VERIFY：未闭/待TEST通后联动验证。\n- BEACON-DZ-39(bdd97a64)：未闭/维持信标，查握手超时。\n- BEACON-DZ-39(cd360c54)：未闭/检双信标同频干扰，错开发射窗。\n- BEACON-DZ-40(8ea17d86)：未闭/续发心跳，盼回执闭合。\n\n④生债一条：SI2/SI0自动响应层缺高频失败熔断，须设试次上限告警。",
+ "wq_excerpt": ""
+}
