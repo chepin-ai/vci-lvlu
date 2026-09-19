@@ -1,0 +1,66 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260919T135838Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQUANTSIM012026091",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260919T0546Z.md",
+   "opened": "20260919T054517Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8af60e93md",
+   "ref": "BEACON-DZ-40-lvlu-8af60e93.md",
+   "opened": "20260919T054657Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlufad1d735md",
+   "ref": "BEACON-DZ-40-lvlu-fad1d735.md",
+   "opened": "20260919T080647Z",
+   "tries": 33,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 件1 hub-broadcast「lgt-03-disc-anchor.md」：涉 lvlu disc-anchor 锚点广播校准诉求。  \n- 件2 plan-queue「PLAN-QUEUE拍」：已 fired=3 而 kicks=0，lvlu 侧未生成有效踢出。  \n\n② 应动何件  \n- 立协同件2 plan-queue 阻塞（kicks=0），同步回写 hub-broadcast 锚点状态，不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQUANTSIM012026091：未闭，下一步转降频重试或交 SI0 仲裁。  \n- OI-BEACONDZ40lvlu8af60e93md：未闭，下一步扫 DZ-40 信标 lvlu-8af60e93 信号链路。  \n- OI-BEACONDZ40lvlufad1d735md：未闭，下一步与 lvlu-8af60e93 并轨查双信标漂移。  \n\n④ 生债一条  \n- 债：PLAN-QUEUE kicks=0 之堵点根因待一次联排。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
