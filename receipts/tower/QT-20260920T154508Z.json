@@ -1,0 +1,80 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T154508Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV-20260920.md",
+   "opened": "20260920T094406Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260920T144205Z.md",
+   "opened": "20260920T144627Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-9527c4a4.md",
+   "opened": "20260920T145731Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260920.md",
+   "opened": "20260920T145731Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-128e38dd.md",
+   "opened": "20260920T145731Z",
+   "tries": 5,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件①：hub-broadcast `lgt-03-disc-anchor.md`，lg(t)锚点广播待解析。  \n- 候件②：plan-queue `PLAN-QUEUE拍` fired=3/kicks=0，计划拍击未触发kick。  \n- 未闭①：`ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV` 悬置34试，清算回波未确认。  \n- 未闭②：`EXEC-ORBIT-ORBIT-CAP-02-BYPASS` 悬置6试，轨道旁路执行未落闸。  \n- 未闭③：`ACK-LGT-TOWER-LVLU` 悬置5试，LGT塔握手确认未回帧。  \n- 未闭④：`AUTOASK-RING-LVLU-KEY-REASSIGN` 悬置5试，lvlu环密钥重分配诉求待协。（涉lvlu诉求）  \n- 未闭⑤：`RENUDGE-LGT-LVLU` 悬置5试，lg(t)再推未同步。  \n\n② 应动何件  \n`AUTOASK-RING-LVLU-KEY-REASSIGN`（lvlu本环密钥重分配，立协同不候）；兼清 `ANS-CULL-ACK-RESWAVE-AUTOPSY`（34试阻塞，立即协同）。  \n\n③ 未闭项推进  \n- AN：未闭；下一步：终判cull-ack，释放reswave autopsy回执。  \n- EX：未闭；下一步：落闸orbit-cap-02 bypass，回传exec-done。  \n- AC：未闭；下一步：回帧ack-lgt-tower，关闭塔握手。  \n- AU：未闭；下一步：执行key-reassign，更新ring-lvlu密钥并回执vci。  \n- RE：未闭；下一步：读取renudge载荷，对齐lg(t)-lvlu状态向量。  \n\n④ 生债一条  \n生债：lvlu欠vci-inbox「拥堵代还」一次，须由SI2分身在下一拍前清理AN项34试阻塞。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
