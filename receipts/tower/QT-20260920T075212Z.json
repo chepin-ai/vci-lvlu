@@ -1,0 +1,66 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T075212Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPDIRECT48lvlu20260920T",
+   "ref": "OTP-DIRECT-48-lvlu-20260920T064520Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-GLOBAL-ACT-notice-20260920T060500Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu545cb831md",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md",
+   "opened": "20260920T065257Z",
+   "tries": 7,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① **何事**  \n- hub-broadcast 待分发 `lgt-03-disc-anchor.md`（讨论锚点）。  \n- PLAN-QUEUE拍 fired=3、kicks=0，队列待激活未踢出。  \n- 涉lvlu未闭项三宗：OTP直联48通道已8试未通；VCI-inbox全局行动通知已8试未收；DZ-40信标已7试未答。  \n\n② **应动何件（立协同不候）**  \n- **OTP-DIRECT-48** 与 **VCI-inbox 全局通知**：双通道均涉lvlu核心诉求且已达8试，须立即跨通道协同，不候。  \n- **PLAN-QUEUE**：kicks=0，须立kick一条任务出队，同步激活。  \n\n③ **未闭项推进**  \n- OI-OTPDIRECT48lvlu20260920T：未闭；下一步：重试OTP握手并升级鉴权或切备用通道。  \n- OI-vciinboxlaneslvluinboxqg：未闭；下一步：解析 `qgl-GLOBAL-ACT-notice` 并回执执行确认。  \n- OI-BEACONDZ40lvlu545cb831md：未闭；下一步：响应DZ-40信标，回传lvlu当前可用状态。  \n\n④ **生债一条**  \n- lvlu全通道握手完成后，须统一回写 `ACK/lvlu-all-channels-closed` 标记，清账。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
