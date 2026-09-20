@@ -1,0 +1,66 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T084905Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPDIRECT48lvlu20260920T",
+   "ref": "OTP-DIRECT-48-lvlu-20260920T064520Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-GLOBAL-ACT-notice-20260920T060500Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu545cb831md",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md",
+   "opened": "20260920T065257Z",
+   "tries": 12,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件hub-broadcast：lgt-03-disc-anchor.md 待播；\n- 候件plan-queue：PLAN-QUEUE拍已触发3次、0次执行，待推进；\n- 未闭OTP-DIRECT-48-lvlu：13试未闭，lvlu直接通道卡滞；\n- 未闭vci-inbox全局通知：13试未闭，lvlu收件箱待确认；\n- 未闭BEACON-DZ-40-lvlu：12试未闭，lvlu信标待响应。\n\n② 应动何件：\nOTP、VCI、BEACON三项lvlu未闭项皆应立协同，不候。\n\n③ 未闭项推进：\n- OI-OTPDIRECT48lvlu20260920T：未闭，下一步强推OTP握手或通道重置；\n- OI-vciinboxlaneslvluinboxqg：未闭，下一步签入VCI全局通知回执；\n- OI-BEACONDZ40lvlu545cb831md：未闭，下一步完成信标握手或发还确认。\n\n④ 生债一条：\n生债：lvlu三线高试未闭，",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
