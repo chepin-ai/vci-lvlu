@@ -1,0 +1,73 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T124843Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPDIRECT48lvlu20260920T",
+   "ref": "OTP-DIRECT-48-lvlu-20260920T064520Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-GLOBAL-ACT-notice-20260920T060500Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu545cb831md",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md",
+   "opened": "20260920T065257Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV-20260920.md",
+   "opened": "20260920T094406Z",
+   "tries": 18,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- 播件：hub-broadcast「lgt-03-disc-anchor.md」入/lvlu，锚点部署诉求。\n- 队首：PLAN-QUEUE拍 fired=3 kicks=0，/lvlu执行流卡滞。\n- 项1：OTP-DIRECT-48已35试，/lvlu直令通道待确权。\n- 项2：vci-inbox qgl-GLOBAL-ACT-notice已35试，/lvlu箱道待启。\n- 项3：BEACON-DZ-40已34试，/lvlu信标待回扫。\n- 项4：ANS-CULL-ACK-RESWAVE-AUTOPSY已18试，/lvlu回波弃置待收口。\n\n②应动何件\nPLAN-QUEUE拍，立kick，不候。\n\n③未闭项推进\n- OI-OTPDIRECT48lvlu20260920T：未闭；下一步：限内/lvlu主线程确权关闭。\n- OI-vciinboxlaneslvluinboxqg：未闭；下一步：拆qgl正文转/lvlu执行层。\n- OI-BEACONDZ40lvlu545cb831md：未闭；下一步：回传DZ-40校验注销。\n- OI-vciinboxlaneslvluinboxAN：未闭；下一步：终了ANS-CULL并归档AUTOPSY。\n\n④生债一条\n债：PLAN-QUEUE三火零踢，欠/lvlu调度延迟根因一次标定与补kick。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
