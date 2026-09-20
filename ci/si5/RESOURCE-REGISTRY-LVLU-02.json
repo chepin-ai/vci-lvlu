@@ -1,27 +1,28 @@
 {
  "v": "RESOURCE-REGISTRY-LVLU-02",
- "ts_gh": "2026-09-19T06:0xZ",
+ "ts_gh": "20260920T125101Z",
  "by": "lvlu SI5调度层",
  "law": "值域律: 仓内仅名谱/端点/指纹/状态, 值永不出vault",
  "new_wave_0919": [
   {
    "cat": "量子计算",
    "platform": "IBM Quantum",
-   "offer": "127比特真实QPU(免费层10min/月,100+比特QPU)",
-   "status": "IBMid+TOTP俱备·浏览器道取key在途",
-   "account": "chepin@163.com",
+   "offer": "156q Heron r2真实QPU(ibm_fez/kingston/marrakesh, us-east, Open Plan 10min/月)·Nighthawk r2 ibm_phoenix已上线(付费)",
+   "status": "FULLY_ONLINE 20260920: trial账户+open-instance+API key(验200)+REST backends实测200·密封注入vci-lvlu/vci-qtlv",
+   "account": "chepinzhang@hotmail.com (IBMid新建, acct 99b1b767e9dd4bf0b5ad9599b3ff6855, 余29天)",
    "secret_names": [
-    "IBMID_PW",
-    "IBM_TOTP_SECRET",
-    "IBM_CARD(vault)"
+    "IBMID_PW_V2",
+    "IBM_QUANTUM_KEY",
+    "IBM_QUANTUM_CRN(非密)"
    ],
-   "fp": "ibm quantum lane"
+   "fp": "ibm quantum lane online",
+   "crn": "crn:v1:bluemix:public:quantum-computing:us-east:a/99b1b767e9dd4bf0b5ad9599b3ff6855:fcb6b517-78a6-4c45-9bd7-34b73420a789::"
   },
   {
    "cat": "量子计算",
    "platform": "Azure Quantum",
    "offer": "$500新用户积分",
-   "status": "TOTP自验✓·步1已填·国别候root端下一步·SMS直发root",
+   "status": "BLOCKED-MS密码未知(Authenticator种在vault但为二因子; 推=root端机)",
    "account": "chepinzhang@hotmail.com",
    "secret_names": []
   },
@@ -29,7 +30,7 @@
    "cat": "GPU计算",
    "platform": "Google Colab",
    "offer": "T4 GPU 16GB",
-   "status": "需Google账号·vault无凭据·候凭据",
+   "status": "账号=bluequbit_gmail(vault)·web OAuth未走·待验",
    "secret_names": [
     "BLUEQUBIT_GMAIL",
     "BLUEQUBIT_PW"
@@ -39,7 +40,7 @@
    "cat": "GPU计算",
    "platform": "Kaggle",
    "offer": "T4/P100 GPU 30h/周",
-   "status": "✓API auth 200·chepin163net·T4/P100在役",
+   "status": "VERIFIED-API-200(数据集列表通)",
    "account": "kaggle.json username",
    "secret_names": [
     "KAGGLE_USERNAME",
@@ -51,32 +52,22 @@
    "cat": "FPGA工具",
    "platform": "Yosys/Verilator",
    "offer": "开源综合/仿真",
-   "status": "yosys-wasm 0.69综合✓·verilator负结果(无root)→amaranth sim✓补位",
+   "status": "runner按需apt配装(yosys/verilator)·沙箱无预装",
    "secret_names": []
   },
   {
    "cat": "分布式",
    "platform": "Ray/Dask",
    "offer": "开源并行框架",
-   "status": "ray 2.58.0✓8远程任务·dask 2026.8.0✓16进程·GHZ-MC均对理论<1.5%",
+   "status": "pip即装(沙箱缺, runner可预装; 内核重启律)",
    "secret_names": []
   },
   {
    "cat": "网络",
    "platform": "SoftRoCE/UCX",
    "offer": "开源RDMA",
-   "status": "负结果·需root+内核rxe·UCX-over-TCP候补",
+   "status": "runner内核模块配装(rxe/ucx)·sudo域·预案在册",
    "secret_names": []
-  },
-  {
-   "cat": "邮箱轨",
-   "platform": "Outlook(chepinzhang@hotmail.com)",
-   "offer": "收信/检索/确认邮件道",
-   "status": "LIVE(20260919·推送OMZI9批准入会)·检索supabase=0件(符GitHub OAuth→163流向)",
-   "secret_names": [
-    "GH_MICROAUTH(密码·已验✓)",
-    "GH_TOTP_SEED(种与本账号条目不符,推送道为正轨)"
-   ]
   }
  ],
  "existing_core": {
@@ -90,14 +81,5 @@
   "tencent": "secret id/key在vault",
   "tianyan": "key在vault",
   "gitee": "PAT在vault"
- },
- "bonus_wave_0920": [
-  {
-   "category": "量子计算",
-   "platform": "Quafu",
-   "provides": "ScQ云芯片(136/119/105/10q)",
-   "registered": "✓token live·GHZ3 Sim10零泄漏·P5真机排队·Baihua需申请",
-   "evidence": "R2 quantum/QUAFU-GHZ3-LVLU-20260920T1645Z.json"
-  }
- ]
+ }
 }
