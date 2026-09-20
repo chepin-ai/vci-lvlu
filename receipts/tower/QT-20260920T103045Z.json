@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T103045Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPDIRECT48lvlu20260920T",
+   "ref": "OTP-DIRECT-48-lvlu-20260920T064520Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-GLOBAL-ACT-notice-20260920T060500Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu545cb831md",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md",
+   "opened": "20260920T065257Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV-20260920.md",
+   "opened": "20260920T094406Z",
+   "tries": 6,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件PLAN-QUEUE已fired=3而kicks=0，执行触发后无推进。\n- OI-OTPDIRECT48-lvlu：OTP直通信令48号，23次尝试未闭。\n- OI-vciinbox-GLOBAL-ACT-notice：全球行动通知落入lvlu收件箱，23次尝试未闭。\n- OI-BEACONDZ40-lvlu：DZ-40信标545cb831，22次尝试未闭。\n- OI-vciinbox-ANS-CULL-ACK-RESWAVE-AUTOPSY：回波尸检确认件，6次尝试未闭。\n- lvlu诉求录：lvlu身份/通道承载全部4项未闭件且最高重试23次，诉通道阻塞或权限缺失。\n\n② 应动何件：\n- 立协同PLAN-QUEUE执行kick补位（fired=3 kicks=0异常），并并行强攻tries≥20的OTP-DIRECT-48与GLOBAL-ACT-notice两件，不候。\n\n③ 未闭项推进：\n- OI-OTPDIRECT48lvlu20260920T：未闭，下一步切换OTP备用通道或人工注入。\n- OI-vciinboxlaneslvluinboxqg：未闭，下一步解析qgl正文并输出act回执。\n- OI-BEACONDZ40lvlu545cb831md：未闭，下一步核验545cb831签名并回送心跳。\n- OI-vciinboxlaneslvluinboxAN：未闭，下一步完成AUTOPSY-QTLV归档并ack-closed。\n\n④ 生债一条：\n- 生债：lvlu通道23次重试未闭，欠root级通道诊断与重试策略修正债1笔。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
