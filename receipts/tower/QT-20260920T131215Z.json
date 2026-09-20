@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T131215Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPDIRECT48lvlu20260920T",
+   "ref": "OTP-DIRECT-48-lvlu-20260920T064520Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-GLOBAL-ACT-notice-20260920T060500Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu545cb831md",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md",
+   "opened": "20260920T065257Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV-20260920.md",
+   "opened": "20260920T094406Z",
+   "tries": 20,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：候件PLAN-QUEUE拍三响未踢；未闭1 OTP-DIRECT-48-lvlu直推37次未达；未闭2 vci-inbox全局行动通知37次死锁；未闭3 BEACON-DZ-40-lvlu信标36次无应答；未闭4 ANS-CULL-ACK-RESWAVE-AUTOPSY回执20次未闭环；均涉lvlu线。  \n②应动何件：立协同PLAN-QUEUE kick执行，并同步强清四未闭项，不候。  \n③未闭项推进：  \n- OI-OTPDIRECT48lvlu20260920T：未闭/下一步切备用通道或重置OTP握手。  \n- OI-vciinboxlaneslvluinboxqg：未闭/下一步强制旁路分发或清理死锁。  \n- OI-BEACONDZ40lvlu545cb831md：未闭/下一步信标自检或替换节点。  \n- OI-v",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
