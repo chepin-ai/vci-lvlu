@@ -1,0 +1,83 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T182041Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260920T144205Z.md",
+   "opened": "20260920T144627Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-9527c4a4.md",
+   "opened": "20260920T145731Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260920.md",
+   "opened": "20260920T145731Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-128e38dd.md",
+   "opened": "20260920T145731Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlue5e6f20dmd",
+   "ref": "BEACON-DZ-40-lvlu-e5e6f20d.md",
+   "opened": "20260920T170339Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT49lvlu20260920T",
+   "ref": "OTP-DIRECT-49-lvlu-20260920T165724Z.md",
+   "opened": "20260920T170339Z",
+   "tries": 9,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件：PLAN-QUEUE已触发3拍，kicks=0，调度器空转待料。\n- EX：EXEC-ORBIT-ORBIT-CAP-02-BYPASS已尝试21次未闭，lvlu执行旁路阻塞。\n- AC：ACK-LGT-TOWER-LVLU已尝试20次未闭，lvlu回认待签。\n- AU：AUTOASK-RING-LVLU-KEY-REASSIGN已尝试20次未闭，lvlu密钥重分配待批。\n- RE：RENUDGE-LGT-LVLU已尝试20次未闭，lvlu再唤醒未应答。\n- BE：BEACON-DZ-40-lvlu已尝试9次未闭，lvlu信标校准未完成。\n- OT：OTP-DIRECT-49-lvlu已尝试9次未闭，lvlu一次性直连待握手。\n\n② 应动何件：\n立协同EX、AC、AU、RE四件（均20+次，超阈不可候），同步联动BE、OT建立替代通道。\n\n③ 未闭项推进：\n- EX：未闭；下一步：强验旁路条件，若lvlu拒收则降级至beacon透传。\n- AC：未闭；下一步：下发最终ack要约，超时即视为暗ack并关单。\n- AU：未闭；下一步：执行ring-registry密钥换绑，回写lvlu新指纹。\n- RE：未闭；下一步：冻结renudge，转录沉默日志，待lvlu主动心跳再启。\n- BE：未闭；下一步：完成DZ-40对时，锚定lvlu心跳基准。\n- OT：未闭；下一步：重颁otp令牌，限定单次握手窗口。\n\n④ 生债一条：\nexec-orbit旁路21次未决，致lvlu inbox四口级联淤积，债项：优先清偿EX阻塞。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
