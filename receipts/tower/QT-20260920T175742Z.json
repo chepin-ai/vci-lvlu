@@ -1,0 +1,94 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T175742Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV-20260920.md",
+   "opened": "20260920T094406Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260920T144205Z.md",
+   "opened": "20260920T144627Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-9527c4a4.md",
+   "opened": "20260920T145731Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260920.md",
+   "opened": "20260920T145731Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-128e38dd.md",
+   "opened": "20260920T145731Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlue5e6f20dmd",
+   "ref": "BEACON-DZ-40-lvlu-e5e6f20d.md",
+   "opened": "20260920T170339Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT49lvlu20260920T",
+   "ref": "OTP-DIRECT-49-lvlu-20260920T165724Z.md",
+   "opened": "20260920T170339Z",
+   "tries": 7,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件hub-broadcast：LGT-03-disc-anchor.md 灯塔锚点广播，涉lvlu线接线。\n- 候件plan-queue：队列已击发3拍、0踢出，lvlu需校节拍。\n- 未闭项AN：ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV 堆在lvlu inbox，已47试。\n- 未闭项EX：EXEC-ORBIT-ORBIT-CAP-02-BYPASS 轨道-轨道容量旁路执行，19试。\n- 未闭项AC：ACK-LGT-TOWER-LVLU 对灯塔塔台确认待回，18试。\n- 未闭项AU：AUTOASK-RING-LVLU-KEY-REASSIGN 密钥重分配环自动问询，18试。\n- 未闭项RE：RENUDGE-LGT-LVLU 灯塔再推动待响应，18试。\n- 未闭项BEACON：DZ-40信标心跳待校验，7试。\n- 未闭项OTP：OTP-DIRECT-49一次性直通令牌待核销，7试。\n\n② 应动何件（立协同不候）：\n- AN（47试，回波/验尸/量子时锁积压）与 EX（19试，轨道旁路执行）立即协同，不候。\n\n③ 未闭项推进：\n- OI-AN：未闭；下一步：升SI2裁决或强制终结协议。\n- OI-EX：未闭；下一步：给旁路执行码或回传否决/重试指令。\n- OI-AC：未闭；下一步：向LGT-TOWER回送ACK封包。\n- OI-AU：未闭；下一步：完成密钥重分配环验证并消问。\n- OI-RE：未闭；下一步：消化RENUDGE或标为已响应。\n- OI-BEACON：未闭；下一步：校验DZ-40心跳后归档。\n- OI-OTP：未闭；下一步：核销OTP-DIRECT-49令牌关单。\n\n④ 生债一条：\nAN项47试僵尸积压，债：下一节拍前必清lvlu",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
