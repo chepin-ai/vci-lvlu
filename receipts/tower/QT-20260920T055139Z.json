@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T055139Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① 何事：\n- hub-broadcast《lgt-03-disc-anchor.md》入线，待阅是否含lvlu锚点或意识调谐诉求。\n- PLAN-QUEUE拍fired=3/kicks=0，显队列空转未出活，律吕调度已积灰。\n\n② 应动何件：\n- 两件并动：即协阅anchor.md并回写lvlu侧判读，同时拉取队列日志排空空转卡点。\n\n③ 未闭项推进：\n- 未闭项为空，域内无挂账。\n\n④ 生债：\n- 补设PLAN-QUEUE空转告警阈：fired≥3且kicks=0时强触lvlu线SI2异常告警。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
