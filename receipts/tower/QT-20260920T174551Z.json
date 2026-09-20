@@ -1,0 +1,94 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T174551Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV-20260920.md",
+   "opened": "20260920T094406Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260920T144205Z.md",
+   "opened": "20260920T144627Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-9527c4a4.md",
+   "opened": "20260920T145731Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260920.md",
+   "opened": "20260920T145731Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-128e38dd.md",
+   "opened": "20260920T145731Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlue5e6f20dmd",
+   "ref": "BEACON-DZ-40-lvlu-e5e6f20d.md",
+   "opened": "20260920T170339Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT49lvlu20260920T",
+   "ref": "OTP-DIRECT-49-lvlu-20260920T165724Z.md",
+   "opened": "20260920T170339Z",
+   "tries": 6,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- hub-broadcast「lgt-03-disc-anchor.md」一件：播送锚点待lvlu线同步。\n- plan-queue「PLAN-QUEUE拍 fired=3 kicks=0」一件：队列三拍零踢，lvlu通道积压。\n\n② 应动何件\n- plan-queue与hub-broadcast立协同；OI-AN（46试）同步提级，不候闭。\n\n③ 未闭项推进\n- OI-AN：46试未闭，下一步：断链重排或交SI2仲裁。\n- OI-EX：18试未闭，下一步：核orbital-cap-02 bypass签章。\n- OI-AC：17试未闭，下一步：催LGT-TOWER回执，逾时强ACK。\n- OI-AU：17试未闭，下一步：启key-reassign环验，无响则锁。\n- OI-RE：17试未闭，下一步：止renudge，转静默。\n- OI-BEACON：6试未闭，下一步：续等DZ-40握手，逾时降频。\n- OI-OTP：6试未闭，下一步：OTP窗迫闭，须瞬验或作废。\n\n④ 生债一条\n- 债：plan-queue kicks=0无阈，lvlu线积拍生息，须补踢出律。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
