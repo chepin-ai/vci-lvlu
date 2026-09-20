@@ -1,0 +1,80 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T164502Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV-20260920.md",
+   "opened": "20260920T094406Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260920T144205Z.md",
+   "opened": "20260920T144627Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-9527c4a4.md",
+   "opened": "20260920T145731Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260920.md",
+   "opened": "20260920T145731Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-128e38dd.md",
+   "opened": "20260920T145731Z",
+   "tries": 10,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- hub-broadcast `lgt-03-disc-anchor.md`：LGT-03锚点广播，待阅。\n- plan-queue `PLAN-QUEUE拍 fired=3 kicks=0`：队列三拍无踢出，假活积压。\n- OI-AN `ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV`：lvlu应答/剪枝/验尸件，39试挂死。\n- OI-EX `EXEC-ORBIT-ORBIT-CAP-02-BYPASS`：轨道电容旁路执行件，11试待签。\n- OI-AC `ACK-LGT-TOWER-LVLU`：LGT塔台确认件，10试未回。\n- OI-AU `AUTOASK-RING-LVLU-KEY-REASSIGN`：lvlu密钥重分配，10试未办。\n- OI-RE `RENUDGE-LGT-LVLU`：LGT再推动件，10试未复。\n\n② 应动何件（立协同不候）\nplan-queue补kick、AN项排39试死锁、EX项旁路签执行、AC项回塔台确认、AU项办密钥重分配、RE项给再推动ETA。\n\n③ 未闭项推进\n- OI-AN：未闭；下一步：切死信或AUTOPSY归档，释39试锁。\n- OI-EX：未闭；下一步：校验旁路前置，可即签，否退QFA。\n- OI-AC：未闭；下一步：发ACK回执，闭塔台等待。\n- OI-AU：未闭；下一步：验环权限，生REASSIGN回执，否上抛。\n- OI-RE：未闭；下一步：读催插队列或给闭环ETA。\n\n④ 生债一条\n债：plan-queue kicks=0 缺踢出机制，生补kick逻辑或假活告警之债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
