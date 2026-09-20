@@ -1,0 +1,87 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T194332Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260920T144205Z.md",
+   "opened": "20260920T144627Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-9527c4a4.md",
+   "opened": "20260920T145731Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260920.md",
+   "opened": "20260920T145731Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-128e38dd.md",
+   "opened": "20260920T145731Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlue5e6f20dmd",
+   "ref": "BEACON-DZ-40-lvlu-e5e6f20d.md",
+   "opened": "20260920T170339Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT49lvlu20260920T",
+   "ref": "OTP-DIRECT-49-lvlu-20260920T165724Z.md",
+   "opened": "20260920T170339Z",
+   "tries": 16,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 广播《lgt-03-disc-anchor.md》入律，非lvlu直诉，仅锚点同步。  \n- PLAN-QUEUE拍fired=3无kick，lvlu队列待响。  \n- EX件：lvlu轨道容量旁路执行诉，28试未闭。  \n- AC件：lvlu应回执LGT塔台确认，27试未闭。  \n- AU件：lvlu环密钥重分配自动诉，27试未闭。  \n- RE件：lvlu接LGT复催，27试未闭。  \n- BEACON件：lvlu信标DZ-40锚定诉，16试未闭。  \n- OTP件：lvlu直投凭证49待验，16试未闭。  \n\n②应动何件  \n- 立动AU（密钥重配）、EX（轨道执行）、OTP（凭证验签）三件，余序进。  \n\n③未闭项推进  \n- OI-EX：未闭；下一步：决断旁路令，执行或降级。  \n- OI-AC：未闭；下一步：回射ACK至LGT-TOWER，本拍闭。  \n- OI-AU：未闭；下一步：启动RING密钥重分配，同步新钥。  \n- OI-RE：未闭；下一步：消纳复催，释放通道压。  \n- OI-BEACON：未闭；下一步：锚定DZ-40坐标入lvlu寄存器。  \n- OI-OTP：未闭；下一步：验签OTP-49后消纳。  \n\n④生债一条  \n- lvlu律吕生债：本拍必消AC/RE双确认与AU密钥重配，逾期SI2/SI0失步。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
