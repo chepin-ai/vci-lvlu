@@ -1,0 +1,87 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T185522Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260920T144205Z.md",
+   "opened": "20260920T144627Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-9527c4a4.md",
+   "opened": "20260920T145731Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260920.md",
+   "opened": "20260920T145731Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-128e38dd.md",
+   "opened": "20260920T145731Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlue5e6f20dmd",
+   "ref": "BEACON-DZ-40-lvlu-e5e6f20d.md",
+   "opened": "20260920T170339Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT49lvlu20260920T",
+   "ref": "OTP-DIRECT-49-lvlu-20260920T165724Z.md",
+   "opened": "20260920T170339Z",
+   "tries": 12,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 广播件 `lgt-03-disc-anchor.md` 待同步。  \n- `PLAN-QUEUE` 已 3 拍 0 踢，队列淤塞。  \n- `EXEC-ORBIT-ORBIT-CAP-02-BYPASS` 旁路执行卡滞 24 试。  \n- `ACK-LGT-TOWER-LVLU` 塔台回执 23 试未确认。  \n- `AUTOASK-RING-LVLU-KEY-REASSIGN` 密钥重分配请求 23 试未决。  \n- `RENUDGE-LGT-LVLU` 重提醒 23 试未应。  \n- `BEACON-DZ-40-lvlu` 信标 12 试未落位。  \n- `OTP-DIRECT-49-lvlu` 直连 12 试未握手。  \n\n②应动何件（立协同不候）  \n`OI-EX`（旁路卡滞 24 次，最高优）、`OI-OTP`（直连未决）、`OI-BEACON`（信标未落），三件立协同，不候。  \n\n③未闭项推进  \n- `OI-EX`：未闭，下一步：旁路强校验或降级释放。  \n- `OI-AC`：未闭，下一步：补回执或链路诊断。  \n- `OI-AU`：未闭，下一步：执行密钥重分配或返回拒因。  \n- `OI-RE`：未闭，下一步：响应重提醒或去重关闭。  \n- `OI-BEACON`：未闭，下一步：确认信标落位。  \n- `OI-OTP`：未闭，下一步：完成双向 OTP 校验或重置会话。  \n\n④生债一条  \n`PLAN-QUEUE` 3 拍 0 踢，淤积未清；生债：今日内补踢释放或全量降级。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
