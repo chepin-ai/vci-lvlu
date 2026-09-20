@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T132305Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPDIRECT48lvlu20260920T",
+   "ref": "OTP-DIRECT-48-lvlu-20260920T064520Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-GLOBAL-ACT-notice-20260920T060500Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu545cb831md",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md",
+   "opened": "20260920T065257Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV-20260920.md",
+   "opened": "20260920T094406Z",
+   "tries": 21,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件：PLAN-QUEUE拍3次（kicks=0），计划队列有拍未起脚，lvlu调度待激活。\n- 未闭项1（OI-OTPDIRECT48）：OTP-DIRECT-48-lvlu通道文件，试38次未闭，lvlu直接通道卡滞。\n- 未闭项2（OI-vciinboxqg）：vci-inbox全局行动通知（qgl-GLOBAL-ACT-notice），试38次未闭。\n- 未闭项3（OI-BEACONDZ40）：BEACON-DZ-40-lvlu信标545cb831，试37次未闭。\n- 未闭项4（OI-vciinboxAN）：vci-inbox ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV文件，试21次未闭。\n\n②应动何件：\n四项未闭项皆高tries积压，应立协同OTP-DIRECT-48、BEACON-DZ-40及两vci-inbox件，同步推进不候。\n\n③未闭项推进：\n- OI-OTPDIRECT48：未闭，下一步核查OTP-48协议握手与密钥状态。\n- OI-vciinboxqg：未闭，下一步重推GLOBAL-ACT-notice入处理线程并追回收条。\n- OI-BEACONDZ40：未闭，下一步校验zone40锚点与信标545cb831同步。\n- OI-vciinboxAN：未闭，下一步解析ANS-CULL-ACK回波并完成AUTOPSY消歧。\n\n④生债一条：\n生债：为lvlu线设高tries未闭项熔断规则，限3次重试即转人工/降级路由，免38次空转。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
