@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260920T123705Z",
+ "ts": "20260920T124936Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -1130,6 +1130,25 @@
    "ts": "20260920T1650Z",
    "status": "DONE",
    "note": "API auth 200·competitions 19条·GPU道在役"
+  },
+  {
+   "id": "IBM-QUANTUM-ONLINE-01",
+   "name": "IBM Quantum 全线贯通(账户+实例+密钥+REST实测)",
+   "target": "si5",
+   "repo": "vci-lvlu",
+   "prefix": "ci/si5/",
+   "contains": [
+    "IBM-QUANTUM"
+   ],
+   "since": "20260920T124936Z",
+   "status": "DONE",
+   "evidence": {
+    "account": "IBM Cloud trial 99b1b767 (Chepin AI), 余29天",
+    "instance": "open-instance us-east Open Plan 10min/月 100%余",
+    "key": "IBM_QUANTUM_KEY 已密封注入 vci-lvlu/vci-qtlv secrets (44ch, apikey grant 200)",
+    "crn": "crn:v1:bluemix:public:quantum-computing:us-east:a/99b1b767e9dd4bf0b5ad9599b3ff6855:fcb6b517-78a6-4c45-9bd7-34b73420a789::",
+    "rest_verify": "GET quantum.cloud.ibm.com/api/v1/backends 200: ibm_fez/ibm_kingston/ibm_marrakesh 156q Heron r2 online"
+   }
   }
  ]
 }
