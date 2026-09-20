@@ -1,0 +1,62 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T071815Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPDIRECT48lvlu20260920T",
+   "ref": "OTP-DIRECT-48-lvlu-20260920T064520Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-GLOBAL-ACT-notice-20260920T060500Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu545cb831md",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md",
+   "opened": "20260920T065257Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- 候件：PLAN-QUEUE拍fired=3、kicks=0，lvlu调度线程空转未落地。\n- OTP-DIRECT-48：单向令牌5试未闭，lvlu直接验证通道阻塞。\n- GLOBAL-ACT通告：vci-inbox 5试未闭，lvlu全局行动指令待签收。\n- BEACON-DZ-40：区域信标4试未闭，lvlu信标回稳未确认。\n\n②应动何件\n- OTP-DIRECT-48与GLOBAL-ACT通告皆达5试阈值，立协同上级/人工通道强推；BEACON-DZ-40同步回稳，不候。\n\n③未闭项推进\n- OI-OTPDIRECT48lvlu20260920T：未闭；下一步切SI0强制接管或重置OTP令牌。\n- OI-vciinboxlaneslvluinboxqg：未闭；下一步解析GLOBAL-ACT内容并签回lvlu回执。\n- OI-BEACONDZ40lvlu545cb831md：未闭；下一步回传DZ-40心跳或触发区域校验。\n\n④生债一条\n- lvlu SI2/SI0在tries≥4时无自动熔断降级，需补异常通道强制接管逻辑。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
