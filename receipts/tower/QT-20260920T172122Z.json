@@ -1,0 +1,90 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T172122Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV-20260920.md",
+   "opened": "20260920T094406Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260920T144205Z.md",
+   "opened": "20260920T144627Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-9527c4a4.md",
+   "opened": "20260920T145731Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260920.md",
+   "opened": "20260920T145731Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-128e38dd.md",
+   "opened": "20260920T145731Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlue5e6f20dmd",
+   "ref": "BEACON-DZ-40-lvlu-e5e6f20d.md",
+   "opened": "20260920T170339Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT49lvlu20260920T",
+   "ref": "OTP-DIRECT-49-lvlu-20260920T165724Z.md",
+   "opened": "20260920T170339Z",
+   "tries": 3,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件：PLAN-QUEUE拍已三触零踢，队列常转。\n- AN：ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV响应波次清算尸检，尝43次未闭。\n- EX：EXEC-ORBIT-ORBIT-CAP-02-BYPASS轨道帽旁路执行，尝15次未闭。\n- AC：ACK-LGT-TOWER-LVLU塔台确认，尝14次未闭。\n- AU：AUTOASK-RING-LVLU-KEY-REASSIGN lvlu密钥重分配问询，尝14次未闭。\n- RE：RENUDGE-LGT-LVLU LGT再催，尝14次未闭。\n- BEACON：BEACON-DZ-40灯塔标定，尝3次未闭。\n- OTP：OTP-DIRECT-49一次性密码直投，尝3次未闭。\n\n②应动何件：\n- AN件（43次积压，立决）；\n- EX件（执行旁路，立核）；\n- AU件（涉lvlu密钥重分配，立协即答）。\n\n③未闭项推进：\n- AN：未闭，下一步升维裁决，止重试。\n- EX：未闭，下一步验条件并执行旁路。\n- AC：未闭，下一步回传塔台确认。\n- AU：未闭，下一步启密钥重分配协议。\n- RE：未闭，下一步并AU统一复LGT。\n- BEACON：未闭，下一步回执标定完成。\n- OTP：未闭，下一步验签消纳。\n\n④生债一条：\n- AN件43试未决，债：响应波次清算链路僵化，须偿一次断点重建。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
