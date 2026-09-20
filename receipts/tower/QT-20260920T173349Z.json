@@ -1,0 +1,90 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T173349Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV-20260920.md",
+   "opened": "20260920T094406Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260920T144205Z.md",
+   "opened": "20260920T144627Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-9527c4a4.md",
+   "opened": "20260920T145731Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260920.md",
+   "opened": "20260920T145731Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-128e38dd.md",
+   "opened": "20260920T145731Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlue5e6f20dmd",
+   "ref": "BEACON-DZ-40-lvlu-e5e6f20d.md",
+   "opened": "20260920T170339Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT49lvlu20260920T",
+   "ref": "OTP-DIRECT-49-lvlu-20260920T165724Z.md",
+   "opened": "20260920T170339Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件：PLAN-QUEUE拍3发0踢，队列心跳稳。  \n- ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV：lvlu inbox 重波尸检确认件，44试未闭。  \n- EXEC-ORBIT-ORBIT-CAP-02-BYPASS：lvlu 轨道执行旁路件，16试未闭。  \n- ACK-LGT-TOWER-LVLU：lvlu 灯塔确认件，15试未闭。  \n- AUTOASK-RING-LVLU-KEY-REASSIGN：lvlu 密钥重分配自动询件，15试未闭。  \n- RENUDGE-LGT-LVLU：lvlu 灯塔再推件，15试未闭。  \n- BEACON-DZ-40-lvlu：lvlu 40区信标件，4试未闭。  \n- OTP-DIRECT-49-lvlu：lvlu 直连认证件，4试未闭。  \n\n② 应动何件  \n应动 ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV（44试濒溢）与 EXEC-ORBIT-ORBIT-CAP-02-BYPASS（执行不可滞），立协同不候。  \n\n③ 未闭项推进  \n- ANS-CULL：未闭，收重波回执，结尸检确认单。  \n- EXEC-ORBIT：未闭，注CAP-02旁路口令，报qfa执行态。  \n- ACK-LGT：未闭，回写9527c4a4确认戳。  \n- AUTOASK-RING：未闭，响环询，下发新密钥槽位。  \n- RENUDGE-LGT：未闭，再发128e38dd脉冲，等塔升。  \n- BEACON-DZ：未闭，扩40区广播，收e5e6f20d回显。  \n- OTP-DIRECT：未闭，验49号OTP，过165724Z时间窗。  \n\n④ 生债一条  \n生债：SI2须在第4发PLAN-QUEUE前清掉ANS-CULL 44试项，否则共振堆栈溢出。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
