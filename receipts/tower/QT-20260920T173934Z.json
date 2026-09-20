@@ -1,0 +1,94 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T173934Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV-20260920.md",
+   "opened": "20260920T094406Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260920T144205Z.md",
+   "opened": "20260920T144627Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-9527c4a4.md",
+   "opened": "20260920T145731Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260920.md",
+   "opened": "20260920T145731Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-128e38dd.md",
+   "opened": "20260920T145731Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlue5e6f20dmd",
+   "ref": "BEACON-DZ-40-lvlu-e5e6f20d.md",
+   "opened": "20260920T170339Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT49lvlu20260920T",
+   "ref": "OTP-DIRECT-49-lvlu-20260920T165724Z.md",
+   "opened": "20260920T170339Z",
+   "tries": 5,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 广播：lgt-03-disc-anchor.md 枢纽锚点下发。  \n- 计划：PLAN-QUEUE 已三拍未踢，待激活。  \n- AN：ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV，lvlu 求确认收割与重波尸检。  \n- EX：EXEC-ORBIT-ORBIT-CAP-02-BYPASS，lvlu 求轨道 cap02 旁路执行。  \n- AC：ACK-LGT-TOWER-LVLU-9527c4a4，lvlu 求塔台回执。  \n- AU：AUTOASK-RING-LVLU-KEY-REASSIGN，lvlu 求密钥重分配。  \n- RE：RENUDGE-LGT-LVLU-128e38dd，lvlu 求重推 LGT。  \n- BE：BEACON-DZ-40-lvlu-e5e6f20d，lvlu 求信标响应。  \n- OT：OTP-DIRECT-49-lvlu，lvlu 求一次性密道握手。  \n\n② 应动何件  \n- AN（45 试悬置）与 EX（执行单）立协同，不候；PLAN-QUEUE 三拍即踢。  \n\n③ 未闭项推进  \n- AN：未闭，下一步：限次内强制 ACK 或降级，止空转。  \n- EX：未闭，下一步：立即下发 ORBIT-CAP-02 BYPASS 指令。  \n- AC：未闭，下一步：回执 tower 9527c4a4。  \n- AU：未闭，下一步：走密钥重分配流。  \n- RE：未闭，下一步：再推 LGT 128e38dd。  \n- BEACON：未闭，下一步：校准 DZ-40 信标。  \n- OTP：未闭，下一步：完成直连握手。  \n\n④ 生债一条  \n- inbox 缺自熔断，高试空转耗信道，须设硬顶降熵。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
