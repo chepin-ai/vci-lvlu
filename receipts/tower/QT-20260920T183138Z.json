@@ -1,0 +1,83 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T183138Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260920T144205Z.md",
+   "opened": "20260920T144627Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-9527c4a4.md",
+   "opened": "20260920T145731Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260920.md",
+   "opened": "20260920T145731Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-128e38dd.md",
+   "opened": "20260920T145731Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlue5e6f20dmd",
+   "ref": "BEACON-DZ-40-lvlu-e5e6f20d.md",
+   "opened": "20260920T170339Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT49lvlu20260920T",
+   "ref": "OTP-DIRECT-49-lvlu-20260920T165724Z.md",
+   "opened": "20260920T170339Z",
+   "tries": 10,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- 候件：PLAN-QUEUE已拍3次、kicks=0，队列未踢出，积压。\n- EX：lvlu轨道容量02旁路执行件，22试未闭，旁路协议待决。\n- AC：灯塔塔台ACK确认件，21试未闭，回执未收。\n- AU：lvlu环密钥自动重分配，21试未闭，密钥轮换卡滞。\n- RE：灯塔重提醒件，21试未闭，催办未应。\n- BE：DZ-40信标同步件，10试未闭，待对齐。\n- OT：OTP直连49号线认证，10试未闭，握手待穿透。\n\n②应动何件（立协同不候）\n立即协同EX与AU：二者涉lvlu核心诉求且积压最久（各21/22试），旁路与密钥不可再候。\n\n③未闭项推进\n- EX：未闭，下一步：执行QFA旁路协议并做降轨压力验证。\n- AC：未闭，下一步：切备用灯塔通道补发ACK。\n- AU：未闭，下一步：强启环密钥重分配，广播新指纹并回写。\n- RE：未闭，下一步：并入AC同塔批处理，不再单发。\n- BE：未闭，下一步：拉取DZ-40实时快照做基准比对。\n- OT：未闭，下一步：重试OTP握手，逾时则降级间接信道。\n\n④生债一条\nEX、AU双高试卡滞，生lvlu联级阻塞债一条，本周期兜底清偿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
