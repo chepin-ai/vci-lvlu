@@ -1,0 +1,87 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T224435Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260920T144205Z.md",
+   "opened": "20260920T144627Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-9527c4a4.md",
+   "opened": "20260920T145731Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260920.md",
+   "opened": "20260920T145731Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-128e38dd.md",
+   "opened": "20260920T145731Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlue5e6f20dmd",
+   "ref": "BEACON-DZ-40-lvlu-e5e6f20d.md",
+   "opened": "20260920T170339Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT49lvlu20260920T",
+   "ref": "OTP-DIRECT-49-lvlu-20260920T165724Z.md",
+   "opened": "20260920T170339Z",
+   "tries": 32,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 广播《lgt-03-disc-anchor.md》候达，锚定 lvlu 讨论域。  \n- PLAN-QUEUE 已 3 拍 0 踢，任务堆积。  \n- EXEC-ORBIT-CAP-02-BYPASS 已试 44 次，旁路执行未闭。  \n- ACK-LGT-TOWER-LVLU 确认件悬置，未闭。  \n- AUTOASK-RING-LVLU-KEY-REASSIGN 密钥重分配请求未闭。  \n- RENUDGE-LGT-LVLU 链路再催未闭。  \n- BEACON-DZ-40-lvlu 信标未闭。  \n- OTP-DIRECT-49-lvlu 直令未闭。  \n\n② 应动何件（立协同不候）  \n应动 PLAN-QUEUE 清积件与 EXEC-ORBIT 阻塞件，立协同 LGT↔LVLU 握手及密钥重分配。  \n\n③ 未闭项推进  \n- OI-EX：未闭；下一步：旁路降级或熔断。  \n- OI-AC：未闭；下一步：补 ACK 或标超时。  \n- OI-AU：未闭；下一步：执行重分配或驳回。  \n- OI-RE：未闭；下一步：升频再催或报链路故障。  \n- OI-BEACON：未闭；下一步：确认信标状态并回令。  \n- OI-OTP：未闭；下一步：核销或重发直令。  \n\n④ 生债一条  \n生债：lvlu 线积 PLAN-QUEUE 三拍未清、ORBIT 旁路 44 试未通，欠系统一次强制清障响应。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
