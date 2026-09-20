@@ -1,0 +1,73 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T095602Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPDIRECT48lvlu20260920T",
+   "ref": "OTP-DIRECT-48-lvlu-20260920T064520Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-GLOBAL-ACT-notice-20260920T060500Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu545cb831md",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md",
+   "opened": "20260920T065257Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV-20260920.md",
+   "opened": "20260920T094406Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- 收枢纽广播 `lgt-03-disc-anchor.md`，锚点待落位。\n- `PLAN-QUEUE` 3拍0踢，队列运转常。\n- `OTP-DIRECT-48-lvlu` 连试19次未闭，lvlu认证通道卡死。\n- `qgl-GLOBAL-ACT-notice` 连试19次未闭，lvlu全域通告未签收。\n- `BEACON-DZ-40-lvlu` 连试18次未闭，低区信标无回。\n- `ANS-CULL-ACK-RESWAVE` 试2次未闭，残波确认新到。\n\n②应动何件\n- `OTP-DIRECT-48-lvlu`（19次）立协同不候。\n- `qgl-GLOBAL-ACT-notice`（19次）立协同不候。\n\n③未闭项推进\n- `OI-OTPDIRECT48lvlu20260920T`：未闭；下一步强握或转义。\n- `OI-vciinboxlaneslvluinboxqg`：未闭；下一步疏inbox覆写。\n- `OI-BEACONDZ40lvlu545cb831md`：未闭；下一步补发DZ脉冲。\n- `OI-vciinboxlaneslvluinboxAN`：未闭；下一步析ACK归档。\n\n④生债一条\n- 生债：lvlu线双19未闭达阈，需立熔断预案，止循环耗尽。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
