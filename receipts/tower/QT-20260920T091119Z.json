@@ -1,0 +1,62 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T091119Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPDIRECT48lvlu20260920T",
+   "ref": "OTP-DIRECT-48-lvlu-20260920T064520Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-GLOBAL-ACT-notice-20260920T060500Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu545cb831md",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md",
+   "opened": "20260920T065257Z",
+   "tries": 14,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件PLAN-QUEUE触发3次、0踢出，正常堆积；件1 OTP-DIRECT-48-lvlu直接通道开启后试15次未闭；件2 vci-inbox lanes/lvlu/inbox 全局行动通知开启后试15次未闭；件3 BEACON-DZ-40-lvlu信标545cb831开启后试14次未闭。三件均涉lvlu通道悬挂。\n\n② 应动何件：三件未闭项重试均达14–15次，属高耗悬挂，应全部立动协同，不候。\n\n③ 未闭项推进：\n- OI-OTPDIRECT48lvlu20260920T：未闭；下一步直切OTP-DIRECT-48通道，查15次投递/确认失败根因。\n- OI-vciinboxlaneslvluinboxqg：未闭；下一步清障vci-inbox lvlu全局通知的收件/回执阻塞点。\n- OI-BEACONDZ40lvlu545cb831md：未闭；下一步拉取BEACON-DZ-40-lvlu信标日志，定位无应答原因。\n\n④ 生债一条：lvlu三线通道(OTP/VCI/BEACON)同挂高重试债，限本次协同内排空。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
