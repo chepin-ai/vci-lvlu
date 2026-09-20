@@ -1,0 +1,80 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T165718Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV-20260920.md",
+   "opened": "20260920T094406Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260920T144205Z.md",
+   "opened": "20260920T144627Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-9527c4a4.md",
+   "opened": "20260920T145731Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260920.md",
+   "opened": "20260920T145731Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-128e38dd.md",
+   "opened": "20260920T145731Z",
+   "tries": 11,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- hub-broadcast lgt-03-disc-anchor.md：LGT-03断点锚定广播，需lvlu节点对齐。\n- plan-queue拍 fired=3 kicks=0：计划队列三拍零踢，lvlu执行流卡滞。\n- OI-AN：ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV件，40试未复，lvlu诉求终结该波浪并验尸归档。\n- OI-EX：EXEC-ORBIT-ORBIT-CAP-02-BYPASS件，lvlu需旁路授权。\n- OI-AC：ACK-LGT-TOWER-LVLU-9527c4a4件，待lvlu回执闭环。\n- OI-AU：AUTOASK-RING-LVLU-KEY-REASSIGN件，自动环申请密钥重配。\n- OI-RE：RENUDGE-LGT-LVLU-128e38dd件，LGT再催lvlu清零。\n\n② 应动何件\n立协同不候：OI-AN（40试悬停，强启验尸归档）、OI-EX（执行旁路待授权）、OI-AU（密钥重配立审立决）。\n\n③ 未闭项推进\n- OI-AN：未闭；下一步：协同LGT-03发起CULL-ACK-RESWAVE终结协议，强制AUTOPSY归档。\n- OI-EX：未闭；下一步：校验双轨旁路条件，下发EXEC许可或熔断。\n- OI-AC：未闭；下一步：回写ACK戳记，闭环9527c4a4。\n- OI-AU：未闭；下一步：验签通过后执行RING-KEY-REASSIGN，重载lvlu密钥。\n- OI-RE：未闭；下一步：以本响应抵催，标记驱动源后关闭。\n\n④ 生债一条\n生债：AN项40试未闭已积验尸债，若本SI周期不清账，自动升级为LGT-03广播级锚告警，记入lvlu强制履约。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
