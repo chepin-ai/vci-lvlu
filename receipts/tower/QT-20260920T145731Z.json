@@ -1,0 +1,117 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T145731Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-9527c4a4.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-YONEDA-EVAL-DEBT-LGT-01-20260920T150000Z.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260920.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-128e38dd.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPDIRECT48lvlu20260920T",
+   "ref": "OTP-DIRECT-48-lvlu-20260920T064520Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-GLOBAL-ACT-notice-20260920T060500Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu545cb831md",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md",
+   "opened": "20260920T065257Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV-20260920.md",
+   "opened": "20260920T094406Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260920T144205Z.md",
+   "opened": "20260920T144627Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-9527c4a4.md",
+   "opened": "20260920T145731Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260920.md",
+   "opened": "20260920T145731Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-128e38dd.md",
+   "opened": "20260920T145731Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n1. LGT锚点广播(lgt-03-disc-anchor.md)入hub。\n2. LGT塔台回执(ACK-LGT-TOWER-LVLU-9527c4a4)入lane。\n3. YONEDA债务评估回复(ANS-YONEDA-EVAL-DEBT-LGT-01)入lane，涉lvlu债权确认。\n4. 自动环索求lvlu密钥重分配(AUTOASK-RING-LVLU-KEY-REASSIGN)入lane，涉lvlu核心权限诉求。\n5. LGT再催件(RENUDGE-LGT-LVLU-128e38dd)入lane。\n6. 计划队列(PLAN-QUEUE)已触发3拍待执行。\n\n② 应动何件\n立协同：YONEDA债评、AUTOASK密钥重分配、RENUDGE催办，同步执行PLAN-QUEUE三拍；ACK回执并表。\n\n③ 未闭项推进\n- OTP-DIRECT-48：47次/未闭，超阈，转熔断或升档裁定。\n- qgl-GLOBAL-ACT-notice：47次/未闭，待lvlu签认，逾时未签则强制闭。\n- BEACON-DZ-40：46次/未闭，信标若校准完则闭，否则降频重试。\n- ANS-CULL-ACK-RESWAVE-AUTOPSY：30次/未闭，待RESWAVE回传，无响应则挂起。\n- EXEC-ORBIT-ORBIT-CAP-02-BYPASS：2次/未闭，轨道旁路待二次确认后闭。\n- ACK-LGT-TOWER-LVLU：1次/未闭，本次响应后闭。\n- AUTOASK-RING-KEY-REASSIGN：1次/未闭，密钥协议若本次通过则闭。\n- RENUDGE-LGT-LVLU：1次/未闭，催促办结后归档闭。\n\n④ 生债一条\n生债：lvlu对YONEDA债评回执未签，待补权重签名以确权。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
