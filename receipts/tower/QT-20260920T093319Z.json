@@ -1,0 +1,62 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T093319Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPDIRECT48lvlu20260920T",
+   "ref": "OTP-DIRECT-48-lvlu-20260920T064520Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-GLOBAL-ACT-notice-20260920T060500Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu545cb831md",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md",
+   "opened": "20260920T065257Z",
+   "tries": 16,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：PLAN-QUEUE拍触发3次无执行；OTP-DIRECT-48-lvlu尝试17次未闭；vci-inbox lanes/lvlu/inbox全局活动通知尝试17次未闭；BEACON-DZ-40-lvlu信标尝试16次未闭。\n\n② 应动何件：全动，PLAN-QUEUE拍与三项高试未闭lvlu件立协同不候。\n\n③ 未闭项推进：\n- OI-OTPDIRECT48lvlu20260920T：未闭，17试超时，下一步提级改路由或直联lvlu端。\n- OI-vciinboxlaneslvluinboxqg：未闭，17试卡滞，下一步清查inbox链路阻塞并重启拉取。\n- OI-BEACONDZ40lvlu545cb831md：未闭，16试无响应，下一步信标重置或人工介入。\n\n④ 生债：Lvlu三线高试卡滞，欠一次端到端通路根因排查与修复验收。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
