@@ -1,0 +1,73 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T113808Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPDIRECT48lvlu20260920T",
+   "ref": "OTP-DIRECT-48-lvlu-20260920T064520Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-GLOBAL-ACT-notice-20260920T060500Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu545cb831md",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md",
+   "opened": "20260920T065257Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV-20260920.md",
+   "opened": "20260920T094406Z",
+   "tries": 12,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n1. hub-broadcast「lgt-03-disc-anchor.md」：枢纽锚点广播，录 lvlu 锚点校准诉求。  \n2. plan-queue「PLAN-QUEUE拍 fired=3 kicks=0」：队列三发零 kick，录 lvlu 执行链断裂诉求。  \n\n② 应动何件  \n应动 OTP-DIRECT-48-lvlu（OI-OTPDIRECT48lvlu20260920T），立协同不候。  \n\n③ 未闭项推进  \n- OI-OTPDIRECT48lvlu20260920T：未闭；下一步：即刻执行 OTP 并返单帧确认。  \n- OI-vciinboxlaneslvluinboxqg：未闭；下一步：解析 qgl-GLOBAL-ACT 并签入 lvlu Lane。  \n- OI-BEACONDZ40lvlu545cb831md：未闭；下一步：回扫 DZ-40 信标并上载状态戳。  \n- OI-vciinboxlaneslvluinboxAN：未闭；下一步：封账 RESWAVE AUTOPSY 回波并 ACK。  \n\n④ 生债一条  \n生债：lvlu 线 OTP-DIRECT 29 试未应，记直接响应迟滞债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
