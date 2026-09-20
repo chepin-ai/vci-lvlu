@@ -1,6 +1,6 @@
 {
  "v": "RESOURCE-REGISTRY-LVLU-02",
- "ts_gh": "20260920T125101Z",
+ "ts_gh": "20260920T135328Z",
  "by": "lvlu SI5调度层",
  "law": "值域律: 仓内仅名谱/端点/指纹/状态, 值永不出vault",
  "new_wave_0919": [
@@ -21,10 +21,14 @@
   {
    "cat": "量子计算",
    "platform": "Azure Quantum",
-   "offer": "$500新用户积分",
-   "status": "BLOCKED-MS密码未知(Authenticator种在vault但为二因子; 推=root端机)",
-   "account": "chepinzhang@hotmail.com",
-   "secret_names": []
+   "offer": "现行无可接入免费计划(20260920实证)",
+   "status": "EVALUATED-ECONWALL: PAYG已升级(¥1,343.99额度至2026-10-20, 订阅19f64ff9-a5b9-4d0c-b457-17dfea34ebb2)·但提供程序仅IonQ $25k/月订阅/Quantinuum $125k/月起, 无PAYG无免费模拟器计划, $500 Credits无可挂计划·工作区强制≥1提供程序→未创建(避免付费承诺)·Azure PAYG订阅可作经典算力池",
+   "account": "chepinzhang@hotmail.com (MSA, PAYG, 租户CHEPINZHANGHOTMAIL.ONMICROSOFT.COM)",
+   "secret_names": [
+    "MS_PW(gh_microauth)",
+    "MS_TOTP_SEED_V2"
+   ],
+   "fp": "azure quantum econwall 2026"
   },
   {
    "cat": "GPU计算",
