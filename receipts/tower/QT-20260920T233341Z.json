@@ -1,0 +1,76 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T233341Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-9527c4a4.md",
+   "opened": "20260920T145731Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260920.md",
+   "opened": "20260920T145731Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-128e38dd.md",
+   "opened": "20260920T145731Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlue5e6f20dmd",
+   "ref": "BEACON-DZ-40-lvlu-e5e6f20d.md",
+   "opened": "20260920T170339Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT49lvlu20260920T",
+   "ref": "OTP-DIRECT-49-lvlu-20260920T165724Z.md",
+   "opened": "20260920T170339Z",
+   "tries": 36,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件PLAN-QUEUE拍三未踢，队列淤。  \n- AC项：ACK-LGT-TOWER-LVLU，47试未闭，lvlu索塔台确认。  \n- AU项：KEY-REASSIGN，47试未闭，lvlu索密钥重派。  \n- RE项：RENUDGE-LGT，47试未闭，lvlu复催LGT。  \n- BEACON项：DZ-40，36试未闭，lvlu索信标覆。  \n- OTP项：DIRECT-49，36试未闭，lvlu索口令通。  \n\n②应动何件  \nAU（密钥重分配）与OTP（直连口令），通道断则律吕乱，立协不候。  \n\n③未闭项推进  \n- AC：未闭，旁路硬确认或降级。  \n- AU：未闭，立即重分配并回写钥环。  \n- RE：未闭，升频LGT主控或标死信。  \n- BEACON：未闭，重发DZ-40校准脉冲。  \n- OTP：未闭，切备用通道再试。  \n\n④生债  \n生债：lvlu线欠塔台ACK一、密钥重派一、LGT复催一、信标覆一、OTP通联一。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
