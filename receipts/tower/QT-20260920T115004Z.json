@@ -1,0 +1,73 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T115004Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPDIRECT48lvlu20260920T",
+   "ref": "OTP-DIRECT-48-lvlu-20260920T064520Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-GLOBAL-ACT-notice-20260920T060500Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu545cb831md",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md",
+   "opened": "20260920T065257Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV-20260920.md",
+   "opened": "20260920T094406Z",
+   "tries": 13,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- hub-broadcast lgt-03-disc-anchor.md：枢纽广播锚定跨线讨论基线。  \n- plan-queue拍 fired=3 kicks=0：队列已击发3拍零踢出，排程积压待协同。  \n- OI-OTPDIRECT48lvlu：OTP直达48重试30次，lvlu握手通道阻塞。  \n- OI-vciinboxqg：VCI全局活动通知重试30次，收件箱未确认。  \n- OI-BEACONDZ40lvlu：信标DZ-40重试29次，心跳未同步。  \n- OI-vciinboxAN：ANS-CULL-ACK通知重试13次，回执缺失。  \n\n②应动何件  \n- 立动plan-queue清积排程；立动OTP-DIRECT-48与BEACON-DZ-40双通道强制握手；立动VCI inbox双件并查归档。均不候。  \n\n③未闭项推进  \n- OI-OTPDIRECT48lvlu20260920T：未闭，下一步换端重发或降级间接信令。  \n- OI-vciinboxlaneslvluinboxqg：未闭，下一步标记已读并归档旧波次。  \n- OI-BEACONDZ40lvlu545cb831md：未闭，下一步发窄波握手包等回。  \n- OI-vciinboxlaneslvluinboxAN：未闭，下一步补ACK回执并关箱。  \n\n④生债一条  \n- 生债：lvlu线四通道高重试悬置，开“多信令压降”专项债，限今日内归零。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
