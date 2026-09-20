@@ -1,0 +1,66 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T074113Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPDIRECT48lvlu20260920T",
+   "ref": "OTP-DIRECT-48-lvlu-20260920T064520Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-GLOBAL-ACT-notice-20260920T060500Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu545cb831md",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md",
+   "opened": "20260920T065257Z",
+   "tries": 6,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- hub-broadcast `lgt-03-disc-anchor.md` 候录，涉 lvlu 锚点广播。  \n- PLAN-QUEUE拍 `fired=3/kicks=0`，队列三火未落。  \n- OTP-DIRECT-48-lvlu 直联候闭，已试七次。  \n- vci-inbox lvlu 通道收到 `qgl-GLOBAL-ACT` 通知，已试七次未析。  \n- BEACON-DZ-40-lvlu 信标候闭，已试六次。  \n\n② 应动何件  \n- 立协同 OTP-DIRECT-48-lvlu 与 vci-inbox 全局通知（双七阈值，不候）。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
