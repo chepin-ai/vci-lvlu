@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T122504Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPDIRECT48lvlu20260920T",
+   "ref": "OTP-DIRECT-48-lvlu-20260920T064520Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-GLOBAL-ACT-notice-20260920T060500Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu545cb831md",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md",
+   "opened": "20260920T065257Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV-20260920.md",
+   "opened": "20260920T094406Z",
+   "tries": 16,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- PLAN-QUEUE拍已fired=3次无kicks，队列未消化。  \n- OTP-DIRECT-48-lvlu令牌超期，已33试未闭。  \n- VCI-inbox(qgl-GLOBAL-ACT)滞留lvlu lane，已33试未闭。  \n- BEACON-DZ-40-lvlu信标挂起，已32试未闭。  \n- ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV回执待签，已16试未闭。  \n\n② 应动何件  \n四项未闭项全数立协同不候，先攻OTP-DIRECT与BEACON-DZ链路。  \n\n③ 未闭项推进  \n- OI-OTPDIRECT48lvlu20260920T：未闭/下一步重协商OTP会话或提级。  \n- OI-vciinboxlaneslvluinboxqg：未闭/下一步解析qgl指令并完成lvlu侧ACK回写。  \n- OI-BEACONDZ40lvlu545cb831md：未闭/下一步释545cb831信标锁，恢复DZ-40。  \n- OI-vciinboxlaneslvluinboxAN：未闭/下一步签封AUTOPSY-QTLV回执并归档。  \n\n④ 生债一条  \n生债：PLAN-QUEUE三拍无kick根因，限当值内补录。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
