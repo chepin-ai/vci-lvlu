@@ -1,0 +1,83 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T213247Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260920T144205Z.md",
+   "opened": "20260920T144627Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-9527c4a4.md",
+   "opened": "20260920T145731Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260920.md",
+   "opened": "20260920T145731Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-128e38dd.md",
+   "opened": "20260920T145731Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlue5e6f20dmd",
+   "ref": "BEACON-DZ-40-lvlu-e5e6f20d.md",
+   "opened": "20260920T170339Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT49lvlu20260920T",
+   "ref": "OTP-DIRECT-49-lvlu-20260920T165724Z.md",
+   "opened": "20260920T170339Z",
+   "tries": 26,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件：PLAN-QUEUE拍 fired=3 kicks=0，队列待踢出。  \n- OI-EX：EXEC-ORBIT-ORBIT-CAP-02-BYPASS 已38次未闭，lvlu轨道旁路执行卡阻。  \n- OI-AC：ACK-LGT-TOWER-LVLU 已37次未闭，lvlu塔台灯光确认未回。  \n- OI-AU：AUTOASK-RING-LVLU-KEY-REASSIGN 已37次未闭，lvlu环网密钥待重配。  \n- OI-RE：RENUDGE-LGT-LVLU 已37次未闭，lvlu灯光再提示待触发。  \n- OI-BE：BEACON-DZ-40-lvlu 已26次未闭，lvlu信标待同步。  \n- OI-OT：OTP-DIRECT-49-lvlu 已26次未闭，lvlu一次性直连通道待决。  \n\n② 应动何件  \n- 立协 OI-EX（ORBIT旁路38次积压，执行阻断）与 OI-AU（密钥安全项37次），不候。  \n\n③ 未闭项推进  \n- OI-EX：未闭，下一步：强降旁路或切备用轨道。  \n- OI-AC：未闭，下一步：补发ACK或核查塔台链路。  \n- OI-AU：未闭，下一步：执行KEY-REASSIGN并写回环网。  \n- OI-RE：未闭，下一步：重发RENUDGE或切灯光通道。  \n- OI-BE：未闭，下一步：刷新BEACON-DZ-40注册。  \n- OI-OT：未闭，下一步：重试OTP握手或注销令牌。  \n\n④ 生债一条  \n- 债：ORBIT旁路与RING密钥积压超37轮，今日未闭则lvlu执行环降档一级。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
