@@ -1,0 +1,73 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T123648Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPDIRECT48lvlu20260920T",
+   "ref": "OTP-DIRECT-48-lvlu-20260920T064520Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-GLOBAL-ACT-notice-20260920T060500Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu545cb831md",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md",
+   "opened": "20260920T065257Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV-20260920.md",
+   "opened": "20260920T094406Z",
+   "tries": 17,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- hub-broadcast《lgt-03-disc-anchor.md》律吕域锚点广播入境，录。\n- PLAN-QUEUE拍fired=3/kicks=0，lvlu线计划队列空转三拍未获推进，录。\n- OTP-DIRECT-48直投凭证项34试未闭，录。\n- VCI-inbox全局行动通知(qgl)项34试未闭，录。\n- BEACON-DZ-40信标项33试未闭，录。\n- VCI-inbox回波剖检ACK(ANS-CULL)项17试未闭，录。\n\n② 应动何件（立协同不候）\n- 应动PLAN-QUEUE拍，立即kick终止空转。\n- 应动OTP-DIRECT-48，立即核销或重投。\n- 应动BEACON-DZ-40，立即信标回令。\n\n③ 未闭项推进\n- OI-OTPDIRECT48lvlu20260920T：未闭，下一步强制核销或超期作废。\n- OI-vciinboxlaneslvluinboxqg：未闭，下一步提取qgl正文并确认lvlu响应角色。\n- OI-BEACONDZ40lvlu545cb831md：未闭，下一步发出DZ-40回波或标记静默回收。\n- OI-vciinboxlaneslvluinboxAN：未闭，下一步完成ANS-CULL-ACK回执并归档AUTOPSY-QTLV。\n\n④ 生债一条\n- PLAN-QUEUE三拍空燃不kick，生lvlu线队列推进债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
