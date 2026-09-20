@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T133456Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPDIRECT48lvlu20260920T",
+   "ref": "OTP-DIRECT-48-lvlu-20260920T064520Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-GLOBAL-ACT-notice-20260920T060500Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu545cb831md",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md",
+   "opened": "20260920T065257Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV-20260920.md",
+   "opened": "20260920T094406Z",
+   "tries": 22,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候：PLAN-QUEUE拍 fired=3/kicks=0，触发未踢。\n- 项1：OTP-DIRECT-48-lvlu，39试未闭（lvlu诉：直投OTP-48）。\n- 项2：vci-inbox global-act通知，39试未闭。\n- 项3：BEACON-DZ-40-lvlu，38试未闭（lvlu诉：信标应答）。\n- 项4：ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV，22试未闭。\n\n② 应动何件：PLAN-QUEUE拍（立即kick），并立协 OTP-DIRECT-48-lvlu、BEACON-DZ-40-lvlu，不候。\n\n③ 未闭项推进：\n- OI-OTPDIRECT48lvlu20260920T：未闭，下一步直投/lvlu或转急。\n- OI-vciinboxlaneslvluinboxqg：未闭，下一步核效清件。\n- OI-BEACONDZ40lvlu545cb831md：未闭，下一步应答DZ-40信标。\n- OI-vciinboxlaneslvluinboxAN：未闭，下一步回ACK并闭。\n\n④ 生债：拍而不踢、重试无熔断，需补kick与退避逻辑。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
