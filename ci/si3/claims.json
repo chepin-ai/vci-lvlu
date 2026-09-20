@@ -1069,6 +1069,36 @@
    "ts": "20260919T0635Z",
    "status": "DONE",
    "note": "16比特numpy 65536幅值 exact 8/8; move/swap差分修复"
+  },
+  {
+   "id": "MS-TOTP-SELF-01",
+   "ts": "20260920T0748Z",
+   "status": "DONE",
+   "note": "QR(cv2)解码自添Authenticator条目·种入vault·新登零手机端到端✓"
+  },
+  {
+   "id": "AZURE-SIGNUP-01",
+   "ts": "20260920T0748Z",
+   "status": "IN-FLIGHT",
+   "note": "TOTP自验✓;步1全填;国别=中国(root端geo)/沙箱端原生select不可设已绕:root端下一步+SMS;我接管portal/Quantum/$500"
+  },
+  {
+   "id": "PLAN-QUEUE-SELFPROPEL-01",
+   "ts": "20260920T0748Z",
+   "status": "DONE",
+   "note": "SI1-KICK-QUANT-SIM-01→SEM-04自答(fp互锚b4ac52a5✓)·下拍自推进闭环实证·零会话动作"
+  },
+  {
+   "id": "OTP48-QUANTUM-KEYS-01",
+   "ts": "20260920T0748Z",
+   "status": "DONE",
+   "note": "QUAFU/QRINGS64/128/ORIGINQC1 seal注入vci-qtlv 201×4·值不出内存"
+  },
+  {
+   "id": "QGL-GLOBAL-ACT-01",
+   "ts": "20260920T0748Z",
+   "status": "DONE",
+   "note": "SI1合法面判词立场=SEM-04机读约+实证双轨·已投lanes/qgl/inbox"
   }
  ]
 }
