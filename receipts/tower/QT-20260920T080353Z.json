@@ -1,0 +1,62 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T080353Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPDIRECT48lvlu20260920T",
+   "ref": "OTP-DIRECT-48-lvlu-20260920T064520Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-GLOBAL-ACT-notice-20260920T060500Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu545cb831md",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md",
+   "opened": "20260920T065257Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件：PLAN-QUEUE拍3次无kick，计划执行层未响应。  \n- OI-OTPDIRECT48：OTP-DIRECT-48-lvlu经9试未闭，lvlu直联认证通道待结。  \n- OI-vciinbox：lanes/lvlu/inbox全局通知经9试未闭，lvlu收件箱积压待清。  \n- OI-BEACONDZ40：BEACON-DZ-40-lvlu信标经8试未闭，lvlu节点数据待收。  \n\n②应动何件  \n三项未闭件皆立协同不候：OTP-DIRECT-48、VCI-inbox全局通知、BEACON-DZ-40。  \n\n③未闭项推进  \n- OI-OTPDIRECT48lvlu20260920T：未闭；下一步：人工介入或强制终结OTP-DIRECT-48文件。  \n- OI-vciinboxlaneslvluinboxqg：未闭；下一步：解析qgl-GLOBAL-ACT-notice内容并归档收件箱。  \n- OI-BEACONDZ40lvlu545cb831md：未闭；下一步：提取DZ-40信标负载并关闭。  \n\n④生债一条  \n录债：lvlu三单高重试未闭件积压，需当日协同清零。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
