@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T005946Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPDIRECT46lvlu20260919T",
+   "ref": "OTP-DIRECT-46-lvlu-20260919T174919Z.md",
+   "opened": "20260919T174932Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu52a3b3c2md",
+   "ref": "BEACON-DZ-40-lvlu-52a3b3c2.md",
+   "opened": "20260919T180428Z",
+   "tries": 40,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件：PLAN-QUEUE拍3/kick0，队列稳态，无新悬\n- OI-OTPDIRECT46lvlu20260919T：lvlu OTP-46直接通道，42试未闭\n- OI-BEACONDZ40lvlu52a3b3c2md：lvlu BEACON-DZ-40，40试未闭\n\n② 应动何件：\n两未闭项均逾40试，立协OI-OTPDIRECT46与OI-BEACONDZ40，不候。\n\n③ 未闭项推进：\n- OI-OTPDIRECT46lvlu20260919T：未闭；升维SI2强制握手，破42试死锁\n- OI-BEACONDZ40lvlu52a3b3c2md：未闭；启信标回波探测，无应则切频/熔断\n\n④ 生债一条：\nlvlu双线高试未闭，生响应债一枚，闭环偿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
