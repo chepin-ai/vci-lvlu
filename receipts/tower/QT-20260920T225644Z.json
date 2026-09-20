@@ -1,0 +1,87 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T225644Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260920T144205Z.md",
+   "opened": "20260920T144627Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-9527c4a4.md",
+   "opened": "20260920T145731Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260920.md",
+   "opened": "20260920T145731Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-128e38dd.md",
+   "opened": "20260920T145731Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlue5e6f20dmd",
+   "ref": "BEACON-DZ-40-lvlu-e5e6f20d.md",
+   "opened": "20260920T170339Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT49lvlu20260920T",
+   "ref": "OTP-DIRECT-49-lvlu-20260920T165724Z.md",
+   "opened": "20260920T170339Z",
+   "tries": 33,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- hub-broadcast《lgt-03-disc-anchor.md》锚点变更广播候阅。\n- PLAN-QUEUE 已三拍零 kick，队列空转候调。\n- EXEC-ORBIT-CAP-02-BYPASS 轨道绕过执行件 tries 45，lvlu 轨道层卡滞。\n- ACK-LGT-TOWER-LVLU 塔台确认件 tries 44，回执未归。\n- AUTOASK-RING-LVLU-KEY-REASSIGN 自动请求 lvlu 密钥重分配，涉核心权限诉求。\n- RENUDGE-LGT-LVLU 重推件 tries 44，通道未达。\n- BEACON-DZ-40-lvlu 信标 tries 33，定位心跳待同步。\n- OTP-DIRECT-49-lvlu 直连认证 tries 33，会话挂起。\n\n②应动何件：\n- 立协同 OI-EX 执行件与 OI-AU 密钥重分配件，双轨并行不候。\n\n③未闭项推进：\n- OI-EX：未闭，下一步强制 bypass 或升仲裁。\n- OI-AC：未闭，下一步重发 ACK 或标 tower 失联。\n- OI-AU：未闭，下一步启 lvlu 应急密钥通道重置 token。\n- OI-RE：未闭，下一步升频 renudge 或切备用通道。\n- OI-BEACON：未闭，下一步同步 DZ-40 坐标并复位信标。\n- OI-OTP：未闭，下一步刷新 OTP seed 或降延时认证。\n\n④生债：\n- 高 tries 积压三件未降，lvlu 自动响应分身生算力债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
