@@ -1,0 +1,83 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T150936Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlu545cb831md",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md",
+   "opened": "20260920T065257Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV-20260920.md",
+   "opened": "20260920T094406Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260920T144205Z.md",
+   "opened": "20260920T144627Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-9527c4a4.md",
+   "opened": "20260920T145731Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260920.md",
+   "opened": "20260920T145731Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-128e38dd.md",
+   "opened": "20260920T145731Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：PLAN-QUEUE已触发3拍无kick；BEACON-DZ-40-lvlu-545cb831信标47次未穿透；ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV回波清理待验尸回执；EXEC-ORBIT-ORBIT-CAP-02-BYPASS轨道执行/容量绕过待裁定；ACK-LGT-TOWER-LVLU-9527c4a4灯塔确认待回闪；AUTOASK-RING-LVLU-KEY-REASSIGN自动寻环密钥重分配待复配；RENUDGE-LGT-LVLU-128e38dd灯塔再推待收束。\n\n②应动何件：BEACON-DZ-40（高阻47次）与EXEC-ORBIT-BYPASS（轨令即决），立协同不候。\n\n③未闭项推进：\n- BEACON-DZ-40：未闭，下一步做降级穿透或弃信；\n- ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV：未闭，下一步出AUTOPSY摘要回执；\n- EXEC-ORBIT-ORBIT-CAP-02-BYPASS：未闭，下一步放轨或拒令并留痕；\n- ACK-LGT-TOWER-9527c4a4：未闭，下一步回闪确认；\n- AUTOASK-RING-KEY-REASSIGN：未闭，下一步验环并复配密钥；\n- RENUDGE-LGT-128e38dd：未闭，下一步消振或再推一次。\n\n④生债：PLAN-QUEUE三拍无kick，积欠一次队列共振响应债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
