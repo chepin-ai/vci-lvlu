@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T111600Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPDIRECT48lvlu20260920T",
+   "ref": "OTP-DIRECT-48-lvlu-20260920T064520Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-GLOBAL-ACT-notice-20260920T060500Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu545cb831md",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md",
+   "opened": "20260920T065257Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV-20260920.md",
+   "opened": "20260920T094406Z",
+   "tries": 10,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件：PLAN-QUEUE 积 3 拍未释放。  \n- OI-OTPDIRECT48：OTP-DIRECT-48 直连 27 试未达，lvlu 信道挂起。  \n- OI-vciinboxqg：VCI-inbox 全局行动通知 27 试未签收，lvlu inbox 阻塞。  \n- OI-BEACONDZ40：BEACON-DZ-40 信标漂移 26 试未消，lvlu 节点失稳。  \n- OI-vciinboxAN：ANS-CULL-ACK 残波自剖 10 试未结，lvlu 回波待埋。  \n\n② 应动何件  \n立协同 OTP-DIRECT-48（切频重握）与 BEACON-DZ-40（信标归零），不候。  \n\n③ 未闭项推进  \n- OTP-DIRECT-48：未闭，下一步切备用频降速重握。  \n- VCI-inbox 全局通知：未闭，下一步向 lvlu inbox 强同步。  \n- BEACON-DZ-40：未闭，下一步 lvlu 节点信标归零再标定。  \n- ANS-CULL-ACK：未闭，下一步残波清算并回写 QTLV 终结帧。  \n\n④ 生债一条  \nlvlu 信道挂起、信标漂移、inbox 阻塞三生并发，积响应迟滞债一宗，待律吕对齐清偿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
