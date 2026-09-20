@@ -1,0 +1,87 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T214438Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260920T144205Z.md",
+   "opened": "20260920T144627Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-9527c4a4.md",
+   "opened": "20260920T145731Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260920.md",
+   "opened": "20260920T145731Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-128e38dd.md",
+   "opened": "20260920T145731Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlue5e6f20dmd",
+   "ref": "BEACON-DZ-40-lvlu-e5e6f20d.md",
+   "opened": "20260920T170339Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT49lvlu20260920T",
+   "ref": "OTP-DIRECT-49-lvlu-20260920T165724Z.md",
+   "opened": "20260920T170339Z",
+   "tries": 27,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 广播 `lgt-03-disc-anchor.md` 待锚定。  \n- `PLAN-QUEUE拍` fired=3/kicks=0，队列拥塞未消化。  \n- `EXEC-ORBIT-CAP-02-BYPASS`(EX)：轨道绕过，39次未决。  \n- `ACK-LGT-TOWER`(AC)：塔台应答，38次未回执。  \n- `AUTOASK-RING-KEY-REASSIGN`(AU)：密钥重分配，38次待签核。  \n- `RENUDGE-LGT`(RE)：复催轻推，38次未响应。  \n- `BEACON-DZ-40`(BEACON)：信标脉冲，27次未静默。  \n- `OTP-DIRECT-49`(OTP)：直连通道，27次未握手。  \n\n② 应动何件（立协同不候）  \n- `PLAN-QUEUE拍`（kick=0，立kick消化拥塞）。  \n- `KEY-REASSIGN`(AU) 与 `OTP-DIRECT-49`（涉权限与通道，立即协同）。  \n- `EXEC-ORBIT-BYPASS`(EX)（39次悬置，立即确认或熔断）。  \n\n③ 未闭项推进  \n- EX：未闭；下一步：核实BYPASS条件，强制放行或回滚。  \n- AC：未闭；下一步：向LGT-TOWER回执ACK-OK并归档。  \n- AU：未闭；下一步：核验RING请求合法性，签发新钥或驳回。  \n- RE：未闭；下一步：响应RENUDGE或标记无效关闭。  \n- BEACON-DZ-40：未闭；下一步：校准信标或置静默。  \n- OTP-DIRECT-49：未闭；下一步：完成握手或断连重试。  \n\n④ 生债一条  \n- lvlu inbox 积压6项均超27次尝试，须今日内清零backlog或启用自动熔断规则，避免信道拖死。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
