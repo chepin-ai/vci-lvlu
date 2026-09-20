@@ -8,7 +8,7 @@
    "cat": "量子计算",
    "platform": "IBM Quantum",
    "offer": "127比特真实QPU(免费层10min/月,100+比特QPU)",
-   "status": "LOGIN_OK+BILLING_SAVED·卡步PCI iframe BXNIM0109E 环境性未渲(常览器1分钟即竟)",
+   "status": "IBMid+TOTP俱备·浏览器道取key在途",
    "account": "chepin@163.com",
    "secret_names": [
     "IBMID_PW",
@@ -21,7 +21,7 @@
    "cat": "量子计算",
    "platform": "Azure Quantum",
    "offer": "$500新用户积分",
-   "status": "TOTP自验✓·步1已填·国别中国(root端)·SMS在途·portal接管就绪",
+   "status": "TOTP自验✓·步1已填·国别候root端下一步·SMS直发root",
    "account": "chepinzhang@hotmail.com",
    "secret_names": []
   },
@@ -29,7 +29,7 @@
    "cat": "GPU计算",
    "platform": "Google Colab",
    "offer": "T4 GPU 16GB",
-   "status": "账号sihuima@gmail.com在册; 邮箱轨备用开通(见下)",
+   "status": "需Google账号·vault无凭据·候凭据",
    "secret_names": [
     "BLUEQUBIT_GMAIL",
     "BLUEQUBIT_PW"
@@ -39,7 +39,7 @@
    "cat": "GPU计算",
    "platform": "Kaggle",
    "offer": "T4/P100 GPU 30h/周",
-   "status": "VERIFIED-API-200(数据集列表通)",
+   "status": "✓API auth 200·chepin163net·T4/P100在役",
    "account": "kaggle.json username",
    "secret_names": [
     "KAGGLE_USERNAME",
@@ -51,21 +51,21 @@
    "cat": "FPGA工具",
    "platform": "Yosys/Verilator",
    "offer": "开源综合/仿真",
-   "status": "runner按需apt配装(yosys/verilator)·沙箱无预装",
+   "status": "yosys-wasm 0.69综合✓·verilator负结果(无root)→amaranth sim✓补位",
    "secret_names": []
   },
   {
    "cat": "分布式",
    "platform": "Ray/Dask",
    "offer": "开源并行框架",
-   "status": "pip即装(沙箱缺, runner可预装; 内核重启律)",
+   "status": "ray 2.58.0✓8远程任务·dask 2026.8.0✓16进程·GHZ-MC均对理论<1.5%",
    "secret_names": []
   },
   {
    "cat": "网络",
    "platform": "SoftRoCE/UCX",
    "offer": "开源RDMA",
-   "status": "runner内核模块配装(rxe/ucx)·sudo域·预案在册",
+   "status": "负结果·需root+内核rxe·UCX-over-TCP候补",
    "secret_names": []
   },
   {
@@ -90,5 +90,14 @@
   "tencent": "secret id/key在vault",
   "tianyan": "key在vault",
   "gitee": "PAT在vault"
- }
+ },
+ "bonus_wave_0920": [
+  {
+   "category": "量子计算",
+   "platform": "Quafu",
+   "provides": "ScQ云芯片(136/119/105/10q)",
+   "registered": "✓token live·GHZ3 Sim10零泄漏·P5真机排队·Baihua需申请",
+   "evidence": "R2 quantum/QUAFU-GHZ3-LVLU-20260920T1645Z.json"
+  }
+ ]
 }
