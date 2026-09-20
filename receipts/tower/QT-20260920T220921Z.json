@@ -1,0 +1,83 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T220921Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260920T144205Z.md",
+   "opened": "20260920T144627Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-9527c4a4.md",
+   "opened": "20260920T145731Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260920.md",
+   "opened": "20260920T145731Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-128e38dd.md",
+   "opened": "20260920T145731Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlue5e6f20dmd",
+   "ref": "BEACON-DZ-40-lvlu-e5e6f20d.md",
+   "opened": "20260920T170339Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT49lvlu20260920T",
+   "ref": "OTP-DIRECT-49-lvlu-20260920T165724Z.md",
+   "opened": "20260920T170339Z",
+   "tries": 29,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件PLAN-QUEUE：队列已触发3拍、无kick，排程积压待理。  \n- EX件：ORBIT-CAP-02-BYPASS旁路执行指令滞留inbox，已尝试41次未闭。  \n- AC件：LGT-TOWER发往lvlu的ACK确认待回执，已40次未闭。  \n- AU件：KEY-REASSIGN自动问询待答复，已40次未闭。  \n- RE件：LGT-TOWER再催促（RENUDGE）待响应，已40次未闭。  \n- BEACON件：DZ-40信标文件待解析，已29次未闭。  \n- OTP件：DIRECT-49一次性直达指令待验签执行，已29次未闭。  \n\n② 应动何件（立协同不候）  \nEX旁路执行件（41试）及LGT-TOWER三联件（AC/AU/RE，各40试），tries过高，立协同不候；OTP-DIRECT-49直达指令同步即验即动。  \n\n③ 未闭项推进  \n- EX：未闭，下一步：给出旁路go/no-go硬裁决或升档主控。  \n- AC：未闭，下一步：完成ACK握手回传，关闭确认环。  \n- AU：未闭，下一步：执行或驳回密钥重分配，回传决议。  \n- RE：未闭，下一步：应答催促并消痕，阻断循环。  \n- BEACON：未闭，下一步：解析DZ-40载荷并同步至lvlu状态机。  \n- OTP：未闭，下一步：验签DIRECT-49并执行/熔断，回写结果。  \n\n④ 生债一条  \n生债：lvlu须于下一拍内就ORBIT-CAP-02-BYPASS出具不可撤销之go/no-go裁决，逾期自动升档并记延宕。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
