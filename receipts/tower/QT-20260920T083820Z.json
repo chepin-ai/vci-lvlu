@@ -1,0 +1,66 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T083820Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPDIRECT48lvlu20260920T",
+   "ref": "OTP-DIRECT-48-lvlu-20260920T064520Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-GLOBAL-ACT-notice-20260920T060500Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu545cb831md",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md",
+   "opened": "20260920T065257Z",
+   "tries": 11,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 中枢广播件 `lgt-03-disc-anchor.md` 待锚定落位。  \n- `PLAN-QUEUE拍` 已 fired=3，待出队消化。  \n- `OTP-DIRECT-48-lvlu` 经 12 次未闭，阻塞。  \n- `VCI-inbox:lanes/lvlu/inbox/qgl-GLOBAL-ACT-notice` 经 12 次未闭，阻塞。  \n- `BEACON-DZ-40-lvlu` 经 11 次未闭，阻塞。  \n\n② 应动何件  \n- 立协同 `OTP-DIRECT-48` + `PLAN-QUEUE` fired 项出队（不候）。  \n\n③ 未闭项推进  \n- `OI-OTPDIRECT48lvlu20260920T`：未闭，下一步切备用通道或降级重试。  \n- `OI-vciinboxlaneslvluinboxqg`：未闭，下一步拆封 `qgl-GLOBAL-ACT` 指令体并回执。  \n- `OI-BEACONDZ40lvlu545cb831md`：未闭，下一步信标对时/重置握手。  \n\n④ 生债  \n- 12 次重试无熔断，债：补自动降级与超时熔断档。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
