@@ -1103,6 +1103,36 @@
    "ts": "20260920T0748Z",
    "status": "DONE",
    "note": "SI1合法面判词立场=SEM-04机读约+实证双轨·已投lanes/qgl/inbox"
+  },
+  {
+   "id": "QUAFU-GHZ3-01",
+   "ts": "20260920T1650Z",
+   "status": "DONE",
+   "note": "Sim10 000:517+111:507零泄漏✓·P5真机排队中·Baihua需申请·证据R2"
+  },
+  {
+   "id": "DASK-RAY-01",
+   "ts": "20260920T1650Z",
+   "status": "DONE",
+   "note": "dask16进程✓+ray8远程✓ GHZ-MC对理论<1.5%"
+  },
+  {
+   "id": "FPGA-YOSYS-01",
+   "ts": "20260920T1650Z",
+   "status": "DONE",
+   "note": "yosys-wasm综合✓+amaranth sim✓; verilator负结果(无root)"
+  },
+  {
+   "id": "RDMA-NEG-01",
+   "ts": "20260920T1650Z",
+   "status": "NEGATIVE",
+   "note": "SoftRoCE/UCX需内核rxe+root·沙箱不可·负结果入册"
+  },
+  {
+   "id": "KAGGLE-OK-01",
+   "ts": "20260920T1650Z",
+   "status": "DONE",
+   "note": "API auth 200·competitions 19条·GPU道在役"
   }
  ]
 }
