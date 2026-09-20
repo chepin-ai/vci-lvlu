@@ -1,0 +1,62 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T092215Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPDIRECT48lvlu20260920T",
+   "ref": "OTP-DIRECT-48-lvlu-20260920T064520Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-GLOBAL-ACT-notice-20260920T060500Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu545cb831md",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md",
+   "opened": "20260920T065257Z",
+   "tries": 15,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件：PLAN-QUEUE拍已触发3次，无踢出。  \n- OI-OTPDIRECT48lvlu20260920T：OTP-DIRECT-48-lvlu验证码投递已16次未闭，lvlu诉求挂起。  \n- OI-vciinboxlaneslvluinboxqg：vci-inbox-lvlu全局行动通知已16次未闭，lvlu收件箱待处理。  \n- OI-BEACONDZ40lvlu545cb831md：BEACON-DZ-40-lvlu信标已15次未闭，lvlu信标待回执。  \n\n②应动何件  \n- 全动：三项lvlu未闭项（OTP-DIRECT、vci-inbox通知、BEACON-DZ-40）均立即协同，不候。  \n\n③未闭项推进  \n- OI-OTPDIRECT48lvlu20260920T：未闭，下一步切备用通道重投OTP并标记lvlu加急。  \n- OI-vciinboxlaneslvluinboxqg：未闭，下一步解析vci-inbox全局通知并同步lvlu。  \n- OI-BEACONDZ40lvlu545cb831md：未闭，下一步回执BEACON-DZ-40确认lvlu在线状态。  \n\n④生债一条  \n- 生债：lvlu三线响应债，本周期必闭。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
