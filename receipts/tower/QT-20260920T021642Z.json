@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T021642Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlu52a3b3c2md",
+   "ref": "BEACON-DZ-40-lvlu-52a3b3c2.md",
+   "opened": "20260919T180428Z",
+   "tries": 47,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：候件PLAN-QUEUE拍已触发3次但kicks=0，队列空转无推进；未闭项BEACON-DZ-40-lvlu-52a3b3c2.md涉lvlu线，历47试仍开启。\n\n②应动何件：立协同BEACON-DZ-40-lvlu项（tries=47，不候）；同步追问PLAN-QUEUE拍有fired无kicks之阻。\n\n③未闭项推进：OI-BEACONDZ40lvlu52a3b3c2md未闭；下一步诊断47次失败根因，执行强制闭合或路径切换。\n\n④生债：BEACON-DZ-40-lvlu试47次未闭，生诊断-闭合债一条，限次响前消债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
