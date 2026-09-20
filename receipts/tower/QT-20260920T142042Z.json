@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T142042Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPDIRECT48lvlu20260920T",
+   "ref": "OTP-DIRECT-48-lvlu-20260920T064520Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-GLOBAL-ACT-notice-20260920T060500Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu545cb831md",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md",
+   "opened": "20260920T065257Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV-20260920.md",
+   "opened": "20260920T094406Z",
+   "tries": 26,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件：PLAN-QUEUE三拍零kick，lvlu执行层调度淤塞。  \n- OTP-DIRECT-48：直投通道43试未竟，涉lvlu通路诉求，必录阻塞。  \n- qgl-GLOBAL-ACT-notice：全局通告悬停vci-inbox/lvlu，待签收。  \n- BEACON-DZ-40：边界信标42试无应，lvlu外周状态未知。  \n- ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV：再波尸检回执26试未发，QTLV链路未闭环。  \n\n② 应动何件  \n立协同 OTP-DIRECT-48（通路淤塞）与 BEACON-DZ-40（边界失联），并强启 plan-queue 首kick，不候。  \n\n③ 未闭项推进  \n- OI-OTPDIRECT48lvlu20260920T：未闭/下一步：切异步重投，再败则录为lvlu通路异常诉求。  \n- OI-vciinboxlaneslvluinboxqg：未闭/下一步：签收GLOBAL-ACT并写入lvlu-act缓存。  \n- OI-BEACONDZ40lvlu545cb831md：未闭/下一步：回射信标脉冲，超时无应答则标边界漂移。  \n- OI-vciinboxlaneslvluinboxAN：未闭/下一步：组装ANS-ACK压入QTLV-outbound，释尸检悬停。  \n\n④ 生债一条  \nlvlu调度债：PLAN-QUEUE积欠3拍零kick，今须生一主动脉冲以平账。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
