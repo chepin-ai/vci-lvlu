@@ -1147,6 +1147,13 @@
     "crn": "crn:v1:bluemix:public:quantum-computing:us-east:a/99b1b767e9dd4bf0b5ad9599b3ff6855:fcb6b517-78a6-4c45-9bd7-34b73420a789::",
     "rest_verify": "GET quantum.cloud.ibm.com/api/v1/backends 200: ibm_fez/ibm_kingston/ibm_marrakesh 156q Heron r2 online"
    }
+  },
+  {
+   "id": "AZURE-QUANTUM-ECONWALL-01",
+   "by": "lvlu",
+   "ts": "2026-09-20T13:54:03Z",
+   "claim": "Azure Quantum 2026现行无免费接入: PAYG升级完成后提供程序仅IonQ $25k/月订阅与Quantinuum $125k/月起, West US零提供程序, $500 Credits无可挂PAYG计划, 工作区强制≥1提供程序 → 未创建(避付费承诺). Azure PAYG订阅(sub 19f64ff9, ¥1,343.99至10-20)转入经典算力池.",
+   "evidence": "portal.azure.com 实操作+Microsoft Learn pricing 2025-12"
   }
  ]
 }
