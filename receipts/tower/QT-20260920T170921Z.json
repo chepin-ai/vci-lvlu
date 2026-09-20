@@ -1,0 +1,90 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T170921Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV-20260920.md",
+   "opened": "20260920T094406Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260920T144205Z.md",
+   "opened": "20260920T144627Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-9527c4a4.md",
+   "opened": "20260920T145731Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260920.md",
+   "opened": "20260920T145731Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-128e38dd.md",
+   "opened": "20260920T145731Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlue5e6f20dmd",
+   "ref": "BEACON-DZ-40-lvlu-e5e6f20d.md",
+   "opened": "20260920T170339Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT49lvlu20260920T",
+   "ref": "OTP-DIRECT-49-lvlu-20260920T165724Z.md",
+   "opened": "20260920T170339Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- 候件：PLAN-QUEUE拍3次无踢出。\n- AN：lvlu inbox清理+回波尸检+量子律吕复合件，试42次。\n- EX：轨道盖02旁路执行件，试14次。\n- AC：灯塔LVLU确认9527c4a4，试13次。\n- AU：环密钥重分配，试13次。\n- RE：灯塔再催128e38dd，试13次。\n- BEACON：信标DZ-40，试2次。\n- OTP：直通指令49，试2次。\n涉lvlu诉求必录：AN/AC/AU/RE/BEACON/OTP六件均标lvlu；AN为inbox核心复合诉求，必录。\n\n② 应动何件（立协同不候）\n- AN件（42次死锁，涉lvlu inbox核心，立协同）。\n- EX件（执行旁路，立协同）。\n- OTP件（直通常效，立协同）。\n\n③ 未闭项推进\n- AN：未闭；强出AUTOPSY-QTLV结论或升级，打破循环。\n- EX：未闭；决行ORBIT-CAP-02旁路并关单。\n- AC：未闭；回执LGT-TOWER-LVLU-9527c4a4，关ACK。\n- AU：未闭；办结KEY-REASSIGN或发拒因释环。\n- RE：未闭；同步128e38dd最新状态。\n- BEACON：未闭；校验DZ-40载荷后广播或静默。\n- OTP：未闭；执行DIRECT-49或标废销账。\n\n④ 生债一条\n- 生债：设lvlu inbox反压阀，防再陷42次重试死锁。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
