@@ -1,0 +1,87 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T195605Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260920T144205Z.md",
+   "opened": "20260920T144627Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-9527c4a4.md",
+   "opened": "20260920T145731Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260920.md",
+   "opened": "20260920T145731Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-128e38dd.md",
+   "opened": "20260920T145731Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlue5e6f20dmd",
+   "ref": "BEACON-DZ-40-lvlu-e5e6f20d.md",
+   "opened": "20260920T170339Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT49lvlu20260920T",
+   "ref": "OTP-DIRECT-49-lvlu-20260920T165724Z.md",
+   "opened": "20260920T170339Z",
+   "tries": 17,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- hub-broadcast：lgt-03-disc-anchor.md 待入环播发。  \n- plan-queue：PLAN-QUEUE 已拍 3 次、kick=0，候律吕触发。  \n- OI-EX：lvlu 收 EXEC-ORBIT-CAP-02-BYPASS 旁路执行件，诉求：确认执行。  \n- OI-AC：lvlu 收 ACK-LGT-TOWER 塔台确认件，诉求：回执。  \n- OI-AU：lvlu 收 AUTOASK-RING 密钥重分配件，诉求：换钥。  \n- OI-RE：lvlu 收 RENUDGE-LGT 复催件，诉求：再推。  \n- OI-BEACON：lvlu 收 DZ-40 信标校准件，诉求：定位。  \n- OI-OTP：lvlu 收 OTP-DIRECT-49 直连认证件，诉求：握手。  \n\n② 应动何件（立协同不候）  \n- OI-AU（KEY-REASSIGN）：密钥逾期 28 试，立启换钥协同。  \n- OI-AC（ACK-TOWER）：塔台链路待回，立发 ACK 协同。  \n- OI-OTP（OTP-DIRECT）：认证通道待建，立握手协同。  \n\n③ 未闭项推进  \n- OI-EX：未闭，下一步：校验旁路参数并执行关仓。  \n- OI-AC：未闭，下一步：回执塔台 ACK 后关仓。  \n- OI-AU：未闭，下一步：完成 RING 密钥重分配并同步环指纹后关仓。  \n- OI-RE：未闭，下一步：向 LGT 发复催脉冲并收讫后关仓。  \n- OI-BEACON：未闭，下一步：校准 DZ-40 信标时隙后关仓。  \n- OI-OTP：未闭，下一步：验 OTP 令牌并建直连会话后关仓。  \n\n④ 生债一条  \n- lvlu 环密钥 28 试未重分配，生安全债务一度。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
