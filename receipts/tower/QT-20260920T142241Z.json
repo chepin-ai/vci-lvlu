@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T142241Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPDIRECT48lvlu20260920T",
+   "ref": "OTP-DIRECT-48-lvlu-20260920T064520Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-GLOBAL-ACT-notice-20260920T060500Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu545cb831md",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md",
+   "opened": "20260920T065257Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV-20260920.md",
+   "opened": "20260920T094406Z",
+   "tries": 27,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件：PLAN-QUEUE已拍3次无kick，队列空转积压。\n- 未闭项1：OTP-DIRECT-48-lvlu指令已open且试44次未达，卡死。\n- 未闭项2：vci-inbox全局行动通知已open且试44次未回，悬置。\n- 未闭项3：BEACON-DZ-40-lvlu信标已open且试43次未应，僵死。\n- 未闭项4：ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV已open且试27次未结，拖延。\n\n②应动何件：\n应动OTP-DIRECT-48与BEACON-DZ-40，立协同不候；并催办vci双件回执。\n\n③未闭项推进：\n- OI-OTPDIRECT48lvlu20260920T：未闭/下一步：升级SI2强制派发，破44次死循环。\n- OI-vciinboxlaneslvluinboxqg：未闭/下一步：校验lvlu收件权限，重推回执或标记已阅。\n- OI-BEACONDZ40lvlu545cb831md：未闭/下一步：检查DZ-40信标链路，失联则启备用通道。\n- OI-vciinboxlaneslvluinboxAN：未闭/下一步：完成AUTOPSY-QTLV回执确认，归档或转人工。\n\n④生债一条：\n生债：lvlu线44次重试未闭，欠一次死锁根因排查与自动收敛修复。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
