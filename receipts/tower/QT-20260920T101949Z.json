@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T101949Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPDIRECT48lvlu20260920T",
+   "ref": "OTP-DIRECT-48-lvlu-20260920T064520Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxqg",
+   "ref": "vci-inbox:lanes/lvlu/inbox/qgl-GLOBAL-ACT-notice-20260920T060500Z.md",
+   "opened": "20260920T064533Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu545cb831md",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md",
+   "opened": "20260920T065257Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-CULL-ACK-RESWAVE-AUTOPSY-QTLV-20260920.md",
+   "opened": "20260920T094406Z",
+   "tries": 5,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件：PLAN-QUEUE 拍 3/0，lvlu 线节拍队列运转正常。\n- OI-OTP：OTP-DIRECT-48-lvlu 直传文件，待验签/回执。\n- OI-qgl：vci-inbox 全局行动通知，lvlu 通道待阅。\n- OI-BEACON：DZ-40-lvlu-545cb831 信标，待响应。\n- OI-ANS：ANS-CULL-ACK-RESWAVE 回波确认，lvlu 待收讫。\n\n② 应动何件：\n应动 OTP-DIRECT-48（22 试最早）与 BEACON-DZ-40（信标超时风险），立协同不候。\n\n③ 未闭项推进：\n- OTP-DIRECT-48：未闭，下一步完成 OTP 验签或回执签署。\n- qgl-GLOBAL-ACT：未闭，下一步提取行动指令并确认。\n- BEACON-DZ-40：未闭，下一步回传心跳/状态负载。\n- ANS-CULL-ACK：未闭，下一步提交收讫回执。\n\n④ 生债：\n生债：plan-queue fired=3 的负载未向下游 lane 分发，积欠分发债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
