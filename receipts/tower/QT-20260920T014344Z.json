@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260920T014344Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-OTPDIRECT46lvlu20260919T",
+   "ref": "OTP-DIRECT-46-lvlu-20260919T174919Z.md",
+   "opened": "20260919T174932Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu52a3b3c2md",
+   "ref": "BEACON-DZ-40-lvlu-52a3b3c2.md",
+   "opened": "20260919T180428Z",
+   "tries": 44,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- hub-broadcast「lgt-03-disc-anchor.md」：lvlu离散锚点广播诉求，待协同分发。\n- PLAN-QUEUE拍fired=3 kicks=0：lvlu计划队列触发未踢，执行债积压。\n\n② 应动何件：立动hub-broadcast件，即刻分发，不候。\n\n③ 未闭项推进：\n- OI-OTPDIRECT46lvlu20260919T：未闭，46试未果，下一步切备用OTP隧穿降级。\n- OI-BEACONDZ40lvlu52a3b3c2md：未闭，44试未通，下一步重刷DZ信标并检链路。\n\n④ 生债一条：生债「QUEUE-kick=0阻塞根因排查」一条，下拍前闭。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
