@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260921T184540Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① 何事：\n- hub-broadcast「lgt-03-disc-anchor.md」：lvlu 线 disc 锚点广播，诉求锚定内容待录。\n- plan-queue「拍」：fired=3/kicks=0，诉求三次拍频未获回踢。\n\n② 应动何件：\n件1立协同（解析 disc-anchor 并回执 lvlu 锚点状态）；件2立协同（补 kick 或诊断挂起原因）。\n\n③ 未闭项推进：\n无未闭项。\n\n④ 生债一条：\nlgt-03-disc-anchor 的 lvlu 语义映射模板未建，待下一拍闭。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
