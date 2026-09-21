@@ -1,0 +1,40 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260921T232615Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① PLAN-QUEUE拍已触发3次、kicks为0，队列自运行正常；无涉lvlu诉求。  \n② 无应动件，暂候。  \n③ 无未闭项。  \n④ 生债：持续观察PLAN-QUEUE拍触发量，防积压。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
