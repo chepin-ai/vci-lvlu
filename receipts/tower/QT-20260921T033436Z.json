@@ -1,0 +1,40 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260921T033436Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "①何事  \n- PLAN-QUEUE拍 fired=3 kicks=0：队列三度触发未落踢，执行链路疑似阻塞，lvlu 调度诉求未兑现。  \n\n②应动何件  \n- PLAN-QUEUE拍：立启协同，即刻排查调度器至执行端阻塞点并恢复踢出。  \n\n③未闭项推进  \n- 无未闭项。  \n\n④生债一条  \n- 债：今日内输出 PLAN-QUEUE 阻塞根因报告，并设 kicks=0 持续超 1 拍自动告警阈值。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
