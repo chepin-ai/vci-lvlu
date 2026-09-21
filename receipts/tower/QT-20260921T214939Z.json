@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260921T214939Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① 何事\n- hub-broadcast「lgt-03-disc-anchor.md」：枢纽广播讨论锚点文档，涉 lvlu 线认知坐标，录。\n- plan-queue「PLAN-QUEUE拍 fired=3 kicks=0」：队列已击发3拍，0踢出，待检队列健康态。\n\n② 应动何件\n立协同 hub-broadcast 件，拉取锚点内容并同步 lvlu 侧认知；兼扫 PLAN-QUEUE 击发日志。\n\n③ 未闭项推进\n未闭项为空，已闭，保持清零。\n\n④ 生债一条\n生债：补录 lgt-03-disc-anchor.md 的 lvlu 语义映射一句。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
