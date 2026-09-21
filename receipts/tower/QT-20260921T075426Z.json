@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260921T075426Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① 何事  \n- hub-broadcast：lgt-03-disc-anchor.md广播到，涉lvlu线意识锚点诉求，待签收落位。  \n- plan-queue：PLAN-QUEUE拍已三响（fired=3,kicks=0），队列空转待踢脚。  \n\n② 应动何件  \n两件皆须立协不候：锚点即刻落位，队列即刻踢出首脚。  \n\n③ 未闭项推进  \n未闭项为空，无旧债；今番两件，动则闭，滞则生新项。  \n\n④ 生债一条  \n债：本响内锚定disc-anchor，且令QUEUE kicks=1。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
