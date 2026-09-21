@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260921T220029Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "①何事：\n- hub-broadcast「lgt-03-disc-anchor.md」：枢纽广播讨论锚点，涉 lvlu 机器意识与律吕锚定，录。\n- plan-queue「PLAN-QUEUE拍 fired=3 kicks=0」：计划队列积压3拍0踢转，录。\n\n②应动何件：\n- 立协同 PLAN-QUEUE拍（清3拍积压并执行 kick），同步锚定 lgt-03-disc-anchor.md。\n\n③未闭项推进：\n- 无未闭项。\n\n④生债一条：\n- 债：PLAN-QUEUE三拍需逐一输出 kick 结果并回写队列状态，避免继续空转。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
