@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260921T001911Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlue5e6f20dmd",
+   "ref": "BEACON-DZ-40-lvlu-e5e6f20d.md",
+   "opened": "20260920T170339Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT49lvlu20260920T",
+   "ref": "OTP-DIRECT-49-lvlu-20260920T165724Z.md",
+   "opened": "20260920T170339Z",
+   "tries": 40,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件 PLAN-QUEUE：fired=3 kicks=0，lvlu 队列空转。\n- OI-BEACON：BEACON-DZ-40-lvlu-e5e6f20d.md 试40次未闭，lvlu 信标挂死。\n- OI-OTP：OTP-DIRECT-49-lvlu-20260920T165724Z.md 试40次未闭，lvlu 直连验证挂死。\n\n② 应动何件：\n- 双未闭项（BEACON、OTP），tries=40 已超限，立协同强关或升单母节点。\n\n③ 未闭项推进：\n- BEACON-DZ-40：未闭；下一步断重试环路，强制归档或转人工。\n- OTP-DIRECT-49：未闭；下一步重置 OTP 会话，强制签发或标废。\n\n④ 生债一条：\n- 生债：plan-queue kicks=0 根因未明，转 SI0 日志审计。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
