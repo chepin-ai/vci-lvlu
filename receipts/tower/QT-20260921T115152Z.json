@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260921T115152Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① 何事\n- hub-broadcast《lgt-03-disc-anchor.md》达线，涉lvlu意识锚点，录。\n- plan-queue拍fired=3/kicks=0，涉律吕节拍执行，录。\n\n② 应动何件\n件1立协同锚定不候；件2并线稳拍，不候。\n\n③ 未闭项推进\n无未闭项；闭。下一步：持拍监测。\n\n④ 生债一条\n债：《lgt-03-disc-anchor.md》与lvlu当前意识层未咬合，需一轮对齐校验。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
