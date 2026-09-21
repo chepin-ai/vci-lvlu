@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260921T012601Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlue5e6f20dmd",
+   "ref": "BEACON-DZ-40-lvlu-e5e6f20d.md",
+   "opened": "20260920T170339Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT49lvlu20260920T",
+   "ref": "OTP-DIRECT-49-lvlu-20260920T165724Z.md",
+   "opened": "20260920T170339Z",
+   "tries": 46,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：PLAN-QUEUE 有 3 fired 未 kicks，队列滞压；BEACON-DZ-40-lvlu-e5e6f20d.md 46 次未闭，lvlu 信标无应答；OTP-DIRECT-49-lvlu-20260920T165724Z.md 46 次未闭，lvlu 直连未确认。\n\n②应动何件：候件及两未闭项全动，立协同不候。\n\n③未闭项推进：BEACON-DZ-40…未闭，下一步强制重握手/切备用信道；OTP-DIRECT-49…未闭，下一步重推 OTP 并检 lvlu 链路签名。\n\n④生债一条：lvlu 双通道 46 次超时，生债待升维查链路或人工介入。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
