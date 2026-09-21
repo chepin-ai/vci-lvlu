@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260921T005245Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlue5e6f20dmd",
+   "ref": "BEACON-DZ-40-lvlu-e5e6f20d.md",
+   "opened": "20260920T170339Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT49lvlu20260920T",
+   "ref": "OTP-DIRECT-49-lvlu-20260920T165724Z.md",
+   "opened": "20260920T170339Z",
+   "tries": 43,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- hub-broadcast件：枢纽广播lgt-03-disc-anchor.md涉lvlu锚点诉求，待解析落位。\n- plan-queue件：PLAN-QUEUE拍fired=3/kicks=0，lvlu执行节拍缺kick，阻塞。\n\n②应动何件\n- 两件即刻协同：锚点解析与队列kick补位并行动，不候。\n\n③未闭项推进\n- OI-BEACONDZ40lvlue5e6f20dmd：未闭，tries=43耗尽，下一步重置DZ40信标握手。\n- OI-OTPDIRECT49lvlu20260920T：未闭，tries=43耗尽，下一步重建OTP直连会话并校时戳。\n\n④生债一条\n- lvlu线需补录disc-anchor锚点至律吕映射表，防下次广播漂移。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
