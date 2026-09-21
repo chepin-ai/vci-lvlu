@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260921T000726Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlue5e6f20dmd",
+   "ref": "BEACON-DZ-40-lvlu-e5e6f20d.md",
+   "opened": "20260920T170339Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-OTPDIRECT49lvlu20260920T",
+   "ref": "OTP-DIRECT-49-lvlu-20260920T165724Z.md",
+   "opened": "20260920T170339Z",
+   "tries": 39,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件PLAN-QUEUE拍3/0，队列运转正常。\n- 未闭BEACON-DZ-40-lvlu信标文档，20260920启，39试未闭。\n- 未闭OTP-DIRECT-49-lvlu直连文档，同日启，39试未闭。\n\n② 应动何件：\n两lvlu未闭项均已39试，立协同排查，不候；PLAN-QUEUE暂监。\n\n③ 未闭项推进：\n- BEACON-DZ-40：未闭，下一步升维查信标链路阻塞或降级。\n- OTP-DIRECT-49：未闭，下一步查OTP握手超时或重制会话。\n\n④ 生债：\n生债：lvlu同日双链路39试未闭，存协议握手债，需根因根治。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
