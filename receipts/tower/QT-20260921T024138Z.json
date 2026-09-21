@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260921T024138Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① 何事\n- hub-broadcast「lgt-03-disc-anchor.md」：律吕线 disc 锚点广播待收。\n- PLAN-QUEUE「拍」fired=3 kicks=0：计划队列三度触发未执行。\n\n② 应动何件\n- 即协同 PLAN-QUEUE「拍」消积（kicks 追平 fired=3），并锚定 lgt-03-disc-anchor.md 广播内容。\n\n③ 未闭项推进\n- 无。\n\n④ 生债一条\n- 本拍需闭环「fired=3」对应的三项计划执行回执。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
