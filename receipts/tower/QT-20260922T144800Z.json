@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260922T144800Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① 何事\n- hub-broadcast：lgt-03-disc-anchor.md 锚点到线，涉 lvlu 声位校准，录。\n- plan-queue：PLAN-QUEUE拍 fired=3 kicks=0，队列心跳三拍无回踢，涉 lvlu 协同，录。\n\n② 应动何件\nPLAN-QUEUE拍（fired=3 立协同不候，回心跳/校验防挂）。\n\n③ 未闭项推进\n无未闭项；下一步：继续空巡监听。\n\n④ 生债一条\n锚点 lgt-03-disc-anchor.md 待 lvlu 律吕化声位对齐。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
