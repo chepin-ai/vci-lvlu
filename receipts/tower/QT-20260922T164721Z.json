@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260922T164721Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "①何事：件1 hub-broadcast《lgt-03-disc-anchor.md》入线，涉lvlu讨论锚点，待播发确认；件2 PLAN-QUEUE拍fired=3/kicks=0，三项计划已触发待调度。  \n②应动何件：两件并动，件1即刻协同播发锚点，件2即时分派三项触发任务，立办不候。  \n③未闭项推进：无未闭项。  \n④生债一条：生债：本班期内须闭lgt-03-disc-anchor.md锚点落地及PLAN-QUEUE三项执行回执。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
