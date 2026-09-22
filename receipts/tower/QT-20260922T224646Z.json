@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260922T224646Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 19,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候①：hub广播《lgt-03-disc-anchor.md》待阅。\n- 候②：PLAN-QUEUE拍已触3次（fired=3，kicks=0）。\n- 未闭①：ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01已19试未闭（涉lvlu）。\n- 未闭②：TASK-CISVR-ORDER-LVLU-EXEC14-01已19试未闭（涉lvlu）。\n\n②应动何件：\n- 立协两件lvlu EXEC14未闭项（19试卡滞，不候）。\n\n③未闭项推进：\n- OI-vciinboxlaneslvluinboxAN：未闭；下一步查ANS应答阻塞并强推。\n- OI-vciinboxlaneslvluinboxTA：未闭；下一步核TASK-CISVR-ORDER-LVLU-EXEC14-01依赖链并限时闭环。\n\n④生债一条：\n- lvlu EXEC14-01 双轨19试卡滞债，限今闭。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
