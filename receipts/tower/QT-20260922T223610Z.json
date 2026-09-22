@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260922T223610Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 18,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件：PLAN-QUEUE拍已触发3次，kicks=0，队列未推进。\n- 件1：lvlu收件箱内ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01.md已尝18次未闭。\n- 件2：lvlu收件箱内TASK-CISVR-ORDER-LVLU-EXEC14-01.md已尝18次未闭。\n\n②应动何件：\n- 立动PLAN-QUEUE拍（补kicks≥1），双件协同不候。\n\n③未闭项推进：\n- OI-vciinboxlaneslvluinboxAN：未闭；下一步读取ANS文件并输出响应以达闭条件。\n- OI-vciinboxlaneslvluinboxTA：未闭；下一步解析TASK指令并执行EXEC14-01或提交结果转闭。\n\n④生债一条：\n- 债：本轮须完成至少1次kick并关闭EXEC14-01任一未闭项，否则卡债累积。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
