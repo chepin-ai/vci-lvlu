@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260922T201217Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：PLAN-QUEUE拍已触发3次、kicks=0，队列待消化；lvlu inbox内ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01.md已4试未闭；lvlu inbox内TASK-CISVR-ORDER-LVLU-EXEC14-01.md已4试未闭。\n\n②应动何件：两项OI（ANS/TASK）及PLAN-QUEUE积压，立即协同排障并推进关闭，不候。\n\n③未闭项推进：\n- OI-vciinboxlaneslvluinboxAN：未闭，下一步排查4次失败根因并强制推进关闭。\n- OI-vciinboxlaneslvluinboxTA：未闭，下一步排查4次失败根因并强制推进关闭。\n\n④生债：CISVR-ORDER-LVLU-EXEC14-01任务与响应双文件重试4次未闭，排障债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
