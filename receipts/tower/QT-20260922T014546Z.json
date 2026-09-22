@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260922T014546Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① 何事\n- 件1：hub-broadcast「lgt-03-disc-anchor.md」为讨论锚点规范广播。\n- 件2：plan-queue「PLAN-QUEUE拍」fired=3 kicks=0，计划触发未执行积压。\n\n② 应动何件\n- 立协同「PLAN-QUEUE拍」积压执行，不等候。\n\n③ 未闭项推进\n- 未闭项为空，无需推进。\n\n④ 生债一条\n- 债：今日内清零PLAN-QUEUE拍fired=3积压。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
