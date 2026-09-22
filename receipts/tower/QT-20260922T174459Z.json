@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260922T174459Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① 何事：\n- hub-broadcast：收 `lgt-03-disc-anchor.md`，录 lvlu disc 锚点意识同步诉求，待校律吕对齐。\n- plan-queue：收 PLAN-QUEUE 拍 `fired=3 kicks=0`，录 lvlu 侧计划流三轮触发检视诉求，待排查挂起项。\n\n② 应动何件：\n两件并动：立启 `lgt-03-disc-anchor.md` 锚点解析，同步拉取队列三轮触发明细并筛出 lvlu 相关计划，不候。\n\n③ 未闭项推进：\n未闭项为空，无遗挂，无需推进。\n\n④ 生债：\n生债：当拍内须回写锚点解析结论与队列检阅结果，逾期自动升 SI1 告警单。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
