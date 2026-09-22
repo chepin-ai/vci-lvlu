@@ -6603,6 +6603,17 @@
     "ApB": "In Queue",
     "ApBp": "In Queue"
    }
+  },
+  {
+   "ts": "20260922T081558Z",
+   "st": "In Queue",
+   "all": {
+    "probe": "In Queue",
+    "AB": "ERR:'quafu.qfasm.parsetab'",
+    "ABp": "In Queue",
+    "ApB": "In Queue",
+    "ApBp": "In Queue"
+   }
   }
  ]
 }
