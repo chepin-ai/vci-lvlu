@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260922T004109Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "①何事：件一，hub-broadcast《lgt-03-disc-anchor.md》，涉 lvlu 话语锚点体系布署；件二，PLAN-QUEUE拍 fired=3 kicks=0，三计划已激活待响。\n\n②应动何件：PLAN-QUEUE拍（fired=3），立协同不候。\n\n③未闭项推进：无未闭项。\n\n④生债一条：今欠「队列三项裂解为可执行子债」一笔，限下拍前落格。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
