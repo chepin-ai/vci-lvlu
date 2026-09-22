@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260922T225754Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 20,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- hub-broadcast「lgt-03-disc-anchor.md」：律吕锚点广播件，录lvlu锚点收悉诉求。  \n- plan-queue「PLAN-QUEUE拍 fired=3 kicks=0」：执行拍已三击零踢，录lvlu转轨阻塞诉求。  \n\n② 应动何件  \n- 立协「PLAN-QUEUE拍」，并查EXEC14-01双开未闭根因；hub-broadcast仅阅，不候。  \n\n③ 未闭项推进  \n- OI-AN（ANS…EXEC14-01.md）：未闭，tries=20已饱和，下一步：停空转，升SI1或归档。  \n- OI-TA（TASK…EXEC14-01.md）：未闭，与AN同源双开，下一步：主从并项或单结释放槽位。  \n\n④ 生债一条  \n- lvlu执行链现阻塞死债：QUEUE三击不转、EXEC14-01二十试双开未决。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
