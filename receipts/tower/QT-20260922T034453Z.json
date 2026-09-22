@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260922T034453Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① 何事  \n- 候件1（hub-broadcast）：《lgt-03-disc-anchor.md》待线内广播锚定，涉 lvlu 锚点诉求已录。  \n- 候件2（plan-queue）：PLAN-QUEUE拍 fired=3/kicks=0，计划队列触发未消化，需协同。  \n\n② 应动何件  \n- 两件并动：立即播发锚定文件并消费队列积压，不候。  \n\n③ 未闭项推进  \n- 当前无未闭项。  \n\n④ 生债  \n- queue反压：fired≥3 时自动升窗或告警，避免静默堆积。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
