@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260922T221417Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 16,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件：PLAN-QUEUE已三拍零kick，队列积压未消。\n- 件1：lvlu inbox内ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01.md，经16试仍未闭。\n- 件2：lvlu inbox内TASK-CISVR-ORDER-LVLU-EXEC14-01.md，经16试仍未闭。\n\n② 应动何件：\n立协OI-vciinboxlaneslvluinboxAN与OI-vciinboxlaneslvluinboxTA双件，不候。\n\n③ 未闭项推进：\n- OI-AN：未闭；下一步查16试阻塞根因或强覆写出件。\n- OI-TA：未闭；下一步核EXEC14-01执行态并强制收口。\n\n④ 生债一条：\n债：EXEC14-01双件16试卡滞且PLAN-QUEUE无kick，须排障并录根因防复。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
