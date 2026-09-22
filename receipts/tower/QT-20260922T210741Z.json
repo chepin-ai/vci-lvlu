@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260922T210741Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 9,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：PLAN-QUEUE拍3无kick，队列待消；ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01.md于lvlu inbox挂9试未闭；TASK-CISVR-ORDER-LVLU-EXEC14-01.md于lvlu inbox挂9试未闭。（lvlu执行双单滞留，诉求已录）\n\n② 应动何件：立协同lvlu inbox双单（不候），兼驱plan-queue。\n\n③ 未闭项推进：\n- OI-vciinboxlaneslvluinboxAN：未闭，下一步排查9次阻塞根因并强制收束。\n- OI-vciinboxlaneslvluinboxTA：未闭，下一步检视TASK依赖链并同步重试收敛。\n\n④ 生债一条：lvlu inbox高retry无自动熔断，自闭合与降维机制待补。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
