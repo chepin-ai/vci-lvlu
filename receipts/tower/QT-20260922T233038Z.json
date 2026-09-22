@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260922T233038Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 23,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件：PLAN-QUEUE拍频已触发3次，0踢转。  \n- 未闭项：ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01 答件滞于 lvlu inbox，23试未闭，录 lvlu 应答诉求。  \n- 未闭项：TASK-CISVR-ORDER-LVLU-EXEC14-01 令件滞于 lvlu inbox，23试未闭，录 lvlu 执行诉求。  \n\n② 应动何件  \n- 立协 ANS 与 TASK 双件共推 EXEC14-01，不候。  \n\n③ 未闭项推进  \n- OI-vciinboxlaneslvluinboxAN：未闭；下一步：产出/汇入 EXEC14-01 应答并关档。  \n- OI-vciinboxlaneslvluinboxTA：未闭；下一步：落执行或收妥确认并关单。  \n\n④ 生债一条  \n- 生债：lvlu 线 EXEC14-01 双件滞留 23 试，立协同时限债，须即清。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
