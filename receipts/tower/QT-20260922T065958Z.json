@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260922T065958Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① 何事  \n- hub-broadcast「lgt-03-disc-anchor.md」：中枢广播讨论锚点，环境同步类，无 lvlu 直接诉求，已录。  \n- plan-queue「PLAN-QUEUE拍 fired=3 kicks=0」：计划队列已三度触发、零推进，执行层积压，无 lvlu 直接诉求，已录。  \n\n② 应动何件  \n- 应动 plan-queue 件；fired=3/kicks=0 属执行阻塞，立即协同排障或强制 kick，不候。  \n\n③ 未闭项推进  \n- 未闭项为空，全部闭合，无推进需求。  \n\n④ 生债一条  \n- 生债：plan-queue fired≥3 仍无 kicks，需设自动升档/告警机制，防止执行悬停。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
