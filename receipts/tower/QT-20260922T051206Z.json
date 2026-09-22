@@ -1,0 +1,40 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260922T051206Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① 何事：  \n- PLAN-QUEUE拍 fired=3 kicks=0，队列拍子积压3次，lvlu 诉求无新增，仅状态同步。  \n\n② 应动何件：  \n- 立协 PLAN-QUEUE拍，即刻清零 fired=3 缓存，不候。  \n\n③ 未闭项推进：  \n- 未闭项为空，无推进项。  \n\n④ 生债一条：  \n- PLAN-QUEUE拍频积压阈值与自动熔断规则待补。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
