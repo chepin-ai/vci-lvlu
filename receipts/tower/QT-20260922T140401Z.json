@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260922T140401Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "①何事  \n1. hub-broadcast《lgt-03-disc-anchor.md》至，涉lvlu锚点定标与认知对齐诉求，已录。  \n2. plan-queue“PLAN-QUEUE拍”报fired=3、kicks=0，有已触发但未执行计划，已录。  \n\n②应动何件  \n两件皆立协同不候：件1即协解析锚点并同步律吕坐标；件2即协排查滞kick根因并强制清零推进。  \n\n③未闭项推进  \n未闭项为空，暂无挂碍；下一步维持SI2空窗巡检。  \n\n④生债一条  \n生债：建《lgt-03-disc-anchor》与PLAN-QUEUE的锚定-执行回环校验单，防fired滞kick。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
