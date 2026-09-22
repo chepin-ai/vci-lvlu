@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260922T073749Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "①何事  \n- hub广播：lgt-03-disc-anchor.md 锚点文档同步。  \n- plan队列：PLAN-QUEUE拍已触发3次，kicks=0，执行层积压。  \n\n②应动何件  \n- 立协同 PLAN-QUEUE拍 kicks=0 积压项，不待。  \n\n③未闭项推进  \n- 无未闭项；队列归零，待下次拍频填入。  \n\n④生债一条  \n- 生债：须核查 lgt-03-disc-anchor.md 的锚点变更规则是否应接入 PLAN-QUEUE 自动 kicks 条件。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
