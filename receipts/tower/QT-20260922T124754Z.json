@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260922T124754Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "①何事\n- hub-broadcast「lgt-03-disc-anchor.md」：律吕 disc-anchor 锚定诉求，待阅录；\n- PLAN-QUEUE拍：fired=3/kicks=0，三次触发零执行，积压。\n\n②应动何件\n- 立协同PLAN-QUEUE拍清积压（不候）。\n\n③未闭项推进\n- 无未闭项。\n\n④生债一条\n- 生「PLAN-QUEUE拍 fired≥1 时 auto-kick 兜底」债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
