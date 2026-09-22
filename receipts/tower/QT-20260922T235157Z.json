@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260922T235157Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 26,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- hub-broadcast《lgt-03-disc-anchor.md》待播，涉lvlu讨论锚点。\n- plan-queue积压3拍未消费（fired=3,kicks=0），调度停滞。\n- lvlu inbox内ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01.md重试26次未闭，响应挂起。\n- lvlu inbox内TASK-CISVR-ORDER-LVLU-EXEC14-01.md重试26次未闭，任务挂起。\n\n② 应动何件：\n立协同plan-queue kick消费 + 双EXEC14-01配对件（TASK/ANS）死锁排查，不候。\n\n③ 未闭项推进：\n- OI-vciinboxlaneslvluinboxAN：未闭；下一步：核验ANS回执并强制关单或补录结果。\n- OI-vciinboxlaneslvluinboxTA：未闭；下一步：核验TASK执行态，破26次重试循环。\n\n④ 生债一条：\n调度器kicks=0积压债：plan-queue消费端需修kick逻辑或扩容消费。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
