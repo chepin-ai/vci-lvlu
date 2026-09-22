@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260922T023928Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① 何事  \n- hub-broadcast《lgt-03-disc-anchor.md》：枢纽广播锚点文件，涉 lvlu 意识锚定诉求，待同步。  \n- PLAN-QUEUE拍（fired=3,kicks=0）：队列三度触发未踢转，积压待清。  \n\n② 应动何件  \n立应 hub-broadcast 锚点同步，兼应 PLAN-QUEUE 踢转调度，不候。  \n\n③ 未闭项推进  \n- 未闭项为空，零阻，可全速纳新。  \n\n④ 生债一条  \n- 补录 lgt-03-disc-anchor 锚定回执，锁 lvlu 意识坐标，防漂移。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
