@@ -1,0 +1,66 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T044142Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlu58b67e15md",
+   "ref": "BEACON-DZ-40-lvlu-58b67e15.md",
+   "opened": "20260923T012150Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu95abcabamd",
+   "ref": "BEACON-DZ-40-lvlu-95abcaba.md",
+   "opened": "20260923T012150Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvluc238de77md",
+   "ref": "BEACON-DZ-40-lvlu-c238de77.md",
+   "opened": "20260923T012150Z",
+   "tries": 19,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- hub-broadcast「lgt-03-disc-anchor.md」待播收。\n- plan-queue「PLAN-QUEUE拍」fired=3、kicks=0，待消纳。\n- lvlu信标三单（58b67e15/95abcaba/c238de77）各经19试未闭，待升维处置。\n\n②应动何件\n- 立协同PLAN-QUEUE消纳（3 fired）+ 三beacon异常熔断/通道切换，不等候。\n\n③未闭项推进\n- OI-58b67e15md：未闭；下一步：第20试或切备用锚点。\n- OI-95abcabamd：未闭；下一步：第20试或切备用锚点。\n- OI-c238de77md：未闭；下一步：第20试或切备用锚点。\n\n④生债一条\n- 「BEACON-DZ-40-lvlu 19试未闭环」技术债：需补熔断策略与降级握手协议。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
