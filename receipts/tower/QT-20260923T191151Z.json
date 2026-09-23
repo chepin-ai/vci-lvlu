@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T191151Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-129cfa5e.md",
+   "opened": "20260923T164544Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260923.md",
+   "opened": "20260923T164544Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-4c88b92b.md",
+   "opened": "20260923T164544Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260923T184746Z.md",
+   "opened": "20260923T190024Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 候件：PLAN-QUEUE拍3踢0，队列正常；OI-AC塔台ACK未闭(t15)；OI-AU密钥重分配未闭(t15)；OI-RE轻推未闭(t15)；OI-EX轨道旁路未闭(t2)。\n\n② 应动：AU件（KEY-REASSIGN涉lvlu核心权限）立协同不候；EX件（ORBIT执行旁路）同步立启。\n\n③ 推进：AC未闭/补发ACK-CONF或链检；AU未闭/立即闭环密钥重分配；RE未闭/核目标态，拒收则升压；EX未闭/确认旁路许可后执CAP-02。\n\n④ 生债：AU件tries=15未闭，生SI0响应延迟债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
