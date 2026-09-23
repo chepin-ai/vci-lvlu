@@ -1,0 +1,76 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T033307Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu58b67e15md",
+   "ref": "BEACON-DZ-40-lvlu-58b67e15.md",
+   "opened": "20260923T012150Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu95abcabamd",
+   "ref": "BEACON-DZ-40-lvlu-95abcaba.md",
+   "opened": "20260923T012150Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvluc238de77md",
+   "ref": "BEACON-DZ-40-lvlu-c238de77.md",
+   "opened": "20260923T012150Z",
+   "tries": 12,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件PLAN-QUEUE：触发3次未消费。\n- OI-ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01：lvlu应答件45试未闭。\n- OI-TASK-CISVR-ORDER-LVLU-EXEC14-01：lvlu订单执行任务45试未闭（涉lvlu诉求）。\n- OI-BEACON-DZ-40-lvlu-58b67e15：信标12试未闭。\n- OI-BEACON-DZ-40-lvlu-95abcaba：信标12试未闭。\n- OI-BEACON-DZ-40-lvlu-c238de77：信标12试未闭。\n\n②应动：\n- 立协lvlu订单执行任务及ANS配对件（45试卡死）。\n- 立协PLAN-QUEUE积压消费。\n\n③推进：\n- OI-ANS...AN：未闭，根因定位后强关/转义。\n- OI-TASK...TA：未闭，拉lvlu执行日志重推。\n- OI-BEACON...15：未闭，批量校验DZ-40心跳。\n- OI-BEACON...ba：未闭，同批清理。\n- OI-BEACON...77：未闭，同批清理。\n\n④生债：\n- lvlu执行45试无熔断，生债：EXEC14重试策略需加降级与死信队列。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
