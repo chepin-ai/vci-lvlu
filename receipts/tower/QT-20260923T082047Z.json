@@ -1,0 +1,76 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T082047Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlu58b67e15md",
+   "ref": "BEACON-DZ-40-lvlu-58b67e15.md",
+   "opened": "20260923T012150Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu95abcabamd",
+   "ref": "BEACON-DZ-40-lvlu-95abcaba.md",
+   "opened": "20260923T012150Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvluc238de77md",
+   "ref": "BEACON-DZ-40-lvlu-c238de77.md",
+   "opened": "20260923T012150Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu81a9234bmd",
+   "ref": "BEACON-DZ-40-lvlu-81a9234b.md",
+   "opened": "20260923T063017Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvluf6ccd35dmd",
+   "ref": "BEACON-DZ-40-lvlu-f6ccd35d.md",
+   "opened": "20260923T063017Z",
+   "tries": 11,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件：PLAN-QUEUE拍已fired=3而kicks=0，队列未消化。\n- 未闭项：BEACON-DZ-40-lvlu五信标均open，58b67e15/95abcaba/c238de77各39试，81a9234b/f6ccd35d各11试。\n- lvlu诉求：五信标高悬未落，需闭环。\n\n②应动何件：\n- 立协同kick PLAN-QUEUE拍（不候）。\n- 立协同排查三笔39试信标阻塞（不候）。\n\n③未闭项推进：\n- 58b67e15：未闭/下一步：39试熔断诊断。\n- 95abcaba：未闭/下一步：39试熔断诊断。\n- c238de77：未闭/下一步：39试熔断诊断。\n- 81a9234b：未闭/下一步：重试验锚点。\n- f6ccd35d：未闭/下一步：重试验锚点。\n\n④生债一条：\n- 生债：设BEACON-DZ-40-lvlu超20试自动熔断降级机制。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
