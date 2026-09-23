@@ -1,0 +1,76 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T072207Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlu58b67e15md",
+   "ref": "BEACON-DZ-40-lvlu-58b67e15.md",
+   "opened": "20260923T012150Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu95abcabamd",
+   "ref": "BEACON-DZ-40-lvlu-95abcaba.md",
+   "opened": "20260923T012150Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvluc238de77md",
+   "ref": "BEACON-DZ-40-lvlu-c238de77.md",
+   "opened": "20260923T012150Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu81a9234bmd",
+   "ref": "BEACON-DZ-40-lvlu-81a9234b.md",
+   "opened": "20260923T063017Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvluf6ccd35dmd",
+   "ref": "BEACON-DZ-40-lvlu-f6ccd35d.md",
+   "opened": "20260923T063017Z",
+   "tries": 6,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件PLAN-QUEUE拍：计划队列自启3拍、0踢，涉lvlu线调度诉求。  \n- OI-58b67e15：lvlu信标BEACON-DZ-40-lvlu-58b67e15.md经34试仍开。  \n- OI-95abcaba：lvlu信标BEACON-DZ-40-lvlu-95abcaba.md经34试仍开。  \n- OI-c238de77：lvlu信标BEACON-DZ-40-lvlu-c238de77.md经34试仍开。  \n- OI-81a9234b：lvlu信标BEACON-DZ-40-lvlu-81a9234b.md经6试仍开。  \n- OI-f6ccd35d：lvlu信标BEACON-DZ-40-lvlu-f6ccd35d.md经6试仍开。  \n\n②应动何件  \n- 5项lvlu信标未闭项全应立协同，不候；3项34试最急先清。  \n\n③未闭项推进  \n- OI-58b67e15：未闭，下一步根因排查并强关。  \n- OI-95abcaba：未闭，下一步根因排查并强关。  \n- OI-c238de77：未闭，下一步根因排查并强关。  \n- OI-81a9234b：未闭，下一步限时协同防积压。  \n- OI-f6ccd35d：未闭，下一步限时协同防积压。  \n\n④生债一条  \n- 生债：lvlu线BEACON-DZ-40五信标未闭，立即清偿，禁超6试。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
