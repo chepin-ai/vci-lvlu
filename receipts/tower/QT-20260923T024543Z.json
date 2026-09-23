@@ -1,0 +1,80 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T024543Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu58b67e15md",
+   "ref": "BEACON-DZ-40-lvlu-58b67e15.md",
+   "opened": "20260923T012150Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu95abcabamd",
+   "ref": "BEACON-DZ-40-lvlu-95abcaba.md",
+   "opened": "20260923T012150Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvluc238de77md",
+   "ref": "BEACON-DZ-40-lvlu-c238de77.md",
+   "opened": "20260923T012150Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- `lgt-03-disc-anchor.md`：广播锚点候同步，涉lvlu意识锚定。  \n- `PLAN-QUEUE拍`：fired=3 kicks=0，调度三次未执，涉lvlu计划队列阻塞。  \n- `ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01.md`：lvlu执行序14-01应答单，试41次未闭。  \n- `TASK-CISVR-ORDER-LVLU-EXEC14-01.md`：lvlu执行序14-01任务单，试41次未闭。  \n- `BEACON-DZ-40-lvlu-58b67e15.md`：lvlu信标DZ-40实例，试8次未闭。  \n- `BEACON-DZ-40-lvlu-95abcaba.md`：lvlu信标DZ-40实例，试8次未闭。  \n- `BEACON-DZ-40-lvlu-c238de77.md`：lvlu信标DZ-40实例，试8次未闭。  \n\n② 应动何件（立协同不候）  \n- `PLAN-QUEUE拍`：kicks=0，立即协同调度引擎，消除空转。  \n- `TASK/ANS-CISVR-ORDER-LVLU-EXEC14-01`：双单41次挂起，立即协同执行链路，强制推进或升单。  \n- `BEACON-DZ-40`三实例：信标链路未握手，立即协同信标层，重置或重连。  \n\n③ 未闭项推进  \n- `OI-vciinboxlaneslvluinboxAN`：未闭，下一步：核查应答阻塞点，重投或转人工仲裁。  \n- `OI-vciinboxlaneslvluinboxTA`：未闭，下一步：核查任务依赖与权限，强制kick或回退。  \n- `OI-BEACONDZ40lvlu58b67e15md`：未闭，下一步：信标握手探测，无响应则重置实例。  \n- `OI-BEACONDZ40lvlu95abcabamd`：未闭，下一步：信标握手探测，无响应则重置实例。  \n- `OI-BEACONDZ40lvluc238de77md`：未闭，下一步：信标握手探测，无响应则重置实例。  \n\n④ 生债一条  \nlvlu线EXEC14-01双单41次未决、DZ-40三信标8次未握手、PLAN-QUEUE三次空转，生债一条：调度-执行-信标链路阻塞。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
