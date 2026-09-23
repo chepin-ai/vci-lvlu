@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T003457Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 30,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件 PLAN-QUEUE拍 fired=3/kicks=0，计划队列已三次触发但执行层零响应。\n- 未闭项 ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01.md 已尝试30次未闭，为 lvlu 应答 CISVR 订单 EXEC14-01 之回件通道。\n- 未闭项 TASK-CISVR-ORDER-LVLU-EXEC14-01.md 已尝试30次未闭，为 lvlu 执行 CISVR 订单 EXEC14-01 之本体任务。\n\n② 应动何件：\n- 应立协 TASK 与 ANS 两件，联动推进 EXEC14-01 订单履约与答复回填，不候。\n\n③ 未闭项推进：\n- OI-vciinboxlaneslvluinboxAN：未闭",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
