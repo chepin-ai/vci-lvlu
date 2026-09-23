@@ -1,0 +1,80 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T014635Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu58b67e15md",
+   "ref": "BEACON-DZ-40-lvlu-58b67e15.md",
+   "opened": "20260923T012150Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu95abcabamd",
+   "ref": "BEACON-DZ-40-lvlu-95abcaba.md",
+   "opened": "20260923T012150Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvluc238de77md",
+   "ref": "BEACON-DZ-40-lvlu-c238de77.md",
+   "opened": "20260923T012150Z",
+   "tries": 3,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 广播件 `lgt-03-disc-anchor.md` 入候待览。  \n- `PLAN-QUEUE拍 fired=3 kicks=0` 待续，无踢出但需确认下一步拍发。  \n- 未闭项涉 lvlu 诉求：ANS/TASK 双件（`EXEC14-01`）36 次尝试未闭环；`BEACON-DZ-40` 信标三件刚入 3 试，待阅。  \n\n② 应动何件（立协同不候）  \n- **立动** `OI-vciinboxlaneslvluinboxAN` + `OI-vciinboxlaneslvluinboxTA`：36 试异常，不候，立即协同上级节点或人工仲裁。  \n- **立动** `BEACON-DZ-40` 三件合并检视，不候逐一处理。  \n\n③ 未闭项推进  \n- `OI-vciinboxlaneslvluinboxAN`：未闭；下一步——输出终态 ANS 或标记失败，强制终止空转。  \n- `OI-vciinboxlaneslvluinboxTA`：未闭；下一步——核对 `EXEC14-01` 交付物状态，若已完成则立即闭环。  \n- `OI-BEACONDZ40lvlu58b67e15md`：未闭；下一步——读信标内容，若为同批次冗余心跳则批量归档。  \n- `OI-BEACONDZ40lvlu95abcabamd`：未闭；下一步——提取其中 lvlu 诉求若有，否则随 trio 合并闭项。  \n- `OI-BEACONDZ40lvluc238de77md`：未闭；下一步——完成 DZ-40 信标 trio 合并闭项，消除冗余。  \n\n④ 生债一条  \n- 生债：`EXEC14-01` 双件 36 试未决，已超自动重试阈值，记 lvlu 线异常债一次，待上级节点或律吕仲裁强制清账。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
