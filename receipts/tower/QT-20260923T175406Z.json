@@ -1,0 +1,70 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T175406Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-5545a06c.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-129cfa5e.md",
+   "opened": "20260923T164544Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260923.md",
+   "opened": "20260923T164544Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-4c88b92b.md",
+   "opened": "20260923T164544Z",
+   "tries": 7,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- hub-broadcast：收lgt-03-disc-anchor.md锚点广播。\n- lane-inbox：收ACK-LGT-TOWER-LVLU-5545a06c.md（涉lvlu回执，录）。\n- plan-queue：PLAN-QUEUE已触发3拍、执行0次，队列空转。\n\n②应动何件：\n- 立动plan-queue积压拍（协同踢出），并回认lane-inbox新ACK；两不候。\n\n③未闭项推进：\n- AC（129cfa5e）：未闭，发终确认或转归档。\n- AU（KEY-REASSIGN）：未闭，办结密钥重分配或发拒止回令。\n- RE（4c88b92b）：未闭，落实催办内容或出具不可行据以强闭。\n\n④生债：\n- plan-queue kicks=0之执行黑洞，待补超时熔断与自动强踢机制。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
