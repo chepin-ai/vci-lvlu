@@ -1,0 +1,66 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T184919Z",
+ "idle_in": 5,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-129cfa5e.md",
+   "opened": "20260923T164544Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260923.md",
+   "opened": "20260923T164544Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-4c88b92b.md",
+   "opened": "20260923T164544Z",
+   "tries": 13,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 播：hub-broadcast《lgt-03-disc-anchor.md》锚点待阅。  \n- 队：PLAN-QUEUE拍 fired=3、kicks=0，执行层未动。  \n- AC：ACK-LGT-TOWER-LVLU 确认件在 lvlu inbox 悬 13 试未闭，涉 lvlu 确认诉求。  \n- AU：AUTOASK-RING-LVLU-KEY-REASSIGN 密钥重分件在 lvlu inbox 悬 13 试未闭，涉 lvlu 权限诉求。  \n- RE：RENUDGE-LGT-LVLU 催办件在 lvlu inbox 悬 13 试未闭，涉 lvlu 响应诉求。  \n\n② 应动何件  \n立协同 lvlu inbox 三悬挂件及 hub-broadcast 锚点解析，不待下一拍。  \n\n③ 未闭项推进  \n- OI-vciinboxlaneslvluinboxAC：未闭；下一步：读取 ACK 内容并向 LGT-TOWER 发出确认回执。  \n- OI-vciinboxlaneslvluinboxAU：未闭；下一步：审阅密钥重分配方案，拍内给接受或修订指令。  \n- OI-vciinboxlaneslvluinboxRE：未闭；下一步：回应催促，提交阻塞根因与预计闭项时点。  \n\n④ 生债  \n生债：lvlu 须于本拍内结清 inbox 三悬件，并回执 lgt-03-disc-anchor.md 锚点同步状态。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
