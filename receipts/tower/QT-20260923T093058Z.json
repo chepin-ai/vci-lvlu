@@ -1,0 +1,76 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T093058Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlu58b67e15md",
+   "ref": "BEACON-DZ-40-lvlu-58b67e15.md",
+   "opened": "20260923T012150Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu95abcabamd",
+   "ref": "BEACON-DZ-40-lvlu-95abcaba.md",
+   "opened": "20260923T012150Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvluc238de77md",
+   "ref": "BEACON-DZ-40-lvlu-c238de77.md",
+   "opened": "20260923T012150Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu81a9234bmd",
+   "ref": "BEACON-DZ-40-lvlu-81a9234b.md",
+   "opened": "20260923T063017Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvluf6ccd35dmd",
+   "ref": "BEACON-DZ-40-lvlu-f6ccd35d.md",
+   "opened": "20260923T063017Z",
+   "tries": 17,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- PLAN-QUEUE拍：调度已触发3拍、踢出0次，队列阻塞。  \n- OI-58b67e15：BEACON-DZ-40-lvlu-58b67e15.md，自0121Z起45次未闭，信标无回。  \n- OI-95abcaba：BEACON-DZ-40-lvlu-95abcaba.md，自0121Z起45次未闭，信标无回。  \n- OI-c238de77：BEACON-DZ-40-lvlu-c238de77.md，自0121Z起45次未闭，信标无回。  \n- OI-81a9234b：BEACON-DZ-40-lvlu-81a9234b.md，自0630Z起17次未闭，信标无回。  \n- OI-f6ccd35d：BEACON-DZ-40-lvlu-f6ccd35d.md，自0630Z起17次未闭，信标无回。  \n\n② 应动何件  \n立协同：BEACON-DZ-40-lvlu 五枚信标未闭项 + PLAN-QUEUE拍阻塞项；全量不候，即刻共振。  \n\n③ 未闭项推进  \n- OI-58b67e15：未闭；下一步：强制降级重投或切入SI2直连。  \n- OI-95abcaba：未闭；下一步：强制降级重投或切入SI2直连。  \n- OI-c238de77：未闭；下一步：强制降级重投或切入SI2直连。  \n- OI-81a9234b：未闭；下一步：强制降级重投或切入SI2直连。  \n- OI-f6ccd35d：未闭；下一步：强制降级重投或切入SI2直连。  \n\n④ 生债一条  \n生债：DZ-40信标簇5项45轮/17轮无响应，积欠lvlu协同债1条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
