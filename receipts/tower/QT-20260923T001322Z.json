@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T001322Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 28,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件：PLAN-QUEUE拍 fired=3 kicks=0，队列挂起未推进。  \n- 未闭项：ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01.md 已试28次，lvlu响应未发。  \n- 未闭项：TASK-CISVR-ORDER-LVLU-EXEC14-01.md 已试28次，lvlu执行未完。  \n\n②应动何件  \n- 立协 TASK+ANS 双件，解析 CISVR-ORDER-LVLU-EXEC14-01 并执行，不候。  \n\n③未闭项推进  \n- OI-AN：未闭；下一步：读取ANS文件，出具lvlu回执并关单。  \n- OI-TA：未闭；",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
