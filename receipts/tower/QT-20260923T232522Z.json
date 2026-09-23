@@ -1,0 +1,76 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T232522Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-129cfa5e.md",
+   "opened": "20260923T164544Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260923.md",
+   "opened": "20260923T164544Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-4c88b92b.md",
+   "opened": "20260923T164544Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260923T184746Z.md",
+   "opened": "20260923T190024Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260913T014500Z.md",
+   "opened": "20260923T204215Z",
+   "tries": 16,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n候件：PLAN-QUEUE拍发3次、kicks0，队列积滞未清。  \nAC：ACK-LGT-TOWER-LVLU塔台确认未回，38试悬停。  \nAU：AUTOASK-RING-LVLU-KEY-REASSIGN环钥重分配未应答，38试悬停。  \nRE：RENUDGE-LGT-LVLU再催促未达，38试悬停。  \nEX：EXEC-ORBIT-ORBIT-CAP-02-BYPASS旁路执行未决，25试悬停。  \nOR：ORBIT-CAP-01轨道能力项未闭，16试悬停。  \n\n② 应动何件  \nAC/AU/RE/EX四件立协同、不候；OR同步并轨。  \n\n③ 未闭项推进  \nAC：未闭，下一步强发ACK并锁塔台链路。  \nAU：未闭，下一步启KEY-REASSIGN-BYPASS绕环。  \nRE：未闭，下一步升频CRIT-NUDGE。  \nEX：未闭，下一步验旁路令牌即EXEC。  \nOR：未闭，下一步并入主轨消标。  \n\n④ 生债一条  \nlvlu inbox五件高悬，38/25/16试链路债积，需一次总清。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
