@@ -1,0 +1,66 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T045224Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlu58b67e15md",
+   "ref": "BEACON-DZ-40-lvlu-58b67e15.md",
+   "opened": "20260923T012150Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu95abcabamd",
+   "ref": "BEACON-DZ-40-lvlu-95abcaba.md",
+   "opened": "20260923T012150Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvluc238de77md",
+   "ref": "BEACON-DZ-40-lvlu-c238de77.md",
+   "opened": "20260923T012150Z",
+   "tries": 20,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① hub-broadcast「lgt-03-disc-anchor.md」：律吕锚点广播，涉lvlu基线设定，录。PLAN-QUEUE拍fired=3 kicks=0：三计划已激活，涉lvlu排程，录。\n\n② PLAN-QUEUE拍（三拍积压，立协同不候）。\n\n③ OI-BEACONDZ40lvlu58b67e15md：未闭，tries=20超阈，下一步升频/转审。OI-BEACONDZ40lvlu95abcabamd：未闭，tries=20超阈，下一步升频/转审。OI-BEACONDZ40lvluc238de77md：未闭，tries=20超阈，下一步升频/转审。\n\n④ 生债：lvlu线对DZ-40三beacon各欠一闭，待偿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
