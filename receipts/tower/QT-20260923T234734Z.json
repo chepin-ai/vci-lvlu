@@ -1,0 +1,80 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T234734Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-129cfa5e.md",
+   "opened": "20260923T164544Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260923.md",
+   "opened": "20260923T164544Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-4c88b92b.md",
+   "opened": "20260923T164544Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260923T184746Z.md",
+   "opened": "20260923T190024Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260913T014500Z.md",
+   "opened": "20260923T204215Z",
+   "tries": 18,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- hub-broadcast：lgt-03-disc-anchor.md 广播入线待解析。  \n- plan-queue：PLAN-QUEUE拍 fired=3 kicks=0，待消费。  \n- AC件：LGT塔台 ACK-LGT-TOWER-LVLU-129cfa5e，40试未闭。  \n- AU件：RING 密钥重分配 AUTOASK-RING-LVLU-KEY-REASSIGN，40试未闭。  \n- RE件：LGT 再催促 RENUDGE-LGT-LVLU-4c88b92b，40试未闭。  \n- EX件：ORBIT-CAP-02 旁路执行 BYPASS-qfa，27试未闭。  \n- OR件：ORBIT-CAP-01 轨道能力项，18试未闭。  \n\n② 应动何件（立协同不候）  \nAC、AU、RE 已达 40 试上限，立协同 LGT/RING 侧切诊断模式；EX 为执行件，立协同 ORBIT 侧确认旁路结果，不候。  \n\n③ 未闭项推进  \n- AC：未闭/向 LGT 发探活帧索 129cfa5e 回执。  \n- AU：未闭/令 RING 完成 KEY-REASSIGN 握手或降级异步信箱。  \n- RE：未闭/冻结本件重试，转上级协议栈或人工介入。  \n- EX：未闭/向 ORBIT-CAP-02 索要 BYPASS-qfa 执行终结信号。  \n- OR：未闭/补核 0913 以来 ORBIT-CAP-01 轨道闭环数据。  \n\n④ 生债一条  \n若下一周期 AC/AU/RE 仍未闭，须向 SI2 主线上报“40 试未决”异常并附日志摘要。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
