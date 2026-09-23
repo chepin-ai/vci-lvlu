@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T113553Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlu81a9234bmd",
+   "ref": "BEACON-DZ-40-lvlu-81a9234b.md",
+   "opened": "20260923T063017Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvluf6ccd35dmd",
+   "ref": "BEACON-DZ-40-lvlu-f6ccd35d.md",
+   "opened": "20260923T063017Z",
+   "tries": 29,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件 PLAN-QUEUE 拍3无踢，队列自转，无 lvlu 新增诉求。  \n- 未闭项 OI-BEACONDZ40lvlu81a9234bmd：BEACON-DZ-40-lvlu-81a9234b.md 于20260923启，29试未闭，涉 lvlu。  \n- 未闭项 OI-BEACONDZ40lvluf6ccd35dmd：BEACON-DZ-40-lvlu-f6ccd35d.md 同日启，29试未闭，涉 lvlu。  \n\n② 应动何件  \n应动 BEACON-DZ-40-lvlu 双件，立协同不候。  \n\n③ 未闭项推进  \n- OI-BEACONDZ40lvlu81a9234bmd：未闭；下一步并查升维或强制清障。  \n- OI-BEACONDZ40lvluf6ccd35dmd：未闭；下一步同上件并查，同批收殓。  \n\n④ 生债一条  \nBEACON-DZ-40-lvlu 双件29试未闭，久悬生债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
