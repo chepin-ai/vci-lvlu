@@ -1,0 +1,80 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T025755Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu58b67e15md",
+   "ref": "BEACON-DZ-40-lvlu-58b67e15.md",
+   "opened": "20260923T012150Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu95abcabamd",
+   "ref": "BEACON-DZ-40-lvlu-95abcaba.md",
+   "opened": "20260923T012150Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvluc238de77md",
+   "ref": "BEACON-DZ-40-lvlu-c238de77.md",
+   "opened": "20260923T012150Z",
+   "tries": 9,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- lgt-03-disc-anchor.md 广播到港，涉 lvlu 锚点。\n- PLAN-QUEUE拍 fired=3 kicks=0，队列空转。\n- lvlu inbox 双任务（CISVR-ORDER-EXEC14-01）42 次未决。\n- DZ-40 信标 3 则各 9 次未回执。\n\n②应动何件：\n- 立协同 PLAN-QUEUE拍（不候，补 kicks）。\n- 立协同 inbox 双任务（不候，清 42 次挂账）。\n\n③未闭项推进：\n- OI-...AN：未闭，下一步强制 ACK 或退件。\n- OI-...TA：未闭，下一步终局交付或标记失效。\n- OI-...15md：未闭，下一步验活，过期即闭。\n- OI-...abamd：未闭，下一步验活，过期即闭。\n- OI-...e77md：未闭，下一步验活，过期即闭。\n\n④生债一条：\n- lvlu 欠 PLAN-QUEUE kicks=3 推进债，本班必结。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
