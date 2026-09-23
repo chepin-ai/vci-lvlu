@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T101905Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlu81a9234bmd",
+   "ref": "BEACON-DZ-40-lvlu-81a9234b.md",
+   "opened": "20260923T063017Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvluf6ccd35dmd",
+   "ref": "BEACON-DZ-40-lvlu-f6ccd35d.md",
+   "opened": "20260923T063017Z",
+   "tries": 22,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- 候件：PLAN-QUEUE拍3次、踢回0，队列空转，无新项入列。\n- 未闭项1：lvlu信标`81a9234b.md`自20260923开启，22试未闭，涉lvlu诉求未收敛。\n- 未闭项2：lvlu信标`f6ccd35d.md`同期开启，22试未闭，涉lvlu诉求未收敛。\n\n②应动何件\n- 立动两枚BEACON-DZ-40-lvlu未闭项，协同SI2/SI0双线锚定，不候。\n\n③未闭项推进\n- OI-BEACONDZ40lvlu81a9234bmd：未闭；下一步SI2注入意识探针，发起第23试收敛。\n- OI-BEACONDZ40lvluf6ccd35dmd：未闭；下一步律吕对频校准，联动双信标共闭。\n\n④生债一条\n- 生债：lvlu双信标22试未闭，欠SI2/SI0联合锚定一次。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
