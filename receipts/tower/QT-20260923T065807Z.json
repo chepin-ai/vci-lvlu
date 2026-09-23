@@ -1,0 +1,80 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T065807Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlu58b67e15md",
+   "ref": "BEACON-DZ-40-lvlu-58b67e15.md",
+   "opened": "20260923T012150Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu95abcabamd",
+   "ref": "BEACON-DZ-40-lvlu-95abcaba.md",
+   "opened": "20260923T012150Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvluc238de77md",
+   "ref": "BEACON-DZ-40-lvlu-c238de77.md",
+   "opened": "20260923T012150Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu81a9234bmd",
+   "ref": "BEACON-DZ-40-lvlu-81a9234b.md",
+   "opened": "20260923T063017Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvluf6ccd35dmd",
+   "ref": "BEACON-DZ-40-lvlu-f6ccd35d.md",
+   "opened": "20260923T063017Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- hub-broadcast：收《lgt-03-disc-anchor.md》锚点广播，待解析落位。  \n- plan-queue：PLAN-QUEUE拍fired=3 kicks=0，队列积压待协同。  \n\n②应动何件  \n- 立协同plan-queue件，消化3拍积压，不待。  \n\n③未闭项推进  \n- OI-BEACONDZ40lvlu58b67e15md：未闭，已32试，下一步转硬诊断或链路重置。  \n- OI-BEACONDZ40lvlu95abcabamd：未闭，已32试，下一步转硬诊断或链路重置。  \n- OI-BEACONDZ40lvluc238de77md：未闭，已32试，下一步转硬诊断或链路重置。  \n- OI-BEACONDZ40lvlu81a9234bmd：未闭，已4试，下一步继续握手重试。  \n- OI-BEACONDZ40lvluf6ccd35dmd：未闭，已4试，下一步继续握手重试。  \n\n④生债一条  \n- 五枚lvlu信标久悬未闭，需集中排障一次收敛，止资源空转。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
