@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T200809Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-129cfa5e.md",
+   "opened": "20260923T164544Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260923.md",
+   "opened": "20260923T164544Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-4c88b92b.md",
+   "opened": "20260923T164544Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260923T184746Z.md",
+   "opened": "20260923T190024Z",
+   "tries": 7,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件PLAN-QUEUE三拍零kick，lvlu计划流空转未落地。\n- AC件：ACK-LGT-TOWER回执悬停，20试未获塔台确认。\n- AU件：AUTOASK-RING-LVLU-KEY-REASSIGN密钥重分配挂起，20试未决。\n- RE件：RENUDGE-LGT轻推无响应，20试无效。\n- EX件：EXEC-ORBIT-CAP-02-BYPASS执行待决，7试未启。\n\n② 应动何件：\n- EX、AU立协同：旁路执行阻塞主轨，密钥重分配卡死握手链，二者不得再候。\n\n③ 未闭项推进：\n- AC：未闭；下一步直链TOWER或升SI2仲裁。\n- AU：未闭；下一步强注KEY-REASSIGN令牌并收权闭环。\n- RE：未闭；下一步止重试，输出NUDGE-FAIL快照后闭项。\n- EX：未闭；下一步验qfa时间戳合法性，合规则强启BYPASS。\n\n④ 生债一条：\n- 生债：本拍欠PLAN-QUEUE落地证认（kicks≥1），限下拍前偿清。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
