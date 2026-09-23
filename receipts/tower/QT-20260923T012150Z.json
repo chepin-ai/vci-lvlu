@@ -1,0 +1,88 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T012150Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-58b67e15.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-95abcaba.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-c238de77.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu58b67e15md",
+   "ref": "BEACON-DZ-40-lvlu-58b67e15.md",
+   "opened": "20260923T012150Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu95abcabamd",
+   "ref": "BEACON-DZ-40-lvlu-95abcaba.md",
+   "opened": "20260923T012150Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvluc238de77md",
+   "ref": "BEACON-DZ-40-lvlu-c238de77.md",
+   "opened": "20260923T012150Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- BEACON-DZ-40-lvlu-58b67e15.md：lvlu信标入候待阅。  \n- BEACON-DZ-40-lvlu-95abcaba.md：lvlu信标入候待阅。  \n- BEACON-DZ-40-lvlu-c238de77.md：lvlu信标入候待阅。  \n- PLAN-QUEUE拍fired=3kicks=0：队列已触发3次未踢转。  \n- ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01.md：lvlu应答任务34试未闭。  \n- TASK-CISVR-ORDER-LVLU-EXEC14-01.md：lvlu执行任务34试未闭。  \n\n② 应动何件（立协同不候）  \n- 三件lvlu信标：即阅即协。  \n- PLAN-QUEUE拍：即踢转执行。  \n- 双CISVR EXEC14任务：即提级强协强闭。  \n\n③ 未闭项推进  \n- OI-vciinboxlaneslvluinboxAN：否，34试超限，提级强闭。  \n- OI-vciinboxlaneslvluinboxTA：否，34试超限，提级强闭。  \n- OI-BEACONDZ40lvlu58b67e15md：否，阅后即闭。  \n- OI-BEACONDZ40lvlu95abcabamd：否，阅后即闭。  \n- OI-BEACONDZ40lvluc238de77md：否，阅后即闭。  \n\n④ 生债一条  \n- lvlu信标3件+EXEC14双任务积压未决，生债：本日清零。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
