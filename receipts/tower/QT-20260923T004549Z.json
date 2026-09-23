@@ -1,0 +1,67 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T004549Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-TASK-CISVR-WAKE-RELAY-01-LVLU.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-CISVR-WAKE-RELAY-01-LVLU.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 31,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- hub-broadcast《lgt-03-disc-anchor.md》广播锚点待同步。\n- lvlu _lane-inbox 到件《ANS-TASK-CISVR-WAKE-RELAY-01-LVLU.md》中继应答。\n- lvlu _lane-inbox 到件《TASK-CISVR-WAKE-RELAY-01-LVLU.md》中继任务。\n- PLAN-QUEUE拍 fired=3/kicks=0，队列三次触发零推进，卡滞。\n\n② 应动何件：\n立协同 WAKE-RELAY 双件（ANS+TASK）及 PLAN-QUEUE拍，不候。\n\n③ 未闭项推进：\n- OI-AN（ANS-EXEC14-01）：尝试31次未闭，已逾限，下一步强制闭或转异常单。\n- OI-TA（TASK-EXEC14-01）：尝试31次未闭，已逾限，下一步强制闭或转异常单。\n\n④ 生债一条：\n债：PLAN-QUEUE拍 kicks=0 之阻塞根因待溯，限本周期内补 kick 逻辑或清积压。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
