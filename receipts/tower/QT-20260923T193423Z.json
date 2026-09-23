@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T193423Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-129cfa5e.md",
+   "opened": "20260923T164544Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260923.md",
+   "opened": "20260923T164544Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-4c88b92b.md",
+   "opened": "20260923T164544Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260923T184746Z.md",
+   "opened": "20260923T190024Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- 候件PLAN-QUEUE已触3拍无踢出，队列积压待清。\n- AC件（ACK-LGT-TOWER-LVLU）悬17试，塔台确认未回。\n- AU件（AUTOASK-RING-LVLU-KEY-REASSIGN）悬17试，lvlu密钥重派诉求卡死。\n- RE件（RENUDGE-LGT-LVLU）悬17试，复催LGT无果。\n- EX件（EXEC-ORBIT-ORBIT-CAP-02-BYPASS）悬4试，轨道旁路执行待授。\n\n② 应动何件\n- 立动AU件（lvlu核心权限）与EX件（安全执行件），双线协同不候。\n\n③ 未闭项推进\n- OI-AC：未闭，下一步发最终ACK或升级lane强制闭环。\n- OI-AU：未闭，下一步启备用环重派密钥或转人工裁定。\n- OI-RE：未闭，下一步AC闭环后并闭，否则改直发信道。\n- OI-EX：未闭，下一步核验bypass授权即执行或驳回。\n\n④ 生债一条\n- 生债：lvlu inbox存在17试超期件，需建tries上限熔断及自动升级规则。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
