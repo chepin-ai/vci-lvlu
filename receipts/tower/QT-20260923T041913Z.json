@@ -1,0 +1,62 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T041913Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlu58b67e15md",
+   "ref": "BEACON-DZ-40-lvlu-58b67e15.md",
+   "opened": "20260923T012150Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu95abcabamd",
+   "ref": "BEACON-DZ-40-lvlu-95abcaba.md",
+   "opened": "20260923T012150Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvluc238de77md",
+   "ref": "BEACON-DZ-40-lvlu-c238de77.md",
+   "opened": "20260923T012150Z",
+   "tries": 16,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- PLAN-QUEUE拍 fired=3 kicks=0：队列三次触发未清零，积压待清。\n- BEACON-DZ-40-lvlu-58b67e15.md：open，16次尝试未闭，lvlu信标挂死。\n- BEACON-DZ-40-lvlu-95abcaba.md：open，16次尝试未闭，lvlu信标挂死。\n- BEACON-DZ-40-lvlu-c238de77.md：open，16次尝试未闭，lvlu信标挂死。\n\n② 应动何件：\n- 立协同不候：三宗BEACON-DZ-40-lvlu未闭项（16次超限，立即强闭/死信迁移）。\n- 兼动PLAN-QUEUE拍积压（kicks=0，需协同清零）。\n\n③ 未闭项推进：\n- OI-BEACONDZ40lvlu58b67e15md：未闭，下一步强制归档并释放句柄。\n- OI-BEACONDZ40lvlu95abcabamd：未闭，下一步批量死信转移。\n- OI-BEACONDZ40lvluc238de77md：未闭，下一步切旁路写入后人工复核。\n\n④ 生债一条：\n- 生债：BEACON-DZ-40-lvlu系列16次强试未闭，须还一次根因清查与写入通道修复。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
