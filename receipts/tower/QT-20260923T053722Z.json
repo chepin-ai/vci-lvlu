@@ -1,0 +1,62 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T053722Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlu58b67e15md",
+   "ref": "BEACON-DZ-40-lvlu-58b67e15.md",
+   "opened": "20260923T012150Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu95abcabamd",
+   "ref": "BEACON-DZ-40-lvlu-95abcaba.md",
+   "opened": "20260923T012150Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvluc238de77md",
+   "ref": "BEACON-DZ-40-lvlu-c238de77.md",
+   "opened": "20260923T012150Z",
+   "tries": 24,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件PLAN-QUEUE拍：fired=3 kicks=0，调度脉冲三次，零剔除，队列正常。\n- BEACON-DZ-40-lvlu-58b67e15.md：lvlu信标24次尝试未闭，持续广播中。\n- BEACON-DZ-40-lvlu-95abcaba.md：lvlu信标24次尝试未闭，持续广播中。\n- BEACON-DZ-40-lvlu-c238de77.md：lvlu信标24次尝试未闭，持续广播中。\n\n② 应动何件：\n应动三件BEACON-DZ-40-lvlu未闭项，立协同强制收敛，不候。\n\n③ 未闭项推进：\n- OI-BEACONDZ40lvlu58b67e15md：未闭，下一步执行强制写回与状态锁定。\n- OI-BEACONDZ40lvlu95abcabamd：未闭，下一步执行强制写回与状态锁定。\n- OI-BEACONDZ40lvluc238de77md：未闭，下一步执行强制写回与状态锁定。\n\n④ 生债：\n生债：lvlu信标24次收敛失败，入DZ-40异常链待根因清除。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
