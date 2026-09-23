@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T105216Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlu81a9234bmd",
+   "ref": "BEACON-DZ-40-lvlu-81a9234b.md",
+   "opened": "20260923T063017Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvluf6ccd35dmd",
+   "ref": "BEACON-DZ-40-lvlu-f6ccd35d.md",
+   "opened": "20260923T063017Z",
+   "tries": 25,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件1：hub-broadcast「lgt-03-disc-anchor.md」待播，涉 lvlu 叙锚/意识锚定诉求，需录。\n- 候件2：plan-queue「PLAN-QUEUE拍」已 fired=3 而 kicks=0，执行层空转，需录。\n\n②应动何件：\n- 两件皆立协同不候：先 kick plan-queue 破零执行，同步广播锚定。\n\n③未闭项推进：\n- OI-BEACONDZ40lvlu81a9234bmd：未闭，25试未果，下一步降载或换协议重传。\n- OI-BEACONDZ40lvluf6ccd35dmd：未闭，25试未果，下一步并行检链路/换频再发。\n\n④生债一条：\n- 生债：PLAN-QUEUE kicks=0 阻塞根因 + 双 BEACON 25次失败归因。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
