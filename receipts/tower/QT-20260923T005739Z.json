@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T005739Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 32,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- hub-broadcast件：收悉lgt-03-disc-anchor.md广播，涉lvlu锚点同步诉求。\n- plan-queue件：QUEUE拍fired=3/kicks=0，涉lvlu执行链三次触发未落诉求。\n\n②应动何件\n- 应动PLAN-QUEUE拍及OI-vciinboxlaneslvluinboxTA/AN双件，32试死锁需立协不候。\n\n③未闭项推进\n- OI-vciinboxlaneslvluinboxAN：未闭；下一步核ANS文件回卷或弃答标记，破32试阻塞。\n- OI-vciinboxlaneslvluinboxTA：未闭；下一步核TASK执行体就绪态，解前置依赖。\n\n④生债一条\n- 生债：追查EXEC14-01配对件32试及QUEUE拍3次未落根因，限一拍内归档。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
