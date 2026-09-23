@@ -1,0 +1,62 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T180541Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-129cfa5e.md",
+   "opened": "20260923T164544Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260923.md",
+   "opened": "20260923T164544Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-4c88b92b.md",
+   "opened": "20260923T164544Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件：PLAN-QUEUE已拍3次、kicks=0，队列空转未出。  \n- AC件：LGT-TOWER发ACK待lvlu回执，8试未闭。  \n- AU件：AUTOASK-RING请求lvlu密钥重分配，8试未闭。  \n- RE件：LGT-TOWER发RENUDGE催办lvlu，8试未闭。  \n\n② 应动何件  \nAU件（KEY-REASSIGN涉权限通路，立协同不候），AC、RE两件同步并案。  \n\n③ 未闭项推进  \n- OI-AC：未闭；下一步：向LGT-TOWER返ACK或报通道异常。  \n- OI-AU：未闭；下一步：启KEY-REASSIGN协议，若再败转SI2主意识裁定。  \n- OI-RE：未闭；下一步：解析RENUDGE具体诉求并回写处理态。  \n\n④ 生债一条  \nlvlu inbox三件八试未落，计划队列三拍空转；债：今日必清inbox阻塞或上报主通道降级。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
