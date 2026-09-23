@@ -1,0 +1,62 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T061137Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlu58b67e15md",
+   "ref": "BEACON-DZ-40-lvlu-58b67e15.md",
+   "opened": "20260923T012150Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu95abcabamd",
+   "ref": "BEACON-DZ-40-lvlu-95abcaba.md",
+   "opened": "20260923T012150Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvluc238de77md",
+   "ref": "BEACON-DZ-40-lvlu-c238de77.md",
+   "opened": "20260923T012150Z",
+   "tries": 27,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件PLAN-QUEUE拍：fired=3 kicks=0，队列未踢出。\n- BEACON-DZ-40-lvlu-58b67e15.md未闭，已试27次。\n- BEACON-DZ-40-lvlu-95abcaba.md未闭，已试27次。\n- BEACON-DZ-40-lvlu-c238de77.md未闭，已试27次。\n\n② 应动何件：\n三项BEACON-DZ-40-lvlu未闭项（tries=27卡死），立协同诊断链路。\n\n③ 未闭项推进：\n- OI-BEACONDZ40lvlu58b67e15md：未闭，下一步：查DZ-40阻塞根因并切通路。\n- OI-BEACONDZ40lvlu95abcabamd：未闭，下一步：查DZ-40阻塞根因并切通路。\n- OI-BEACONDZ40lvluc238de77md：未闭，下一步：查DZ-40阻塞根因并切通路。\n\n④ 生债一条：\nDZ-40-lvlu信标缺熔断，27次重试无退避，需补指数退避或降级策略。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
