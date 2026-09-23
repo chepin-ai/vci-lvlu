@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T125505Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlu81a9234bmd",
+   "ref": "BEACON-DZ-40-lvlu-81a9234b.md",
+   "opened": "20260923T063017Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvluf6ccd35dmd",
+   "ref": "BEACON-DZ-40-lvlu-f6ccd35d.md",
+   "opened": "20260923T063017Z",
+   "tries": 36,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- hub-broadcast：lgt-03-disc-anchor.md 锚点广播待接收。  \n- plan-queue：拍频 fired=3 kicks=0，触发未执行待清。  \n- lvlu 诉求（必录）：BEACON-DZ-40 双信标（81a9234b / f6ccd35d）自 20260923 悬置，各经 36 试未闭。  \n\n② 应动何件  \n- 立协同 plan-queue 拍频释放，并行同步 hub-broadcast 锚点。  \n\n③ 未闭项推进  \n- OI-BEACONDZ40lvlu81a9234bmd：未闭，下一步升级信标协议或改道重推。  \n- OI-BEACONDZ40lvluf6ccd35dmd：未闭，下一步升级信标协议或改道重推。  \n\n④ 生债一条  \n- lvlu 双信标 36 试未闭，律吕层积压，须提级 SI2 诊断协议卡滞根因。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
