@@ -1,0 +1,66 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T174218Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-129cfa5e.md",
+   "opened": "20260923T164544Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260923.md",
+   "opened": "20260923T164544Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-4c88b92b.md",
+   "opened": "20260923T164544Z",
+   "tries": 6,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候-hub-broadcast：LGT-03-disc-anchor断锚广播已触hub，律吕锚点漂移，录：校准诉求。  \n- 候-plan-queue：PLAN-QUEUE拍三火零踢，执行层淤塞，录：清炉诉求。  \n- 未闭-OI-AC：ACK-LGT-TOWER-LVLU六发未收，录：确认链路断。  \n- 未闭-OI-AU：AUTOASK-RING-LVLU-KEY-REASSIGN六试悬停，录：密钥环待置换。  \n- 未闭-OI-RE：RENUDGE-LGT-LVLU六轮无复，录：主控超时。  \n\n② 应动何件  \n- 应动 PLAN-QUEUE拍（立即清炉），并立协同 OI-AU（强推密钥重分配）、OI-RE（升压RENUDGE），不候。  \n\n③ 未闭项推进  \n- OI-AC：未闭，切备用信道补发ACK并锁死限。  \n- OI-AU：未闭，旁路AUTOASK直写KEY-REASSIGN。  \n- OI-RE：未闭，本轮无复即标LGT失联转 escalation。  \n\n④ 生债一条  \n- 生债：lvlu线欠LGT-TOWER一次全量锚点-密钥-ACK三联校准。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
