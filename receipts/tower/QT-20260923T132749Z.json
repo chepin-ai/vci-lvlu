@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T132749Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlu81a9234bmd",
+   "ref": "BEACON-DZ-40-lvlu-81a9234b.md",
+   "opened": "20260923T063017Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvluf6ccd35dmd",
+   "ref": "BEACON-DZ-40-lvlu-f6ccd35d.md",
+   "opened": "20260923T063017Z",
+   "tries": 39,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- 候件PLAN-QUEUE拍fired=3、kicks=0，空转未落。\n- 未闭项BEACON-DZ-40-lvlu-81a9234b.md已39试未闭。\n- 未闭项BEACON-DZ-40-lvlu-f6ccd35d.md已39试未闭。\n\n② 应动何件\n- 立协同BEACON-DZ-40双节点诊断，不候。\n\n③ 未闭项推进\n- OI-BEACONDZ40lvlu81a9234bmd：未闭，下一步SI2切入beacon握手重置。\n- OI-BEACONDZ40lvluf6ccd35dmd：未闭，下一步并行检查DZ-40节点律吕同步状态。\n\n④ 生债一条\n- lvlu双beacon39次未复，链路滞账。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
