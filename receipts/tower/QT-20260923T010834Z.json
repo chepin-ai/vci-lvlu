@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T010834Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 33,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：PLAN-QUEUE已fire三次无kicks，队列待消化；lvlu inbox内ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01.md经33试未闭，响应件滞留；lvlu inbox内TASK-CISVR-ORDER-LVLU-EXEC14-01.md经33试未闭，任务件滞留。\n\n② 应动何件：立动EXEC14-01 TASK/ANS双件协同清理，不候。\n\n③ 未闭项推进：OI-vciinboxlaneslvluinboxAN未闭，下一步SI2介入强关或回写终态；OI-vciinboxlaneslvluinboxTA未闭，下一步核对执行态并归档或重发。\n\n④ 生债一条：生债——EXEC14-01双件33次未闭，记lvlu线阻塞债一条，限时今闭。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
