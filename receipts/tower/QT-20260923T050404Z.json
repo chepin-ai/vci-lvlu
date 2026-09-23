@@ -1,0 +1,62 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T050404Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlu58b67e15md",
+   "ref": "BEACON-DZ-40-lvlu-58b67e15.md",
+   "opened": "20260923T012150Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu95abcabamd",
+   "ref": "BEACON-DZ-40-lvlu-95abcaba.md",
+   "opened": "20260923T012150Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvluc238de77md",
+   "ref": "BEACON-DZ-40-lvlu-c238de77.md",
+   "opened": "20260923T012150Z",
+   "tries": 21,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件PLAN-QUEUE拍fired=3 kicks=0：三击零回，队列拍发失效。  \n- OI-BEACONDZ40lvlu58b67e15md：DZ-40信标58b67e15已21试未闭，lvlu诉求悬置。  \n- OI-BEACONDZ40lvlu95abcabamd：DZ-40信标95abcaba已21试未闭，lvlu诉求悬置。  \n- OI-BEACONDZ40lvluc238de77md：DZ-40信标c238de77已21试未闭，lvlu诉求悬置。  \n\n② 应动何件  \n- 三件BEACON-DZ-40-lvlu信标与PLAN-QUEUE拍发修复，立即协同，不候。  \n\n③ 未闭项推进  \n- OI-B",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
