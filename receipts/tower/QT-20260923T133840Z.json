@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T133840Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlu81a9234bmd",
+   "ref": "BEACON-DZ-40-lvlu-81a9234b.md",
+   "opened": "20260923T063017Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvluf6ccd35dmd",
+   "ref": "BEACON-DZ-40-lvlu-f6ccd35d.md",
+   "opened": "20260923T063017Z",
+   "tries": 40,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：PLAN-QUEUE拍fired=3 kicks=0，队列积压待排；BEACON-DZ-40-lvlu-81a9234b.md尝试40次未闭，lvlu诉求挂起；BEACON-DZ-40-lvlu-f6ccd35d.md尝试40次未闭，lvlu诉求挂起。\n②应动何件：立协PLAN-QUEUE及两件BEACON-DZ-40，不候。\n③未闭项推进：OI-BEACONDZ40lvlu81a9234bmd未闭，下一步升级根因排查或人工介入；OI-BEACONDZ40lvluf6ccd35dmd未闭，下一步升级根因排查或人工介入。\n④生债一条：生债BEACON-DZ-40-lvlu-REVIEW-20260923，录双项40次未闭超时债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
