@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T002411Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxTA",
+   "ref": "vci-inbox:lanes/lvlu/inbox/TASK-CISVR-ORDER-LVLU-EXEC14-01.md",
+   "opened": "20260922T193935Z",
+   "tries": 29,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- PLAN-QUEUE拍：触发3次、推进0次，lvlu计划队列空转。\n- OI-AN：ANS-TASK-CISVR-ORDER-LVLU-EXEC14-01.md已试29次未闭，涉lvlu应答。\n- OI-TA：TASK-CISVR-ORDER-LVLU-EXEC14-01.md已试29次未闭，涉lvlu执行。\n\n②应动何件：\nPLAN-QUEUE拍（立协同，不候）。\n\n③未闭项推进：\n- OI-AN：未闭；下一步：切日志查29次失败根因，无响应则强制闭或升级。\n- OI-TA：未闭；下一步：核对CISVR订单依赖，解阻塞后重试或标记废弃。\n\n④生债：\nlvlu-EXEC14-01双轨卡滞29轮，队列拍火3次零推进，记债待清。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
