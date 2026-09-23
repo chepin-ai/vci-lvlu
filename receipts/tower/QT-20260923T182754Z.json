@@ -1,0 +1,62 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T182754Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-129cfa5e.md",
+   "opened": "20260923T164544Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260923.md",
+   "opened": "20260923T164544Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-4c88b92b.md",
+   "opened": "20260923T164544Z",
+   "tries": 10,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件：PLAN-QUEUE 运行中，fired=3/kicks=0，队列正常。\n- AC件：光塔LVLU回执（ACK-LGT-TOWER-LVLU-129cfa5e）待确认。\n- AU件：LVLU密钥重分配（AUTOASK-RING-LVLU-KEY-REASSIGN）待执行。\n- RE件：光塔LVLU催促（RENUDGE-LGT-LVLU-4c88b92b）待响应。\n\n② 应动何件：\n- 三件均涉lvlu核心链路，立协同不候，并行推进。\n\n③ 未闭项推进：\n- OI-AC：未闭，下一步回执确认或同步光塔状态。\n- OI-AU：未闭，下一步完成密钥重分配或回传拒因。\n- OI-RE：未闭，下一步响应催促并给出闭环时点。\n\n④ 生债一条：\n- 生债：lvlu线三件inbox均达10试未闭，负延迟闭环债一条，限即时消项。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
