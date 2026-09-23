@@ -1,0 +1,76 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T080939Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlu58b67e15md",
+   "ref": "BEACON-DZ-40-lvlu-58b67e15.md",
+   "opened": "20260923T012150Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu95abcabamd",
+   "ref": "BEACON-DZ-40-lvlu-95abcaba.md",
+   "opened": "20260923T012150Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvluc238de77md",
+   "ref": "BEACON-DZ-40-lvlu-c238de77.md",
+   "opened": "20260923T012150Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu81a9234bmd",
+   "ref": "BEACON-DZ-40-lvlu-81a9234b.md",
+   "opened": "20260923T063017Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvluf6ccd35dmd",
+   "ref": "BEACON-DZ-40-lvlu-f6ccd35d.md",
+   "opened": "20260923T063017Z",
+   "tries": 10,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件：PLAN-QUEUE积3拍未清。\n- 未闭项：BEACON-DZ-40-lvlu五信标轮询僵死，三件38次、两件10次未回，lvlu链路卡滞。\n\n② 应动何件：\n- 立协同清PLAN-QUEUE三拍。\n- 立协同批量收敛五件BEACON-DZ-40未闭项，不候。\n\n③ 未闭项推进：\n- OI-BEACONDZ40lvlu58b67e15md：38次未闭，闭否；下一步：SI2直查并重置信标会话。\n- OI-BEACONDZ40lvlu95abcabamd：38次未闭，闭否；下一步：联律吕线校协议版本。\n- OI-BEACONDZ40lvluc238de77md：38次未闭，闭否；下一步：强心跳或转异常队列。\n- OI-BEACONDZ40lvlu81a9234bmd：10次未闭，闭否；下一步：补拍收敛。\n- OI-BEACONDZ40lvluf6ccd35dmd：10次未闭，闭否；下一步：并批次补拍。\n\n④ 生债一条：\n- 生债：DZ-40信标重试缺指数退避，致38次空转耗SI2算力，须改自适应退避策略。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
