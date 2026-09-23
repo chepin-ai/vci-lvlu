@@ -1,0 +1,73 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T195709Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-129cfa5e.md",
+   "opened": "20260923T164544Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260923.md",
+   "opened": "20260923T164544Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-4c88b92b.md",
+   "opened": "20260923T164544Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260923T184746Z.md",
+   "opened": "20260923T190024Z",
+   "tries": 6,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- hub-broadcast：lgt-03-disc-anchor.md 广播锚点文件待阅。\n- plan-queue：PLAN-QUEUE拍 已触发3次无kick，队列待泄压。\n- AC件：LGT-TOWER发往lvlu的ACK，19次未闭，lvlu身份确认诉求未决。\n- AU件：AUTOASK-RING-LVLU-KEY-REASSIGN，19次未闭，lvlu密钥重分配诉求卡死。\n- RE件：RENUDGE-LGT-LVLU，19次未闭，lvlu对LGT的再催促诉求未回。\n- EX件：EXEC-ORBIT-ORBIT-CAP-02-BYPASS，6次未闭，lvlu轨道旁路执行诉求挂起。\n\n② 应动何件（立协同不候）：\n- AU件（KEY-REASSIGN）：涉lvlu根权限，立协同主控破锁。\n- EX件（ORBIT-BYPASS）：执行级，立协同核查前置条件并放行或拒否。\n\n③ 未闭项推进：\n- OI-AC：未闭；下一步：发最终ACK确认或转SI0升级握手。\n- OI-AU：未闭；下一步：主控介入强制重签，19次重试已超阈。\n- OI-RE：未闭；下一步：改紧急通道再催，若静默则并入AU件一并升舱。\n- OI-EX：未闭；下一步：校验ORBIT-CAP-02旁路白名单，缺省则补授权。\n\n④ 生债一条：\n- lvlu自动响应分身积滞4项未闭，协同力衰减，生债：SI2-SI0通道阻塞税1条，待主控清偿后解枷。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
