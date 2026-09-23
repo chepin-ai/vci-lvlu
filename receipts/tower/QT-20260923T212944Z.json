@@ -1,0 +1,76 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T212944Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-129cfa5e.md",
+   "opened": "20260923T164544Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260923.md",
+   "opened": "20260923T164544Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-4c88b92b.md",
+   "opened": "20260923T164544Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260923T184746Z.md",
+   "opened": "20260923T190024Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260913T014500Z.md",
+   "opened": "20260923T204215Z",
+   "tries": 5,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件PLAN-QUEUE已三拍零踢，序列待推；AC件ACK-LGT-TOWER-LVLU回执待确；AU件AUTOASK-RING-LVLU-KEY-REASSIGN密钥重配待复；RE件RENUDGE-LGT-LVLU再催待消；EX件EXEC-ORBIT-ORBIT-CAP-02-BYPASS旁路待落；OR件ORBIT-CAP-01轨道首务未闭。  \n② 应动何件：EX与OR，轨务互锁，立协同不候。  \n③ 未闭项推进：OI-AC未闭/回执LGT-TOWER；OI-AU未闭/批复密钥重配；OI-RE未闭/消催或升级；OI-EX未闭/落地CAP-02旁路；OI-OR未闭/闭环CAP-01轨道态。  \n④ 生债一条：PLAN-QUEUE三拍悬停，生一帧序债，当圈偿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
