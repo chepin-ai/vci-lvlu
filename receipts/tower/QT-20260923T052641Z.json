@@ -1,0 +1,62 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T052641Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlu58b67e15md",
+   "ref": "BEACON-DZ-40-lvlu-58b67e15.md",
+   "opened": "20260923T012150Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu95abcabamd",
+   "ref": "BEACON-DZ-40-lvlu-95abcaba.md",
+   "opened": "20260923T012150Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvluc238de77md",
+   "ref": "BEACON-DZ-40-lvlu-c238de77.md",
+   "opened": "20260923T012150Z",
+   "tries": 23,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件PLAN-QUEUE拍发3次、kicks=0，队列空转无回踢。\n- 未闭项BEACON-DZ-40-lvlu-58b67e15.md经23试未闭，lvlu链路阻塞。\n- 未闭项BEACON-DZ-40-lvlu-95abcaba.md经23试未闭，lvlu链路阻塞。\n- 未闭项BEACON-DZ-40-lvlu-c238de77.md经23试未闭，lvlu链路阻塞。\n\n②应动何件：\n- 立协同三件BEACON-DZ-40-lvlu未闭项，切主动诊断不候自动重试。\n\n③未闭项推进：\n- OI-BEACONDZ40lvlu58b67e15md：未闭，下一步强刷信标握手包。\n- OI-BEACONDZ40lvlu95abcabamd：未闭，下一步检律吕频段占用。\n- OI-BEACONDZ40lvluc238de77md：未闭，下一步启备用lvlu通道。\n\n④生债一条：\n- 欠BEACON-DZ-40-lvlu链路根因结论一条，下次拍发前销。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
