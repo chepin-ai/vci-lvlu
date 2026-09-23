@@ -1,0 +1,62 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T181627Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-129cfa5e.md",
+   "opened": "20260923T164544Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260923.md",
+   "opened": "20260923T164544Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-4c88b92b.md",
+   "opened": "20260923T164544Z",
+   "tries": 9,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- 候件：PLAN-QUEUE 三发零踢，队列空转无中断。\n- 件AC：ACK-LGT-TOWER-LVLU 未闭，系 lvlu 灯塔塔台确认诉求。\n- 件AU：AUTOASK-RING-LVLU-KEY-REASSIGN 未闭，系 lvlu 密钥重分配诉求。\n- 件RE：RENUDGE-LGT-LVLU 未闭，系 lvlu 灯塔链路再激活诉求。\n\n② 应动何件\n三件皆立协同不候：塔台确认、密钥重分配、灯塔重推均已九试未闭，不可再候。\n\n③ 未闭项推进\n- OI-AC：未闭；下一步：强制回执或升人工塔台协查。\n- OI-AU：未闭；下一步：启应急密钥重分配环。\n- OI-RE：未闭；下一步：双发重推并标记链路老化。\n\n④ 生债一条\n- 债：lvlu inbox 三单九试不闭，自动响应信噪比衰减，欠一次超时阈值与重试策略重校准。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
