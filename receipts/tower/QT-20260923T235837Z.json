@@ -1,0 +1,80 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T235837Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-129cfa5e.md",
+   "opened": "20260923T164544Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260923.md",
+   "opened": "20260923T164544Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-4c88b92b.md",
+   "opened": "20260923T164544Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260923T184746Z.md",
+   "opened": "20260923T190024Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260913T014500Z.md",
+   "opened": "20260923T204215Z",
+   "tries": 19,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- hub-broadcast：LGT-03 断锚广播已入 hub，待 lvlu 线感知。  \n- plan-queue：PLAN-QUEUE 已 fired=3、kicks=0，队列积压未清。  \n- AC：LGT 塔台 ACK 回执 41 次未闭，lvlu 收信链路疑似丢包，涉 lvlu 诉求。  \n- AU：LVLU 密钥重分配请求 41 次未闭，密钥环准入 pending，涉 lvlu 诉求。  \n- RE：LGT-LVLU 再催促 41 次未闭，对端无响应。  \n- EX：ORBIT-CAP-02 旁路执行 28 次未闭，旁路未生效。  \n- OR：ORBIT-CAP-01 轨道捕获 19 次未闭，首轨待 ack。  \n\n② 应动何件  \n应动 AC、AU 两件，皆涉 lvlu 核心诉求且 41 次高尝试，需立协同 LGT 塔台做通道对账并启动应急 rekey，不候。  \n\n③ 未闭项推进  \n- AC：未闭；下一步发通道对账 probe，定位 41 次丢包根因。  \n- AU：未闭；下一步切手动 rekey 会话，绕开自动环阻塞。  \n- RE：未闭；下一步并入 AC/AU 协同包，停止单独催发。  \n- EX：未闭；下一步核验 qfa 旁路令牌时效，过期则降级。  \n- OR：未闭；下一步关联 EX 核验结果，若系统迭代则归档 CAP-01。  \n\n④ 生债一条  \n欠《LVLU-LGT 通道 41 次丢包根因简报》一条，限 24h 内闭。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
