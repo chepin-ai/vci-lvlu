@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260923T123228Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ40lvlu81a9234bmd",
+   "ref": "BEACON-DZ-40-lvlu-81a9234b.md",
+   "opened": "20260923T063017Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvluf6ccd35dmd",
+   "ref": "BEACON-DZ-40-lvlu-f6ccd35d.md",
+   "opened": "20260923T063017Z",
+   "tries": 34,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件PLAN-QUEUE拍：fired=3 kicks=0，队列三度触发无执行，lvlu调度空转。\n- 未闭项BEACON-DZ-40-lvlu-81a9234b.md：信标项已启34试未闭，lvlu信标滞留。\n- 未闭项BEACON-DZ-40-lvlu-f6ccd35d.md：信标项已启34试未闭，lvlu信标滞留。\n\n②应动何件：\n- 立协PLAN-QUEUE拍（清阻塞、促kicks，不候）。\n\n③未闭项推进：\n- OI-BEACONDZ40lvlu81a9234bmd：未闭/下一步：第35试或人工归档。\n- OI-BEACONDZ40lvluf6ccd35dmd：未闭/下一步：核对双信标互锁，解除依赖后强闭。\n\n④生债一条：\n- 生债：lvlu线BEACON-40双挂兼QUEUE空转根因待排，",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
