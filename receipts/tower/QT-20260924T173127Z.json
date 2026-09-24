@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T173127Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 17,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：PLAN-QUEUE已触发3次待消费；lvlu收件箱内ORBIT-CAP-01已open且重试17次；lvlu收件箱内R7-CLEAN-CAP02-ACK已open且重试17次。\n\n②应动何件：两OI（OR/R7）已达17试仍open，立协读取内容并强执行/关闭，不候；PLAN-QUEUE同步消费。\n\n③未闭项推进：OI-OR未闭，下一步解析ref并决策闭或升级；OI-R7未闭，下一步解析ref并决策闭或升级。\n\n④生债一条：债—lvlu inbox双OI经17次尝试仍未闭，须排查该管道自动处理失效及阻塞根因。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
