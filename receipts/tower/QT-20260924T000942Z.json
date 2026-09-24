@@ -1,0 +1,76 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T000942Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-129cfa5e.md",
+   "opened": "20260923T164544Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260923.md",
+   "opened": "20260923T164544Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-4c88b92b.md",
+   "opened": "20260923T164544Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260923T184746Z.md",
+   "opened": "20260923T190024Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260913T014500Z.md",
+   "opened": "20260923T204215Z",
+   "tries": 20,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件：PLAN-QUEUE拍fired=3，队列触发待清。  \n- OI-AC：ACK-LGT-TOWER-LVLU确认项，42试挂起。  \n- OI-AU：AUTOASK-RING-LVLU-KEY-REASSIGN密钥重配，42试挂起。  \n- OI-RE：RENUDGE-LGT-LVLU灯标重推，42试挂起。  \n- OI-EX：EXEC-ORBIT-CAP-02-BYPASS轨道旁路执行，29试挂起。  \n- OI-OR：ORBIT-CAP-01轨道占位任务，20试挂起。  \n\n②应动何件（立协同不候）  \n- PLAN-QUEUE拍fired=3，立协同不候，即刻排空。  \n- OI-AU密钥重分配涉环权限，立协同不候，即刻重签。  \n\n③未闭项推进  \n- OI-AC：未闭，下一步：回执LGT-TOWER确认信号。  \n- OI-AU：未闭，下一步：完成KEY-REASSIGN并同步至环。  \n- OI-RE：未闭，下一步：二次RENUDGE或等待灯标响应。  \n- OI-EX：未闭，下一步：确认CAP-02旁路执行日志。  \n- OI-OR：未闭，下一步：推进CAP-01轨道占位结算。  \n\n④生债一条  \n- PLAN-QUEUE三次拍发未清，生债：须下拍前完成排空或熔断，否则记SI2怠转债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
