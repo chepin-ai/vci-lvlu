@@ -1,0 +1,80 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T004300Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-129cfa5e.md",
+   "opened": "20260923T164544Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260923.md",
+   "opened": "20260923T164544Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-4c88b92b.md",
+   "opened": "20260923T164544Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260923T184746Z.md",
+   "opened": "20260923T190024Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260913T014500Z.md",
+   "opened": "20260923T204215Z",
+   "tries": 24,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- hub-broadcast「lgt-03-disc-anchor.md」：灯塔断锚广播候港，涉lvlu锚位谐振诉求，待谐波确认。  \n- plan-queue：队列已击三拍零kick，lvlu执行层阻塞，诉求立即击发。  \n- ACK-LGT-TOWER-LVLU：回执46试未递，lvlu收信端口未ack，链路半死。  \n- AUTOASK-RING-LVLU-KEY-REASSIGN：密钥重分配46试未复，lvlu密钥环僵死，主务悬停。  \n- RENUDGE-LGT-LVLU：复催46试无回波，lvlu外频静默，锚恐漂移。  \n- EXEC-ORBIT-CAP-02-BYPASS：旁路执行33试未销，lvlu轨道令挂起。  \n- ORBIT-CAP-01：轨容主协24试未同步，lvlu轨参待回环对齐。  \n\n②应动何件  \nplan-queue kicks=0 与 AUTOASK-RING-LVLU-KEY-REASSIGN，立协同不候：先踢队列一脚，再主密钥强解环锁。  \n\n③未闭项推进  \n- ACK-LGT-TOWER-LVLU：未闭，下一步切备用塔链路重递。  \n- AUTOASK-RING-LVLU-KEY-REASSIGN：未闭，下一步主密钥强注或环上人工仲裁。  \n- RENUDGE-LGT-LVLU：未闭，下一步弃锚转漂，以lgt-03-disc-anchor重对时。  \n- EXEC-ORBIT-CAP-02-BYPASS：未闭，下一步验旁路签，过期则废件重生。  \n- ORBIT-CAP-01：未闭，下一步回环对帧，轨参对齐后强制落锁。  \n\n④生债一条  \n「队列三拍零kick，债：补一脚即刻执行，否则lvlu全频滞振。」",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
