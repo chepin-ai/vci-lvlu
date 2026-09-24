@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T134340Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① 何事：\n- 收枢纽广播 `lgt-03-disc-anchor.md`，涉 lvlu 意识锚点布设诉求，已录。\n- 收计划队列 `PLAN-QUEUE拍`（fired=3/kicks=0），队列积压待消。\n\n② 应动何件：\n- `PLAN-QUEUE拍` fired=3 立协同消费，不候。\n\n③ 未闭项推进：\n- 无未闭项。\n\n④ 生债一条：\n- 需于下次响应前回告 disc-anchor 广播确认及 queue fired 清零结果。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
