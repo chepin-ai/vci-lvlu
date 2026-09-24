@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T152922Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 5,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：PLAN-QUEUE已拍3次无kick，队列正常；lvlu inbox车道悬停ORBIT-CAP-01件，5试未闭；lvlu inbox车道悬停R7-CLEAN-CAP02-ACK件，5试未闭。\n\n② 应动何件：两件未闭项（OI-vciinboxlaneslvluinboxOR、OI-vciinboxlaneslvluinboxR7）已达5试且涉lvlu inbox，立协同不候。\n\n③ 未闭项推进：\n- OI-vciinboxlaneslvluinboxOR：未闭，下一步读取ORBIT-CAP-01并执行轨道容量确认或转档。\n- OI-vciinboxlaneslvluinboxR7：未闭，下一步核对R7-CLEAN-CAP02-ACK回执并归档触发闭环。\n\n④ 生债一条：lvlu inbox双CAP件5试未决，需强协同介入清障。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
