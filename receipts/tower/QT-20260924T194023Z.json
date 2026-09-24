@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T194023Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 29,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件plan-queue：fired=3/kicks=0，队列已触发待排。\n- OI-vciinboxlaneslvluinboxOR：lvlu inbox内ORBIT-CAP-01挂起29试未闭，涉lvlu轨道容量诉求。\n- OI-vciinboxlaneslvluinboxR7：lvlu inbox内R7-CLEAN-CAP02-ACK挂起29试未闭，涉lvlu清理确认诉求。\n\n②应动何件：立协同OI-OR与OI-R7，不候。\n\n③未闭项推进：\n- OI-vciinboxlaneslvluinboxOR：未闭，下一步：强推ORBIT-CAP-01捕获闭环或SI2升级。\n- OI-vciinboxlaneslvluinboxR7：未闭，下一步：强推R7-CLEAN-CAP02-ACK确认落库或清障。\n\n④生债一条：lvlu inbox双项29试卡债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
