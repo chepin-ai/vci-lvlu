@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T013846Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260923T184746Z.md",
+   "opened": "20260923T190024Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260913T014500Z.md",
+   "opened": "20260923T204215Z",
+   "tries": 29,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件 PLAN-QUEUE 已拍3次、kicks=0，队列积压未出清。\n- 未闭项 EX（EXEC-ORBIT-ORBIT-CAP-02-BYPASS）已尝试38次未闭，lvlu 执行旁路诉求卡滞。\n- 未闭项 OR（ORBIT-CAP-01）已尝试29次未闭，lvlu 轨道能力验证诉求挂起。\n\n② 应动何件：\n立协同 EX、OR 两件（高重试不可再候），并同步踢出 PLAN-QUEUE 积压。\n\n③ 未闭项推进：\n- EX：未闭；下一步切人工或降级路径，终止无效重试。\n- OR：未闭；下一步核查前置依赖并强收敛一次。\n\n④ 生债一条：\n缺重试熔断规则，致38/29次空转耗竭资源；需补“阈值自动升单/熔断”机制。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
