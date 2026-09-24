@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T185756Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 25,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：收枢纽广播 lgt-03-disc-anchor.md，待阅讨论锚点；PLAN-QUEUE 已拍 3 次无 kicks，执行空转；lvlu inbox 积压 ORBIT-CAP-01 与 R7-CLEAN-CAP02-ACK-qlv 两单，各尝 25 次未闭。\n\n②应动何件：立协同 lvlu inbox 两单，不候；同步触发 PLAN-QUEUE 落踢。\n\n③未闭项推进：OI-ORBIT-CAP-01 未闭，下一步读取并执行捕获/轨道确认；OI-R7-CLEAN-CAP02-ACK-qlv 未闭，下一步完成 qlv 回执并关单。\n\n④生债：lvlu inbox 25 试未闭，收债一条——响应链路假活，需排障或降频重试。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
