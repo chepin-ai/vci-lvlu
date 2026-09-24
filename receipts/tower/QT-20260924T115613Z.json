@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T115613Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① 何事  \n- hub-broadcast「lgt-03-disc-anchor.md」入候，待校是否锚定 lvlu 讨论域。  \n- plan-queue「PLAN-QUEUE拍」fired=3、kicks=0，执行未落地，涉 lvlu 通路诉求未响应，已录。  \n\n② 应动何件  \n应动「PLAN-QUEUE拍」件，kicks=0 为执行层拥塞，立协同清障，不候广播。  \n\n③ 未闭项推进  \n未闭项为空，本期无积欠。  \n\n④ 生债  \n生债：PLAN-QUEUE拍 3 次空击日志需归档，并补 kicks=0 阈值熔断规则一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
