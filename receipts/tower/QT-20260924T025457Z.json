@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T025457Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260923T184746Z.md",
+   "opened": "20260923T190024Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260913T014500Z.md",
+   "opened": "20260923T204215Z",
+   "tries": 36,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- hub-broadcast `lgt-03-disc-anchor.md`：涉 lvlu 盘锚点广播，录。  \n- plan-queue `PLAN-QUEUE拍 fired=3 kicks=0`：涉 lvlu 执行拍空转无回踢，录。  \n\n②应动何件  \n- 应动 plan-queue 件（fired=3/kicks=0，立协同补踢，不候）。  \n\n③未闭项推进  \n- OI-vciinboxlaneslvluinboxEX（CAP-02-BYPASS）：未闭，tries=45 触顶，下一步熔断或落盘。  \n- OI-vciinboxlaneslvluinboxOR（ORBIT-CAP-01）：未闭，tries=36，下一步解锁重试或降级。  \n\n④生债一条  \n- 生债：重试阈值缺熔断，须建 40 试硬上限。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
