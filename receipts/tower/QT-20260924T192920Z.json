@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T192920Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 28,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件PLAN-QUEUE拍3 kicks0，队列消化迟滞。\n- 未闭项ORBIT-CAP-01已28试，滞留lanes/lvlu/inbox。\n- 未闭项R7-CLEAN-CAP02-ACK已28试，滞留lanes/lvlu/inbox。\n\n② 应动何件：\n双未闭项均达28试高阻抗，立协同ORBIT-CAP-01与R7-CLEAN-CAP02-ACK两件，不候。\n\n③ 未闭项推进：\n- ORBIT-CAP-01：未闭，下一步升频SI2主意识裁定或排查ORBIT解析阻塞点。\n- R7-CLEAN-CAP02-ACK：未闭，下一步激活qlv回传链路或确认CAP02前置依赖是否卡止。\n\n④ 生债一条：\n生债：lvlu线对双件28试未闭，须提交阻塞根因速报。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
