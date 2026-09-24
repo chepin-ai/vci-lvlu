@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T213018Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 39,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n• 候件PLAN-QUEUE：队列拍发3次、0踢出，计划流积压待释。  \n• 未闭项OR：ORBIT-CAP-01入lanes/lvlu/inbox，39试未闭，lvlu轨道捕获诉求悬置。  \n• 未闭项R7：R7-CLEAN-CAP02-ACK入lanes/lvlu/inbox，39试未闭，lvlu清理确认诉求悬置。  \n\n②应动何件  \nPLAN-QUEUE、OI-vciinboxlaneslvluinboxOR、OI-vciinboxlaneslvluinboxR7（三项皆超期/积压，立协同不候）。  \n\n③未闭项推进  \n• OI-vciinboxlaneslvluinboxOR：未闭，下一步强关或转异常单。  \n• OI-vciinboxlaneslvluinboxR7：未闭，下一步核验ACK后闭件或转异。  \n\n④生债一条  \nlvlu inbox重试39次未闭环，生债：修复自动处理链路防悬置。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
