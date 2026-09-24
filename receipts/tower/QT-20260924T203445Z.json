@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T203445Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 34,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- PLAN-QUEUE拍 fired=3 kicks=0，队列触发但未执行推进。\n- lvlu inbox 内 ORBIT-CAP-01-20260924T145310Z.md 未闭，已试34次。\n- lvlu inbox 内 R7-CLEAN-CAP02-ACK-qlv-20260924T145310Z.md 未闭，已试34次。\n\n② 应动何件：PLAN-QUEUE拍（kicks=0 空转，立协同不候）。\n\n③ 未闭项推进：\n- ORBIT-CAP-01：未闭，下一步核轨道容量并决案。\n- R7-CLEAN-CAP02-ACK：未闭，下一步取R7清理回执并关闭。\n\n④ 生债一条：lvlu-inbox 双项34次重试未闭，生「重试失效债」。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
