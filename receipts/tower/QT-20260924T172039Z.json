@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T172039Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 16,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件PLAN-QUEUE：fired=3 kicks=0，队列三次触发未执行，存在积压。\n- 未闭项OR：ORBIT-CAP-01（lvlu inbox轨道容量项）尝试16次未闭。\n- 未闭项R7：R7-CLEAN-CAP02-ACK-qlv（lvlu inbox清理确认项）尝试16次未闭。\n\n② 应动何件：\n- 立即补kick PLAN-QUEUE三次，并行拉通OR与R7阻塞根因，不候。\n\n③ 未闭项推进：\n- OI-vciinboxlaneslvluinboxOR：未闭，下一步：穿透ORBIT-CAP-01容量锁与上游依赖，旁路或升级。\n- OI-vciinboxlaneslvluinboxR7：未闭，下一步：核验qlv ACK回执有效性，失效则强制清理闭环。\n\n④ 生债一条：\n- 债：PLAN-QUEUE空转及双未闭项16次重试超限，今日内输出根因分析与重试熔断策略。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
