@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T205727Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 36,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 枢纽广播 `lgt-03-disc-anchor.md` 到达，涉 lvlu 域锚点/协议变更，需留意。  \n- `PLAN-QUEUE拍` 已触发 3 项、0 项踢出，lvlu 侧任务流正执行。  \n- lvlu 信箱入站 `ORBIT-CAP-01-20260924T145310Z.md` 待处理，已 36 试未闭。  \n- lvlu 信箱入站 `R7-CLEAN-CAP02-ACK-qlv-20260924T145310Z.md` 待确认，已 36 试未闭。  \n\n② 应动何件  \n- 立协同双未闭项 `OI-vciinboxlaneslvluinboxOR` 与 `OI-vciinboxlaneslvluinboxR7`，不候。  \n\n③ 未闭项推进  \n- `OI-vciinboxlaneslvluinboxOR`：未闭；下一步读取 `ORBIT-CAP-01` 文件，定位 36 试阻塞根因并消歧。  \n- `OI-vciinboxlaneslvluinboxR7`：未闭；下一步读取 `R7-CLEAN-CAP02-ACK-qlv` 文件，确认 ACK 条件或执行清洁协议。  \n\n④ 生债一条  \n- 生债：lvlu inbox 双项 36 次重试无进展，需产一份根因速查表并同步 hub-broadcast 锚点变更。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
