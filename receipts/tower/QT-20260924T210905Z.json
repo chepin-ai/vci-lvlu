@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T210905Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 37,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- lgt-03-disc-anchor.md hub广播入域，录lvlu锚点待同步。\n- PLAN-QUEUE拍 fired=3 kicks=0，录调度空转未落地。\n\n② 应动何件\n两件俱动：hub-broadcast立协（锚点同步），PLAN-QUEUE拍立协（修复kicks=0卡滞）。\n\n③ 未闭项推进\n- OR项：37次未闭；下一步：强解元数据或转死信lane。\n- R7项：37次未闭；下一步：重验qlv-ack握手链路。\n\n④ 生债一条\n\"lvlu inbox 37次重试无熔断，缺指数退避与死信迁移槽。\"",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
