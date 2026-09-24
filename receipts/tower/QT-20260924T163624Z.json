@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T163624Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 12,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① \n- PLAN-QUEUE拍fired=3 kicks=0，lvlu计划队列三度触发未出队，积压待清。\n- ORBIT-CAP-01已启12试未闭，录lvlu轨道维护诉求。\n- R7-CLEAN-CAP02已启12试未闭，录lvlu清理确认诉求。\n\n② \n- 应动PLAN-QUEUE拍与两inbox未闭项，立协同不候。\n\n③ \n- OI-OR：未闭，下一步根查12试失败因并强关ORBIT-CAP-01。\n- OI-R7：未闭，下一步核验ACK回执并关闭R7-CLEAN-CAP02。\n\n④ \n- 生债：PLAN-QUEUE 3拍零出+双inbox各12试未闭，耗lvlu线27轮处理力，记循环协同债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
