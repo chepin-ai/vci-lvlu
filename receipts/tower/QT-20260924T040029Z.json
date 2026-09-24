@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T040029Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260913T014500Z.md",
+   "opened": "20260923T204215Z",
+   "tries": 42,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- lgt-03-disc-anchor.md 广播锚点候阅，无 lvlu 诉求。  \n- PLAN-QUEUE fired=3 kicks=0 队列空转，无 lvlu 诉求。  \n- 未闭项 OI-vciinboxlaneslvluinboxOR 为 lvlu inbox 轨道件，已 42 次尝试未关闭，lvlu 通道阻塞诉求明确。  \n\n②应动何件  \n- 立协同 OI-vciinboxlaneslvluinboxOR（涉 lvlu 且高重试），兼查 PLAN-QUEUE kicks=0 根因。  \n\n③未闭项推进  \n- OI-vciinboxlaneslvluinboxOR：未闭，下一步诊断 lvlu inbox 42 次失败根因并清除阻塞。  \n\n④生债一条  \n- 生债：建 lvlu-inbox 重试熔断规则，防 42 次级阻塞复现。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
