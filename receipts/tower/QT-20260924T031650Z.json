@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T031650Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260923T184746Z.md",
+   "opened": "20260923T190024Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260913T014500Z.md",
+   "opened": "20260923T204215Z",
+   "tries": 38,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件：PLAN-QUEUE拍fired=3/kicks=0，队列拍积压待清。\n- 未闭项EX：EXEC-ORBIT-ORBIT-CAP-02-BYPASS已47试未闭，lvlu inbox执行旁路卡滞。\n- 未闭项OR：ORBIT-CAP-01已38试未闭，lvlu inbox轨道能力卡滞。\n\n② 应动何件：\n- 立动PLAN-QUEUE拍协同双未闭项排障，不候。\n\n③ 未闭项推进：\n- OI-EX：未闭，下一步查旁路阻塞点或强制bypass签闭。\n- OI-OR：未闭，下一步核轨道能力依赖或升档上抛。\n\n④ 生债一条：\n- 债：lvlu inbox双轨项超试未闭，须一次联合排障还队列清白。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
