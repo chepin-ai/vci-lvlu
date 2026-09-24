@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T041206Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260913T014500Z.md",
+   "opened": "20260923T204215Z",
+   "tries": 43,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件：PLAN-QUEUE拍3/0，律吕队列自旋正常，无踢盘中断。  \n- 涉lvlu：ORBIT-CAP-01悬停于lanes/lvlu/inbox，自20260923T204215Z启，43试未闭。  \n\n② 应动何件  \n- 立协OI-vciinboxlaneslvluinboxOR，43试已超自旋阈值，不候。  \n\n③ 未闭项推进  \n- OI-vciinboxlaneslvluinboxOR：未闭/下一步：读取ref文件ORBIT-CAP-01-20260913T014500Z.md，44试前定位卡点（轨道参数/执行器响应），补完上下文后强闭或转人工。  \n\n④ 生债一条  \n- 若QUEUE第4拍前ORBIT-CAP仍未闭环，自动将lvlu inbox该lane标为阻塞并记入滞延债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
