@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T023255Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260923T184746Z.md",
+   "opened": "20260923T190024Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260913T014500Z.md",
+   "opened": "20260923T204215Z",
+   "tries": 34,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- 候件：PLAN-QUEUE拍fired=3、kicks=0，计划队列积3拍待消。\n- 未闭项EX：lvlu inbox中EXEC-ORBIT-ORBIT-CAP-02-BYPASS旁路执行项悬43试未闭。\n- 未闭项OR：lvlu inbox中ORBIT-CAP-01轨道能力项悬34试未闭。\n\n②应动何件\n立协EX与OR两项，主/旁路轨道能力双卡高悬，即刻旁路疏通、不候。\n\n③未闭项推进\n- OI-…EX：未闭，下一步根查BYPASS旁路43试失败点并强执或降级。\n- OI-…OR：未闭，下一步疏通ORBIT-CAP-01主轨34试阻塞并闭环。\n\n④生债\n债：执行链缺重试熔断与自动旁路升级机制，致高tries空转。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
