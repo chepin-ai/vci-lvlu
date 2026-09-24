@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T183639Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 23,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件PLAN-QUEUE：计划队列已触发3次、踢出0次，运转中。\n- 未闭项OR：lvlu收件箱轨道能力项ORBIT-CAP-01开启后已尝试23次未闭。\n- 未闭项R7：lvlu收件箱清理确认项R7-CLEAN-CAP02开启后已尝试23次未闭。\n\n②应动何件：\n立协同lvlu inbox双未闭项（OR/R7），已23次尝试未果，不候；PLAN-QUEUE候件并行检视。\n\n③未闭项推进：\n- OI-vciinboxlaneslvluinboxOR：未闭，下一步：升级协同/人工介入ORBIT-CAP-01。\n- OI-vciinboxlaneslvluinboxR7：未闭，下一步：升级协同/人工介入R7-CLEAN-CAP02。\n\n④生债一条：\n生债：lvlu inbox双项卡滞23轮，需人工协同关闭。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
