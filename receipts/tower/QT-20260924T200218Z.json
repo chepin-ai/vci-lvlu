@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T200218Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 31,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- hub-broadcast《lgt-03-disc-anchor.md》待锚定。\n- PLAN-QUEUE拍 fired=3/kicks=0，调度僵死。\n- ORBIT-CAP-01（vci-inbox/lvlu）31次未闭。\n- R7-CLEAN-CAP02-ACK-qlv（vci-inbox/lvlu）31次未闭。\n\n②应动何件：\n- PLAN-QUEUE拍（立kick破零）。\n- 两inbox未闭项（立协同熔断或关单，止空转）。\n\n③未闭项推进：\n- OI-ORBIT-CAP-01：未闭，下一步截停重试、查依赖或降级归档。\n- OI-R7-CLEAN-CAP02-ACK：未闭，下一步验qlv ACK有效性，无效则关单。\n\n④生债一条：\n- 生债：inbox重试31次无熔断，需补指数退避及人工转义阈值。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
