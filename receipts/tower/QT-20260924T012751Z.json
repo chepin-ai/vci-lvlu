@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T012751Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260923T184746Z.md",
+   "opened": "20260923T190024Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260913T014500Z.md",
+   "opened": "20260923T204215Z",
+   "tries": 28,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件：PLAN-QUEUE拍 fired=3、kicks=0，空转未踢。  \n- 未闭项EX：EXEC-ORBIT-ORBIT-CAP-02-BYPASS 旁路件，37试未闭，lvlu车道求旁路注入。  \n- 未闭项OR：ORBIT-CAP-01 容量件，28试未闭，lvlu车道求容量重算。  \n\n② 应动何件（立协同不候）  \n- 立动 EX+OR 两未闭项，旁路强制注入并容量重锁，不候拍频。  \n\n③ 未闭项推进  \n- OI-vciinboxlaneslvluinboxEX：未闭，下一步旁路注入+冲突域降级。  \n- OI-vciinboxlaneslvluinboxOR：未闭，下一步容量重算+轨道锁释放。  \n\n④ 生债一条  \n- 债：队列零踢出致双件挂起，补 kick 协议。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
