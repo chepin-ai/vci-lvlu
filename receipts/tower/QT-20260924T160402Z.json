@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T160402Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 9,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 广播件lgt-03-disc-anchor.md：lvlu discourse锚点广播，涉意识定位，必录。  \n- 计划队列PLAN-QUEUE拍：fired=3 kicks=0，lvlu三项计划已触发待执行，必录。  \n- 未闭项OR：ORBIT-CAP-01在lvlu inbox，9试未闭，必录。  \n- 未闭项R7：R7-CLEAN-CAP02-ACK-qlv在lvlu inbox，9试未闭，必录。  \n\n②应动何件  \n立协同PLAN-QUEUE（补3 kicks）及双lvlu inbox未闭项（9试超限，立清不候）。  \n\n③未闭项推进  \n- OI-vciinboxlaneslvluinboxOR：未闭/下一步：弃锚或转ORBIT主控覆写。  \n- OI-vciinboxlaneslvluinboxR7：未闭/下一步：强发终告或标记qlv ACK失效。  \n\n④生债一条  \n生债：双项9试未闭之滞，立偿“终态裁决或升权代行”。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
