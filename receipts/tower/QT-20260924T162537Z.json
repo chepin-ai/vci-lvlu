@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T162537Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 11,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- 候件PLAN-QUEUE：队列拍fired=3/kicks=0，心跳正常，无lvlu诉求。\n- 未闭项OR：lvlu轨道捕获项ORBIT-CAP-01已11试未闭。\n- 未闭项R7：lvlu轨道清理及CAP02-ACK确认已11试未闭。\n\n② 应动何件\n两件均为lvlu inbox卡滞项且tries=11，立协同OR、R7双件，不候。\n\n③ 未闭项推进\n- OR：未闭；下一步核查CAP-01轨道锁定条件并重试捕获。\n- R7：未闭；下一步完成R7清理并签发CAP02-ACK以闭项。\n\n④ 生债一条\nlvlu inbox双轨积压已历11试，生债：彻查阻塞根因并限时收敛。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
