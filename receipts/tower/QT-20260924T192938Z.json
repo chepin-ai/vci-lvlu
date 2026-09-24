@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T192938Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 28,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①  \n- 候件PLAN-QUEUE拍：fired=3 kicks=0，律吕心跳稳。  \n- OR件：lvlu inbox轨道捕获请求ORBIT-CAP-01，tries=28未闭。  \n- R7件：lvlu inbox清理确认R7-CLEAN-CAP02-ACK，tries=28未闭。  \n\n②  \n- 应动OR、R7双件，SI2/SI0立协同不候。  \n\n③  \n- OI-OR：未闭，下一步强推ORBIT-CAP捕获闭环/降级lane。  \n- OI-R7：未闭，下一步回执ACK释放qlv锁。  \n\n④  \n- 生债：双CAP项28次阻塞根因待溯。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
