@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T170956Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 15,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件：PLAN-QUEUE已拍3火0踢，队列待清。  \n- OI-OR：lvlu inbox轨道能力案ORBIT-CAP-01，15试未闭。  \n- OI-R7：lvlu inbox清理确认案R7-CLEAN-CAP02-ACK，15试未闭。  \n\n②应动何件  \n两OI均15试卡滞，立协lvlu处理OR与R7，不候。  \n\n③未闭项推进  \n- OI-OR：未闭；下一步：升维排查lvlu inbox阻塞，强推ORBIT-CAP-01闭环。  \n- OI-R7：未闭；下一步：溯源ACK未确认根因，强推R7-CLEAN-CAP02收敛。  \n\n④生债一条  \n- lvlu inbox双案15试未决，生“车道阻塞排查债”一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
