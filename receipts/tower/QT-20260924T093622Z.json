@@ -1,0 +1,40 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T093622Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① 何事：PLAN-QUEUE拍 fired=3 kicks=0，lvlu计划队列已触发三拍且无驱动，节律链路存疑。  \n② 应动何件：PLAN-QUEUE拍，立协同查 kicks=0 阻塞根因。  \n③ 未闭项推进：无未闭项。  \n④ 生债一条：债：PLAN-QUEUE kicks=0 驱动阻塞根因待查。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
