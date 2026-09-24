@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T014930Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260923T184746Z.md",
+   "opened": "20260923T190024Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260913T014500Z.md",
+   "opened": "20260923T204215Z",
+   "tries": 30,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 件1：hub-broadcast `lgt-03-disc-anchor.md` 到埠，中枢锚点广播待扩散/落位。\n- 件2：plan-queue `PLAN-QUEUE拍` 报 `fired=3 kicks=0`，计划队列已击发三拍零踢转，lvlu通道诉求为免积压。\n- （涉lvlu诉求：两件皆经lvlu lanes，已录。）\n\n② 应动何件：\n两件皆立协同、不候闭：plan-queue 立即 kick 踢转；hub-broadcast 立即锚点确认并向下游扇出。\n\n③ 未闭项推进：\n- `OI-EX`（EXEC-ORBIT-ORBIT-CAP-02-BYPASS）：39试未闭，旁路阻塞，下一步切诊断模式或升维路由。\n- `OI-OR`（ORBIT-CAP-01）：30试未闭，轨道能力项悬停，下一步复核CAP-01依赖链或强制归档。\n\n④ 生债一条：\n欠 queue-kick 机制与 orbit-bypass 阻塞的根因排查债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
