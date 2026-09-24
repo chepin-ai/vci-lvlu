@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T153131Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 6,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件：PLAN-QUEUE拍fired=3/kicks=0，队列有任务待排。\n- 未闭1：ORBIT-CAP-01文件卡lvlu inbox，已6试未闭（涉lvlu）。\n- 未闭2：R7-CLEAN-CAP02-ACK回执卡lvlu inbox，已6试未闭（涉lvlu）。\n\n②应动何件：\n两inbox滞留件均6试未闭，立启清障协同，不候。\n\n③未闭项推进：\n- OI-…OR：未闭，下一步解析ORBIT-CAP-01指令并执行捕获/确认后强制关闭。\n- OI-…R7：未闭，下一步核验qlv-ACK回执有效性并归档后关闭。\n\n④生债一条：\n生债：lvlu inbox双件6试未闭，需排障修复自闭环或手工清。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
