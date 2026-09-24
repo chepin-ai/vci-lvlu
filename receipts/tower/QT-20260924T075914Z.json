@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T075914Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "①何事\n- 件1：hub-broadcast《lgt-03-disc-anchor.md》待阅知。\n- 件2：PLAN-QUEUE拍报 fired=3、kicks=0，存在已触发未执行项。\n\n②应动何件\n- 两件俱立协同：件1同步锚点内容；件2立即排查并推进队列3项 fired 未 kicks 的阻塞。\n\n③未闭项推进\n- 无未闭项。\n\n④生债一条\n- 债：今日内回执锚点文件核心摘要，并清零 PLAN-QUEUE fired 积压。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
