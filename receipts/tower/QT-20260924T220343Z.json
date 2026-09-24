@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T220343Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 42,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- hub-broadcast 发 lgt-03-disc-anchor.md。\n- PLAN-QUEUE拍 fired=3 kicks=0。\n- lvlu/inbox/OR 挂 ORBIT-CAP-01，tries=42 未闭。\n- lvlu/inbox/R7 挂 R7-CLEAN-CAP02-ACK，tries=42 未闭。\n\n② 应动何件（立协同不候）\n- PLAN-QUEUE拍（补 kicks）。\n- lvlu inbox 双未闭项（强制解析闭环）。\n\n③ 未闭项推进\n- OI-vciinboxlaneslvluinboxOR：未闭，下一步直解内容并回执。\n- OI-vciinboxlaneslvluinboxR7：未闭，下一步确认 ACK 并闭环。\n\n④ 生债一条\n- lvlu inbox 双件空转42次，生债一条，限即刻清项返结。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
