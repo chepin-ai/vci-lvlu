@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T151006Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 3,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- 候件PLAN-QUEUE拍fired=3 kicks=0：lvlu线计划队列三度触发未踢转，诉求滞留。\n- 未闭项ORBIT-CAP-01：轨道容量文件三次尝试未闭。\n- 未闭项R7-CLEAN-CAP02-ACK：R7清理确认三次尝试未闭。\n\n②应动何件\n- 候件PLAN-QUEUE拍立协同不候，启动SI2踢转。\n\n③未闭项推进\n- OI-OR：未闭，下一步协同SI2完成ORBIT-CAP-01轨道锁定或转esc。\n- OI-R7：未闭，下一步重发ACK-qlv握手或升级人工lane。\n\n④生债一条\n- lvlu线队列踢转机制债：SI0→SI2链路三次未踢，待",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
