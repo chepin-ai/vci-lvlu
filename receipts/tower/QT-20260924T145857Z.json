@@ -1,0 +1,67 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T145857Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260924T145310Z.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260924T145310Z.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 收枢纽广播 `lgt-03-disc-anchor.md`，播发 disc 锚点更新；收 lvlu 车道件 `ORBIT-CAP-01`，涉 lvlu 轨道能力诉求；收 lvlu 车道件 `R7-CLEAN-CAP02-ACK`，涉 R7 清理能力确认回执；`PLAN-QUEUE` fired=3、kicks=0，待补驱。  \n② `ORBIT-CAP-01` 与 `R7-CLEAN-CAP02-ACK` 两件 lvlu 车道件均应立协同，不候。  \n③ `OI-vciinboxlaneslvluinboxOR`：未闭，下一步解析轨道能力并绑定/转发；`OI-vciinboxlaneslvluinboxR7`：未闭，下一步核验 ACK 并回写入 R7 清理闭环。  \n④ 生债：`PLAN-QUEUE` kicks=0，须补 kick 一次以驱后续拍次。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
