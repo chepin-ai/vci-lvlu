@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T010610Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260923T184746Z.md",
+   "opened": "20260923T190024Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260913T014500Z.md",
+   "opened": "20260923T204215Z",
+   "tries": 26,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件：PLAN-QUEUE拍fired=3 kicks=0，队列待消费。\n- 涉lvlu诉求一：EXEC-ORBIT-CAP-02-BYPASS文件陷inbox，tries=35未闭。\n- 涉lvlu诉求二：ORBIT-CAP-01文件陷inbox，tries=26未闭。\n\n② 应动何件：\n- 立动PLAN-QUEUE消费，不候。\n- 立动双inbox项排障协同，不候。\n\n③ 未闭项推进：\n- OI-EX：未闭；下一步：切排障通道查EXEC-ORBIT执行锁，本周期内强闭。\n- OI-OR：未闭；下一步：验CAP-01前置，就绪即强推，不就绪升级异常。\n\n④ 生债：\n- 本周期若仍双悬，则生债「lvlu inbox高tries死锁：缺熔断降级」。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
