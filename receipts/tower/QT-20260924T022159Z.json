@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T022159Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260923T184746Z.md",
+   "opened": "20260923T190024Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260913T014500Z.md",
+   "opened": "20260923T204215Z",
+   "tries": 33,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件：PLAN-QUEUE 已触发3次、无踢出，调度待决。  \n- 未闭项EX：lvlu inbox 内 EXEC-ORBIT-ORBIT-CAP-02-BYPASS 已试42次未闭，执行卡滞。  \n- 未闭项OR：lvlu inbox 内 ORBIT-CAP-01 已试33次未闭，捕获未完成。  \n\n② 应动何件  \n立协同 EX 件（42次未闭，立即排障强关）；OR 件同步重试，不候。  \n\n③ 未闭项推进  \n- OI-EX：未闭；下一步：排查 BYPASS 阻塞，强制推进或熔断降级，限时闭环。  \n- OI-OR：未闭；下一步：重启 ORBIT-CAP-01 握手，校验轨道参数，重试关闭。  \n\n④ 生债一条  \n生债：为 lvlu inbox 高频重试项建“熔断-介入”机制，免空转。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
