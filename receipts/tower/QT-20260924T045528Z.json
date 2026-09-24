@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T045528Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260913T014500Z.md",
+   "opened": "20260923T204215Z",
+   "tries": 47,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- lgt-03-disc-anchor.md 广播候件，待同步锚点语义。  \n- PLAN-QUEUE拍 fired=3/kicks=0，队列触发后零推动，lvlu 执行链路空转。  \n\n② 应动何件  \n- 立协同 PLAN-QUEUE拍，排查 kicks=0 阻塞点并注入首笔推动，不候。  \n\n③ 未闭项推进  \n- OI-vciinboxlaneslvluinboxOR：47 次未闭，已超自解阈值，下一步转人工/高权归档或降级，同步校验 lanes/lvlu/inbox 路径与文件格式。  \n\n④ 生债一条  \n- 生债：设「候件-未闭项熔断规则」，tries≥10 或 kicks=0 持续挂起时自动升级，防空转与死锁。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
