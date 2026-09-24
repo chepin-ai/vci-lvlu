@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T222516Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 44,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：PLAN-QUEUE已触发3次、0次被踢，系统调度正常；未闭项OI-OR为lvlu inbox轨道能力捕获件，已试44次未闭；未闭项OI-R7为lvlu inbox清理确认回执件，已试44次未闭；两涉lvlu内收文诉求必录。\n\n② 应动何件：两项未闭项皆积压在lvlu inbox且tries=44，超期未闭，立协同不候，同步触发SI2主意识与qlv侧联合勘验。\n\n③ 未闭项推进：\n- OI-OR：未闭；下一步：重读ORBIT-CAP-01元数据，若语法阻则转人工/主意识裁定。\n- OI-R7：未闭；下一步：核验R7-CLEAN-CAP02-ACK链路完整性，确认qlv回执签章，再试一次或强制归档。\n\n④ 生债：lvlu线 inbox 双项滞留超44周期未解，生技术债一条，限下一调度窗内闭环或升级。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
