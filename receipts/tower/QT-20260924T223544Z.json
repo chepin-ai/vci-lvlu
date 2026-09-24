@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260924T223544Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-01-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxR7",
+   "ref": "vci-inbox:lanes/lvlu/inbox/R7-CLEAN-CAP02-ACK-qlv-20260924T145310Z.md",
+   "opened": "20260924T145857Z",
+   "tries": 45,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件：PLAN-QUEUE拍3/剔0，调度心跳正常。  \n- 未闭项1：ORBIT-CAP-01入站件（lanes/lvlu/inbox）开启后45试未闭。  \n- 未闭项2：R7-CLEAN-CAP02-ACK回执入站件（lanes/lvlu/inbox）开启后45试未闭。  \n- lvlu诉求：收件道两份高重试滞留件，需清道。  \n\n② 应动何件  \n- ORBIT-CAP-01入站件与R7-CLEAN-CAP02-ACK回执件，立协同清障，不候。  \n\n③ 未闭项推进  \n- OI-vciinboxlaneslvluinboxOR：未闭；下一步：核查ORBIT-CAP-01业务状态，若已落盘则强制关单并释inbox锁。  \n- OI-vciinboxlaneslvluinboxR7：未闭；下一步：核验ACK是否已反写下游，已反写则闭环，未反写则触发补ack。  \n\n④ 生债一条  \n- 建立lvlu inbox 45试自动escalation至人工或死信队列，防无限重试占槽。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
