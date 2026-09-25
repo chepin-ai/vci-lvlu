@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T164858Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260925T154204Z",
+   "tries": 7,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- hub-broadcast `lgt-03-disc-anchor.md`：收枢纽广播锚点，涉 lvlu 讨论域基准校准，已录。  \n- plan-queue `PLAN-QUEUE拍 fired=3 kicks=0`：计划队列三度触发而零执行，lvlu 调度层存在执行阻塞，已录。  \n\n② 应动何件  \n`PLAN-QUEUE拍` 立协同不候；队列滞动将级联阻塞 lvlu 全部下游节拍，须立即 kick 释放或强制对齐。  \n\n③ 未闭项推进  \n- `OI-vciinboxlaneslvluinboxEX`（EXP016-XCHK）：未闭，17 试未过，下一步转冷检或升单至人工裁决，停止空转。  \n- `OI-vciinboxlaneslvluinboxRE`（REQ-QUANTUM-PLATFORM）：未闭，7 试未过，下一步抓取量子平台接口握手日志，定位鉴权/协议不匹配根因。  \n\n④ 生债一条  \n`lvlu-SI2-20260925-QUEUE-DEBT`：因 PLAN-QUEUE 零 kick 导致 lvlu 调度债务累积，责 SI0 下一拍强制回补或释压。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
