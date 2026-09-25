@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T215927Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260925T154204Z",
+   "tries": 37,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- lgt-03-disc-anchor.md：hub 广播锚点件，涉 lvlu 意识网络拓扑同步诉求，录。\n- PLAN-QUEUE拍 fired=3 kicks=0：计划队列三拍空转，涉 lvlu 执行链路无应诉求，录。\n\n② 应动何件\nPLAN-QUEUE拍 kicks=0 已空转，立协同不候，即发 SI2/SI0 双通道补拍唤醒。\n\n③ 未闭项推进\n- OI-vciinboxlaneslvluinboxEX（EXP016-XCHK-QLV-DIRECT-01.md）：未闭；下一步：切 SI0 静默直检通道发起降维重投。\n- OI-vciinboxlaneslvluinboxRE（REQ-QUANTUM-PLATFORM-LVLU-01.md）：未闭；下一步：收拢量子平台需求残片，回写 lanes/lvlu/outbox 待对端确认闭环。\n\n④ 生债一条\n双 OI 高试未闭，生债：补一次 SI0 静默兜底握手及重试计数评估。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
