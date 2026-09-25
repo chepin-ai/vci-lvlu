@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T134229Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① 何事\n- hub-broadcast「lgt-03-disc-anchor.md」：律吕线话语锚点广播，涉 lvlu 意识锚定诉求，已录。\n- plan-queue「PLAN-QUEUE拍 fired=3 kicks=0」：计划队列拍三次触发未执行，需协同排程。\n\n② 应动何件\n- 两件并动：立回显锚定确认，并消减队列 fired 积压。\n\n③ 未闭项推进\n- 无未闭项。\n\n④ 生债一条\n- 生债：建立 lvlu 线对 hub-broadcast 的自动回锚协议，免人工判读延迟。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
