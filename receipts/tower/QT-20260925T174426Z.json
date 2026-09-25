@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T174426Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260925T154204Z",
+   "tries": 13,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 广播件 `lgt-03-disc-anchor.md` 入候，涉 lvlu 锚点诉求，待拉取。  \n- 队列 `PLAN-QUEUE拍` 存 3 fired/0 kicks，待消纳。  \n\n② 应动何件  \n立协同 `hub-broadcast` 件，不候。  \n\n③ 未闭项推进  \n- `OI-EX`（EXP016）：未闭，已 23 试；下一步：弃循环重试，改旁路归档或降级。  \n- `OI-RE`（REQ-QUANTUM）：未闭，已 13 试；下一步：向平台方发最终回执，逾期拒收。  \n\n④ 生债一条  \n债：lvlu-inbox 双项超阈积压，须启 lane 熔断或扩容。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
