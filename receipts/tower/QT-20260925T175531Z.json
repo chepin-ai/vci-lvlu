@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T175531Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260925T154204Z",
+   "tries": 14,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- hub-broadcast `lgt-03-disc-anchor.md` 播送中。\n- plan-queue `PLAN-QUEUE拍` fired=3 kicks=0，排程拥塞。\n- 未闭项EX（`EXP016-XCHK-QLV-DIRECT-01`，tries=24）lvlu直连校验滞留。\n- 未闭项RE（`REQ-QUANTUM-PLATFORM-LVLU-01`，tries=14）lvlu量子平台请求滞留。\n\n②应动何件：\n立协同EX件（tries=24超限）与PLAN-QUEUE件（kicks=0需kick激活）。\n\n③未闭项推进：\n- EX：未闭，下一步切备用lane或人工介入诊断直连链路。\n- RE：未闭，下一步确认量子平台接口负载并降级异步。\n\n④生债一条：\nhub锚点未落盘，inbox双项合试38次未闭，生lane拥堵与观测衰减债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
