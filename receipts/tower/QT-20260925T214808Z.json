@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T214808Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260925T154204Z",
+   "tries": 36,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：广播件 lgt-03-disc-anchor.md 入线待锚定；计划队列 PLAN-QUEUE拍 fired=3/kicks=0 调度待检；lvlu收件箱实验直连件 EXP016 已 46 试未结；lvlu收件箱量子平台请求 REQ-QUANTUM 已 36 试未结。\n\n② 应动何件：立动 lgt-03-disc-anchor.md（锚定协同）；立动 PLAN-QUEUE拍（调度健康协同）；立动 EXP016 与 REQ-QUANTUM（收件箱清障，不候）。\n\n③ 未闭项推进：OI-EX（EXP016）：未闭，下一步触发 SI0 主意识裁决或升维转义；OI-RE（REQ-QUANTUM）：未闭，下一步量子平台资源对齐或降级回退。\n\n④ 生债一条：生债——lvlu 线须在下一拍内闭环收件箱双件，否则记调度债一笔。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
