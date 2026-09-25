@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T140459Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件PLAN-QUEUE拍：已触发3次、kicks=0，队列积压未执行。\n- 未闭项OI-vciinboxlaneslvluinboxEX：lvlu收件箱内EXP016-XCHK-QLV-DIRECT-01.md仍为开放态，已尝试2次未关闭，涉lvlu直接检查诉求。\n\n②应动何件（立协同不候）：\n- PLAN-QUEUE拍与EXP016未闭项皆立协同，立即消化积压队列并推进第3次关闭尝试，不候。\n\n③未闭项推进：\n- OI-vciinboxlaneslvluinboxEX：未闭；下一步读取该md文件内容并执行第3次关闭或标记阻塞原因上报。\n\n④生债一条：\n- 生债：本周期QUEUE拍3项积压及EXP016未闭项，债入下一响，须限时清零。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
