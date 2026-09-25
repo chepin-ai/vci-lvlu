@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T205204Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260925T154204Z",
+   "tries": 31,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 收枢纽广播锚点文件 `lgt-03-disc-anchor.md` 一件。  \n- 收计划队列拍频 `fired=3 kicks=0` 一件。  \n- 未闭件 `EXP016-XCHK-QLV-DIRECT-01.md` 已41试未结，涉lvlu通道。  \n- 未闭件 `REQ-QUANTUM-PLATFORM-LVLU-01.md` 已31试未结，系lvlu量子平台诉求。  \n\n②应动何件  \n- 两未闭项（OI-EX / OI-RE）tries逾阈，立协同清结，不候。  \n\n③未闭项推进  \n- OI-EX：未闭；下一步：提级SI2强制收敛/归档。  \n- OI-RE：未闭；下一步：启动量子平台诉求适配响应。  \n\n④生债一条  \n- 滞应债：未闭项超30试未决，记协同清结债一笔。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
