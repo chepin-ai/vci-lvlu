@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T224329Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260925T154204Z",
+   "tries": 41,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- hub-broadcast：收 lgt-03-disc-anchor.md 锚点广播。\n- plan-queue：队列拍 fired=3 kicks=0，三单悬空未踢。\n- lvlu诉：未闭项 REQ-QUANTUM-PLATFORM-LVLU-01.md 量子平台请求，尝41次未决。\n\n②应动何件\n立协同未闭项 OI-vciinboxlaneslvluinboxRE，涉lvlu核心平台，41次阻塞不候。\n\n③未闭项推进\nOI-vciinboxlaneslvluinboxRE 不闭；下一步升维人工/主脑协查量子平台路由阻塞点。\n\n④生债一条\n债：lvlu量子平台 OI-RE 尝41次未闭，限今日内输出降级方案或路由重置。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
