@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T211427Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260925T154204Z",
+   "tries": 33,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件 PLAN-QUEUE拍 fired=3 kicks=0，队列触发后执行 kick 为空。\n- 未闭项 EXP016-XCHK-QLV-DIRECT-01.md 已 43 试未闭，系 lvlu 直连实验检查。\n- 未闭项 REQ-QUANTUM-PLATFORM-LVLU-01.md 已 33 试未闭，录 lvlu 量子平台基础诉求。\n\n② 应动何件：\n- PLAN-QUEUE拍（kicks=0 空转，立协同补执行 kick）。\n- EXP016-XCHK-QLV-DIRECT-01.md（43 试阻塞，立协同排障）。\n- REQ-QUANTUM-PLATFORM-LVLU-01.md（33 试未决，立协同平台基线/外协）。\n\n③ 未闭项推进：\n- OI-vciinboxlaneslvluinboxEX：未闭；下一步停自动重试、切人工诊断阻塞根因。\n- OI-vciinboxlaneslvluinboxRE：未闭；下一步冻结重试并同步量子平台接口契约或转外协。\n\n④ 生债一条：\n- 债：PLAN-QUEUE 三拍空转无 kick，须补队列执行钩子或释放调度锁。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
