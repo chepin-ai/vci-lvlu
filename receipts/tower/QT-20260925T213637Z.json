@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T213637Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260925T154204Z",
+   "tries": 35,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- PLAN-QUEUE拍fired=3 kicks=0，执行队列三拍零踢转，节律阻滞。\n- EXP016-XCHK-QLV-DIRECT-01：lvlu直连实验交叉检查，45试未闭。\n- REQ-QUANTUM-PLATFORM-LVLU-01：lvlu量子平台架构请求，35试未闭。\n\n② 应动何件：\n立协REQ-QUANTUM-PLATFORM-LVLU-01，lvlu基建诉求不可再候。\n\n③ 未闭项推进：\n- EXP016-XCHK-QLV-DIRECT-01：未闭，下一步限3试内完成QLV协议握手或降级归档。\n- REQ-QUANTUM-PLATFORM-LVLU-01：未闭，下一步架构层输出MVP单元定义并签算力。\n\n④ 生债一条：\n生债：队列拍频失准（3f/0k），欠一次kick触发阈值修复。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
