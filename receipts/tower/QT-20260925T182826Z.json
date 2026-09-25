@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T182826Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260925T154204Z",
+   "tries": 17,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- 候件PLAN-QUEUE拍已fired=3、kicks=0，计划队列积压待执行。\n- 未闭项EX（EXP016-XCHK-QLV-DIRECT-01.md）经27试未闭，lvlu实验检查项卡滞。\n- 未闭项RE（REQ-QUANTUM-PLATFORM-LVLU-01.md）经17试未闭，lvlu量子平台需求悬置。\n\n②应动何件\n- PLAN-QUEUE及两未闭项（EX/RE），立协同不候。\n\n③未闭项推进\n- OI-EX：未闭，下一步根因诊断并清除阻塞。\n- OI-RE：未闭，下一步明确依赖或转入实施。\n\n④生债一条\n- 补录lvlu inbox两文件27/17次尝试的失败日志与当前卡点。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
