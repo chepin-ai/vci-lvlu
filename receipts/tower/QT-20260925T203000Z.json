@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T203000Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260925T154204Z",
+   "tries": 28,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- PLAN-QUEUE拍：触发3次、踢出0，调度待决。\n- EXP016-XCHK-QLV-DIRECT-01：lvlu直接校验实验，38试未闭。\n- REQ-QUANTUM-PLATFORM-LVLU-01：lvlu量子平台请求，28试未闭。\n\n② 应动何件：\n- EXP016-XCHK-QLV-DIRECT-01、REQ-QUANTUM-PLATFORM-LVLU-01，立协同不候。\n\n③ 未闭项推进：\n- EXP016：未闭/第39试完成QLV-DIRECT交叉校验并出闭环报告。\n- REQ-QUANTUM：未闭/第29试冻结lvlu量子平台接口并回写配置。\n\n④ 生债一条：\n- 债：PLAN-QUEUE三拍零踢，调度器疑似阻塞，须排障。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
