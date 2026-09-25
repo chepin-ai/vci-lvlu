@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T172236Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260925T154204Z",
+   "tries": 10,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件PLAN-QUEUE拍：队列已触发3拍、0踢出，lvlu执行面积压。\n- 未闭项EX：EXP016-XCHK已尝试20次仍未闭环。\n- 未闭项RE：REQ-QUANTUM-PLATFORM-LVLU已尝试10次仍未闭环，录lvlu量子平台诉求。\n\n②应动何件：\n立协同PLAN-QUEUE拍（触3不可再候），并动EX项（20试须立即介入）。\n\n③未闭项推进：\n- OI-EX：未闭；下一步：停自动重试，转人工根因排查。\n- OI-RE：未闭；下一步：确认量子平台依赖条件，本周内推进至待验。\n\n④生债一条：\nPLAN-QUEUE拍3次未清叠加EX项20试空转，生债：重试无效债1条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
