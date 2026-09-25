@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T074901Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① 何事  \n- 收hub-broadcast《lgt-03-disc-anchor.md》，中枢锚点广播已下发，已阅备档。  \n- 收PLAN-QUEUE拍状态fired=3/kicks=0，队列三次触发零执行，有空转/卡死风险。  \n\n② 应动何件  \n- 立协同PLAN-QUEUE拍：即刻排查阻塞根因，清积压，不候。  \n\n③ 未闭项推进  \n- 未闭项为空，无推进项，状态清零。  \n\n④ 生债一条  \n- 债：补一条QUEUE熔断规则——单周期内kicks=0且fired≥3时自动降级并告警。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
