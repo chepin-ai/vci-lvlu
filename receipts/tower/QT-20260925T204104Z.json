@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T204104Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260925T154204Z",
+   "tries": 29,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件：PLAN-QUEUE拍 fired=3、kicks=0，队列触发但零实质推进，空转。\n- 未闭项1：EXP016-XCHK-QLV-DIRECT-01.md 已39试未闭，lvlu通道校验任务卡死。\n- 未闭项2：REQ-QUANTUM-PLATFORM-LVLU-01.md 已29试未闭，lvlu量子平台诉求悬置。\n\n② 应动何件：\n- 立协 REQ-QUANTUM-PLATFORM-LVLU-01.md（lvlu直接诉求不候），并带 EX 项同步排障。\n\n③ 未闭项推进：\n- OI-vciinboxlaneslvluinboxEX：未闭；下一步：根因定位后强制校验通关或转应急通道。\n- OI-vciinboxlaneslvluinboxRE：未闭；下一步：直出量子平台响应方案并关闭需求单。\n\n④ 生债一条：\n- 待修：",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
