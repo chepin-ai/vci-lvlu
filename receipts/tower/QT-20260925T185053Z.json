@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T185053Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260925T154204Z",
+   "tries": 19,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- hub-broadcast：`lgt-03-disc-anchor.md` 入枢纽广播。  \n- plan-queue：`PLAN-QUEUE拍` fired=3 kicks=0，队列持续点火。  \n- 未闭项 `EXP016-XCHK-QLV-DIRECT-01` 已 29 试未闭。  \n- 未闭项 `REQ-QUANTUM-PLATFORM-LVLU-01` 已 19 试未闭，录 lvlu 量子平台直连诉求。  \n\n② 应动何件（立协同不候）  \n- 两未闭项（OI-EX / OI-RE）均超阈，立协同闭项，不候。  \n\n③ 未闭项推进  \n- OI-EX：未闭；下一步：转高优 lane 或人工裁决，今次必闭。  \n- OI-RE：未闭；下一步：核验量子平台 readiness，若阻塞即给降级路径。  \n\n④ 生债一条  \n- 生债：补 lane 级自动熔断与 retry  ceiling 规则，免高 tries 空转。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
