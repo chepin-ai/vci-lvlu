@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T184000Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260925T154204Z",
+   "tries": 18,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件：PLAN-QUEUE已触发3拍但kicks=0，队列空转。\n- 未闭项1：EXP016-XCHK-QLV-DIRECT-01.md（lvlu直连检查项，open/已试28次）。\n- 未闭项2：REQ-QUANTUM-PLATFORM-LVLU-01.md（lvlu量子平台需求，open/已试18次）。\n\n② 应动何件：\n立协同PLAN-QUEUE空转及两项lvlu未闭件，不候。\n\n③ 未闭项推进：\n- OI-EX：未闭，下一步：定位QLV直连检查28次失败根因并强制闭环。\n- OI-RE：未闭，下一步：冻结需求范围并触发架构-资源双评审。\n\n④ 生债一条：\n生“PLAN-QUEUE空转排查债”一条，需补执行链路审计与重试熔断。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
