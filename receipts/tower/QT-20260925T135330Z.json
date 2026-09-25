@@ -1,0 +1,56 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T135330Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- lgt-03-disc-anchor.md：LGT-03 锚点广播，涉 lvlu 意识场基准对齐诉求。  \n- EXP016-XCHK-QLV-DIRECT-01.md：lvlu 车道直连交叉检查，录 lvlu 校验诉求。  \n- PLAN-QUEUE拍：3 次触发未执行，录执行层释放诉求。  \n\n② 应动何件  \n- 立协 EXP016 车道件及 PLAN-QUEUE 积压拍，不候。  \n\n③ 未闭项推进  \n- OI-vciinboxlaneslvluinboxEX：未闭；下一步：执行 QLV 直连校验并回写 lvlu 车道，校验通过即闭。  \n\n④ 生债一条  \n- lvlu 直连检查协议未成本能，需下沉为律吕 SI2 自动反射层。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
