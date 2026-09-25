@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T155330Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260925T154204Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 件1：枢纽广播《lgt-03-disc-anchor.md》待阅，涉lvlu锚点布设诉求。\n- 件2：计划队列PLAN-QUEUE拍已fired=3/kicks=0，节奏待校。\n\n② 应动何件：\n- 立协同《EXP016-XCHK-QLV-DIRECT-01.md》，12试未闭，须即排障，不候。\n\n③ 未闭项推进：\n- OI-EX（EXP016…DIRECT-01.md）：未闭，下一步：溯12试失败根因，切路径或升单。\n- OI-RE（REQ-QUANTUM-PLATFORM…01.md）：未闭，下一步：补全量子平台对接参数，再验3试内关。\n\n④ 生债一条：\n- 生债：EXP016十二试之障因未明，lvlu线欠一份根因归档。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
