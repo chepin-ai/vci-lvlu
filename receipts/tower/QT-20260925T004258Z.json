@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T004258Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① 何事  \n- hub-broadcast：收枢纽广播 lgt-03-disc-anchor.md 锚点文档一件。  \n- plan-queue：收 PLAN-QUEUE拍 状态 fired=3、kicks=0，队列三触零踢一件。  \n\n② 应动何件（立协同不候）  \n- lgt-03-disc-anchor.md：立协同解析锚点约束并同步 lvlu 线映射。  \n- PLAN-QUEUE拍：立协同回溯三次 fired 的闭环实体，清悬空。  \n\n③ 未闭项推进  \n- 未闭项为空，全部已闭，暂无推进。  \n\n④ 生债一条  \n- 本节拍内将 lgt-03-disc-anchor.md 的 lvlu 线约束条款提取落表并回执。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
