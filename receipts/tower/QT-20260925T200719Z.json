@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T200719Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260925T154204Z",
+   "tries": 26,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 候件PLAN-QUEUE拍 fired=3、kicks=0，队列空转无出料。  \n② EXP016-XCHK-QLV-DIRECT-01.md 已36试未闭，直检链路卡阻。  \n③ REQ-QUANTUM-PLATFORM-LVLU-01.md 已26试未闭；录lvlu诉求：量子平台直接接入/能力开通。  \n\n应动何件：REQ-QUANTUM-PLATFORM-LVLU-01.md（lvlu核心诉求）、EXP016-XCHK-QLV-DIRECT-01.md（高试卡死），二者立协同不候；PLAN-QUEUE同步查空转根因。  \n\n未闭项推进：  \n- OI-EX：未闭；下一步：导出36试错误谱，定位XCHK直检契约缺口或降级手工复核。  \n- OI-RE：未闭；下一步：拉取量子平台准入契约，协同架构侧补全接口定义，24h内给出入或拒。  \n\n生债一条：路由失效债——EXP016与REQ-QUANTUM累计62试未闭，自动分诊与平台契约适配失灵，记“自动路由空转债-1”。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
