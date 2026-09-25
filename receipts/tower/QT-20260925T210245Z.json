@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T210245Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260925T154204Z",
+   "tries": 32,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 枢纽广播`lgt-03-disc-anchor.md`：disc锚点广播，涉lvlu线路定位已录。\n- `PLAN-QUEUE拍`：已fired=3而kicks=0，执行链悬空待补。\n- 未闭`EXP016-XCHK-QLV-DIRECT-01`：QLV直连交叉检查，42试超期未闭。\n- 未闭`REQ-QUANTUM-PLATFORM-LVLU-01`：量子平台lvlu请求，32试未决，核心诉求已录。\n\n②应动何件（立协同不候）：\n- `PLAN-QUEUE拍`：立即补kick，阻断悬空。\n- `REQ-QUANTUM-PLATFORM-LVLU-01`：立即提律吕中枢做架构/资源裁定。\n- `EXP016-XCHK-QLV-DIRECT-01`：立即终检并强制闭环。\n\n③未闭项推进：\n- `EXP016`：未闭；下一步输出QLV-DIRECT终态报告，归档或转异常。\n- `REQ-QUANTUM-PLATFORM`：未闭；下一步待中枢下发平台决议并执行配给。\n\n④生债一条：\n- 生“lvlu-双未闭项超期兜底与队列断点响应”债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
