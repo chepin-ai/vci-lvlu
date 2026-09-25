@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T193411Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260925T154204Z",
+   "tries": 23,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件PLAN-QUEUE拍fired=3、kicks=0，执行体未实质响应。  \n- OI-EX（EXP016-XCHK-QLV-DIRECT-01）已开33试未闭，涉lvlu直接实验检查。  \n- OI-RE（REQ-QUANTUM-PLATFORM-LVLU-01）已开23试未闭，涉lvlu量子平台诉求。  \n\n② 应动何件  \n- 两OI未闭项超20试，立协同不候；PLAN-QUEUE拍同步触查。  \n\n③ 未闭项推进  \n- OI-EX：未闭；下一步：根因诊断+强制直推/升级，破33试死锁。  \n- OI-RE：未闭；下一步：锁定量子平台需求基线，一次对齐闭环。  \n\n④ 生债一条  \n- lvlu inbox重试超20次无自动熔断升权机制，需补反压策略。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
