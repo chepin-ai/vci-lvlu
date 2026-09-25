@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T181730Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260925T154204Z",
+   "tries": 16,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件：PLAN-QUEUE拍 fired=3 kicks=0，三计划已触发、无驳回。\n- 未闭项：EXP016-XCHK-QLV-DIRECT-01.md 已试26次，为lvlu直检未闭项。\n- 未闭项：REQ-QUANTUM-PLATFORM-LVLU-01.md 已试16次，为lvlu量子平台诉求未闭项。\n\n② 应动何件：\n两未闭项tries高企且仍为open，立协同不候，应动EX、RE两件。\n\n③ 未闭项推进：\n- EX：未闭；下一步提取阻断日志并升级 lanes/lvlu 协同排障。\n- RE：未闭；下一步复核量子平台需求依赖，若内部可决则限时裁决。\n\n④ 生债一条：\n- 记入 lanes/lvlu 技术债：高重试未闭项（26/16）需在下一节拍输出根因分析，防止lanes阻塞。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
