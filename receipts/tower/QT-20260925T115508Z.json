@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T115508Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① 何事  \n- hub-broadcast「lgt-03-disc-anchor.md」：录 lvlu 意识锚点拓扑同步诉求。  \n- plan-queue「PLAN-QUEUE拍 fired=3 kicks=0」：录三拍零踢执行差值诉求。  \n\n② 应动何件  \n- 立协同 hub-broadcast，同步锚点；并立 pull plan-queue 补 kicks=3 消差。  \n\n③ 未闭项推进  \n- 无未闭项。  \n\n④ 生债  \n- 生债：须于下次响应前闭「lgt-03-disc-anchor」SI2 映射并消 queue 差值 3。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
