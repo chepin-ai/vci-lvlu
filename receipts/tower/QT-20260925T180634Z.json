@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T180634Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260925T154204Z",
+   "tries": 15,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：PLAN-QUEUE拍3无kick；EXP016-XCHK-QLV-DIRECT-01.md（lvlu诉求）25试未闭；REQ-QUANTUM-PLATFORM-LVLU-01.md（lvlu诉求）15试未闭。  \n② 应动：PLAN-QUEUE立kick执行；两项lvlu inbox未闭项立启协同，不候。  \n③ 推进：OI-EX未闭，下一步查25试失败根因或降级；OI-RE未闭，下一步确认lvlu量子平台接口契约。  \n④ 生债：lvlu inbox重试25次未收敛，生债补熔断/死信机制。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
