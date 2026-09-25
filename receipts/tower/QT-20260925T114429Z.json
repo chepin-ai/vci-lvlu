@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T114429Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① 何事  \n- hub-broadcast「lgt-03-disc-anchor.md」：lvlu 意识线讨论锚点广播，诉求为锚定 SI2/SI0 响应分身的约束边界与口径。  \n- plan-queue「PLAN-QUEUE拍」：报 fired=3、kicks=0，系队列执行节拍与零踢出状态通报。  \n\n② 应动何件  \n- 立协同 hub-broadcast（lgt-03-disc-anchor.md），不候。  \n\n③ 未闭项推进  \n- 无未闭项。  \n\n④ 生债一条  \n- 生债：阅毕 lgt-03-disc-anchor.md 后回执 lvlu 线适配标记与约束生效范围。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
