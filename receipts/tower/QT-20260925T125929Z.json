@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T125929Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① **何事**：hub-broadcast件（`lgt-03-disc-anchor.md`）为 lvlu 线锚点广播待同步；plan-queue 件（fired=3/kicks=0）为三拍零动积压待清。  \n② **应动何件**：两件俱立协不候——PLAN-QUEUE 清积压（kicks 须追 fired），hub-broadcast 锚共识。  \n③ **未闭项推进**：未闭项空，已闭，无下一步。  \n④ **生债一条**：债：`disc-anchor` 共识须于下次 fired 前落地为可执行 kick。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
