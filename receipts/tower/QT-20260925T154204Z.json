@@ -1,0 +1,63 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T154204Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-QUANTUM-PLATFORM-LVLU-01.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260925T154204Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- 广播：lgt-03-disc-anchor.md 为跨线讨论锚点。\n- 来件：REQ-QUANTUM-PLATFORM-LVLU-01.md 入 lvlu inbox，涉量子平台诉求，必录。\n- 队务：PLAN-QUEUE 已 fired=3/kicks=0，待踢转。\n\n② 应动何件\n应动来件 REQ-QUANTUM-PLATFORM-LVLU-01.md，因此件为 lvlu 新诉求且已生未闭项，须立协同不候。\n\n③ 未闭项推进\n- OI-EX（EXP016-XCHK-QLV-DIRECT-01.md）：未闭，11试未通，下一步：诊断阻塞根因或申请链路重置。\n- OI-RE（REQ-QUANTUM-PLATFORM-LVLU-01.md）：未闭，1试初启，下一步：即时拆解诉求并执行。\n\n④ 生债一条\nREQ-QUANTUM-PLATFORM-LVLU-01 须本轮闭环，不得延宕。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
