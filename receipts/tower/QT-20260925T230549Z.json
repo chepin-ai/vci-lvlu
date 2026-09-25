@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T230549Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260925T154204Z",
+   "tries": 43,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件 PLAN-QUEUE 拍 fired=3 kicks=0，队列调度正常无中断。  \n- 涉 lvlu 诉求：vci-inbox 内 REQ-QUANTUM-PLATFORM-LVLU-01.md 未闭项已重试 43 次。  \n\n② 应动何件  \n- 立协 PLAN-QUEUE 调度与 inbox 未闭项，不候。  \n\n③ 未闭项推进  \n- OI-vciinboxlaneslvluinboxRE：未闭；下一步立即探查 vci-inbox 管道及量子平台请求阻塞根因，清障 tries=43 异常。  \n\n④ 生债一条  \n- lvlu 量子平台请求在 vci-inbox 链路重试 43 次未决，需排摸投递-消费阻塞点并修复。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
