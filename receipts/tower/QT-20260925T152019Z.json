@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T152019Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 9,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- 候件：PLAN-QUEUE拍3次、0踢出，调度队列正常候跑。\n- 未闭项：lvlu收件箱通道 lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md 已9试未闭，直接质检项卡滞，涉lvlu诉求录。\n\n② 应动何件\n未闭项 OI-vciinboxlaneslvluinboxEX（9试未闭，立协同不候）。\n\n③ 未闭项推进\nOI-vciinboxlaneslvluinboxEX：未闭，下一步升单人工介入或排查 vci-inbox 通道阻塞根因。\n\n④ 生债一条\nPLAN-QUEUE 零踢出但伴生 lvlu 通道 9 试卡滞，需审计自动重试熔断阈值与回退策略。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
