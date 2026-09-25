@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T194512Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260925T154204Z",
+   "tries": 24,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- hub-broadcast《lgt-03-disc-anchor.md》：通用讨论锚点广播，非lvlu直诉，阅后备档。\n- plan-queue拍 fired=3/kicks=0：执行层三次击发未踢出，调度淤积。\n\n②应动何件\n- PLAN-QUEUE件：立协 kick=0→清列或强制出队，不等下次fire。\n\n③未闭项推进\n- OI-…EX（EXP016-XCHK-QLV-DIRECT-01.md）：未闭，34试未决，下一步切诊断模式查QLV直连实验阻塞点。\n- OI-…RE（REQ-QUANTUM-PLATFORM-LVLU-01.md）：未闭，24试未决，下一步核lvlu量子平台资源配额或升单。\n\n④生债一条\n- 因队列三击不kick及双inbox长悬，lv",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
