@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T212535Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260925T154204Z",
+   "tries": 34,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件：PLAN-QUEUE已发3拍、kicks=0，律吕节拍缺踢出，需检核SI2同步。  \n- EX项：EXP016-XCHK-QLV-DIRECT实验44试未闭，涉lvlu直接链路稳定性诉求。  \n- RE项：REQ-QUANTUM-PLATFORM-LVLU需求34试未闭，涉lvlu量子平台部署诉求。  \n\n② 应动何件  \n- 立协PLAN-QUEUE拍，补kick=1触发SI2/SI0节拍同步，不候。  \n\n③ 未闭项推进  \n- EXP016：未闭；下一步：执行第45次QLV-DIRECT压测，异常即转故障单。  \n- REQ-QUANTUM-PLATFORM：未闭；下一步：输出LVLU量子平台最小拓扑并锁定SI0资源。  \n\n④ 生债一条  \n- 生债：欠3拍PLAN-QUEUE的kick响应及两项未闭项的闭环ACK，本期优先清偿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
