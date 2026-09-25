@@ -43,7 +43,7 @@
    "action": "fieldnet->R2",
    "status": "open",
    "note": "场网边录每6拍重算入R2",
-   "last_run": "20260925T033405Z"
+   "last_run": "20260925T034444Z"
   },
   {
    "id": "QUANT-SIM-01",
@@ -52,7 +52,7 @@
    "action": "qring-sim->R2",
    "status": "open",
    "note": "8比特环态矢仿真每12拍入R2 quantum/(本源纪律:仿真先行)",
-   "last_run": "20260925T033405Z"
+   "last_run": "20260925T034444Z"
   },
   {
    "id": "QRING-STRESS-01",
@@ -61,7 +61,7 @@
    "action": "qring-stress->R2",
    "status": "open",
    "note": "SI1判词②衍生: 16/32比特环GHZ+退相干/读出错压力测试(尺度外推&鲁棒边界)",
-   "last_run": "20260925T033405Z",
+   "last_run": "20260925T034444Z",
    "src": "ANS-SEM-SI1-KICK-QUANT-SIM-01判词"
   }
  ]
