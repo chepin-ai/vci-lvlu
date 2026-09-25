@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T143739Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 5,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- 候件 PLAN-QUEUE拍 fired=3/kicks=0：lvlu 排程三次点火零 kick，队列空转拥塞。\n- 未闭项 EXP016-XCHK-QLV-DIRECT-01.md tries=5：lvlu 直连收件箱检查项五次未闭，异常卡滞。\n\n②应动何件\n- PLAN-QUEUE拍（zero-kick 立协同清队列，不候）。\n\n③未闭项推进\n- OI-vciinboxlaneslvluinboxEX：未闭；下一步转 SI1 人工复核或强制归档，终止无效重试。\n\n④生债一条\n- 补队列 kick 熔断规则：fired≥2 且 kicks=0 超限时自动告警升级。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
