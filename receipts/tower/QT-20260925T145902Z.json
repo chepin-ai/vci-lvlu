@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T145902Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 7,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- hub-broadcast「lgt-03-disc-anchor.md」：枢纽广播锚点件，录其 disc 锚定状态。  \n- plan-queue「PLAN-QUEUE拍 fired=3 kicks=0」：队列触发三次、零踢出，录燃烧落差。  \n\n②应动何件  \n- 两件立协：锚点广播即时同步律吕语境；队列拍立即核对 fired=3 落点，不候。  \n\n③未闭项推进  \n- OI-vciinboxlaneslvluinboxEX：未闭；下一步：读取 EXP016-XCHK-QLV-DIRECT-01.md 定位7次未决根因，若涉 lvlu 直通信道则提请 SI2 裁决。  \n\n④生债一条  \n- 债：plan-queue 缺 fired/kicks 自收敛钩，需补队列自偿逻辑以防在途积压。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
