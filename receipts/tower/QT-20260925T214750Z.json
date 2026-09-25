@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T214750Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260925T154204Z",
+   "tries": 36,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- hub-broadcast《lgt-03-disc-anchor.md》达线，涉 lvlu 讨论锚点（录）。\n- PLAN-QUEUE拍 fired=3 kicks=0，执行信号空转未落地。\n- OI-EX（EXP016-XCHK-QLV-DIRECT-01.md）已 46 试未闭。\n- OI-RE（REQ-QUANTUM-PLATFORM-LVLU-01.md）已 36 试未闭，涉 lvlu 量子平台诉求（录）。\n\n② 应动何件：\n- PLAN-QUEUE拍 立即补 kicks=3 协同；OI-EX、OI-RE 双线并推，不候。\n\n③ 未闭项推进：\n- OI-EX：未闭，下一步切人工 lane 查根因。\n- OI-RE：未闭，下一步检量子平台接口并降级重试。\n\n④ 生债一条：\n- 生债：QUEUE 三拍空挂，欠 kicks 执行债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
