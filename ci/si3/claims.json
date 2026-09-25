@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260925T021952Z",
+ "ts": "20260925T023035Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -14,7 +14,7 @@
    ],
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
-   "beats": 1619,
+   "beats": 1620,
    "nudge_level": 93,
    "last_nudge": "20260925T005401Z",
    "status": "open",
@@ -48,7 +48,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 96,
-   "beats": 1626,
+   "beats": 1627,
    "nudge_level": 179,
    "last_nudge": "20260925T021117Z",
    "status": "open",
@@ -107,7 +107,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 1625,
+   "beats": 1626,
    "nudge_level": 76,
    "last_nudge": "20260925T021117Z",
    "status": "open",
@@ -119,7 +119,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 1625,
+   "beats": 1626,
    "nudge_level": 76,
    "last_nudge": "20260925T021117Z",
    "status": "open",
@@ -165,7 +165,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 1610,
+   "beats": 1611,
    "nudge_level": 73,
    "last_nudge": "20260925T003236Z",
    "status": "open",
@@ -526,7 +526,7 @@
    "need_lines": [
     "ucif2"
    ],
-   "beats": 1414,
+   "beats": 1415,
    "nudge_level": 97,
    "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
    "watch": [
@@ -601,7 +601,7 @@
    "need_lines": [
     "lgt"
    ],
-   "beats": 1390,
+   "beats": 1391,
    "nudge_level": 83,
    "note": "RE2约接: 我链tip 280223d5a52b581e / 尔tip 209/813ac77adf5e",
    "legs_got": [],
@@ -638,7 +638,7 @@
    "need_lines": [
     "lgt"
    ],
-   "beats": 1390,
+   "beats": 1391,
    "nudge_level": 73,
    "note": "EXP-024题面已转投; κ>0.8 对拍",
    "legs_got": [],
@@ -787,7 +787,7 @@
    "sla_beats": 48,
    "target": "cisvr",
    "need_lines": null,
-   "beats": 1374,
+   "beats": 1375,
    "nudge_level": 83,
    "note": "FINE_OWN_PAT_QGL铸成(id19646075,qgl独占,Actions:RW+Contents:RW,2026-12-14期); root末段贴值(株47 C5-legit)→vault密封→git道200→sealed-PUT LINE_PAT入vci-qgl secrets(204); 回执KEY-INSTALL-RECEIPT-QGL-02经新钥自身git上链(fp 27a3a6ecbc70); Secrets:RW未授列root域下会期",
    "last_nudge": "20260925T013702Z",
@@ -894,7 +894,7 @@
     "lgt",
     "vinf"
    ],
-   "beats": 1365,
+   "beats": 1366,
    "nudge_level": 97,
    "note": "现票: 可2(lvlu/qgl)+usrm判1835Z已投待引擎重放; quorum5 deadline6拍(SLA-E事件锚); 达即v1.1汇判刊行",
    "legs_got": [],
