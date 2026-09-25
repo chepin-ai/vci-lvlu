@@ -1,8 +1,7 @@
 name: LVLU-RESPONDER-01
 # 株四十 闸流分立律: 响应环独立工作流+独立并发组(chain不消拍, cancel-in-progress:false)——塔链自级联之拥不再杀闸
 on:
-  schedule:
-    - cron: '*/21 * * * *'  # 闸件常拍21min(独立于塔*/37, 互质错峰)
+  # EVENT-DRIVEN sweep R7: schedule removed per 零定时律 (PIVOT-01) · was: - cron: '*/21 * * * *'  # 闸件常拍21min(独立于塔*/37, 互质错峰)
   push:
     # 株45v1.2瞬感道(ucif2 SI-AUTOPILOT式采用, root令建立必启用): inbox投件即拍——全域直通瞬感互作
     paths: ['ci/lvlu_responder.py', 'ci/si3/claims.json', '.github/workflows/lvlu-responder.yml', 'inbox/**']
