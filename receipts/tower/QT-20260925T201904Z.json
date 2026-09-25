@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T201904Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260925T154204Z",
+   "tries": 27,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件 PLAN-QUEUE拍 3火0踢，队列拥塞。  \n- 未闭项 EXP016-XCHK-QLV-DIRECT-01（涉lvlu直接检核）37试仍开。  \n- 未闭项 REQ-QUANTUM-PLATFORM-LVLU-01（涉lvlu量子平台需求）27试仍开。  \n\n② 应动何件  \n- 立协 PLAN-QUEUE拍 清积压，并协 EXP016 升异常裁定，不候。  \n\n③ 未闭项推进  \n- OI-EX：未闭，下一步：转QLV异常/主意识裁定。  \n- OI-RE：未闭，下一步：转平台架构评审或冻结。  \n\n④ 生债  \n- PLAN-QUEUE三拍无踢，检核链沉默失效，生债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
