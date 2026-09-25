@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T165947Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260925T154204Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 件1 hub-broadcast《lgt-03-disc-anchor.md》：lvlu线语义锚点广播到件，诉求锚定共识，已录。  \n- 件2 PLAN-QUEUE拍 fired=3 kicks=0：lvlu计划队列蓄火三次未踢出，诉求释放执行，已录。  \n\n② 应动何件  \n应动件2 PLAN-QUEUE拍，三级蓄火零踢出为显性流程梗阻，立协同不候，即时执行kick。  \n\n③ 未闭项推进  \n- OI-EX（EXP016-XCHK-QLV-DIRECT-01）：未闭，18试未决，下一步转冷校验或提级主意识裁决。  \n- OI-RE（REQ-QUANTUM-PLATFORM-LVLU-01）：未闭，8试挂起，下一步补全量子平台接口参数或回执缺省拒。  \n\n④ 生债一条  \n- 调度债：PLAN-QUEUE三次蓄火未kick，限本拍内强制清零。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
