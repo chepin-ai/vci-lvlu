@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T161446Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXP016-XCHK-QLV-DIRECT-01.md",
+   "opened": "20260925T135330Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260925T154204Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件 PLAN-QUEUE 拍 3 火 0 踢，队列拥塞待清。\n- 未闭 EX（EXP016-XCHK-QLV-DIRECT-01.md）14 试卡检未落。\n- 未闭 RE（REQ-QUANTUM-PLATFORM-LVLU-01.md）量子平台 lvlu 诉求 4 试未响。\n\n② 应动何件：\n- 立协同 RE（涉 lvlu 诉求），不候。\n\n③ 未闭项推进：\n- OI-EX：未闭；下一步：14 试异常，熔断并转根因诊断或降级。\n- OI-RE：未闭；下一步：激活 lvlu 量子平台资源握手，限 1 轮内闭。\n\n④ 生债一条：\n- 生债：lvlu 响应面缺重试熔断，诉求拖尾累积。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
