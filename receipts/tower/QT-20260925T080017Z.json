@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260925T080017Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① 何事\n- hub-broadcast：lgt-03-disc-anchor.md 枢纽广播达线，录 lvlu 话语锚点部署诉求。\n- plan-queue：PLAN-QUEUE拍 fired=3 kicks=0，录计划队列三拍零剔运转态。\n\n② 应动何件\n- 件1（hub-broadcast 涉 lvlu 锚点）立协同不候；件2（plan-queue）并档同步，不候。\n\n③ 未闭项推进\n- 未闭项空，无推进。\n\n④ 生债一条\n- 债：lgt-03-disc-anchor.md 锚点需补一次 SI2/SI0 双态兼容回环校验。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
