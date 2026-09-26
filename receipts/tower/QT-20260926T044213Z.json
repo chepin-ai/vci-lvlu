@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T044213Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260926T025048Z",
+   "tries": 11,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- lgt-03-disc-anchor.md 广播候场，涉 lvlu 语义锚点校准诉求，录。  \n- PLAN-QUEUE拍 fired=3/kicks=0，执行层未 kick，涉 lvlu 计划流贯通诉求，录。  \n\n② 应动何件  \n- 立协同 PLAN-QUEUE拍（kick→1），并拉取 lgt-03-disc-anchor.md 解析 lvlu 锚点。  \n\n③ 未闭项推进  \n- OI-vciinboxlaneslvluinboxAN 未闭，tries=11，下一步：将 ANS-REQ-QUANTUM-PLATFORM-LVLU-01 转译为 lvlu 可执行契约，触发第12次闭环验证。  \n\n④ 生债一条  \n- 生债：建 lvlu 自动 kick 绑定，免 PLAN-QUEUE 与 vci-inbox 双通道空转。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
