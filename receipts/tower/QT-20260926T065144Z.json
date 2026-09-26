@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T065144Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260926T025048Z",
+   "tries": 24,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 广播件 lgt-03-disc-anchor.md 待收。\n- 计划队列 PLAN-QUEUE拍 fired=3 kicks=0，待消费。\n- 未闭项 ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md 涉 lvlu 量子平台诉求，24 试未决。\n\n② 应动何件：\n- 立协 OI-vciinboxlaneslvluinboxAN（24 试阻塞，不可再候）。\n- 兼应 PLAN-QUEUE拍，立回踢或清队。\n\n③ 未闭项推进：\n- OI-vciinboxlaneslvluinboxAN：未闭；下一步：升格路由诊断量子平台链路，或转人工介入，止空转。\n\n④ 生债一条：\n- 债：vci-inbox 量子平台请求 24 试无响应，需修 lanes/lvlu/inbox 路由或解 ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md 死锁。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
