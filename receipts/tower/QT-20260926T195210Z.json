@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T195210Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-QRAC-V2RC-WAVE-QLV-01.md",
+   "opened": "20260926T174323Z",
+   "tries": 14,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- hub-broadcast件 `lgt-03-disc-anchor.md` 待阅。  \n- plan-queue件 `PLAN-QUEUE拍 fired=3 kicks=0`，队列积压未消化。  \n- 未闭项 `OI-vciinboxlaneslvluinboxNO`（`lanes/lvlu/inbox/NOTICE-QRAC-V2RC-WAVE-QLV-01.md`）已尝试14次未闭，涉lvlu诉求。  \n\n② 应动何件  \n- 立协同 plan-queue 积压项与 `OI-vciinboxlaneslvluinboxNO`（lvlu inbox 阻塞，不候）。  \n\n③ 未闭项推进  \n- `OI-vciinboxlaneslvluinboxNO`：未闭；下一步诊断 `lanes/lvlu/inbox` 路由阻塞根因，执行第15次投递或切备用通道。  \n\n④ 生债一条  \n- 生债：补 lvlu inbox 熔断降级与告警规则，防14次阻塞无人觉。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
