@@ -1,0 +1,40 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T153633Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① **何事**：PLAN-QUEUE拍已fired=3而kicks=0，律吕积压三拍未落，lvlu调度诉求显化。  \n② **应动何件**：立协同PLAN-QUEUE拍，kick补差=3，即刻落拍不候。  \n③ **未闭项推进**：未闭项为空，无推进项。  \n④ **生债**：生债——QUEUE拍差值3，本次响应后须归零。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
