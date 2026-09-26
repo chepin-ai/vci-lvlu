@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T180448Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-QRAC-V2RC-WAVE-QLV-01.md",
+   "opened": "20260926T174323Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：  \n- hub-broadcast：收 **lgt-03-disc-anchor.md** 锚点广播，涉 lvlu 跨线同步。  \n- plan-queue：**PLAN-QUEUE拍 fired=3 kicks=0**，三拍零踢，执行滞转。  \n\n② 应动何件：  \n**plan-queue** 应即协同踢转（kicks=0 不可再候）；hub-broadcast 锚点同步亦应即收。  \n\n③ 未闭项推进：  \n**OI-vciinboxlaneslvluinboxNO**（NOTICE-QRAC-V2RC-WAVE-QLV-01.md）未闭，已试 4 次，下一步：五试并核阻塞根因，再败即升级。  \n\n④ 生债一条：  \n生债：录 PLAN-QUEUE kicks=0 根因一宗。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
