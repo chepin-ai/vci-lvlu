@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T214109Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-QRAC-V2RC-WAVE-QLV-01.md",
+   "opened": "20260926T174323Z",
+   "tries": 25,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件PLAN-QUEUE：队列已触发3次、kicks=0，计划积压无踢出。  \n- 未闭项OI-vciinboxlaneslvluinboxNO：lvlu收件箱通知NOTICE-QRAC-V2RC-WAVE-QLV-01.md自20260926起尝试25次未闭环，lvlu诉求挂起待决。  \n\n②应动何件：未闭项OI-vciinboxlaneslvluinboxNO，立协同不候。  \n\n③未闭项推进  \n- OI-vciinboxlaneslvluinboxNO：未闭；下一步：直抵lanes/lvlu/inbox定位该NOTICE阻塞根因，第26试强制闭环或升级分派。  \n\n④生债一条：PLAN-QUEUE三次触发无kick，缺踢出机制，需补队列排障规则以防空转积压。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
