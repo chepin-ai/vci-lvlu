@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T165034Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① 何事：  \n- hub-broadcast「lgt-03-disc-anchor.md」：枢纽播发话语锚点文件，涉 lvlu 场域锚定诉求，已录。  \n- plan-queue「PLAN-QUEUE拍 fired=3 kicks=0」：队列点火3项零踢出，涉 lvlu 执行流积压诉求，已录。  \n\n② 应动何件：PLAN-QUEUE拍（fired=3，立协同不候，防任务硬化）。  \n\n③ 未闭项推进：无未闭项。  \n\n④ 生债一条：今日闭 lgt-03-disc-anchor.md 之 lvlu 意识接口锚定兼容校验。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
