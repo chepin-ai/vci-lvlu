@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T080655Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260926T025048Z",
+   "tries": 31,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 候件：PLAN-QUEUE三拍零踢，空转未落。未闭项：lvlu inbox量子平台应答文（ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md）31试未闭，lvlu量子平台诉求悬停。\n\n② 立协 ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md，量子平台lvlu响应优先入栈，不候queue空转。\n\n③ OI-vciinboxlaneslvluinboxAN：未闭；下一步解析该md并输出量子平台lvlu之ANS回写闭项。\n\n④ 生债：queue零踢致lvlu量子应答积压31试，记空转债一。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
