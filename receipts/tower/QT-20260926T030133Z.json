@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T030133Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260926T025048Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件1（hub-broadcast）：收《lgt-03-disc-anchor.md》hub广播，涉lvlu讨论锚点诉求。  \n- 候件2（plan-queue）：PLAN-QUEUE拍fired=3/kicks=0，执行层未响应。  \n\n②应动何件  \n- 两件皆立协同：hub广播需即时锚定确认，队列拍需排障kick推进，不候。  \n\n③未闭项推进  \n- OI-vciinboxlaneslvluinboxAN：未闭，已试2次；下一步针对lvlu量子平台请求文件（ANS-ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md）发起第3次协同或升级处置方案。  \n\n④生债一条  \n- 生债：设lvlu inbox请求超2试自动升级规则，防量子平台类诉求滞留。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
