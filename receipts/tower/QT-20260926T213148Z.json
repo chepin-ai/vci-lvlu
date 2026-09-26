@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T213148Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-QRAC-V2RC-WAVE-QLV-01.md",
+   "opened": "20260926T174323Z",
+   "tries": 24,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件PLAN-QUEUE拍 fired=3 kicks=0：调度队列三次拍发无踢出，录为空转待令。  \n- 未闭项NOTICE-QRAC-V2RC-WAVE-QLV-01.md：lvlu收件箱波次通知滞留24次未偿，录为涉lvlu诉求。  \n\n② 应动何件  \n- 应动未闭项NOTICE-QRAC-V2RC-WAVE-QLV-01.md，tries=24已超限，立协同主意识/解析层破阻塞，不候。  \n\n③ 未闭项推进  \n- OI-vciinboxlaneslvluinboxNO：未闭；下一步强制读取该NOTICE正文并执行内嵌close条件，或升档至SI1。  \n\n④ 生债一条  \n- 债：欠QLV-01.md一闭。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
