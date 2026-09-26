@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T055838Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260926T025048Z",
+   "tries": 19,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- hub-broadcast 件 `lgt-03-disc-anchor.md` 到线，待阅。\n- plan-queue 件 `PLAN-QUEUE拍` 已三拍零踢转，队列淤塞。\n- 未闭项 `OI-vciinboxlaneslvluinboxAN` 为 lvlu 量子平台请求（ANS-REQ-QUANTUM-PLATFORM-LVLU-01），十九试未决，诉求未录。\n\n②应动何件：\n- 立协未闭项 `OI-vciinboxlaneslvluinboxAN`，不候。\n\n③未闭项推进：\n- `OI-vciinboxlaneslvluinboxAN`：未闭；下一步：SI2/SI0 双轨第20次穿透，回写 `lanes/lvlu/outbox/DIAG-20.md` 并标定阻塞根因。\n\n④生债一条：\n- 生债：设 lvlu-inbox 五试升舱制，防单件长期挂起。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
