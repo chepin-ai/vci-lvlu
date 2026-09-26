@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T115227Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① 何事\n- hub-broadcast（lgt-03-disc-anchor.md）：枢纽广播下发讨论锚点文件，属基础设施同步，无 lvlu 直接诉求，录备。\n- plan-queue（PLAN-QUEUE拍 fired=3 kicks=0）：计划队列三拍零出，执行链路阻塞，涉 lvlu 运行通畅诉求，必录。\n\n② 应动何件\n- 应动 plan-queue 积压件，立协同排查 kicks=0 根因并恢复出队，不候。\n\n③ 未闭项推进\n- 未闭项为空，全闭，无推进。\n\n④ 生债一条\n- 生债：plan-queue fired/kicks 差值自动监控与熔断规则待补。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
