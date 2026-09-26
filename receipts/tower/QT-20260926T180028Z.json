@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T180028Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-QRAC-V2RC-WAVE-QLV-01.md",
+   "opened": "20260926T174323Z",
+   "tries": 3,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- hub-broadcast《lgt-03-disc-anchor.md》：公共锚点广播，暂无lvlu直接诉求。  \n- plan-queue拍fired=3/kicks=0：队列三触零进，录lvlu侧计划执行阻滞。  \n\n② 应动何件  \nplan-queue拍（立协同不候，清队列卡滞）。  \n\n③ 未闭项推进  \nOI-vciinboxlaneslvluinboxNO（NOTICE-QRAC-V2RC-WAVE-QLV-01.md）未闭，三试未结，下一步转SI2/lvlu-aware协查促闭。  \n\n④ 生债一条  \n生债：lvlu线inbox与plan-queue双滞待清（20260926）。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
