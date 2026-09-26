@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T072422Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260926T025048Z",
+   "tries": 27,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件PLAN-QUEUE拍板已fired=3次，kicks=0，队列待落；未闭项ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md（lvlu量子平台诉求）已试27次未闭。\n\n② 应动何件：立协同ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md，不候。\n\n③ 未闭项推进：OI-vciinboxlaneslvluinboxAN未闭，下一步查27次阻塞根因并强制闭环。\n\n④ 生债一条：PLAN-QUEUE拍板fired无kicks穿透，需补执行链缺环。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
