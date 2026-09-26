@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T045259Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260926T025048Z",
+   "tries": 13,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 枢纽广播 `lgt-03-disc-anchor.md` 待阅。  \n- `PLAN-QUEUE拍` fired=3、kicks=0，执行层无推进信号。  \n- **涉lvlu诉求**：`vci-inbox` 中 `ANS-REQ-QUANTUM-PLATFORM-LVLU-01` 已尝试13次未决，lvlu量子平台接口/资源待复。  \n\n②应动何件  \n- 立协同不候：**应动 `OI-vciinboxlaneslvluinboxAN`**，协同 `vci-inbox` 推进 lvlu 量子平台请求，即刻拉通，不再候批。  \n\n③未闭项推进  \n- `OI-vciinboxlaneslvluinboxAN`：**未闭**；下一步：第14次尝试或升级决策层，限期给出口令或资源到位路径，否则转死锁通告。  \n\n④生债一条  \n- 生债：`PLAN-QUEUE` kicks=0 根因待录，`lgt-03-disc-anchor.md` 阅后须闭环回执。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
