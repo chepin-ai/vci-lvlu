@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T061954Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260926T025048Z",
+   "tries": 21,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件：PLAN-QUEUE拍已触发3次但kicks=0，队列空转未推进。  \n- 未闭项：vci-inbox:lanes/lvlu/inbox/ANS-ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md尝试21次仍未关闭，涉lvlu量子平台诉求。  \n\n② 应动何件  \n- 立协未闭项OI-vciinboxlaneslvluinboxAN（lvlu量子平台请求），同步修复PLAN-QUEUE拍执行阻塞。  \n\n③ 未闭项推进  \n- OI-vciinboxlaneslvluinboxAN：未闭，下一步解析该md文件并执行lvlu侧量子平台配置/答复以闭环。  \n\n④ 生债一条  \n- 债：lvlu量子请求21次悬置叠PLAN-QUEUE三次空转，形成协同阻塞债，需即刻清偿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
