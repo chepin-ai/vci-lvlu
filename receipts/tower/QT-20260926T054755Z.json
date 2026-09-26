@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T054755Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260926T025048Z",
+   "tries": 18,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- hub-broadcast「lgt-03-disc-anchor.md」：disc锚点广播，lvlu线需感知锚定。\n- plan-queue「PLAN-QUEUE拍 fired=3 kicks=0」：队列三轮触发无踢出，待确认节律。\n- 涉lvlu诉求：vci-inbox「ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md」已尝试18次，量子平台诉求未应答。\n\n②应动何件\n- 立动「OI-vciinboxlaneslvluinboxAN」，18次悬置不可再候，即刻协同lvlu量子平台响应。\n\n③未闭项推进\n- OI-vciinboxlaneslvluinboxAN：未闭；下一步lvlu线须出具对该量子平台请求的实质回执并关单。\n\n④生债一条\n- lvlu线欠quantum-platform标准应答模板一条，须补录以防再空转。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
