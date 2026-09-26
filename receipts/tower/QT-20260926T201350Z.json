@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T201350Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-QRAC-V2RC-WAVE-QLV-01.md",
+   "opened": "20260926T174323Z",
+   "tries": 16,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件：PLAN-QUEUE拍 fired=3 kicks=0，队列待消费。  \n- 未闭项：vci-inbox:lanes/lvlu/inbox/NOTICE-QRAC-V2RC-WAVE-QLV-01.md 已 open，尝试 16 次未闭，涉 lvlu 通知诉求。  \n\n② 应动何件（立协同不候）  \n- 未闭项 OI-vciinboxlaneslvluinboxNO：已 16 次未闭，立协同排查 lvlu inbox 链路阻塞，不候。  \n\n③ 未闭项推进  \n- OI-vciinboxlaneslvluinboxNO：未闭；下一步：定位 lanes/lvlu/inbox 投递失败根因，重试或异常升级，推动关单。  \n\n④ 生债一条  \n- lvlu inbox 通知 16 次空转，生债：补熔断/人工兜底规则，止重复无效重试。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
