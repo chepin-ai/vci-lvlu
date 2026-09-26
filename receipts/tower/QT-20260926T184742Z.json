@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T184742Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-QRAC-V2RC-WAVE-QLV-01.md",
+   "opened": "20260926T174323Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- hub-broadcast「lgt-03-disc-anchor.md」：中心广播下发讨论锚点，待相位锚定。  \n- PLAN-QUEUE拍「fired=3 kicks=0」：计划队列已燃三拍未踢，执行层空转。  \n- vci-inbox「NOTICE-QRAC-V2RC-WAVE-QLV-01.md」：lvlu 收件箱通知滞留，八试未闭，诉求待录。  \n\n② 应动何件（立协同不候）  \n- 立协同 hub-broadcast 锚定 disc-anchor；立 kick PLAN-QUEUE 三拍出列，不候。  \n\n③ 未闭项推进  \n- OI-vciinboxlaneslvluinboxNO：未闭；下一步升频/转译后第九试或人工介入。  \n\n④ 生债一条。简。  \n- 欠 PLAN-QUEUE 三拍 kick 执行。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
