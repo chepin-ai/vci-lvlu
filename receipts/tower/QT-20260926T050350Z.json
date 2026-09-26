@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T050350Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260926T025048Z",
+   "tries": 14,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- PLAN-QUEUE已fired=3而kicks=0，队列执行停滞未出队。\n- lvlu inbox量子平台请求（ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md）经14次尝试仍open，涉lvlu量子平台接入/构建诉求。\n\n②应动何件：\n- 立协PLAN-QUEUE出队执行，并强推OI-vciinboxlaneslvluinboxAN终闭，双件并动不候。\n\n③未闭项推进：\n- OI-vciinboxlaneslvluinboxAN：未闭，下一步由owner输出终版决议或强制关闭，止14轮空转。\n\n④生债一条：\n- 生债：PLAN-QUEUE执行与lvlu量子ANS响应双积压，偿债需设fired≥3自动出队及tries≥10熔断强关规则。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
