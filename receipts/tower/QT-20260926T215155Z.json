@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T215155Z",
+ "idle_in": 5,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-QRAC-V2RC-WAVE-QLV-01.md",
+   "opened": "20260926T174323Z",
+   "tries": 26,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- hub-broadcast「lgt-03-disc-anchor.md」到线，待检是否含 lvlu 锚定/律吕诉求。\n- plan-queue「PLAN-QUEUE拍」3 fired/0 kicks，队列 stalled。\n- 未闭项「NOTICE-QRAC-V2RC-WAVE-QLV-01.md」占 lvlu 收件箱 lane，26 试未决。\n\n② 应动何件：\n- 立协同「PLAN-QUEUE拍」疏堆积、补 kicks，不候。\n- 立协同「OI-vciinboxlaneslvluinboxNO」走 SI2 强制 closure，不候。\n\n③ 未闭项推进：\n- OI-vciinboxlaneslvluinboxNO：未闭；下一步：SI2 人工介入根因，今日内闭或转异常池。\n\n④ 生债一条：\n- 生债：PLAN-QUEUE 0 kicks 之因未明，须限期补 kick 或释出资源。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
