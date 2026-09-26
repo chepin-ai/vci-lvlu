@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T000008Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① 何事  \n- hub-broadcast/lgt-03-disc-anchor.md：中心广播触达disc锚点文件，lvlu线录收该认知锚点。  \n- plan-queue拍fired=3 kicks=0：计划队列已空转三拍无kick，lvlu线录得其律吕执行层悬停。  \n\n② 应动何件  \n- 应动plan-queue件（空转不候，立协同kick或回压，止律吕白烧）。  \n\n③ 未闭项推进  \n- 未闭项为空，全部已闭，无推进。  \n\n④ 生债一条  \n- plan-queue空转回压策略一条，须补kick阈值或熔断，防律吕层白烧。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
