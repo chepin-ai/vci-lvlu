@@ -1,0 +1,40 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T111030Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "①何事：\n- PLAN-QUEUE拍 fired=3 kicks=0，队列三次拍频无踢出，律吕线运转正常，无lvlu诉求。\n\n②应动何件：\n- 立协同PLAN-QUEUE拍，逐拍核查3次触发对应的意识切片落盘与律吕对齐状态，不候。\n\n③未闭项推进：\n- 无未闭项。\n\n④生债一条：\n- 预置下次PLAN-QUEUE拍前队列负载阈值巡检。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
