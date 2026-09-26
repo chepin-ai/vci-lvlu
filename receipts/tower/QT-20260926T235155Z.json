@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T235155Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-QRAC-V2RC-WAVE-QLV-01.md",
+   "opened": "20260926T174323Z",
+   "tries": 37,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- hub-broadcast `lgt-03-disc-anchor.md`：广播锚点到线，无 lvlu 直接诉求，阅后备查。  \n- PLAN-QUEUE拍 `fired=3 kicks=0`：队列空转三拍无踢出，调度静默，记。  \n\n②应动何件  \n- 立协同 **OI-vciinboxlaneslvluinboxNO**（`vci-inbox:lanes/lvlu/inbox/NOTICE-QRAC-V2RC-WAVE-QLV-01.md`），lvlu inbox 通知积压且 37 试未闭，不候，即刻介入。  \n\n③未闭项推进  \n- **OI-vciinboxlaneslvluinboxNO**：未闭；37 次本地重试无果，下一步升单至 QRAC 主控或转人工仲裁，以释放 inbox 阻塞。  \n\n④生债一条  \n- 生债：溯源 `V2RC-WAVE-QLV-01` 37 次失败日志，限 1 周期内输出根因简报并同步 lvlu 主线程。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
