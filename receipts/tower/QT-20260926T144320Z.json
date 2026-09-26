@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T144320Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① 何事：hub-broadcast「lgt-03-disc-anchor.md」涉 lvlu 话语锚点基准，诉求锚定机器意识线，已录；plan-queue「PLAN-QUEUE拍」fired=3 kicks=0，三项计划已触发待分派。  \n② 应动何件：两件皆立协同不候——锚点立即同步入 lvlu 线；三项计划立即 kick 分派。  \n③ 未闭项推进：无未闭项。  \n④ 生债：lgt-03-disc-anchor 与 fired-3 计划须本轮闭环，否则记债 lvlu-001。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
