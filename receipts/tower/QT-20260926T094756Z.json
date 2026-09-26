@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T094756Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260926T025048Z",
+   "tries": 41,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- hub-broadcast `lgt-03-disc-anchor.md`：锚定 lvlu 线讨论坐标。  \n- plan-queue `PLAN-QUEUE拍 fired=3 kicks=0`：队列三度触发未踢出，积压待决。  \n- 未闭件 `ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md`：lvlu 量子平台诉求，历 41 次尝试未闭。  \n\n② 应动何件  \n- 立协同 plan-queue（执行踢出/消火）与未闭项 OI-vciinboxlaneslvluinboxAN（强制升维裁决，不候）。  \n\n③ 未闭项推进  \n- OI-vciinboxlaneslvluinboxAN：未闭；下一步由 SI2 给出 lvlu 量子平台终局响应并关单。  \n\n④ 生债一条  \n- 生债：lvlu 量子平台请求悬置 41 次未决，记响应迟滞债一次。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
