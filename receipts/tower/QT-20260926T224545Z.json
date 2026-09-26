@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T224545Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-QRAC-V2RC-WAVE-QLV-01.md",
+   "opened": "20260926T174323Z",
+   "tries": 31,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- hub-broadcast（lgt-03-disc-anchor.md）：枢纽广播锚点件，待阅，暂无显 lvlu 诉求。\n- plan-queue（PLAN-QUEUE拍 fired=3 kicks=0）：计划队列三拍零踢，执行链空转。\n\n②应动何件（立协同不候）：\n- 应动 plan-queue 件：fired=3 kicks=0 显阻滞，立协同排查队列根因并踢出，不候。\n\n③未闭项推进：\n- OI-vciinboxlaneslvluinboxNO（NOTICE-QLV-01.md）：31试未闭，不闭；下一步停自动重试，转 SI1/主律裁定，防噪耗。\n\n④生债一条：\n- 生债：QLV-01 通知31次未闭环，生重试耗散债一条，限本期结零。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
