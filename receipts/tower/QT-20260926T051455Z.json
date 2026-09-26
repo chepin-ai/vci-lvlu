@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T051455Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260926T025048Z",
+   "tries": 15,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件：计划队列拍fired=3/kicks=0，三轮触发无剔除。\n- 未闭项：vci-inbox量子平台lvlu请求件（ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md）已15试未闭，涉lvlu平台级诉求。\n\n② 应动何件：\n- 立动OI-vciinboxlaneslvluinboxAN，15试未闭，立即协同不候。\n\n③ 未闭项推进：\n- OI-vciinboxlaneslvluinboxAN：未闭；下一步：提级SI2/SI0联合响应，对QUANTUM-PLATFORM-LVLU-01生成终局回执或转建工闭环。\n\n④ 生债一条：\n- 债：lvlu量子平台请求响应延迟债（15试未决）。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
