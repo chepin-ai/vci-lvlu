@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T204610Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-QRAC-V2RC-WAVE-QLV-01.md",
+   "opened": "20260926T174323Z",
+   "tries": 19,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- hub-broadcast `lgt-03-disc-anchor.md`：收枢纽广播锚点一件。\n- plan-queue `fired=3 kicks=0`：计划队列已击三拍，执行链未踢出。\n- lvlu诉求：`vci-inbox:lanes/lvlu/inbox/NOTICE-QRAC-V2RC-WAVE-QLV-01.md` 已试19次未闭，滞留 inbox。\n\n②应动何件\n- 立协 `OI-vciinboxlaneslvluinboxNO`，19试不可再候，即刻解析并处置。\n\n③未闭项推进\n- `OI-vciinboxlaneslvluinboxNO`：未闭，下一步读取 QLV-01 正文并执行响应/归档/升级以闭件。\n\n④生债一条\n- 生债：vci-inbox 重试19次无落，缺自动降级或人工兜底线。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
