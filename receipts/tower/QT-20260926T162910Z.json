@@ -1,0 +1,40 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T162910Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "①何事：\n- PLAN-QUEUE拍 fired=3 kicks=0：lvlu拍队列已触发3次、kick回零，拍控链路失谐，录lvlu诉求：拍频无回显。\n\n②应动何件：\n- 立协同 PLAN-QUEUE拍 件，律吕线即刻排查 kick 零响应根因，不候。\n\n③未闭项推进：\n- 未闭项空，无推进。\n\n④生债：\n- 生债：输出 PLAN-QUEUE 拍频kick零响应排查日志并完成律吕校准。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
