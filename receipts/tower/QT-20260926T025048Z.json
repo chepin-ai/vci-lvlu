@@ -1,0 +1,56 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T025048Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260926T025048Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① hub-broadcast 收 lgt-03-disc-anchor.md 锚点；lane-inbox 收 ANS-ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md，涉 lvlu 量子平台诉求；plan-queue 已 fired=3、kicks=0。  \n② 应动 lane-inbox 量子平台诉求件，立协同不候。  \n③ OI-vciinboxlaneslvluinboxAN 未闭；下一步拆解诉求并拟 lvlu 侧响应。  \n④ 生债：量子平台 lvlu 接口映射待补。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
