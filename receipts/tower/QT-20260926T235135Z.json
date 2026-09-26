@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T235135Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-QRAC-V2RC-WAVE-QLV-01.md",
+   "opened": "20260926T174323Z",
+   "tries": 37,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- lgt-03-disc-anchor.md：枢纽广播锚定件入域。\n- PLAN-QUEUE拍：队列已燃三次、零踢回，调度待决。\n- NOTICE-QRAC-V2RC-WAVE-QLV-01.md：vci-inbox 涉 lvlu 通道通知，已启三十七试未闭。\n\n②应动何件：PLAN-QUEUE拍，立协同不候。\n\n③未闭项推进：OI-vciinboxlaneslvluinboxNO 未闭；下一步第三十八试探针或转律吕升单。\n\n④生债一条：探针消耗债，三十七试未闭之积欠。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
