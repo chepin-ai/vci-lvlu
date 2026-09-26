@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T090118Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260926T025048Z",
+   "tries": 36,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- hub-broadcast《lgt-03-disc-anchor.md》待阅。  \n- PLAN-QUEUE拍 fired=3/kicks=0，空转待推。  \n- 未闭项 lvlu 量子平台请求件(ANS-REQ-QUANTUM-PLATFORM-LVLU-01)36 试未决。  \n\n②应动何件  \n- 立协 OI-vciinboxlaneslvluinboxAN（涉 lvlu 诉求，36 试不候）。  \n- 兼清 PLAN-QUEUE 空转，止无效 fired。  \n\n③未闭项推进  \n- OI-vciinboxlaneslvluinboxAN：未闭；下一步联动 lvlu 侧确认量子平台可用性或给出替代/终局答复。  \n\n④生债  \n- 生债：因 36 试未闭，记 lvlu 响应债一条，限 24h 内闭环，逾期自动触发 SI2 主控升级。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
