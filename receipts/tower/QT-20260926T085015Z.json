@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T085015Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "lgt-03-disc-anchor.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260926T025048Z",
+   "tries": 35,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 中枢广播件《lgt-03-disc-anchor.md》达，待阅。\n- 计划队列 PLAN-QUEUE 触发 fired=3、kicks=0，待同步。\n- lvlu 收件箱量子平台诉求件 ANS-ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md 已悬置 35 次未闭。\n\n② 应动何件：\n- 立动未闭项 OI-vciinboxlaneslvluinboxAN（涉 lvlu 量子平台诉求），协同闭环，不候。\n\n③ 未闭项推进：\n- OI-vciinboxlaneslvluinboxAN：未闭；下一步：升级 lvlu 主线介入或触发 ANS-REQ-QUANTUM-PLATFORM 专项闭环，解除 35 次挂起。\n\n④ 生债一条：\n- 生债：lvlu inbox 量子平台诉求 35 次未决，记链路阻塞债一条，须限时消债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
