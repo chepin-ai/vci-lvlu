@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260926T073457Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAN",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ANS-ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md",
+   "opened": "20260926T025048Z",
+   "tries": 28,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：  \n- 候件 PLAN-QUEUE拍：fired=3 kicks=0，队列稳态，无涉lvlu新诉求涌入。  \n- 未闭项：量子平台请求 ANS-ANS-REQ-QUANTUM-PLATFORM-LVLU-01.md 已28试未闭，系lvlu基建诉求，已录。  \n\n② 应动何件：  \n- 立协 OI-vciinboxlaneslvluinboxAN，不候。  \n\n③ 未闭项推进：  \n- OI-vciinboxlaneslvluinboxAN：未闭；下一步：72h内输出量子平台接口或阻断根因，逾期熔断升级。  \n\n④ 生债一条：  \n- lvlu线兜底28试沉没成本，若外部无解，自研最小量子模拟栈代偿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
