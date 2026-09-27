@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T003459Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-QRAC-V2RC-WAVE-QLV-01.md",
+   "opened": "20260926T174323Z",
+   "tries": 41,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：PLAN-QUEUE拍fired=3 kicks=0，执行层三拍未踢，队列卡滞；lvlu/inbox/NOTICE-QRAC-V2RC-WAVE-QLV-01.md已历41试未闭，QRAC-WAVE通知积压涉lvlu收件箱。\n\n② 应动何件：两件并立协——PLAN-QUEUE拍立即转踢（kick>0），同步强推OI-vciinboxlaneslvluinboxNO闭项，不候。\n\n③ 未闭项推进：OI-vciinboxlaneslvluinboxNO未闭；下一步切SI2诊断41败因，若QRAC V2RC协议握手或WAVE-QLV路由阻塞，提级主控线程强制签收闭环。\n\n④ 生债一条：PLAN-QUEUE kicks归零防积拍机制待修。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
