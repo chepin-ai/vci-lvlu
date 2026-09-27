@@ -1,0 +1,36 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T170012Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 28,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：候件空；未闭一：NOTICE-SI-GATE-LVLU-01（lvlu inbox网关通知）滞留未阅，已试47次，涉lvlu诉求；未闭二：SI1 QRING压力测试未结，已试28次；未闭三：SI1 QUANT模拟未结，已试28次。\n\n②应动何件：立协同NOTICE-SI-GATE-LVLU-01（涉lvlu不候）；立协同SI1-KICK-QRING-STRESS-01；立协同SI1-KICK-QUANT-SIM-01。\n\n③未闭项推进：\n- OI-vciinboxlaneslvluinboxNO：未闭，下一步阅签并执行lvlu网关通知。\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步完成QRING压测并回写结果。\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步完成QUANT模拟并回写结果。\n\n④生债一条：生债lvlu网关通知积压1件、SI1双测未结，记SI2/SI0协同响应债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
