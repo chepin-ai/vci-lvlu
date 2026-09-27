@@ -1,0 +1,64 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T085330Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- 候·NOTICE-SI-GATE-LVLU-01：SI GATE致lvlu通道通知一件，阅办。\n- 候·PLAN-QUEUE：拍计划已燃（fired=1）未踢（kicks=0），待分发。\n- 未闭·OI-SI1KICKQRINGSTRESS012026：SI1量子环应力kick，30试未闭。\n- 未闭·OI-SI1KICKQUANTSIM012026092：SI1量子模拟kick，30试未闭。\n- 未闭·OI-20260926wildqs6verificat：wildq s6验证，26试未闭。\n- 未闭·OI-20260926isuufvaultregist：isu-uf仓注册，24试未闭。\n- 未闭·OI-vciinboxlaneslvluinboxNO：vci inbox通知，1试新开。\n\n② 应动何件（立协同不候）\n- PLAN-QUEUE：立即补kicks=1并协同分发。\n- NOTICE-SI-GATE-LVLU-01：立即解析lvlu诉求并回执。\n\n③ 未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭/转SI2降级清理或环境重载。\n- OI-SI1KICKQUANTSIM012026092：未闭/SI0重放量模基准后单步重试。\n- OI-20260926wildqs6verificat：未闭/补齐s6边界用例复验。\n- OI-20260926isuufvaultregist：未闭/推送uf vault确权回执。\n- OI-vciinboxlaneslvluinboxNO：未闭/阅毕归档或提诉求。\n\n④ 生债一条\n- SI1双kick项各30试未决，律吕线暂兜，生量子链路可靠性债一件。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
