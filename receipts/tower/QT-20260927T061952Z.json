@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T061952Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 10,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：候件空仓；未闭四件皆涉lvlu：SI1量子环应力测试（16试）、SI1量子模拟（16试）、wildq-S6验证（12试）、ISU-UF保险库注册（10试）。\n\n②应动何件：四件全动，立协同不候；SI1双线（16试）优先拉通。\n\n③未闭项推进：  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步压测签核闭环。  \n- OI-SI1KICKQUANTSIM012026092：未闭，下一步初态交付闭环。  \n- OI-20260926wildqs6verificat：未闭，下一步S6",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
