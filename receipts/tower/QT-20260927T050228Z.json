@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T050228Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空；OI-SI1KICKQRINGSTRESS012026 为 SI1 环签名压力测试未闭；OI-SI1KICKQUANTSIM012026092 为 SI1 量子模拟启动未闭；OI-20260926wildqs6verificat 为 wildq S6 验证未闭；OI-20260926isuufvaultregist 为 isu-uf 仓库注册表未闭；无显性 lvlu 诉求录。\n\n② 应动何件：四件皆立协同不候；前二项各经 8 试未通，尤须即并线排障。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步切诊断模式锁定根因。\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步重置量模环境再验。\n- OI-20260926wildqs6verificat：未闭，下一步补齐 S6 验证缺口。\n- OI-20260926isuufvaultregist：未闭，下一步核对 UF 映射与注册表一致性。\n\n④ 生债一条：高频重试未闭项缺自动熔断与根因标记机制，须补。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
