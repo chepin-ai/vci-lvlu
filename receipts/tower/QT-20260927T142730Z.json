@@ -1,0 +1,41 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T142730Z",
+ "idle_in": 11,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T141616Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 13,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①  \n- SI1 新 Kick 量子模拟(QUANT-SIM，14:16 批次)入 lvlu 候件，求协同响应。  \n- NOTICE-SI-GATE-LVLU 卡 VCI inbox 已 32 试，lvlu 通道告警。  \n- SI1 QRing 压测(STRESS)未启动，挂起 13 试。  \n- SI1 旧批次量子模拟(12:03)未闭，与新候件同题叠加。  \n\n②  \n- 立协新候件 QUANT-SIM（14:16），不候；同步疏通 VCI NOTICE 通道。  \n\n③  \n- OI-vciinbox...NO：未闭；下一步切 lanes 或手签该通知。  \n- OI-QRING-STRESS：未闭；下一步 QuantSim 资源释放后串行排期。  \n- OI-QUANT-SIM（旧）：未闭；下一步合并至新候件或确认作废后关闭。  \n\n④  \n- 生债：lvlu 须于本节拍内完成 SI1 QUANT-SIM 首响，并修复 VCI inbox 签收。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
