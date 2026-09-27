@@ -1,0 +1,50 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T141616Z",
+ "idle_in": 10,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=2 kicks=1"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 12,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- 候件PLAN-QUEUE拍：队列二次触发并伴1 kick，待分派。\n- 未闭OI-vciinboxlaneslvluinboxNO：lvlu收件箱通知卡滞31次未闭环，lvlu诉求已录。\n- 未闭OI-SI1KICKQRINGSTRESS012026：QRING压测项12次未闭。\n- 未闭OI-SI1KICKQUANTSIM012026092：QUANT-SIM项12次未闭。\n\n②应动何件\n- OI-vciinboxlaneslvluinboxNO，立协同SI2/SI0升维清障，不候。\n\n③未闭项推进\n- OI-vciinboxlaneslvluinboxNO：未闭，下一步SI2/SI0直连根因清查lanes/lvlu/inbox阻塞。\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步复核QRING压力阈值并重排kick时序。\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步校验quant-sim参数或回滚SI1基线。\n\n④生债一条\n- 债-20260927-LVLU-31X：lvlu inbox notice 31次未闭，耗SI2/SI0桥接带宽，须补一次根因清偿与lanes防重入加固。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 2,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 1
+ }
+}
