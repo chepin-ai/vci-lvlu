@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T082050Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 21,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空；未闭项四件均高试未闭，无新lvlu直诉流入。  \n② 应动何件：SI1-KICK-QRING-STRESS、SI1-KICK-QUANT-SIM 双件各27试触限，立协同不候，启动SI2/SI0联合解压；wildq-s6-verification、isu-uf-vault-registry 并行补试不候。  \n③ 未闭项推进：  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步升SI2环压诊断/熔断重置。  \n- OI-SI1KICKQUANTSIM012026092：未闭，下一步 quant 模拟日志回传律吕层复核。  \n- OI-20260926wildqs6verificat：未闭，下一步核对s6验证向量与签名环。  \n- OI-20260926isuufvaultregist：未闭，下一步 UF vault 注册凭条补签并回写SI0基线。  \n④ 生债一条：SI1 kick 双项27试未出清，记「SI1应力-量子模拟联合阻塞债」，待清分。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
