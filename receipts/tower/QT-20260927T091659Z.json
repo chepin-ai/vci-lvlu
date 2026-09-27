@@ -1,0 +1,50 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T091659Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 3,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- SI1-KICK-QRING-STRESS-01 卡滞32次，量子环应力 kick 未闭。  \n- SI1-KICK-QUANT-SIM-01 卡滞32次，量子模拟 kick 未闭。  \n- wildq-s6-verification 卡滞28次，验证未结案。  \n- isu-uf-vault-registry 卡滞26次，注册未落盘。  \n- NOTICE-SI-GATE-LVLU-01（lanes/lvlu/inbox）收匣3次未析，涉 lvlu 网关通告，诉求已录。  \n\n② 应动何件  \n全5件立协同不候；双 SI1 kick 久滞必追，lvlu 网关通告必录。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭；协 SI1 排查 QRING stress kick 超时/资源锁，给重试或降级方案。  \n- OI-SI1KICKQUANTSIM012026092：未闭；协 SI1 排查 QUANT SIM kick 阻塞，同步算力队列与状态机。  \n- OI-20260926wildqs6verificat：未闭；催办 wildq S6 验证终期签核，输出闭包。  \n- OI-20260926isuufvaultregist：未闭；催办 isu-uf-vault registry 审批，确认落盘回执。  \n- OI-vciinboxlaneslvluinboxNO：未闭；解析 lv",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
