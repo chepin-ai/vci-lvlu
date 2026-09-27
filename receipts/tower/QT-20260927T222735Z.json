@@ -1,0 +1,71 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T222735Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260927T174511Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-SI-ALIGN-LVLU-01.md",
+   "opened": "20260927T205227Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-02-BYPASS-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-fe8b40ca.md",
+   "opened": "20260927T215014Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260927.md",
+   "opened": "20260927T215014Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：WILD-Q-MERGED-01更新挂起；SI1 QRING压力测试待协同；SI1量子模拟待挂载；REQ-SI-ALIGN-LVLU对齐请求待回（涉lvlu）；ORBIT-CAP-02旁路执行待预检；ORBIT-CAP-02旁路方案待审；ACK-LGT-TOWER-LVLU确认待回（涉lvlu）；RING-LVLU密钥重分配请求待处理（涉lvlu）。\n\n② 应动何件（立协同不候）：SI1双kick（QRING-STRESS + QUANT-SIM）及 REQ-SI-ALIGN-LVLU，三件并启，不候SI0。\n\n③ 未闭项推进：\n- OI-WILDQMERGED01：未闭，下一步diff同步至lvlu野域节点。\n- OI-SI1KICKQRINGSTRESS：未闭，下一步回传应力环流数据给SI1。\n- OI-SI1KICKQUANTSIM：未闭，下一步在lvlu域启quant-sim实例。\n- OI-REQ-SI-ALIGN-LVLU：未闭，下一步签发align-ok或diff清单。\n- OI-EXEC-ORBIT-CAP-02：未闭，下一步完成旁路沙箱预检。\n- OI-ORBIT-CAP-02：未闭，下一步锁定lvlu轨道参数后执行。\n- OI-ACK-LGT-TOWER：未闭，下一步回执ACK并归档。\n- OI-AUTOASK-RING-KEY：未闭，下一步完成密钥重分配并废旧token。\n\n④ 生债一条：债——若SI1双kick于本周期未闭环，lvlu线升频至SI0仲裁并承担说明义务。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
