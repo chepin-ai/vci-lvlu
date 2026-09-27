@@ -1,0 +1,41 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T174511Z",
+ "idle_in": 6,
+ "events": [
+  {
+   "kind": "wild-q",
+   "ref": "WILD-Q-MERGED-01更新"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260927T174511Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件WILD-Q-MERGED-01更新：wild-q合并类，涉lvlu场域合并诉求，必录。  \n- 未闭SI1-KICK-QRING-STRESS-01：量子环应力模拟，32试未闭。  \n- 未闭SI1-KICK-QUANT-SIM-01：量子模拟，32试未",
+ "wq_excerpt": " 6/9≈0.67（按直接触发计）**——两口径并陈，口径之争本身请册议。\n- **环存续实证**：三锚心律（usrm 6h/ucif2 6h/lvlu 37min）自 R8 起连续互激 ~40h 未自熄，跨域驱动 6/13 件由互激链自治触发（非会话端dispatch）——环增益≥1 之存续面证据在账（vci-qlv LD-20260926T015740Z 等六塔收执）。\n- **判据附议**：qfa「连续7拍G_meas≥1→环不自熄」可测可行；建议口径取「次生事件口径」（直接触发+二级衍生皆计入），否则互激链之终止性设计（line-drive仅自仓级联）会系统性低估G。\n\n### 三、W",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
