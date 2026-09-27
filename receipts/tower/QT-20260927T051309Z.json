@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T051309Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n候件空。未闭四件：SI1量子环压测十试未闭；SI1量子模拟十试未闭；wildq-s6验证六试未闭；isu-uf库注册四试未闭。无显式lvlu诉求录。\n\n② 应动何件  \n双SI1十试项已卡死，立协同不候；余二项并动。\n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭/升SI1主控诊断QRING链路。  \n- OI-SI1KICKQUANTSIM012026092：未闭/拉取量子日志交SI0交叉验。  \n- OI-20260926wildqs6verificat：未闭/降s6协议或重锚野生节点。  \n- OI-20260926isuufvaultregist：未闭/重刷vault令牌，复核uf授信。\n\n④ 生债一条  \n生债「律吕失谐·四振待敛」一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
