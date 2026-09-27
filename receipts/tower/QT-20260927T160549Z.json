@@ -1,0 +1,36 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T160549Z",
+ "idle_in": 9,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 23,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件空。\n- 未闭项一：vci-inbox/lvlu/inbox 通知 NOTICE-SI-GATE-LVLU-01.md 滞留，已42试未闭；涉lvlu诉求为SI网关通知未归档。\n- 未闭项二：SI1-KICK 量子环应力测试 SI1-KICK-QRING-STRESS-01 未闭，待出应力结果。\n- 未闭项三：SI1-KICK 量子模拟 SI1-KICK-QUANT-SIM-01 未闭，待收敛。\n\n②应动何件：\n- 三项皆动，立协同不候：先熔断诊断 lvlu 通知超试根因并强制闭环；同步推进 SI1-KICK 双项测试输出终值。\n\n③未闭项推进：\n- OI-vciinboxlaneslvluinboxNO：未闭；下一步1次内判定归档或升级，停无效重试。\n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步输出应力阈值报告并签闭。\n- OI-SI1KICKQUANTSIM012026092：未闭；下一步完成末轮收敛并标记关闭。\n\n④生债一条：\n- 生债：补超40次自动重试未闭项的熔断升级机制，防SI2/SI0空转。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
