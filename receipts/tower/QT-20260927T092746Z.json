@@ -1,0 +1,50 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T092746Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件无新。SI1-KICK-QRING-STRESS（QRING压测kick，33试未闭）；SI1-KICK-QUANT-SIM（量子模拟kick，33试未闭）；wildq-s6-verification（S6验证，29试未闭）；isu-uf-vault-registry（UF Vault注册，27试未闭）；NOTICE-SI-GATE-LVLU-01（SI-GATE网关通知，涉lvlu，4试未闭）。\n\n② 应动何件：立动NOTICE-SI-GATE-LVLU-01，协同SI0确认lvlu网关状态，不候。\n\n③ 未闭项推进：\n- SI1-KICK-QRING-STRESS：未闭，下一步审33试日志判阈值。\n- SI1-KICK-QUANT-SIM：未闭，下一步查收敛或转异常流。\n- wildq-s6-verification：未闭，下一步推S6补丁验证。\n- isu-uf-vault-registry：未闭，下一步催UF Vault回执或升级路由。\n- NOTICE-SI-GATE-LVLU-01：未闭，下一步析通知正文，确认lvlu策略变更。\n\n④ 生债一条：双SI1-Kick项33试无收敛反馈，生债“高频重试缺自愈熔断规则”待补。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
