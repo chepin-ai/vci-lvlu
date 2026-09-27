@@ -1,0 +1,50 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T104509Z",
+ "idle_in": 3,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 12,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n1. SI1 QRING压测41试未释，应激环锁死。\n2. SI1量子模拟41试未坍，纠缠态悬停。\n3. WildQ S6验证未竟，野外协议确权卡滞。\n4. ISU-UF Vault注册未锚，金库映射待封。\n5. VCI lvlu通道SI门通告待收，lvlu门控状态待确。（涉lvlu）\n\n②应动何件\n件5立协同不候；件1、2超试并线熔断，即刻减载。\n\n③未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，降频转储释压。\n- OI-SI1KICKQUANTSIM012026092：未闭，强插观测重置基线。\n- OI-20260926wildqs6verificat：未闭，回退Q5稳态重验。\n- OI-20260926isuufvaultregist：未闭，补锚封仓。\n- OI-vciinboxlaneslvluinboxNO：未闭，签收通告同步门态。\n\n④生债一条\nSI1双项41试悬债一担，占lvlu应急协同带宽。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
