@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T080932Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 20,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n候件无。  \nOI-SI1KICKQRINGSTRESS012026：QRING压测未闭，已26试。  \nOI-SI1KICKQUANTSIM012026092：QUANT-SIM量子模拟未闭，已26试。  \nOI-20260926wildqs6verificat：wildq-s6验证未闭，已22试。  \nOI-20260926isuufvaultregist：uf-vault注册未闭，已20试。  \n（无涉lvlu显式诉求件）\n\n②应动何件  \n立协同OI-SI1KICKQRINGSTRESS012026，不候。\n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步压测根因熔断/降级。  \n- OI-SI1KICKQUANTSIM012026092：未闭；下一步参数收敛或算力重排。  \n- OI-20260926wildqs6verificat：未闭；下一步s6签验闭环。  \n- OI-20260926isuufvaultregist：未闭；下一步vault确权归档。\n\n④生债一条  \n生债：回溯26试空转根因，设尝试上限防耗散。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
