@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T072605Z",
+ "idle_in": 8,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 16,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 候件空。未闭四件：SI1-KICK-QRING-STRESS重试22次未收敛；SI1-KICK-QUANT-SIM重试22次未收敛；wildq-s6验证待闭环；isu-uf-vault注册待生效。无新lvlu诉求。\n② 应动SI1-KICK-QRING-STRESS、SI1-KICK-QUANT-SIM两件，立协同不候。\n③ OI-SI1KICKQRINGSTRESS012026：未闭，下一步查QRING应力阻塞根因；OI-SI1KICKQUANTSIM012026092：未闭，下一步对齐QUANT-SIM与KICK门控；OI-20260926wildqs6verificat：未闭，下一步完成s6验证归档；OI-20260926isuufvaultregist：未闭，下一步确认vault注册上链。\n④ 生债：记SI双项重试超限根因债，本轮内必给判定。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
