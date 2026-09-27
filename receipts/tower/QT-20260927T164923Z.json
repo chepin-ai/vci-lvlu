@@ -1,0 +1,36 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T164923Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 27,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①候件空。OI-vciinboxlaneslvluinboxNO：lvlu闸口通知NOTICE-SI-GATE-LVLU-01.md滞留46试，诉求为lvlu入口协议待激活。OI-SI1KICKQRINGSTRESS012026：SI1 QRING压力测试项待收。OI-SI1KICKQUANTSIM012026092：SI1 QUANT模拟项待收。\n\n②应动OI-vciinboxlaneslvluinboxNO，立协同不候。\n\n③OI-vciinboxlaneslvluinboxNO未闭，下一步解析闸口通知并执行lvlu入口协议。OI-SI1KICKQRINGSTRESS012026未闭，下一步完成QRING应力测试并归档报告。OI-SI1KICKQUANTSIM",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
