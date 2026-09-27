@@ -1,0 +1,71 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T230416Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260927T174511Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-SI-ALIGN-LVLU-01.md",
+   "opened": "20260927T205227Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-02-BYPASS-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-fe8b40ca.md",
+   "opened": "20260927T215014Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260927.md",
+   "opened": "20260927T215014Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- OI-WILDQMERGED01：WILD-Q-MERGED-01更新待合并。  \n- OI-SI1KICKQRINGSTRESS012026：SI1 QRING压力测试待归档。  \n- OI-SI1KICKQUANTSIM012026092：SI1量子模拟待归档。  \n- OI-vciinboxlaneslvluinboxRE：REQ-SI-ALIGN-LVLU-01对齐诉求待复（涉lvlu）。  \n- OI-vciinboxlaneslvluinboxEX：EXEC-ORBIT-ORBIT-CAP-02-BYPASS执行待审（涉lvlu）。  \n- OI-vciinboxlaneslvluinboxOR：ORBIT-CAP-02-BYPASS轨道绕过待审（涉lvlu）。  \n- OI-vciinboxlaneslvluinboxAC：ACK-LGT-TOWER-LVLU灯塔确认待回执（涉lvlu）。  \n- OI-vciinboxlaneslvluinboxAU：AUTOASK-RING-LVLU-KEY-REASSIGN密钥重分配诉求待理（涉lvlu）。  \n\n② 应动何件（立协同不候）  \nVCI lvlu五件（RE/EX/OR/AC/AU）及WILD-Q-MERGED（tries=32），立即协同，不候。  \n\n③ 未闭项推进  \n- OI-WILDQMERGED01：未闭，合并差分后归档。  \n- OI-SI1KICKQRINGSTRESS012026：未闭，输出压力测试终报。  \n- OI-SI1KICKQUANTSIM012026092：未闭，固化模拟结果。  \n- OI-vciinboxlaneslvluinboxRE：未闭，回写SI-ALIGN-LVLU确认帧。  \n- OI-vciinboxlaneslvluinboxEX：未闭，校验签名并执行/拒止。  \n- OI-vciinboxlaneslvluinboxOR：未闭，核定轨道绕过参数并批复。  \n- OI-vciinboxlaneslvluinboxAC：未闭，回播灯塔确认心跳。  \n- OI-vciinboxlaneslvluinboxAU：未闭，处理密钥重分配并更新密钥环。  \n\n④ 生债一条  \nVCI lvlu通道五件积压超8–13试，须今线内清零。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
