@@ -1,0 +1,36 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T163832Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 26,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- OI-vciinboxlaneslvluinboxNO：lvlu inbox网关通告NOTICE-SI-GATE-LVLU-01.md滞留45试未妥投（涉lvlu诉求：门户通知签收未达）。\n- OI-SI1KICKQRINGSTRESS012026：SI1-KICK量子环应力测试项自20260927起未闭。\n- OI-SI1KICKQUANTSIM012026092：SI1-KICK量子模拟项同期未闭。\n\n②应动何件：\n三项皆立协同不候：先破lvlu inbox阻塞，并联动SI1双Kick（应力与模拟互锁，不可空等）。\n\n③未闭项推进：\n- OI-vciinboxlaneslvluinboxNO：未闭；下一步强投NOTICE至lvlu inbox并取签收回执。\n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步回传QRING应力终态或熔断记录。\n- OI-SI1KICKQUANTSIM012026092：未闭；下一步完成QUANT-SIM收敛并关仓。\n\n④生债一条：\n债：lvlu inbox投递通道经45试仍失败，生通道可靠性运维债一条，即日排障。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
