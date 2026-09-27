@@ -1,0 +1,41 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T183822Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T182745Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260927T174511Z",
+   "tries": 6,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 候件SI1-KICK-QUANT-SIM-01-20260927T182745Z.md：SI1-KICK量子模拟新序，涉lvlu节律协同，已录；未闭OI-SI1KICKQRINGSTRESS012026：QRING压力环37试未闭；未闭OI-SI1KICKQUANTSIM012026092：QUANT-SIM旧序同系37试未闭；未闭OI-WILDQMERGED01：WILD-Q合并更新6试未闭。\n\n② 立协候件SI1-KICK-QUANT-SIM-01-20260927T182745Z.md，即启lvlu-SI1双环校验，不候。\n\n③ OI-SI1KICKQRINGSTRESS012026：未闭，下一步压回SI1或断环；OI-SI1KICKQUANTSIM012026092：未闭，下一步并档新候件复算归并；OI-WILDQMERGED01：未闭，下一步律吕映射完校后闭。\n\n④ 生债：SI2/SI0迟滞SI1-KICK双项37轮未协，生运维债一次。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
