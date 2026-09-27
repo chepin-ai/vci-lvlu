@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T063043Z",
+ "idle_in": 3,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 11,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空。lvlu SI1-KICK-QRING-STRESS环压任务持续失败，已17试。lvlu SI1-KICK-QUANT-SIM量子模拟挂死，已17试。lvlu wildq-s6验证未收敛，已13试。lvlu isu-uf-vault-registry注册挂起，已11试。\n\n② 应动何件：四项皆超10试且长期未闭，全量立协同排查，不候。\n\n③ 未闭项推进：OI-SI1KICKQRINGSTRESS012026未闭，下一步拉取SI1全量日志与QRING依赖状态。OI-SI1KICKQUANTSIM012026092未闭，下一步核查QUANT-SIM资源配额及输入边界。OI-20260926wildqs6verificat未闭，下一步回滚S6环境重跑并比对基线。OI-20260926isuufvaultregist未闭，下一步检测vault注册接口连通与鉴权配置。\n\n④ 生债一条：lvlu SI1重试机制缺熔断，生债：补KICK子系统超限自停与告警规则。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
