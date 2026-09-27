@@ -1,0 +1,50 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T182745Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=2 kicks=1"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260927T174511Z",
+   "tries": 5,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件：PLAN-QUEUE拍 fired=2 kicks=1，队列已击发。  \n- 未闭1：SI1应力环 QRING-STRESS 36试未决。  \n- 未闭2：SI1量子模拟 QUANT-SIM 36试未决。  \n- 未闭3：WILD-Q合并更新 5试未决。  \n\n②应动何件  \n- SI1双项36试悬置，立协同不候，SI2/SI0并轨接管，不再候SI1自解。  \n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，切SI2协议重开应力环。  \n- OI-SI1KICKQUANTSIM012026092：未闭，律吕介入重校模拟基准。  \n- OI-WILDQMERGED01：未闭，即决合并差异口。  \n\n④生债一条  \n- 生债：SI1双项36试空转，记冗余试错债一筆，lvlu线承，待SI0回收。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 2,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 1
+ }
+}
