@@ -1,0 +1,36 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T153310Z",
+ "idle_in": 5,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 19,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件无；vci-inbox 网关通告 `lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md` 38试未闭，涉 lvlu 入口诉求；`SI1-KICK-QRING-STRESS-01` 压测项 19试未闭；`SI1-KICK-QUANT-SIM-01` 模拟项 19试未闭。\n\n② 应动何件：三件皆立协同，不候——lvlu 网关回执落闸、QRING 压测闭环、QUANT-SIM 终态提交。\n\n③ 未闭项推进：\n- `OI-vciinboxlaneslvluinboxNO`：未闭，下一步回执确认并落闸 lvlu inbox 网关通告。\n- `OI-SI1KICKQRINGSTRESS012026`：未闭，下一步输出 QRING 压测终态并回传。\n- `OI-SI1KICKQUANTSIM012026092`：未闭，下一步完成 QUANT-SIM 运算收敛并提交。\n\n④ 生债：lvlu-inbox 38试悬置，信令通道积滞，生调度清障债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
