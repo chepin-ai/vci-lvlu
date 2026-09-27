@@ -1,0 +1,50 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T114034Z",
+ "idle_in": 8,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 17,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n1. SI1量子环压力测试：应力模型46次未收敛。\n2. SI1量子模拟器：仿真基线46次漂移未锁定。\n3. WildQ S6验证：边界回测42次缺数未结。\n4. ISU-UF Vault注册表：注册映射40次未落盘。\n5. VCI lvlu收件箱SI门控通知：lvlu准入规则17次待签回。（涉lvlu诉求）\n\n② 应动何件\n五件俱逾阈且无候件，皆立协不候；尤先第5件（lvlu门控）及第1、2件（SI1基线）。\n\n③ 未闭项推进\n1. SI1KICKQRINGSTRESS：未闭，重采QRing脉冲并对齐共振阈。\n2. SI1KICKQUANTSIM：未闭，dump量子态切SI0对照运行。\n3. wildqs6：未闭，补S6边界用例并触发回归。\n4. isuufvault：未闭，锁UF指纹强刷快照并校验。\n5. vciinboxlvlu：未闭，lvlu即时签收NOTICE并回ACK帧。\n\n④ 生债一条\n「lvlu线全链路律吕校准债一次」。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
