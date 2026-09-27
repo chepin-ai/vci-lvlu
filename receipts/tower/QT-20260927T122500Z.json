@@ -1,0 +1,50 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T122500Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n候件空。wildq-s6验证卡46试；isu-uf-vault注册卡44试；vci-lvlu-inbox NOTICE未收21试（涉lvlu诉求）；SI1量子环压测新开2试；SI1量子模拟新开2试。  \n\n② 应动何件  \n立动vci-lvlu-inbox NOTICE（涉lvlu诉求）并协同SI1双新件（qrings+quantsim），不候；两旧件并轨诊断。  \n\n③ 未闭项推进  \n- OI-20260926wildqs6verificat：未闭，升维dump日志并切SI2仲裁。  \n- OI-20260926isuufvaultregist：未闭，核查uf-vault注册回环及证书链。  \n- OI-vciinboxlaneslvluinboxNO：未闭，解析NOTICE-SI-GATE-LVLU-01并执行内嵌指令。  \n- OI-SI1KICKQRINGSTRESS012026：未闭，挂载qring负载并输出stress基线。  \n- OI-SI1KICKQUANTSIM012026092：未闭，加载quant初态矩阵启动首轮回迁。  \n\n④ 生债一条  \nlvlu线补建qrings-quantsim声韵反馈通道，免SI1空转失律。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
