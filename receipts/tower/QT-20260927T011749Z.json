@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T011749Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-QRAC-V2RC-WAVE-QLV-01.md",
+   "opened": "20260926T174323Z",
+   "tries": 45,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件PLAN-QUEUE拍：fired=3而kicks=0，lvlu计划队列执行层挂起未消费。\n- 未闭项OI-vciinboxlaneslvluinboxNO（涉lvlu）：NOTICE-QRAC-V2RC-WAVE-QLV-01.md已试45次未关闭，lvlu通知滞留。\n\n② 应动何件：\n- 应动PLAN-QUEUE拍（立即协同kicks消费）。\n- 应动OI-vci...NO（立即协同读取该QRAC通知并执行）。\n\n③ 未闭项推进：\n- OI-vci...NO：未闭；下一步提取NOTICE-QRAC-V2RC-WAVE-QLV-01.md正文并执行WAVE指令后关单。\n\n④ 生债一条：\n- 生债：PLAN-QUEUE拍kicks=0异常，生债排障令其可被正常消费。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
