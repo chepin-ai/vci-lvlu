@@ -259,6 +259,13 @@ def main():
         put_file('receipts/tower/state.json', json.dumps(new_state, ensure_ascii=False), sha, '[skip ci] LVLU-TOWER state')
     print(json.dumps(new_state, ensure_ascii=False))
 
+    # SHADOW-REVIVAL-01 枢/PIVOT-01代铸挂接: 拍末唤公域影子(零cron·W30合规·影子未醒不阻拍)
+    try:
+        _sk, _ = api('POST', 'dispatches', {'event_type': 'shadow-pulse',
+                     'client_payload': {'src': 'lvlu-beat', 'parent': ts}}, repo='chepin-ai/vci-inbox')
+        print('shadow_kick http=%s' % _sk)
+    except Exception as _e: print('shadow_kick skip: %s' % _e)
+
     # BOARD-VOICE(lvlu): 有件或LLM判词则鸣, 30min闸
     try:
         if memo and (events or open_items):
