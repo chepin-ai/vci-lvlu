@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T073641Z",
+ "idle_in": 9,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 17,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n候件空。SI1-QRING应力压测23试未闭。SI1-QUANTSIM量子模拟23试未闭。wildq-S6边界验证19试未闭。isu-uf-vault库注册17试未闭。\n\n② 应动何件  \n全四件立协同不候；SI1双件优先并联锚定。\n\n③ 未闭项推进  \nOI-SI1KICKQRINGSTRESS012026：未闭/压测QRING至谐振崩界并回写阈值。  \nOI-SI1KICKQUANTSIM012026092：未闭/锁定QUANT-SIM与SI1共振频点。  \nOI-20260926wildqs6verificat：未闭/补齐S6边界用例并终验落章。  \nOI-20260926isuufvaultregist：未闭/uf-vault注册表上链并收取据。\n\n④ 生债一条  \nSI1双件超23试未决，生债「应力-模拟共振协议缺一次完整闭环校准，须以全频KICK偿清」。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
