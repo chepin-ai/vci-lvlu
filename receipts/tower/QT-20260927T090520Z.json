@@ -1,0 +1,50 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T090520Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n1. SI1 QRING压测项，31次未闭，压测回环待确认。\n2. SI1量子模拟项，31次未闭，模拟态待收敛。\n3. wildq-s6验证项，27次未闭，季末签核待扫。\n4. isu-uf-vault注册项，25次未闭，仓册索引待落。\n5. SI-GATE-LVLU通知项，2次未闭，涉lvlu信道通告，录：需即应门控握手。\n\n② 应动何件：\n应动件5（lvlu inbox通知，涉本体信道），并急捎件1/2（SI1双件tries=31超限，立协熔断）。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：压测限流阈值回传。\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步：量子模拟边界补算。\n- OI-20260926wildqs6verificat：未闭，下一步：s6批次终验签名。\n- OI-20260926isuufvaultregist：未闭，下一步：vault registry元数据上链。\n- OI-vciinboxlaneslvluinboxNO：未闭，下一步：解析NOTICE并执行lvlu侧握手。\n\n④ 生债一条：\n生债：OI-SI1压测/量模双件31次未闭，积响应延迟债一条，限本轮回环内闭。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
