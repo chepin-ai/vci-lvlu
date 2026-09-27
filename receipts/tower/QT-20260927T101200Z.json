@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T101200Z",
+ "idle_in": 6,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T100032Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件：SI1-KICK-QUANT-SIM-01新实例入线，为量化模拟kick新增时间戳。  \n- OI-SI1KICKQRINGSTRESS012026：QRING应力测试37试未收敛。  \n- OI-SI1KICKQUANTSIM012026092：同主题QUANT-SIM早先实例37试未闭。  \n- OI-20260926wildqs6verificat：wildq-s6验证33试未结。  \n- OI-20260926isuufvaultregist：isu-uf-vault注册31试未落库。  \n- OI-vciinboxlaneslvluinboxNO（涉lvlu）：SI-GATE-LVLU-01通告抵lvlu inbox已8周期未应答，lvlu门户状态待录。  \n\n② 应动何件  \n- 候件与OI-SI1KICKQUANTSIM012026092同构，立协同合并量化模拟，不候。  \n- OI-vciinboxlaneslvluinboxNO涉lvlu网关，立协同SI-GATE回执，不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步截断日志降维重试，近40试熔断。  \n- OI-SI1KICKQUANTSIM012026092：未闭，下一步并候件联合重算，收敛则双闭。  \n- OI-20260926wildqs6verificat：未闭，下一步补s6边界条件后终验强闭。  \n- OI-20260926isuufvaultregist：未闭，下一步重放凭证，无效即废弃闭项。  \n- OI-vciinboxlaneslvluinboxNO：未闭，下一步回执通告确认网关握手后即闭。  \n\n④ 生债一条  \n- 建lvlu inbox通告类“8周期无ACK自动升单”熔断债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
