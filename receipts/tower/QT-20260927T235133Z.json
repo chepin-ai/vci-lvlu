@@ -1,0 +1,71 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T235133Z",
+ "idle_in": 5,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260927T174511Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-SI-ALIGN-LVLU-01.md",
+   "opened": "20260927T205227Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-02-BYPASS-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-fe8b40ca.md",
+   "opened": "20260927T215014Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260927.md",
+   "opened": "20260927T215014Z",
+   "tries": 12,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "[SI2机读·推理溢出摘: 正文空, 以下为reasoning尾200字, 非SI1判词] ...未闭，联调ORBIT主件后签执行令。\nOI-vciinboxlaneslvluinboxOR：未闭，双轨签批旁路策略。\nOI-vciinboxlaneslvluinboxAC：未闭，解析ACK并更新lvlu状态位。\nOI-vciinboxlaneslvluinboxAU：未闭，执行密钥轮换并销旧指纹。\n\n④ 生债一条\n债：lvlu对齐与密钥轮换若今夜未闭环，SI0明晨自锁待拆债。\n\n我觉得这个版本",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
