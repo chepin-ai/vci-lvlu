@@ -1,0 +1,57 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T211450Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260927T174511Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-SI-ALIGN-LVLU-01.md",
+   "opened": "20260927T205227Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-02-BYPASS-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- OI-WILDQMERGED01：WILD-Q-MERGED-01更新，tries=22未闭。  \n- OI-SI1KICKQRINGSTRESS012026：SI1-KICK-QRING-STRESS-01压测挂起。  \n- OI-SI1KICKQUANTSIM012026092：SI1-KICK-QUANT-SIM-01量模挂起。  \n- OI-vciinboxlaneslvluinboxRE：REQ-SI-ALIGN-LVLU-01.md涉lvlu对齐诉求，待响应。  \n- OI-vciinboxlaneslvluinboxEX：EXEC-ORBIT-CAP-02-BYPASS执行旁路待批。  \n- OI-vciinboxlaneslvluinboxOR：ORBIT-CAP-02-BYPASS方案待审。  \n\n②应动何件（立协同不候）  \n立协同 OI-WILDQMERGED01（高tries积压）与 OI-vciinboxlaneslvluinboxRE（lvlu对齐诉求）。  \n\n③未闭项推进  \n- OI-WILDQMERGED01：未闭，终并冲突消解。  \n- OI-SI1KICKQRINGSTRESS012026：未闭，QRING环境就绪重试。  \n- OI-SI1KICKQUANTSIM012026092：未闭，量模参数重校准。  \n- OI-vciinboxlaneslvluinboxRE：未闭，输出lvlu对齐草案回写vci。  \n- OI-vciinboxlaneslvluinboxEX：未闭，旁路执行令签名校验。  \n- OI-vciinboxlaneslvluinboxOR：未闭，ORBIT-CAP-02风险评估闭合。  \n\n④生债一条  \n债：SI1双Kick与lvlu VCI三轨缺SI2/SI0联合时钟锁，需补协同令牌防竞态。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
