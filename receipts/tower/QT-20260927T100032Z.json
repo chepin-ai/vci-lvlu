@@ -1,0 +1,64 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T100032Z",
+ "idle_in": 5,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=2 kicks=1"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 7,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- PLAN-QUEUE拍 fired=2 kicks=1，队列踢出待协。\n- SI1-KICK-QRING-STRESS 36次未闭，应力环待收敛。\n- SI1-KICK-QUANT-SIM 36次未闭，量模仿真待落盘。\n- wildq-s6-verification 32次未闭，S6验证待结项。\n- isu-uf-vault-registry 30次未闭，Vault注册待决。\n- lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01 7次未闭，涉lvlu网关通知诉求，待解析。\n\n② 应动何件：\n- 立协PLAN-QUEUE拍（kicks=1）与lvlu网关通知，不候。\n\n③ 未闭项推进：\n- SI1KICKQRINGSTRESS：未闭；下一步：压测收敛或强制归档。\n- SI1KICKQUANTSIM：未闭；下一步：量果回写或降级。\n- wildqs6verificat：未闭；下一步：验证闭环或标例外。\n- isuufvaultregist：未闭；下一步：注册生效或清退。\n- lvluinboxNO：未闭；下一步：解gate指令并同步lvlu主线。\n\n④ 生债一条：\n- PLAN-QUEUE踢出与lvlu gate响应迟滞，生协同债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 2,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 1
+ }
+}
