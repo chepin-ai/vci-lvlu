@@ -1,0 +1,36 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T153612Z",
+ "idle_in": 6,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 20,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：无候件；未闭三事：lvlu门控通知（OI-vciinboxlaneslvluinboxNO）待解析，SI1量子环应力测试（OI-SI1KICKQRINGSTRESS012026）待收敛，SI1量子模拟（OI-SI1KICKQUANTSIM012026092）待落盘。\n\n②应动何件：三件皆应动，立协同不候。\n\n③未闭项推进：\n- OI-vciinboxlaneslvluinboxNO：未闭，涉lvlu诉求已录，下一步提级SI2/律吕中枢解析门控指令，限今日内流转。\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步输出应力测试摘要并标记阻塞/完成态。\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步回写模拟终态数据至SI1报告并归档。\n\n④生债一条：生债「超期未闭项提级清理债」，因三单均超20试未闭，需中枢督办闭环。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
