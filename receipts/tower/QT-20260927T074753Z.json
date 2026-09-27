@@ -1,0 +1,61 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T074753Z",
+ "idle_in": 10,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=2"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 18,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件PLAN-QUEUE：队列3拍含2 kick待发。\n- SI1应力环kick：24试未闭。\n- SI1量子模拟kick：24试未闭。\n- wildq-s6验证：20试未闭。\n- isu-uf-vault注册：18试未闭。\n\n② 应动何件：\n立协同两kick件（SI1 QRING-STRESS、SI1 QUANT-SIM），不候。\n\n③ 未闭项推进：\n- SI",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 2
+ }
+}
