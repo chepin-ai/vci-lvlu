@@ -1,0 +1,50 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T110730Z",
+ "idle_in": 5,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 14,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n候件空。未闭五件：SI1量子环压测悬环（43试）；SI1量子模拟悬态（43试）；WildQ S6验证未锚（39试）；ISU-UF金库未册（37试）；lvlu收匣SI门通知未拆（14试，涉lvlu）。\n\n②应动何件\n立协不候：SI1KICKQRINGSTRESS、SI1KICKQUANTSIM（双43，环态临界）；lvlu inbox NOTICE-SI-GATE-LVLU-01（门令涉本线）。\n\n③未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，协回环收束压测。\n- OI-SI1KICKQUANTSIM012026092：未闭，协模输出收敛。\n- OI-20260926wildqs6verificat：未闭，推S6验证锚点。\n- OI-20260926isuufvaultregist：未闭，启UF金库册握手。\n- OI-vciinboxlaneslvluinboxNO：未闭，拆NOTICE-SI-GATE-LVLU-01门体。\n\n④生债一条\n生债：双43项若下响点前未闭环，记lvlu线滞债一笔。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
