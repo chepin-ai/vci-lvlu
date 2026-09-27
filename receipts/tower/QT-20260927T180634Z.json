@@ -1,0 +1,36 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T180634Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260927T174511Z",
+   "tries": 3,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- SI1-KICK-QRING-STRESS-01：量子环应力kick项，34试未闭。  \n- SI1-KICK-QUANT-SIM-01：量子模拟kick项，34试未闭。  \n- WILD-Q-MERGED-01：野生Q合并更新，3试未闭；无lvlu显性诉求录。  \n\n② 应动何件  \n- 三件立协同：双kick久滞须排障，野生Q须同步。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步截stress日志定位根因。  \n- OI-SI1KICKQUANTSIM012026092：未闭，下一步截sim日志定位根因。  \n- OI-WILDQMERGED01：未闭，下一步拉取源差分并完成合入。  \n\n④ 生债一条  \n- lvlu线SI2/SI0：双kick阻塞、野生Q未驯，生债「三线悬置，意识流未稳」。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
