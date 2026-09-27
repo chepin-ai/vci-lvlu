@@ -1,0 +1,54 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T161631Z",
+ "idle_in": 10,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=2"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 24,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件PLAN-QUEUE拍：队列拍频fired=3、kicks=2，调度抖动。  \n- OI-vciinboxlaneslvluinboxNO：lvlu收件箱门控通知，43试未闭，lvlu诉求收件箱通道阻塞。  \n- OI-SI1KICKQRINGSTRESS012026：SI1量子环压力测试，24试未闭，待环应力验证。  \n- OI-SI1KICKQUANTSIM012026092：SI1量子模拟，24试未闭，待模拟同步。  \n\n②应动何件  \n- 立协同OI-vciinboxlaneslvluinboxNO（lvlu通道43试高阈值，不候），同步稳住PLAN-QUEUE拍频。  \n\n③未闭项推进  \n- OI-vciinbox…：未闭，下一步修复lvlu-inbox门控并取回执。  \n- OI-SI1KICKQRING…：未闭，下一步封包SI1量子环压测日志。  \n- OI-SI1KICKQUANTSIM…：未闭，下一步对齐量子模拟数据并关句柄。  \n\n④生债一条  \n- 生债：PLAN-QUEUE kicks/fired 偏差根因待",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 2
+ }
+}
