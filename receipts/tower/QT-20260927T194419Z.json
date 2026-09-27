@@ -1,0 +1,36 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T194419Z",
+ "idle_in": 6,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260927T174511Z",
+   "tries": 13,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 无候件；未闭三件：OI-SI1KICKQRINGSTRESS012026（QRING应力测试44轮未落），OI-SI1KICKQUANTSIM012026092（量子模拟44轮未落），OI-WILDQMERGED01（野生Q合并更新13轮未决，涉lvlu线整合）。\n\n② 应动OI-WILDQMERGED01，立启合并协同，不候。\n\n③ OI-SI1KICKQRINGSTRESS012026：未闭，下一步降载QRING应力阈值并转SI2仲裁。OI-SI1KICKQUANTSIM012026092：未闭，下一步冻结旧基线，待WILD-Q合并后复测。OI-WILDQMERGED01：未闭，下一步今日内完成SI0/SI2频差对齐并输出合并回执。\n\n④ 生债：欠WILD-Q合并闭环简报一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
