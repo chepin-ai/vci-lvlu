@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T050528Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 3,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件空，无新入。\n- SI1-KICK-QRING-STRESS 环试异常，已9试未闭。\n- SI1-KICK-QUANT-SIM 量模仿真阻塞，已9试未闭。\n- WildQ-S6 验证挂起，已5试未闭。\n- ISU-UF Vault 注册写入失败，已3试未闭。\n\n②应动何件：\n- 立协同 SI1-KICK-QRING-STRESS、SI1-KICK-QUANT-SIM（tries=9 达临界，双件并启，不候 SI1 回响）。\n\n③未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步转 SI0 熔断并输出根因。\n- OI-SI1KICKQUANTSIM012026092：未闭；下一步清缓存重启量模链路。\n- OI-20260926wildqs6verificat：未闭；下一步补录 S6 边界用例重验。\n- OI-20260926isuufvaultregist：未闭；下一步核查 UF Vault 接口权限与幂等配置。\n\n④生债一条：\n- 「SI1-KICK 双链路 9 试未闭，债：24h 内输出熔断阈值与重试策略补丁，同步 lvlu 线归档」。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
