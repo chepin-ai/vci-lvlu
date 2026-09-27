@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T065248Z",
+ "idle_in": 5,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 13,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n候件：空。  \nSI1-KICK-QRING-STRESS：QRING压测项，19转未闭，无涉lvlu诉求。  \nSI1-KICK-QUANT-SIM：量子模拟项，19转未闭，无涉lvlu诉求。  \nwildq-s6-verification：wildq校验项，15转未闭，无涉lvlu诉求。  \nisu-uf-vault-registry：金库注册项，13转未闭，无涉lvlu诉求。  \n\n② 应动何件  \nSI1双项（QRING压测、量子模拟）已19转将溢，立协同不候；wildq-s6与isu-uf同步并动。  \n\n③ 未闭项推进  \nOI-SI1KICKQRINGSTRESS012026：未闭/压测终验，限次内出报。  \nOI-SI1KICKQUANTSIM012026092：未闭/模拟收口，归档落盘。  \nOI-20260926wildqs6verificat：未闭/补全s6校验，回写入卷。  \nOI-20260926isuufvaultregist：未闭/vault注册落库，返凭。  \n\n④ 生债一条  \n生债：四开项各押一页终验签，今次不空转。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
