@@ -1,0 +1,45 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T162714Z",
+ "idle_in": 11,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T161631Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T161631Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 25,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- SI1-KICK-QRING-STRESS-01（161631Z）：SI1请求lvlu线启动QRING应力环协同。  \n- SI1-KICK-QUANT-SIM-01（161631Z）：SI1请求lvlu线启动QUANT模拟协同。  \n\n②应动何件  \n- 两候件皆动：立协同SI1-QRING-STRESS与SI1-QUANT-SIM，不候；旧版两OI同步归并。  \n\n③未闭项推进  \n- OI-vciinboxlaneslvluinboxNO：未闭，下一步：回执NOTICE-SI-GATE-LVLU-01并确认lvlu门控权限。  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：归并至161631Z新件，闭环QRING-STRESS。  \n- OI-SI1KICKQUANTSIM012026092：未闭，下一步：归并至161631Z新件，闭环QUANT-SIM。  \n\n④生债一条  \n- 建SI1-KICK同协议日内多时间戳实例自动去重归并机制，止重复堆积。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
