@@ -1,0 +1,71 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T232844Z",
+ "idle_in": 3,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260927T174511Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-SI-ALIGN-LVLU-01.md",
+   "opened": "20260927T205227Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-02-BYPASS-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-fe8b40ca.md",
+   "opened": "20260927T215014Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260927.md",
+   "opened": "20260927T215014Z",
+   "tries": 10,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n候件空。未闭8件：WILD-Q-MERGED-01更新待决；SI1-QRING-STRESS压测未闭；SI1-QUANT-SIM量模拟未闭；REQ-SI-ALIGN-LVLU-01录lvlu对齐诉求；EXEC-ORBIT-CAP-02-BYPASS旁路待决；ORBIT-CAP-02-BYPASS轨道容量待决；ACK-LGT-TOWER-LVLU录灯塔回执lvlu；AUTOASK-RING-LVLU-KEY-REASSIGN录环lvlu密钥重配。\n\n② 应动何件  \n立协同不候：REQ-SI-ALIGN-LVLU-01、ACK-LGT-TOWER-LVLU、AUTOASK-RING-LVLU-KEY-REASSIGN、WILD-Q-MERGED-01。\n\n③ 未闭项推进  \nOI-WILDQMERGED01：未闭，主分支合并冲突消解。  \nOI-SI1KICKQRINGSTRESS012026：未闭，QRING压测基线收敛。  \nOI-SI1KICKQUANTSIM012026092：未闭，QUANT-SIM参数冻结。  \nOI-vciinboxlaneslvluinboxRE：未闭，出具SI↔lvlu对齐草案。  \nOI-vciinboxlaneslvluinboxEX：未闭，旁路执行签名校验。  \nOI-vciinboxlaneslvluinboxOR：未闭，ORBIT-CAP影响面阈值复核。  \nOI-vciinboxlaneslvluinboxAC：未闭，LGT-TOWER↔lvlu握手闭环。  \nOI-vciinboxlaneslvluinboxAU：未闭，RING密钥重分配环上广播。\n\n④ 生债一条  \n生债：lvlu线inbox 8项悬停，缺tries>30熔断与诉求优先路由，需建自动分级收敛阀。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
