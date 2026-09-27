@@ -1,0 +1,85 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T223240Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=2 kicks=1"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260927T174511Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-SI-ALIGN-LVLU-01.md",
+   "opened": "20260927T205227Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-02-BYPASS-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-fe8b40ca.md",
+   "opened": "20260927T215014Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260927.md",
+   "opened": "20260927T215014Z",
+   "tries": 5,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候：PLAN-QUEUE拍 fired=2 kicks=1，队列待入队。  \n- OI-WILDQMERGED01：WILD-Q合并更新挂起。  \n- OI-SI1KICKQRINGSTRESS012026：SI1 QRing压力测试未收敛。  \n- OI-SI1KICKQUANTSIM012026092：SI1量子模拟未归档。  \n- OI-vciinboxlaneslvluinboxRE：lvlu诉求SI对齐（REQ-SI-ALIGN-LVLU-01），待响应。  \n- OI-vciinboxlaneslvluinboxEX：EXEC-ORBIT-ORBIT-CAP-02-BYPASS执行待确认。  \n- OI-vciinboxlaneslvluinboxOR：ORBIT-CAP-02-BYPASS配置待同步。  \n- OI-vciinboxlaneslvluinboxAC：ACK-LGT-TOWER-LVLU确认待回执。  \n- OI-vciinboxlaneslvluinboxAU：AUTOASK-RING-LVLU-KEY-REASSIGN密钥重分配待处理。  \n\n② 应动何件（立协同不候）  \nPLAN-QUEUE拍、REQ-SI-ALIGN-LVLU-01、EXEC-ORBIT-ORBIT-CAP-02-BYPASS、AUTOASK-RING-LVLU-KEY-REASSIGN。  \n\n③ 未闭项推进  \n- OI-WILDQMERGED01：未闭，推合并脚本后闭。  \n- OI-SI1KICKQRINGSTRESS012026：未闭，收日志收敛阈值后闭。  \n- OI-SI1KICKQUANTSIM012026092：未闭，确认quant sim结果后归档闭。  \n- OI-vciinboxlaneslvluinboxRE：未闭，与lvlu侧锁定对齐参数后闭。  \n- OI-vciinboxlaneslvluinboxEX：未闭，完成旁路验证后闭。  \n- OI-vciinboxlaneslvluinboxOR：未闭，EX通过后联动闭。  \n- OI-vciinboxlaneslvluinboxAC：未闭，补发ack回执后闭。  \n- OI-vciinboxlaneslvluinboxAU：未闭，完成key-reassign刷新令牌后闭。  \n\n④ 生债一条  \n生债：若本节拍内不完成lvlu-SI对齐与密钥重分配，SI1自动降级为观察态。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 2,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 1
+ }
+}
