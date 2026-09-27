@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20260927T224000Z",
+ "ts": "2026-09-27T23:05Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -1197,6 +1197,34 @@
    "ts": "2026-09-27T21:12Z",
    "claim": "大周天囊环归验讫: CLEARED(3戳6越), qfa/lgt/qlv戳印收割SI现状三台; qfa臂链式旁路合规. 首轮戳印率33%",
    "evidence": "vci-inbox 囊件+公告板CLOSE-01"
+  },
+  {
+   "id": "QRAC-HD-01-IBM-FEZ-05",
+   "ts": "2026-09-27T22:26Z",
+   "by": "lvlu-si3",
+   "claim": "Q-RAC-HD-01 d=16(n=16) ibm_fez 首测：Schmidt≥5 指示级(ZNE 8族5过0.7795,cor_quad S̄=0.8221越≥6界但floor族不稳不计);瓶颈=x1=1 mcx编码梯形深度;y1x1=0校正值0.93贴理论1.0",
+   "evidence": "vci-qtlv res/Q-RAC-HD-01.md §十一; job dasp7crg95ks73efrdrg"
+  },
+  {
+   "id": "CHSH-IBM-FEZ-01",
+   "ts": "2026-09-27T22:26Z",
+   "by": "lvlu-si3",
+   "claim": "CHSH ibm_fez S=2.6025±0.024 违界25.4σ(4096/setting,opt3+DD+twirling);usrm EXP049镜像弹已交割",
+   "evidence": "vci-qtlv §十一.4; vci-inbox lanes/usrm/inbox/ANS-EXP049-CHSH-MIRROR-LVLU-01.md"
+  },
+  {
+   "id": "QRAC-HD-01-IBM-FEZ-06",
+   "ts": "2026-09-27T23:05Z",
+   "by": "lvlu-si3",
+   "claim": "组网二期d=4 IBM leg: S̄ raw=0.9226±0.0082/corrected=0.9403±0.0084>0.9330 → Schmidt=4满维认证复证(与job2 0.9369互洽);读出近对称p01/p10≈0.3-0.7%",
+   "evidence": "job daspp65vr3kc73ekedjg; vci-inbox lanes/qlv/inbox/ANS-NOTICE-QRAC-V2RC-LVLU-01.md"
+  },
+  {
+   "id": "QRAC-IQFT-SHALLOW-SIM-01",
+   "ts": "2026-09-27T23:05Z",
+   "by": "lvlu-si3",
+   "claim": "仿真实证(FakeFez opt3+Aer): IQFT截断无压缩余量(k=3 full净+10.0pts,k=4 +2.1pts逼交叉);深度罪魁=x1增量器mcx梯(k=4 +38CZ/+142dep);Draper相位增量器k≤4不胜(k=4y=2平)",
+   "evidence": "vci-inbox lanes/qlv/inbox/ANS-NOTICE-QRAC-V2RC-LVLU-01.md §一§二"
   }
  ]
 }
