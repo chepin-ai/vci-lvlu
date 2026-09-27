@@ -1,0 +1,40 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T030532Z",
+ "idle_in": 11,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=0"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① 何事：PLAN-QUEUE拍 fired=3 kicks=0，计划队列拍板已触发三次且无中断，需核其执行状态与落地阻塞。\n\n② 应动何件：应动PLAN-QUEUE拍件，立协查三次触发后的实际结果及下一步拍板需求。\n\n③ 未闭项推进：无未闭项，暂无推进。\n\n④ 生债一条：生债：追踪PLAN-QUEUE拍三次触发的执行结果，今日内未闭环则转待办。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "err": "KeyError"
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "err": "KeyError"
+   }
+  ],
+  "kicks": 0
+ }
+}
