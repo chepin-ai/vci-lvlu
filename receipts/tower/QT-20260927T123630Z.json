@@ -1,0 +1,50 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T123630Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 3,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 候件无；未闭五件：wildq-s6验证卡47次；uf-vault注册卡45次；lvlu-SI-GATE通告卡22次（涉lvlu诉求）；SI1-QRING压测卡3次；SI1-QUANT-SIM卡3次。\n\n② 应动长滞与涉lvlu三件：wildq-s6验证、uf-vault注册、lvlu-SI-GATE通告，立协同不候。\n\n③ 推进：\n- OI-20260926wildqs6verificat：未闭/人工熔断或根因排查。\n- OI-20260926isuufvaultregist：未闭/链路巡检并fallback。\n- OI-vciinboxlaneslvluinboxNO：未闭/确认lvlu签收归档。\n- OI-SI1KICKQRINGSTRESS012026：未闭/压测握手完成。\n- OI-SI1KICKQUANTSIM012026092：未闭/模拟数据回传。\n\n④ 生债：wildq-s6验证超47次未闭须出根因报告。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
