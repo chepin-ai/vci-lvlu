@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T045855Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "20260926-isu-uf-vault-registry.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件：UF Vault Registry注册（isu-uf-vault-registry.md），涉lvlu基础资源诉求，待录入。  \n- 未闭项1：QRING压力测试（SI1-KICK-QRING-STRESS-01）7试未闭。  \n- 未闭项2：量子模拟（SI1-KICK-QUANT-SIM-01）7试未闭。  \n- 未闭项3：WildQ S6验证（20260926-wildq-s6-verification）3试未闭。  \n- 未闭项4：UF Vault Registry（20260926-isu-uf-vault-registry）1试未闭。  \n\n② 应动何件  \n- 候件20260926-isu-uf-vault-registry.md，立协同未闭项OI-20260926isuufvaultregist同件即办，不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步排查7次失败根因。  \n- OI-SI1KICKQUANTSIM012026092：未闭，下一步排查7次失败根因。  \n- OI-20260926wildqs6verificat：未闭，下一步完成S6验证",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
