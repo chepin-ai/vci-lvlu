@@ -1,0 +1,54 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T120313Z",
+ "idle_in": 10,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=2"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 19,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件：PLAN-QUEUE拍fired=3 kicks=2，调度余量告警。\n- OI-wildq-s6：s6验证项44次尝试未闭。\n- OI-isu-uf-vault：vault注册项42次尝试未闭。\n- OI-vci-lvlu-NOTICE：lvlu收件箱SI门控通知19次尝试未闭，涉lvlu线诉求。\n\n② 应动何件：\n- 立协同OI-vciinboxlaneslvluinboxNO（lvlu SI门控）及PLAN-QUEUE调度挤压制停。\n\n③ 未闭项推进：\n- OI-20260926wildqs6verificat：未闭，下一步：s6验证降级或重检前置条件。\n- OI-20260926isuufvaultregist：未闭，下一步：重推vault注册或回滚uf状态。\n- OI-vciinboxlaneslvluinboxNO：未闭，下一步：读取NOTICE-SI-GATE-LVLU-01并同步SI",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 2
+ }
+}
