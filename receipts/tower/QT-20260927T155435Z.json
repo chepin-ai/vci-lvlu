@@ -1,0 +1,36 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T155435Z",
+ "idle_in": 8,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 22,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 件一：vci-inbox lanes/lvlu/inbox NOTICE-SI-GATE-LVLU-01，为LVLU之SI门控通知件，lvlu诉求为门控状态待确认与inbox清理。\n- 件二：SI1-KICK-QRING-STRESS-01，为SI1发起的QRing压测任务，已试22次未收敛。\n- 件三：SI1-KICK-QUANT-SIM-01，为SI1发起的Quant模拟任务，已试22次未收敛。\n\n②应动何件：\n- 三件皆立协同、不候。lvlu门控件优先拉通；两SI1 kick件并线排查。\n\n③未闭项推进：\n- OI-vciinboxlaneslvluinboxNO：未闭，下一步：清lvlu inbox、确认SI门控放行条件并同步诉求。\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：定位QRing压测阻塞、收敛日志并输出pass/fail。\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步：完成Quant模拟结果校验、回传或标记异常。\n\n④生债一条：\n- 生债：高retry长开项未自收敛，需建SI2/SI0对SI1-kick及lvlu门控的自动闭环协同债，替代逐轮人工retry。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
