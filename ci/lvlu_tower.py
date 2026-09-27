@@ -182,7 +182,8 @@ def plan_queue_beat(state, ts):
                         rc = _pq_r2('PUT', 'ci-mesh-state', 'quantum/QRING-SIM-%s.json' % ts, json.dumps(sim, ensure_ascii=False).encode())
                         it['last_run'] = ts; fired += 1; report['acts'].append({'id': it['id'], 'r2': rc})
                         if kicks < 2 and rc == 200:
-                            if _pq_kick(it, '8比特环仿真入R2 rc=%s IPR末值=%s' % (rc, sim['sweep'][-1]['IPR']), ts): kicks += 1
+                            if _pq_kick(it, '8比特环仿真入R2 rc=%s theory_fit=%s P末值=%s'  # 枢/PIVOT-01代修(R11清障): IPR键不存在致KeyError吞踢,改用sweep实有键;覆写权归原线
+                            % (rc, sim['theory_fit'], sim['sweep'][-1]['P(q0=0)']), ts): kicks += 1
         except Exception as e_:
             report['acts'].append({'id': it.get('id', '?'), 'err': e_.__class__.__name__})
     state['pq_beat_n'] = state.get('pq_beat_n', 0) + 1
@@ -238,7 +239,7 @@ def main():
     old, sha = get_file('receipts/tower/QT-%s.json' % ts)
     put_file('receipts/tower/QT-%s.json' % ts, json.dumps(receipt, ensure_ascii=False, indent=1), sha, f'[skip ci] LVLU-TOWER beat {ts}')
     new_state = {'ts': ts, 'idle': idle, 'events': len(events), 'cascade': '', 'seen': NEWSEEN,
-                 'open_items': open_items, 'wq_sha': state.get('wq_sha', '')}
+                 'open_items': open_items, 'wq_sha': state.get('wq_sha', ''), 'pq_beat_n': state.get('pq_beat_n', 0)}  # 枢/PIVOT-01代修(R11清障): 拍计数入册,否则每拍0起点every-n闸恒真
     selftest = os.environ.get('SELFTEST', '0') == '1'
     if selftest:
         new_state['cascade'] = 'selftest 干跑不级联'
