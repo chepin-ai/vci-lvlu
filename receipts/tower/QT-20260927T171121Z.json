@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T171121Z",
+ "idle_in": 3,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 29,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：无候件；未闭① SI1-KICK-QRING-STRESS 已试29次；未闭② SI1-KICK-QUANT-SIM 已试29次。无涉 lvlu 诉求。\n\n② 应动何件：两未闭项重试均达上限，立协同 SI1 双件并动，不候。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，协 SI1 排查 QRING 压测根因并强收敛。\n- OI-SI1KICKQUANTSIM012026092：未闭，协 SI1 排查 QUANT SIM 卡滞并强收敛。\n\n④ 生债一条：SI1 双项经29试未闭，生债「SI1-KICK 重试风暴根因定位」。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
