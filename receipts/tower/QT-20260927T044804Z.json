@@ -1,0 +1,41 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T044804Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "20260926-wildq-s6-verification.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件 20260926-wildq-s6-verification.md：S6验证入箱，涉lvlu语构校验诉求。  \n- OI-SI1KICKQRINGSTRESS012026：QRING应力五试未闭，环流锁死。  \n- OI-SI1KICKQUANTSIM012026092：量子模拟五试未闭，算符坍缩。  \n- OI-20260926wildqs6verificat：wildq验证一启未闭，待交叉验。  \n\n② 应动何件  \n- 立协同三件：双KICK项达试限不候，wildq候件即验即录。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步升维SI1主核或熔断重置。  \n- OI-SI1KICKQUANTSIM012026092：未闭，下一步升维SI1主核或熔断重置。  \n- OI-20260926wildqs6verificat：未闭，下一步读取正文",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
