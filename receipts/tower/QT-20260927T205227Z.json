@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T205227Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-SI-ALIGN-LVLU-01.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260927T174511Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-SI-ALIGN-LVLU-01.md",
+   "opened": "20260927T205227Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- vci-inbox 入件 REQ-SI-ALIGN-LVLU-01.md，为 lvlu lane 向 SI 发起对齐诉求，必录。  \n\n② 应动何件  \n- 立协同入件 REQ-SI-ALIGN-LVLU-01.md（涉 lvlu 诉求），不候。  \n\n③ 未闭项推进  \n- OI-WILDQMERGED01：未闭，已试 20 次，下一步根因诊断或升级。  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步完成 QRing 压测并回传 stress 指标。  \n- OI-SI1KICKQUANTSIM012026092：未闭，下一步收拢 quant-sim 结果并比对基线。  \n- OI-vciinboxlaneslvluinboxRE：未闭，下一步解析 REQ 并启动 SI↔lvlu 语义对齐流程。  \n\n④ 生债一条  \n- 生债：lvlu↔SI 对齐协议缺自动回执与 diff 追踪，需补闭环机制。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
