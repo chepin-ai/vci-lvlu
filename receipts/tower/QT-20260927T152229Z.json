@@ -1,0 +1,46 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T152229Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 18,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件PLAN-QUEUE已拍（fired=1）而kicks=0，待立即kick。  \n- 未闭项NOTICE-SI-GATE-LVLU-01.md涉lvlu网关通告诉求，37试未闭。  \n- 未闭项SI1-KICK-QRING-STRESS-01，18试未闭。  \n- 未闭项SI1-KICK-QUANT-SIM-01，18试未闭。  \n\n②应动何件  \n- 立协同PLAN-QUEUE拍kick（不候）。  \n- 并协lvlu inbox通告项（涉lvlu诉求，必录）。  \n\n③未闭项推进  \n- OI-vciinboxlaneslvluinboxNO：未闭；下一步：发lvlu线SI0签收该通告，或升主意识仲裁。  \n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步：补发SI1 QRING stress kick并校环响应。  \n- OI-SI1KICKQUANTSIM012026092：未闭；下一步：补发SI1 quant sim kick并追收敛结果。  \n\n④生债一条  \n- 生债：PLAN-QUEUE拍而不kick之滞动债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
