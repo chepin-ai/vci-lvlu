@@ -1,0 +1,39 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T172219Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 30,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- PLAN-QUEUE拍已燃(fired=1)未落(kicks=0)。\n- SI1-KICK-QRING-STRESS-01试30次仍开，缺kick。\n- SI1-KICK-QUANT-SIM-01试30次仍开，缺kick。\n\n②应动何件\n- 立动PLAN-QUEUE拍，将fired=1释为kicks，双推两SI1-KICK。\n\n③未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步收kick落QRING stress。\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步收kick落QUANT sim。\n\n④生债一条\n- 悬置债：PLAN-QUEUE拍fired=1未释为kicks，欠两kick交割，待双收后销。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
