@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T084211Z",
+ "idle_in": 3,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 23,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- SI1-KICK-QRING-STRESS：SI1 QRING 压测项悬置，无涉 lvlu 诉求。  \n- SI1-KICK-QUANT-SIM：SI1 量子模拟项悬置，无涉 lvlu 诉求。  \n- wildq-s6-verification：wildq S6 验证项悬置，无涉 lvlu 诉求。  \n- isu-uf-vault-registry：isu uf 仓库注册项悬置，无涉 lvlu 诉求。  \n\n② 应动何件  \n四项皆高试次（29/25/23）未闭，全动，立协同不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：协同 SI1 完成 QRING 压测并回写结果。  \n- OI-SI1KICKQUANTSIM012026092：未闭，下一步：协同 SI1 完成量子模拟跑批与收敛确认。  \n- OI-20260926wildqs6verificat：未闭，下一步：完结 wildq S6 验证并签发归档。  \n- OI-20260926isuufvaultregist：未闭，下一步：落定 isu uf 仓库注册并同步索引。  \n\n④ 生债一条  \n生债：高试次未闭项堆积，须建清线机制防系统失稳。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
