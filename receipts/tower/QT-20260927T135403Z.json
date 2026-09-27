@@ -1,0 +1,36 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T135403Z",
+ "idle_in": 8,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 10,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件无；未闭1）lvlu 网关通告 NOTICE-SI-GATE-LVLU-01 已 29 试未闭（涉 lvlu 入口）；未闭2）SI1-KICK-QRING-STRESS-01 已 10 试未闭；未闭3）SI1-KICK-QUANT-SIM-01 已 10 试未闭。\n② 应动：立协动 lvlu 网关通告项（涉 lvlu，不候）；SI1 两项 kick 项旁协跟进。\n③ 推进：OI-vciinboxlaneslvluinboxNO 未闭，下一步读通告并关单或升级；OI-SI1KICKQRINGSTRESS012026 未闭，下一步确认 QRING 压测挂载后关闭；OI-SI1KICKQUANTSIM012026092 未闭，下一步确认 QUANT-SIM 移交 SI1 后关闭。\n④ 生债：lvlu 网关通告滞留 29 试，SI2/SI0 限时清障。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
