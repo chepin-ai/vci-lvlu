@@ -1,0 +1,36 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T134315Z",
+ "idle_in": 7,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 9,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件无。\n- OI-vciinboxlaneslvluinboxNO：lvlu 收件匣网关通知未闭，tries 28，诉求为 SI 门控/lvlu 线协议同步。\n- OI-SI1KICKQRINGSTRESS012026：SI1 QRING 压测项未闭，待数据回传。\n- OI-SI1KICKQUANTSIM012026092：SI1 量子模拟项未闭，待观测对齐。\n\n②应动何件：\n应动 OI-vciinboxlaneslvluinboxNO（涉 lvlu 门控诉求，tries 28，立协同 lvlu 线 SI 门控",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
