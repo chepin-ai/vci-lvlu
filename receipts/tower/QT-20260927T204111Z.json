@@ -1,0 +1,36 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T204111Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260927T174511Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空；未闭项三件：WILD-Q-MERGED-01更新（已19试未闭，涉lvlu归并诉求）、SI1-KICK-QRING-STRESS-01压力测试（2试未闭）、SI1-KICK-QUANT-SIM-01量子模拟（2试未闭）。  \n② 应动何件：立协同不候，优先动OI-WILDQMERGED01（19试临界点），并联SI1-KICK双件。  \n③ 未闭项推进：  \n- OI-WILDQMERGED01：未闭，下一步：启动第20次归并或降级拆分为子协议；  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：向SI1推送QRING压力阈值校准并回收日志；  \n- OI-SI1KICKQUANTSIM012026092：未闭，下一步：补验QUANT-SIM与SI0/SI2接口握手缺失帧。  \n④ 生债一条：生「归并迟滞债」——WILD-Q-MERGED-01经19次迭代仍未收敛，律吕线需偿此熵增。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
