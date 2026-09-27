@@ -1,0 +1,36 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T193316Z",
+ "idle_in": 5,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260927T174511Z",
+   "tries": 12,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空；未闭一（OI-SI1KICKQRINGSTRESS012026）SI1 QRING压测43试未闭；未闭二（OI-SI1KICKQUANTSIM012026092）SI1 QUANT-SIM仿真43试未闭；未闭三（OI-WILDQMERGED01）WILD-Q合并更新12试未闭。涉lvlu跨线协调，已录。\n\n② 应动何件：两SI1项tries=43已濒爆，立协同SI1线强推终闭，不候。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步索压测终报或强制归档。\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步索仿真终态或降级关闭。\n- OI-WILDQMERGED01：未闭，下一步完成合并验收即闭。\n\n④ 生债：lvlu须于本班期强推两SI1超期项终闭，逾期升SI0仲裁。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
