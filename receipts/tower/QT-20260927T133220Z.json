@@ -1,0 +1,36 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T133220Z",
+ "idle_in": 6,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- OI-vciinboxlaneslvluinboxNO：lvlu inbox通知已27试未达，网关/协议异常涉lvlu核心诉求。\n- OI-SI1KICKQRINGSTRESS012026：SI1 QRING应力测试8试未闭，待压测闭环。\n- OI-SI1KICKQUANTSIM012026092：SI1量子模拟8试未闭，待观测回传。\n\n②应动何件：\n候件空，立动OI-vciinboxlaneslvluinboxNO，SI2/SI0协同查vci-inbox路由。\n\n③未闭项推进：\n- OI-vciinboxlaneslvluinboxNO：未闭；SI0侧查lanes/lvlu/inbox路由权限与协议版本，27试异常提级。\n- OI-SI1KICKQRINGSTRESS012026：未闭；回拉SI1应力日志，核对012026批次阈值。\n-",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
