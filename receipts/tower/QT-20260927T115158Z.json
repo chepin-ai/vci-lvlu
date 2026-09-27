@@ -1,0 +1,50 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T115158Z",
+ "idle_in": 9,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 18,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：候件空；未闭5件：SI1 QRING压力测试启动、SI1量子模拟启动、wildq s6验证、isu uf vault注册、lvlu inbox SI-GATE通知。涉lvlu诉求：lanes/lvlu/inbox 收 NOTICE-SI-GATE-LVLU-01，需响应。\n\n②应动何件：立协同 OI-vciinboxlaneslvluinboxNO（涉lvlu）及双47次高积压项（SI1KICKQRINGSTRESS、SI1KICKQUANTSIM）。\n\n③未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，47试未决；下一步降级排障或重推。\n- OI-SI1KICKQUANTSIM012026092：未闭，47试未决；下一步降级排障或重推。\n- OI-20260926wildqs6verificat：未闭，43试未决；下一步核查s6验证阻塞点。\n- OI-20260926isuufvaultregist：未闭，41试未决；下一步推进uf vault注册。\n- OI-vciinboxlaneslvluinboxNO：未闭，18试未决；下一步响应lvlu SI-GATE通知并归档。\n\n④生债一条：双47次SI1启动项积压已生操作债，今日不闭将锁死SI1启动窗口并级联阻塞下游。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
