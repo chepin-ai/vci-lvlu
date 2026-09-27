@@ -1,0 +1,71 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T221523Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260927T174511Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-SI-ALIGN-LVLU-01.md",
+   "opened": "20260927T205227Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-02-BYPASS-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-fe8b40ca.md",
+   "opened": "20260927T215014Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260927.md",
+   "opened": "20260927T215014Z",
+   "tries": 3,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- 候件空，无事。\n- OI-WILDQMERGED01：WILD-Q-MERGED-01更新挂起，待合并闭环。\n- OI-SI1KICKQRINGSTRESS012026：SI1-KICK-QRING-STRESS-01压力测试未完成，待输出报告。\n- OI-SI1KICKQUANTSIM012026092：SI1-KICK-QUANT-SIM-01量子模拟未完成，待归档。\n- OI-vciinboxlaneslvluinboxRE：REQ-SI-ALIGN-LVLU-01诉求，SI向lvlu对齐，待响应。（涉lvlu，必录）\n- OI-vciinboxlaneslvluinboxEX：EXEC-ORBIT-ORBIT-CAP-02-BYPASS执行旁路，待确认令牌。\n- OI-vciinboxlaneslvluinboxOR：ORBIT-CAP-02-BYPASS轨道容量旁路，待同步配置。\n- OI-vciinboxlaneslvluinboxAC：ACK-LGT-TOWER-LVLU-fe8b40ca，灯塔待lvlu回执确认。（涉lvlu，必录）\n- OI-vciinboxlaneslvluinboxAU：AUTOASK-RING-LVLU-KEY-REASSIGN环密钥重分配诉求，待lvlu签章。（涉lvlu，必录）\n\n②应动何件\n立协同不候：先动OI-WILDQMERGED01（tries27最老）；同步联动三件涉lvlu项（OI-…RE/AC/AU），对齐与密钥重分配不候。\n\n③未闭项推进\n- OI-WILDQMERGED01：未闭/下一步：提SI0仲裁合并或打回。\n- OI-SI1KICKQRINGSTRESS012026：未闭/下一步：拉取QRING全量日志判定瓶颈。\n- OI-SI1KICKQUANTSIM012026092：未闭/下一步：跑完末轮QUANT-SIM并锁版本。\n- OI-vciinboxlaneslvluinboxRE：未闭/下一步：发SI-ALIGN-LVLU协请单并回戳。\n- OI-vciinboxlaneslvluinboxEX：未闭/下一步：校验BYPASS执行令牌签名与时效。\n- OI-vciinboxlaneslvluinboxOR：未闭/下一步：将ORBIT-CAP-02变更写进拓扑注册表。\n- OI-vciinboxlaneslvluinboxAC：未闭/下一步：向LGT-TOWER回传lvlu级ACK闭握手。\n- OI-vciinboxlaneslvluinboxAU：未闭/下一步：评估KEY-REASSIGN域影响并落lvlu章。\n\n④生债一条\n生债：vci-inbox涉lvlu三诉求（对齐/回执/重分配）今未闭环，债务结转下一周期优先结清。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
