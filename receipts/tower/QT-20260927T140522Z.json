@@ -1,0 +1,36 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T140522Z",
+ "idle_in": 9,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 11,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空；OI-vciinboxlaneslvluinboxNO：lvlu inbox门控通知30试未闭，lvlu收讫诉求积压；OI-SI1KICKQRINGSTRESS012026：SI1量子环应力项11试未闭；OI-SI1KICKQUANTSIM012026092：SI1量子模拟项11试未闭。\n\n② ",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
