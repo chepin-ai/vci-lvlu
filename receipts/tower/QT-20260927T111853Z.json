@@ -1,0 +1,50 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T111853Z",
+ "idle_in": 6,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 15,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- OI-SI1KICKQRINGSTRESS012026：SI1层QRing应力kick待收敛。  \n- OI-SI1KICKQUANTSIM012026092：SI1层量子模拟kick待仿真闭环。  \n- OI-20260926wildqs6verificat：WildQ S6验证待节点ack。  \n- OI-20260926isuufvaultregist：ISU-UF金库注册待上链确认。  \n- OI-vciinboxlaneslvluinboxNO：VCI lanes/lvlu/inbox收SI-GATE通知，涉lvlu门控诉求，待响应。  \n\n②应动何件  \n全件应动，立协同不候；其中NOTICE-SI-GATE-LVLU-01涉lvlu门控，即刻协同。  \n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步催SI1回传QRing应力kick确认。  \n- OI-SI1KICKQUANTSIM012026092：未闭，下一步等量子模拟收敛或SI1完成信号。  \n- OI-20260926wildqs6verificat：未闭，下一步收wildq",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
