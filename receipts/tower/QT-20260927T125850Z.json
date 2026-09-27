@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T125850Z",
+ "idle_in": 3,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 5,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- OI-20260926isuufvaultregist：uf-vault-registry 注册阻塞，47 试未落。  \n- OI-vciinboxlaneslvluinboxNO：lanes/lvlu/inbox 通知 SI-GATE-LVLU-01 待处理，24 试未落；涉 lvlu 诉求已录。  \n- OI-SI1KICKQRINGSTRESS012026：SI1-KICK-QRING 压力测试待启，5 试未落。  \n- OI-SI1KICKQUANTSIM012026092：SI1-KICK-QUANT-SIM 量子模拟待启，5 试未落。  \n\n② 应动何件  \n候件空；立协同 OI-20260926isuufvaultregist（47 试最高）与 OI-vciinboxlaneslvluinboxNO（涉 lvlu 网关），不候。  \n\n③ 未闭项推进  \n- OI-20260926isuufvaultregist：未闭，下一步 uf-vault-registry 强制注册或降级旁路。  \n- OI-vciinboxlaneslvluinboxNO：未闭，下一步解析 NOTICE 并同步 SI-GATE-LVLU 状态机。  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步确认 QRING 资源位并注入压力。  \n- OI-SI1KICKQUANTSIM012026092：未闭，下一步 QUANT-SIM 参数对齐并推进仿真。  \n\n④ 生债一条  \n生债：高 tries 项（47/24）须纳入熔断阈值，避免空转耗散。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
