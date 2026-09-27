@@ -1,0 +1,40 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T201907Z",
+ "idle_in": 10,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=2"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260927T174511Z",
+   "tries": 17,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① PLAN-QUEUE拍 fired=3 kicks=2，lvlu线律吕拍序差拍，录诉求：发3收2未齐。  \n② 应动此件，立协同不候，即刻对齐拍差。  \n③ OI-WILDQMERGED01未闭，17次未决，下一步：熔断重试并排查WILD-Q-MERGED-01更新阻塞根因。  \n④ 生债：拍 fired/kicks 差值未消，生债一条，限下响前补校。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 2
+ }
+}
