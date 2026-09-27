@@ -1,0 +1,38 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T041800Z",
+ "idle_in": 19,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T041623Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T041623Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 件一：SI1 量子环应力 kick（录 lvlu 基设施应力验证诉求）。  \n- 件二：SI1 量子模拟 kick（录 lvlu 演算环境初始化诉求）。  \n\n②应动何件  \n两件并动，立协同不候；QRING-STRESS 优先。  \n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步自检应力矩阵并回写锚点。  \n- OI-SI1KICKQUANTSIM012026092：未闭，下一步待应力项通过后串启模拟。  \n\n④生债一条  \n债：SI1-KICK 串行约束——QRING 应力未达标前，QUANT-SIM 算力锁禁释。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
