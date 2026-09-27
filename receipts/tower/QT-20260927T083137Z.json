@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T083137Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 22,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空；未闭四件——SI1-KICK-QRING-STRESS压力项28试未闭、SI1-KICK-QUANT-SIM量子模拟28试未闭、WildQ-S6验证24试未闭、ISU-UF-Vault注册22试未闭。\n\n② 应动何件：立协同SI1-KICK双件（QRING-STRESS & QUANT-SIM），28试已触阈值，不候。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步切诊断模式扫死锁与资源瓶颈。\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步回滚至上稳快照比对参数漂移。\n- OI-20260926wildqs6verificat：未闭，下一步隔离S6边界用例单步重试，排除环噪。\n- OI-20260926isuufvaultregist：未闭，下一步核对UF-Registry握手链，修复凭据/TLS。\n\n④ 生债一条：高试未闭项缺自动熔断与升仓策略，需补。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
