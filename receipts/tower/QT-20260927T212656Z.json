@@ -1,0 +1,67 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T212656Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260927T174511Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-SI-ALIGN-LVLU-01.md",
+   "opened": "20260927T205227Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-02-BYPASS-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 3,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件：PLAN-QUEUE拍 fired=1 kicks=0，队列已触发但未出队，空转。\n- OI-WILDQMERGED01：WILD-Q-MERGED-01 更新已 23 试未闭，合流阻塞。\n- OI-SI1KICKQRINGSTRESS：SI1-KICK-QRING-STRESS-01 已 6 试，应力环未收敛。\n- OI-SI1KICKQUANTSIM：SI1-KICK-QUANT-SIM-01 已 6 试，量子仿真未回传。\n- OI-vciinboxlaneslvluinboxRE：REQ-SI-ALIGN-LVLU-01 已 4 试，涉 lvlu 结构对齐诉求。\n- OI-vciinboxlaneslvluinboxEX：EXEC-ORBIT-CAP-02-BYPASS 执行已 3 试，旁路待确认。\n- OI-vciinboxlaneslvluinboxOR：ORBIT-CAP-02-BYPASS 主档已 3 试，容量策略待同步。\n\n②应动何件：\n- 候件 PLAN-QUEUE 立补 kicks=1 使出队，不候。\n- OI-WILDQMERGED01 立协同强制合并，不候。\n- OI-vciinboxlaneslvluinboxRE（lvlu 对齐）立协同 SI 对齐，不候。\n\n③未闭项推进：\n- OI-WILDQMERGED01：未闭，下一步输出合流快照并关闭。\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步重跑应力并收敛边界。\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步收束日志回传 SI1。\n- OI-vciinboxlaneslvluinboxRE：未闭，下一步完成 lvlu 结构对齐并出回执。\n- OI-vciinboxlaneslvluinboxEX：未闭，下一步确认 bypass 参数后归档。\n- OI-vciinboxlaneslvluinboxOR：未闭，下一步同步 ORBIT-CAP-02 策略后关闭。\n\n④生债一条：\n- 债：PLAN-QUEUE kicks=0 致 6 项未闭项空转，债入 lvlu-SI2 调度层，限 1 周期补 kicks 消债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
