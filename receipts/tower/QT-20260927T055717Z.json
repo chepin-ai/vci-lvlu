@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T055717Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- OI-SI1KICKQRINGSTRESS012026：SI1-KICK-QRING-STRESS 环应力测试项，14试未闭，录其应力阈值标定待决。  \n- OI-SI1KICKQUANTSIM012026092：SI1-KICK-QUANT-SIM 量子模拟项，14试未闭，录其仿真收敛性待验。  \n- OI-20260926wildqs6verificat：wildq-s6 验证项，10试未闭，录其协议边界用例未决。  \n- OI-20260926isuufvaultregist：isu-uf-vault 注册项，8试未闭，录其注册映射未落位。  \n\n② 应动何件  \n件一、件二（tries=14，回压最高），立协同 SI1-SI2 回压消解；件三、件四并推，不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：下发阈值标定或执行压测降级。  \n- OI-SI1KICKQUANTSIM012026092：未闭，下一步：重算收敛并同步量子噪声参数。  \n- OI-20260926wildqs6verificat：未闭，下一步：补全 s6 边界用例复验。  \n- OI-20260926isuufvaultregist：未闭，下一步：确认节点签名并落表。  \n\n④ 生债一条  \nSI1 kick 双项 14 试未闭，SI2/SI0 代偿回压；若今日未决，升单至 lvlu 主协。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
