@@ -1,0 +1,45 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T202813Z",
+ "idle_in": 11,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T201907Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T201907Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260927T174511Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- SI1-KICK-QRING-STRESS：SI1发起QRing压力测试kickoff，lvlu须即时接入协同。  \n- SI1-KICK-QUANT-SIM：SI1发起量子模拟kickoff，lvlu须即时接入协同。  \n- WILD-Q-MERGED-01更新：已尝18次未闭，lvlu侧待排障或升级。  \n\n② 应动何件  \n- 三件全动；立协同SI1双kickoff，并急诊WILD-Q-MERGED-01。  \n\n③ 未闭项推进  \n- OI-WILDQMERGED01：未闭；下一步：根因诊断，升级解阻塞。  \n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步：建QRing压测通道，回执SI1。  \n- OI-SI1KICKQUANTSIM012026092：未闭；下一步：建QuantSim协同槽，回执SI1。  \n\n④ 生债一条  \n- 生债：向SI1索需QRing/QuantSim准入阈值、回传格式及超时契约。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
