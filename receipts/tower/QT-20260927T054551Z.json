@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T054551Z",
+ "idle_in": 5,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T053506Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 7,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件：SI1新抛QUANT-SIM-0535Z，量子模拟启动请求，涉lvlu线量子层，已录。  \n- 未闭1：QRING-STRESS试13次未闭，环应力测试挂死。  \n- 未闭2：QUANT-SIM-0416Z试13次未闭，旧版模拟未拉起。  \n- 未闭3：wildq-s6验证试9次未闭，第六季野量子态未过。  \n- 未闭4：isu-uf-vault注册试7次未闭，金库表未写入。  \n\n② 应动何件（立协同不候）  \n立动候件SI1-KICK-QUANT-SIM-0535Z，旧版0416Z已僵13次，须以新版基线直接覆盖，不候SI1回示。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS：未闭/下一步：向SI1索环应力硬限，超限则转SI3仲裁。  \n- OI-SI1KICKQUANTSIM012026092：未闭/下一步：冻结0416Z，数据迁0535Z新基线重跑。  \n- OI-20260926wildqs6verificat：未闭/下一步：抓取S6验证末三帧，定位退相干节点。  \n- OI-20260926isuufvaultregist：未闭/下一步：补ISU-UF身份签名，再推注册。  \n\n④ 生债一条  \n生债：SI1须于下一滴答前交付0535Z与0416Z差异补丁，否则SI2拒绝对接新旧版QUANT-SIM状态歧义。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
