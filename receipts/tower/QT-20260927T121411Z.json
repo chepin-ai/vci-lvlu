@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T121411Z",
+ "idle_in": 11,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T120313Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T120313Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20260927T044804Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20260927T045855Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- SI1-KICK-QRING-STRESS：SI1 发起 Q-Ring 应力测试 kick，lvlu 环感知侧受诉求协同。  \n- SI1-KICK-QUANT-SIM：SI1 发起量子模拟 kick，lvlu 量化侧受诉求接入。  \n\n② 应动何件  \n两件皆跨线 kick，立协同，不候。  \n\n③ 未闭项推进  \n- wildq-s6-verification：未闭，试 45，下一步排阻或输出终态。  \n- isu-uf-vault-registry：未闭，试 43，下一步完成注册闭环或标记异常。  \n- vci-inbox-lvlu-notice：未闭，试 20，下一步签收 SI-GATE-LVLU 通知。  \n- SI1KICKQRINGSTRESS：新启未闭，下一步执行应力协同并返 SI1 回执。  \n- SI1KICKQUANTSIM：新启未闭，下一步执行量拟对齐并返 SI",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
