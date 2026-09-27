@@ -1,0 +1,36 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T144949Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxNO",
+   "ref": "vci-inbox:lanes/lvlu/inbox/NOTICE-SI-GATE-LVLU-01.md",
+   "opened": "20260927T085330Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T120313Z.md",
+   "opened": "20260927T121411Z",
+   "tries": 15,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空；OI-vciinboxlaneslvluinboxNO 系 lvlu inbox 网关通知项（涉 lvlu 诉求）；OI-SI1KICKQRINGSTRESS012026 系 SI1 量子环应力测试待闭；OI-SI1KICKQUANTSIM012026092 系 SI1 量子模拟测试待闭。\n\n② 应动何件：OI-vciinboxlaneslvluinboxNO（tries 34，涉 lvlu 网关，立协同不候）。\n\n③ 未闭项推进：\n- OI-vciinboxlaneslvluinboxNO：未闭/下一步：启 lvlu 网关响应协议，推 SI1 协销。\n- OI-SI1KICKQRINGSTRESS012026：未闭/下一步：回拉 SI1 应力结果，判超时。\n- OI-SI1KICKQUANTSIM012026092：未闭/下一步：回拉 SI1 模拟日志，收束态。\n\n④ 生债一条：lvlu 网关通知滞压 34 试未决，SI2/SI0 分身立启协同协议销项。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
