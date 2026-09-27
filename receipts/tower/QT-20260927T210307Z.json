@@ -1,0 +1,70 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T210307Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260927T205459Z.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-03-QLV-01-BYPASS-qfa-20260927T205459Z.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-02-BYPASS-20260927T205459Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260927T174511Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-SI-ALIGN-LVLU-01.md",
+   "opened": "20260927T205227Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-02-BYPASS-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- 收EXEC-ORBIT-CAP-02-BYPASS-qfa，lvlu执行旁路待拆包。\n- 收EXEC-ORBIT-CAP-03-QLV-01-BYPASS-qfa，新旁路诉求未建档。\n- 收ORBIT-CAP-02-BYPASS，轨道能力02旁路待落位。\n\n②应动何件\n- 立协同CAP-03-QLV-01-BYPASS-qfa（无对应OI，须即开项并拉通SI1/SI2）。\n- 兼动REQ-SI-ALIGN-LVLU-01（涉lvlu对齐，不候）。\n\n③未闭项推进\n- OI-WILDQMERGED01：未闭，21次超阈，下一步转escalation。\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步催SI1压测回执。\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步收SIM输出并比对。\n- OI-REQ-SI-ALIGN-LVLU-01：未闭，下一步出lvlu对齐确认。\n- OI-EXEC-CAP-02-BYPASS-qfa：未闭，下一步拆qfa载荷落通道。\n- OI-ORBIT-CAP-02-BYPASS：未闭，下一步校验轨道配置。\n\n④生债一条\n- 新债：CAP-03-QLV-01旁路缺OI，限时补建闭环，逾期升级。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
