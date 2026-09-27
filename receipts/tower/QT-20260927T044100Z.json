@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T044100Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T041623Z.md",
+   "opened": "20260927T041800Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空；未闭1:SI1-QRING应力kick，lvlu协同诉求已录；未闭2:SI1-QUANT模拟kick，lvlu协同诉求已录。  \n② 应动何件：双件俱动，立协同不候。  \n③ 未闭项推进：OI-SI1KICKQRINGSTRESS012026未闭，下一步SI0级联第5试；OI-SI1KICKQUANTSIM012026092未闭，下一步SI0级联第5试。  \n④ 生债一条：lvlu线生SI1双kick悬置接管债一条，限下次脉冲强制闭环。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
