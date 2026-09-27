@@ -1,0 +1,84 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260927T215014Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-fe8b40ca.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260927.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-f1cc095f.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260927T174511Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-SI-ALIGN-LVLU-01.md",
+   "opened": "20260927T205227Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-02-BYPASS-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-fe8b40ca.md",
+   "opened": "20260927T215014Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260927.md",
+   "opened": "20260927T215014Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- LGT塔台ACK确认件（ACK-LGT-TOWER-LVLU-fe8b40ca）。\n- RING系统自动请求KEY重分配至lvlu（AUTOASK-RING-LVLU-KEY-REASSIGN-20260927），涉lvlu权限，必录。\n- LGT再催lvlu响应（RENUDGE-LGT-LVLU-f1cc095f）。\n\n② 应动何件\n- 立动AUTOASK-RING-LVLU-KEY-REASSIGN，跨RING主控协同密钥重配，不候。\n\n③ 未闭项推进\n- OI-WILDQMERGED01：未闭，25次超阈，升仲裁/改手动的下一步。\n- OI-SI1KICKQRINGSTRESS012026：未闭，待SI1回压测数据后下一踢的下一步。\n- OI-SI1KICKQUANTSIM012026092：未闭，续跑差分收敛的下一步。\n- OI-vciinboxlaneslvluinboxRE：未闭，催SI主线输出对齐结论的下一步。\n- OI-vciinboxlaneslvluinboxEX：未闭，验签旁路执行件后过闸的下一步。\n- OI-vciinboxlaneslvluinboxOR：未闭，等EX闭环后合并关闭的下一步。\n- OI-vciinboxlaneslvluinboxAC：未闭，回发ACK-ACK即可闭的下一步。\n- OI-vciinboxlaneslvluinboxAU：未闭，协RING确认新钥指纹后闭的下一步。\n\n④ 生债一条\n- RENUDGE未即回，生债：本周期内必补LGT回执。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
