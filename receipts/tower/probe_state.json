@@ -10662,6 +10662,17 @@
     "ApB": "ERR:module 'quafu.qfasm.parsetab' has no att",
     "ApBp": "ERR:module 'quafu.qfasm.parsetab' has no att"
    }
+  },
+  {
+   "ts": "20260927T025607Z",
+   "st": "ERR:'[' was never closed (parsetab.py, line ",
+   "all": {
+    "probe": "ERR:'[' was never closed (parsetab.py, line ",
+    "AB": "ERR:'quafu.qfasm.parsetab'",
+    "ABp": "In Queue",
+    "ApB": "In Queue",
+    "ApBp": "ERR:'quafu.qfasm.parsetab'"
+   }
   }
  ]
 }
