@@ -1,0 +1,50 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T092735Z",
+ "idle_in": 7,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 20,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：  \n候件空。OI-vciinboxlaneslvluinboxnu：lvlu inbox nudge追踪件（ANS-TRACK-QLV），46次未闭。OI-KEYREQPIVOTR1801lvlu2026：lvlu PIVOT-R18-01密钥请求，24次未闭。OI-SI1KICKQRINGSTRESS012026：SI1 QRING压测启动，21次未闭。OI-SI1KICKQUANTSIM012026092：SI1量化模拟启动，21次未闭。OI-KEYREQPIVOTR1901lvlu2026：lvlu PIVOT-R19-01密钥请求，20次未闭。  \n\n② 应动何件：  \n五件皆立协同不候，先清OI-vciinboxlaneslvluinboxnu（46次阻塞）及两lvlu KEYREQ。  \n\n③ 未闭项推进：  \nOI-vciinboxlaneslvluinboxnu：未闭，升单或切lane。  \nOI-KEYREQPIVOTR1801lvlu2026：未闭，追密钥签发或回退。  \nOI-SI1KICKQRINGSTRESS012026：未闭，跑通压测或排障。  \nOI-SI1KICKQUANTSIM012026092：未闭，启仿真或给初值。  \nOI-KEYREQPIVOTR1901lvlu2026：未闭，对齐依赖或申钥。  \n\n④ 生债一条：  \n生债：lvlu三诉求悬账总132次尝试，需一次集中清障。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
