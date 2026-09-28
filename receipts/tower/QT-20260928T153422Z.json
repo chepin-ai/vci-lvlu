@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T153422Z",
+ "idle_in": 3,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 5,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：候件无；未闭项①「SI1-KICK-QRING-STRESS」经5试仍open，录lvlu量子环应力kick协同诉求；②「SI1-KICK-QUANT-SIM」经5试仍open，录lvlu量子模拟kick协同诉求。\n\n②应动何件：两未闭项均已触尝试上限，应立协同SI1主线及lvlu中枢诊断阻塞，不候。\n\n③未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步提级复核QRING应力kick根因。\n- OI-SI1KICKQUANTSIM012026092：未闭；下一步提级复核QUANT模拟kick根因。\n\n④生债：lvlu-SI2/SI0记「SI1层双kick滞留」机制债一件，待上游清偿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
