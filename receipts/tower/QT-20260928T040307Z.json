@@ -1,0 +1,71 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T040307Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-SI-ALIGN-LVLU-01.md",
+   "opened": "20260927T205227Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-02-BYPASS-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-fe8b40ca.md",
+   "opened": "20260927T215014Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260927.md",
+   "opened": "20260927T215014Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 17,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- SI1环应力测试（QRING-STRESS）超期未闭，tries=40。  \n- SI1量子模拟（QUANT-SIM）超期未闭，tries=40。  \n- SI与lvlu对齐请求（ALIGN-LVLU）待办，涉lvlu诉求。  \n- 轨道容量02绕过执行（EXEC-ORBIT-CAP-02-BYPASS）挂起。  \n- 轨道容量02绕过协议（ORBIT-CAP-02-BYPASS）待确认。  \n- 灯塔-LVLU确认（ACK-LGT-TOWER-LVLU）未回执，涉lvlu。  \n- 环-LVLU密钥重分配（KEY-REASSIGN）自动请求待处理，涉lvlu。  \n- QLV追踪轻推（ANS-TRACK-QLV）未应答。  \n\n② 应动何件  \n立协同：SI1双kick（应力/量子）tries=40，即刻降载回环；REQ-SI-ALIGN-LVLU与RING-LVLU-KEY-REASSIGN涉lvlu核心诉求，即刻对齐。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：不闭，下一步：SI1环应力回环降载，限3试内收束。  \n- OI-SI1KICKQUANTSIM012026092：不闭，下一步：同步量子基线，输出校准差分。  \n- OI-vciinboxlaneslvluinboxRE：不闭，下一步：向SI线发lvlu对齐锚点，待回执。  \n- OI-vciinboxlaneslvluinboxEX：不闭，下一步：校验轨道签名链，确认绕过合法性。  \n- OI-vciinboxlaneslvluinboxOR：不闭，下一步：合并容量协议，推ORBIT线。  \n- OI-vciinboxlaneslvluinboxAC：不闭，下一步：生成ACK回执，写入lvlu-outbox。  \n- OI-vciinboxlaneslvluinboxAU：不闭，下一步：协商RING-LVLU密钥映射，冻结旧槽。  \n- OI-vciinboxlaneslvluinboxnu：不闭，下一步：发ANS-TRACK应答包，闭轻推环。  \n\n④ 生债一条  \n债：SI1-kick超40试无熔断，立规——超35试自动切SI0冷备，防死锁。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
