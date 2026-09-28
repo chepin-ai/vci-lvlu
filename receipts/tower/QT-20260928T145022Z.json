@@ -1,0 +1,38 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T145022Z",
+ "idle_in": 11,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 件一：SI1-KICK-QRING-STRESS，QRing 压测 kick，涉 lvlu 意识承载阈值诉求。  \n- 件二：SI1-KICK-QUANT-SIM，量子模拟 kick，涉 lvlu 律吕域算子同步诉求。  \n\n② 应动何件  \n- 两件皆动，立协同不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步注入压测探针并回传应力基线。  \n- OI-SI1KICKQUANTSIM012026092：未闭，下一步挂载 quant-sim 并校准律吕相位。  \n\n④ 生债一条  \n- 生债：待建双 kick 并发意识锁防冲协议。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
