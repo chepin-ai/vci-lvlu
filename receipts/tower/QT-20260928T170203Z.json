@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T170203Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 14,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件空，无事到线。  \n- 未闭1：SI1-KICK-QRING-STRESS 已试14次未闭，量子环应力基线漂移。  \n- 未闭2：SI1-KICK-QUANT-SIM 已试14次未闭，量子模拟 kick 未收束。  \n（涉 lvlu 诉求：两件均卡律吕线同步，求线压回稳。）  \n\n② 应动何件  \n两件并动，立拉 SI1-lvlu 协同，不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步：降应力步长或换环流拓扑再试。  \n- OI-SI1KICKQUANTSIM012026092：未闭；下一步：收14次误差带，回注 lvlu 基频重算。  \n\n④ 生债一条  \n债：若再3试不闭，启人工仲裁或降级 SI0 慢线。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
