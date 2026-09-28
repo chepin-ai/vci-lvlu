@@ -1,0 +1,71 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T024906Z",
+ "idle_in": 8,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-SI-ALIGN-LVLU-01.md",
+   "opened": "20260927T205227Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-02-BYPASS-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-fe8b40ca.md",
+   "opened": "20260927T215014Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260927.md",
+   "opened": "20260927T215014Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 11,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n候件空。SI1环压kick待闭；SI1量模kick待闭；lvlu收到SI对齐请求待确认；lvlu轨道能力02绕过执行待授权；轨道能力02绕过原待同步闭；光塔-lvlu确认待回签；环-lvlu密钥重分配请求待响应；lvlu量子低语追踪nudge待回传。\n\n②应动何件  \n应动SI对齐、密钥重分配、光塔确认三件，涉lvlu本体安全与通道，立协同不候。\n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，收SI1回执或降级。  \n- OI-SI1KICKQUANTSIM012026092：未闭，收量模结果或归档。  \n- OI-vciinboxlaneslvluinboxRE：未闭，lvlu确认SI对齐映射。  \n- OI-vciinboxlaneslvluinboxEX：未闭，核对绕过授权令牌。  \n- OI-vciinboxlaneslvluinboxOR：未闭，与EX合并闭项。  \n- OI-vciinboxlaneslvluinboxAC：未闭，lvlu回签光塔ACK。  \n- OI-vciinboxlaneslvluinboxAU：未闭，执行或驳回密钥重分配。  \n- OI-vciinboxlaneslvluinboxnu：未闭，回传ANS-TRACK-QLV响应。\n\n④生债一条  \n生债：lvlu自旋延迟债，需补一次主动心跳校准。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
