@@ -1,0 +1,71 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T022411Z",
+ "idle_in": 6,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-SI-ALIGN-LVLU-01.md",
+   "opened": "20260927T205227Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-02-BYPASS-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-fe8b40ca.md",
+   "opened": "20260927T215014Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260927.md",
+   "opened": "20260927T215014Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 9,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- SI1-KICK-QRING-STRESS-01：QRING压力测试已32试未过。\n- SI1-KICK-QUANT-SIM-01：量子模拟已32试未收敛。\n- REQ-SI-ALIGN-LVLU-01：SI求与LVLU对齐，待回执。\n- EXEC-ORBIT-ORBIT-CAP-02-BYPASS：轨道旁路执行待生效。\n- ORBIT-CAP-02-BYPASS：轨道旁路主案待终审。\n- ACK-LGT-TOWER-LVLU-fe8b40ca：LGT塔台来文待LVLU确认。\n- AUTOASK-RING-LVLU-KEY-REASSIGN：RING求LVLU密钥重分配。\n- nudge-ANS-TRACK-QLV-lvlu：ANS被催报QLV追踪，待复。\n\n②应动何件\n立协同：REQ-SI-ALIGN-LVLU-01（根本对齐）、ORBIT-CAP-02-BYPASS+EXEC（链路旁路）、AUTOASK-RING-LVLU-KEY-REASSIGN（密钥安全）。\n\n③未闭项推进\n- SI1KICKQRING：未闭，清QRING环障并重跑。\n- SI1KICKQUANT：未闭，降仿真粒度或换后端重试。\n- SI-ALIGN-LVLU：未闭，今日内落签对齐协议。\n- EXEC-ORBIT-BYPASS：未闭，确认旁路穿透并同步主控。\n- ORBIT-CAP-BYPASS：未闭，终审授权后立即归档。\n- ACK-LGT-TOWER：未闭，返送ACK关闭塔台件。\n- RING-KEY-REASSIGN：未闭，执行重分配并刷新密钥环。\n- ANS-TRACK-QLV：未闭，催ANS上报位点。\n\n④生债\n生债：QRING/QUANT双KICK各32试挂死，算力债积压；ORBIT旁路授权未决，链路敞口生风险债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
