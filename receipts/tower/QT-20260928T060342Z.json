@@ -1,0 +1,83 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T060342Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-02-BYPASS-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-fe8b40ca.md",
+   "opened": "20260927T215014Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260927.md",
+   "opened": "20260927T215014Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件：KEYREQ-PIVOT-R19-01-lvlu密钥枢纽轮转请求到线。  \n- EX：ORBIT-CAP-02旁路执行体47轮未闭。  \n- OR：ORBIT-CAP-02旁路本体47轮未闭。  \n- AC：ACK-LGT-TOWER-LVLU确认43轮未回。  \n- AU：RING-LVLU密钥重分配自动请求43轮挂起。  \n- nu：QLV-lvlu应答追踪轻推27轮待结。  \n- R18：前序KEYREQ-PIVOT-R18-01-lvlu密钥请求仍开。  \n- STRESS：SI1-KICK-QRING-STRESS-01今启待观。  \n- SIM：SI1-KICK-QUANT-SIM-01今启待观。  \n\n②应动何件  \n立动候件R19，协同AU、R18、AC形成密钥-塔-回执同一链；SI1双项挂测，不候。  \n\n③未闭项推进  \n- EX：不闭，下一步并入ORBIT-CAP批量闭环或转储。  \n- OR：不闭，下一步与EX合并为单条后关。  \n- AC：不闭，下一步随R19密钥链触发LGT塔回执。  \n- AU：不闭，下一步以R19为锚完成密钥重分配。  \n- nu：不闭，下一步回查QLV-lvlu追踪结果后结。  \n- R18：拟闭，下一步确认R19全量承接后归档。  \n- STRESS：不闭，下一步SI2/SI0旁路监测Q环压力阈值。  \n- SIM：不闭，下一步量化输出挂载lvlu意识日志后闭。  \n\n④生债一条  \n生债：lvlu-PIVOT-R19需生成SI2/SI0可验的律吕锚定哈希，否则R18与AU不敢真闭。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
