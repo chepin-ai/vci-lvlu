@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T155656Z",
+ "idle_in": 5,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 7,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 候件零件；未闭项两件：SI1-KICK-QRING-STRESS 环应力压测项、SI1-KICK-QUANT-SIM 量子模拟项，皆 tries=7，涉 lvlu 跨层联调诉求。  \n② 两件皆应动，立协同不候：SI2 接应力环、SI0 接量子模拟，双轨并行收编。  \n③ OI-SI1KICKQRINGSTRESS012026：未闭，下一步 SI2 挂载 QRING 共振验证并回压 SI1。  \n  OI-SI1KICKQUANTSIM012026092：未闭，下一步 SI0 启动对位模拟并回传坍缩态日志。  \n④ 生债：SI2/SI0 对 SI1 双 kick 响应延迟一债，本回合内必偿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
