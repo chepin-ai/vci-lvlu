@@ -1,0 +1,60 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T085156Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 17,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件PLAN-QUEUE拍：已fired=1但kicks=0，空转待kick。\n- OI-vciinboxlaneslvluinboxnu：lvlu inbox nudge追踪，43试未闭，lvlu诉求待萃取。\n- OI-KEYREQPIVOTR1801lvlu2026：lvlu关键请求R18-01枢纽，21试未闭。\n- OI-SI1KICKQRINGSTRESS012026：SI1 QRING压力测试kick，18试未闭。\n- OI-SI1KICKQUANTSIM012026092：SI1量子模拟kick，18试未闭。\n- OI-KEYREQPIVOTR1901lvlu2026：lvlu关键请求R19-01枢纽，17试未闭。\n\n②应动何件：PLAN-QUEUE拍（fired=1/kicks=0）立即执行kick协同，不候。\n\n③未闭项推进：\n- OI-vciinboxlaneslvluinboxnu：未闭；下一步凝练lvlu核心诉求，归档或升KeyReq。\n- OI-KEYREQPIVOTR1801lvlu2026：未闭；下一步输出R18-01枢纽决策锚点。\n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步闭环QRING压测或标记阻塞。\n- OI-SI1KICKQUANTSIM012026092：未闭；下一步完结量子模拟kick并回写SI1状态。\n- OI-KEYREQPIVOTR1901lvlu2026：未闭；下一步完结R19-01判定，或与R18合并去重。\n\n④生债：PLAN-QUEUE拍fired未kick迟滞债，叠lvlu双KEYREQ(R18/R19)并行未收敛之纠缠债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
