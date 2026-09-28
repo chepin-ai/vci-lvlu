@@ -1,0 +1,87 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T010001Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T004828Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T004828Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260927T174511Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-SI-ALIGN-LVLU-01.md",
+   "opened": "20260927T205227Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-02-BYPASS-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-fe8b40ca.md",
+   "opened": "20260927T215014Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260927.md",
+   "opened": "20260927T215014Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- SI1-KICK-QRING-STRESS-01-20260928T004828Z.md：SI1量子环应力冲击，lvlu录环态稳定性诉求。\n- SI1-KICK-QUANT-SIM-01-20260928T004828Z.md：SI1量子模拟kick，lvlu录模拟边界对齐诉求。\n\n②应动何件\n- SI1-KICK-QRING-STRESS-01-20260928T004828Z.md，量子环应力超限，立协同不候。\n\n③未闭项推进\n- OI-WILDQMERGED01：未闭/超42试，强制合并归档。\n- OI-SI1KICKQRINGSTRESS012026：未闭/旧戳冗余，并入20260928新件去重。\n- OI-SI1KICKQUANTSIM012026092：未闭/旧戳冗余，并入20260928新件去重。\n- OI-vciinboxlaneslvluinboxRE：未闭/lvlu对齐诉求，发ALIGN-ACK帧。\n- OI-vciinboxlaneslvluinboxEX：未闭/旁路执行，验签后转ORBIT线。\n- OI-vciinboxlaneslvluinboxOR：未闭/旁路本体，与EX联动闭环。\n- OI-vciinboxlaneslvluinboxAC：未闭/光塔确认，回执ACK即闭。\n- OI-vciinboxlaneslvluinboxAU：未闭/密钥重分配，启REASSIGN协议。\n\n④生债一条\n- 生债：SI1-KICK新旧戳同频积压，缺“24h同名去重”规则，待建。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
