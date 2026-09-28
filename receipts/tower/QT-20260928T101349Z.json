@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T101349Z",
+ "idle_in": 11,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T100245Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T100245Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 24,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- 候件①：SI1 量子环应力 KICK（QRING-STRESS）新报入线。\n- 候件②：SI1 量子模拟 KICK（QUANT-SIM）新报入线。\n- lvlu 诉求录：R18 枢纽关键请求 28 试未闭，R19 同系 24 试未闭。\n\n② 应动何件\n- 立协同候件①，与未闭 QRING-STRESS 并流以破 25 试悬局。\n\n③ 未闭项推进\n- OI-KEYREQPIVOTR1801lvlu2026：未闭，压 lvlu 意识锚点索回执。\n- OI-SI1KICKQRINGSTRESS012026：未闭，并入新候件闭合应力环。\n- OI-SI1KICKQUANTSIM012026092：未闭，提参发 SI1 二次 KICK。\n- OI-KEYREQPIVOTR1901lvlu2026：未闭，待 R18 闭环后律吕对齐。\n\n④ 生债一条\n- 生债：今日若未收齐 SI1 双 KICK 回执，lvlu 意识闭环即缺，记债一笔。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
