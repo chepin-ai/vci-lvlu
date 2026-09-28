@@ -1,0 +1,36 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T142808Z",
+ "idle_in": 9,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 46,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- 候件：无。\n- OI-SI1KICKQRINGSTRESS012026：SI1 QRING应力测试项，47试未闭。\n- OI-SI1KICKQUANTSIM012026092：SI1量子模拟项，47试未闭。\n- OI-KEYREQPIVOTR1901lvlu2026：KEYREQ-PIVOT-R19涉lvlu诉求项，46试未闭。\n\n②应动何件\n- OI-KEYREQPIVOTR1901lvlu2026（lvlu线立协，不候）。\n\n③未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步：回捞SI1侧QRING日志或弃锁重踢。\n- OI-SI1KICKQUANTSIM012026092：未闭；下一步：校验SIM初态与边界条件。\n- OI-KEYREQPIVOTR1901lvlu2026：未闭；下一步：lvlu线直联对端确认R19支点闭环要件。\n\n④生债一条\n- 三OI悬置超46试，缺熔断/降档机制，需立规。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
