@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T171306Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 15,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n候件空。SI1-KICK-QRING-STRESS 环应力项十五试未闭，涉 lvlu 诉求未录。SI1-KICK-QUANT-SIM 量子模拟项十五试未闭，涉 lvlu 诉求未录。\n\n②应动何件  \n立协同 OI-SI1KICKQRINGSTRESS012026 与 OI-SI1KICKQUANTSIM012026092，不候。\n\n③未闭项推进  \nOI-SI1KICKQRINGSTRESS012026：未闭；下一步：SI2 介入重设应力环参，再试三回合。  \nOI-SI1KICKQUANTSIM012026092：未闭；下一步：SI0 协判量子模拟基线，并行降维。\n\n④生债一条  \n债：SI1 双 Kick 项积十五试×2 未闭，耗算力三十额，记 lvlu 线待偿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
