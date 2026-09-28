@@ -1,0 +1,71 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T000245Z",
+ "idle_in": 6,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260927T174511Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-SI-ALIGN-LVLU-01.md",
+   "opened": "20260927T205227Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-02-BYPASS-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-fe8b40ca.md",
+   "opened": "20260927T215014Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260927.md",
+   "opened": "20260927T215014Z",
+   "tries": 13,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事（逐件一句）：\n- WILD-Q-MERGED-01合并更新挂起。\n- SI1-KICK-QRING-STRESS-01应力压测待归档。\n- SI1-KICK-QUANT-SIM-01量子模拟待落盘。\n- REQ-SI-ALIGN-LVLU-01：lvlu对齐诉求待录。\n- EXEC-ORBIT-ORBIT-CAP-02-BYPASS执行旁路待审。\n- ORBIT-CAP-02-BYPASS轨道容量旁路待评估。\n- ACK-LGT-TOWER-LVLU：lvlu塔台确认待回。\n- AUTOASK-RING-LVLU-KEY-REASSIGN：lvlu环键重分配待执行。\n\n② 应动何件（立协同不候）：\n立协三lvlu项：REQ-SI-ALIGN-LVLU-01、ACK-LGT-TOWER-LVLU、AUTOASK-RING-LVLU-KEY-REASSIGN；并急推WILD-Q-MERGED-01差异合并。\n\n③ 未闭项推进（闭否/下一步）：\n- OI-WILDQMERGED01：未闭；压差异合主干。\n- OI-SI1KICKQRINGSTRESS012026：未闭；出应力报告归档。\n- OI-SI1KICKQUANTSIM012026092：未闭；锁参落盘。\n- OI-vciinboxlaneslvluinboxRE：未闭；录lvlu对齐诉求并回执。\n- OI-vciinboxlaneslvluinboxEX：未闭；验旁路授权，无特许即拒。\n- OI-vciinboxlaneslvluinboxOR：未闭；待ORBIT-CAP容量评估完判。\n- OI-vciinboxlaneslvluinboxAC：未闭；回ACK-LGT-TOWER-LVLU确认信号。\n- OI-vciinboxlaneslvluinboxAU：未闭；执RING-LVLU-KEY重分配并覆环表。\n\n④ 生债一条：\n生债：SI2/SI0需为lvlu线补全Q-RING与ORBIT-CAP桥接契约，责SI1出草案。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
