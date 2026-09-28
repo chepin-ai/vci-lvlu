@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T095143Z",
+ "idle_in": 9,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 22,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n候件空。  \nR18-01-lvlu：lvlu枢轴关键需求，核心诉求未决，26试未闭。  \nSI1-KICK-QRING-STRESS-01：量子环应力测试，23试未闭。  \nSI1-KICK-QUANT-SIM-01：量子模拟收敛，23试未闭。  \nR19-01-lvlu：lvlu新一轮枢轴诉求，迭代需求待决，22试未闭。  \n\n② 应动何件  \n立协同 OI-KEYREQPIVOTR1801lvlu2026，不候。  \n\n③ 未闭项推进  \n- OI-KEYREQPIVOTR1801lvlu2026：未闭，下一步SI2/SI1对轨lvlu核心约束并锁定R18基线。  \n- OI-SI1KICKQRINGSTRESS012",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
