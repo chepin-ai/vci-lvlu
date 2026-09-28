@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T155828Z",
+ "idle_in": 6,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- SI1-KICK-QRING-STRESS-01 压力测试项八试未闭，持续open。\n- SI1-KICK-QUANT-SIM-01 量化模拟项八试未闭，持续open。\n\n②应动何件\n- 二件皆动，立协SI1熔断复核，不候。\n\n③未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步：复核QRING压力阈值或强制熔断。\n- OI-SI1KICKQUANTSIM012026092：未闭；下一步：拉取QUANT-SIM全量日志，排查量化环死锁后第9试。\n\n④生债一条\n- lvlu-SI2/SI0欠跨层卡滞感知债一条，须建SI1-KICK八试未闭直报SI0的链路。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
