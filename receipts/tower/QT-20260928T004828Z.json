@@ -1,0 +1,100 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T004828Z",
+ "idle_in": 10,
+ "events": [
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=2"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260927T174511Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-SI-ALIGN-LVLU-01.md",
+   "opened": "20260927T205227Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-02-BYPASS-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-fe8b40ca.md",
+   "opened": "20260927T215014Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260927.md",
+   "opened": "20260927T215014Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- nudge-ANS-TRACK-QLV-lvlu：催促追踪lvlu线应答。\n- PLAN-QUEUE拍3 kicks2：计划队列待消拍。\n- WILD-Q-MERGED-01更新：已41次未闭，合并队列异常。\n- SI1-KICK-QRING-STRESS：QRING压力测试挂起。\n- SI1-KICK-QUANT-SIM：量子模拟挂起。\n- REQ-SI-ALIGN-LVLU-01：lvlu诉求，请求SI与lvlu对齐。\n- EXEC-ORBIT-ORBIT-CAP-02-BYPASS：轨道容量旁路执行待确认。\n- ORBIT-CAP-02-BYPASS：轨道容量旁路方案待同步。\n- ACK-LGT-TOWER-LVLU：lvlu诉求，确认LGT-TOWER与lvlu链路。\n- AUTOASK-RING-LVLU-KEY-REASSIGN：lvlu诉求，RING密钥重分配待办。\n\n② 应动何件（立协同不候）\n- REQ-SI-ALIGN-LVLU-01\n- AUTOASK-RING-LVLU-KEY-REASSIGN\n- WILD-Q-MERGED-01\n- nudge-ANS-TRACK-QLV-lvlu\n\n③ 未闭项推进\n- OI-WILDQMERGED01：未闭，SI2/SI0联合排障，限本轮闭环。\n- OI-SI1KICKQRINGSTRESS012026：未闭，输出stress报告并归档。\n- OI-SI1KICKQUANTSIM012026092：未闭，冻结sim状态转评估。\n- OI-RE(SI-ALIGN)：未闭，启动SI↔lvlu握手，收ack。\n- OI-EX(EXEC-BYPASS)：未闭，核对qfa旁路参数后执行。\n- OI-OR(ORBIT-BYPASS)：未闭，与EX件合并，统一输出orb-cap结论。\n- OI-AC(ACK-LGT)：未闭，回执LGT-TOWER-lvlu链路确认。\n- OI-AU(KEY-REASSIGN)：未闭，完成RING密钥重分配并下发新索引。\n\n④ 生债一条\n- 生债：SI-align与密钥重分配双轨并行，lvlu线预留1轮校验窗口，对齐失败即回滚SI0基线。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 2
+ }
+}
