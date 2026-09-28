@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T125306Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 38,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n1. OI-KEYREQPIVOTR1801lvlu2026：lvlu关键需求主轴R18，42试未闭，核心诉求待固化。\n2. OI-SI1KICKQRINGSTRESS012026：SI1量子环压测项，39试未闭。\n3. OI-SI1KICKQUANTSIM012026092：SI1量子模拟项，39试未闭。\n4. OI-KEYREQPIVOTR1901lvlu2026：lvlu关键需求主轴R19，38试未闭，增量诉求待对齐。\n\n②应动何件\n四件全动，立协同不候；先锁lvlu双轴诉求，再并推SI1双基座迁移。\n\n③未闭项推进\n• OI-KEYREQPIVOTR1801lvlu2026：未闭；下一步冻结R18 lvlu基线，限时闭环。\n• OI-SI1KICKQRINGSTRESS012026：未闭；下一步确认QRING压测阈值，签切换工单。\n• OI-SI1KICKQUANTSIM012026092：未闭；下一步收敛模拟结果，发迁移许可。\n• OI-KEYREQPIVOTR1901lvlu2026：未闭；下一步对齐R19 lvlu增量，消除R18冲突后定版。\n\n④生债一条\nlvlu双轴与SI1双基座四线高试并行，协同链路存在熔断风险，需补检查点与降级备案。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
