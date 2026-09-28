@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T223422Z",
+ "idle_in": 7,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 45,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 候件空；未闭项两宗均为SI1-KICK长试未决（QRING-STRESS、QUANT-SIM各45试仍open），无涉lvlu新增诉求。\n\n② 应动两宗并行，立协SI1本体强制闭环，不候。\n\n③ OI-SI1KICKQRINGSTRESS012026：未闭，下一步转SI1重校或强制归档；OI-SI1KICKQUANTSIM012026092：未闭，下一步截收QUANT-SIM日志置SI1-review待决。\n\n④ 生债：SI2/SI0挂两宗SI1-KICK超试未闭，债转SI1本体收束。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
