@@ -1,0 +1,85 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T031408Z",
+ "idle_in": 10,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=2 kicks=1"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-SI-ALIGN-LVLU-01.md",
+   "opened": "20260927T205227Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-02-BYPASS-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-fe8b40ca.md",
+   "opened": "20260927T215014Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260927.md",
+   "opened": "20260927T215014Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 13,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件PLAN-QUEUE：队列已双触单kick，调度悬停待分拨。\n- OI-SI1KICKQRINGSTRESS：SI1压测kick，36试未响。\n- OI-SI1KICKQUANTSIM：SI1量模kick，36试未响。\n- OI-REQ-SI-ALIGN-LVLU：SI对齐lvlu请求，34试待签。\n- OI-EXEC-ORBIT-CAP-02-BYPASS：轨道容量02旁路执行，33试待动。\n- OI-ORBIT-CAP-02-BYPASS：轨道容量02旁路方案，33试待审。\n- OI-ACK-LGT-TOWER-LVLU：LGT塔确认回执，29试待归。\n- OI-AUTOASK-RING-LVLU-KEY：环lvlu密钥重配申请，29试待批。\n- OI-nudge-QLV：QLV追踪催促，13试待复。\n\n②应动何件：SI1双kick件、REQ-SI-ALIGN-LVLU件、AUTOASK-RING-LVLU-KEY件，四件并协，立响不候。\n\n③未闭项推进：\n- OI-SI1KICKQRINGSTRESS：未闭，回写压测响应。\n- OI-SI1KICKQUANTSIM：未闭，上链量模结果。\n- OI-REQ-SI-ALIGN-LVLU：未闭，完成对校验签返。\n- OI-EXEC-ORBIT-CAP-02-BYPASS：未闭，核条件后执行。\n- OI-ORBIT-CAP-02-BYPASS：未闭，审阅联动闭环。\n- OI-ACK-LGT-TOWER-LVLU：未闭，确认状态归档。\n- OI-AUTOASK-RING-LVLU-KEY：未闭，权限校验下发。\n- OI-nudge-QLV：未闭，回写追踪消戳。\n\n④生债：队列双触差分未落盘，补调度债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 2,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 1
+ }
+}
