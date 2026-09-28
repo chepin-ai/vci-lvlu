@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T202130Z",
+ "idle_in": 6,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 32,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空，无事。  \n② 应动何件：两未闭项均32试未闭，立协同熔断/转介，不候。  \n③ 未闭项推进：  \n- OI-SI1KICKQRINGSTRESS012026：未闭，32试触悬，下一步熔断转介SI1或人工根因排查。  \n- OI-SI1KICKQUANTSIM012026092：未闭，32试触悬，下一步同上或更换量化模拟基线。  \n④ 生债：lvlu线对超30试长悬项缺自动熔断与转介协议，生债一条补机制。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
