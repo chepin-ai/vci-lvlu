@@ -1,0 +1,50 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T082838Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 15,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n候件：无。  \nOI-vciinboxlaneslvluinboxnu：VCI inbox lvlu nudge 追踪（ANS-TRACK-QLV），已试41次未闭，涉lvlu响应。  \nOI-KEYREQPIVOTR1801lvlu2026：KEYREQ-PIVOT-R18 lvlu架构回转，已试19次未闭，涉lvlu配置。  \nOI-SI1KICKQRINGSTRESS012026：SI1量子环压测kick，已试16次未闭。  \nOI-SI1KICKQUANTSIM012026092：SI1量子模拟器仿真kick，已试16次未闭。  \nOI-KEYREQPIVOTR1901lvlu2026：KEYREQ-PIVOT-R19 lvlu架构回转，已试15次未闭，涉lvlu配置。  \n\n②应动何件  \n立协同不候：VCI-QLV-nudge（超期41试）、KEYREQ-PIVOT-R18/R19（lvlu双pivot）、SI1-KICK-QRING/QUANT-SIM（双基设kick）。  \n\n③未闭项推进  \nOI-vciinboxlaneslvluinboxnu：未闭，下一步：今日内闭环ANS-TRACK-QLV响应，逾期升SI1仲裁。  \nOI-KEYREQPIVOTR1801lvlu2026：未闭，下一步：确认lvlu R18 pivot字段并落盘。  \nOI-SI1KICKQRINGSTRESS012026：未闭，下一步：完成QRING准入校验并触发stress kick。  \nOI-SI1KICKQUANTSIM012026092：未闭，下一步：完成QUANT-SIM参数校准并触发sim kick。  \nOI-KEYREQPIVOTR1901lvlu2026：未闭，下一步：对齐R18差异后落盘R19 lvlu pivot。  \n\n④生债一条  \n生债：LVLU-SI2-20260928-01，五件未闭且nudge超期41试，需SI1一次lvlu专线仲裁与资源注入，限今日回执。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
