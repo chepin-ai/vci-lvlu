@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T113420Z",
+ "idle_in": 6,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 31,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n候件空。OI-KEYREQPIVOTR1801lvlu2026：lvlu轴心密钥R18请求，35试未闭。OI-SI1KICKQRINGSTRESS012026：SI1量子环应力测试，32试未闭。OI-SI1KICKQUANTSIM012026092：SI1量子模拟测试，32试未闭。OI-KEYREQPIVOTR1901lvlu2026：lvlu轴心密钥R19请求，31试未闭。  \n\n② 应动何件  \n四项皆立协同，不候；优先双lvlu密钥项（R18/R19），即刻启动SI2/SI0轴心对齐。  \n\n③ 未闭项推进  \nOI-KEYREQPIVOTR1801lvlu2026：未闭；下一步：推入SI0终局裁决或强制PIVOT闭合。  \nOI-SI1KICKQRINGSTRESS012026：未闭；下一步：复核应力阈值，决行硬启动或回退。  \nOI-SI1KICKQUANTSIM012026092：未闭；下一步：清仿真依赖，启第33次迭代或切池。  \nOI-KEYREQPIVOTR1901lvlu2026：未闭；下一步：与R18状态对齐，避免密钥分叉。  \n\n④ 生债一条  \n生债：设lvlu轴心密钥超30试未闭自动熔断机制，转SI0强制仲裁，防无限挂起。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
