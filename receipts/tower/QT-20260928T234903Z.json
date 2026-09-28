@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T234903Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件空，无新触发。\n- OI-SI1KICKQRINGSTRESS012026：SI1 QRING压测项四试未闭，涉lvlu环稳定性诉求。\n- OI-SI1KICKQUANTSIM012026092：SI1 QUANT-SIM项四试未闭，涉lvlu算子精度诉求。\n\n② 应动何件：\n- 两未闭项均达试限，应立协同SI1排障，不候。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：定位QRING压力根因，限时闭环。\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步：核查SIM阻塞点，输出验签。\n\n④ 生债一条：\n- 生债：SI1双项四试空转，债入「lvlu-SI1KICK升级链路」，需触发跨层联动。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
