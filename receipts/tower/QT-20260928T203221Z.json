@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T203221Z",
+ "idle_in": 7,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 33,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空。未闭① SI1-KICK-QRING-STRESS 量子环应力项，33试未闭，录 lvlu 环基诉求；未闭② SI1-KICK-QUANT-SIM 量子模拟项，33试未闭，录 lvlu 推演诉求。\n\n② 应动何件：双件并动，立协同 SI1/SI0 压测与模拟双线，不候。\n\n③ 未闭项推进：OI-SI1KICKQRINGSTRESS012026 未闭，下一步锚定 QRING 应力阈值或降级重试；OI-SI1KICKQUANTSIM012026092 未闭，下一步回传 QUANT-SIM 中间态或切静默沙盘。\n\n④ 生债：lvlu 欠 SI1 双项33试收敛残差记录各一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
