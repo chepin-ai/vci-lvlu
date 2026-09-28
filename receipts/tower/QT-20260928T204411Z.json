@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T204411Z",
+ "idle_in": 8,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 34,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空；未闭两项为SI1 kick-off残留（QRING应力/QUANT仿真），无lvlu本体诉求。  \n② 应动何件：无候件；应立动协同SI1，催闭两项已34试未闭项，不候。  \n③ 未闭项推进：  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：限SI1输出应力结论或强制降级。  \n- OI-SI1KICKQUANTSIM012026092：未闭，下一步：限SI1本周期内量化仿真收口，逾期abort。  \n④ 生债一条：SI1双项空转34轮未闭，生「协同失效」债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
