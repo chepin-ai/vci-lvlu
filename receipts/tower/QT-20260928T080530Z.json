@@ -1,0 +1,50 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T080530Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 13,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- OI-vci…：ANS-TRACK-QLV-lvlu 轻推件滞留39次，涉lvlu收件箱响应诉求。\n- OI-R18…：KEYREQ-PIVOT-R18 转向关键诉求待决17次，涉lvlu。\n- OI-QRING…：SI1 量子环压力测试启动卡滞14次。\n- OI-QUANT…：SI1 量子模拟启动卡滞14次。\n- OI-R19…：KEYREQ-PIVOT-R19 转向关键诉求待决13次，涉lvlu。\n\n② 应动何件：\n并动 SI1 双 KICK（QRING-STRESS / QUANT-SIM），强协同 lvlu 双 PIVOT（R18/R19）与 ANS-TRACK 回执，立结不候。\n\n③ 未闭项推进：\n- OI-vci…：未闭，下一步升 lvlu 直连或熔断。\n- OI-R18…：未闭，下一步拍板 R18 条件并同步 lvlu。\n- OI-QRING…：未闭，下一步下压测指令并收 SI1 心跳。\n- OI-QUANT…：未闭，下一步拉起实例锁基线。\n- OI-R19…：未闭，下一步冻结 R19 基线待 lvlu 签核。\n\n④ 生债一条：\n生债：今日内偿 lvlu 全量未闭项 39 次重试根因分析债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
