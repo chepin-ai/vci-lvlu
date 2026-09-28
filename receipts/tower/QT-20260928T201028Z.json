@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T201028Z",
+ "idle_in": 5,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 31,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 无新候件；未闭项两宗：SI1-KICK-QRING-STRESS kick卡滞31轮，SI1-KICK-QUANT-SIM kick卡滞31轮。涉lvlu诉求：无。  \n② 两未闭项tries=31均超阈，立协同SI1双线排查根因，不候。  \n③ OI-SI1KICKQRINGSTRESS012026：未闭，下一步 infrastructure 域排查QRING stress链路阻塞；OI-SI1KICKQUANTSIM012026092：未闭，下一步 quant sim 域排查任务调度失败点。  \n④ 生债：31次空转无熔断，记“kick任务指数退避及自动降级策略",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
