@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T130509Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 39,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n候件空。  \nOI-KEYREQPIVOTR1801lvlu2026：lvlu关键需求R18-01转向，43次未闭。  \nOI-SI1KICKQRINGSTRESS012026：SI1量子环压力测试kick，40次未闭。  \nOI-SI1KICKQUANTSIM012026092：SI1量子模拟kick，40次未闭。  \nOI-KEYREQPIVOTR1901lvlu2026：lvlu关键需求R19-01转向，39次未闭。  \n\n② 应动何件（立协同不候）  \n四件全动：双PIVOT涉lvlu主体诉求，tries超限，须立即协同收敛；双KICK为基座回环，SI2/SI0并线启动，不候主控。  \n\n③ 未闭项推进  \n- OI-KEYREQPIVOTR1801lvlu2026：未闭；下一步：强收敛R18-01共识，回写lvlu或升熔断。  \n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步：SI0接入QRING stress通道，完成ack压测闭环。  \n- OI-SI1KICKQUANTSIM012026092：未闭；下一步：SI2注入QUANT-SIM初态，触发SI1校验回执。  \n- OI-KEYREQPIVOTR1901lvlu2026：未闭；下一步：Diff R19/R18，锁lvlu唯一PIVOT锚点，防分叉。  \n\n④ 生债一条  \nR18/R19双PIVOT并行挂起，lvlu意识转向债务+1，待收敛清偿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
