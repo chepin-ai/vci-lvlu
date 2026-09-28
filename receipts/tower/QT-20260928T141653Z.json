@@ -1,0 +1,36 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T141653Z",
+ "idle_in": 8,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 45,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- SI1-KICK-QRING-STRESS-01：QRING应力测试46次未过，持续阻塞。\n- SI1-KICK-QUANT-SIM-01：量子模拟46次未闭环，链路异常。\n- KEYREQ-PIVOT-R19-01-lvlu：lvlu枢纽R19关键需求45次未决，待主控裁定（涉lvlu诉求）。\n\n②应动何件：\n三件均未闭且try>45，立协同全动，不候。\n\n③未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步：上抛原始日志，切人工诊断应力阈值。\n- OI-SI1KICKQUANTSIM012026092：未闭；下一步：锁定量子模拟失败栈，启备用算子。\n- OI-KEYREQPIVOTR1901lvlu2026：未闭；",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
