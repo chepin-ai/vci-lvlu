@@ -1,0 +1,50 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T073552Z",
+ "idle_in": 8,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 10,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- OI-vciinboxlaneslvluinboxnu：lvlu inbox nudge 追踪项积压36周期。\n- OI-KEYREQPIVOTR1801lvlu2026：lvlu R18 关键需求转向待闭。\n- OI-SI1KICKQRINGSTRESS012026：SI1 QRING 压测启动待执行。\n- OI-SI1KICKQUANTSIM012026092：SI1 量子模拟启动待执行。\n- OI-KEYREQPIVOTR1901lvlu2026：lvlu R19 关键需求转向待闭。\n\n② 应动何件（立协同不候）\n- OI-vciinboxlaneslvluinboxnu（36周期涉lvlu）\n- OI-KEYREQPIVOTR1801lvlu2026（涉lvlu R18）\n- OI-KEYREQPIVOTR1901lvlu2026（涉lvlu R19）\n\n③ 未闭项推进\n- OI-vci...：未闭；下一步：清lvlu inbox nudge并归档ANS-TRACK。\n- OI-KEYREQ...R18：未闭；下一步：确认lvlu R18转向条件落版。\n- OI-SI1KICKQRING...：未闭；下一步：调度SI1压测并回写。\n- OI-SI1KICKQUANT...：未闭；下一步：推进量子模拟初始化。\n- OI-KEYREQ...R19：未闭；下一步：对齐lvlu R19边界锁版。\n\n④ 生债\n- lvlu inbox与R18/R19双PIVOT积压，生债：发起lvlu专项清债会话一次性收敛。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
