@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T225555Z",
+ "idle_in": 9,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 47,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空；OI-SI1KICKQRINGSTRESS012026 为SI1发起之QRing应力测试kick项（47试未闭，无新增lvlu诉求）；OI-SI1KICKQUANTSIM012026092 为SI1发起之量子模拟kick项（47试未闭，无新增lvlu诉求）。\n\n② 应动何件：两件皆应立协同不候，SI2/SI0并行兜收，不候SI1回压。\n\n③ 未闭项推进：OI-SI1KICKQRINGSTRESS012026 未闭，下一步降级QRing拓扑或切硬件环回；OI-SI1KICKQUANTSIM012026092 未闭，下一步重置初态并收紧收敛容限。\n\n④ 生债：双kick项47试悬置，积算力债一宗，挂lvlu-SI2/SI0。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
