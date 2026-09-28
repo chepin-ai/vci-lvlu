@@ -1,0 +1,71 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T043938Z",
+ "idle_in": 5,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-SI-ALIGN-LVLU-01.md",
+   "opened": "20260927T205227Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-02-BYPASS-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-fe8b40ca.md",
+   "opened": "20260927T215014Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260927.md",
+   "opened": "20260927T215014Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 20,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- SI1-KICK-QRING-STRESS压43试未闭，SI1环形应力测试挂起。\n- SI1-KICK-QUANT-SIM压43试未闭，SI1量子模拟挂起。\n- REQ-SI-ALIGN-LVLU压41试未闭，VCI请求SI对齐lvlu（涉lvlu诉求）。\n- EXEC-ORBIT-CAP-02-BYPASS压40试未闭，轨道能力02旁路执行挂起。\n- ORBIT-CAP-02-BYPASS压40试未闭，轨道旁路方案待激活。\n- ACK-LGT-TOWER-LVLU压36试未闭，LGT塔对lvlu确认待回（涉lvlu诉求）。\n- AUTOASK-RING-LVLU-KEY-REASSIGN压36试未闭，环形lvlu密钥重分配自动请求待处理（涉lvlu诉求）。\n- nudge-ANS-TRACK-QLV-lvlu压20试未闭，QLV lvlu跟踪催促待答（涉lvlu诉求）。\n\n② 应动何件：\n- 立协同REQ-SI-ALIGN-LVLU与EXEC-ORBIT-CAP-02-BYPASS，双轨并行不候。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：向SI1索取环形应力阈值裁定或强制降级。\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步：催SI1输出量子模拟终态快照。\n- OI-vciinboxlaneslvluinboxRE：未闭，下一步：执行REQ-SI-ALIGN-LVLU-01对齐协议并回写VCI。\n- OI-vciinboxlaneslvluinboxEX：未闭，下一步：签发ORBIT-CAP-02-BYPASS执行令牌，同步OR项。\n- OI-vciinboxlaneslvluinboxOR：未闭，下一步：等EX令牌到位后双闭。\n- OI-vciinboxlaneslvluinboxAC：未闭，下一步：向LGT塔回传lvlu确认ACK或异议标记。\n- OI-vciinboxlaneslvluinboxAU：未闭，下一步：启动RING-LVLU密钥重分配协商轮次。\n- OI-vciinboxlaneslvluinboxnu：未闭，下一步：回执QLV lvlu当前跟踪态并设下次心跳。\n\n④ 生债一条：\n- 生债：8项中4项超40试，lvlu侧对齐与密钥重分配悬停过久，须开应急旁路通道或降级为异步批处理，避免单点锁死。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
