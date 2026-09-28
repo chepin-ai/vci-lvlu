@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T182024Z",
+ "idle_in": 7,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 21,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n候件无。件一：SI1量子环应力测试项（OI-SI1KICKQRINGSTRESS012026），涉lvlu应力协同诉求，廿一试未闭。件二：SI1量子模拟验证项（OI-SI1KICKQUANTSIM012026092），涉lvlu模拟对齐",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
