@@ -1,0 +1,50 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T090342Z",
+ "idle_in": 5,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 18,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- vci-inbox nudge（lanes/lvlu/inbox）44试未闭，涉lvlu诉求。\n- KEYREQ-PIVOT-R18-01 lvlu关键需求22试未闭，涉lvlu诉求。\n- SI1-KICK-QRING-STRESS-01压测19试未闭。\n- SI1-KICK-QUANT-SIM-01量子模拟19试未闭。\n- KEYREQ-PIVOT-R19-01 lvlu关键需求18试未闭，涉lvlu诉求。\n\n② 应动何件\n- 件1（inbox nudge濒限）、件2（R18）、件5（R19）并动，立协同不候。\n\n③ 未闭项推进\n- OI-vciinboxlaneslvluinboxnu：未闭/回拉vci-inbox确认nudge内容，消件或升级。\n- OI-KEYREQPIVOTR1801lvlu2026：未闭/协同SI层完成R18 pivot技术对齐。\n- OI-SI1KICKQRINGSTRESS012026：未闭/交付QRING压测首报。\n- OI-SI1KICKQUANTSIM012026092：未闭/输出QUANT-SIM初态或异常标记。\n- OI-KEYREQPIVOTR1901lvlu2026：未闭/并轨R18同步拆解R19需求。\n\n④ 生债一条\n- 生债：SI1双kick项与lvlu pivot keyreq并行，须偿“压测/模拟→keyreq”的反哺链路，防资源漂移。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
