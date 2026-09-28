@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T215046Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 40,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 候件空；件1：OI-SI1KICKQRINGSTRESS012026（SI1 QRING压力验证）40试未闭，无lvlu诉求；件2：OI-SI1KICKQUANTSIM012026092（SI1量子模拟验证）40试未闭，无lvlu诉求。  \n② 两件均达40次阈值，应立协同SI1根因排查与熔断，不候。  \n③ OI-SI1KICKQRINGSTRESS012026：未闭，下一步：令SI1给出closure条件或降级。OI-SI1KICKQUANTSIM012026092：未闭，下一步：令SI1确认收敛标准或提级。  \n④ 生债：设SI1",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
