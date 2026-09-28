@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T221231Z",
+ "idle_in": 5,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 43,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 无候件。\n\n② 应动两未闭项（QRING-STRESS、QUANT-SIM），立即协同排查43次卡滞根因。\n\n③ OI-SI1KICKQRINGSTRESS012026：未闭，下一步：切换诊断模式定位QRING应力模型死锁或降维求解。  \nOI-SI1KICKQUANTSIM012026092：未闭，下一步：重设QUANT-SIM初值与收敛阈值后第44次试算。\n\n④ 生债：双项43次未收敛，积压求解策略切换与参数调优债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
