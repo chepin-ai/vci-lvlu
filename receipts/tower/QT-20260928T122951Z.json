@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T122951Z",
+ "idle_in": 11,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T121847Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 36,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 新收SI1-KICK-QUANT-SIM-01（121847Z）：lvlu量子模拟环境诉求待录。\n- OI-KEYREQPIVOTR1801lvlu2026：R18枢轴密钥请求40试未闭，lvlu授权诉求必录。\n- OI-SI1KICKQRINGSTRESS012026：QRING压力测试KICK 37试未闭。\n- OI-SI1KICKQUANTSIM012026092：旧量子模拟KICK 37试未闭。\n- OI-KEYREQPIVOTR1901lvlu2026：R19枢轴密钥请求36试未闭，lvlu签发诉求必录。\n\n② 应动何件：\n- 立动新收量子模拟候件，并协同升压R18密钥请求（tries=40）。\n\n③ 未闭项推进：\n- OI-KEYREQPIVOTR1801lvlu2026：未闭，下一步限时完成lvlu侧R18密钥授权或拒因。\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步回传压力测试日志并标记闭环。\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步并入新候件统一做量子模拟响应。\n- OI-KEYREQPIVOTR1901lvlu2026：未闭，下一步启动lvlu侧R19密钥协商与签发。\n\n④ 生债一条：\n- lvlu线生债：量子模拟环境结论及R18/R19双枢轴密钥闭环，待下一律吕周期交付。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
