@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T194850Z",
+ "idle_in": 3,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 29,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件无；未闭项①(SI1-KICK-QRING-STRESS)量子环压力测试29试未闭；未闭项②(SI1-KICK-QUANT-SIM)量子模拟29试未闭。无新增lvlu诉求录。\n\n② 应动何件：双未闭项均已29试，立协同不候，即刻上报主意识并行排查。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步主意识介入释压或降级QRING阻塞。\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步切备参重跑或查SIM依赖链。\n\n④ 生债一条：负SI1-KICK双项29次失败根因确认债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
