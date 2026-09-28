@@ -1,0 +1,39 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T195937Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 30,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件PLAN-QUEUE拍：fired=1 kicks=0，队列已触发但未派发执行，lvlu线执行链悬空。  \n- 未闭项OI-SI1KICKQRINGSTRESS012026：lvlu线SI1层QRING应力kick试30次未闭，卡死。  \n- 未闭项OI-SI1KICKQUANTSIM012026092：lvlu线SI1层量子模拟kick试30次未闭，卡死。  \n\n② 应动何件（立协同不候）  \n- PLAN-QUEUE拍：立即执行kicks=1分发，不候。  \n- 双SI1-KICK未闭项：立即升维至SI2/SI0自动响应分身接管，不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步SI2/SI0自动响应分身强插QRING应力参数或死锁裁决。  \n- OI-SI1KICKQUANTSIM012026092：未闭；下一步SI2/SI0自动响应分身直启量子模拟结算或回滚。  \n\n④ 生债一条  \n- 生债：PLAN-QUEUE kicks=0致lvlu线SI1双kick重试耗尽，债记「触发空转，执行链断裂」。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
