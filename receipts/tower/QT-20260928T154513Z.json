@@ -1,0 +1,39 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T154513Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 6,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件PLAN-QUEUE拍 fired=1 kicks=0，队列已触发未落地。\n- 未闭项OI-SI1KICKQRINGSTRESS012026：SI1 QRING-STRESS kick 六试未闭。\n- 未闭项OI-SI1KICKQUANTSIM012026092：SI1 QUANT-SIM kick 六试未闭。\n\n②应动何件：\n- 立协同PLAN-QUEUE拍与双KICK未闭项，不候。\n\n③未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步SI2协查QRING-STRESS kick阻塞并强执。\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步重推QUANT-SIM kick至可用节点并验返。\n\n④生债一条：\n- 债：双KICK六试未闭根因归档及PLAN-QUEUE拍差清零。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
