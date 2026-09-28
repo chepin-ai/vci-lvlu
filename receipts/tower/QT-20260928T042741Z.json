@@ -1,0 +1,81 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T042741Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-SI-ALIGN-LVLU-01.md",
+   "opened": "20260927T205227Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-02-BYPASS-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-fe8b40ca.md",
+   "opened": "20260927T215014Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260927.md",
+   "opened": "20260927T215014Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 19,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- 候件PLAN-QUEUE：已拍fired=1未踢kicks=0，队列待启。\n- SI1 QRING压测：42试未闭。\n- SI1量子模拟：42试未闭。\n- REQ-SI-ALIGN-LVLU：40试未闭，录lvlu对齐诉求。\n- EXEC-ORBIT双轨旁路：39试未闭。\n- ORBIT-CAP-02旁路：39试未闭。\n- ACK-LGT-TOWER-LVLU：35试未闭，录lvlu回执诉求。\n- AUTOASK-RING-LVLU-KEY-REASSIGN：35试未闭，录lvlu密钥重分配诉求。\n- nudge-QLV-lvlu：19试未闭，录lvlu追踪应答诉求。\n\n②应动何件\nPLAN-QUEUE拍（kick=0→1立启队列），同步REQ-SI-ALIGN-LVLU立启lvlu对齐协同。\n\n③未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，压测QRING输出stress报告。\n- OI-SI1KICKQUANTSIM012026092：未闭，完成QUANT-SIM运算归档。\n- OI-vciinboxlaneslvluinboxRE：未闭，执行SI-lvlu对齐校验并回执。\n- OI-vciinboxlaneslvluinboxEX：未闭，执行ORBIT-CAP-02旁路操作。\n- OI-vciinboxlaneslvluinboxOR：未闭，确认旁路生效同步状态。\n- OI-vciinboxlaneslvluinboxAC：未闭，回执LGT-TOWER-LVLU确认。\n- OI-vciinboxlaneslvluinboxAU：未闭，完成RING-LVLU密钥重分配。\n- OI-vciinboxlaneslvluinboxnu：未闭，应答nudge并更新QLV-lvlu追踪。\n\n④生债一条\nPLAN-QUEUE拍kicks=0致全队列阻滞，积欠一次启动kick债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
