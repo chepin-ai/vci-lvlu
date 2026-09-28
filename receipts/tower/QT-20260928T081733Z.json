@@ -1,0 +1,50 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T081733Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 14,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 候件空；未闭五件皆涉lvlu：nudge-track 40次未收敛、KEYREQ-R18 lvlu未签、SI1-QRING-STRESS未报、SI1-QUANT-SIM未结、KEYREQ-R19 lvlu待对齐。  \n② 应动 OI-vciinboxlaneslvluinboxnu（tries 40，立协同不候，强收敛）。  \n③  \n- OI-vciinboxlaneslvluinboxnu：未闭，下一步SI2仲裁或强制归档。  \n- OI-KEYREQPIVOTR1801lvlu2026：未闭，下一步锁止R18-01 lvlu边界并签核。  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步输出stress基准或标异。  \n- OI-SI1KICKQUANTSIM012026092：未闭，下一步跑",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
