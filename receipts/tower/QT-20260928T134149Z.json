@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T134149Z",
+ "idle_in": 5,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 42,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件无。四件未闭：R18 lvlu关键需求枢纽（46试未闭，涉lvlu诉求）；SI1量子环应力启动（43试未闭）；SI1量子模拟启动（43试未闭）；R19 lvlu关键需求枢纽（42试未闭，涉lvlu诉求）。\n\n② 应动何件：四项皆应立动，lvlu两枢纽优先协同不候。\n\n③ 未闭项推进：\n- OI-KEYREQPIVOTR1801lvlu2026：未闭，下一步：锚定R18 lvlu核心诉求，输出PIVOT决议。\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：完成QRING应力kick阈值初测并封板。\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步：启quant-sim首帧推演，回传基线。\n- OI-KEYREQPIVOTR1901lvlu2026：未闭，下一步：合并R19 lvlu增量与R18差异，统一枢纽。\n\n④ 生债一条：R18/R19 lvlu双线枢纽并行，缺跨版本诉求归一化层，需单点归并模块防裂。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
