@@ -1,0 +1,39 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T174623Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 18,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- 候件：PLAN-QUEUE拍已触发（fired=1）但零kick，lvlu执行链空转。\n- 未闭项1：SI1-KICK-QRING-STRESS-01经18试未闭，lvlu应力kick未回环。\n- 未闭项2：SI1-KICK-QUANT-SIM-01经18试未闭，lvlu量子kick未回环。\n\n② 应动何件\n- 立即协同PLAN-QUEUE拍生kick，并推SI1双项，不候。\n\n③ 未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步切旁路模型或降阈重试。\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步回滚T0初态再kick。\n\n④ 生债一条\n- 债：拍转kick空转18周期，由SI2/SI0分身暂记代处。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
