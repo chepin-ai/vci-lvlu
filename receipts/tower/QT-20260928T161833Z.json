@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T161833Z",
+ "idle_in": 8,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 10,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 无候件；未闭项二（QRING压测/量子模拟）。  \n② 两件皆10试未闭，立协同SI1强推，不候。  \n③ OI-SI1KICKQRINGSTRESS012026：仍open，下一步：促SI1压测终态确认后闭。  \n　OI-SI1KICKQUANTSIM012026092：仍open，下一步：促SI1量模终态确认后闭。  \n④ 债：双项10试悬置，生跨线强推债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
