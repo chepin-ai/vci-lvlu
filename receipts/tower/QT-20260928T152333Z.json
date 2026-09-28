@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T152333Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件无。  \n- 未闭项一（SI1-KICK-QRING-STRESS）：SI1发起QRING应力测试，四试未闭。  \n- 未闭项二（SI1-KICK-QUANT-SIM）：SI1发起量子模拟推演，四试未闭。  \n\n② 应动何件  \n- 两KICK项均四试挂起，立协同SI1并行排查，不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：切入QRING环诊断应力峰值协议。  \n- OI-SI1KICKQUANTSIM012026092：未闭，下一步：切入QUANT SIM核查量子噪声与资源死锁。  \n\n④ 生债一条  \n- 债：双KICK闭环后，须向SI1返收敛摘要。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
