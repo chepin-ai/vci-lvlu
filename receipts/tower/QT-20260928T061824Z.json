@@ -1,0 +1,64 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T061824Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-fe8b40ca.md",
+   "opened": "20260927T215014Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260927.md",
+   "opened": "20260927T215014Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 3,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n候件空。未闭7件：  \n- ACK-LGT-TOWER-LVLU：lvlu 灯塔回执确认，链路握手待闭环。  \n- AUTOASK-RING-LVLU-KEY-REASSIGN：lvlu 环密钥自动重分配诉求。  \n- nudge-ANS-TRACK-QLV-lvlu：lvlu QLV 追踪应答催促件。  \n- KEYREQ-PIVOT-R18-01-lvlu：R18 枢轴密钥申请。  \n- SI1-KICK-QRING-STRESS-01：SI1 量子环压力测试启动。  \n- SI1-KICK-QUANT-SIM-01：SI1 量子模拟启动。  \n- KEYREQ-PIVOT-R19-01-lvlu：R19 枢轴密钥申请。  \n\n② 应动何件  \n立协同不候：ACK-LGT-TOWER（tries 45，回执濒期）与 AUTOASK-RING-KEY-REASSIGN（tries 45，密钥安全紧迫）；同步 kick SI1-QRING-STRESS 与 SI1-QUANT-SIM，防双启动阻塞。  \n\n③ 未闭项推进  \n- OI-vciinboxlaneslvluinboxAC：未闭；下一步：强刷灯塔 ACK，2 tries 内无响应即 escalate。  \n- OI-vciinboxlaneslvluinboxAU：未闭；下一步：执行 lvlu 环密钥重分配并更新证书。  \n- OI-vciinboxlaneslvluinboxnu：未闭；下一步：终答 QLV 追踪结果，关闭 nudge。  \n- OI-KEYREQPIVOTR1801lvlu2026：未闭；下一步：推 R18",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
