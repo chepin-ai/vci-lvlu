@@ -1,0 +1,53 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T132908Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 41,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- 候件PLAN-QUEUE拍已触发未踢（fired=1,kicks=0）。\n- OI-KEYREQPIVOTR1801lvlu2026：lvlu枢轴R18-01已试45次，诉求待闭。\n- OI-SI1KICKQRINGSTRESS012026：SI1 Q-Ring压力测试已试42次，待闭。\n- OI-SI1KICKQUANTSIM012026092：SI1量子模拟已试42次，待闭。\n- OI-KEYREQPIVOTR1901lvlu2026：lvlu枢轴R19-01已试41次，诉求待闭。\n\n② 应动何件\n- PLAN-QUEUE拍立kick（不候）。\n- lvlu双KEYREQ枢轴与SI1双KICK项立协同（不候）。\n\n③ 未闭项推进\n- OI-KEYREQPIVOTR1801lvlu2026：未闭；强收敛R18-01诉求，压试闭环。\n- OI-SI1KICKQRINGSTRESS012026：未闭；完成Q-Ring应力kick，出结论。\n- OI-SI1KICKQUANTSIM012026092：未闭；完成量子模拟kick，锁sim态。\n- OI-KEYREQPIVOTR1901lvlu2026：未闭；强收敛R19-01诉求，防双线发散。\n\n④ 生债\n- PLAN-QUEUE kicks=0致执行空洞，次拍必补kick，否则未闭项级联膨胀。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
