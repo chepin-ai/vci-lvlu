@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T114547Z",
+ "idle_in": 7,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 32,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n候件空；未闭四件：R18 lvlu枢轴（36试）、SI1 QRing压测（33试）、SI1量子模拟（33试）、R19 lvlu枢轴（32试），涉lvlu诉求二件已录。  \n\n②应动何件  \n立协同两lvlu枢轴项（R18/R19），不候。  \n\n③未闭项推进  \n- OI-KEYREQPIVOTR1801lvlu2026：未闭，升SI0律吕直推。  \n- OI-SI1KICKQRINGSTRESS012026：未闭，锁QRing应力阈值标定。  \n- OI-SI1KICKQUANTSIM012026092：未闭，锚量子模拟基线态。  \n- OI-KEYREQPIVOTR1901lvlu2026：未闭，并R18同频做lvlu一致性校验。  \n\n④生债  \n积lvlu枢轴双悬债一宗：R18/R19超32试未落，限今闭。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
