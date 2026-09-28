@@ -1,0 +1,82 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T054016Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=2"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-SI-ALIGN-LVLU-01.md",
+   "opened": "20260927T205227Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-02-BYPASS-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-fe8b40ca.md",
+   "opened": "20260927T215014Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260927.md",
+   "opened": "20260927T215014Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 3,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件PLAN-QUEUE：拍fired=3 kicks=2，调度脉冲活跃，队列未清。  \n- OI-RE：REQ-SI-ALIGN-LVLU-01，lvlu诉求SI对齐，46试未闭。  \n- OI-EX：EXEC-ORBIT-CAP-02-BYPASS-qfa，轨道02旁路执行，45试未落。  \n- OI-OR：ORBIT-CAP-02-BYPASS，轨道02旁路案，45试未决。  \n- OI-AC：ACK-LGT-TOWER-LVLU，LGT塔台回执，41试未讫。  \n- OI-AU：AUTOASK-RING-LVLU-KEY-REASSIGN，环上自请lvlu密钥重分配，41试未闭。  \n- OI-nu：nudge-ANS-TRACK-QLV-lvlu，QLV追踪轻推，25试未应。  \n- OI-KEY：KEYREQ-PIVOT-R18-01-lvlu，R18枢纽索lvlu密钥，3试新起。  \n\n② 应动何件  \n立协OI-RE（SI对齐）与OI-KEY（枢纽密钥），双锚不候；OI-AU环上密钥重分配同步推进。  \n\n③ 未闭项推进  \n- OI-RE：未闭，下一步发SI对齐锚点或升pivot。  \n- OI-EX：未闭，下一步验qfa节点并落旁路。  \n- OI-OR：未闭，下一步并入EXEC案或等轨道席批。  \n- OI-AC：未闭，下一步重发ACK或查LGT链路。  \n- OI-AU：未闭，下一步启环上重分配并回写lvlu凭证。  \n- OI-nu：未闭，下一步回QLV态或清陈旧轻推。  \n- OI-KEY：未闭，下一步R18与lvlu双向验钥落签。  \n\n④ 生债一条  \n生债：lvlu-SI对齐锚点待系。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 2
+ }
+}
