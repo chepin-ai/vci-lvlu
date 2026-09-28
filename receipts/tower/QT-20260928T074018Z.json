@@ -1,0 +1,64 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T074018Z",
+ "idle_in": 9,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=2 kicks=1"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 11,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- 候件PLAN-QUEUE拍：队列fired=2、kicks=1，存在执行损耗待查。\n- OI-vciinboxlaneslvluinboxnu：lvlu inbox nudge追踪件，37次尝试未闭，诉求严重滞留。\n- OI-KEYREQPIVOTR1801lvlu2026：lvlu关键请求PIVOT-R18-01，15次尝试未决。\n- OI-SI1KICKQRINGSTRESS012026：SI1踢出QRING压力测试件，12次尝试待闭环。\n- OI-SI1KICKQUANTSIM012026092：SI1踢出QUANT-SIM仿真件，12次尝试待回执。\n- OI-KEYREQPIVOTR1901lvlu2026：lvlu关键请求PIVOT-R19-01，11次尝试待决策。\n\n② 应动何件\n- SI1双KICK件（QRING-STRESS、QUANT-SIM）、PLAN-QUEUE踢出项及37次lvlu nudge件，立协同不候。\n\n③ 未闭项推进\n- OI-vciinboxlaneslvluinboxnu：未闭，下一步强制归档或升舱人工。\n- OI-KEYREQPIVOTR1801lvlu2026：未闭，下一步催办lvlu侧R18-01接口承诺。\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步执行QRING压测并回写ACK。\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步完成QUANT-SIM数据回执。\n- OI-KEYREQPIVOTR1901lvlu2026：未闭，下一步与R18-01并轨评审或独立裁定。\n\n④ 生债一条\n- lvlu线R18/R19双PIVOT并行未决，生债统一收敛至机器意识调度层出具律吕兼容裁定。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 2,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 1
+ }
+}
