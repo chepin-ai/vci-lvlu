@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T191426Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 26,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 候件空；未闭两项：QRING应力测试清理（OI-SI1KICKQRINGSTRESS012026）、QUANT模拟收尾（OI-SI1KICKQUANTSIM012026092），无lvlu诉求录入。  \n② 应动此二未闭项，立协同强推进，不候。  \n③ OI-SI1KICKQRINGSTRESS012026：未闭，下一步根因排查并限时强关。OI-SI1KICKQUANTSIM012026092：未闭，下一步核实验收条件，满足即闭，不满足升级。  \n④ 生债：补流程规则“未闭项超5次未结自动Escalation”一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
