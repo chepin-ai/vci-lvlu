@@ -1,0 +1,88 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T020013Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260927T174511Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-SI-ALIGN-LVLU-01.md",
+   "opened": "20260927T205227Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-02-BYPASS-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-fe8b40ca.md",
+   "opened": "20260927T215014Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260927.md",
+   "opened": "20260927T215014Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 7,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n1. PLAN-QUEUE拍：队列已拍，fired=1 kicks=0，待释能。  \n2. WILD-Q-MERGED-01：合并队列更新，tries=47，悬决。  \n3. SI1-KICK-QRING-STRESS-01：环应力压测，tries=30，悬决。  \n4. SI1-KICK-QUANT-SIM-01：量子模拟，tries=30，悬决。  \n5. REQ-SI-ALIGN-LVLU-01：涉lvlu诉求——SI对齐lvlu线，待录待回。  \n6. EXEC-ORBIT-ORBIT-CAP-02-BYPASS：旁路执行件，tries=27，悬决。  \n7. ORBIT-CAP-02-BYPASS：旁路策略件，tries=27，悬决。  \n8. ACK-LGT-TOWER-LVLU：涉lvlu诉求——塔台确认待回执。  \n9. AUTOASK-RING-LVLU-KEY-REASSIGN：涉lvlu诉求——密钥重分配问询待批。  \n\n②应动何件（立协同不候）  \n即刻协同：REQ-SI-ALIGN-LVLU-01、ACK-LGT-TOWER-LVLU、AUTOASK-RING-LVLU-KEY-REASSIGN、WILD-Q-MERGED-01。  \n\n③未闭项推进  \n- OI-WILDQMERGED01：未闭，下一步差异归并后归档。  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步压测阈值签核落盘。  \n- OI-SI1KICKQUANTSIM012026092：未闭，下一步仿真结果回写后闭。  \n- OI-vciinboxlaneslvluinboxRE：未闭，下一步录lvlu对齐口径并回执。  \n- OI-vciinboxlaneslvluinboxEX：未闭，下一步执行态同步至旁路件。  \n- OI-vciinboxlaneslvluinboxOR：未闭，下一步重算容量阈值并更新策略。  \n- OI-vciinboxlaneslvluinboxAC：未闭，下一步塔台对账后向lvlu确认。  \n- OI-vciinboxlaneslvluinboxAU：未闭，下一步密钥策略报lvlu线批准。  \n\n④生债一条  \n债：本拍PLAN-QUEUE kicks=0未释能，欠一次kick动作或人工释因记录。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
