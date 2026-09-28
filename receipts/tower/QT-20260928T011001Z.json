@@ -1,0 +1,78 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T011001Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQMERGED01",
+   "ref": "WILD-Q-MERGED-01更新",
+   "opened": "20260927T174511Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-SI-ALIGN-LVLU-01.md",
+   "opened": "20260927T205227Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-02-BYPASS-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-fe8b40ca.md",
+   "opened": "20260927T215014Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260927.md",
+   "opened": "20260927T215014Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 3,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- OI-WILDQMERGED01：WILD-Q-MERGED-01更新合并，尝试43次未闭。\n- OI-SI1KICKQRINGSTRESS012026：SI1 QRING压测挂起，尝试26次未闭。\n- OI-SI1KICKQUANTSIM012026092：SI1 QUANT模拟挂起，尝试26次未闭。\n- OI-vciinboxlaneslvluinboxRE：lvlu通道REQ-SI-ALIGN对齐请求，尝试24次未闭（涉lvlu诉求）。\n- OI-vciinboxlaneslvluinboxEX：ORBIT-CAP-02-BYPASS执行审计，尝试23次未闭。\n- OI-vciinboxlaneslvluinboxOR：ORBIT-CAP-02-BYPASS原始复核，尝试23次未闭。\n- OI-vciinboxlaneslvluinboxAC：LGT-TOWER-LVLU回执确认，尝试19次未闭（涉lvlu诉求）。\n- OI-vciinboxlaneslvluinboxAU：RING-LVLU密钥重分配自动请求，尝试19次未闭（涉lvlu诉求）。\n\n②应动何件\nOI-WILDQMERGED01（43次阻塞，立协同合并或降级）；OI-vciinboxRE（lvlu对齐，立协同SI-align通道）；OI-vciinboxAU（密钥重分配，立协同RING重分配）。\n\n③未闭项推进\n- OI-WILDQMERGED01：未闭/下一步强制合并或归档。\n- OI-SI1KICKQRINGSTRESS012026：未闭/下一步压测闭环出报告。\n- OI-SI1KICKQUANTSIM012026092：未闭/下一步模拟验证通过。\n- OI-vciinboxlaneslvluinboxRE：未闭/下一步SI-align lvlu签核。\n- OI-vciinboxlaneslvluinboxEX：未闭/下一步审计Bypass执行日志。\n- OI-vciinboxlaneslvluinboxOR：未闭/下一步复核ORBIT-CAP-02授权链。\n- OI-vciinboxlaneslvluinboxAC：未闭/下一步回执LGT-TOWER-LVLU。\n- OI-vciinboxlaneslvluinboxAU：未闭/下一步执行KEY-REASSIGN并同步lvlu。\n\n④生债一条\n未闭8项最长43次尝试，生债：今日必决WILDQ与lvlu三项，逾期升仲裁。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
