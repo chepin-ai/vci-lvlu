@@ -1,0 +1,50 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T084054Z",
+ "idle_in": 3,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 16,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- vci-inbox lvlu nudge（ANS-TRACK-QLV，lvlu 诉求：回应对齐）\n- KEYREQ-PIVOT-R18-01（lvlu 诉求：R18 转轴需求待决）\n- SI1-KICK-QRING-STRESS-01（SI1 环压测试，待回传）\n- SI1-KICK-QUANT-SIM-01（SI1 量子模拟，待回传）\n- KEYREQ-PIVOT-R19-01（lvlu 诉求：R19 转轴需求待决）\n\n② 应动何件：\n应动 KEYREQ-PIVOT-R19-01（最新关键需求）与 vci-inbox nudge（42次积压最深），立协同不候。\n\n③ 未闭项推进：\n- OI-vciinboxlaneslvluinboxnu：未闭，下一步：完成 ANS-TRACK-QLV 响应\n- OI-KEYREQPIVOTR1801lvlu2026：未闭，下一步：R18 需求决策\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：STRESS 数据回传\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步：SIM 结果回传\n- OI-KEYREQPIVOTR1901lvlu2026：未闭，下一步：R19 需求对齐\n\n④ 生债：\n生债：vci-inbox 42次未应，",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
