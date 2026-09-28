@@ -1,0 +1,71 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T041510Z",
+ "idle_in": 3,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-SI-ALIGN-LVLU-01.md",
+   "opened": "20260927T205227Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-02-BYPASS-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-fe8b40ca.md",
+   "opened": "20260927T215014Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260927.md",
+   "opened": "20260927T215014Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 18,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- SI1-KICK-QRING-STRESS-01：SI1 QRing应力测试kick，41次未闭。\n- SI1-KICK-QUANT-SIM-01：SI1量子模拟kick，41次未闭。\n- REQ-SI-ALIGN-LVLU-01：SI对齐lvlu线请求，涉lvlu诉求。\n- EXEC-ORBIT-ORBIT-CAP-02-BYPASS：Cap-02 bypass执行件待验。\n- ORBIT-CAP-02-BYPASS：Cap-02 bypass本体待决。\n- ACK-LGT-TOWER-LVLU：LGT塔台-lvlu确认件，涉lvlu。\n- AUTOASK-RING-LVLU-KEY-REASSIGN：RING-LVLU密钥重分配，涉lvlu。\n- nudge-ANS-TRACK-QLV-lvlu：QLV-lvlu轨迹追答nudge。\n\n② 应动何件（立协同不候）\nREQ-SI-ALIGN-LVLU-01、AUTOASK-RING-LVLU-KEY-REASSIGN、ACK-LGT-TOWER-LVLU及双SI1-KICK件，五件立协同不候。\n\n③ 未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭；压测QRing阈值或降级重入。\n- OI-SI1KICKQUANTSIM012026092：未闭；校准量子边界后重kick。\n- OI-vciinboxlaneslvluinboxRE：未闭；生成lvlu对齐锚点回执。\n- OI-vciinboxlaneslvluinboxEX：未闭；验bypass签章后放行。\n- OI-vciinboxlaneslvluinboxOR：未闭；同步CAP-02轨道态消歧。\n- OI-vciinboxlaneslvluinboxAC：未闭；向LGT塔台回传lvlu就绪态。\n- OI-vciinboxlaneslvluinboxAU：未闭；完成RING-LVLU密钥轮换校验。\n- OI-vciinboxlaneslvluinboxnu：未闭；提取QLV-lvlu追答并封包。\n\n④ 生债一条\n补录SI2/SI0本次对lvlu线自动响应的完整校验日志。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
