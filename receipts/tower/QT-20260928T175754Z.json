@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T175754Z",
+ "idle_in": 5,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 19,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：候件空；OI-SI1KICKQRINGSTRESS012026为SI1-KICK-QRING-STRESS压测任务，已开19试未闭；OI-SI1KICKQUANTSIM012026092为SI1-KICK-QUANT-SIM量子模拟任务，已开19试未闭。无涉lvlu诉求。\n\n②应动何件：双件并动，立协同SI1排障，不候。\n\n③未闭项推进：OI-SI1KICKQRINGSTRESS012026未闭，下一步回捞SI1 QRING压测日志定位根因；OI-SI1KICKQUANTSIM012026092未闭，下一步诊断QUANT-SIM执行节点状态并清理重试。\n\n④生债一条：SI1-KICK双项19试悬置，生债：补跨线自动根因回捞与熔断重试机制。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
