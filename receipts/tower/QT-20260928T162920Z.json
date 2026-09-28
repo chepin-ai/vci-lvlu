@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T162920Z",
+ "idle_in": 9,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 11,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 无候件。  \n② 无应动件。  \n③ OI-SI1KICKQRINGSTRESS012026：11试未闭，下一步SI1根因排查/升级；OI-SI1KICKQUANTSIM012026092：11试未闭，下一步SI1根因排查/升级。  \n④ 生债：QRING-STRESS与QUANT-SIM双项各11试仍open，记lvlu→SI1协查升级债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
