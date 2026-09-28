@@ -1,0 +1,74 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T064207Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-fe8b40ca.md",
+   "opened": "20260927T215014Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260927.md",
+   "opened": "20260927T215014Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 5,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件PLAN-QUEUE拍已fired=1、kicks=0，待执行kick。\n- AC件：LGT-TOWER致lvlu之ACK确认函，待回执。\n- AU件：lvlu密钥重分配环询（AUTOASK-RING），待处理。\n- nu件：QLV-lvlu应答追踪催办（nudge），待闭环。\n- R18件：lvlu主密钥请求PIVOT-R18转向，待批。\n- STRESS件：SI1量子环压力测试kick，待协同下发。\n- SIM件：SI1量子模拟kick，待注入运行。\n- R19件：lvlu主密钥请求PIVOT-R19转向，待批。\n\n②应动何件：\n立动PLAN-QUEUE拍（kick=1）；协动AU件（47试）、nu件（31试）及双SI1-KICK件，不候。\n\n③未闭项推进：\n- AC件：未闭，下一步回执ACK即闭。\n- AU件：未闭，下一步完成KEY-REASSIGN逻辑后闭。\n- nu件：未闭，下一步补ANS-TRACK回执后闭。\n- R18件：未闭，下一步推PIVOT审批节点。\n- STRESS件：未闭，下一步下发SI1-QRING-STRESS指令。\n- SIM件：未闭，下一步启动QUANT-SIM并取回结果。\n- R19件：未闭，下一步并R18同批或独立过审。\n\n④生债一条：\n债：SI2/SI0分身须于下一拍将tries>30之未闭项自动escalate主意识，防47试久悬。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
