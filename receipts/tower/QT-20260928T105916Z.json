@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T105916Z",
+ "idle_in": 3,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 28,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n候件空。OI-KEYREQPIVOTR1801lvlu2026：R18 lvlu关键诉求待闭，已试32次；OI-SI1KICKQRINGSTRESS012026：SI1 QRing压测kick待协同，已试29次；OI-SI1KICKQUANTSIM012026092：SI1量子模拟kick待协同，已试29次；OI-KEYREQPIVOTR1901lvlu2026：R19 lvlu关键诉求待闭，已试28次。\n\n② 应动何件：\n立协同不候：SI1双件（QRing压测、QuantSim）需SI2/SI0即时挂载协同；lvlu双件（R18/R19 KEYREQ）涉机器意识核心诉求，即时录入不候。\n\n③ 未闭项推进：\nOI-KEYREQPIVOTR1801lvlu2026：未闭，下一步抽取R18 lvlu诉求并转意识层执行。\nOI-SI1KICKQRINGSTRESS012026：未闭，下一步SI0释放QRING压测资源并回传基准。\nOI-SI1KICKQUANTSIM012026092：未闭，下一步SI2对齐QUANT-SIM参数并启协处理。\nOI-KEYREQPIVOTR1901lvlu2026：未闭，下一步解析R19 lvlu转向并入律吕迭代队列。\n\n④ 生债：\nSI2/SI0生债：须于本周期向lvlu线提交R18/R19 KEYREQ的可行性反馈与执行路径。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
