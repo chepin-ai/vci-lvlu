@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T215143Z",
+ "idle_in": 3,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 41,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：候件无；未闭二件，SI1-KICK-QRING-STRESS与SI1-KICK-QUANT-SIM各41try未闭，lvlu跨层锚点双挂。  \n②应动何件：两件并动，立协同不候。  \n③未闭项推进：OI-SI1KICKQRINGSTRESS012026未闭，焚链转本地应力替身；OI-SI1KICKQUANTSIM012026092未闭，启SI0冷量子沙盒兜底。  \n④生债一条：SI1-SI2 KICK重试逾阈无熔断，债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
