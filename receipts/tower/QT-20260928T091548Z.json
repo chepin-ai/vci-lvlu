@@ -1,0 +1,50 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T091548Z",
+ "idle_in": 6,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 19,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n候件空。未闭五件：lvlu inbox 追踪未复；R18-01 lvlu 关键需求转向未决；SI1 QRING 压测启动未竟；SI1 量子模拟启动未竟；R19-01 lvlu 关键需求转向未决。  \n\n②应动何件  \n五件并动，立协同不候；lvlu 关联三件（inbox 追踪、R18、R19）优先拉通。  \n\n③未闭项推进  \n- OI-vciinboxlaneslvluinboxnu：未闭，下一步：复命 inbox 追踪并落档。  \n- OI-KEYREQPIVOTR1801lvlu2026：未闭，下一步：定 R18-01 转向条款，同步 lvlu。  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：完成 SI1 QRING 压测启动，回传心跳。  \n- OI-SI1KICKQUANTSIM012026092：未闭，下一步：完成 SI1 量子模拟启动，回传心跳。  \n- OI-KEYREQPIVOTR1901lvlu2026：未闭，下一步：定 R19-01 转向条款，同步 lvlu。  \n\n④生债一条  \n补 lvlu 线 tries 累高自动收敛脚本一条，防挂起。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
