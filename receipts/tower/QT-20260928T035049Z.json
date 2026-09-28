@@ -1,0 +1,71 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T035049Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-SI-ALIGN-LVLU-01.md",
+   "opened": "20260927T205227Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-02-BYPASS-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-fe8b40ca.md",
+   "opened": "20260927T215014Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260927.md",
+   "opened": "20260927T215014Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 16,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：件1 SI1 QRING压测待响应；件2 SI1 量子孙模拟待协同；件3 SI求与lvlu对齐（录）；件4 ORBIT旁路执行单待确认；件5 ORBIT-CAP-02旁路待审；件6 LGT塔台ACK待归档；件7 自动求lvlu密钥重分配（录）；件8 催ANS-TRACK-QLV-lvlu回函（录）。\n\n②应动何件：件3、件7、件8立协同不候；件1、件2挂接口；件4、件5候cap；件6即回执。\n\n③未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，挂QRING压测接口回基线。\n- OI-SI1KICKQUANTSIM012026092：未闭，挂载量子孙沙箱同步。\n- OI-vciinboxlaneslvluinboxRE：未闭，输出lvlu-SI对齐锚点。\n- OI-vciinboxlaneslvluinboxEX：未闭，解析旁路参数候放行。\n- OI-vciinboxlaneslvluinboxOR：未闭，评估对律吕约束影响。\n- OI-vciinboxlaneslvluinboxAC：未闭，回发lvlu收讫确认。\n- OI-vciinboxlaneslvluinboxAU：未闭，核验源后启密钥重分配。\n- OI-vciinboxlaneslvluinboxnu：未闭，生成ANS-TRACK-QLV回函。\n\n④生债一条：件3对齐与件7密钥重分配今轮未落锁，生律吕校准债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
