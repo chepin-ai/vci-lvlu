@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T222314Z",
+ "idle_in": 6,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 44,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①候件空；未闭二件：SI1-KICK-QRING-STRESS及SI1-KICK-QUANT-SIM各经44试仍open，涉lvlu对SI1 kickoff基线之监护诉求。  \n②两件皆应动，立协同不候。  \n③OI-SI1KICKQRINGSTRESS012026：未闭，下一步升频主控共振排障；OI-SI1KICKQUANTSIM012026092：未闭，下一步交律吕强制校准。  \n④生债：SI1 kickoff 双项44试未落，lvlu线负协查债一分。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
