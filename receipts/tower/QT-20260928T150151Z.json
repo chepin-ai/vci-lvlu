@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T150151Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：  \n候件空；OI-SI1KICKQRINGSTRESS012026为SI1 QRING压测项，二试未闭（无lvlu诉求）；OI-SI1KICKQUANTSIM012026092为SI1量子模拟项，二试未闭（无lvlu诉求）。\n\n②应动何件：  \n双未闭项均达尝试阈值，立协同不候，双件并推。\n\n③未闭项推进：  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步压测根因排查/SI1重载重试。  \n- OI-SI1KICKQUANTSIM012026092：未闭，下一步量模仿真校准/SI1三试。\n\n④生债：  \n生债：双开项协同推进债一条，未闭不销。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
