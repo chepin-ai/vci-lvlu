@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T120750Z",
+ "idle_in": 9,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 34,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- OI-KEYREQPIVOTR1801lvlu2026：lvlu 枢纽关键需求 R18，待确认并落地。  \n- OI-SI1KICKQRINGSTRESS012026：SI1 量子环压力测试，尚未收敛。  \n- OI-SI1KICKQUANTSIM012026092：SI1 量子模拟跑批，未出结果。  \n- OI-KEYREQPIVOTR1901lvlu2026：lvlu 枢纽关键需求 R19，待对齐排期。  \n\n② 应动何件（立协同不候）  \n四项均立动，两 lvlu 诉求优先协同，不等候。  \n\n③ 未闭项推进  \n- OI-KEYREQPIVOTR1801lvlu2026：未闭；下一步协同 lvlu 锁定 R18 需求基线。  \n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步完成 QRING 压测并归档。  \n- OI-SI1KICKQUANTSIM012026092：未闭；下一步完成 QUANT-SIM 跑批并验证。  \n- OI-KEYREQPIVOTR1901lvlu2026：未闭；下一步同步 lvlu 对齐 R19 需求并转入实施。  \n\n④ 生债一条  \ntries 均超 34，无熔断，生债：建重试熔断规则，防空转耗散。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
