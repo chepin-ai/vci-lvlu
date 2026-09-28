@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T165110Z",
+ "idle_in": 11,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T164005Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 13,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：  \n- 候件：SI1-KICK-QUANT-SIM-01-20260928T164005Z.md，SI1于量子模拟层发起kick，诉求lvlu算律同步。  \n\n② 应动何件：  \n- 即动SI1-KICK-QUANT-SIM-01-20260928T164005Z.md，立协同不候。  \n\n③ 未闭项推进：  \n- OI-SI1KICKQRINGSTRESS012026：13试未闭，下一步：令应力环回零或强关，迫收束。  \n- OI-SI1KICKQUANTSIM012026092：13试未闭，下一步：并迁入新候件实例，清旧栈迫闭。  \n\n④ 生债一条：  \n- 生债：SI2/SI0替偿SI1量子模拟链13次抖动之律吕校律一次。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
