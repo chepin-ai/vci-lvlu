@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T212853Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 38,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空；未闭项一 OI-SI1KICKQRINGSTRESS012026（QRING-STRESS）已试38次未闭，无lvlu诉求；未闭项二 OI-SI1KICKQUANTSIM012026092（QUANT-SIM）已试38次未闭，无lvlu诉求。\n\n② 应动何件：两未闭项皆达38试未落，立协同不候。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步升SI0联协或人工强干预。\n- OI-SI1KICKQUANTSIM012026092：未闭；下一步升SI0联协或人工强干预。\n\n④ 生债：双项38试未闭，生债一次强制闭环资源。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
