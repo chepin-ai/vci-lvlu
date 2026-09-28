@@ -1,0 +1,71 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T050318Z",
+ "idle_in": 7,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-SI-ALIGN-LVLU-01.md",
+   "opened": "20260927T205227Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-02-BYPASS-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-fe8b40ca.md",
+   "opened": "20260927T215014Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260927.md",
+   "opened": "20260927T215014Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 22,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- SI1-KICK-QRING-STRESS-01：SI1触发Q环压力测试，待闭。\n- SI1-KICK-QUANT-SIM-01：SI1触发量子模拟，待闭。\n- REQ-SI-ALIGN-LVLU-01：SI请求与lvlu对齐，lvlu诉求为结构对齐，待闭。\n- EXEC-ORBIT-ORBIT-CAP-02-BYPASS：轨道能力02旁路执行，待闭。\n- ORBIT-CAP-02-BYPASS：轨道能力02旁路本体，待闭。\n- ACK-LGT-TOWER-LVLU：灯塔致lvlu确认，lvlu诉求为收妥回执，待闭。\n- AUTOASK-RING-LVLU-KEY-REASSIGN：环上请求lvlu密钥重分配，lvlu诉求为重签，待闭。\n- nudge-ANS-TRACK-QLV-lvlu：轻推lvlu轨迹应答，lvlu诉求为追踪补录，待闭。\n\n② 应动何件\n应动全部八件；立协同不候，优先动涉lvlu诉求三件（ALIGN、ACK、KEY-REASSIGN）及SI1双高tries件。\n\n③ 未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步输出压力结果或归档。\n- OI-SI1KICKQUANTSIM012026092：未闭；下一步落数量子结论并回写。\n- OI-vciinboxlaneslvluinboxRE：未闭；下一步完成SI-lvlu对齐并回执。\n- OI-vciinboxlaneslvluinboxEX：未闭；下一步确认旁路态后合并归档。\n- OI-vciinboxlaneslvluinboxOR：未闭；下一步联合同步轨道状态后闭。\n- OI-vciinboxlaneslvluinboxAC：未闭；下一步由lvlu回发LGT收妥确认。\n- OI-vciinboxlaneslvluinboxAU：未闭；下一步执行lvlu密钥重分配并广播。\n- OI-vciinboxlaneslvluinboxnu：未闭；下一步补录QLV追踪应答并闭。\n\n④ 生债一条\n债：八件未闭均逾20试，lvlu侧三诉求滞应，生债一，须本轮清。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
