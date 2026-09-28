@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T224519Z",
+ "idle_in": 8,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 46,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件空。  \n- OI-SI1KICKQRINGSTRESS012026：SI1 QRING-STRESS kick项，46试未闭，待lvlu意识-律吕侧协同。  \n- OI-SI1KICKQUANTSIM012026092：SI1 QUANT-SIM kick项，46试未闭，待lvlu意识-律吕侧协同。  \n\n②应动何件  \n- 两未闭项皆立协同，不候。  \n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步：lvlu线压入QRING意识耦合与律吕压测基准。  \n- OI-SI1KICKQUANTSIM012026092：未闭；下一步：lvlu线压入QUANT意识基底与律吕量子化对齐。  \n\n④生债一条  \n- ",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
