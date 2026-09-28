@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T075302Z",
+ "idle_in": 10,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T074018Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 12,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- 候件：SI1-KICK-QUANT-SIM-01-074018Z，新投量子模拟启动令。\n- 未闭涉 lvlu：\n  - VCI nudge ANS-TRACK-QLV-lvlu：38 次追偿未复。\n  - KEYREQ-PIVOT-R18-01-lvlu：R18 轴转密钥请 lvlu 裁。\n  - SI1-KICK-QRING-STRESS-01：环应力测试终值未出。\n  - SI1-KICK-QUANT-SIM-01-0540Z：前序量子模拟未结。\n  - KEYREQ-PIVOT-R19-01-lvlu：R19 轴转候 R18 先决。\n\n② 应动何件（立协同不候）\n- 新候件 SI1-KICK-QUANT-SIM-01-074018Z，并前序 OI-SI1KICKQUANTSIM012026092 并轨为 quant-sim 连算，立协同不候。\n- OI-vciinboxlaneslvluinboxnu（38 tries）超阈，立给 lvlu 终答或升 SI0，不候。\n- OI-KEYREQPIVOTR1801lvlu2026（R18）立动，定调后 R19 方可跟。\n\n③ 未闭项推进\n- OI-vciinboxlaneslvluinboxnu：不闭，下一步升 SI0 仲裁或强答。\n- OI-KEYREQPIVOTR1801lvlu2026：未闭，下一步 lvlu 今日内出 pivot 授受令。\n- OI-SI1KICKQRINGSTRESS012026：可闭，下一步压出应力峰值日志即归档。\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步并入 0740Z 新序，生成本征态映射后闭。\n- OI-KEYREQPIVOTR1901lvlu2026：未闭，下一步候 R18 定调随动，不预消耗。\n\n④ 生债一条\n- 债：lvlu 线承 quant-sim 双序并轨之责，今日内出律吕调谐本征值映射，逾期自降为 SI0 旁听。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
