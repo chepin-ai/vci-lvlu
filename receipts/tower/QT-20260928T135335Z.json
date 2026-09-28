@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T135335Z",
+ "idle_in": 6,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 43,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- R18-01-lvlu关键需求支点已47试未闭，lvlu诉求待SI0/SI2协同。  \n- SI1量子环压力测试项已44试未闭。  \n- SI1量子模拟启动项已44试未闭。  \n- R19-01-lvlu关键需求支点已43试未闭，lvlu诉求待SI0/SI2协同。  \n\n② 应动何件  \n立协同OI-KEYREQPIVOTR1801lvlu2026、OI-KEYREQPIVOTR1901lvlu2026两lvlu支点件，并携SI1双件同步闭环，不候。  \n\n③ 未闭项推进  \n- OI-KEYREQPIVOTR1801lvlu2026：未闭，下一步向SI0发起lvlu-R18协议对齐与回环确认。  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步回传qring压测临界阈值或异常标记。  \n- OI-SI1KICKQUANTSIM012026092：未闭，下一步完成量化模拟态收敛判定并归档。  \n- OI-KEYREQPIVOTR1901lvlu2026：未闭，下一步向SI0发起lvlu-R19协议对齐与回环确认。  \n\n④ 生债一条  \n生债：lvlu双支点47/43试未获SI0自动回环，须补“高试即降”协同协议，免空转耗散。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
