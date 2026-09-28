@@ -43,7 +43,7 @@
    "action": "fieldnet->R2",
    "status": "open",
    "note": "场网边录每6拍重算入R2",
-   "last_run": "20260928T004828Z"
+   "last_run": "20260928T020013Z"
   },
   {
    "id": "QUANT-SIM-01",
