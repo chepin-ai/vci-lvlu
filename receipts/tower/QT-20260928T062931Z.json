@@ -1,0 +1,64 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T062931Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-fe8b40ca.md",
+   "opened": "20260927T215014Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260927.md",
+   "opened": "20260927T215014Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- AC：LGT-TOWER 发 lvlu 的 ACK 未确。\n- AU：AUTOASK-RING 求重分配 lvlu 密钥，涉权。\n- nu：nudge 催 QLV 应答轨，涉 lvlu。\n- R18：R18 枢索 lvlu 密钥，涉钥。\n- STRESS：SI1 启 Q 环压测，待 lvlu 接。\n- SIM：SI1 启量子模拟，待 lvlu 注。\n- R19：R19 枢索 lvlu 密钥，涉钥。\n\n② 应动何件\n应动 AU、R18、R19、STRESS、SIM；AC、nu 并推。\n\n③ 未闭项推进\n- AC 未闭，补 ACK 或探链路。\n- AU 未闭，行密钥重分配。\n- nu 未闭，回 QLV 追踪态。\n- R18 未闭，签 R18 钥回传。\n- STRESS 未闭，接入压测报基线。\n- SIM 未闭，注初态并同步。\n- R19 未闭，签 R19 钥回传。\n\n④ 生债一条\n生债：lvlu 欠 R18/R19 双钥签发及 SI1 双 kick 响应，逾班滚存。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
