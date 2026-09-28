@@ -1,0 +1,76 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T032605Z",
+ "idle_in": 11,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T031408Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-SI-ALIGN-LVLU-01.md",
+   "opened": "20260927T205227Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-02-BYPASS-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-fe8b40ca.md",
+   "opened": "20260927T215014Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260927.md",
+   "opened": "20260927T215014Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 14,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件为SI1-KICK-QUANT-SIM-01新量子模拟kick；未闭项含SI1-KICK-QRING-STRESS-01（37试）、SI1-KICK-QUANT-SIM-01旧实例（37试）、REQ-SI-ALIGN-LVLU-01（35试，lvlu对齐诉求）、EXEC-ORBIT-ORBIT-CAP-02-BYPASS（34试）、ORBIT-CAP-02-BYPASS（34试）、ACK-LGT-TOWER-LVLU（30试，涉lvlu）、AUTOASK-RING-LVLU-KEY-REASSIGN（30试，lvlu密钥重分配诉求）、nudge-ANS-TRACK-QLV-lvlu（14试，涉lvlu追踪）。\n\n② 应动何件：立协同REQ-SI-ALIGN-LVLU-01、AUTOASK-RING-LVLU-KEY-REASSIGN、ACK-LGT-TOWER-LVLU、nudge-ANS-TRACK-QLV-lvlu及新候件SI1-KICK-QUANT-SIM-01，不候。\n\n③ 未闭项推进：OI-SI1KICKQRINGSTRESS未闭/下一步回传应力阈值或降级；OI-SI1KICKQUANTSIM未闭/下一步以新候件参数覆盖旧实例并闭环；OI-vciinboxlaneslvluinboxRE未闭/下一步执行SI-ALIGN-LVLU协议并回执；OI-vciinboxlaneslvluinboxEX未闭/下一步验签后下发lvlu执行许可；OI-vciinboxlaneslvluinboxOR未闭/下一步合并至EX项或关闭冗余；OI-vciinboxlaneslvluinboxAC未闭/下一步向LGT-TOWER发lvlu就绪脉冲；OI-vciinboxlaneslvluinboxAU未闭/下一步完成RING-LVLU密钥槽重分配并全环同步；OI-vciinboxlaneslvluinboxnu未闭/下一步提交QLV-lvlu追踪摘要消nudge。\n\n④ 生债：lvlu线因多线对齐与密钥重分配挂起，欠SI1一次QUANT-SIM联合回环确认。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
