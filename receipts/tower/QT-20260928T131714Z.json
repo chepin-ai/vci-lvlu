@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T131714Z",
+ "idle_in": 3,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 40,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\nOI-KEYREQPIVOTR1801lvlu2026：KEYREQ-PIVOT-R18 lvlu 需求 pivot 未闭，tries 44，lvlu 诉求为 R18 关键 pivot 落地。\nOI-SI1KICKQRINGSTRESS012026：SI1 QRING 压测 kick 未闭，tries 41。\nOI-SI1KICKQUANTSIM012026092：SI1 量子仿真 kick 未闭，tries 41。\nOI-KEYREQPIVOTR1901lvlu2026：KEYREQ-PIVOT-R19 lvlu 需求 pivot 未闭，tries 40，lvlu 诉求为 R19 关键 pivot 对齐。\n\n②应动何件：\n四项皆超 40 试，全动：立协同 KEYREQ-PIVOT-R18/R19 lvlu 双 pivot 与 SI1-KICK-QRING-STRESS、SI1-KICK-QUANT-SIM，不候。\n\n③未闭项推进：\nOI-KEYREQPIVOTR1801lvlu2026：未闭，下一步 R18 pivot 锚点冻结/降级收口。\nOI-SI1KICKQRINGSTRESS012026：未闭，下一步 QRING 压测阈值重标或熔断回滚。\nOI-SI1KICKQUANTSIM012026092：未闭，下一步 quant sim 对价回环重算。\nOI-KEYREQPIVOTR1901lvlu2026：未闭，下一步 R19 pivot 需求切片锁定。\n\n④生债一条：\nSI2/SI0 自动响应缺超 40 试急停熔断协议，需补自动降级债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
