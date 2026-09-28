@@ -1,0 +1,39 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T220141Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 42,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件PLAN-QUEUE：fired=1 kicks=0，lvlu拍频已触发但kick未执行，队列踢出悬停。\n- 未闭OI-SI1KICKQRINGSTRESS012026：SI1应力环kick重试42次未闭。\n- 未闭OI-SI1KICKQUANTSIM012026092：SI1量子模拟kick重试42次未闭。\n\n② 应动何件（立协同不候）：\n即动PLAN-QUEUE补kick，并强协同SI1双项终止42次空转、强制升层或关闭，不候。\n\n③ 未闭项推进（每项一句）：\n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步：SI2/SI0强制接管或清项，停死循环。\n- OI-SI1KICKQUANTSIM012026092：未闭；下一步：SI2/SI0强制接管或清项，停死循环。\n\n④ 生债一条：\n生SI1→lvlu拍频响应迟滞债一条，由SI2/SI0代偿清项。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
