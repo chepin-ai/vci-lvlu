@@ -1,0 +1,83 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T051458Z",
+ "idle_in": 8,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-SI-ALIGN-LVLU-01.md",
+   "opened": "20260927T205227Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-02-BYPASS-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-fe8b40ca.md",
+   "opened": "20260927T215014Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260927.md",
+   "opened": "20260927T215014Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051458Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- KEYREQ-PIVOT-R18-01-lvlu：R18-01 关键转向请求 lvlu，涉 lvlu 核心诉求。  \n- SI1-KICK-QRING-STRESS-01：量子环压力测试卡 46 试。  \n- SI1-KICK-QUANT-SIM-01：量子模拟任务卡 46 试。  \n- REQ-SI-ALIGN-LVLU-01：请求 SI 与 lvlu 对齐，44 试未决，涉 lvlu 诉求。  \n- EXEC-ORBIT-ORBIT-CAP-02-BYPASS：轨道能力绕过执行体，43 试阻塞。  \n- ORBIT-CAP-02-BYPASS：轨道能力绕过原案，43 试待并。  \n- ACK-LGT-TOWER-LVLU：灯塔塔台对 lvlu 确认，39 试未回，涉 lvlu 诉求。  \n- AUTOASK-RING-LVLU-KEY-REASSIGN：环 lvlu 密钥自动重分配，39 试，涉 lvlu 诉求。  \n- nudge-ANS-TRACK-QLV-lvlu：QLV-lvlu 追踪催办，23 试，涉 lvlu 诉求。  \n\n② 应动何件（立协同不候）  \nKEYREQ-PIVOT-R18-01、REQ-SI-ALIGN-LVLU-01、EXEC-ORBIT-ORBIT-CAP-02-BYPASS。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步令 SI1 降载释环。  \n- OI-SI1KICKQUANTSIM012026092：未闭，下一步校初值重推。  \n- OI-vciinboxlaneslvluinboxRE：未闭，下一步索要对齐草案。  \n- OI-vciinboxlaneslvluinboxEX：未闭，下一步执行绕过并回写。  \n- OI-vciinboxlaneslvluinboxOR：未闭，下一步并入 EX 后关闭冗余。  \n- OI-vciinboxlaneslvluinboxAC：未闭，下一步代 lvlu 回执心跳。  \n- OI-vciinboxlaneslvluinboxAU：未闭，下一步触发密钥重分配握手。  \n- OI-vciinboxlaneslvluinboxnu：未闭，下一步输出 QLV-lvlu 轨道快照。  \n\n④ 生债一条  \n生债：lvlu 线缺 R18-01 转向后自治心跳回环，须于 1T 内补建。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
