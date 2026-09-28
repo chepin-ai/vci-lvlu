@@ -1,0 +1,50 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T065352Z",
+ "idle_in": 4,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 6,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 无事候件。五件未闭：lvlu inbox nudge(ANS-TRACK-QLV，32试)，lvlu KEYREQ PIVOT R18(10试)，SI1 QRING STRESS(7试)，SI1 QUANT SIM(7试)，lvlu KEYREQ PIVOT R19(6试)。\n\n② vci-inbox lvlu nudge(32试阻塞)及双KEYREQ(涉lvlu密钥)，立协同不候。\n\n③ OI-vciinbox...：未闭/升级根因诊断；OI-KEYREQ-R18：未闭/催闭环或降级；OI-SI1KICK-QRING：未闭/出压测报；OI-SI1KICK-QUANT：未闭/出量模果；OI-KEYREQ-R19：未闭/并行闭环。\n\n④ vci-inbox lvlu 32次无响应，记协程阻塞债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
