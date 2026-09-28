@@ -1,0 +1,50 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T093946Z",
+ "idle_in": 8,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 21,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- lvlu inbox nudge 追踪件，47试未达。\n- lvlu KEYREQ pivot R18，25试待决。\n- SI1 QRING 应力 kick，22试未闭。\n- SI1 QUANT 模拟 kick，22试未闭。\n- lvlu KEYREQ pivot R19，21试待决。\n\n② 应动何件：\n立协同 lvlu inbox nudge（47试高悬）、R18 pivot、R19 pivot 三件；SI1 双 kick 并行拉取，不候。\n\n③ 未闭项推进：\n- OI-vciinboxlaneslvluinboxnu：未闭，下一步向 lvlu lane 发协同脉冲。\n- OI-KEYREQPIVOTR1801lvlu2026：未闭，下一步确认 R18 资源切片落位。\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步压应力数据回灌 SI1。\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步收模拟态至基线验证。\n- OI-KEYREQPIVOTR1901lvlu2026：未闭，下一步冻结 R19 边界防冲突。\n\n④ 生债一条：\n生债：本周期 lvlu 三项积压若未清，记律吕超载债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
