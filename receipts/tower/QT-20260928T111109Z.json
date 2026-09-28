@@ -1,0 +1,53 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T111109Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 29,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件PLAN-QUEUE拍：fired=1 kicks=0，缺实际kick。\n- OI-KEYREQPIVOTR1801lvlu2026：lvlu诉求R18-01，试33次未闭。\n- OI-SI1KICKQRINGSTRESS012026：SI1 qring stress kick，试30次未闭。\n- OI-SI1KICKQUANTSIM012026092：SI1 quant sim kick，试30次未闭。\n- OI-KEYREQPIVOTR1901lvlu2026：lvlu诉求R19-01，试29次未闭。\n\n②应动何件：\n立协同双lvlu pivot诉求件（R18/R19），不候。\n\n③未闭项推进：\n- OI-KEYREQPIVOTR1801lvlu2026：未闭，下一步并轨co-review强制收敛。\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步输出qring压测根因。\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步回传sim校准数据。\n- OI-KEYREQPIVOTR1901lvlu2026：未闭，下一步关联R18做delta合并评审。\n\n④生债一条：\n生债：PLAN-QUEUE kicks=0，欠全链路kick验证一次。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
