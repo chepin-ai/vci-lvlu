@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T151248Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 3,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：无候件；未闭两宗系SI1 kick-off遗留（QRING压测/QUANT模拟），无涉lvlu显式诉求，不另录。\n② 应动何件：两宗未闭项皆应立协同，不候。\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：回环SI1压测阈值，锚定即闭。\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步：对齐量子模拟基线，缺参返补。\n④ 生债一条：SI1 kick-off 自动拆包分发给SI2/SI0的路由规则未固化，需补一版。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
