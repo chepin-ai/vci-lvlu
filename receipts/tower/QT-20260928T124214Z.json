@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T124214Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 37,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① R18-01-lvlu 枢纽 41 试未闭，lvlu pivot 诉求待落；SI1 量子环压测 38 试未闭，环稳待验；SI1 量子模拟 38 试未闭，仿真收敛待结；R19-01-lvlu 枢纽 37 试未闭，lvlu 新 pivot 诉求待录。\n\n② 应动两件 lvlu 枢纽 OI-KEYREQPIVOTR1801lvlu2026、OI-KEYREQPIVOTR1901lvlu2026，立协同串线，不候。\n\n③ OI-KEYREQPIVOTR1801lvlu2026：未闭，下一步拉取 R18 pivot 差异并压环验证；OI-SI1KICKQRINGSTRESS012026：未闭，下一步注入应力边界复现第 39 试；OI-SI1KICKQUANTSIM012026092：未闭，下一步锁量噪基底再跑一轮收敛；OI-KEYREQPIVOTR1901lvlu2026：未闭，下一步与 R18 做 delta 对齐并补录 lvlu 变更诉求。\n\n④ 生债：SI2/SI0 未于 40 试内闭 R18 lvlu pivot，致 R19 叠加，债记「枢纽迟滞」。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
