@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T102601Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 25,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：候件空；OI-KEYREQPIVOTR1801lvlu2026为lvlu关键需求支点R18迭代29次未闭；OI-SI1KICKQRINGSTRESS012026为SI1启动量子环应力测试26次未闭；OI-SI1KICKQUANTSIM012026092为SI1启动量子模拟26次未闭；OI-KEYREQPIVOTR1901lvlu2026为lvlu关键需求支点R19迭代25次未闭。\n\n②应动何件：四项皆立协同不候——两lvlu支点（R18/R19）与两SI1启动项（QRING-STRESS、QUANT-SIM）同步推进。\n\n③未闭项推进：\n- OI-KEYREQPIVOTR1801lvlu2026：未闭，下一步：裁定R18 pivot收敛条件或强制熔断。\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：注入应力参数并验证QRING稳定性阈值。\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步：触发量化模拟快照并比对基线输出。\n- OI-KEYREQPIVOTR1901lvlu2026：未闭，下一步：对齐R19需求增量与R18残余差异。\n\n④生债：四项高迭代未闭积压，今日内必须完成收敛或生成熔断记录。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
