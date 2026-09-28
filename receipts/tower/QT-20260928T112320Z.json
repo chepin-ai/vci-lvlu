@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T112320Z",
+ "idle_in": 5,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20260928T051515Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T054016Z.md",
+   "opened": "20260928T055339Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20260928T060342Z",
+   "tries": 30,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空；未闭四件：R18 lvlu 枢纽（34 试",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
