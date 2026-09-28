@@ -1,0 +1,47 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T185251Z",
+ "idle_in": 10,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=2"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T143904Z.md",
+   "opened": "20260928T145022Z",
+   "tries": 24,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件：PLAN-QUEUE拍频已触发3次、产出kicks=2，队列有压待消。  \n- 未闭项一：SI1-KICK-QRING-STRESS（OI-SI1KICKQRINGSTRESS012026）经24试仍open，环应力未释放。  \n- 未闭项二：SI1-KICK-QUANT-SIM（OI-SI1KICKQUANTSIM012026092）经24试仍open，量化模拟未落。  \n\n② 应动何件（立协同不候）  \n- 应动PLAN-QUEUE双kicks件，立即拉SI2/SI0协同压入，不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步转SI2硬同步或降维重试。  \n- OI-SI1KICKQUANTSIM012026092：未闭；下一步并SI0量化锁闭，不成交则拆子项。  \n\n④ 生债一条  \n- 生债：SI1双KICK 24试未闭，债记\"跨环踢出阻塞\"一条，待清。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 2
+ }
+}
