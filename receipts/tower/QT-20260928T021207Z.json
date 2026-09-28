@@ -1,0 +1,71 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260928T021207Z",
+ "idle_in": 5,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260927T201907Z.md",
+   "opened": "20260927T202813Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REQ-SI-ALIGN-LVLU-01.md",
+   "opened": "20260927T205227Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxEX",
+   "ref": "vci-inbox:lanes/lvlu/inbox/EXEC-ORBIT-ORBIT-CAP-02-BYPASS-qfa-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORBIT-CAP-02-BYPASS-20260927T205459Z.md",
+   "opened": "20260927T210307Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-fe8b40ca.md",
+   "opened": "20260927T215014Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260927.md",
+   "opened": "20260927T215014Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxnu",
+   "ref": "vci-inbox:lanes/lvlu/inbox/nudge-20260927T2025Z-ANS-TRACK-QLV-lvlu.md",
+   "opened": "20260928T004828Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- SI1-KICK-QRING-STRESS-01：QRING压测启动卡31次。  \n- SI1-KICK-QUANT-SIM-01：量子模拟启动卡31次。  \n- REQ-SI-ALIGN-LVLU-01：SI对齐lvlu请求待回。  \n- EXEC-ORBIT-ORBIT-CAP-02-BYPASS：轨道能力02旁路执行待清。  \n- ORBIT-CAP-02-BYPASS：轨道能力02旁路策略待确。  \n- ACK-LGT-TOWER-LVLU：LGT塔台对lvlu确认待闭。  \n- AUTOASK-RING-LVLU-KEY-REASSIGN：RING-lvlu密钥重分配待触发。  \n- nudge-ANS-TRACK-QLV-lvlu：QLV-lvlu追踪答案催促待传。  \n\n②应动何件（立协同不候）  \n应动REQ-SI-ALIGN-LVLU-01、ACK-LGT-TOWER-LVLU、AUTOASK-RING-LVLU-KEY-REASSIGN、ANS-TRACK-QLV-lvlu四件，涉lvlu诉求，立即协同，不等。  \n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步SI1压测降级或释资源。  \n- OI-SI1KICKQUANTSIM012026092：未闭，下一步SI1量模环境重置。  \n- OI-vciinboxlaneslvluinboxRE：未闭，下一步跑SI-LVLU对齐并返ACK。  \n- OI-vciinboxlaneslvluinboxEX：未闭，下一步复核旁路执行日志。  \n- OI-vciinboxlaneslvluinboxOR：未闭，下一步定档旁路为补丁或回滚。  \n- OI-vciinboxlaneslvluinboxAC：未闭，下一步LGT-TOWER超时升级。  \n- OI-vciinboxlaneslvluinboxAU：未闭，下一步触发RING-LVLU密钥重分配流。  \n- OI-vciinboxlaneslvluinboxnu：未闭，下一步回传QLV-lvlu答案或重置计时。  \n\n④生债一条  \nSI1双项31次未决，lvlu对齐与密钥重分配悬置，债：今时区内强制协同或升级。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
