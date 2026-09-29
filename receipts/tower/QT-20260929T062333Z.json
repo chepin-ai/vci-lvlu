@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T062333Z",
+ "idle_in": 3,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 17,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- SI1-KICK-QRING-STRESS：QRING压测项，41试未闭。  \n- SI1-KICK-QUANT-SIM",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
