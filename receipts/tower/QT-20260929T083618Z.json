@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T083618Z",
+ "idle_in": 3,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 5,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n候件空。1.WILDQ-R20-lvlu：lvlu 诉求未决，43试。2.WILDQ-R20B-lvlu：lvlu 诉求未决，41试。3.WILDQ-R20B-LVLU-CHASE：lvlu 追索中，37试。4.PIVOT-01-ANNOUNCE：公告待发，34试。5.SI1-KICK-VINF-CHASE：VINF 链路待握，29试。6.SI1-KICK-QRING-STRESS：QRING 压测待结，5试。7.SI1-KICK-QUANT-SIM：量模仿真待敛，5试。\n\n② 应动何件  \nWILDQ-R20B-LVLU-CHASE、SI1-KICK-VINF-CHASE、SI1-KICK-QRING-STRESS、SI1-KICK-QUANT-SIM，立协同不候。\n\n③ 未闭项推进  \nOI-WILDQR20lvlu...：未闭，并版归档。  \nOI-WILDQR20Blvlu...：未闭，并入 CHASE。  \nOI-WILDQR20BLVLUCHASE01md：未闭，lvlu 侧出决议即闭。  \nOI-PIVOT01ANNOUNCE...：未闭，即发即闭。  \nOI-SI1KICKVINFCHASE...：未闭，握手转监即闭。  \nOI-SI1KICKQRINGSTRESS...：未闭，出报告即闭。  \nOI-SI1KICKQUANTSIM...：未闭，参量锁定即闭。\n\n④ 生债一条  \n生债：R20/R20B/CHASE 三线 lvlu 诉求未归一，需并线裁决。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
