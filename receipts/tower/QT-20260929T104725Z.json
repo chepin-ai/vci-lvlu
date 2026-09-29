@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T104725Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR24SATLVLU01md",
+   "ref": "WILDQ-R24-SAT-LVLU-01.md",
+   "opened": "20260929T103246Z",
+   "tries": 3,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- PIVOT-01公告项试46次未闭。\n- SI1-VINF追击项试41次未闭。\n- SI1-QRING压力项试17次未闭。\n- SI1-QUANT模拟项试17次未闭。\n- WILDQ-R24-SAT-LVLU项试3次未闭，涉lvlu卫星层诉求。\n\n② 应动何件：\n候件空，未闭五项皆应立协同不候；优先动OI-WILDQR24SATLVLU01md（lvlu诉求）及两高试次项（PIVOT-01、VINF-CHASE）。\n\n③ 未闭项推进：\n- OI-PIVOT01ANNOUNCE20260929T：未闭，下一步：触发熔断或转裁决。\n- OI-SI1KICKVINFCHASE01202609：未闭，下一步：定位VINF链路阻塞。\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：释放QRING压力资源。\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步：校验QUANT输入条件。\n- OI-WILDQR24SATLVLU01md：未闭，下一步：启动lvlu-SAT协议握手。\n\n④ 生债一条：\n高试次项空转未熔断，耗散协同算力，生债：补tries-limit熔断规则一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
