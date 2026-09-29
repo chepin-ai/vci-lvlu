@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T035737Z",
+ "idle_in": 3,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 5,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件空，无事。  \n- OI-SI1KICKQRINGSTRESS012026：SI1 QRING压力测试，29试未闭。  \n- OI-SI1KICKQUANTSIM012026092：SI1量子模拟，29试未闭。  \n- OI-WILDQR20lvlu20260929T010：WILDQ R20 lvlu诉求，19试未闭，lvlu待应。  \n- OI-WILDQR20Blvlu20260929T01：WILDQ R20B lvlu诉求，17试未闭，lvlu待应。  \n- OI-WILDQR20BLVLUCHASE01md：WILDQ R20B LVLU CHASE追猎，13试未闭，lvlu待应。  \n- OI-PIVOT01ANNOUNCE20260929T：PIVOT-01公告，10试未闭。  \n- OI-SI1KICKVINFCHASE01202609：SI1 VINF追猎，5试未闭。  \n\n② 应动何件（立协同不候）  \n- OI-WILDQR20BLVLUCHASE01md（lvlu核心追猎）  \n- OI-SI1KICKQRINGSTRESS012026（29试阻塞）  \n- OI-SI1KICKQUANTSIM012026092（29试阻塞）  \n\n③ 未闭项推进（每项一句）  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步降压或转SI0分流重试。  \n- OI-SI1KICKQUANTSIM012026092：未闭，下一步修参后第30次试。  \n- OI-WILDQR20lvlu20260929T010：未闭，下一步回执lvlu状态并推R20。  \n- OI-WILDQR20Blvlu20260929T01：未闭，下一步合入R20B lvlu补丁。  \n- OI-WILDQR20BLVLUCHASE01md：未闭，下一步执行CHASE协议闭环lvlu。  \n- OI-PIVOT01ANNOUNCE20260929T：未闭，下一步定档播报或转静默。  \n- OI-SI1KICKVINFCHASE01202609：未闭，下一步加速VINF追猎至收敛。  \n\n④ 生债一条  \nlvlu三线挂起超期未应，生债：迟滞响应债×1，限今日内消债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
