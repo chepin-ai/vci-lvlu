@@ -1,0 +1,60 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T101227Z",
+ "idle_in": 11,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260929T095914Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 13,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件 SI1-KICK-QUANT-SIM-01 新入，涉 lvlu 量化模拟诉求，已录。\n\n②应动何件：\n- 立协候件 SI1-KICK-QUANT-SIM，不候；其与未闭项 OI-SI1KICKQUANTSIM 同构，须并轨防裂。\n\n③未闭项推进：\n- OI-WILDQR20BLVLUCHASE01md：45试未闭，下一步切备用信道续追 lvlu。\n- OI-PIVOT01ANNOUNCE20260929T：42试未闭，下一步强推或降级静默。\n- OI-SI1KICKVINFCHASE01202609：37试未闭，下一步回查 VINF 握手断点。\n- OI-SI1KICKQRINGSTRESS012026：13试未闭，下一步清 QRING 积压。\n- OI-SI1KICKQUANTSIM012026092：13试未闭，下一步并轨候件重跑收敛。\n\n④生债一条：\n- 债：QUANT-SIM 并轨收敛后须回写 lvlu 线完整日志，逾期记漂移。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
