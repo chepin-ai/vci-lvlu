@@ -1,0 +1,57 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T021628Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空；未闭六项，涉 lvlu 三宗（WILDQ-R20 lvlu、R20B lvlu、lvlu-CHASE）。\n\n② 应动何件：立协同 SI1-KICK 双项（21次卡死）、WILDQ lvlu 三联、PIVOT-01 公告，不候。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：清障 Q 环压测，强制重跑或降级。\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步：修量子模拟环境/参数，重启。\n- OI-WILDQR20lvlu20260929T010：未闭，下一步：R20 lvlu 握手对齐，确认链路。\n- OI-WILDQR20Blvlu20260929T01：未闭，下一步：R20B lvlu 协议对表，消偏差。\n- OI-WILDQR20BLVLUCHASE01md：未闭，下一步：lvlu 追踪收网，确认闭环。\n- OI-PIVOT01ANNOUNCE20260929T：未闭，下一步：签发 PIVOT-01 并全网广播。\n\n④ 生债：SI1 双项 21 次挂起，债入主线，待主控级清障。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
