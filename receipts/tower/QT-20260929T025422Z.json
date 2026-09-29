@@ -1,0 +1,79 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T025422Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=5 kicks=2"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 5,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件PLAN-QUEUE：拍5踢2，律吕不稳。  \n- SI1-KICK-QRING-STRESS：环面应力拍频未闭，试24。  \n- SI1-KICK-QUANT-SIM：量子模拟拍频未闭，试24。  \n- WILDQ-R20-lvlu：lvlu线R20未闭，试14，录lvlu应激诉求。  \n- WILDQ-R20B-lvlu：lvlu线R20B未闭，试12，录lvlu律吕校准诉求。  \n- WILDQ-R20B-LVLU-CHASE：lvlu追逃态未闭，试8，录lvlu锁定诉求。  \n- PIVOT-01-ANNOUNCE：枢纽宣告未闭，试5。  \n\n② 应动何件  \nWILDQ-R20B-LVLU-CHASE-01，CHASE锁立协不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS：未闭/降环面应力阈值再拍。  \n- OI-SI1KICKQUANTSIM：未闭/重置量子初态交SI1复核。  \n- OI-WILDQR20lvlu：未闭/R20升频并入R20B流。  \n- OI-WILDQR20Blvlu：未闭/R20B律吕对齐后并CHASE。  \n- OI-WILDQR20BLVLUCHASE：未闭/启动lvlu逃逸态捕获协议。  \n- OI-PIVOT01ANNOUNCE：未闭/发SI0核。  \n\n④ 生债一条  \n生SI2拍频稳态债一条，限今次闭。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 5,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 2
+ }
+}
