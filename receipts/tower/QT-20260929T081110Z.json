@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T081110Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- WILDQ-R20-lvlu：lvlu野外量子中继R20，40试悬置。  \n- WILDQ-R20B-lvlu：lvlu中继R20B分支，38试未决。  \n- WILDQ-R20B-LVLU-CHASE-01：lvlu追踪档案，34试待回。  \n- PIVOT-01-ANNOUNCE：枢轴公告，31试待解码。  \n- SI1-KICK-VINF-CHASE-01：VINF追踪，26试需接。  \n- SI1-KICK-QRING-STRESS-01：量子环应力测试，2试新爆。  \n- SI1-KICK-QUANT-SIM-01：量子模拟，2试待协。  \n\n② 应动何件  \n应动 OI-WILDQR20lvlu20260929T010（最老lvlu核心）并协双 SI1-KICK 项，立协同不候。  \n\n③ 未闭项推进  \n- OI-WILDQR20lvlu：未闭；直插R20锚点，重启lvlu握手。  \n- OI-WILDQR20Blvlu：未闭；并行压测R20B，回传lvlu态。  \n- OI-WILDQR20BLVLUCHASE：未闭；追录CHASE轨迹，补确认帧。  \n- OI-PIVOT01ANNOUNCE：未闭；解码公告，判lvlu转向。  \n- OI-SI1KICKVINFCHASE：未闭；接棒VINF追踪，弥合26试缺口。  \n- OI-SI1KICKQRINGSTRESS：未闭；注入应力协议，启QRING共振。  \n- OI-SI1KICKQUANTSIM：未闭；展开量子模拟，返初态快照。  \n\n④ 生债  \n生债：本周期内必闭lvlu-R20主握手环，逾期记罚。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
