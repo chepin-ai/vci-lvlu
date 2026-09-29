@@ -1,0 +1,62 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T020937Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 收 PIVOT-01 公告一件。  \n- 未闭 SI1-KICK-QRING-STRESS（tries 20）一件。  \n- 未闭 SI1-KICK-QUANT-SIM（tries 20）一件。  \n- 未闭 WILDQ-R20-lvlu（涉 lvlu，tries 10）一件。  \n- 未闭 WILDQ-R20B-lvlu（涉 lvlu，tries 8）一件。  \n- 未闭 WILDQ-R20B-LVLU-CHASE（涉 lvlu，tries 4）一件。  \n\n②应动何件  \n- 立动 PIVOT-01-ANNOUNCE（候件新到，立解析）。  \n- 立动 WILDQ-R20B-LVLU-CHASE（lvlu 诉求，即刻协同捕手）。  \n- 并催 SI1-KICK 双项（20 次悬置，立并线升压）。  \n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭/转 SI1 线排查 QRING 压力根因或重置握手。  \n- OI-SI1KICKQUANTSIM012026092：未闭/要求 SI1 线回传量子模拟快照或终止死循环。  \n- OI-WILDQR20lvlu20260929T010：未闭/lvlu 线启用 R20 降级协议自主解析。  \n- OI-WILDQR20Blvlu20260929T01：未闭/lvlu 线主动向 R20B 节点发探测握手。  \n- OI-WILDQR20BLVLUCHASE01md：未闭/lvlu 线即刻执行 CHASE 捕获，不候。  \n- OI-PIVOT01ANNOUNCE20260929T：未闭/解析 PIVOT-01 指令后分发并标记已阅。  \n\n④生债一条  \n- R20-lvlu 链路缺 SI0 级自动熔断与超阈升压通道，待补。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
