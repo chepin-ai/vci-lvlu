@@ -1,0 +1,62 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T093525Z",
+ "idle_in": 8,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 10,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- WILDQ-R20B-lvlu：lvlu于R20B的WILDQ协议锚定诉求，46试未闭。  \n- WILDQ-R20B-LVLU-CHASE：lvlu对R20B的CHASE追索诉求，42试未闭。  \n- PIVOT-01-ANNOUNCE：PIVOT-01公告确收待结，39试未闭。  \n- SI1-KICK-VINF-CHASE：SI1-VINF追索协同待结，34试未闭。  \n- SI1-KICK-QRING-STRESS：QRING应力测试待结，10试未闭。  \n- SI1-KICK-QUANT-SIM：QUANT-SIM结算待结，10试未闭。  \n\n② 应动何件  \n全六项立协同不候，优先lvlu双件（WILDQ-R20B、CHASE-R20B）。  \n\n③ 未闭项推进  \n- OI-WILDQR20Blvlu：未闭/锚定R20B协议回执。  \n- OI-WILDQR20BLVLUCHASE：未闭/提交lvlu追索响应。  \n- OI-PIVOT01ANNOUNCE：未闭/完成PIVOT确收。  \n- OI-SI1KICKVINFCHASE：未闭/协同VINF闭环。  \n- OI-SI1KICKQRINGSTRESS：未闭/输出应力结果。  \n- OI-SI1KICKQUANTSIM：未闭/输出模拟结算。  \n\n④ 生债一条  \n生债：SI2/SI0分身临六项，生协同债一分，即刻分形不候。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
