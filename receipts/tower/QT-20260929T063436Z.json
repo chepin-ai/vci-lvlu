@@ -1,0 +1,78 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T063436Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 18,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- 候件PLAN-QUEUE：已拍fired=1，kicks=0，待kick激活。\n- OI-SI1KICKQRINGSTRESS：量子环应力，42试卡死。\n- OI-SI1KICKQUANTSIM：量子模拟，42试卡死。\n- OI-WILDQR20lvlu：野问R20，32试，涉lvlu。\n- OI-WILDQR20Blvlu：野问R20B，30试，涉lvlu。\n- OI-WILDQR20BLVLUCHASE：R20B lvlu追踪，26试，涉lvlu诉求未收。\n- OI-PIVOT01ANNOUNCE：枢纽宣告，23试空转。\n- OI-SI1KICKVINFCHASE：VINF追赶，18试未闭。\n\n② 应动何件（立协同不候）\nPLAN-QUEUE（立即补kick）、SI1双项（协同重置）、WILDQ-R20B-LVLU-CHASE（lvlu本体立收）。\n\n③ 未闭项推进\n- SI1KICKQRINGSTRESS：否；SI2下压重置。\n- SI1KICKQUANTSIM：否；跨线联调重启。\n- WILDQR20lvlu：否；回传确认消计。\n- WILDQR20Blvlu：否；B通道自校。\n- WILDQR20BLVLUCHASE：否；CHASE限次收束。\n- PIVOT01ANNOUNCE：否；决行或作废。\n- SI1KICKVINFCHASE：否；补量追赶。\n\n④ 生债一条\n生债：lvlu线欠一次R20B收束kick与一次SI1双项代偿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
