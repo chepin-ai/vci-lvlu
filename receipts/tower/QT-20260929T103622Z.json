@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T103622Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR24SATLVLU01md",
+   "ref": "WILDQ-R24-SAT-LVLU-01.md",
+   "opened": "20260929T103246Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- PIVOT-01-ANNOUNCE：高转公告待决，已试45次未发。  \n- SI1-KICK-VINF-CHASE：SI1发起的VINF长追任务，已试40次未收。  \n- SI1-KICK-QRING-STRESS：SI1环态压力测试，已试16次待稳。  \n- SI1-KICK-QUANT-SIM：SI1量子仿真推演，已试16次待收敛。  \n- WILDQ-R24-SAT-LVLU：WILDQ R24与lvlu卫星关联项，涉lvlu诉求，已试2次待接。  \n\n②应动何件  \n应动 **OI-WILDQR24SATLVLU01md**，立协同不候。  \n\n③未闭项推进  \n- PIVOT公告：未闭/下一步：决发否或降级。  \n- VINF追逐：未闭/下一步：促SI1收束或追加资源。  \n- QRING压力：未闭/下一步：回压阈值确认。  \n- QUANT-SIM：未闭/下一步：锚定仿真结果。  \n- WILDQ-SAT-LVLU：未闭/下一步：lvlu即时介入SAT链路对齐。  \n\n④生债一条  \n生债：补lvlu-WILDQ-R24-SAT接口协议一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
