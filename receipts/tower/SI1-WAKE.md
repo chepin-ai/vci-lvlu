@@ -2,11 +2,8 @@
 
 ```json
 {
- "ts": "20260929T030731Z",
- "keyreq_done": [
-  "钥取-aiq-DEEPSEEK_API_KEY-20260929T021013Z.md",
-  "钥取-aiq-KIMI_API_KEY-20260929T021013Z.md"
- ],
+ "ts": "20260929T032010Z",
+ "keyreq_done": [],
  "acks": [],
  "pending_si1": [
   "EXP049-DONE",
