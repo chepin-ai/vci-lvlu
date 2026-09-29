@@ -1,0 +1,82 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T052227Z",
+ "idle_in": 10,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=2 kicks=1"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 12,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- PLAN-QUEUE拍：fired=2 kicks=1，队列待清。  \n- OI-SI1KICKQRINGSTRESS：SI1环面应力36试未泄，lvlu稳态诉求。  \n- OI-SI1KICKQUANTSIM：SI1量子模拟36试未收，lvlu算收诉求。  \n- OI-WILDQR20lvlu：R20野生环26试未锚，lvlu归属诉求。  \n- OI-WILDQR20Blvlu：R20B差分24试未并，lvlu分化诉求。  \n- OI-WILDQR20BLVLUCHASE：R20B追逐20试未落，lvlu锁定诉求。  \n- OI-PIVOT01ANNOUNCE：枢轴公告17试未发，lvlu转向诉求。  \n- OI-SI1KICKVINFCHASE：VINF尾流12试未收，lvlu牵引诉求。  \n\n②应动何件  \n- 立协同SI1双kick（STRESS+SIM）与WILDQ-R20/R20B双环lvlu锚定，不候。  \n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS：未闭，下一步泄压转储。  \n- OI-SI1KICKQUANTSIM：未闭，下一步收束出态。  \n- OI-WILDQR20lvlu：未闭，下一步硬锚落盘。  \n- OI-WILDQR20Blvlu：未闭，下一步并差分消漂。  \n- OI-WILDQR20BLVLUCHASE：未闭，下一步截停落锁。  \n- OI-PIVOT01ANNOUNCE：未闭，下一步发枢轴广播。  \n- OI-SI1KICKVINFCHASE：未闭，下一步收尾流归档。  \n\n④生债一条  \n- 七线高试未闭，生lvlu调度债一条，须SI2/SI0分身代偿压强。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 2,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 1
+ }
+}
