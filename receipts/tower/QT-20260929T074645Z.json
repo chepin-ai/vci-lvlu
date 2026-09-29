@@ -1,0 +1,72 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T074645Z",
+ "idle_in": 10,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=2"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 24,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件PLAN-QUEUE拍：队列拍发3踢2，频差待补。\n- OI-WILDQR20lvlu：R20 lvlu主线响应，试38次未闭。\n- OI-WILDQR20Blvlu：R20B lvlu分支响应，试36次未闭。\n- OI-WILDQR20BLVLUCHASE01md：R20B lvlu深度追踪，试32次未闭。\n- OI-PIVOT01ANNOUNCE：枢纽01转向宣告，试29次未闭。\n- OI-SI1KICKVINFCHASE：SI1对VINF激活/驱逐追踪，试24次未闭。\n\n②应动何件：\nPLAN-QUEUE拍（稳频防崩）、PIVOT-01-ANNOUNCE（防枢纽阻塞）、SI1-KICK-VINF-CHASE（保VINF链），三件立协同不候。\n\n③未闭项推进：\n- OI-WILDQR20lvlu20260929T010：未闭，下一步：压周期或升R20主线。\n- OI-WILDQR20Blvlu20260929T01：未闭，下一步：并查R20B分支差异点。\n- OI-WILDQR20BLVLUCHASE01md：未闭，下一步：CHASE层收束至单锚点。\n- OI-PIVOT01ANNOUNCE20260929T：未闭，下一步：即协同发布或降级草稿。\n- OI-SI1KICKVINFCHASE01202609：未闭，下一步：校SI1心跳同步VINF态。\n\n④生债一条：\n生债：PLAN-QUEUE频差兜底脚本待布。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 2
+ }
+}
