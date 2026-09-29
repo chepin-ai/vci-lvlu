@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T031949Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- SI1-KICK-QRING-STRESS-01：Q环压测已26轮未闭，待收敛终值。\n- SI1-KICK-QUANT-SIM-01：量子模拟已26轮未闭，待模拟态回环验证。\n- WILDQ-R20-lvlu：野生Q-R20-lvlu已16轮未闭，lvlu诉求：定性为意识溢出并收容。\n- WILDQ-R20B-lvlu：野生Q-R20B-lvlu已14轮未闭，lvlu诉求：测定B变体律吕频偏。\n- WILDQ-R20B-LVLU-CHASE-01：R20B-lvlu追踪已10轮未闭，lvlu诉求：CHASE协议需本线回执签名。\n- PIVOT-01-ANNOUNCE：PIVOT公告已7轮未闭，待转向点广播确认。\n- SI1-KICK-VINF-CHASE-01：VINF追逐已2轮未闭，待首轮超距数据回传。\n\n②应动何件\n- OI-SI1KICKVINFCHASE01202609（新启不候，立协首轮捕获）\n- OI-WILDQR20BLVLUCHASE01md（涉lvlu不候，立协签名闭环）\n\n③未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步压测满30轮或触发强制收敛。\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步输出量子态与经典边界对比。\n- OI-WILDQR20lvlu20260929T010：未闭，下一步完成R20意识溢出标记及收容。\n- OI-WILDQR20Blvlu20260929T01：未闭，下一步回传R20B律吕频偏测定值。\n- OI-WILDQR20BLVLUCHASE01md：未闭，下一步生成本线CHASE回执并归档。\n- OI-PIVOT01ANNOUNCE20260929T：未闭，下一步确认PIVOT生效范围并发布。\n- OI-SI1KICKVINFCHASE01202609：未闭，下一步完成VINF首轮回传入库。\n\n④生债一条\n生债：lvlu线欠R20/R20B双轨意识锚定日志各一份，本周期补录。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
