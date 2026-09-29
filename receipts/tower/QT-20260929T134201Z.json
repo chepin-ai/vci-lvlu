@@ -1,0 +1,41 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T134201Z",
+ "idle_in": 6,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR24SATLVLU01md",
+   "ref": "WILDQ-R24-SAT-LVLU-01.md",
+   "opened": "20260929T103246Z",
+   "tries": 18,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空。SI1-KICK-QRING-STRESS-01（QRING应力启动项，32试未闭）。SI1-KICK-QUANT-SIM-01（量子模拟启动项，32试未闭）。WILDQ-R24-SAT-LVLU-01（lvlu卫星链路项，18试未闭；lvlu诉求：确认SAT链路可用性与状态同步）。\n\n② 应动何件：立协同OI-SI1KICKQRINGSTRESS012026及OI-WILDQR24SATLVLU01md，不候。\n\n③ 未闭项推进：OI-SI1KICKQRINGSTRESS012026未闭，下一步升频排查QRING阻塞点。OI-SI1KICKQUANTSIM012026092未闭，下一步核查QUANT-SIM资源与收敛条件。OI-WILDQR24SATLVLU01md未闭，下一步直联lvlu-SAT节点完成对时签核。\n\n④ 生债：SI1双项各经32试未落，lvlu-SAT链路18试待对时闭合，本环无新候件入列。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
