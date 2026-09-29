@@ -1,0 +1,78 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T084840Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 6,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- PLAN-QUEUE拍已fired=1、kicks=0，队列待kick。\n- OI-WILDQR20lvlu…010：lvlu WildQ R20主项试44次未闭。\n- OI-WILDQR20Blvlu…01：lvlu WildQ R20B副项试42次未闭。\n- OI-WILDQR20BLVLUCHASE01md：lvlu R20B Chase试38次未闭。\n- OI-PIVOT01ANNOUNCE…29T：Pivot-01公告试35次未闭。\n- OI-SI1KICKVINFCHASE…609：SI1 Kick VINF Chase试30次未闭。\n- OI-SI1KICKQRINGSTRESS…26：SI1 Kick QRING Stress试6次未闭。\n- OI-SI1KICKQUANTSIM…092：SI1 Kick Quant Sim试6次未闭。\n\n② 应动何件：\n立kick PLAN-QUEUE拍；协同SI1双Kick项（QRING Stress + Quant Sim）并查VINF Chase瓶颈。\n\n③ 未闭项推进：\n- OI-WILDQR20lvlu…010：未闭，提级/断点重设。\n- OI-WILDQR20Blvlu…01：未闭，并行降试或合并主项。\n- OI-WILDQR20BLVLUCHASE01md：未闭，输出chase结论或转存。\n- OI-PIVOT01",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
