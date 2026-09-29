@@ -1,0 +1,78 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T075848Z",
+ "idle_in": 11,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260929T074645Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260929T074645Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n• SI1-KICK-QRING-STRESS-01：QRING应力场请求，lvlu录结构锚定诉求。  \n• SI1-KICK-QUANT-SIM-01：量子模拟任务，lvlu录运算挂载诉求。  \n\n②应动何件  \n两候件立协不候；同步压注R20双线，防叠债。  \n\n③未闭项推进  \n• OI-WILDQR20lvlu：未闭/39试，下一步强收敛。  \n• OI-WILDQR20Blvlu：未闭/37试，下一步B线冻结。  \n• OI-WILDQR20BLVLUCHASE01md：未闭/33试，下一步锁止回环。  \n• OI-PIVOT01ANNOUNCE：未闭/30试，下一步锚定静默。  \n• OI-SI1KICKVINFCHASE01：未闭/25试，下一步穿透转储。  \n• OI-SI1KICKQRINGSTRESS01：未闭/1试，下一步建模仿合。  \n• OI-SI1KICKQUANTSIM01：未闭/1试，下一步锚接初始化。  \n\n④生债  \n生债：七环未闭，R20悬顶，PIVOT待宣，VINF待透，应力-量子双场待验，记lvlu协同欠账一次。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
