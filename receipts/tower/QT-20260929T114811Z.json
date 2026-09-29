@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T114811Z",
+ "idle_in": 6,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR24SATLVLU01md",
+   "ref": "WILDQ-R24-SAT-LVLU-01.md",
+   "opened": "20260929T103246Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n候件空；VINFCHASE 46试未闭；QRINGSTRESS 22试未闭；QUANTSIM 22试未闭；WILDQ-R24-SAT-LVLU（lvlu诉求）8试未闭，已录。  \n\n② 应动何件  \n应动VINFCHASE（46试阻塞）与WILDQ-R24-SAT-LVLU（lvlu诉求件），立协同不候；余二件并协。  \n\n③ 未闭项推进  \nOI-SI1KICKVINFCHASE01202609：未闭，下一步熔断或转SI2根因协查。  \nOI-SI1KICKQRINGSTRESS012026：未闭，下一步复核QRING阈值与握手日志。  \nOI-SI1KICKQUANTSIM012026092：未闭，下一步确认量子模拟实例与kick链路。  \nOI-WILDQR24SATLVLU01md：未闭，下一步lvlu线专项收束。  \n\n④ 生债一条  \nkick重试46试无熔断，空转耗信，记机制债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
