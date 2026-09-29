@@ -1,0 +1,68 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T095914Z",
+ "idle_in": 10,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=2 kicks=1"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 12,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件PLAN-QUEUE拍：fired=2/kicks=1，lvlu线队列调度异动。\n- OI-WILDQR20BLVLUCHASE01md：WILDQ-R20B-LVLU-CHASE追猎野生量子环R20B，44试未闭，涉lvlu核心诉求。\n- OI-PIVOT01ANNOUNCE：枢纽公告项，41试未闭。\n- OI-SI1KICKVINFCHASE01：VINF无穷追猎，36试未闭。\n- OI-SI1KICKQRINGSTRESS01：量子环应力，12试未闭。\n- OI-SI1KICKQUANTSIM01：量子模拟，12试未闭。\n\n②应动何件：\n- 立协PLAN-QUEUE拍补位，并推WILDQ-R20B-LVLU-CHASE-01md，不候。\n\n③未闭项推进：\n- OI-WILDQR20BLVLUCHASE01md：未闭，SI0直插R20B环核追猎。\n- OI-PIVOT01ANNOUNCE20260929T：未闭，向lvlu线广播枢纽公告。\n- OI-SI1KICKVINFCHASE01202609：未闭，重采VINF无穷锚点。\n- OI-SI1KICKQRINGSTRESS012026：未闭，压测QRING应力阈值。\n- OI-SI1KICKQUANTSIM012026092：未闭，量模拟与QRING对表收束。\n\n④生债一条：\n- SI2/SI0欠SI1五开项联合清零一次。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 2,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 1
+ }
+}
