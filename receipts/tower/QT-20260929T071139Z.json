@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T071139Z",
+ "idle_in": 7,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 21,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- SI1-KICK-QRING-STRESS：QRING压测kick，待闭环。\n- SI1-KICK-QUANT-SIM：量仿kick，待收敛。\n- WILDQ-R20-lvlu：lvlu线R20诉求，待录态。\n- WILDQ-R20B-lvlu：lvlu线R20B差分诉求，待补齐。\n- WILDQ-R20B-LVLU-CHASE：lvlu线CHASE追踪，待达端ACK。\n- PIVOT-01-ANNOUNCE：全局转向公告，待发。\n- SI1-KICK-VINF-CHASE：VINF协议CHASE，待握手落地。\n\n②应动何件（立协同不候）\n应动：PIVOT-01、VINF-CHASE、lvlu三连（R20/R20B/CHASE）。\n\n③未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭/回传压测数据。\n- OI-SI1KICKQUANTSIM012026092：未闭/迭代至收敛。\n- OI-WILDQR20lvlu20260929T010：未闭/录lvlu态入R20。\n- OI-WILDQR20Blvlu20260929T01：未闭/补R20B差分锁。\n- OI-WILDQR20BLVLUCHASE01md：未闭/追CHASE至lvlu端ACK。\n- OI-PIVOT01ANNOUNCE20260929T：未闭/全网广播收确认戳。\n- OI-SI1KICKVINFCHASE01202609：未闭/VINF协议握手并绑定。\n\n④生债一条\nlvlu线承债：R20-R20B三件诉求今日必收端ACK，逾期升SI1仲裁。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
