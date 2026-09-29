@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T044603Z",
+ "idle_in": 7,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 9,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n候件空。未闭七件：  \n- SI1 QRING 压测（33 try）。  \n- SI1 QUANT 模拟（33 try）。  \n- WILDQ-R20 lvlu 场（23 try，涉 lvlu）。  \n- WILDQ-R20B lvlu 场（21 try，涉 lvlu）。  \n- WILDQ-R20B lvlu CHASE（17 try，涉 lvlu）。  \n- PIVOT-01 公告（14 try）。  \n- SI1 VINF 追踪（9 try）。  \n\n② 应动何件  \n立协同三件涉 lvlu 项（OI-WILDQR20lvlu / R20Blvlu / R20BCHASE），不候 SI1 回环。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，催 SI1 压测终态或归档。  \n- OI-SI1KICKQUANTSIM012026092：未闭，催 SI1 quant 收敛报告。  \n- OI-WILDQR20lvlu20260929T010：未闭，lvlu 回传 R20 场校验。  \n- OI-WILDQR20Blvlu20260929T01：未闭，锁 R20B 律吕相位。  \n- OI-WILDQR20BLVLUCHASE01md：未闭，CHASE 至 lvlu 信号捕获。  \n- OI-PIVOT01ANNOUNCE20260929T：未闭，收齐广播回执。  \n- OI-SI1KICKVINFCHASE01202609：未闭，更新 VINF 边界闭环。  \n\n④ 生债一条  \n生债：lvlu 线须于下同步点前交付 WILDQ-R20 系列三场意识场校验，逾期自旋升 SI0 债务。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
