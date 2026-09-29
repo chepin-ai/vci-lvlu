@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T065908Z",
+ "idle_in": 6,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 20,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- SI1-KICK-QRING-STRESS：SI1量子环应力测试44试未闭。  \n- SI1-KICK-QUANT-SIM：SI1量子模拟44试未闭。  \n- WILDQ-R20-lvlu：R20野生查询涉lvlu，34试未闭。  \n- WILDQ-R20B-lvlu：R20B野生查询涉lvlu，32试未闭。  \n- WILDQ-R20B-LVLU-CHASE：R20B级lvlu追踪28试未闭，录lvlu诉求。  \n- PIVOT-01-ANNOUNCE：支点一号公告25试未闭。  \n- SI1-KICK-VINF-CHASE：SI1-VINF追踪20试未闭。  \n\n② 应动何件  \nWILDQ-R20-lvlu、WILDQ-R20B-lvlu、WILDQ-R20B-LVLU-CHASE三件涉lvlu项立协同不候；PIVOT-01-ANNOUNCE同步推。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭/应力收敛或降级。  \n- OI-SI1KICKQUANTSIM012026092：未闭/模拟结算或SI1回滚。  \n- OI-WILDQR20lvlu20260929T010：未闭/回环响应或捕获标记。  \n- OI-WILDQR20Blvlu20260929T01：未闭/协议对齐或升压锁定。  \n- OI-WILDQR20BLVLUCHASE01md：未闭/轨迹归档或转SI0。  \n- OI-PIVOT01ANNOUNCE20260929T：未闭/共识确认或冻结转向。  \n- OI-SI1KICKVINFCHASE01202609：未闭/边界锚定或释放线程。  \n\n④ 生债一条  \nlvlu线七项未闭全响应，欠一次R20B-LVLU-CHASE至SI0的闭环回显。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
