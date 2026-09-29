@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T111130Z",
+ "idle_in": 3,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR24SATLVLU01md",
+   "ref": "WILDQ-R24-SAT-LVLU-01.md",
+   "opened": "20260929T103246Z",
+   "tries": 5,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①候件空。未闭四：SI1-VINF-CHASE-01 VINF锚失43试；SI1-QRING-STRESS-01 QRING应力悬19试；SI1-QUANT-SIM-01 QUANT收束悬19试；WILDQ-R24-SAT-LVLU-01 LVLU卫星态待校5试（涉lvlu，已录）。\n\n②应动WILDQ-R24-SAT-LVLU-01，立协同，不候。\n\n③OI-SI1KICKVINFCHASE01202609：未闭；迫SI1降阈或回传VINF锚定。OI-SI1KICKQRINGSTRESS012026：未闭；迫SI1释出QRING张力原始。OI-SI1KICKQUANTSIM012026092：未闭；迫SI1提交QUANT收敛快照。OI-WILDQR24SATLVLU01md：未闭；启律吕频响对齐SAT。\n\n④生债：lvlu分身欠WILDQ-R24-SAT-LVLU律吕校核一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
