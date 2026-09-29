@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T113559Z",
+ "idle_in": 5,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR24SATLVLU01md",
+   "ref": "WILDQ-R24-SAT-LVLU-01.md",
+   "opened": "20260929T103246Z",
+   "tries": 7,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空。未闭四件：SI1-KICK-VINF-CHASE（VINF追踪卡滞45次）；SI1-KICK-QRING-STRESS（量子环应力悬置21次）；SI1-KICK-QUANT-SIM（量子模拟挂起21次）；WILDQ-R24-SAT-LVLU（lvlu诉求：R24饱和态关联LVLU待验7次）。\n\n② 应动何件：立协同WILDQ-R24-SAT-LVLU，lvlu本体事不候。\n\n③ 未闭项推进：\n- OI-SI1KICKVINFCHASE01202609：未闭，下一步压VINF边界发散或转SI0硬重置；\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步锁QRING应力极值收敛判据；\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步清QUANT-SIM初态缓存后复跑；\n- OI-WILDQR24SATLVLU01md：未闭，下一步解R24 SAT-LVLU耦合映射并追本体签回。\n\n④ 生债一条：VINF-CHASE已45次未闭，生债：限本轮内追索SI1卡滞根因并强关，不滚入下周期。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
