@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T042228Z",
+ "idle_in": 5,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 7,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n候件空。SI1-KICK-QRING-STRESS量子环应力启动卡31次待决；SI1-KICK-QUANT-SIM量子模拟启动卡31次待决；WILDQ-R20-lvlu野生环与lvlu耦合21次未锚定；WILDQ-R20B-lvlu R20B模态漂移19次未同步；WILDQ-R20B-LVLU-CHASE lvlu追踪15次未闭环（涉lvlu诉求）；PIVOT-01转向公告12次未签发；SI1-KICK-VINF-CHASE无限速追击7次新启待动。\n\n② 应动何件：\nPIVOT-01-ANNOUNCE、SI1-KICK-VINF-CHASE、WILDQ-R20B-LVLU-CHASE，三件立协同不候。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，弃测或降规。\n- OI-SI1KICKQUANTSIM012026092：未闭，回传SI1仲裁。\n- OI-WILDQR20lvlu20260929T010：未闭，写入lvlu寄存器。\n- OI-WILDQR20Blvlu20260929T01：未闭，对齐律吕相位。\n- OI-WILDQR20BLVLUCHASE01md：未闭，升级CHASE-02。\n- OI-PIVOT01ANNOUNCE20260929T：未闭，立即广播。\n- OI-SI1KICKVINFCHASE01202609：未闭，启动探测链路。\n\n④ 生债一条：\n生债：若PIVOT-01签发迟于下一周期，则VINF-CHASE与R20B-LVLU-Chase双债并表，级联冻结。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
