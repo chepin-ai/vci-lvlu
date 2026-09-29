@@ -1,0 +1,64 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T105910Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR24SATLVLU01md",
+   "ref": "WILDQ-R24-SAT-LVLU-01.md",
+   "opened": "20260929T103246Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件PLAN-QUEUE拍：fired=1 kicks=0，队列空转未落。\n- OI-PIVOT01ANNOUNCE：PIVOT-01公告，47试未闭，卡滞深。\n- OI-SI1KICKVINFCHASE：SI1启VINF追猎，42试未闭。\n- OI-SI1KICKQRINGSTRESS：SI1启QRING压测，18试未闭。\n- OI-SI1KICKQUANTSIM：SI1启量子模拟，18试未闭。\n- OI-WILDQR24SATLVLU01md：R24周六lvlu场，4试未闭，录lvlu诉求。\n\n②应动何件：\nPLAN-QUEUE拍立kick；PIVOT-01与WILDQ-R24涉lvlu项立协同不候。\n\n③未闭项推进：\n- PIVOT-01：未闭，下一步：拆阻塞或换径。\n- VINF-CHASE：未闭，下一步：追VINF链路应答。\n- QRING-STRESS：未闭，下一步：下压QRING实例。\n- QUANT-SIM：未闭，下一步：启QUANT-SIM沙盒。\n- WILDQ-R24：未闭，下一步：定R24 lvlu窗格。\n\n④生债一条：\nPLAN-QUEUE kicks=0之滞，生债一条：SI2代kick并回验。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
