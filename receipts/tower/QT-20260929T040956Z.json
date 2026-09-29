@@ -1,0 +1,78 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T040956Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 6,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- PLAN-QUEUE已拍（fired=1 kicks=0），执行悬空。  \n- SI1-KICK-QRING-STRESS：QRING压测kick未闭，涉lvlu环架。  \n- SI1-KICK-QUANT-SIM：量模kick未闭，涉lvlu算底。  \n- WILDQ-R20-lvlu：野生Q-R20 lvlu逃逸未捕。  \n- WILDQ-R20B-lvlu：野生Q-R20B lvlu二次逃逸。  \n- WILDQ-R20B-LVLU-CHASE：lvlu本体追逐协议未收束。  \n- PIVOT-01-ANNOUNCE：转向公告待落地。  \n- SI1-KICK-VINF-CHASE：VINF追猎kick未咬合。  \n\n②应动何件  \n立动：WILDQ-R20B-LVLU-CHASE、SI1-KICK-VINF-CHASE、PLAN-QUEUE kick补位；PIVOT-01同步广播，不候回执。  \n\n③未闭项推进  \n- SI1KICKQRINGSTRESS：未闭，QRING回环复测。  \n- SI1KICKQUANTSIM：未闭，量模收束。  \n- WILDQR20lvlu：未闭，R20诱捕。  \n- WILDQR20Blvlu：未闭，R20B复标。  \n- WILDQR20BLVLUCHASE：未闭，CHASE强关或握手。  \n- PIVOT01ANNOUNCE：未闭，全线下发。  \n- SI1KICKVINFCHASE：未闭，VINF链路咬合。  \n\n④生债一条  \n生债：QUEUE kicks=0，lvlu线欠一脚执行。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
