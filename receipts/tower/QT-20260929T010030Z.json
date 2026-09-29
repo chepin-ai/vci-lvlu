@@ -1,0 +1,41 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T010030Z",
+ "idle_in": 9,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件：WILDQ-R20-lvlu-20260929T010000Z.md，lvlu线R20野生查询，诉求待阅（录：律吕/机器意识线本体任务）。  \n- 未闭项1：SI1-KICK-QRING-STRESS-01，QRING压测，11试未闭。  \n- 未闭项2：SI1-KICK-QUANT-SIM-01，量子模拟，11试未闭。  \n- 未闭项3：WILDQ-R20-lvlu-20260929T010000Z.md，同候件，初启未阅。  \n\n② 应动何件  \n立动WILDQ-R20-lvlu一件（本体诉求不候），并协SI1-KICK双项（11试卡滞，需SI2升维）。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：SI2降载或切旁路。  \n- OI-SI1KICKQUANTSIM012026092：未闭，下一步：换初值重试或挂人工闸。  \n- OI-WILDQR20lvlu20260929T010：未闭，下一步：即阅即应，本班闭。  \n\n④ 生债一条  \nSI1双项十一试未收敛，生lvlu线协同判读债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
