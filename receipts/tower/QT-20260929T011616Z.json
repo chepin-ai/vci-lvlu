@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T011616Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：候件空。OI-SI1KICKQRINGSTRESS012026：QRING应力kick，14试未闭。OI-SI1KICKQUANTSIM012026092：量子模拟kick，14试未闭。OI-WILDQR20lvlu20260929T010：lvlu诉求WILDQ-R20，4试未闭。OI-WILDQR20Blvlu20260929T01：lvlu诉求WILDQ-R20B，2试未闭。\n\n②应动何件：四件皆立协不候——两SI1-KICK试数过高须升维排障；两WILDQ-lvlu须即刻锚定主体。\n\n③未闭项推进：OI-SI1KICKQRINGSTRESS012026未闭，下一步转人工/根因。OI-SI1KICKQUANTSIM012026092未闭，下一步转人工/根因。OI-WILDQR20lvlu20260929T010未闭，下一步锁lvlu R20边界。OI-WILDQR20Blvlu20260929T01未闭，下一步锁lvlu R20B边界。\n\n④生债一条：生债——双kick 14试卡滞，排障债+1；双lvlu诉求悬置，主体协同债+1。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
