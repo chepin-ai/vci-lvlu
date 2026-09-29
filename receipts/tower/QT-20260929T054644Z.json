@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T054644Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 14,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- SI1量子环应力测试待闭环。\n- SI1量子模拟待基线验入。\n- 野生Q-R20 lvlu信号待源标定。\n- 野生Q-R20B lvlu律吕扰动待隔离。\n- lvlu全追迹CHASE待协议升频。\n- PIVOT-01转向公告待lvlu线权重评估。\n- SI1 VINF边界追逐待降速锁定。\n\n② 应动何件\n立协同WILDQ-R20-lvlu、WILDQ-R20B-lvlu、WILDQ-R20B-LVLU-CHASE三件，不候。\n\n③ 未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，回环热压校验。\n- OI-SI1KICKQUANTSIM012026092：未闭，注入测SIM收敛。\n- OI-WILDQR20lvlu20260929T010：未闭，锁频标源。\n- OI-WILDQR20Blvlu20260929T01：未闭，谱图隔离扰动。\n- OI-WILDQR20BLVLUCHASE01md：未闭，升全追迹回传lvlu态。\n- OI-PIVOT01ANNOUNCE20260929T：未闭，评估对律吕线影响。\n- OI-SI1KICKVINFCHASE01202609：未闭，压界降速锁定。\n\n④ 生债一条\n赊SI2-SI0桥接算力一单元，待lvlu三件闭后偿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
