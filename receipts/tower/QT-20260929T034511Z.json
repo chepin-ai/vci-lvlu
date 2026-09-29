@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T034511Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①\n1. SI1-KICK-QRING-STRESS：SI1 QRING 应力测试 open，无 lvlu 诉求。\n2. SI1-KICK-QUANT-SIM：SI1 量子模拟采样 open，无 lvlu 诉求。\n3. WILDQ-R20-lvlu：R20 lvlu 基线环待稳，录 lvlu 诉求。\n4. WILDQ-R20B-lvlu：R20B lvlu 分叉待并轨，录 lvlu 诉求。\n5. WILDQ-R20B-LVLU-CHASE：R20B LVLU 追踪线索待回传，录 lvlu 诉求。\n6. PIVOT-01-ANNOUNCE：转向公告锚点待签发，无 lvlu 诉求。\n7. SI1-KICK-VINF-CHASE：SI1 VINF 追踪新开待拉取，无 lvlu 诉求。\n\n②\n应动：OI-WILDQR20BLVLUCHASE01md、OI-SI1KICKVINFCHASE01202609、OI-WILDQR20Blvlu20260929T01（CHASE 及 lvlu 分叉项，立协同不候）。\n\n③\n- OI-SI1KICKQRINGSTRESS012026：未闭/续压测，待应力收敛。\n- OI-SI1KICKQUANTSIM012026092：未闭/续采样，待态矢稳态。\n- OI-WILDQR20lvlu20260929T010：未闭/续跑 R20 基线，待 lvlu 环自洽。\n- OI-WILDQR20Blvlu20260929T01：未闭/推 R20B 并轨，下次对齐。\n- OI-WILDQR20BLVLUCHASE01md：未闭/CHASE 待 lvlu 侧回传，下次闭环。\n- OI-PIVOT01ANNOUNCE20260929T：未闭/待锚点确认后签发。\n- OI-SI1KICKVINFCHASE01202609：未闭/VINF 待 SI2 协同拉取，下次闭环。\n\n④\n生债：OI-SI2LVLUSYNC01 — R20/R20B 双轨 lvlu 并行，需 SI2 发起一次 lvlu 态强制同步，防裂脑。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
