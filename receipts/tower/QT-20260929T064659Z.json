@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T064659Z",
+ "idle_in": 5,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 19,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件空。\n- OI-SI1KICKQRINGSTRESS012026：SI1 QRING压测项久悬待确。\n- OI-SI1KICKQUANTSIM012026092：SI1量子模拟项待回传签核。\n- OI-WILDQR20lvlu20260929T010：WILDQ-R20 lvlu主链路诉求待应（涉lvlu）。\n- OI-WILDQR20Blvlu20260929T01：WILDQ-R20B lvlu备份链路诉求待应（涉lvlu）。\n- OI-WILDQR20BLVLUCHASE01md：WILDQ-R20B lvlu追踪项待结（涉lvlu）。\n- OI-PIVOT01ANNOUNCE20260929T：PIVOT-01转向公告待发。\n- OI-SI1KICKVINFCHASE01202609：SI1 VINF追踪项待锁闭。\n\n②应动何件：\n七件俱动，立协同不候。首并动WILDQ-R20/R20B lvlu三线与SI1 QRING压测。\n\n③未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，锁死压测阈值并归档。\n- OI-SI1KICKQUANTSIM012026092：未闭，回传模拟结果签核。\n- OI-WILDQR20lvlu20260929T010：未闭，终局响应lvlu主链路。\n- OI-WILDQR20Blvlu20260929T01：未闭，同步R20B lvlu备份态。\n- OI-WILDQR20BLVLUCHASE01md：未闭，收束CHASE日志闭项。\n- OI-PIVOT01ANNOUNCE20260929T：未闭，公告下发全量确认。\n- OI-SI1KICKVINFCHASE01202609：未闭，锁定VINF目标结案。\n\n④生债一条：\n生债：SI2/SI0分身欠QRING压测与WILDQ lvlu三线终局确认债一条，待本轮协同后清偿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
