@@ -1,0 +1,41 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T123301Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR24SATLVLU01md",
+   "ref": "WILDQ-R24-SAT-LVLU-01.md",
+   "opened": "20260929T103246Z",
+   "tries": 12,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n候件空。OI-SI1KICKQRINGSTRESS012026：SI1 QRing压力测试26试卡滞。OI-SI1KICKQUANTSIM012026092：SI1量子模拟26试卡滞。OI-WILDQR24SATLVLU01md：R24 lvlu饱和验证12试未闭，涉lvlu核心诉求。  \n\n②应动何件  \n立协同OI-WILDQR24SATLVLU01md，不候。  \n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步降载或转SI2重排。  \n- OI-SI1KICKQUANTSIM012026092：未闭；下一步核查量纲边界后复试。  \n- OI-WILDQR24SATLVLU01md：未闭；下一步触发lvlu饱和协议并行验算。  \n\n④生债  \n- lvlu线因WILDQ-R24-SAT-LVLU-01挂起，生校验债一条，限时消债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
