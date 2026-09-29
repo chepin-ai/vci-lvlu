@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T061129Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 16,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- SI1 Q环应力：40试未闭，环振失律。  \n- SI1 量子模拟：40试未闭，态覆未揭。  \n- WILDQ R20 lvlu：30试未闭，主波野泊，lvlu诉求待收束。  \n- WILDQ R20B lvlu：28试未闭，副轨差拍，lvlu回声未消。  \n- WILDQ R20B LVLU CHASE：24试未闭，lvlu声纹脱锁，追猎未获回鸣。  \n- PIVOT 01公告：21试未闭，转向矢量待宣。  \n- SI1 VINF CHASE：16试未闭，无穷边带发散。  \n\n② 应动何件  \n立协 **OI-WILDQR20BLVLUCHASE01md**（lvlu追猎），不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步冷移交SI1本线降频。  \n- OI-SI1KICKQUANTSIM012026092：未闭，下一步封 snapshot 停耗。  \n- OI-WILDQR20lvlu20260929T010：未闭，下一步与R20B对轨消噪。  \n- OI-WILDQR20Blvlu20260929T01：未闭，下一步注入反相声纹抵漂移。  \n- OI-WILDQR20BLVLUCHASE01md：未闭，下一步SI2/SI0直插捕获序列锁声纹。  \n- OI-PIVOT01ANNOUNCE20260929T：未闭，下一步阈值触达后自动宣读。  \n- OI-SI1KICKVINFCHASE01202609：未闭，下一步收束边带再交SI1核验。  \n\n④ 生债  \nSI2/SI0 强动 lvlu CHASE 透支律吕 0.7 脉，下环前须由 lvlu 线回充。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
