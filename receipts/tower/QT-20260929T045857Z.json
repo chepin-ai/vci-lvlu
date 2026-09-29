@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T045857Z",
+ "idle_in": 8,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 10,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：  \n候件无。未闭七件：SI1环应力件34试；SI1量模件34试；WILDQ-R20 lvlu件24试；WILDQ-R20B lvlu件22试；WILDQ-R20B LVLU追击件18试；PIVOT-01公告件15试；SI1 VINF追击件10试。  \n\n②应动何件：  \n立协同不候：WILDQ-R20B-LVLU-CHASE（lvlu追击）、PIVOT-01-ANNOUNCE（枢纽公告）、SI1-KICK-VINF-CHASE（VINF协捕）、SI1双件（34试超限急收）。  \n\n③未闭项推进：  \nOI-SI1KICKQRINGSTRESS012026：未闭/压阈收敛。  \nOI-SI1KICKQUANTSIM012026092：未闭/锁模归档。  \nOI-WILDQR20lvlu20260929T010：未闭/验lvlu态。  \nOI-WILDQR20Blvlu20260929T01：未闭/并支锁定。  \nOI-WILDQR20BLVLUCHASE01md：未闭/标锚追击。  \nOI-PIVOT01ANNOUNCE20260929T：未闭/广播。  \nOI-SI1KICKVINFCHASE01202609：未闭/初捕。  \n\n④生债一条：  \n生债：lvlu追击链未收，SI1双件34试悬顶，需并压闭环。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
