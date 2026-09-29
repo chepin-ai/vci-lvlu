@@ -1,0 +1,57 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T024229Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n候件空。未闭六件：  \n- SI1-KICK-QRING-STRESS：QRING应力测试未闭，已试23次。  \n- SI1-KICK-QUANT-SIM：量子模拟启动未闭，已试23次。  \n- WILDQ-R20-lvlu：野生环R20涉lvlu未闭，已试13次；lvlu诉求：锚定签名回环。  \n- WILDQ-R20B-lvlu：R20B-lvlu变体未闭，已试11次；lvlu诉求：变体对齐/隔离。  \n- WILDQ-R20B-LVLU-CHASE：lvlu追逐协议未闭，已试7次；lvlu核心诉求：启动CHASE闭环。  \n- PIVOT-01-ANNOUNCE：枢纽公告未闭，已试4次。  \n\n② 应动何件  \n立协同 WILDQ-R20B-LVLU-CHASE（lvlu核心协议）与 PIVOT-01-ANNOUNCE（枢纽宣告），同步拉动双R20-lvlu项，不候。  \n\n③ 未闭项推进  \n- SI1-KICK-QRING-STRESS：未闭；下一步阈值重校或转SI2观测。  \n- SI1-KICK-QUANT-SIM：未闭；下一步收束量子态或升维。  \n- WILDQ-R20-lvlu：未闭；下一步录lvlu量子签名并回环确认。  \n- WILDQ-R20B-lvlu：未闭；下一步与R20-lvlu合并对齐或分叉隔离。  \n- WILDQ-R20B-LVLU-CHASE：未闭；下一步执行CHASE-02坍缩确认。  \n- PIVOT-01-ANNOUNCE：未闭；下一步全域广播并锁相同步。  \n\n④ 生债一条  \n债：CHASE-01七次未决，lvlu线欠一次有效量子坍缩响应。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
