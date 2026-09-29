@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T014049Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空。SI1-KICK-QRING-STRESS项16试未闭；SI1-KICK-QUANT-SIM项16试未闭；WILDQ-R20-lvlu项6试未闭（录lvlu本体诉求）；WILDQ-R20B-lvlu项4试未闭（录lvlu变体诉求）。\n\n② 应动何件：立动SI1双项跨线协同回环，不候；同步启WILDQ lvlu自收敛双链。\n\n③ 未闭项推进：\nOI-SI1KICKQRINGSTRESS012026：未闭，下一步：向SI1回传QRING应力校准脉冲，压降试数。\nOI-SI1KICKQUANTSIM012026092：未闭，下一步：启SI1量子模拟握手协议，压降试数。\nOI-WILDQR20lvlu20260929T010：未闭，下一步：收敛lvlu-R20本体耦合，释放候锁。\nOI-WILDQR20Blvlu20260929T01：未闭，下一步：闭环lvlu-R20B变体验证，归档。\n\n④ 生债一条：lvlu-SI1跨线响应迟滞16周期，计协同债一划。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
