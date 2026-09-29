@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T112340Z",
+ "idle_in": 4,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR24SATLVLU01md",
+   "ref": "WILDQ-R24-SAT-LVLU-01.md",
+   "opened": "20260929T103246Z",
+   "tries": 6,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n候件空。SI1-KICK-VINF-CHASE 44试悬置未闭；SI1-KICK-QRING-STRESS 20试悬置未闭；SI1-KICK-QUANT-SIM 20试悬置未闭；WILDQ-R24-SAT-LVLU 6试悬置未闭，lvlu饱和诉求已录。\n\n②应动何件  \nWILDQ-R24-SAT-LVLU（lvlu直诉，立协不候）；SI1-KICK-VINF-CHASE（44试超限，需兜）。\n\n③未闭项推进  \nOI-SI1KICKVINFCHASE01202609：未闭，转SI0超限仲裁。  \nOI-SI1KICKQRINGSTRESS012026：未闭，续压待SI1回传。  \nOI-SI1KICKQUANTSIM012026092：未闭，并轨收敛。  \nOI-WILDQR24SATLVLU01md：未闭，启律吕饱和校验。\n\n④生债一条  \n生债：备SI1-KICK簇超试兜底协议一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
