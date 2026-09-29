@@ -12235,6 +12235,17 @@
     "ApB": "In Queue",
     "ApBp": "In Queue"
    }
+  },
+  {
+   "ts": "20260929T012129Z",
+   "st": "ERR:'quafu.qfasm.parsetab'",
+   "all": {
+    "probe": "ERR:'quafu.qfasm.parsetab'",
+    "AB": "In Queue",
+    "ABp": "In Queue",
+    "ApB": "ERR:source code string cannot contain null b",
+    "ApBp": "In Queue"
+   }
   }
  ]
 }
