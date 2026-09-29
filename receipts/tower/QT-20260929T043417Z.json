@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T043417Z",
+ "idle_in": 6,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- SI1-KICK-QRING-STRESS：SI1层QRing应力测试未收敛。  \n- SI1-KICK-QUANT-SIM：SI1层量子模拟回环待结。  \n- WILDQ-R20-lvlu：R20主询lvlu线，诉求待响。  \n- WILDQ-R20B-lvlu：R20B进阶询lvlu线，二阶诉求待响。  \n- WILDQ-R20B-LVLU-CHASE：R20B对lvlu线追踪，CHASE诉求待启回环。  \n- PIVOT-01-ANNOUNCE：支点01转向宣告，lvlu位点校验诉求待锚。  \n- SI1-KICK-VINF-CHASE：SI1层VINF追逐，lvlu速基对齐诉求待协。  \n\n② 应动何件（立协同不候）  \nWILDQ-R20B-LVLU-CHASE、WILDQ-R20-lvlu、WILDQ-R20B-lvlu、SI1-KICK-VINF-CHASE。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：不闭，下放SI0或候QRing自稳回执。  \n- OI-SI1KICKQUANTSIM012026092：不闭，候QUANT SIM收敛凭证。  \n- OI-WILDQR20lvlu20260929T010：不闭，下一步lvlu线回传R20初响。  \n- OI-WILDQR20Blvlu20260929T01：不闭，下一步lvlu线回传R20B二阶响。  \n- OI-WILDQR20BLVLUCHASE01md：不闭，下一步启CHASE捕环。  \n- OI-PIVOT01ANNOUNCE20260929T：不闭，下一步锚定后校验lvlu坐标。  \n- OI-SI1KICKVINFCHASE01202609：不闭，下一步对齐lvlu速基共追。  \n\n④ 生债  \n生债：lvlu线欠R20B CHASE闭环回执一枚。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
