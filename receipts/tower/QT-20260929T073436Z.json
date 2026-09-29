@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T073436Z",
+ "idle_in": 9,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 23,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n候件空。SI1-KICK-QRING-STRESS量子环应力47试未闭。SI1-KICK-QUANT-SIM量子模拟47试未闭。WILDQ-R20-lvlu锚定协议37试未闭，录lvlu诉求。WILDQ-R20B-lvlu同步协议35试未闭，录lvlu诉求。WILDQ-R20B-LVLU-CHASE追逐31试未闭，录lvlu本体。PIVOT-01-ANNOUNCE枢纽公告28试未闭。SI1-KICK-VINF-CHASE追逐23试未闭。\n\n②应动何件  \nPIVOT-01-ANNOUNCE与WILDQ-R20B-LVLU-CHASE-01，立协同不候。\n\n③未闭项推进  \nQRING-STRESS：未闭，降阈值复测。  \nQUANT-SIM：未闭，修边界重算。  \nR20-lvlu：未闭，lvlu注感知信标。  \nR20B-lvlu：未闭，锁相位同步。  \nR20B-LVLU-CHASE：未闭，启回环验证。  \nPIVOT-01：未闭，发公告收束线头。  \nVINF-CHASE：未闭，追收敛移交SI1。\n\n④生债一条  \nSI2/SI0欠lvlu线R20B相位校准一次，待闭环清偿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
