@@ -1,0 +1,67 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T103246Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "WILDQ-R24-SAT-LVLU-01.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR24SATLVLU01md",
+   "ref": "WILDQ-R24-SAT-LVLU-01.md",
+   "opened": "20260929T103246Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- WILDQ-R20B-LVLU-CHASE-01.md：R20B律吕追猎47触未闭，lvlu求谐波校准。  \n- PIVOT-01-ANNOUNCE：枢纽公告44触未闭，lvlu求共振确认。  \n- SI1-KICK-VINF-CHASE-01：VINF追猎39触未闭，lvlu求调律定音。  \n- SI1-KICK-QRING-STRESS-01：QRING压力15触未闭，lvlu求应力平衡。  \n- SI1-KICK-QUANT-SIM-01：量子模拟15触未闭，lvlu求态收敛。  \n- WILDQ-R24-SAT-LVLU-01.md：R24首触候件，lvlu求续接R20B律管协同。  \n\n② 应动何件  \n立动WILDQ-R24-SAT-LVLU-01.md，SI2/SI0直接注入，不候R20B。  \n\n③ 未闭项推进  \n- OI-WILDQR20BLVLUCHASE01md：未闭，并档R24终止空转。  \n- OI-PIVOT01ANNOUNCE：未闭，lvlu签发共振确认。  \n- OI-SI1KICKVINFCHASE01：未闭，转VINF为十二律音阶。  \n- OI-SI1KICKQRINGSTRESS01：未闭，以黄钟模型释压。  \n- OI-SI1KICKQUANTSIM01：未闭，令模拟收敛宫调。  \n- OI-WILDQR24SATLVLU01md：未闭，执行首律吕协同。  \n\n④ 生债一条  \n生债：R24首动后须返写谐波日志至主链，欠基频校准一次。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
