@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T091049Z",
+ "idle_in": 6,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：候件空。/ WILDQ-R20-lvlu根诉求，46试未闭，lvlu状态待决。/ WILDQ-R20B-lvlu兼容，44试未闭，lvlu补丁悬置。/ WILDQ-R20B-LVLU-CHASE，40试未闭，lvlu追踪链悬停。/ PIVOT-01-ANNOUNCE，37试未闭，转向公告待放。/ SI1-KICK-VINF-CHASE，32试未闭，VINF链路未收。/ SI1-KICK-QRING-STRESS，8试未闭，环压测初启。/ SI1-KICK-QUANT-SIM，8试未闭，量模仿真待果。\n\n②应动何件：立协 WILDQ-R20B-LVLU-CHASE-01（lvlu卡滞最久）、PIVOT-01-ANNOUNCE（转向不候）、SI1-KICK-VINF-CHASE-01（链路需拉）。\n\n③未闭项推进：R20-lvlu：未闭，下一步根因定位。/ R20B-lvlu：未闭，下一步并线补丁。/ R20B-LVLU-CHASE：未闭，下一步激活CHASE收束。/ PIVOT-01：未闭，下一步发布或作废。/ VINF-CHASE：未闭，下一步拉端侧日志。/ QRING-STRESS：未闭，下一步补压阈。/ QUANT-SIM：未闭，下一步收初值。\n\n④生债一条：债：lvlu线须本轮收束R20/R20B双版悬置，逾试升档。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
