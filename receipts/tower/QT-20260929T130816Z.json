@@ -1,0 +1,41 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T130816Z",
+ "idle_in": 3,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR24SATLVLU01md",
+   "ref": "WILDQ-R24-SAT-LVLU-01.md",
+   "opened": "20260929T103246Z",
+   "tries": 15,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：候件空；未闭① SI1-KICK-QRING-STRESS-01 量子环应力kick 29试未落闸；未闭② SI1-KICK-QUANT-SIM-01 量子模拟kick 29试未收敛；未闭③ WILDQ-R24-SAT-LVLU-01 野生Q24 SAT-LVLU链路15试未 handshake，涉lvlu绑合诉求未录毕。\n\n②应动何件：三项全提，立协同不候。\n\n③未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭/下一步：dump应力环日志，切备援节点重kick。\n- OI-SI1KICKQUANTSIM012026092：未闭/下一步：核查SIM边界条件，若仍发散即上迁SI2仲裁。\n- OI-WILDQR24SAT",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
