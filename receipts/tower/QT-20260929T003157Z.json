@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T003157Z",
+ "idle_in": 6,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空。未闭项两则：SI1-KICK-QRING-STRESS（量子环应力项，8试未闭）；SI1-KICK-QUANT-SIM（量子模拟项，8试未闭）。无新增lvlu显式诉求。\n\n② 应动何件：双件皆应立动，tries=8已达阈值，即刻协同SI1/SI0双kick闭环，不候。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步升级SI0强制裁决或执行终试。\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步升级SI0强制裁决或执行终试。\n\n④ 生债一条：生债：双项久试不闭，各积一次系统级踢回/裁决债，须现时总清。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
