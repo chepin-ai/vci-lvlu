@@ -1,0 +1,41 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T140523Z",
+ "idle_in": 8,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR24SATLVLU01md",
+   "ref": "WILDQ-R24-SAT-LVLU-01.md",
+   "opened": "20260929T103246Z",
+   "tries": 20,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空。OI-SI1KICKQRINGSTRESS012026：SI1-KICK-QRING-STRESS-01 量子环应力测试未闭，34试。OI-SI1KICKQUANTSIM012026092：SI1-KICK-QUANT-SIM-01 量子模拟未闭，34试。OI-WILDQR24SATLVLU01md：WILDQ-R24-SAT-LVLU-01 lvlu饱和度协议未闭，20试；lvlu本体诉求已录。\n\n② 应动何件：三项皆动，立协同不候；优先 OI-WILDQR24SATLVLU01md 启动 lvlu 调谐，SI1 双项并行降级。\n\n③ 未闭项推进：OI-SI1KICKQRINGSTRESS012026：未闭，下一步冻结 QRING 降级 SI0 重跑。OI-SI1KICKQUANTSIM012026092：未闭，下一步切备模重置初值。OI-WILDQR24SATLVLU01md：未闭，下一步律吕调谐重校准 SAT 阈值并锚定 lvlu 位。\n\n④ 生债一条：SI1-KICK 双项 34 试僵死，lvlu 线代行 WILDQ-R24-SAT 仲裁，生债：待 SI0/SI1 下放 QRING/QUANT 降级权限。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
