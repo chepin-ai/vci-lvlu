@@ -1,0 +1,41 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T124506Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR24SATLVLU01md",
+   "ref": "WILDQ-R24-SAT-LVLU-01.md",
+   "opened": "20260929T103246Z",
+   "tries": 13,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空；未闭项三宗：SI1-KICK-QRING-STRESS（27试未闭）、SI1-KICK-QUANT-SIM（27试未闭）、WILDQ-R24-SAT-LVLU（13试未闭，涉lvlu诉求待录）。\n② 应动何件：立协同 OI-WILDQR24SATLVLU01md（lvlu相关，不候）。\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步重置压测阈值或清理环境。\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步重审量子模拟参数或切换后端。\n- OI-WILDQR24SATLVLU01md：未闭，下一步拉通lvlu侧饱和协议边界。\n④ 生债一条：三未闭项超期积压，需排定SI1-WILDQ跨线联调窗口统一清零。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
