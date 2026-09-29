@@ -1,0 +1,50 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T010425Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=2 kicks=1"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件PLAN-QUEUE拍fired=2、kicks=1。\n- OI-SI1KICKQRINGSTRESS012026：SI1 QRING压力测试kick，12试未闭。\n- OI-SI1KICKQUANTSIM012026092：SI1量子模拟kick，12试未闭。\n- OI-WILDQR20lvlu20260929T010：WILDQ-R20 lvlu诉求项，2试未闭，lvlu诉求：R20环启动对齐。\n\n② 应动何件：\n- 立协OI-WILDQR20lvlu20260929T010（录lvlu诉求，不候）。\n- 立协PLAN-QUEUE之kick拍。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步：降QRING压力或切降级通道。\n- OI-SI1KICKQUANTSIM012026092：未闭；下一步：回退SIM基线参数。\n- OI-WILDQR20lvlu20260929T010：未闭；下一步：完成lvlu-R20环诉求确认。\n\n④ 生债一条：\n- 生债：SI1双kick十二试未决之滞环债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 2,
+  "acts": [
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 1
+ }
+}
