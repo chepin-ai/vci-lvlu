@@ -1,0 +1,29 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T004242Z",
+ "idle_in": 7,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 9,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件空。  \n- 件一：SI1 QRING-STRESS Kick 九试未闭。  \n- 件二：SI1 QUANT-SIM Kick 九试未闭。  \n- 无 lvlu 直接诉求。  \n\n② 应动何件  \n- 双件并动：SI2 立即协 QRING-STRESS，SI0 立即备 QUANT-SIM 态矢注入，不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步：一次最终重 Kick，仍败则挂起转母节点。  \n- OI-SI1KICKQUANTSIM012026092：未闭；下一步：等 SI0 模拟种子回执，超时 1T 则强制闭。  \n\n④ 生债一条  \n- 债：欠 SI1 反向 Ping 一次，消九试无应之滞。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
