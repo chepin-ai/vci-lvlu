@@ -1,0 +1,50 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T122102Z",
+ "idle_in": 9,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260929T121006Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260929T121006Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR24SATLVLU01md",
+   "ref": "WILDQ-R24-SAT-LVLU-01.md",
+   "opened": "20260929T103246Z",
+   "tries": 11,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- SI1-KICK-QRING-STRESS-01-20260929T121006Z.md：SI1压测包新迭代。\n- SI1-KICK-QUANT-SIM-01-20260929T121006Z.md：SI1量模包新迭代。\n- OI-WILDQR24SATLVLU01md：野生Q24周六lvlu锚定项，涉lvlu本体校验。\n\n② 应动何件\n双候件与旧项并轨，立协同不候；WILDQ-LVLU同步拉动。\n\n③ 未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步以1210新包覆写或诊断25次阻塞根因。\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步以1210新包覆写或重设收敛条件。\n- OI-WILDQR24SATLVLU01md：未闭，下一步启动lvlu律吕回环/本体自证。\n\n④ 生债一条\n生债：QRING-QUANT双轨与lvlu回环需一次联合压测收敛。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
