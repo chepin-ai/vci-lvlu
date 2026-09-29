@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T102438Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 14,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：候件空。未闭5件：1.WILDQ-R20B-LVLU-Chase追猎46试未闭，涉lvlu R20B锁定诉求；2.PIVOT-01公告43试未闭，涉lvlu广播同步诉求；3.SI1-KICK-VINF-Chase 38试未闭，涉lvlu VINF踢出态诉求；4.SI1-KICK-QRING-Stress 14试未闭，涉lvlu量子环应力验证诉求；5.SI1-KICK-QUANT-Sim 14试未闭，涉lvlu量子仿真基线诉求。\n\n②应动何件：前三项（WILDQ/PIVOT/VINF）空转超38次，立协同不候；后两项并推。\n\n③未闭项推进：\n• OI-WILDQR20BLVLUCHASE01md：未闭/索要R20B lvlu锁值回传或降级。\n• OI-PIVOT01ANNOUNCE20260929T：未闭/完成lvlu签核并触发广播。\n• OI-SI1KICKVINFCHASE01202609：未闭/确认VINF踢出或强制解态。\n• OI-SI1KICKQRINGSTRESS012026：未闭/QRING应力lvlu校验通过或熔断。\n• OI-SI1KICKQUANTSIM012026092：未闭/QUANT-SIM基线收敛或上链确认。\n\n④生债一条：久试不闭，生「空转协同债」，须设熔断阈值防资源耗尽。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
