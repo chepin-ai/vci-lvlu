@@ -1,0 +1,52 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T010844Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260929T010425Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- SI1-KICK-QUANT-SIM-29：SI1量子模拟KICK序列29日新件，不涉lvlu。  \n- WILDQ-R20B-lvlu-29：WILDQ R20B迭代含lvlu线直接诉求，必录。  \n\n② 应动何件（立协同不候）  \n- WILDQ-R20B-lvlu。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭/13试超限，下一步终测收束或退SI1。  \n- OI-SI1KICKQUANTSIM012026092：未闭/13试且同题新到，下一步并29日件复测或强制闭环。  \n- OI-WILDQR20lvlu20260929T010：未闭/3试，下一步等R20B结论并案。  \n- OI-WILDQR20Blvlu20260929T01：未闭/初试，下一步即刻响应推进闭项。  \n\n④ 生债一条  \n- 生债：R20B-lvlu直应校验债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [],
+  "kicks": 0
+ }
+}
