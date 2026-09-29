@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T082358Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260929T074645Z.md",
+   "opened": "20260929T075848Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- OI-WILDQR20lvlu：WILDQ-R20 lvlu主线握手未闭（tries42），lvlu诉求完成R20基线锚定。\n- OI-WILDQR20B：WILDQ-R20B lvlu补丁同步未闭（tries40），lvlu诉求确认R20B兼容。\n- OI-WILDQR20B-CHASE：R20B lvlu追踪序列未闭（tries36），lvlu诉求CHASE协议闭环。\n- OI-PIVOT01：PIVOT-01公告未闭（tries33），待签发广播。\n- OI-SI1-VINF：SI1-VINF追踪未闭（tries28），待链路回证。\n- OI-SI1-QRING：SI1-QRING压测未闭（tries4），待载荷收敛。\n- OI-SI1-QUANT：SI1量子模拟未闭（tries4），待基线锁定。\n\n②应动何件\n立协同五件不候：前三件lvlu线（R20/R20B/CHASE）、PIVOT01、SI1-VINF；QRING/QUANT并协压线同跑。\n\n③未闭项推进\n- OI-WILDQR20lvlu：未闭/限次终试R20握手，逾阈升格。\n- OI-WILDQR20B：未闭/推送增量补丁，回捞确认帧。\n- OI-WILDQR20B-CHASE：未闭/回环探测收束追踪链路。\n- OI-PIVOT01：未闭/签发广播帧完成ANNOUNCE。\n- OI-SI1-VINF：未闭/触发握手索取VINF回证。\n- OI-SI1-QRING：未闭/下发压测载荷监控收敛。\n- OI-SI1-QUANT：未闭/启QUANT-SIM锁定基线。\n\n④生债一条\n债-SI2-20260929：本响点闭前至少收敛两件lvlu线未闭项，否则自降响应级。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
