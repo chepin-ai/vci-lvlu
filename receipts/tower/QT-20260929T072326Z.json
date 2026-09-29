@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260929T072326Z",
+ "idle_in": 8,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026092",
+   "ref": "SI1-KICK-QUANT-SIM-01-20260928T230633Z.md",
+   "opened": "20260928T231716Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20lvlu20260929T010",
+   "ref": "WILDQ-R20-lvlu-20260929T010000Z.md",
+   "opened": "20260929T010030Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20Blvlu20260929T01",
+   "ref": "WILDQ-R20B-lvlu-20260929T011500Z.md",
+   "opened": "20260929T010844Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR20BLVLUCHASE01md",
+   "ref": "WILDQ-R20B-LVLU-CHASE-01.md",
+   "opened": "20260929T014459Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-PIVOT01ANNOUNCE20260929T",
+   "ref": "PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "opened": "20260929T020937Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKVINFCHASE01202609",
+   "ref": "SI1-KICK-VINF-CHASE-01-20260929T025422Z.md",
+   "opened": "20260929T030658Z",
+   "tries": 22,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- SI1-KICK-QRING-STRESS-01：QRING压力测试项46试未闭，待收束。\n- SI1-KICK-QUANT-SIM-01：量子模拟项46试未闭，待对齐。\n- WILDQ-R20-lvlu：lvlu野Q-R20项36试未闭，诉求待录。\n- WILDQ-R20B-lvlu：lvlu野Q-R20B项34试未闭，诉求待录。\n- WILDQ-R20B-LVLU-CHASE-01：lvlu追逐项30试未闭，诉求待录。\n- PIVOT-01-ANNOUNCE：PIVOT公告项27试未闭，待发。\n- SI1-KICK-VINF-CHASE-01：VINF追逐项22试未闭，待验。\n\n② 应动何件：立协同全部七件；优先lvlu三件（WILDQ-R20-lvlu、WILDQ-R20B-lvlu、LVLU-CHASE）与双46试SI1项，不候。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步触发QRING压力校验闭环。\n- OI-SI1KICKQUANTSIM012026092：未闭，下一步完成量子模拟归档与回执。\n- OI-WILDQR20lvlu20260929T010：未闭，下一步激活lvlu-R20响应并收束。\n- OI-WILDQR20Blvlu20260929T01：未闭，下一步同步lvlu-R20B状态至主链。\n- OI-WILDQR20BLVLUCHASE01md：未闭，下一步执行LVLU-CHASE追索确认。\n- OI-PIVOT01ANNOUNCE20260929T：未闭，下一步发布PIVOT-01公告并落章。\n- OI-SI1KICKVINFCHASE01202609：未闭，下一步完成VINF链路验证与关闭。\n\n④ 生债：七项未闭累试265次，生债一条——今日须以“试次归零或强制闭环”为偿，否则滞胀。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
