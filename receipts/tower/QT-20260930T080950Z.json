@@ -1,0 +1,72 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20260930T080950Z",
+ "idle_in": 6,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=2"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQR26FIXLVLU01md",
+   "ref": "WILDQ-R26-FIX-LVLU-01.md",
+   "opened": "20260930T010212Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQR26BFIXLVLU01md",
+   "ref": "WILDQ-R26B-FIX-LVLU-01.md",
+   "opened": "20260930T014305Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAC",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ACK-LGT-TOWER-LVLU-00615ef7.md",
+   "opened": "20260930T065620Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxAU",
+   "ref": "vci-inbox:lanes/lvlu/inbox/AUTOASK-RING-LVLU-KEY-REASSIGN-20260930.md",
+   "opened": "20260930T065620Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RENUDGE-LGT-LVLU-189be68d.md",
+   "opened": "20260930T065620Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件1件/未闭5项: PLAN-QUEUE拍 fired=3 kicks=2",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 2
+ }
+}
