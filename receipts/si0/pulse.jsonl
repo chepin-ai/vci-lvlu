@@ -2288,3 +2288,4 @@
 {"ts": "20260930T121547Z", "board_files": 0, "claims": 80, "closed_this_beat": [], "nudged": ["EVAL-KAPPA-LGT:L122:idem-skip(株43):nudge-20260930T115004Z-EVAL-KAPPA-LGT-lv"], "vault_keys": 25, "key_login": "github-actions[bot]"}
 {"ts": "20260930T122106Z", "board_files": 0, "claims": 80, "closed_this_beat": [], "nudged": [], "vault_keys": 25, "key_login": "github-actions[bot]"}
 {"ts": "20260930T123122Z", "board_files": 0, "claims": 80, "closed_this_beat": [], "nudged": ["YONEDA-ROLL-LGT:L130:idem-skip(株43):nudge-20260930T104714Z-YONEDA-ROLL-LGT-l"], "vault_keys": 25, "key_login": "github-actions[bot]"}
+{"ts": "20260930T124206Z", "board_files": 0, "claims": 80, "closed_this_beat": [], "nudged": ["T5KEY-WAVE-01:L136:lane:False,otp:domout(株卅八),board:1", "KEYUNIFY-QUORUM-01:L158:lane:False,inbox:domout(株卅八),kick:domout(株卅八),board:1"], "vault_keys": 25, "key_login": "github-actions[bot]"}
