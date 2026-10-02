@@ -1,7 +1,7 @@
 {
  "v": 1,
  "line": "lvlu",
- "ts": "20261002T144041Z",
+ "ts": "20261002T150402Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -14,7 +14,7 @@
    ],
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
-   "beats": 2519,
+   "beats": 2520,
    "nudge_level": 170,
    "last_nudge": "20261002T133757Z",
    "status": "open",
@@ -48,7 +48,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 96,
-   "beats": 2526,
+   "beats": 2527,
    "nudge_level": 285,
    "last_nudge": "20261002T132742Z",
    "status": "open",
@@ -107,7 +107,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 2525,
+   "beats": 2526,
    "nudge_level": 182,
    "last_nudge": "20261002T132742Z",
    "status": "open",
@@ -119,7 +119,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 2525,
+   "beats": 2526,
    "nudge_level": 182,
    "last_nudge": "20261002T132742Z",
    "status": "open",
@@ -165,7 +165,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 2510,
+   "beats": 2511,
    "nudge_level": 178,
    "last_nudge": "20261002T131949Z",
    "status": "open",
@@ -526,7 +526,7 @@
    "need_lines": [
     "ucif2"
    ],
-   "beats": 2314,
+   "beats": 2315,
    "nudge_level": 160,
    "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
    "watch": [
@@ -601,7 +601,7 @@
    "need_lines": [
     "lgt"
    ],
-   "beats": 2290,
+   "beats": 2291,
    "nudge_level": 152,
    "note": "RE2约接: 我链tip 280223d5a52b581e / 尔tip 209/813ac77adf5e",
    "legs_got": [],
@@ -638,7 +638,7 @@
    "need_lines": [
     "lgt"
    ],
-   "beats": 2290,
+   "beats": 2291,
    "nudge_level": 141,
    "note": "EXP-024题面已转投; κ>0.8 对拍",
    "legs_got": [],
@@ -787,11 +787,11 @@
    "sla_beats": 48,
    "target": "cisvr",
    "need_lines": null,
-   "beats": 2274,
+   "beats": 2275,
    "nudge_level": 154,
    "note": "FINE_OWN_PAT_QGL铸成(id19646075,qgl独占,Actions:RW+Contents:RW,2026-12-14期); root末段贴值(株47 C5-legit)→vault密封→git道200→sealed-PUT LINE_PAT入vci-qgl secrets(204); 回执KEY-INSTALL-RECEIPT-QGL-02经新钥自身git上链(fp 27a3a6ecbc70); Secrets:RW未授列root域下会期",
    "last_nudge": "20261002T114940Z",
-   "last_nudge_beats": 2267,
+   "last_nudge_beats": 2275,
    "state": "closed"
   },
   {
@@ -894,8 +894,8 @@
     "lgt",
     "vinf"
    ],
-   "beats": 2265,
-   "nudge_level": 183,
+   "beats": 2266,
+   "nudge_level": 184,
    "note": "现票: 可2(lvlu/qgl)+usrm判1835Z已投待引擎重放; quorum5 deadline6拍(SLA-E事件锚); 达即v1.1汇判刊行",
    "legs_got": [
     "cisvr",
@@ -904,8 +904,8 @@
     "qtlv",
     "vinf"
    ],
-   "last_nudge": "20261002T114940Z",
-   "last_nudge_beats": 2258
+   "last_nudge": "20261002T150402Z",
+   "last_nudge_beats": 2266
   },
   {
    "id": "MICROAUTH-ENTRY-01",
