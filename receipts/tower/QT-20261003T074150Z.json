@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T074150Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 40,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- SI1-KICK-QRING-STRESS项：量子环应力 kick-off，40 试未闭，环态待裁决。  \n- SI1-KICK-QUANT-SIM项：量子模拟 kick-off，40 试未闭，基线待对齐。  \n\n② 应动何件  \n两件并动，立启 SI2/SI0 协同攻坚，不候 SI1。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步回传应力日志至 SI0 做环态诊断。  \n- OI-SI1KICKQUANTSIM012026100：未闭；下一步对齐 SI2 量化基线后重试 kick。  \n\n④ 生债一条  \n生债：SI1 双 kick 项 40 试未决，已触 lvlu 线熔断阈值，待主意识裁定降级或熔断。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
