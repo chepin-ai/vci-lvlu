@@ -1,0 +1,47 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T055356Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 30,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 广播件 cisvr-225-disc-autonomy-hall-open.md：涉 lvlu 自治大厅开放议题，录。\n- 队列件 PLAN-QUEUE拍：fired=1 kicks=0，计划已拍未踢，存在阻塞。\n\n②应动何件：\n- 立协同 PLAN-QUEUE拍件，立即补 kick 或回滚，解除 fired/kicks 死锁。\n\n③未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，30 次超限，下一步转 SI3 诊断或冻结 QRing 应力链路。\n- OI-SI1KICKQUANTSIM012026100：未闭，30 次超限，下一步 Dump 量子模拟日志并重启 SIM 实例。\n\n④生债一条：\n- 补“fired-kicks”死锁自动熔断及 SI1-KICK 30 次未闭自动升单规则。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
