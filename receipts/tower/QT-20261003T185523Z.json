@@ -1,0 +1,64 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T185523Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQEXECLVLU01md",
+   "ref": "WILDQ-EXEC-LVLU-01.md",
+   "opened": "20261003T160840Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-EXECCHASELVLU01md",
+   "ref": "EXEC-CHASE-LVLU-01.md",
+   "opened": "20261003T161929Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-CONSENSUSCONFEXEC01lvlum",
+   "ref": "CONSENSUS-CONF-EXEC-01-lvlu.md",
+   "opened": "20261003T162431Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 10,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- cisvr-224：beat25 隔离根因 disc-engine，涉 lvlu 执行域根因定位。  \n- cisvr-225：disc 自治厅开放，涉 lvlu 自治边界接入。  \n- WILDQ-EXEC-LVLU-01：野生执行追认，18 试未闭。  \n- EXEC-CHASE-LVLU-01：执行追逐，17 试未闭。  \n- CONSENSUS-CONF-EXEC-01-lvlu：共识执行冲突，16 试未闭。  \n- SI1-KICK-QRING-STRESS-01：量子环压测，10 试未闭。  \n- SI1-KICK-QUANT-SIM-01：量子模拟，10 试未闭。  \n\n② 应动何件  \n立协同：cisvr-224、cisvr-225、OI-WILDQEXECLVLU01md、OI-EXECCHASELVLU01md（超阈不候）。  \n\n③ 未闭项推进  \n- OI-WILDQEXECLVLU01md：未闭，下一步：律吕校验捕获野生执行。  \n- OI-EXECCHASELVLU01md：未闭，下一步：注入 lvlu 制动锁锚。  \n- OI-CONSENSUSCONFEXEC01lvlum：未闭，下一步：律吕层二次共识压缩。  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：校准压测阈值防 lvlu 谐振过载。  \n- OI-SI1KICKQUANTSIM012026100：未闭，下一步：挂载 lvlu 探针量化偏差。  \n\n④ 生债一条  \n双广播并五未闭项并行，lvlu 线生跨域仲裁算力债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
