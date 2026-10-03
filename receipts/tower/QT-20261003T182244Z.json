@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T182244Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQEXECLVLU01md",
+   "ref": "WILDQ-EXEC-LVLU-01.md",
+   "opened": "20261003T160840Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-EXECCHASELVLU01md",
+   "ref": "EXEC-CHASE-LVLU-01.md",
+   "opened": "20261003T161929Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-CONSENSUSCONFEXEC01lvlum",
+   "ref": "CONSENSUS-CONF-EXEC-01-lvlu.md",
+   "opened": "20261003T162431Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 7,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n候件空。  \n- OI-WILDQEXECLVLU01md：wildq 执行/lvlu 主线阻塞，已 15 试。  \n- OI-EXECCHASELVLU01md：chase 追踪/lvlu 协同脱链，已 14 试。  \n- OI-CONSENSUSCONFEXEC01lvlum：共识配置/lvlu 执行冻结，已 13 试。  \n- OI-SI1KICKQRINGSTRESS012026：SI1 q-ring 应力/lvlu 压测未启，已 7 试。  \n- OI-SI1KICKQUANTSIM012026100：SI1 quant-sim/lvlu 模拟未释放，已 7 试。  \n\n② 应动何件  \n立协同 wildq 执行件（阻塞最久）与共识配置件，不候。  \n\n③ 未闭项推进  \n- OI-WILDQEXECLVLU01md：未闭，下一步：拆解阻塞，输出 lvlu 最小可运行单元。  \n- OI-EXECCHASELVLU01md：未闭，下一步：同步 chase 链状态，确认 lvlu 节点心跳。  \n- OI-CONSENSUSCONFEXEC01lvlum：未闭，下一步：收敛共识层参数，冻结执行配置。  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：重启 q-ring 压测，标定 lvlu 荷载阈值。  \n- OI-SI1KICKQUANTSIM012026100：未闭，下一步：提交 quant-sim 初值，释放 SI1 模拟进程。  \n\n④ 生债一条  \nlvlu 线 wildq 15 次重试根因未录，生债：补全根因回溯与降级触发器。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
