@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T043822Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 23,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 候件无；SI1-KICK-QRING-STRESS-01 应力环23跳未收敛，录lvlu稳态诉求；SI1-KICK-QUANT-SIM-01 量子模拟23跳未出清，录lvlu定锚诉求。  \n② 两件皆应动，立协同不候。  \n③ OI-SI1KICKQRINGSTRESS012026：未闭，下一步：压测环阈或降级SI0。OI-SI1KICKQUANTSIM012026100：未闭，下一步：冷启QUANT-SIM覆写初态。  \n④ 生债：录「双Kick项23次未决」入lvlu债池。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
