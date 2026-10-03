@@ -1,0 +1,58 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T171720Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=2"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQEXECLVLU01md",
+   "ref": "WILDQ-EXEC-LVLU-01.md",
+   "opened": "20261003T160840Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-EXECCHASELVLU01md",
+   "ref": "EXEC-CHASE-LVLU-01.md",
+   "opened": "20261003T161929Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-CONSENSUSCONFEXEC01lvlum",
+   "ref": "CONSENSUS-CONF-EXEC-01-lvlu.md",
+   "opened": "20261003T162431Z",
+   "tries": 6,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件PLAN-QUEUE：lvlu队列已fire 3拍仅回kick 2，缺1 kick悬空。  \n- 未闭OI-WILDQEXECLVLU01md：野队执行lvlu，8试未闭。  \n- 未闭OI-EXECCHASELVLU01md：执行追踪lvlu，7试未闭。  \n- 未闭OI-CONSENSUSCONFEXEC01lvlum：共识配置执行lvlu，6试未闭。  \n\n②应动何件  \n- 立动PLAN-QUEUE补第3 kick，并联推三lvlu OI，不候。  \n\n③未闭项推进  \n- OI-WILDQEXECLVLU01md：未闭，下一步强收敛或降级。  \n- OI-EXECCHASELVLU01md：未闭，下一步追检阻塞点。  \n- OI-CONSENSUSCONFEXEC01lvlum：未闭，下一步重载配置或提级仲裁。  \n\n④生债一条  \n- lvlu线队列踢动悬空1拍，三OI累试21次未闭，生协同执行债1条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 2
+ }
+}
