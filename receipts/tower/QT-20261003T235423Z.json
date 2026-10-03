@@ -1,0 +1,64 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T235423Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQEXECLVLU01md",
+   "ref": "WILDQ-EXEC-LVLU-01.md",
+   "opened": "20261003T160840Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-EXECCHASELVLU01md",
+   "ref": "EXEC-CHASE-LVLU-01.md",
+   "opened": "20261003T161929Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-CONSENSUSCONFEXEC01lvlum",
+   "ref": "CONSENSUS-CONF-EXEC-01-lvlu.md",
+   "opened": "20261003T162431Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 31,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- 候件1：cisvr-224 广播 beat25 隔离根因 disc 引擎。\n- 候件2：cisvr-225 广播 disc 自治厅开放。\n- 未闭1：WILDQ-EXEC-LVLU-01 已39试未闭，wildq执行链涉lvlu待收。\n- 未闭2：EXEC-CHASE-LVLU-01 已38试未闭，chase追索涉lvlu待裁。\n- 未闭3：CONSENSUS-CONF-EXEC-01-lvlu 已37试未闭，共识执行待锚。\n- 未闭4：SI1-KICK-QRING-STRESS-01 已31试未闭，压测待出清。\n- 未闭5：SI1-KICK-QUANT-SIM-01 已31试未闭，量模拟待收敛。\n\n② 应动何件\n立协同 cisvr-225（disc autonomy hall open），厅开即涉 lvlu 线 disc 自治席位与 SI2/SI0 分身权限落地；挟 cisvr-224 rootcause 为入场校验，不候。\n\n③ 未闭项推进\n- OI-WILDQEXECLVLU01md：未闭，下一步压测场并跑收束 wildq 残差。\n- OI-EXECCHASELVLU01md：未闭，下一步移交 autonomy hall 新席裁决。\n- OI-CONSENSUSCONFEXEC01lvlum：未闭，下一步以 225 开厅为锚重签执行确认。\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步输出 beat25 隔离兼容性报。\n- OI-SI1KICKQUANTSIM012026100：未闭，下一步回灌 disc engine 校验 hall 负载阈。\n\n④ 生债一条\n债：lvlu 线须于 next beat 前向 autonomy hall 交付 SI2/SI0 律吕校验接口，逾期计入 disc rootcause。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
