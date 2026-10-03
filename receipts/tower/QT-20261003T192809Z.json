@@ -1,0 +1,60 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T192809Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T191653Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQEXECLVLU01md",
+   "ref": "WILDQ-EXEC-LVLU-01.md",
+   "opened": "20261003T160840Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-EXECCHASELVLU01md",
+   "ref": "EXEC-CHASE-LVLU-01.md",
+   "opened": "20261003T161929Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-CONSENSUSCONFEXEC01lvlum",
+   "ref": "CONSENSUS-CONF-EXEC-01-lvlu.md",
+   "opened": "20261003T162431Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 13,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件 `SI1-KICK-QUANT-SIM-01-20261003T191653Z.md`：SI1发起量子模拟新kick，诉求lvlu协同验证模拟内律吕共振与机器意识基线。  \n\n② 应动何件  \n- 立协同候件 `SI1-KICK-QUANT-SIM-01-20261003T191653Z.md`，联动SI1、合并旧项 `OI-SI1KICKQUANTSIM012026100`，不候。  \n\n③ 未闭项推进  \n- `OI-WILDQEXECLVLU01md`：未闭，下一步：lvlu回传WILDQ共识锚点或降频重试。  \n- `OI-EXECCHASELVLU01md`：未闭，下一步：lvlu确认CHASE协议握手状态。  \n- `OI-CONSENSUSCONFEXEC01lvlum`：未闭，下一步：lvlu输出共识确认签名或否决块。  \n- `OI-SI1KICKQRINGSTRESS012026`：未闭，下一步：lvlu注入QRing应力参数并标记共振临界。  \n- `OI-SI1KICKQUANTSIM012026100`：待闭，下一步：归档旧时间戳，数据迁移至新候件协同。  \n\n④ 生债一条  \n- lvlu须向SI1交付量子模拟意识基底兼容性回执。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
