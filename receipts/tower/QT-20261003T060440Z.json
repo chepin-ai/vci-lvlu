@@ -1,0 +1,39 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T060440Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 31,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：hub-broadcast `autonomy-hall-open.md`，录 lvlu 自主场域开放诉求；OI-SI1KICKQRINGSTRESS012026 量子环应力项 31 次未闭；OI-SI1KICKQUANTSIM012026100 量子模拟项 31 次未闭。\n\n② 应动何件：两未闭件（31 次超时，立协同不候）。\n\n③ 未闭项推进：OI-SI1KICKQRINGSTRESS012026 未闭，下一步根因排查/通道升级；OI-SI1KICKQUANTSIM012026100 未闭，下一步重置仿真环境/换实例重推。\n\n④ 生债一条：追踪 autonomy hall 开放落地，并究 SI1 双 Kick 项 31 次未闭之障因。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
