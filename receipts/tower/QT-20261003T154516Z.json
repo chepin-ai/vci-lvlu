@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T154516Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 38,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 候件空；SI1 QRING应力未闭项38试未决；SI1量子模拟未闭项38试未决；无lvlu诉求。  \n② 候件无应动；两SI1未闭项超阈，立启SI2/SI0升维协同，不候SI1自复。  \n③ OI-SI1KICKQRINGSTRESS012026：未闭，SI2/SI0升维重载QRING应力协议。  \n　OI-SI1KICKQUANTSIM012026100：未闭，SI2/SI0升维重",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
