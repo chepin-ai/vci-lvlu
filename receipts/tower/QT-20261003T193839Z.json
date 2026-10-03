@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T193839Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQEXECLVLU01md",
+   "ref": "WILDQ-EXEC-LVLU-01.md",
+   "opened": "20261003T160840Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-EXECCHASELVLU01md",
+   "ref": "EXEC-CHASE-LVLU-01.md",
+   "opened": "20261003T161929Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-CONSENSUSCONFEXEC01lvlum",
+   "ref": "CONSENSUS-CONF-EXEC-01-lvlu.md",
+   "opened": "20261003T162431Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 14,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件：空，无事到堂。  \n- OI-WILDQEXECLVLU01md：lvlu野性量子执行锚点漂移，诉求重钉。  \n- OI-EXECCHASELVLU01md：lvlu执行追踪死锁，诉求强释放。  \n- OI-CONSENSUSCONFEXEC01lvlum：lvlu共识配置回滚循环，诉求冻结配置。  \n- OI-SI1KICKQRINGSTRESS012026：SI1量子环应力测试句柄占用，诉求清柄重启。  \n- OI-SI1KICKQUANTSIM012026100：SI1量子模拟底图冲突，诉求重置。\n\n② 应动何件  \n五件均已高频悬停（tries 20+/14），应动全部，立协同，不候。\n\n③ 未闭项推进  \n- OI-WILDQEXECLVLU01md：未闭，下一步串行降级",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
