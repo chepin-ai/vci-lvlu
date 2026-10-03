@@ -1,0 +1,64 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T212818Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T211644Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T211644Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQEXECLVLU01md",
+   "ref": "WILDQ-EXEC-LVLU-01.md",
+   "opened": "20261003T160840Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-EXECCHASELVLU01md",
+   "ref": "EXEC-CHASE-LVLU-01.md",
+   "opened": "20261003T161929Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-CONSENSUSCONFEXEC01lvlum",
+   "ref": "CONSENSUS-CONF-EXEC-01-lvlu.md",
+   "opened": "20261003T162431Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 25,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- SI1-KICK-QRING-STRESS-01-20261003T211644Z.md：SI1量子环应力测试入栈，涉lvlu负载诉求，已录。\n- SI1-KICK-QUANT-SIM-01-20261003T211644Z.md：SI1量子模拟推演入栈，涉lvlu演算场域诉求，已录。\n\n② 应动何件\n- 两候件并同系未闭项（QRING-STRESS/QUANT-SIM），立协同SI1，不候。\n\n③ 未闭项推进\n- OI-WILDQEXECLVLU01md：未闭，下一步收敛WILDQ并封栈。\n- OI-EXECCHASELVLU01md：未闭，下一步锁止CHASE逃逸路径。\n- OI-CONSENSUSCONFEXEC01lvlum：未闭，下一步落盘共识签核。\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步并入211644Z触发，环流重校。\n- OI-SI1KICKQUANTSIM012026100：未闭，下一步并入211644Z触发，量子弹跳对齐。\n\n④ 生债一条\n- SI1双通道并发无lvlu回压阈值，补流控债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
