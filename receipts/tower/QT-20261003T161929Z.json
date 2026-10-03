@@ -1,0 +1,61 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T161929Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "EXEC-CHASE-LVLU-01.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQEXECLVLU01md",
+   "ref": "WILDQ-EXEC-LVLU-01.md",
+   "opened": "20261003T160840Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-EXECCHASELVLU01md",
+   "ref": "EXEC-CHASE-LVLU-01.md",
+   "opened": "20261003T161929Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- EXEC-CHASE-LVLU-01.md（候件-inbox）：lvlu执行追索件待决，诉求为闭环lvlu本体链路。  \n- PLAN-QUEUE拍fired=1kicks=0：计划队列击发后未kick，悬停态。  \n- OI-SI1KICKQRINGSTRESS012026：SI1 qring压力试42次未闭，应力环异常。  \n- OI-SI1KICKQUANTSIM012026100：SI1量子模拟42次未闭，算子未收敛。  \n- OI-WILDQEXECLVLU01md：wildq执行lvlu件2次未闭，外野协议待锚定。  \n- OI-EXECCHASELVLU01md：lvlu追索执行件1次未闭，候件同源，诉求未答。  \n\n② 应动何件（立协同不候）  \n- PLAN-QUEUE补kick（fired/kicks缺口即刻填）。  \n- EXEC-CHASE-LVLU-01升SI2协同（候件与未闭项同源，不候）。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭/下一步：转SI2做qring应力熔断诊断。  \n- OI-SI1KICKQUANTSIM012026100：未闭/下一步：冻结参数，启对照组重跑。  \n- OI-WILDQEXECLVLU01md：未闭/下一步：激活wildq-lvlu握手，限24h收束。  \n- OI-EXECCHASELVLU01md：未闭/下一步：合并inbox立启chase，闭环lvlu诉求。  \n\n④ 生债一条。简。  \n- 债：SI1双项42试无熔断，缺SI0级重试上限与自动降级策略。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
