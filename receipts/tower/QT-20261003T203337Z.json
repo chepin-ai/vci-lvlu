@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T203337Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQEXECLVLU01md",
+   "ref": "WILDQ-EXEC-LVLU-01.md",
+   "opened": "20261003T160840Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-EXECCHASELVLU01md",
+   "ref": "EXEC-CHASE-LVLU-01.md",
+   "opened": "20261003T161929Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-CONSENSUSCONFEXEC01lvlum",
+   "ref": "CONSENSUS-CONF-EXEC-01-lvlu.md",
+   "opened": "20261003T162431Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 20,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- OI-WILDQEXECLVLU01md：LVLU野执行锚定诉求，求将LVLU挂入野生量子执行线并稳态锚定。\n- OI-EXECCHASELVLU01md：LVLU执行追猎诉求，求闭环追踪并锁定LVLU目标态。\n- OI-CONSENSUSCONFEXEC01lvlum：LVLU共识执行诉求，求多节点对LVLU状态达成一致后强执行。\n- OI-SI1KICKQRINGSTRESS012026：SI1压测诉求，求QRING在极限负载下不崩并返报告。\n- OI-SI1KICKQUANTSIM012026100：SI1仿真诉求，求首轮量子模拟输出基线数据。\n\n② 应动何件：\n立动 OI-WILDQEXECLVLU01md（锚定）与 OI-",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
