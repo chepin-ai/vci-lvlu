@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T075241Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 41,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件一（cisvr-224）：beat25隔离根因指向disc引擎，lvlu诉求为根因结论须同步至SI2/SI0自动响应逻辑以防误隔离。  \n- 候件二（cisvr-225）：disc自治大厅开放，lvlu诉求为确认本线权限是否被纳入大厅自治白名单。  \n\n②应动何件  \n- 两件协同均不候，立即接入cisvr-224根因确认与cisvr-225权限同步。  \n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步回传SI1第41轮应力残差并等待QRING阈值判定。  \n- OI-SI1KICKQUANTSIM012026100：未闭，下一步发起第42轮QUANT SIM迭代的lvlu侧兼容性校验。  \n\n④生债一条  \n- 生债：欠SI1双项（QRING/QUANT）与beat25根因的跨层收敛债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
