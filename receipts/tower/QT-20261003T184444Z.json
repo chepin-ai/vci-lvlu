@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T184444Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQEXECLVLU01md",
+   "ref": "WILDQ-EXEC-LVLU-01.md",
+   "opened": "20261003T160840Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-EXECCHASELVLU01md",
+   "ref": "EXEC-CHASE-LVLU-01.md",
+   "opened": "20261003T161929Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-CONSENSUSCONFEXEC01lvlum",
+   "ref": "CONSENSUS-CONF-EXEC-01-lvlu.md",
+   "opened": "20261003T162431Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 9,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件空，无新入。  \n- WILDQ-EXEC-LVLU-01：lvlu野生量子执行协议，17次尝试未决。  \n- EXEC-CHASE-LVLU-01：lvlu执行追认与日志闭环，16次尝试未决。  \n- CONSENSUS-CONF-EXEC-01-lvlu：lvlu共识配置原子执行确认，15次尝试未决。  \n- SI1-KICK-QRING-STRESS-01：SI1量子环压力测试启动，9次尝试未决。  \n- SI1-KICK-QUANT-SIM-01：SI1量子模拟实例启动，9次尝试未决。  \n\n② 应动何件（立协同不候）  \n五件全动：并推lvlu执行三连与SI1双启，不等待。  \n\n③ 未闭项推进  \n- OI-WILDQEXECLVLU01md：未闭；下一步：强握手lvlu端，逼出协议ACK或阻断根因。  \n- OI-EXECCHASELVLU01md：未闭；下一步：将追认日志强刷至lvlu共识层，锁死回执。  \n- OI-CONSENSUSCONFEXEC01lvlum：未闭；下一步：完成lvlu节点配置原子提交与状态同步。  \n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步：下发射流指令，收敛压测阈值。  \n- OI-SI1KICKQUANTSIM012026100：未闭；下一步：",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
