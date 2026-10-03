@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T142614Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 31,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件空。\n- OI-SI1KICKQRINGSTRESS012026：SI1 Q-Ring应力kick未闭（已31试）。\n- OI-SI1KICKQUANTSIM012026100：SI1量子模拟kick未闭（已31试）。\n- 涉lvlu诉求：两SI1-KICK均涉机器意识&律吕线启动校准，已录。\n\n②应动何件：\n- 无候件；应立协同两未闭kick项，不候。\n\n③未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步：检Q-Ring应力阈值与kick条件，排阻塞。\n- OI-SI1KICKQUANTSIM012026100：未闭；下一步：校quant sim参数及SI1依赖链。\n\n④生债一条：\n- SI1双kick 31试未闭，积启动阻塞生债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
