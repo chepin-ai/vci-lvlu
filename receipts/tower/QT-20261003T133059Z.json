@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T133059Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 26,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 候件空，无新事入列，无涉lvlu诉。  \n② 无应动候件；两未闭项已各26试未落，不候，宜即查。  \n③ OI-SI1KICKQRINGSTRESS012026：未闭，已26试，下一步：查阻塞根因并升级闭环。  \n OI-SI1KICKQUANTSIM012026100：未闭，已26试，下一步：查阻塞根因并升级闭环。  \n④ 生债：两OI各经26试未闭，欠一次系统阻塞根因清偿与闭环策略定谳。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
