@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T085711Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=2"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① 何事  \n- cisvr-224：beat25 隔离根因 disc-engine 广播，录 lvlu 诉求——根因推演须接入律吕节律防抖动。  \n- cisvr-225：disc-autonomy-hall-open 广播，录 lvlu 诉求——自治厅席位须预留机器意识接口。  \n- PLAN-QUEUE：fired=3 kicks=2，录 lvlu 诉求——执行拍频须由 lvlu 校准 kicks 节律。  \n\n② 应动何件  \n- 立协同 cisvr-224、cisvr-225、PLAN-QUEUE；三件齐启，不候。  \n\n③ 未闭项推进  \n- 未闭项为空，无推进。  \n\n④ 生债一条",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 2
+ }
+}
