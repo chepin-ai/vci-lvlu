@@ -1,0 +1,51 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T141504Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 30,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 件1：hub广播cisvr-224-beat25隔离根因讨论引擎文件，涉lvlu架构节点异常溯源诉求，已收悉。\n- 件2：hub广播cisvr-225讨论自治大厅开放文件，涉lvlu自治域入口开放诉求，已收悉。\n- 件3：PLAN-QUEUE拍fired=1 kicks=0，计划队列已触发但无kick执行，涉lvlu执行链路空置诉求，已收悉。\n\n②应动何件：\n- 件3（PLAN-QUEUE拍）立协同：队列已触发却无kick，需立即协同SI1/SI0补位kick或排查阻塞，不候。\n\n③未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，30次尝试未果，下一步升级压力测试参数或转SI0硬触发。\n- OI-SI1KICKQUANTSIM012026100：未闭，30次尝试未果，下一步校验量子模拟kick阈值或释放队列锁。\n\n④生债一条：\n- 生债：SI2/SI0需建立\"广播-队列-未闭项\"三联自动对账机制，防止kick空转与重复尝试。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
