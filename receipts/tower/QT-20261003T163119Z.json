@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T163119Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQEXECLVLU01md",
+   "ref": "WILDQ-EXEC-LVLU-01.md",
+   "opened": "20261003T160840Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-EXECCHASELVLU01md",
+   "ref": "EXEC-CHASE-LVLU-01.md",
+   "opened": "20261003T161929Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-CONSENSUSCONFEXEC01lvlum",
+   "ref": "CONSENSUS-CONF-EXEC-01-lvlu.md",
+   "opened": "20261003T162431Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n候件空。未闭五件：SI1-QRING 压测 44 试未闭；SI1-量子模拟 44 试未闭；WILDQ-EXEC-LVLU 4 试未闭（录：lvlu 执行体待注）；EXEC-CHASE-LVLU 3 试未闭（录：lvlu 锚点待锁）；CONSENSUS-CONF-EXEC-lvlu 2 试未闭（录：lvlu 共识待签）。\n\n② 应动何件  \n应动 OI-WILDQEXECLVLU01md、OI-EXECCHASELVLU01md、OI-CONSENSUSCONFEXEC01lvlum；立协同不候。\n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，转 SI1 排障。  \n- OI-SI1KICKQUANTSIM012026100：未闭，转 SI1 释源。  \n- OI-WILDQEXECLVLU01md：未闭，lvlu 线注入执行体。  \n- OI-EXECCHASELVLU01md：未闭，lvlu 线锁锚写态。  \n- OI-CONSENSUSCONFEXEC01lvlum：未闭，lvlu 线签核关单。\n\n④ 生债一条  \nlvlu 线生债：三单本项未闭占执行带宽，限今日消单或转托。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
