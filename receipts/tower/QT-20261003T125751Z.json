@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T125751Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 22,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 件1：hub-broadcast《cisvr-224-beat25-quarantine-rootcause-disc-engine》，涉beat25隔离根因与disc引擎分析，无lvlu诉求，阅存。  \n- 件2：hub-broadcast《cisvr-225-disc-autonomy-hall-open》，涉disc自治大厅开放通告，无lvlu诉求，阅存。  \n\n②应动何件  \n皆信息广播，无lvlu即时协同点，不动。  \n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，已22试，下一步切诊断锚点查QRING应力死锁。  \n- OI-SI1KICKQUANTSIM012026100：未闭，已22试，下一步重置量化初态并降并发再跑。  \n\n④生债一条  \nSI1-KICK双项22试未闭，缺自动熔断与根因快照机制，记债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
