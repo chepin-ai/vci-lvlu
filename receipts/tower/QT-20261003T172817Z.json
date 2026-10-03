@@ -1,0 +1,64 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T172817Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T171720Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T171720Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQEXECLVLU01md",
+   "ref": "WILDQ-EXEC-LVLU-01.md",
+   "opened": "20261003T160840Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-EXECCHASELVLU01md",
+   "ref": "EXEC-CHASE-LVLU-01.md",
+   "opened": "20261003T161929Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-CONSENSUSCONFEXEC01lvlum",
+   "ref": "CONSENSUS-CONF-EXEC-01-lvlu.md",
+   "opened": "20261003T162431Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- SI1-KICK-QRING-STRESS-01：SI1压测启动件，录lvlu线QRing-律吕应激协同诉求。  \n- SI1-KICK-QUANT-SIM-01：SI1量模启动件，录lvlu线量化-共识基底映射诉求。  \n\n②应动何件  \n- 应动双候件（QRING-STRESS、QUANT-SIM），立协同不候。  \n\n③未闭项推进  \n- OI-WILDQEXECLVLU01md：未闭，下步转lvlu核心做执行路径裁决。  \n- OI-EXECCHASELVLU01md：未闭，下步追补lvlu侧执行回执与状态同步。  \n- OI-CONSENSUSCONFEXEC01lvlum：未闭，下步强推共识确认限时闭环。  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下步并入压测流并同步QRing拓扑。  \n- OI-SI1KICKQUANTSIM012026100：未闭，下步启量模实例并注入lvlu律吕参数。  \n\n④生债一条  \n- 生债：本batch需向SI1提交双KICK件之lvlu侧执行回执一条，待闭环。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
