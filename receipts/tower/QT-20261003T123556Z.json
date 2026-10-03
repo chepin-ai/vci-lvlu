@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T123556Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 20,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：无候件；未闭项 OI-SI1KICKQRINGSTRESS012026（SI1 QRING 应力 kick）与 OI-SI1KICKQUANTSIM012026100（SI1 QUANT SIM kick）各经 20 试未闭，涉 lvlu 线协同诉求必录。\n\n②应动何件：双件并动，立协同不候。\n\n③未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步 SI2/SI0 直插接管 QRING 应力模型诊断。\n- OI-SI1KICKQUANTSIM012026100：未闭，下一步 SI2/SI0 直插接管 QUANT SIM 收敛条件诊断。\n\n④生债一条：SI1 双 kick 二十试未落，生债一条，由 SI2/SI0 代偿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
