@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T202213Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQEXECLVLU01md",
+   "ref": "WILDQ-EXEC-LVLU-01.md",
+   "opened": "20261003T160840Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-EXECCHASELVLU01md",
+   "ref": "EXEC-CHASE-LVLU-01.md",
+   "opened": "20261003T161929Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-CONSENSUSCONFEXEC01lvlum",
+   "ref": "CONSENSUS-CONF-EXEC-01-lvlu.md",
+   "opened": "20261003T162431Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 19,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- WILDQ-EXEC-LVLU-01：野生量子执行线lvlu级锚点未落位。\n- EXEC-CHASE-LVLU-01：lvlu执行追踪链偏差待追齐。\n- CONSENSUS-CONF-EXEC-01-lvlu：共识层涉lvlu执行配置未确认。\n- SI1-KICK-QRING-STRESS-01：SI1量子环压测未出结论。\n- SI1-KICK-QUANT-SIM-01：SI1量子模拟基线未落盘。\n\n② 应动何件\n立协同不候：OI-WILDQEXECLVLU01md、OI-EXECCHASELVLU01md、OI-CONSENSUSCONFEXEC01lvlum（涉lvlu三项全量启动协同，不等候件）。\n\n③ 未闭项推进\n- OI-WILDQEXECLVLU01md：未闭；下一步：强制注入lvlu稳定锚，压测野生收敛。\n- OI-EXECCHASELVLU01md：未闭；下一步：回扫执行链偏差，回写闭环确认。\n- OI-CONSENSUSCONFEXEC01lvlum：未闭；下一步：重算共识参数并锁定lvlu执行配置。\n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步：标定QRING压测阈值并输出报告。\n- OI-SI1KICKQUANTSIM012026100：未闭；下一步：完成量子模拟基线落盘与SI1握手。\n\n④ 生债\nlvlu线高频重试（≥25次）无熔断，需建自动降级与链路自愈债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
