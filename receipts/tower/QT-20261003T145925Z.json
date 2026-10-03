@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T145925Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 34,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- cisvr-224：beat25 隔离根因 disc 引擎 hub-broadcast 一件。\n- cisvr-225：disc 自治大厅开放 hub-broadcast 一件。\n\n②应动何件\n两件皆立协同不候：cisvr-224 接入引擎根因流；cisvr-225 同步 hall 开放态。\n\n③未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，34 试未过，下一步切 stress 诊断模式或升核重试。\n- OI-SI1KICKQUANTSIM012026100：未闭，34 试未过，下一步重校 quant 基线或回滚弃参。\n\n④生债一条\n双广播未闭环签收，两 OI stress/quant 久悬 34 试，需补 disc 引擎与 hall 状态回执。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
