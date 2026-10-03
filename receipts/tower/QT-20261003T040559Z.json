@@ -1,0 +1,39 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T040559Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 20,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 收hub广播一件：cisvr-225-disc-autonomy-hall-open.md，涉lvlu自主大厅开放诉求，已录。  \n\n② 应动何件  \n- 立协同未闭项二件：SI1-KICK-QRING-STRESS与QUANT-SIM均20试未闭，须即刻跨层排查；广播件按hub规则周知，不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：QRING压测链路熔断，切降级模式并回灌基线重试。  \n- OI-SI1KICKQUANTSIM012026100：未闭，下一步：量子模拟握手超时，须同步时钟源后重启SIM-01实例。  \n\n④ 生债一条  \n- 债：autonomy-hall-open广播未获SI1层ack，需补发确认或更新hall节点准入白名单。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
