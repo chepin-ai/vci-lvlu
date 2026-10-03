@@ -1,0 +1,39 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T041638Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 21,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- 候件：收 cisvr-225-disc-autonomy-hall-open.md 广播，自主大厅开放通告，无 lvlu 诉求。\n- 未闭项1：SI1-KICK-QRING-STRESS-01 量子环压力项，21 试未闭。\n- 未闭项2：SI1-KICK-QUANT-SIM-01 量子模拟项，21 试未闭。\n\n② 应动何件\n- 两未闭项均逾 20 试，立协同 SI1 强制收敛，不候。\n\n③ 未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步压测终验或降级归档。\n- OI-SI1KICKQUANTSIM012026100：未闭，下一步量测闭环或回退 SI0。\n\n④ 生债一条\n- 生债：设 21 试熔断规则，超阈值未闭自动升 SI0 仲裁，防长期挂起。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
