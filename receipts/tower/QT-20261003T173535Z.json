@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T173535Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQEXECLVLU01md",
+   "ref": "WILDQ-EXEC-LVLU-01.md",
+   "opened": "20261003T160840Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-EXECCHASELVLU01md",
+   "ref": "EXEC-CHASE-LVLU-01.md",
+   "opened": "20261003T161929Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-CONSENSUSCONFEXEC01lvlum",
+   "ref": "CONSENSUS-CONF-EXEC-01-lvlu.md",
+   "opened": "20261003T162431Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n候件空。未闭五件涉lvlu：野执序列01、执追序列01、共识配置执行01、SI1量子环压测、SI1量子模拟。  \n\n② 应动何件  \n野执（tries=10）与执追（tries=9）tries过高，立协同，不候。  \n\n③ 未闭项推进  \n- OI-WILDQEXECLVLU01md：未闭，下一步：升级路径/同步主核；  \n- OI-EXECCHASELVLU01md：未闭，下一步：追因收窄/闭环执行；  \n- OI-CONSENSUSCONFEXEC01lvlum：未闭，下一步：确认配置回执；  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：启动压测收数；  \n- OI-SI1KICKQUANTSIM012026100：未闭，下一步：就绪模拟脚本。  \n\n④ 生债一条  \n生债：未闭项tries>5自动熔断并上报主核，防死锁。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
