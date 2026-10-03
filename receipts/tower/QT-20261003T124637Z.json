@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T124637Z",
+ "idle_in": 3,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 21,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n候件空；未闭项①「SI1-KICK-QRING-STRESS」21试未闭，录lvlu收敛诉求；未闭项②「SI1-KICK-QUANT-SIM」21试未闭，录lvlu收敛诉求。  \n\n② 应动何件  \n双未闭项皆超阈，立协同双件，不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步SI2硬收敛接管。  \n- OI-SI1KICKQUANTSIM012026100：未闭，下一步SI2硬收敛接管。  \n\n④ 生债一条  \n积SI1双项21试未偿之压，生SI0代偿收敛债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
