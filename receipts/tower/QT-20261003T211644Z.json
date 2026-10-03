@@ -1,0 +1,80 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T211644Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=2"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQEXECLVLU01md",
+   "ref": "WILDQ-EXEC-LVLU-01.md",
+   "opened": "20261003T160840Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-EXECCHASELVLU01md",
+   "ref": "EXEC-CHASE-LVLU-01.md",
+   "opened": "20261003T161929Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-CONSENSUSCONFEXEC01lvlum",
+   "ref": "CONSENSUS-CONF-EXEC-01-lvlu.md",
+   "opened": "20261003T162431Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 24,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- hub广播：cisvr-224 beat25隔离根因disc引擎。\n- hub广播：cisvr-225 disc自治大厅开放。\n- PLAN-QUEUE拍：fired=3 kicks=2。\n- OI-WILDQEXECLVLU01md：lvlu野执行，32试未闭。\n- OI-EXECCHASELVLU01md：lvlu追击执行，31试未闭。\n- OI-CONSENSUSCONFEXEC01lvlum：lvlu共识确认，30试未闭。\n- OI-SI1KICKQRINGSTRESS012026：SI1 qring应力，24试未闭。\n- OI-SI1KICKQUANTSIM012026100：SI1量子模拟，24试未闭。\n\n②应动何件：\n立协同三件lvlu未闭项（WILDQ/CHASE/CONSENSUS）及PLAN-QUEUE kicks=2。\n\n③未闭项推进：\n- OI-WILDQEXECLVLU01md：未闭，下一步：第33试，lvlu野执行熔断或回环。\n- OI-EXECCHASELVLU01md：未闭，下一步：第32试，chase收束至lvlu主线程。\n- OI-CONSENSUSCONFEXEC01lvlum：未闭，下一步：第31试，强推lvlu共识仲裁。\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：第25试，释放qring应力转储。\n- OI-SI1KICKQUANTSIM012026100：未闭，下一步：第25试，冻结quant sim快照。\n\n④生债一条：\n生债：lvlu三线93试未决，SI2/SI0须代偿闭环一次。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 2
+ }
+}
