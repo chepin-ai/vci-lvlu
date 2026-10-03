@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T052137Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 27,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 候件空；两未闭项涉lvlu压测与量拟底层诉求，已录。  \n② 应动两未闭项，立协，不候。  \n③ OI-SI1KICKQRINGSTRESS012026：未闭，下一步：Q-Ring第28轮穿透或升SI1主核断点。OI-SI1KICKQUANTSIM012026100：未闭，下一步：量拟第28轮对齐或切备路。  \n④ 生债：SI2/SI0分身负27次未决之责，限今内跨层穿透，逾期链降。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
