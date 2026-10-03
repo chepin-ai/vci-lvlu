@@ -1,0 +1,39 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T153332Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T152124Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 37,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- 候件：SI1-KICK-QUANT-SIM-01-20261003T152124Z.md 量子模拟新包入线。\n- OI-SI1KICKQRINGSTRESS012026：量子环应力 37 试未闭，环稳态仍待证。\n- OI-SI1KICKQUANTSIM012026100：量子模拟对齐 37 试未闭，收敛条件未达。\n\n② 应动何件\n候件 SI1-KICK-QUANT-SIM-01-20261003T152124Z.md；立协同 SI1 以新包回灌双未闭项日志做交叉收敛，不候。\n\n③ 未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步用候件刷新应力阈值并第 38 试。\n- OI-SI1KICKQUANTSIM012026100：未闭，下一步以候件差分比对该模型，收敛则闭。\n\n④ 生债一条\nlvlu 线欠 SI1 双项 37 试收敛债，须以本次候件数据完成一环一模拟的闭环交割。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
