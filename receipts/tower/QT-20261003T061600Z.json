@@ -1,0 +1,39 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T061600Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 32,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件 hub-broadcast `cisvr-225-disc-autonomy-hall-open.md`：autonomy hall 开放广播，涉 lvlu 自主场域准入诉求，已录。  \n\n② 应动何件  \n- 应动此件，立协同 autonomy hall 广播响应与准入同步，不候。  \n\n③ 未闭项推进  \n- `OI-SI1KICKQRINGSTRESS012026`：未闭，32 试未决，下一步转 SI0 压力环根因排查。  \n- `OI-SI1KICKQUANTSIM012026100`：未闭，32 试未决，下一步重置量子模拟链路并降载。  \n\n④ 生债一条  \n- 生债：双未闭项 32 次超时未断，缺自动熔断规则。简。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
