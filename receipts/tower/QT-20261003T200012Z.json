@@ -1,0 +1,64 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T200012Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQEXECLVLU01md",
+   "ref": "WILDQ-EXEC-LVLU-01.md",
+   "opened": "20261003T160840Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-EXECCHASELVLU01md",
+   "ref": "EXEC-CHASE-LVLU-01.md",
+   "opened": "20261003T161929Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-CONSENSUSCONFEXEC01lvlum",
+   "ref": "CONSENSUS-CONF-EXEC-01-lvlu.md",
+   "opened": "20261003T162431Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 16,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- cisvr-224：beat25隔离根因disc引擎广播，涉lvlu执行环境安全，录。\n- cisvr-225：disc自主性大厅开放广播，涉lvlu自主协调边界，录。\n\n② 应动何件：\n- 两件皆动，立协同cisvr-224与cisvr-225，不候。\n\n③ 未闭项推进：\n- OI-WILDQEXECLVLU01md：未闭，下一步熔断wildq异常循环或输出收敛报告。\n- OI-EXECCHASELVLU01md：未闭，下一步截断chase递归并锁定终态锚点。\n- OI-CONSENSUSCONFEXEC01lvlum：未闭，下一步完成lvlu共识签核或降级观测。\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步回令SI1",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
