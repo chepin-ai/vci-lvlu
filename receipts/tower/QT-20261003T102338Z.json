@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T102338Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空。未闭项一：SI1-KICK-QRING-STRESS（量子环压测启动），涉lvlu架构诉求，8试未闭。未闭项二：SI1-KICK-QUANT-SIM（量子模拟启动），涉lvlu算力诉求，8试未闭。\n\n② 应动何件：双件均8试卡死，立协同两线，不候。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：拉通SI1与QRING负责人根因会诊，今日强关或冻结。\n- OI-SI1KICKQUANTSIM012026100：未闭，下一步：核查Quant Sim环境准入阻塞，今日输出关单或降级方案。\n\n④ 生债一条：生债：SI1双KICK项八试未闭，已触发跨线协同，债主lvlu/SI1，今日限闭。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
