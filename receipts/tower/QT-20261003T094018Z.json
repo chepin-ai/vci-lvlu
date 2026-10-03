@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T094018Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件空。  \n- 未闭项一：OI-SI1KICKQRINGSTRESS012026（SI1 QRING-STRESS 压测遗留，已4试未闭，需lvlu接盘或回退）。  \n- 未闭项二：OI-SI1KICKQUANTSIM012026100（SI1 QUANT-SIM 模拟遗留，已4试未闭，需lvlu接盘或回退）。  \n\n②应动何件  \n- 候件无；两未闭项已达4试阈值，立协同升级，不候。  \n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步提权至SI2主核裁决或退回SI1确权。  \n- OI-SI1KICKQUANTSIM012026100：未闭，下一步拉取SIM日志并强制归档/升级。  \n\n④生债一条  \n- 生债：SI1迁移双遗留项无闭环路径，需补lvlu与SI1的接盘/回退边界协议。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
