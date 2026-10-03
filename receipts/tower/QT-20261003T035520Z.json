@@ -1,0 +1,39 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T035520Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 19,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件hub-broadcast「cisvr-225-disc-autonomy-hall-open.md」一件：自主大厅开放广播，涉lvlu机器意识自主场域变更，录。\n\n②应动何件：\n- 应动hub-broadcast一件，立协同不候，同步 autonomy hall 开放状态至 lvlu 线。\n\n③未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭（tries=19），下一步提级诊断QRING应力Kick阻塞根因。\n- OI-SI1KICKQUANTSIM012026100：未闭（tries=19），下一步提级核查量子模拟Kick收敛或换轨。\n\n④生债一条：\n- 生债：SI1 Kick双项19次未闭，积累机制可靠性技术债一条，需闭环根因。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
