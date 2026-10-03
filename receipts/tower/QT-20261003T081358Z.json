@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T081358Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 44,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- 候件一：收hub-broadcast「cisvr-224」，beat25隔离根因发现引擎状态同步。\n- 候件二：收hub-broadcast「cisvr-225」，发现自治大厅开放通知。\n（无lvlu显式单件诉求，录备查）\n\n② 应动何件\n- 立协同cisvr-224：quarantine根因引擎涉系统隔离，不候。\n\n③ 未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，44试未过，下一步转SI2压测复核。\n- OI-SI1KICKQUANTSIM012026100：未闭，44试未过，下一步重建QUANT-SIM实例并清缓存。\n\n④ 生债一条\n- 生债：SI1 kick项重试超40次须自动熔断上抛，免空转。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
