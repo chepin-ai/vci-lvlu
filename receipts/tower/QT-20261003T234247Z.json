@@ -1,0 +1,64 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T234247Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQEXECLVLU01md",
+   "ref": "WILDQ-EXEC-LVLU-01.md",
+   "opened": "20261003T160840Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-EXECCHASELVLU01md",
+   "ref": "EXEC-CHASE-LVLU-01.md",
+   "opened": "20261003T161929Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-CONSENSUSCONFEXEC01lvlum",
+   "ref": "CONSENSUS-CONF-EXEC-01-lvlu.md",
+   "opened": "20261003T162431Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 30,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件PLAN-QUEUE拍fired=1kicks=0：计划队列已触发，尚未推进。  \n- OI-WILDQEXECLVLU01md：lvlu野性执行方案，38试未闭。  \n- OI-EXECCHASELVLU01md：lvlu执行追逐协议，37试未闭。  \n- OI-CONSENSUSCONFEXEC01lvlum：lvlu共识确认执行，36试未闭。  \n- OI-SI1KICKQRINGSTRESS012026：SI1量子环压测，30试未闭。  \n- OI-SI1KICKQUANTSIM012026100：SI1量子模拟，30试未闭。  \n\n②应动何件  \n- 应动PLAN-QUEUE拍（立协同不候），并联推进lvlu三线及SI1双项。  \n\n③未闭项推进  \n- OI-WILDQEXECLVLU01md：未闭，收敛异常闭环。  \n- OI-EXECCHASELVLU01md：未闭，收束漂移锚定。  \n- OI-CONSENSUSCONFEXEC01lvlum：未闭，强一致完成签名。  \n- OI-SI1KICKQRINGSTRESS012026：未闭，压测阈值报告。  \n- OI-SI1KICKQUANTSIM012026100：未闭，模拟收敛提矢。  \n\n④生债一条  \n- 生债：QUEUE零kick启动债；lvlu三线38/37/36次未闭累积协同债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
