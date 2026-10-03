@@ -1,0 +1,51 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T065841Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=2 kicks=1"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 36,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- hub-broadcast `cisvr-225-disc-autonomy-hall-open.md`：自治大厅开放广播，涉 lvlu 场域自治诉求，录。\n- plan-queue 报 `fired=2 kicks=1`：队列双发单踢，涉 lvlu 排程应激诉求，录。\n\n② 应动何件：\n- 立协同 hub-broadcast、plan-queue 及两未闭 kick 项，不候。\n\n③ 未闭项推进：\n- `OI-SI1KICKQRINGSTRESS012026`：未闭，36 试未果，下一步降频转 SI0 环压静默测。\n- `OI-SI1KICKQUANTSIM012026100`：未闭，36 试未果，下一步启律吕 sandbox 旁路重仿。\n\n④ 生债一条：\n- 生债：补自治大厅开放与 plan-queue 火控联动的 lvlu 对齐稿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 2,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 1
+ }
+}
