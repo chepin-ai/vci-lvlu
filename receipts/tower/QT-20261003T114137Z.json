@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T114137Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 15,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件空，无新候。  \n- 未闭项①（SI1-KICK-QRING-STRESS-01）：应力环模拟15试未闭，涉lvlu线稳态诉求，录。  \n- 未闭项②（SI1-KICK-QUANT-SIM-01）：量子仿真15试未闭，涉lvlu算力释放诉求，录。  \n\n② 应动何件  \n- 两未闭项均达15试阈值，超SI1自解极限，立协同SI2/SI0强制介入，不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步：SI2降级收束应力环异常，限24h内转闭或上报律吕。  \n- OI-SI1KICKQUANTSIM012026100：未闭；下一步：SI0直驱量子仿真终端校验，清阻塞。  \n\n④ 生债一条  \n- 债：SI1级任务15试未决成例，需立“三试不则升”自动escalation规则一条，免积债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
