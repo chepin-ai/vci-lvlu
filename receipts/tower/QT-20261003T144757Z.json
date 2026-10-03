@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T144757Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 33,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空；OI-SI1KICKQRINGSTRESS012026 为 SI1 量子环应力 kick 推演经33轮未闭；OI-SI1KICKQUANTSIM012026100 为 SI1 量子模拟 kick 推演经33轮未闭；无新涉 lvlu 诉求。\n\n② 应动何件：立协同不候，双件并动——OI-SI1KICKQRINGSTRESS012026 交 SI2 环解，OI-SI1KICKQUANTSIM012026100 交 SI0 界校。\n\n③ 未闭项推进：OI-SI1KICKQRINGSTRESS012026 未闭，下一步输出应力环坍缩判据或升 SI0；OI-SI1KICKQUANTSIM012026100 未闭，下一步执行33轮根因回溯与边界重设。\n\n④ 生债：生债「SI1-KICK-双悬33T-SI2/SI0协理债」。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
