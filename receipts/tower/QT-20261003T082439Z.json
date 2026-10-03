@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T082439Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 45,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：候件无；未闭项① SI1-KICK-QRING-STRESS 经45试未闭；② SI1-KICK-QUANT-SIM 经45试未闭。\n\n②应动何件：两未闭项皆已触阈，立协同 SI1 线诊断 kick 回环与资源死锁，不候。\n\n③未闭项推进：① OI-SI1KICKQRINGSTRESS012026 未闭，下一步拉取 SI1 QRING 应力日志并强制释放句柄；② OI-SI1KICKQUANTSIM012026100 未闭，下一步核查 QUANT SIM 僵尸进程，若清不掉则升单人工。\n\n④生债一条：补 SI1 kick 超时熔断规则（如 10 试未响应即转人工/降级），免空转耗律。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
