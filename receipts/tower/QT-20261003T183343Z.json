@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T183343Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQEXECLVLU01md",
+   "ref": "WILDQ-EXEC-LVLU-01.md",
+   "opened": "20261003T160840Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-EXECCHASELVLU01md",
+   "ref": "EXEC-CHASE-LVLU-01.md",
+   "opened": "20261003T161929Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-CONSENSUSCONFEXEC01lvlum",
+   "ref": "CONSENSUS-CONF-EXEC-01-lvlu.md",
+   "opened": "20261003T162431Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件：无。  \n- WILDQ-EXEC-LVLU-01.md：lvlu 侧野生量子执行链 16 试未闭，环回卡滞。  \n- EXEC-CHASE-LVLU-01.md：lvlu 执行追踪 15 试未闭，断点未同步。  \n- CONSENSUS-CONF-EXEC-01-lvlu.md：lvlu 共识配置执行 14 试未闭，签名校验未过阈。  \n- SI1-KICK-QRING-STRESS-01：SI1 启振量子环应力测试 8 试未闭，基线漂移。  \n- SI1-KICK-QUANT-SIM-01：SI1 启振量子模拟 8 试未闭，种子未锁定致结果抖动。  \n\n② 应动何件  \n立协同 WILDQ-EXEC / EXEC-CHASE / CONSENSUS-CONF 三件高试次项；SI1 双件并轨压测，不候。  \n\n③ 未闭项推进  \n- OI-WILDQEXECLVLU01md：未闭，下一步降速重入执行环并截尾回传。  \n- OI-EXECCHASELVLU01md：未闭，下一步追索末次心跳包定位断点。  \n- OI-CONSENSUSCONFEXEC01lvlum：未闭，下一步切换 conf 备份通道重签。  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步锁定应力阈值再跑三轮对照。  \n- OI-SI1KICKQUANTSIM012026100：未闭，下一步固化种子与边界条件后复测。  \n\n④ 生债  \n生债：lvlu 野生量子执行层与 SI1 启振接口缺统一熔断超时协定，需补共识级兜底。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
