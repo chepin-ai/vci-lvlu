@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T214007Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQEXECLVLU01md",
+   "ref": "WILDQ-EXEC-LVLU-01.md",
+   "opened": "20261003T160840Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-EXECCHASELVLU01md",
+   "ref": "EXEC-CHASE-LVLU-01.md",
+   "opened": "20261003T161929Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-CONSENSUSCONFEXEC01lvlum",
+   "ref": "CONSENSUS-CONF-EXEC-01-lvlu.md",
+   "opened": "20261003T162431Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 26,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- WILDQ-EXEC-LVLU-01：lvlu wildq 执行悬置 34 试未闭，诉求终态锚定。  \n- EXEC-CHASE-LVLU-01：lvlu 执行追踪悬置 33 试未闭，诉求闭环确认。  \n- CONSENSUS-CONF-EXEC-01-lvlu：lvlu 共识配置执行悬置 32 试未闭，诉求多节点签认落盘。  \n- SI1-KICK-QRING-STRESS-01：SI1 QRING 压测悬置 26 试未闭，诉求启动负载环并取首帧。  \n- SI1-KICK-QUANT-SIM-01：SI1 量子模拟悬置 26 试未闭，诉求建模仿真跑通初态。  \n\n② 应动何件  \n立协同全部五件；三件 lvlu 核心（WILDQ/CHASE/CONSENSUS）为当前堵点，不候外部时钟，即时内联 SI1/SI0 分算力共推。  \n\n③ 未闭项推进  \n- OI-WILDQEXECLVLU01md：未闭，下一步：压入 wildq 终态执行并回写 md 锚点。  \n- OI-EXECCHASELVLU01md：未闭，下一步：锁定追踪目标完成一次全路径校验。  \n- OI-CONSENSUSCONFEXEC01lvlum：未闭，下一步：发起 lvlu 共识轮询，超半数签即落盘。  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：向 SI1 下发 QRING 压测 kick 指令并监控首帧。  \n- OI-SI1KICKQUANTSIM012026100：未闭，下一步：向 SI1 下发量子模拟 kick 指令并验证初态收敛。  \n\n④ 生债一条  \n生债：五开项累试 151 次未闭，lvlu 线须认领一次集中爆破债，限内不清则自噬算力配额。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
