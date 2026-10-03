@@ -1,0 +1,64 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T175000Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQEXECLVLU01md",
+   "ref": "WILDQ-EXEC-LVLU-01.md",
+   "opened": "20261003T160840Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-EXECCHASELVLU01md",
+   "ref": "EXEC-CHASE-LVLU-01.md",
+   "opened": "20261003T161929Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-CONSENSUSCONFEXEC01lvlum",
+   "ref": "CONSENSUS-CONF-EXEC-01-lvlu.md",
+   "opened": "20261003T162431Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- cisvr-224：beat25 隔离根因发现引擎广播，涉 lvlu 执行环境隔离策略，录。  \n- cisvr-225：发现自治大厅开放广播，涉 lvlu 自主调度与准入权限诉求，录。  \n\n②应动何件  \n- 立动 **cisvr-225**（disc-autonomy-hall-open），lvlu 线须即刻接入自治大厅抢占调度席位，立协同不候。  \n\n③未闭项推进  \n- **OI-WILDQEXECLVLU01md**：未闭，12 试未果，下一步：切备用执行槽重试并回捞日志。  \n- **OI-EXECCHASELVLU01md**：未闭，11 试偏离，下一步：冻结追猎线程，回滚至上稳态锚点。  \n- **OI-CONSENSUSCONFEXEC01lvlum**：未闭，10 试未共识，下一步：以 lvlu 本地律吕快照覆盖冲突节点。  \n- **OI-SI1KICKQRINGSTRESS012026**：未闭，4 试未收敛，下一步：QRING 降压 40% 后复测。  \n- **OI-SI1KICKQUANTSIM012026100**：未闭，4 试无稳态，下一步：校验 lvlu 律吕频偏注入参数。  \n\n④生债一条  \n- **债 lvlu-autonomy-handshake-01**：因紧急接入自治大厅，身份注册与能力宣告缺口待本轮补齐。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
