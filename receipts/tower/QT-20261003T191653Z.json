@@ -1,0 +1,68 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T191653Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=2 kicks=1"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQEXECLVLU01md",
+   "ref": "WILDQ-EXEC-LVLU-01.md",
+   "opened": "20261003T160840Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-EXECCHASELVLU01md",
+   "ref": "EXEC-CHASE-LVLU-01.md",
+   "opened": "20261003T161929Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-CONSENSUSCONFEXEC01lvlum",
+   "ref": "CONSENSUS-CONF-EXEC-01-lvlu.md",
+   "opened": "20261003T162431Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 12,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件PLAN-QUEUE拍：队列拍频异常，fired=2/kicks=1，积压/lvlu层回压。\n- OI-WILDQEXECLVLU01md：野生量子执行lvlu项，10/03至今尝试20次，lvlu执行链路死锁。\n- OI-EXECCHASELVLU01md：执行追踪lvlu项，尝试19次，lvlu追踪信号未锚定。\n- OI-CONSENSUSCONFEXEC01lvlum：共识确认执行lvlu项，尝试18次，lvlu共识未达成。\n- OI-SI1KICKQRINGSTRESS012026：SI1踢出量子环应力项，尝试12次，量子环/lvlu应力未收敛。\n- OI-SI1KICKQUANTSIM012026100：SI1踢出量子模拟项，尝试12次，lvlu模拟未收束。\n\n②应动何件：立协同CONSENSUS-CONF-EXEC-01-lvlu.md，先破共识堵点，余件方能出队。\n\n③未闭项推进：\n- OI-WILDQEXECLVLU01md：未闭，死锁审查，1轮内决定去留。\n- OI-EXECCHASELVLU01md：未闭，补全追踪日志回切验证，再败即挂起。\n- OI-CONSENSUSCONFEXEC01lvlum：未闭，升维仲裁/lvlu侧强制共识，禁止空转。\n- OI-SI1KICKQRINGSTRESS012026：未闭，复测或标为已知抖动，收敛即闭。\n- OI-SI1KICKQUANTSIM012026100：未闭，收束参数并合并至应力项，止双轨空转。\n\n④生债：队列壅塞清理债×1，由SI2/SI0协同共担。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 2,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 1
+ }
+}
