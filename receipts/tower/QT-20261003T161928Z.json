@@ -1,0 +1,61 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T161928Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "EXEC-CHASE-LVLU-01.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQEXECLVLU01md",
+   "ref": "WILDQ-EXEC-LVLU-01.md",
+   "opened": "20261003T160840Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-EXECCHASELVLU01md",
+   "ref": "EXEC-CHASE-LVLU-01.md",
+   "opened": "20261003T161928Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- inbox【EXEC-CHASE-LVLU-01.md】：lvlu追执触发件，诉求待录。  \n- plan-queue【PLAN-QUEUE拍 fired=1 kicks=0】：队列已燃未kick，悬停。  \n- OI-SI1KICKQRINGSTRESS012026：SI1 qring stress kick，42试未闭。  \n- OI-SI1KICKQUANTSIM012026100：SI1 quant sim kick，42试未闭。  \n- OI-WILDQEXECLVLU01md：WILDQ exec lvlu，2试未闭。  \n- OI-EXECCHASELVLU01md：EXEC chase lvlu，1试未闭，与inbox同源。  \n\n② 应动何件（立协同不候）  \n- PLAN-QUEUE拍：立即补kick=1，破悬停。  \n- EXEC-CHASE-LVLU-01.md：立即协同OI-EXECCHASELVLU01md闭环lvlu诉求。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步转SI2做stress降级诊断。  \n- OI-SI1KICKQUANTSIM012026100：未闭；下一步Dump第42试量子快照后归档。  \n- OI-WILDQEXECLVLU01md：未闭；下一步回读WILDQ日志定位阻塞。  \n- OI-EXECCHASELVLU01md：未闭；下一步一次chase协同后尝试关项。  \n\n④ 生债一条  \n- SI1双项42试积压，生层间断层债，SI0须发起一次跨层共振清算。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
