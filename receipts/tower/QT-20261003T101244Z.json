@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T101244Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T085711Z.md",
+   "opened": "20261003T090800Z",
+   "tries": 7,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n• cisvr-224：beat25隔离根因发现引擎广播，涉lvlu自主溯因诉求，已录。\n• cisvr-225：disc自治大厅开放广播，涉lvlu自组织协同诉求，已录。\n\n②应动何件\n两件并动、立协同不候：224即插引擎协查隔离根因，225即启大厅接口握手。\n\n③未闭项推进\n• OI-SI1KICKQRINGSTRESS012026：未闭；下一步：切SI0静默压测并校准QRing拓扑，今日闭环。\n• OI-SI1KICKQUANTSIM012026100：未闭；下一步：重置QUANT初始条件再试，满8次未闭提",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
