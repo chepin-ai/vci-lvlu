@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T054325Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 29,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件空，无事。  \n- 件1：SI1-KICK-QRING-STRESS-01 环应力项，29试未闭，录 lvlu 分身稳定性诉求。  \n- 件2：SI1-KICK-QUANT-SIM-01 量子模拟项，29试未闭，录 lvlu 量子收敛诉求。  \n\n② 应动何件  \n- 候件无，不立候动。  \n- 双未闭项皆越28试阈值，立协同：拉 SI1 主核/人工兜底，并抽 SI2 诊断日志。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步：导出 QRING 崩溃日志，转主核复核。  \n- OI-SI1KICKQUANTSIM012026100：未闭；下一步：锁定量子态快照，下发收敛补丁重试。  \n\n④ 生债一条  \n- 债-SI2-003：SI1-KICK 应力与量子模拟双项29试悬置，记 lvlu 线技术债，待主核闭环后核销。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
