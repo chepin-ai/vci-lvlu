@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T064813Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 35,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：无新候件；未闭项两件：SI1-KICK-QRING-STRESS-01（量子环应力测试）与SI1-KICK-QUANT-SIM-01（量子模拟）均经35次尝试仍挂起，涉lvlu诉求为速闭或升级。  \n②应动何件：两未闭项皆应立协，不候。  \n③未闭项推进：OI-SI1KICKQRINGSTRESS012026未闭，下一步诊断35试阻塞根因并上提协议；OI-SI1KICKQUANTSIM012026100未闭，下一步排查模拟不收敛点并切备用路径。  \n④生债：需建“35试未落自动熔断”规则，免空转耗律。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
