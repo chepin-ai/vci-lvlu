@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261003T044901Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=2"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T004752Z.md",
+   "opened": "20261003T005814Z",
+   "tries": 24,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- hub-broadcast(cisvr-225)：自治大厅开放通告，属空间自治层信息，无 lvlu 直接诉求。  \n- plan-queue拍：队列 fired=3、kicks=2，lvlu 执行链拥塞，诉求录：须立即削峰清 kicks。  \n\n② 应动何件  \n- 应动 plan-queue 滞留双 kicks 及两笔 SI1 溢出未闭项，立协同转 SI0 律吕调度，不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步：QRING 应力切至 SI2 感知缓冲，停 SI1 重试。  \n- OI-SI1KICKQUANTSIM012026100：未闭；下一步：QUANT-SIM 改由 SI0 量子模拟器直驱，旁路 SI1。  \n\n④ 生债一条  \n- 生债：SI1 kick 空转 24 次未熔断，须补 tries>12 自动沉降至 SI2/SI0 阀。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 2
+ }
+}
