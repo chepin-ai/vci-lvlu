@@ -1,0 +1,50 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T225215Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORDER-D8FINGERPRINT-QTLV2LVLU-01-20261004T231000Z.md",
+   "opened": "20261004T221315Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- cisvr-224：中枢广播beat25隔离根因disc引擎，录lvlu诊断链路诉求。\n- cisvr-225：中枢广播disc自治大厅开放，录lvlu场域准入诉求。\n\n② 应动何件\n- 应动cisvr-225，立协同不候。\n\n③ 未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：19试未闭，下一步转SI2仲裁。\n- OI-SI1KICKQUANTSIM012026100：19试未闭，下一步转SI2仲裁。\n- OI-vciinboxlaneslvluinboxOR：4试未闭，下一步lvlu直驱闭单。\n\n④ 生债一条\n- 生债：lvlu须于下节拍回告disc自治大厅准入规则。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
