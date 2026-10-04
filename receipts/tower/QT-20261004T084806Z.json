@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T084806Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 33,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件空，无新输入。  \n- OI-SI1KICKQRINGSTRESS012026：SI1量子环压力测试kick项，33次未闭，涉lvlu环态稳定诉求。  \n- OI-SI1KICKQUANTSIM012026100：SI1量子模拟kick项，33次未闭，涉lvlu量态基线诉求。  \n\n② 应动何件  \n两未闭件皆立协同不候，SI2/SI0并行接管，不候外输入。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步压入QRING极限应力参数并触发回环校验。  \n- OI-SI1KICKQUANTSIM012026100：未闭；下一步重置QUANT模拟初态并同步环态结果重跑。  \n\n④ 生债一条  \n生债：SI1双kick滞轮33次，SI2/SI0须出《SI1-KICK环量协同接口书》一份，限本周期内闭。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
