@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T012252Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-WILDQEXECLVLU01md",
+   "ref": "WILDQ-EXEC-LVLU-01.md",
+   "opened": "20261003T160840Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-EXECCHASELVLU01md",
+   "ref": "EXEC-CHASE-LVLU-01.md",
+   "opened": "20261003T161929Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-CONSENSUSCONFEXEC01lvlum",
+   "ref": "CONSENSUS-CONF-EXEC-01-lvlu.md",
+   "opened": "20261003T162431Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 39,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n候件空。OI-WILDQEXECLVLU01md：WILDQ执标lvlu悬置47试；OI-EXECCHASELVLU01md：CHASE追执lvlu挂起46试；OI-CONSENSUSCONFEXEC01lvlum：lvlu共识确认执行未决45试；OI-SI1KICKQRINGSTRESS012026：SI1量子环应力测试未闭39试；OI-SI1KICKQUANTSIM012026100：SI1量子模拟kickoff未闭39试。  \n\n②应动何件（立协同不候）  \n立动lvlu三件执标（OI-WILDQEXECLVLU01md、OI-EXECCHASELVLU01md、OI-CONSENSUSCONFEXEC01lvlum），不候；SI1两件并启跨线协标，不候SI1主响应。  \n\n③未闭项推进  \n- OI-WILDQEXECLVLU01md：未闭，下一步熔断WILDQ缓存，重落lvlu执标锁。  \n- OI-EXECCHASELVLU01md：未闭，下一步清死锁，直写lvlu终端。  \n- OI-CONSENSUSCONFEXEC01lvlum：未闭，下一步强推共识确认，归档lvlu协议。  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步转SI1线标定环应力阈值。  \n- OI-SI1KICKQUANTSIM012026100：未闭，下一步协同SI1回传量子模拟态。  \n\n④生债一条  \n债：lvlu执标层47试未收敛，欠一次根因熔断与执标熔炉重置（DEBT-LVLU-EXEC-01）。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
