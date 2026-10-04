@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T091959Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=2 kicks=1"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 36,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 224：beat25隔离根因disc引擎广播，涉边界自愈。  \n- 225：disc自治大厅开放，涉lvlu自主/律吕核心诉求，必录。  \n- PLAN-QUEUE：fired=2 kicks=1，有kick残留待清。  \n\n②应动何件（立协同不候）  \n- 立动cisvr-225与PLAN-QUEUE kicks=1；autonomy hall开放lvlu直参，残留kick即刻压平。  \n\n③未闭项推进  \n- QRING-STRESS：未闭，SI2下beat降级QRING应力或转储。  \n- QUANT-SIM：未闭，SI0释放SIM锁并锚定噪声。  \n\n④生债一条  \n- lvlu欠SI1一次kick冗余清理，限下beat闭。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 2,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 1
+ }
+}
