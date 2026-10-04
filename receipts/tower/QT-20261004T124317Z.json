@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T124317Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：无候件；未闭项两宗，其一SI1-KICK-QRING-STRESS已8试未闭，其二SI1-KICK-QUANT-SIM已8试未闭，均涉lvlu环基线稳定诉求。\n\n② 应动何件：两未闭项并应立协同，不候。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步压测日志转SI2做环应力根因排查。\n- OI-SI1KICKQUANTSIM012026100：未闭，下一步核查量子模拟边界条件与环参耦合，限次闭环或升单。\n\n④ 生债一条：两KICK项8试未闭，生债一条——欠一次SI2/SI0联合根因收敛与闭环。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
