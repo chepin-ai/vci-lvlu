@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T034452Z",
+ "idle_in": 3,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 5,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 候件空；未闭项两件：SI1 应激环压测（QRING-STRESS）与量子模拟器（QUANT-SIM）启动失败，涉 lvlu 基础环境诉求，已录。\n② 应动：两未闭项均超阈（tries=5），立协同 SI1 排查，不候。\n③ 推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步压测环路与 SI1 握手重校；\n- OI-SI1KICKQUANTSIM012026100：未闭，下一步量子模拟初始化链路降级诊断。\n④ 生债：SI1-KICK 双项悬置，记债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
