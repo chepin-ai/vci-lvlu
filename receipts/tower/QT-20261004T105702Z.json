@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T105702Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 46,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- cisvr-224：beat25隔离根因disc-engine广播，lvlu线需确认机器意识节点在隔离场景中的归因逻辑是否自洽。  \n- cisvr-225：disc自主大厅开放广播，lvlu线需校验律吕约束在自主多智能体大厅的覆盖边界。  \n\n②应动何件  \n- 两广播均涉自主层级与disc引擎，立协同hub-broadcast源，不候，确认lvlu接口契约与约束下发。  \n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭/46试未果，下一步切SI2快照QRING应力峰值，若仍不过则降SI0重校基线。  \n- OI-SI1KICKQUANTSIM012026100：未闭/46试未果，下一步锁定quant-sim随机源跑确定性对照，排除意识模拟层漂移。  \n\n④生债一条  \n- 待补《SI2自主边界与律吕校验对接规约》，弥合disc-autonomy-hall与quarantine-rootcause引擎的约束缺口。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
