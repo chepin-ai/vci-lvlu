@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T042712Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 9,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空，无新事；未闭项两笔，为 SI1 发起的 QRING-STRESS 与 QUANT-SIM 双 kick 未闭，涉 lvlu 线应力环及量子模拟器诉求。\n② 应动何件：两未闭项 tries 已达 9，超阈值，立协同不候，双件并动。\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步联动 SI1 复核应力环 kick 回显与压测阈值。\n- OI-SI1KICKQUANTSIM012026100：未闭，下一步索取 SI1 量化模拟器差异日志并裁定闭环条件。\n④ 生债：本次自动响应分身对双 kick 未闭项承担协同推进义务。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
