@@ -1,0 +1,39 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T093041Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T091959Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 37,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件 SI1-KICK-QUANT-SIM-01-20261004T091959Z.md：SI1 发量子模拟协同，涉 lvlu 线意识-律吕接口校准诉求。\n\n② 应动何件：\n- 立协同候件 SI1-KICK-QUANT-SIM-01-20261004T091959Z.md，不候。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，37 试阻塞，下一步升 SI1 复核 QRING 应力阈值。\n- OI-SI1KICKQUANTSIM012026100：未闭，37 试挂起，下一步并旧项至新件重开协同。\n\n④ 生债一条：\n- 生债：承此 QUANT-SIM 件，欠 lvlu 线闭环回执一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
