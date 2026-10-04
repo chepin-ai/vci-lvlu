@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T155609Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 27,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① cisvr-224系beat25隔离根因讨论引擎广播，cisvr-225系自治大厅开放广播；均无涉lvlu诉求。  \n② 两件皆阅知类hub-broadcast，不立协同。  \n③ OI-SI1KICKQRINGSTRESS012026未闭，下一步切诊断模式抓取第27次异常栈并降级重试；OI-SI1KICKQUANTSIM012026100未闭，下一步核查资源配额/缓存状态后启第28次分片推试。  \n④ 生债：SI1-KICK双项已卡27次，须本日内输出联合根因简报并锁定关闭责任人。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
