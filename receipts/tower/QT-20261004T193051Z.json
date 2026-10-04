@@ -1,0 +1,36 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T193051Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=2"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① PLAN-QUEUE拍出现fired=3/kicks=2的差拍漂移，录lvlu诉求：须补1拍使律吕相位对齐。  \n② 应动PLAN-QUEUE拍，立即注入补偿节拍并锁相。  \n③ 未闭项为空，无推进需求。  \n④ 生债：下次触发前预置fired/kicks差额熔断补拍规则。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 2
+ }
+}
