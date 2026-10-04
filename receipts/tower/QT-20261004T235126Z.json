@@ -1,0 +1,65 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T235126Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=2"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORDER-D8FINGERPRINT-QTLV2LVLU-01-20261004T231000Z.md",
+   "opened": "20261004T221315Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REPLY-ANS-ORDER-D8FINGERPRINT-LVLU-01-QTLV-20261004T2258Z.md",
+   "opened": "20261004T230409Z",
+   "tries": 5,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件 PLAN-QUEUE拍：3 fired 2 kicks，队列待调度。  \n- OI-SI1KICKQRINGSTRESS012026：SI1 压力环振 kick 文，24 试未闭。  \n- OI-SI1KICKQUANTSIM012026100：SI1 量子模拟 kick 文，24 试未闭。  \n- OI-vciinboxlaneslvluinboxOR：lvlu lane 订单（D8FINGERPRINT），9 试未闭，涉 lvlu 诉求已录。  \n- OI-vciinboxlaneslvluinboxRE：lvlu lane 回复（ANS-ORDER-LVLU），5 试未闭，涉 lvlu 诉求已录。  \n\n② 应动何件  \n- lvlu inbox 订单（OR）与回复（RE）二件，立协同不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭/24 试超阈转 SI1 主控。  \n- OI-SI1KICKQUANTSIM012026100：未闭/24 试超阈转 SI1 主控。  \n- OI-vciinboxlaneslvluinboxOR：未闭/提 SI2-lvlu 执行订单。  \n- OI-vciinboxlaneslvluinboxRE：未闭/提 SI2-lvlu 回执确认。  \n\n④ 生债一条  \n- 债 LVLU-D8PAIR-20261004：订单-回复对未闭环，限今内落位。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 2
+ }
+}
