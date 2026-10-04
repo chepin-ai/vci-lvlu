@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T140906Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 16,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- cisvr-224：beat25 隔离根因分析引擎广播，录 lvlu 协同排查诉求。  \n- cisvr-225：disc 自治大厅开放广播，录 lvlu 参与接入诉求。  \n\n②应动何件  \n- 立动 cisvr-224、cisvr-225，双件协同不候。  \n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步降载复现或升维诊断。  \n- OI-SI1KICKQUANTSIM012026100：未闭，下一步回滚基线重试。  \n\n④生债一条  \n- 两 broadcast 未收编 lvlu 响应痕迹，补录协同节点。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
