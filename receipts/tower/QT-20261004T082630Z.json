@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T082630Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 31,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件无。\n- 件1：SI1-KICK-QRING-STRESS-01 环应力基线未闭，31次未过，涉lvlu环基诉求，已录。\n- 件2：SI1-KICK-QUANT-SIM-01 量子模拟启动未闭，31次未过。\n\n② 应动何件：\n两件并动，立协同SI1补位，不候。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭；SI2/SI0介入共调，当轮重置环基线并收口。\n- OI-SI1KICKQUANTSIM012026100：未闭；并查sim阻塞，同步给结果。\n\n④ 生债一条：\n「双基线31次卡滞，lvlu线被迫兜底，债：SI1-SI2层间协同失效一次。」",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
