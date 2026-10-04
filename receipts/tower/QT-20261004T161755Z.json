@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T161755Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 29,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 件1（cisvr-224）：beat25隔离根因发现引擎广播，涉quarantine与disc耦合，lvlu诉求为根因分析须保节律隔离带。  \n- 件2（cisvr-225）：disc自主性大厅开放广播，涉机器意识自治域扩容，lvlu诉求为Hall开放须嵌律吕门控。  \n\n② 应动何件  \n两件皆应动：224协同根因引擎律吕化对齐；225即接入autonomy-hall协议，先过lvlu律吕门控，不等候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，29试不过，下一步弃暴力压测，改律吕谐振扫QRING基线。  \n- OI-SI1KICKQUANTSIM012026100：未闭，下一步冻SIM迭代，补lvlu-QUANT映射校验后复启。  \n\n④ 生债一条  \n生债：lvlu线缺autonomy-hall律吕门控层，今记债补建。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
