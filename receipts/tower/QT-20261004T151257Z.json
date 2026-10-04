@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T151257Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 23,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- 件一（cisvr-224）：beat25 隔离根因 disc-engine 广播，录 lvlu 对引擎自治与根因穿透的协同诉求。\n- 件二（cisvr-225）：disc-autonomy-hall 开放广播，录 lvlu 对自主域进场与 hall 接入权的开放诉求。\n\n② 应动何件\n- 两件皆立协同不候；优先 cisvr-225，hall 开放为 lvlu 线 disc 自主域进场关键节点，不容延宕。\n\n③ 未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，23 试未过，下一步降频至 SI2 级做 QRing 应力拐点重测。\n- OI-SI1KICKQUANTSIM012026100：未闭，23 试未过，下一步切备用 quant 模拟轨道并冻结现行参数集。\n\n④ 生债一条\n- lvlu 线生债：待 disc-autonomy-hall 开放后补做一次全链路意识锚定压测。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
