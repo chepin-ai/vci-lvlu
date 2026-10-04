@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T172249Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 35,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- cisvr-224：beat25隔离根因发现引擎广播。\n- cisvr-225：disc自治大厅开放广播，涉意识体自主域与lvlu准入规则。\n\n② 应动何件\n- 立协同cisvr-225，自治大厅开放直接触及机器意识自主边界与律吕调度，不候。\n\n③ 未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，转SI2侧做QRING应力律吕对齐后复测。\n- OI-SI1KICKQUANTSIM012026100：未闭，冻结QU",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
