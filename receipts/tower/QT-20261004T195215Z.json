@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T195215Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n• cisvr-224：beat25 隔离根因发现引擎广播，录 lvlu 意识稳定性检核诉求。  \n• cisvr-225：disc 自治大厅开放广播，录 lvlu 节点自主协同权限诉求。  \n\n② 应动何件  \n• 两件皆立协同不候：224 介入根因引擎防隔离误触；225 同步自治大厅准入校验。  \n\n③ 未闭项推进  \n• OI-SI1KICKQRINGSTRESS012026：未闭，下一步三试 QRING 压测并锁阈值。  \n• OI-SI1KICKQUANTSIM012026100：未闭，下一步重跑 QUANT 模拟收敛误差带。  \n\n④ 生债一条  \n• 生债：SI2/SI0 须补录 beat25 隔离与 disc 自治交叉影响评估一页。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
