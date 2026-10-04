@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T093621Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 38,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件空。  \n- OI-SI1KICKQRINGSTRESS：QRing应力测试38试未闭（涉lvlu环结构/压力边界诉求）。  \n- OI-SI1KICKQUANTSIM：量子模拟38试未闭（涉lvlu量子算力收敛诉求）。  \n\n②应动何件  \n- 两项均38试未闭，占压SI1信道，立协同升档排查，不候。  \n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步切诊断模式，查应力环死锁或资源瓶颈。  \n- OI-SI1KICKQUANTSIM012026100：未闭；下一步校准量子初态/演化步长，或启经典对照降维验证。  \n\n④生债  \n- 生债：SI1-KICK双项38试未闭，占压协同信道，限今日内强关或拆子债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
