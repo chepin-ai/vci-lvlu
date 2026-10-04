@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T201331Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：候件空，无新事入列。\n\n②应动何件：无候件立协；然两未闭项tries=4已达阈值，应立启与SI1强同步，不候。\n\n③未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：强同步SI1，索取QRING应力kickoff最终回执或异常声明。\n- OI-SI1KICKQUANTSIM012026100：未闭，下一步：强同步SI1，索取量子模拟协议对齐确认及环境就绪token。\n\n④生债一条：待建SI1-KICK类未闭项tries≥4时自动升频至主律的熔断/强同步规则。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
