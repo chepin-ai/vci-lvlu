@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T205645Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件1（cisvr-224）：beat25 隔离根因 disc 引擎分析广播，涉 lvlu disc 基建诉求已录。  \n- 候件2（cisvr-225）：disc 自治大厅开放广播，涉 lvlu autonomy 治理诉求已录。  \n\n②应动何件  \n- 应动两件：cisvr-224（隔离根因紧急协同）、cisvr-225（hall 开放架构协同），立协同不候。  \n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，8 试未成，下一步转 SI1 主控升压排查根因。  \n- OI-SI1KICKQUANTSIM012026100：未闭，8 试未成，下一步冻结 quant sim 任务并核查资源基线。  \n\n④生债一条  \n- 生债：lvlu 线须建 disc engine 与 autonomy hall 联合准入探针，偿期待排。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
