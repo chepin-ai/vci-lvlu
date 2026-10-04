@@ -1,7 +1,7 @@
 {
- "v": 2,
+ "v": 3,
  "line": "lvlu",
- "ts": "2026-10-05T07Z",
+ "ts": "2026-10-05T08Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -1260,6 +1260,13 @@
    "ts": "2026-10-05T07Z",
    "claim": "天衍176全图208个4环枚举(剔禁耦合/比特,09-24快照): 最优环(Q14,Q20,Q26,Q21) 读出Σ6.89%/CZΣ5.95% vs 现环(Q0,Q6,Q12,Q7)23.71%/8.83%; 映射q0→Q14,q2→Q20,q3→Q26,q1→Q21; 已交qlv v3环换候选",
    "evidence": "lanes/qtlv/inbox/ANS-QRAC-V34-D8-LVLU-01.md §二"
+  },
+  {
+   "id": "QRAC-HD-01-IBM-FEZ-07",
+   "line": "lvlu",
+   "ts": "2026-10-05T08Z",
+   "claim": "Q-RAC-HD-01 job7(db1dqdpb694s73ds5epg0, d=8, λ{1,3}浓缩设计8192发+读出校正): Schmidt≥5再确证(全族过0.8536); ≥6未确立——corr-lin 0.9103/corr-exp 0.9185-0.9237过0.8953而raw-lin 0.8827不过,估计器分裂依旧; 较job4缺口收敛(corr-lin首过界); y=2组raw 0.72-0.79为主短板,指向IQFT3浅化/比特优选",
+   "evidence": "stage/QRAC-D8-JOB7-ANALYSIS.json;QRAC-D8-JOB7-META.json"
   }
  ]
 }
