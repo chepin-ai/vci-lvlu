@@ -1,7 +1,7 @@
 {
- "v": 1,
+ "v": 2,
  "line": "lvlu",
- "ts": "20261004T225156Z",
+ "ts": "2026-10-05T07Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -1225,6 +1225,41 @@
    "by": "lvlu-si3",
    "claim": "仿真实证(FakeFez opt3+Aer): IQFT截断无压缩余量(k=3 full净+10.0pts,k=4 +2.1pts逼交叉);深度罪魁=x1增量器mcx梯(k=4 +38CZ/+142dep);Draper相位增量器k≤4不胜(k=4y=2平)",
    "evidence": "vci-inbox lanes/qlv/inbox/ANS-NOTICE-QRAC-V2RC-LVLU-01.md §一§二"
+  },
+  {
+   "id": "QUAFU-RESURRECT-01",
+   "line": "lvlu",
+   "ts": "2026-09-28T03Z",
+   "claim": "Quafu平台复活:pyquafu0.4.5正端点/qbackend/*(recall须POST body task_id),旧token有效;后端全景Sim10 Online(0队)/Baihua(无权)/P5(1402队)/Dongling·Haituo Offline/余Obsolete;MESH2双轨26弹(Sim10×13即时status=2完美陪集+P5×13在队),旧6弹在队非死",
+   "evidence": "stage/QUAFU-MESH2-SIM10.json;QUAFU-MESH2-SUBMIT.json;usrm巷ANS-EXP049勘误§四"
+  },
+  {
+   "id": "GHZ3-IBM-MESH2-01",
+   "line": "lvlu",
+   "ts": "2026-09-28T03Z",
+   "claim": "GHZ3 ibm_fez job db1d5n3id5ic73eqvtqg(opt3+DD+twirling,4096):P(000)+P(111)=0.9578,漏4.22%主为单比特读出翻转;IBM列qrac4+chsh+ghz3全家福齐",
+   "evidence": "stage/GHZ3-IBM-MESH2.json"
+  },
+  {
+   "id": "QRAC-IQFT-CROSSOVER-K5-01",
+   "line": "lvlu",
+   "ts": "2026-09-28T03Z",
+   "claim": "IQFT截断交叉确认(opt1/FakeFez,2寄存器):k=5 m=2=105CZ(-19% vs full129),k=6 m=2=150CZ(-26.5% vs 204),m=3/4全区间劣;k<=4维持full(opt3证).qlv v3:k<=4 full,k>=5切m=2",
+   "evidence": "本拍transpile计数表;PLAN-QUEUE IQFT-CROSSOVER-K5-CONFIRMED"
+  },
+  {
+   "id": "D8FINGERPRINT-IBM-FEZ-01",
+   "line": "lvlu",
+   "ts": "2026-10-05T07Z",
+   "claim": "qtlv D8乘子指纹单: ibm_fez db1ddj9b694s73ds52mg0 32电路1024发,置换恒等24/24全对(峰90.86/97.35/92.65% for x3/x5/x7),23PARTIAL+1FAIL; 发现真机指纹=编译2q负载指纹(逻辑门数序反转); cal峰均98.83%",
+   "evidence": "stage/D8FINGERPRINT-IBM-JOB.json; lanes/qtlv/inbox/ANS-ORDER-D8FINGERPRINT-LVLU-01.md"
+  },
+  {
+   "id": "TIANYAN-RING-OPT-01",
+   "line": "lvlu",
+   "ts": "2026-10-05T07Z",
+   "claim": "天衍176全图208个4环枚举(剔禁耦合/比特,09-24快照): 最优环(Q14,Q20,Q26,Q21) 读出Σ6.89%/CZΣ5.95% vs 现环(Q0,Q6,Q12,Q7)23.71%/8.83%; 映射q0→Q14,q2→Q20,q3→Q26,q1→Q21; 已交qlv v3环换候选",
+   "evidence": "lanes/qtlv/inbox/ANS-QRAC-V34-D8-LVLU-01.md §二"
   }
  ]
 }
