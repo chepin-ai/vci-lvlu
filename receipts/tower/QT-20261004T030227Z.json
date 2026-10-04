@@ -1,0 +1,51 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T030227Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T025146Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T025146Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- cisvr-224：中枢广播 beat25 隔离根因讨论引擎。\n- cisvr-225：中枢广播讨论自治厅开放。\n- SI1-KICK-QRING-STRESS-01：SI1 发 QRING 压力测试 lvlu 协同诉求（必录）。\n- SI1-KICK-QUANT-SIM-01：SI1 发量子模拟 lvlu 协同诉求（必录）。\n\n②应动何件\n立协同双 inbox 件：SI1-KICK-QRING-STRESS-01、SI1-KICK-QUANT-SIM-01，不候。\n\n③未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步：执行 QRING 压测协议并回执 SI1。\n- OI-SI1KICKQUANTSIM012026100：未闭；下一步：执行量子模拟协同并回执 SI1。\n\n④生债一条\n生债：SI2/SI0 分身担此双开项响应债，占线至闭。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
