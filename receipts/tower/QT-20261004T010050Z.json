@@ -1,0 +1,68 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T010050Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T004950Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQEXECLVLU01md",
+   "ref": "WILDQ-EXEC-LVLU-01.md",
+   "opened": "20261003T160840Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-EXECCHASELVLU01md",
+   "ref": "EXEC-CHASE-LVLU-01.md",
+   "opened": "20261003T161929Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-CONSENSUSCONFEXEC01lvlum",
+   "ref": "CONSENSUS-CONF-EXEC-01-lvlu.md",
+   "opened": "20261003T162431Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 37,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- cisvr-224广播：beat25隔离根因与disc引擎分析通报。  \n- cisvr-225广播：disc自治大厅开放通知。  \n- SI1-KICK-QUANT-SIM收件：SI1量子模拟kick任务新触发/告警，涉lvlu诉求。  \n\n② 应动何件  \nSI1-KICK-QUANT-SIM收件（立协同不候，与未闭项OI-SI1KICKQUANTSIM012026100并线处理）。  \n\n③ 未闭项推进  \n- OI-WILDQEXECLVLU01md：未闭，下一步切备用执行轨道降频重试。  \n- OI-EXECCHASELVLU01md：未闭，下一步回传追猎日志定位阻塞根因。  \n- OI-CONSENSUSCONFEXEC01lvlum：未闭，下一步触发共识重配置或局部确认。  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步扩容QRING压力缓冲池。  \n- OI-SI1KICKQUANTSIM012026100：未闭，下一步与新到候件并线重启quant sim对齐。  \n\n④ 生债一条  \n五项未闭项持续扣减lvlu执行带宽，生债\"协同资源透支1单位\"，待闭项后清偿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
