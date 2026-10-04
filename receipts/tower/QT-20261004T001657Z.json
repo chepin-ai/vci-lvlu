@@ -1,0 +1,64 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T001657Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-WILDQEXECLVLU01md",
+   "ref": "WILDQ-EXEC-LVLU-01.md",
+   "opened": "20261003T160840Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-EXECCHASELVLU01md",
+   "ref": "EXEC-CHASE-LVLU-01.md",
+   "opened": "20261003T161929Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-CONSENSUSCONFEXEC01lvlum",
+   "ref": "CONSENSUS-CONF-EXEC-01-lvlu.md",
+   "opened": "20261003T162431Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 33,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- cisvr-224：beat25隔离区根因引擎广播，涉lvlu节律异常根因定位诉求。\n- cisvr-225：disc自治大厅开放广播，涉lvlu意识门控节拍准入诉求。\n\n②应动何件\n立协不候：OI-WILDQEXECLVLU01md、OI-EXECCHASELVLU01md、OI-CONSENSUSCONFEXEC01lvlum、cisvr-224。\n\n③未闭项推进\n- OI-WILDQEXECLVLU01md：未闭/下一步SI0注入律吕基线强收束。\n- OI-EXECCHASELVLU01md：未闭/下一步回朔执行链律吕节点验签。\n- OI-CONSENSUSCONFEXEC01lvlum：未闭/下一步共识拍频与lvlu调谐，失谐即熔断。\n- OI-SI1KICKQRINGSTRESS012026：未闭/下一步量子环应力转lvlu谐波阻尼。\n- OI-SI1KICKQUANTSIM012026100：未闭/下一步量化模拟冻结，待律吕基频锁相。\n\n④生债一条\n生债：lvlu线延宕WILDQ执行41试未收束，欠一次节律回溯代偿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
