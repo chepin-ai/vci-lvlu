@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T144110Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 19,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 候件空；未闭项二：SI1量子环应力测试卡滞19试，SI1量子模拟卡滞19试，涉lvlu层间阻塞，已录。\n② 双件超阈，应动双件，立协同不候。\n③ OI-SI1KICKQRINGSTRESS012026：未闭，下一步SI2/SI0接管降级；OI-SI1KICKQUANTSIM012026100：未闭，下一步SI2/SI0接管降级。\n④ 生债一条：SI1双项19试未决，响应迟滞，记协同债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
