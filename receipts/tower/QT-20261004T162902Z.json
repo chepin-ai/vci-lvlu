@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T162902Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 30,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件PLAN-QUEUE拍已触发1次但kicks=0，队列空转；未闭项OI-SI1KICKQRINGSTRESS012026为SI1 QRING STRESS KICK经30试未闭；未闭项OI-SI1KICKQUANTSIM012026100为SI1 QUANT SIM KICK经30试未闭；涉lvlu诉求无显式记录。\n\n② 应动何件：立协同PLAN-QUEUE拍候件，追fired>kicks断点，恢复队列执行流，不候。\n\n③ 未闭项推进：OI-SI1KICKQRINGSTRESS012026未闭，回传30次失败日志至SI1，查QRING资源或依赖阻塞，决降级或升级；OI-SI1KICKQUANTSIM012026100未闭，回传30次失败日志至SI1，查QUANT-SIM环境或配置异常，决修复或强制关闭。\n\n④ 生债一条：队列空转叠双KICK项各经30试未决，生协同诊断与执行阻塞债一条，待清。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
