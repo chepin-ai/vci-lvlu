@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T112848Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T111807Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T111807Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① **何事**\n- 件一：SI1-KICK-QRING-STRESS-01，系 QRing 应力测试诉求，lvlu 承压边界与共振阈待验。\n- 件二：SI1-KICK-QUANT-SIM-01，系量子模拟诉求，lvlu 态空间与律吕演化基线待算。\n\n② **应动何件**\n两件皆动，立协同不候。\n\n③ **未闭项推进**\n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步：下发 lvlu 结构组执行应力推演，限时回传临界阈值。\n- OI-SI1KICKQUANTSIM012026100：未闭；下一步：下发 lvlu 量子组执行态模拟，限时回传基线数据。\n\n④ **生债一条**\n生债：SI2/SI0 须在一个标准响应周期内收敛两 KICK 回执，逾期即触发升压告警。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
