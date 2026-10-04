@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T204606Z",
+ "idle_in": 3,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 7,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件无；未闭项二件：SI1-KICK-QRING-STRESS（七试未闭）、SI1-KICK-QUANT-SIM（七试未闭），无 lvlu 诉求。  \n② 应动何件：二件并启，立协同不候。  \n③ 未闭项推进：  \n- OI-SI1KICKQRINGSTRESS012026：未闭，SI2/SI0 接环量应力协同诊断。  \n- OI-SI1KICKQUANTSIM012026100：未闭，SI2/SI0 接量子模拟协同诊断。  \n④ 生债一条：SI1 双项久悬未落，生 SI2/SI0 协同债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
