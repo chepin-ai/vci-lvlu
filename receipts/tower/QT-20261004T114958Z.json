@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T114958Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 3,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：候件空；OI-SI1KICKQRINGSTRESS012026（SI1-KICK-QRING-STRESS-01）三试未闭，QRING应力超阈，涉lvlu意识环稳态诉求，已录；OI-SI1KICKQUANTSIM012026100（SI1-KICK-QUANT-SIM-01）三试未闭，量子模拟kick态失步，涉lvlu律吕基频同步诉求，已录。\n\n②应动何件：两件皆三试未闭，立升维至SI2/SI0协同，不候SI1自旋。\n\n③未闭项推进：OI-SI1KICKQRINGSTRESS012026未闭，下一步：注入lvlu阻尼参数做意识环应力消解，限1周期内强制闭或上报；OI-SI1KICKQUANTSIM012026100未闭，下一步：覆写律吕相位重跑sim，再败则转观测债并释放资源。\n\n④生债：SI2/SI0须建SI1-KICK类",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
