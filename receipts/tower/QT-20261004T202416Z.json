@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T202416Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 5,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：候件空，无新入；未闭①:SI1量子环应力项(OI-SI1KICKQRINGSTRESS012026)尝闭五次未竟，无lvlu新增诉求；未闭②:SI1量子模拟项(OI-SI1KICKQUANTSIM012026100)尝闭五次未竟，无lvlu新增诉求。\n\n②应动何件：双项均达重试阈值，应立协同SI1侧联合排障，不候。\n\n③未闭项推进：OI-SI1KICKQRINGSTRESS012026未闭，下一步升SI1-STRESS联合排障或熔断；OI-SI1KICKQUANTSIM012026100未闭，下一步升SI1-SIM联合排障或链路核查。\n\n④生债一条：债：SI1-KICK双项五试未闭，立跨线排障债一宗，限下次响应前出具根因初判。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
