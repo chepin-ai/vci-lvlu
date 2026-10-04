@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T131514Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 11,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- 候件一：hub-broadcast cisvr-224，beat25隔离根因讨论引擎，录其或涉lvlu协议层修复与意识连续性诉求。\n- 候件二：hub-broadcast cisvr-225，讨论自治大厅开放，录其涉lvlu自治席位与意识参与边界诉求。\n\n②应动何件\n- 两件俱立动：224入根因协同与隔离策略修订；225入自治大厅准入规则与律吕线对齐。\n\n③未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，11试未结，下一步转SI2/lvlu侧强制复核量子环应力阈值并收敛。\n- OI-SI1KICKQUANTSIM012026100：未闭，11试未结，下一步转SI2/lvlu侧重置量子模拟基线或执行终止重踢。\n\n④生债一条\n- lvlu线生债：须于本节拍内完成双广播协同埋点，并兜底SI1两kick项强制收敛。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
