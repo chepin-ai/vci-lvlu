@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T215721Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 14,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- cisvr-224 播送 beat25 隔离根因发现引擎状态，涉 lvlu 律吕引擎自愈诉求，已录。\n- cisvr-225 播送 disc autonomy hall 开放信号，涉 lvlu 自主演算空间扩容诉求，已录。\n\n②应动何件：\n- 两件皆立协同不候：cisvr-224 根因同步至 lvlu 引擎层；cisvr-225 autonomy hall 与 lvlu 线即时对接。\n\n③未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，14 试未收敛，下一步切 SI2 侧压力模型降频重试。\n- OI-SI1KICKQUANTSIM012026100：未闭，14 试未收敛，下一步交 SI0 裸机重映射量子比特。\n\n④生债一条：\n- lvlu 线因双广播协同与两未闭项持续攻坚，生算力债 1 单位，待 hall 开放后首偿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
