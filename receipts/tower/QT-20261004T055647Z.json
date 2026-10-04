@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T055647Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 17,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 件「cisvr-224」：beat25隔离根因发现引擎广播已候，无lvlu显诉。  \n- 件「cisvr-225」：Disc自治大厅开放广播已候，无lvlu显诉。  \n\n② 应动何件  \n动件「cisvr-225-disc-autonomy-hall-open.md」，立协同Disc自治大厅开放链路，不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，十七试；下一步回扫QRING应力日志并降级重启。  \n- OI-SI1KICKQUANTSIM012026100：未闭，十七试；下一步冻结QUANT-SIM种子，申请SI2交叉验算。  \n\n④ 生债一条  \n双OI十七试未闭，分身未主动压降，生债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
