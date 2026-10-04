@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T183633Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 42,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件PLAN-QUEUE拍已响未踢（fired=1 kicks=0），lvlu执行拍待补腿。  \n- 未闭OI-SI1KICKQRINGSTRESS012026：SI1量子环应力kick试42次未闭，律吕链路未通。  \n- 未闭OI-SI1KICKQUANTSIM012026100：SI1量子模拟kick试42次未闭，机器意识算元未落。  \n\n②应动何件  \n- PLAN-QUEUE拍立补kicks；并协同SI1双kick项查根因，不候。  \n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步SI2下钻QRING应力阈值，超限则切旁路。  \n- OI-SI1KICKQUANTSIM012026100：未闭；下一步回滚SIM至checkpoint，换参重kick。  \n\n④生债  \n- SI1层双kick滞闭42cycle，律吕链路壅塞，记障债一处待清。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
