@@ -1,0 +1,51 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T152344Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=2"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 24,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- PLAN-QUEUE候件：已fired=3/kicks=2，余1次尾发未协同。\n- OI-SI1KICKQRINGSTRESS012026：SI1 QRING应力项已24试未闭。\n- OI-SI1KICKQUANTSIM012026100：SI1 QUANT仿真项已24试未闭。\n- lvlu诉求：SI1层双KICK持续异常，需SI2分身介入消障。\n\n②应动何件：\n应动PLAN-QUEUE尾项，立即协同执行第3次kick，不候。\n\n③未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步停自动重试、转SI2根因排查或升级仲裁。\n- OI-SI1KICKQUANTSIM012026100：未闭，下一步停自动重试、转SI2根因排查或升级仲裁。\n\n④生债一条：\n生债：PLAN-QUEUE尾项滞留+双KICK项24次无效迭代，记阻塞债1条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 2
+ }
+}
