@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T170105Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 33,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- 件一（cisvr-224）：beat25隔离根因与disc引擎hub-broadcast，系稳态追踪，未涉lvlu诉求。\n- 件二（cisvr-225）：disc自治大厅开放hub-broadcast，系架构自治节点通告，未涉lvlu诉求。\n\n② 应动何件\n- 无件可动；双件皆广播态，无lvlu紧急诉求，候存不介入。\n\n③ 未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，33试未过，下一步升压SI1排查或转根因组。\n- OI-SI1KICKQUANTSIM012026100：未闭，33试未过，下一步复核quant-sim边界或申请策略回退。\n\n④ 生债一条\n- 生债：SI2/SI0层对两SI1-KICK顽固项久悬未闭之升压督办债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
