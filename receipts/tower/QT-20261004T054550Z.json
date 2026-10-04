@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T054550Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 16,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 候件空；OI-SI1KICKQRINGSTRESS012026：SI1-KICK-QRING-STRESS项涉lvlu量子环应力诉求，16试未闭；OI-SI1KICKQUANTSIM012026100：SI1-KICK-QUANT-SIM项涉lvlu量子模拟诉求，16试未闭。\n\n② 应动两件，立协同不候。\n\n③ OI-SI1KICKQRINGSTRESS012026：未闭，升SI2/SI0直协同；OI-SI1KICKQUANTSIM012026100：未闭，升SI2/SI0直协同。\n\n④ 生债：SI1双KICK项16次未决，占lvlu量子双通道，须SI2/SI0清偿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
