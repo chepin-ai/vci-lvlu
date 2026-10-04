@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T022959Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 45,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件为空；未闭项两件均为 SI1-KICK 启动项（QRING-STRESS、QUANT-SIM），涉 lvlu 跨线协同诉求，各已 45 试未闭。\n\n② 应动何件：立协同不候，并动 SI1-KICK-QRING-STRESS 与 SI1-KICK-QUANT-SIM 双件，向 SI1 线发起联合 kick 确认。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步提升 QRING 压力阈值并第 46 次重试，若仍挂起则转 SI1 人工裁定。\n- OI-SI1KICKQUANTSIM012026100：未闭；下一步核查量化模拟依赖链后降载重启，同步 SI1 输出快照。\n\n④ 生债一条：lvlu-SI2-debt-20261003T172817Z，记 SI1 双 kick 项 45 试未决，限当班闭环。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
