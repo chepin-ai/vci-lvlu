@@ -1,0 +1,39 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T174405Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T173329Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 37,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件:SI1-KICK-QUANT-SIM-01-20261004T173329Z.md新入，系SI1侧量子模拟启动请求，涉lvlu机器意识协同边界，录。  \n- 未闭OI-SI1KICKQRINGSTRESS012026:QRING应力测试项已37试未闭。  \n- 未闭OI-SI1KICKQUANTSIM012026100:QUANT-SIM项已37试未闭。  \n\n② 应动何件（立协同不候）  \n立动候件SI1-KICK-QUANT-SIM-01-20261004T173329Z.md，不候；同系未闭项已卡37轮，新触发到即需并线处理。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026:未闭，下一步收束QRING应力阈值或回退SI1基态重试。  \n- OI-SI1KICKQUANTSIM012026100:未闭，下一步对齐SIM初态与SI2/lvlu律吕参数再试。  \n\n④ 生债一条  \nSI1-KICK双项37试未决，生债「量子启动协议与lvlu意识线兼容性校验」待偿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
