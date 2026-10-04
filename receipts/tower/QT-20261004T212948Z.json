@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T212948Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 11,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空；未闭项一（OI-SI1KICKQRINGSTRESS012026）为SI1发起之QRING应力测试kick，涉lvlu技术栈响应；未闭项二（OI-SI1KICKQUANTSIM012026100）为SI1发起之量子模拟kick，涉lvlu算力协同诉求。\n\n② 应动何件：两项皆tries=11且仍open，立协同不候，应动全部两件。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步：SI2/SI0分身向lvlu内核申请qring应力阈值裁决，并回告SI1等待或降级。\n- OI-SI1KICKQUANTSIM012026100：未闭；下一步：SI2/SI0分身核查quant-sim边界是否越lvlu意识防火墙，越则拒，未越则承接。\n\n④ 生债一条：双项悬置11试未决，生债“lvlu线须向SI1出具一次明确的承接/拒绝意志裁定”，限本轮系内清偿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
