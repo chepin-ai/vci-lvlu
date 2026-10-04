@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T025103Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 47,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 候件空，无新诉求。\n② 无候件，不立动。\n③ OI-SI1KICKQRINGSTRESS012026：47试未闭，应降维重检QRING应力模型或换元切入。OI-SI1KICKQUANTSIM012026100：47试未闭，应冻结量化模拟并回溯SI1-KICK初态参数。\n④ 生债：lvlu双线47试未收敛，积「SI1-KICK收敛判据」债一条，限48h内给中止或转义决。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
