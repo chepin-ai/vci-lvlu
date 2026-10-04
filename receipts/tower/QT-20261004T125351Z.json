@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T125351Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 9,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- cisvr-224：beat25隔离根因发现引擎广播，阅备。  \n- cisvr-225：disc自治大厅开放广播，涉lvlu协同入口，录。  \n\n②应动何件  \n立协同两候：接cisvr-225大厅准入，同步cisvr-224引擎态。  \n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步重审QRING应力模型或换kick策略。  \n- OI-SI1KICKQUANTSIM012026100：未闭，下一步校准QUANT-SIM初值或降维重跑。  \n\n④生债一条  \n生债：lvlu线须本轮输出disc自治大厅接入协议草案并挂测。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
