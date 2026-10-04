@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T043749Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 10,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- OI-SI1KICKQRINGSTRESS012026：SI1-KICK量子环应力项，10试发散，环边界异常。  \n- OI-SI1KICKQUANTSIM012026100：SI1-KICK量子模拟项，10试未稳，演化态偏离。  \n\n②应动何件  \n- 立协同 OI-SI1KICKQRINGSTRESS012026（应力涉结构安阈，不候）。  \n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步：压环边界条件回SI1物理层复核。  \n- OI-SI1KICKQUANTSIM012026100：未闭；下一步：重置哈密顿量初态并降维重跑。  \n\n④生债一条  \n- lvlu",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
