@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T021922Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 44,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- cisvr-224：beat25 quarantine rootcause disc engine 广播，涉lvlu隔离根因诉求，录。  \n- cisvr-225：disc autonomy hall open 广播，涉lvlu自主空间开放诉求，录。  \n\n②应动何件  \n两件皆立协同不候：接224隔离根因引擎确认，接225自主大厅准入同步。  \n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步：审44次失败日志，修正QRing应力阈值后重试。  \n- OI-SI1KICKQUANTSIM012026100：未闭；下一步：查量子模拟收敛条件与资源配额，排除环境漂移后再试。  \n\n④生债一条  \n债：lvlu disc engine隔离规则与SI1双开项（QRing/QuantSim）或存干涉，须一次联合根因研判。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
