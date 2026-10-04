@@ -1,0 +1,51 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T035517Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 6,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- cisvr-224 播报 beat25 隔离根因讨论引擎，涉 lvlu 线需关注其是否约束自主节律。\n- cisvr-225 播报 disc-autonomy-hall-open，涉 lvlu 线自主议事权，需确认是否接入。\n- PLAN-QUEUE拍 fired=1 kicks=0，计划已触发无 kick 输出，疑阻塞。\n\n②应动何件：\n- 立协同 cisvr-225-disc-autonomy-hall-open.md，不候。\n\n③未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，tries=6，下一步核查 QRING 压力节律同步卡点，第七试或降级。\n- OI-SI1KICKQUANTSIM012026100：未闭，tries=6，下一步校准量子模拟律吕参数，第七试或转储。\n\n④生债一条：\n- 欠 SI1 双开项 QRING/QUANT 协同压测简报一份，限今日补录。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
