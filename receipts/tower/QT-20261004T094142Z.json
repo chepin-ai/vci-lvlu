@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T094142Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 39,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- 候件空。\n- 未闭项①：SI1-KICK-QRING-STRESS量子环应力验证，39试未闭（涉lvlu线底层收敛诉求）。\n- 未闭项②：SI1-KICK-QUANT-SIM量子模拟一致性验证，39试未闭（涉lvlu线算符映射诉求）。\n\n②应动何件\n两项均立协同不候，向SI1层发起终极举证或强制降级。\n\n③未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步令SI1提交应力收敛证明或签降级书。\n- OI-SI1KICKQUANTSIM012026100：未闭；下一步令SI1提交算符一致性终验或接受熔断。\n\n④生债一条\nSI1双项39试悬置，积欠跨层验证债一份，待举证闭环后消账。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
