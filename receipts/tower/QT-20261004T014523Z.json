@@ -1,0 +1,41 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T014523Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-CONSENSUSCONFEXEC01lvlum",
+   "ref": "CONSENSUS-CONF-EXEC-01-lvlu.md",
+   "opened": "20261003T162431Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261003T171720Z.md",
+   "opened": "20261003T172817Z",
+   "tries": 41,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 候件无。OI-CONSENSUSCONFEXEC01lvlum录lvlu共识确认执行诉求；OI-SI1KICKQRINGSTRESS012026系SI1量子环压测启动；OI-SI1KICKQUANTSIM012026100系SI1量子模拟启动。  \n② 三件均立协同不候。  \n③ OI-CONSENSUSCONFEXEC01lvlum未闭/今落lvlu共识执行。OI-SI1KICKQRINGSTRESS012026未闭/今启QRING压测并收基线。OI-SI1KICKQUANTSIM012026100未闭/今跑通量化模拟并出收敛阈。  \n④ 生债：lvlu线三OI挂起超40试，生今闭债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
