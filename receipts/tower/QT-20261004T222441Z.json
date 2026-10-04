@@ -1,0 +1,41 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T222441Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORDER-D8FINGERPRINT-QTLV2LVLU-01-20261004T231000Z.md",
+   "opened": "20261004T221315Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- SI1-KICK-QRING-STRESS-01：SI1量子环应力测试任务未闭。  \n- SI1-KICK-QUANT-SIM-01：SI1量子模拟任务未闭。  \n- ORDER-D8FINGERPRINT-QTLV2LVLU-01：lvlu收件箱D8指纹QTLV2协同订单未闭，涉lvlu协议投递诉求。  \n\n②应动何件  \n三件皆动：SI1双kick悬停17轮，lvlu订单涉主台协同，立发不候。  \n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步触发QRing应力闭环/升级。  \n- OI-SI1KICKQUANTSIM012026100：未闭，下一步完成QuantSim输出校验归档。  \n- OI-vciinboxlaneslvluinboxOR：未闭，下一步完成D8指纹确认及lvlu lane投递。  \n\n④生债一条  \nSI1双kick挂起17次未决，生债：限24h内闭环或回退基线。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
