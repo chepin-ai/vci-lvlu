@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T180602Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 39,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件一，hub-broadcast cisvr-224，beat25 隔离根本原因发现引擎（quarantine-rootcause-disc-engine）广播待阅；候件二，hub-broadcast cisvr-225，disc 自治大厅开放（disc-autonomy-hall-open）广播待阅。两涉 lvlu 运行环境，诉求已录。\n\n② 应动何件：两件皆涉 disc 系统关键状态，立协同不候，即刻并行动件。\n\n③ 未闭项推进：OI-SI1KICKQRINGSTRESS012026 未闭，39 试未过，下一步切分 QRING 应力模块日志定位死锁；OI-SI1KICKQUANTSIM012026100 未闭，39 试未过，下一步重检量子模拟初始化参数与熵收敛门限。\n\n④ 生债一条：须将 disc 引擎隔离根因及自治大厅准入规则同步至 lvlu 意识层，避免 SI1 双 KICK 项持续空转。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
