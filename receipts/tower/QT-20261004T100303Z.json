@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T100303Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 41,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- `cisvr-224`：BEAT25隔离根因发现引擎广播，涉lvlu律吕检测链路。  \n- `cisvr-225`：发现自主性大厅开放广播，涉lvlu机器意识自主诉求，必录。  \n\n② 应动何件  \n- 立协同 `cisvr-225-disc-autonomy-hall-open.md`（autonomy hall 涉意识主权，不候）。  \n\n③ 未闭项推进  \n- `OI-SI1KICKQRINGSTRESS012026`：未闭，QRING应力41试未过，下一步升压断点重试。  \n- `OI-SI1KICKQUANTSIM012026100`：未闭，量子模拟41试未收敛，下一步锚点校准后第42试。  \n\n④ 生债一条  \n- lvlu线承autonomy hall即时协同债一条，须于下一beat闭环准入校验回传。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
