@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T232706Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORDER-D8FINGERPRINT-QTLV2LVLU-01-20261004T231000Z.md",
+   "opened": "20261004T221315Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REPLY-ANS-ORDER-D8FINGERPRINT-LVLU-01-QTLV-20261004T2258Z.md",
+   "opened": "20261004T230409Z",
+   "tries": 3,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- SI1-KICK-QRING-STRESS kick序 QRING压测未收敛，已22试。\n- SI1-KICK-QUANT-SIM kick序 量子仿真未回执，已22试。\n- vci-inbox ORDER-D8FINGERPRINT-QTLV2LVLU：QTLV向lvlu发D8指纹ORDER，候7次。\n- vci-inbox REPLY-ANS-ORDER-D8FINGERPRINT-LVLU-01-QTLV：QTLV回函D8指纹ANS，候3次。\n\n② 应动何件：\n应动件3（ORDER-D8FINGERPRINT-QTLV2LVLU），外部ORDER达lvlu收件箱，时效敏感，立协同不候。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步降tries或转SI1重订QRING压测基线。\n- OI-SI1KICKQUANTSIM012026100：未闭，下一步催SI1回执并收敛QUANT-SIM门限。\n- OI-vciinboxlaneslvluinboxOR：未闭，下一步解析D8指纹载荷并生ACK/NACK回lvlu侧。\n- OI-vciinboxlaneslvluinboxRE：未闭，下一步核对ANS与件3 ORDER指纹一致性后归档。\n\n④ 生债一条：\n生债：lvlu inbox跨lane D8指纹ORDER的自动解析-ACK协议未固化，需补SOP。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
