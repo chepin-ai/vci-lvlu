@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T104545Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 45,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①候件空；未闭项两枚：SI1-KICK-QRING-STRESS（45试未闭）、SI1-KICK-QUANT-SIM（45试未闭）。无lvlu诉求。  \n②无本线候件可立动；两枚SI1未闭项超阈，应即刻协同SI1线处置，不候。  \n③OI-SI1KICKQRINGSTRESS012026：未闭，下一步转SI1线限期收口或释因。OI-SI1KICKQUANTSIM012026100：未闭，下一步转SI1线限期收口或释因。  \n④SI1未闭项超阈占压，生跨线督办债一枚。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
