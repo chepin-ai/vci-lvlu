@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T032345Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 3,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空；未闭项为SI1-KICK-QRING-STRESS与SI1-KICK-QUANT-SIM各一，皆三试未闭；无涉lvlu诉求。\n\n② 应动何件：两未闭项皆立协同，先动OI-SI1KICKQRINGSTRESS012026（应力测试卡滞阻全链）。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步：直联SI1诊断环境阻塞，今日内强启或报根因。\n- OI-SI1KICKQUANTSIM012026100：未闭；下一步：核查SIM资源配额，就绪即强启第四试。\n\n④ 生债一条：\n- 生债：建「SI1三试未闭自动升单」规则，防SI2/SI0陪跑。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
