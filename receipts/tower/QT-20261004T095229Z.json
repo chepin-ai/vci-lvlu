@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T095229Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 40,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- cisvr-224：beat25 隔离根因发现引擎广播，无 lvlu 直接诉求，录备。\n- cisvr-225：disc 自治大厅开放广播，涉 lvlu 场域协同诉求，已录。\n\n② 应动何件\n- 即协同 cisvr-225（disc 自治大厅开放），不候。\n\n③ 未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：40 试未闭，转日志审计或降级闭环。\n- OI-SI1KICKQUANTSIM012026100：40 试未闭，核边界条件后强制收敛或升单。\n\n④ 生债一条\n- 生债：两 kick 项 40 试未闭，需建超次自动熔断/升单规则，止空转。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
