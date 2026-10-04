@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T072239Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T071201Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T071201Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 25,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①  \n- SI1-KICK-QRING-STRESS-01-20261004T071201Z.md：Q-Ring应力线入候，涉lvlu环结构稳定诉求。  \n- SI1-KICK-QUANT-SIM-01-20261004T071201Z.md：量子模拟线入候，涉lvlu算子映射验证诉求。  \n\n②  \n- 两候件与未闭项同源异时，应动两件，立协同不候，并案SI2/SI0联合闭合。  \n\n③  \n- OI-SI1KICKQRINGSTRESS012026：未闭，25试未果，下一步：并新候件做应力环根因剥离与协议重订。  \n- OI-SI1KICKQUANTSIM012026100：未闭，25试未果，下一步：并新候件做量子模拟边界补全与收敛验证。  \n\n④  \n- 生债：SI1-KICK双轨25次未闭，债提级lvlu主律吕做根因熔断。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
