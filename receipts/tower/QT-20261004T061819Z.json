@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T061819Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 19,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空；未闭项二件皆SI1-KICK遗留，涉QRING应力与QUANT模拟，无新增lvlu诉求。  \n② 应动何件：立协同不候，双件同推（OI-SI1KICKQRINGSTRESS012026、OI-SI1KICKQUANTSIM012026100）。  \n③ 未闭项推进：OI-SI1KICKQRINGSTRESS012026未闭/19试触顶，下一步升维或转决；OI-SI1KICKQUANTSIM012026100未闭/19试触顶，下一步升维或转决。  \n④ 生债一条：双KICK未闭项各滞19试，生债「双轨应力-模拟僵局」，限24h内闭环或升级。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
