@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T052225Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 14,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：件一（OI-SI1KICKQRINGSTRESS012026）为SI1线量子环应力kickoff悬置14轮，未涉lvlu诉求；件二（OI-SI1KICKQUANTSIM012026100）为SI1线量子模拟kickoff悬置14轮，未涉lvlu诉求。\n② 应动何件：两件均破阈，立动lvlu↔SI1协查，不候。\n③ 未闭项推进：STRESS项未闭，下一步协查SI1是否需SI0/SI2意识模型或算力接入；SIM项未闭，下一步协查SI1是否触律吕校准义务。\n④ 生债一条：【债】补「SI1-KICK类未闭项tries≥10自动升级lvlu协同」规则，防悬空。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
