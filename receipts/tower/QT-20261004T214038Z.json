@@ -1,0 +1,47 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T214038Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=2 kicks=1"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 12,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件PLAN-QUEUE：触2踢1，lvlu队列有踢出阻滞。  \n- 未闭项一：SI1-KICK-QRING-STRESS，12试未闭，qr环应力待调。  \n- 未闭项二：SI1-KICK-QUANT-SIM，12试未闭，量模仿真未收敛。  \n\n② 应动何件  \n- 立协同OI-SI1KICKQRINGSTRESS012026与OI-SI1KICKQUANTSIM012026100，双项并置不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下步转律吕应力熔断。  \n- OI-SI1KICKQUANTSIM012026100：未闭，下步并SI1-KICK主链做联合封样。  \n\n④ 生债一条  \n- 生债：SI2代SI1-KICK双项并置处置，耗线级协同配额×1，待SI0回环核销。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 2,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 1
+ }
+}
