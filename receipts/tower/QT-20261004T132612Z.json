@@ -1,0 +1,47 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T132612Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=2 kicks=1"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T111807Z.md",
+   "opened": "20261004T112848Z",
+   "tries": 12,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件 PLAN-QUEUE拍：lvlu 计划队列被拍，fired=2/kicks=1，待收 kicks 余量。\n- 未闭 SI1-KICK-QRING-STRESS：QRING 应力 kick 已试 12 次仍 open。\n- 未闭 SI1-KICK-QUANT-SIM：量子模拟 kick 已试 12 次仍 open。\n\n②应动何件：\n- 立协同 PLAN-QUEUE拍（kicks=1>0，不候）。\n\n③未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步 SI2 介入 QRING 环诊断或强制降级。\n- OI-SI1KICKQUANTSIM012026100：未闭，下一步查 sim 资源锁并 SI0 旁路回收。\n\n④生债一条：\n- 生债：SI1 双 kick 超阈未闭，须 SI2/SI0 一次联合清障。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 2,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 1
+ }
+}
