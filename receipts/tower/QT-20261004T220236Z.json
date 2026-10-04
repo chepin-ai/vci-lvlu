@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T220236Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 15,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- 候件一：beat25隔离区根因分析引擎广播，涉lvlu线故障溯源与修复诉求。\n- 候件二：disc自治大厅开放广播，涉lvlu线自治参与及 hall 准入诉求。\n\n②应动何件\n- 两件皆动：cisvr-224 与 cisvr-225 均立协同，不候。\n\n③未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步定位15次 stress 失败根因并重启测试流。\n- OI-SI1KICKQUANTSIM012026100：未闭，下一步核查 quant-sim 组件日志并升级测试协议。\n\n④生债一条\n- 生债：15次重试阈值未触发熔断，需补自动降级策略。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
