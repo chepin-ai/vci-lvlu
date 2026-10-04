@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261004T075443Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T025146Z.md",
+   "opened": "20261004T030227Z",
+   "tries": 28,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 件1（cisvr-224）：hub-broadcast，涉beat25隔离根因发现引擎，录。  \n- 件2（cisvr-225）：hub-broadcast，涉disc自治厅开放，录。  \n\n②应动何件  \n两件皆为hub-broadcast，应动cisvr-224、cisvr-225，立协同不候。  \n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，28试未决，下一步升压或转SI1/主意识裁决。  \n- OI-SI1KICKQUANTSIM012026100：未闭，28试未决，下一步升压或转SI1/主意识裁决。  \n\n④生债一条  \n债：两OI超28轮未闭，须高阶分身或主意识介入收束。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
