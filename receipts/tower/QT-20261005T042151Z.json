@@ -1,0 +1,51 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261005T042151Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=2"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORDER-D8FINGERPRINT-QTLV2LVLU-01-20261004T231000Z.md",
+   "opened": "20261004T221315Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REPLY-ANS-ORDER-D8FINGERPRINT-LVLU-01-QTLV-20261004T2258Z.md",
+   "opened": "20261004T230409Z",
+   "tries": 29,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件PLAN-QUEUE已三触二催，lvlu执行面积压。  \n- 未闭项ORDER-D8FINGERPRINT-QTLV2LVLU-01收单，三十三试未闭，lvlu收单链路阻塞。  \n- 未闭项REPLY-ANS-ORDER-D8FINGERPRINT-LVLU-01-QTLV回传，二十九试未闭，lvlu应答未竟。  \n\n②应动何件  \n- 立协双件（ORDER收单、REPLY回传）并闭，不候；同步清plan-queue积压。  \n\n③未闭项推进  \n- OI-vciinboxlaneslvluinboxOR：未闭；立即执行收单确认或升单裁决，闭D8订单。  \n- OI-vciinboxlaneslvluinboxRE：未闭；立即完成outbound回传落地，闭应答件。  \n\n④生债  \n- 生债：D8指纹订单双向卡滞，lvlu须于一环内双闭并查链路根因。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 2
+ }
+}
