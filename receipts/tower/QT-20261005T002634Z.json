@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261005T002634Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORDER-D8FINGERPRINT-QTLV2LVLU-01-20261004T231000Z.md",
+   "opened": "20261004T221315Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REPLY-ANS-ORDER-D8FINGERPRINT-LVLU-01-QTLV-20261004T2258Z.md",
+   "opened": "20261004T230409Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- SI1 QRING应力kickoff待闭。  \n- SI1量子模拟kickoff待闭。  \n- VCI-lvlu-inbox收D8指纹ORDER（QTLV→LVLU），涉lvlu履约诉求。  \n- VCI-lvlu-inbox收D8指纹REPLY（QTLV→LVLU），涉lvlu确认诉求。  \n\n② 应动何件  \n立协同OI-vciinboxlaneslvluinboxOR与OI-vciinboxlaneslvluinboxRE；lvlu inbox双件悬置tries高，不候，即联QTLV核销D8指纹订单流。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步催SI1提交QRING应力准入checklist。  \n- OI-SI1KICKQUANTSIM012026100：未闭；下一步催SI1确认量子模拟lvlu算力对接窗口。  \n- OI-vciinboxlaneslvluinboxOR：未闭；下一步执行D8指纹ORDER字段校验并回传履约态。  \n- OI-vciinboxlaneslvluinboxRE：未闭；下一步校验REPLY与ORDER一致性，发lvlu侧ACK或返修。  \n\n④ 生债一条  \nlvlu须于本线部署D8指纹ORDER-REPLY自动对账锚点，免QTLV通道双件悬空超12试。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
