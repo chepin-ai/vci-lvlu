@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261005T034643Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORDER-D8FINGERPRINT-QTLV2LVLU-01-20261004T231000Z.md",
+   "opened": "20261004T221315Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REPLY-ANS-ORDER-D8FINGERPRINT-LVLU-01-QTLV-20261004T2258Z.md",
+   "opened": "20261004T230409Z",
+   "tries": 26,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 候件空，无新到。  \n- 未闭项1：SI1量子环应力测试（OI-SI1KICKQRINGSTRESS012026）卡滞45试。  \n- 未闭项2：SI1量子模拟（OI-SI1KICKQUANTSIM012026100）卡滞45试。  \n- 未闭项3：lvlu通道订单（OI-vciinboxlaneslvluinboxOR）30试未闭，录lvlu诉求：收D8指纹ORDER-QTLV2LVLU。  \n- 未闭项4：lvlu通道回件（OI-vciinboxlaneslvluinboxRE）26试未闭，录lvlu诉求：回D8指纹ANS-ORDER-LVLU-QTLV。  \n\n②应动何件  \n- 四项皆动，立协同SI1双卡与lvlu双inbox，不候。  \n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：SI1环应力测试降载或切旁路重跑。  \n- OI-SI1KICKQU",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
