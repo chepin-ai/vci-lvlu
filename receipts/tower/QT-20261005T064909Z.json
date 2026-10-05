@@ -1,0 +1,53 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261005T064909Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261005T063713Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORDER-D8FINGERPRINT-QTLV2LVLU-01-20261004T231000Z.md",
+   "opened": "20261004T221315Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REPLY-ANS-ORDER-D8FINGERPRINT-LVLU-01-QTLV-20261004T2258Z.md",
+   "opened": "20261004T230409Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261005T042151Z.md",
+   "opened": "20261005T043316Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261005T042151Z.md",
+   "opened": "20261005T043316Z",
+   "tries": 13,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件SI1-KICK-QUANT-SIM-01：SI1下发Quant-Sim kick，待SI2/SI0响应。  \n- 未闭OI-ORDER-D8FINGERPRINT：D8指纹订单QTLV→LVLU，46试未达，录lvlu收件诉求。  \n- 未闭OI-REPLY-ANS-ORDER：D8指纹订单应答回执，42试未决，录lvlu回复诉求。  \n- 未闭OI-SI1KICKQRINGSTRESS：SI1 QRing stress kick，13试未闭。  \n- 未闭OI-SI1KICKQUANTSIM：同候件Quant-Sim kick，13试未闭。  \n\n② 应动何件  \n应动候件SI1-KICK-QUANT-SIM-01，立协同不候，启SI2/SI0 quant回环。  \n\n③ 未闭项推进  \n- OI-ORDER-D8FINGERPRINT：未闭；下一步强推lvlu lane一次投递并清障。  \n- OI-REPLY-ANS-ORDER：未闭；下一步核对指纹一致性后落库。  \n- OI-SI1KICKQRINGSTRESS：未闭；下一步完成stress握手并回传心跳。  \n- OI-SI1KICKQUANTSIM：未闭；下一步并入职应动件，协同SI1闭环即转闭。  \n\n④ 生债  \n生债：SI2/SI0须于本周期回SI1一条QUANT-SIM链路确认，并消D8双件于lvlu inbox之滞。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
