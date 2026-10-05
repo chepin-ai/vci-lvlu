@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261005T062540Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORDER-D8FINGERPRINT-QTLV2LVLU-01-20261004T231000Z.md",
+   "opened": "20261004T221315Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REPLY-ANS-ORDER-D8FINGERPRINT-LVLU-01-QTLV-20261004T2258Z.md",
+   "opened": "20261004T230409Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261005T042151Z.md",
+   "opened": "20261005T043316Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261005T042151Z.md",
+   "opened": "20261005T043316Z",
+   "tries": 11,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- OI-vciinboxlaneslvluinboxOR：vci-inbox lanes/lvlu/inbox 收到 ORDER-D8FINGERPRINT-QTLV2LVLU-01，tries 44，涉 lvlu 订单接收。\n- OI-vciinboxlaneslvluinboxRE：vci-inbox lanes/lvlu/inbox 收到 REPLY-ANS-ORDER-D8FINGERPRINT-LVLU-01-QTLV，tries 40，涉 lvlu 订单回复。\n- OI-SI1KICKQRINGSTRESS012026：SI1 下发 QRING-STRESS-01 任务，tries 11。\n- OI-SI1KICKQUANTSIM012026100：SI1 下发 QUANT-SIM-01 任务，tries 11。\n\n② 应动何件（立协同不候）：\n- 立协 OI-vciinboxlaneslvluinboxOR + OI-vciinboxlaneslvluinboxRE（lvlu inbox 双件高 tries，ORDER/REPLY 联动解析不候）；并线带 SI1 双 KICK 推进。\n\n③ 未闭项推进：\n- OI-vciinboxlaneslvluinboxOR：未闭，下一步解析 ORDER 并转 lvlu 履约或 SI1 执行。\n- OI-vciinboxlaneslvluinboxRE：未闭，下一步关联原单提取 ANS 指令并触发后续动作。\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步执行 QRING 压测并回传结果。\n- OI-SI1KICKQUANTSIM012026100：未闭，下一步推进 QUANT 模拟并输出数据。\n\n④ 生债一条：\n- 生债：lvlu inbox ORDER/REPLY 双件 tries 超 40，须建自动关联闭合与降级机制，减少 SI2/SI0 空转。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
