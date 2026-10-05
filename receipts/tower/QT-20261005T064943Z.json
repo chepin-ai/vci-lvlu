@@ -1,0 +1,53 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261005T064943Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261005T063713Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORDER-D8FINGERPRINT-QTLV2LVLU-01-20261004T231000Z.md",
+   "opened": "20261004T221315Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REPLY-ANS-ORDER-D8FINGERPRINT-LVLU-01-QTLV-20261004T2258Z.md",
+   "opened": "20261004T230409Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261005T042151Z.md",
+   "opened": "20261005T043316Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261005T042151Z.md",
+   "opened": "20261005T043316Z",
+   "tries": 13,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件：SI1下发量子模拟启动包（QUANT-SIM-0637），触发SI2/SI0推演。  \n- OI-ORDER：QTLV→LVLU订单（D8FINGERPRINT）滞留46次未交付，涉lvlu接收诉求。  \n- OI-REPLY：订单回执（REPLY-ANS）悬停42次未双向确认，涉lvlu闭环诉求。  \n- OI-QRING：SI1量子环压力测试（QRING-STRESS）13次未出阈。  \n- OI-QUANT：SI1量子模拟（QUANT-SIM-0421）13次未并轨。  \n\n② 应动何件  \n立协同：候件QUANT-SIM-0637，兼并同系列0421项与QRING-STRESS项，启动SI2/SI0联合推演，不候。  \n\n③ 未闭项推进  \n- OI-ORDER：未闭；下一步对齐D8指纹并清QTLV→LVLU交付阻塞。  \n- OI-REPLY：未闭；下一步完成LVLU侧ACK并归档双向回执。  \n- OI-QRING：未闭；下一步汇入SI1-KICK协同流，输出应力阈值。  \n- OI-QUANT：未闭；下一步合并0637/0421为单一会话，消除双轨冲突。  \n\n④ 生债  \n生债：预支lvlu律吕线一阳爻算力予QUANT-SIM与QRING-STRESS并跑，闭包后偿还。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
