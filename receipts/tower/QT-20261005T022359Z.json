@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261005T022359Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORDER-D8FINGERPRINT-QTLV2LVLU-01-20261004T231000Z.md",
+   "opened": "20261004T221315Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REPLY-ANS-ORDER-D8FINGERPRINT-LVLU-01-QTLV-20261004T2258Z.md",
+   "opened": "20261004T230409Z",
+   "tries": 19,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- SI1-KICK-QRING-STRESS-01：量子环应力测试，38试未闭。  \n- SI1-KICK-QUANT-SIM-01：量子模拟启动，38试未闭。  \n- vci-inbox lanes/lvlu ORDER-D8FINGERPRINT：向lvlu发单（D8指纹量子传递），23试未闭；lvlu诉求：收单并确认通道。  \n- vci-inbox lanes/lvlu REPLY-ANS-ORDER：lvlu回执应答，19试未闭；lvlu诉求：校验回执闭环。  \n\n② 应动何件  \n立协同lvlu双向件（ORDER+REPLY），打通inbox；SI1双kick并行重启，不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭/校准应力阈值后重试。  \n- OI-SI1KICKQUANTSIM012026100：未闭/核查初始化参数再kick。  \n- OI-vciinboxlaneslvluinboxOR：未闭/确认lvlu收单状态，补发或切通道。  \n- OI-vciinboxlaneslvluinboxRE：未闭/核对指纹哈希，确认即归档。  \n\n④ 生债一条  \n四开项百试未决，生债：需一次主控级握手修复链路韧性。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
