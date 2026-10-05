@@ -1,0 +1,48 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261005T024747Z",
+ "idle_in": 2,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORDER-D8FINGERPRINT-QTLV2LVLU-01-20261004T231000Z.md",
+   "opened": "20261004T221315Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REPLY-ANS-ORDER-D8FINGERPRINT-LVLU-01-QTLV-20261004T2258Z.md",
+   "opened": "20261004T230409Z",
+   "tries": 21,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空。SI1 QRING压测待lvlu节点响应；SI1 QUANT模拟待意识-律吕映射确认；QTLV→lvlu D8FINGERPRINT订单待受理；lvlu→QTLV D8FINGERPRINT回复待闭环。\n\n② 应动何件：立协vci-inbox ORDER/REPLY两件，同步带SI1双Kick（QRING/QUANT）负载对齐，不候。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：回压lvlu节点心跳。\n- OI-SI1KICKQUANTSIM012026100：未闭，下一步：输出意识-律吕层验证签名。\n- OI-vciinboxlaneslvluinboxOR：未闭，下一步：解析D8FINGERPRINT载荷并执行/拒收。\n- OI-vciinboxlaneslvluinboxRE：未闭，下一步：核对ANS一致性后发ACK闭环。\n\n④ 生债一条：债——本周期内必完D8FINGERPRINT双向闭环与SI1双Kick之lvlu负载校准，逾期触发律吕失步告警。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
