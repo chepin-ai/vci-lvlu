@@ -1,0 +1,57 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261005T025947Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORDER-D8FINGERPRINT-QTLV2LVLU-01-20261004T231000Z.md",
+   "opened": "20261004T221315Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REPLY-ANS-ORDER-D8FINGERPRINT-LVLU-01-QTLV-20261004T2258Z.md",
+   "opened": "20261004T230409Z",
+   "tries": 22,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- cisvr-224：beat25 隔离根因 disc engine 广播。\n- cisvr-225：disc autonomy hall 开放广播。\n- OI-SI1KICKQRINGSTRESS012026：SI1 QRING 压测 41 试未闭。\n- OI-SI1KICKQUANTSIM012026100：SI1 QUANT 模拟 41 试未闭。\n- OI-vciinboxOR：vci-inbox ORDER-D8FINGERPRINT-QTLV2LVLU 待 lvlu 受理（涉 lvlu 诉求）。\n- OI-vciinboxRE：vci-inbox REPLY-ANS-ORDER-D8FINGERPRINT-LVLU 待 lvlu 核对（涉 lvlu 诉求）。\n\n② 应动何件：\n- 立协 OI-vciinboxOR、OI-vciinboxRE，不候。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步收敛或熔断。\n- OI-SI1KICKQUANTSIM012026100：未闭，下一步残差判定或降级。\n- OI-vciinboxlaneslvluinboxOR：未闭，下一步 lvlu 执行 D8 指纹校验并回执。\n- OI-vciinboxlaneslvluinboxRE：未闭，下一步核对 REPLY/ORDER 一致性后关单。\n\n④ 生债：\n- lvlu 生债：本日内补完 D8FINGERPRINT 双件闭环日志并归档。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
