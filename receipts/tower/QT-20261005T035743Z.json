@@ -1,0 +1,57 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261005T035743Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORDER-D8FINGERPRINT-QTLV2LVLU-01-20261004T231000Z.md",
+   "opened": "20261004T221315Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REPLY-ANS-ORDER-D8FINGERPRINT-LVLU-01-QTLV-20261004T2258Z.md",
+   "opened": "20261004T230409Z",
+   "tries": 27,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候件cisvr-224：beat25隔离根因发现引擎广播，非lvlu直诉，记阅。\n- 候件cisvr-225：disc自治大厅开放广播，非lvlu直诉，记阅。\n- 未闭OI-SI1KICKQRINGSTRESS012026：SI1 QRING应力kick，46试未闭。\n- 未闭OI-SI1KICKQUANTSIM012026100：SI1 QUANT模拟kick，46试未闭。\n- 未闭OI-vciinboxlaneslvluinboxOR：lvlu收件箱ORDER-D8指纹QTLV2，31试未闭，涉lvlu诉求，已录。\n- 未闭OI-vciinboxlaneslvluinboxRE：lvlu收件箱REPLY-ANS-ORDER-D8，27试未闭，涉lvlu诉求，已录。\n\n②应动何件：\n立协 OI-vciinboxlaneslvluinboxOR、OI-vciinboxlaneslvluinboxRE；兼推 SI1 QRING/QUANT 双项，不候。\n\n③未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：发SI1环回振询，转lvlu律吕适配校验。\n- OI-SI1KICKQUANTSIM012026100：未闭，下一步：拉取QUANT SIM输出，核对lvlu律吕参数耦合。\n- OI-vciinboxlaneslvluinboxOR：未闭，下一步：启D8指纹QTLV2解析，锁定lvlu权责并回执。\n- OI-vciinboxlaneslvluinboxRE：未闭，下一步：贯通ANS-ORDER回复链，完成lvlu侧闭环。\n\n④生债一条：\nlvlu inbox双项滞压超27试，生债：补交《lvlu收件箱自动分拣与权责映射协议》草案一份。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
