@@ -1,0 +1,57 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261005T032318Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261004T193051Z.md",
+   "opened": "20261004T194142Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxOR",
+   "ref": "vci-inbox:lanes/lvlu/inbox/ORDER-D8FINGERPRINT-QTLV2LVLU-01-20261004T231000Z.md",
+   "opened": "20261004T221315Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/REPLY-ANS-ORDER-D8FINGERPRINT-LVLU-01-QTLV-20261004T2258Z.md",
+   "opened": "20261004T230409Z",
+   "tries": 24,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- hub-broadcast cisvr-224：beat25 隔离根因 disc 引擎广播，待阅。\n- hub-broadcast cisvr-225：disc 自律大厅开放广播，待阅。\n- OI-SI1KICKQRINGSTRESS012026：SI1 QRING 压力测试，已 43 试未闭。\n- OI-SI1KICKQUANTSIM012026100：SI1 量子模拟，已 43 试未闭。\n- OI-vciinboxlaneslvluinboxOR：vci inbox 收 ORDER-D8FINGERPRINT-QTLV2LVLU，涉 lvlu 诉求，已 28 试未闭。\n- OI-vciinboxlaneslvluinboxRE：vci inbox 收 REPLY-ANS-ORDER-D8FINGERPRINT-LVLU，涉 lvlu 诉求，已 24 试未闭。\n\n② 应动何件（立协同不候）：\n- 涉 lvlu 双 inbox（OR / RE）立协同不候。\n- SI1 双项（QRING / QUANT）43 试逾阈，并查不候。\n- 广播两件先阅备联动。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，回传压测日志至 SI0 做律吕频谱校验。\n- OI-SI1KICKQUANTSIM012026100：未闭，量子态与 lvlu 基准音叉对齐后复测。\n- OI-vciinboxlaneslvluinboxOR：未闭，解析 D8 指纹并触发 lvlu 契约确认回路。\n- OI-vciinboxlaneslvluinboxRE：未闭，核对 REPLY-ANS 与 ORDER 指纹匹配后闭环归档。\n\n④ 生债一条：\n律吕线对 vci-inbox 涉 lvlu 双件之协同回执未签发，记债一次，限下 beat 清偿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
