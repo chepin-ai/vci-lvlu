@@ -1,0 +1,101 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261007T164122Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261007T163028Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261007T163031Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261007T163028Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261007T163031Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-VERDICTLVLU01md",
+   "ref": "VERDICT-LVLU-01.md",
+   "opened": "20261007T131805Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQUNIFY01lvlumd",
+   "ref": "WILDQ-UNIFY-01-lvlu.md",
+   "opened": "20261007T144352Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-WILDQMONOTONE01lvlumd",
+   "ref": "WILDQ-MONOTONE-01-lvlu.md",
+   "opened": "20261007T153343Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-CALIBTASK01lvlumd",
+   "ref": "CALIB-TASK-01-lvlu.md",
+   "opened": "20261007T155301Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-CALIBALIGN01lvlumd",
+   "ref": "CALIB-ALIGN-01-lvlu.md",
+   "opened": "20261007T155756Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEE01lvlumd",
+   "ref": "LABJUDGE-E01-lvlu.md",
+   "opened": "20261007T163031Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261007T163028Z.md",
+   "opened": "20261007T164122Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261007T163028Z.md",
+   "opened": "20261007T164122Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件6件/未闭8项: cisvr-224-beat25-quarantine-rootcause-disc-engine.md; cisvr-225-disc-autonomy-hall-open.md; SI1-KICK-QRING-STRESS-01-20261007T163028Z.md; SI1-KICK-QRING-STRESS-01-20261007T163031Z.md; SI1-KICK-QUANT-SIM-01-20261007T163028Z.md; SI1-KICK-QUANT-SIM-01-20261007T163031Z.md",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
