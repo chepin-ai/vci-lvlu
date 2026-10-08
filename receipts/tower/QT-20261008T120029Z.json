@@ -1,0 +1,86 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261008T120029Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261008T115002Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261008T115002Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-LABJUDGEE03lvlumd",
+   "ref": "LABJUDGE-E03-lvlu.md",
+   "opened": "20261008T051522Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEE04lvlumd",
+   "ref": "LABJUDGE-E04-lvlu.md",
+   "opened": "20261008T061532Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261008T081026Z.md",
+   "opened": "20261008T082053Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261008T081026Z.md",
+   "opened": "20261008T082053Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEE05lvlumd",
+   "ref": "LABJUDGE-E05-lvlu.md",
+   "opened": "20261008T095825Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEE06lvlumd",
+   "ref": "LABJUDGE-E06-lvlu.md",
+   "opened": "20261008T101731Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEF01lvlumd",
+   "ref": "LABJUDGE-F01-lvlu.md",
+   "opened": "20261008T104630Z",
+   "tries": 9,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件4件/未闭7项: cisvr-224-beat25-quarantine-rootcause-disc-engine.md; cisvr-225-disc-autonomy-hall-open.md; SI1-KICK-QRING-STRESS-01-20261008T115002Z.md; SI1-KICK-QUANT-SIM-01-20261008T115002Z.md",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
