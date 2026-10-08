@@ -1,0 +1,47 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261008T023607Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261008T022538Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261008T003134Z.md",
+   "opened": "20261008T004159Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261008T003134Z.md",
+   "opened": "20261008T004159Z",
+   "tries": 13,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件3件/未闭2项: cisvr-224-beat25-quarantine-rootcause-disc-engine.md; cisvr-225-disc-autonomy-hall-open.md; SI1-KICK-QUANT-SIM-01-20261008T022538Z.md",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
