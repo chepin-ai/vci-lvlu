@@ -1,0 +1,153 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261009T095642Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-LABJUDGEF02lvlumd",
+   "ref": "LABJUDGE-F02-lvlu.md",
+   "opened": "20261009T043230Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEF03lvlumd",
+   "ref": "LABJUDGE-F03-lvlu.md",
+   "opened": "20261009T050635Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEF04lvlumd",
+   "ref": "LABJUDGE-F04-lvlu.md",
+   "opened": "20261009T052332Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGET01lvlumd",
+   "ref": "LABJUDGE-T01-lvlu.md",
+   "opened": "20261009T060002Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGET02lvlumd",
+   "ref": "LABJUDGE-T02-lvlu.md",
+   "opened": "20261009T061607Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGET02blvlumd",
+   "ref": "LABJUDGE-T02b-lvlu.md",
+   "opened": "20261009T062203Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGET02clvlumd",
+   "ref": "LABJUDGE-T02c-lvlu.md",
+   "opened": "20261009T062618Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261009T065552Z.md",
+   "opened": "20261009T070620Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261009T065552Z.md",
+   "opened": "20261009T070620Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGET03lvlumd",
+   "ref": "LABJUDGE-T03-lvlu.md",
+   "opened": "20261009T090716Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGET03RlvluSEG1md",
+   "ref": "LABJUDGE-T03R-lvlu-SEG1.md",
+   "opened": "20261009T091558Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGET03RlvluSEG2md",
+   "ref": "LABJUDGE-T03R-lvlu-SEG2.md",
+   "opened": "20261009T091558Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGET03RlvluSEG3md",
+   "ref": "LABJUDGE-T03R-lvlu-SEG3.md",
+   "opened": "20261009T091558Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGET03RlvluSEG4md",
+   "ref": "LABJUDGE-T03R-lvlu-SEG4.md",
+   "opened": "20261009T091558Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGET03RlvluSEG5md",
+   "ref": "LABJUDGE-T03R-lvlu-SEG5.md",
+   "opened": "20261009T091558Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGET03RlvluSEG6md",
+   "ref": "LABJUDGE-T03R-lvlu-SEG6.md",
+   "opened": "20261009T091558Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGET03RlvluSEG7md",
+   "ref": "LABJUDGE-T03R-lvlu-SEG7.md",
+   "opened": "20261009T091558Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGET03Rlvlumd",
+   "ref": "LABJUDGE-T03R-lvlu.md",
+   "opened": "20261009T092103Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGET03Slvlumd",
+   "ref": "LABJUDGE-T03S-lvlu.md",
+   "opened": "20261009T093024Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件0件/未闭19项: ",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
