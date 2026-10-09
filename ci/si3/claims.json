@@ -1,7 +1,7 @@
 {
  "v": 3,
  "line": "lvlu",
- "ts": "20261009T195625Z",
+ "ts": "20261009T200044Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -14,7 +14,7 @@
    ],
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
-   "beats": 3089,
+   "beats": 3090,
    "nudge_level": 225,
    "last_nudge": "20261009T160101Z",
    "status": "open",
@@ -48,11 +48,11 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 96,
-   "beats": 3096,
-   "nudge_level": 355,
-   "last_nudge": "20261009T155957Z",
+   "beats": 3097,
+   "nudge_level": 356,
+   "last_nudge": "20261009T200044Z",
    "status": "open",
-   "last_nudge_beats": 3089
+   "last_nudge_beats": 3097
   },
   {
    "id": "EVALR2-ALL",
@@ -107,11 +107,11 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 3095,
-   "nudge_level": 252,
-   "last_nudge": "20261009T155957Z",
+   "beats": 3096,
+   "nudge_level": 253,
+   "last_nudge": "20261009T200044Z",
    "status": "open",
-   "last_nudge_beats": 3088
+   "last_nudge_beats": 3096
   },
   {
    "id": "ORIGIN6-BONUS",
@@ -119,11 +119,11 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 3095,
-   "nudge_level": 252,
-   "last_nudge": "20261009T155957Z",
+   "beats": 3096,
+   "nudge_level": 253,
+   "last_nudge": "20261009T200044Z",
    "status": "open",
-   "last_nudge_beats": 3088
+   "last_nudge_beats": 3096
   },
   {
    "id": "WQ-C02-ANS",
@@ -165,7 +165,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 3080,
+   "beats": 3081,
    "nudge_level": 249,
    "last_nudge": "20261009T195625Z",
    "status": "open",
@@ -526,8 +526,8 @@
    "need_lines": [
     "ucif2"
    ],
-   "beats": 2884,
-   "nudge_level": 209,
+   "beats": 2885,
+   "nudge_level": 210,
    "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
    "watch": [
     {
@@ -540,8 +540,8 @@
     }
    ],
    "legs_got": [],
-   "last_nudge": "20261009T155957Z",
-   "last_nudge_beats": 2877
+   "last_nudge": "20261009T200044Z",
+   "last_nudge_beats": 2885
   },
   {
    "id": "RING-INTERCONN-01-SIGN",
@@ -601,7 +601,7 @@
    "need_lines": [
     "lgt"
    ],
-   "beats": 2860,
+   "beats": 2861,
    "nudge_level": 198,
    "note": "RE2约接: 我链tip 280223d5a52b581e / 尔tip 209/813ac77adf5e",
    "legs_got": [],
@@ -638,7 +638,7 @@
    "need_lines": [
     "lgt"
    ],
-   "beats": 2860,
+   "beats": 2861,
    "nudge_level": 187,
    "note": "EXP-024题面已转投; κ>0.8 对拍",
    "legs_got": [],
@@ -787,7 +787,7 @@
    "sla_beats": 48,
    "target": "cisvr",
    "need_lines": null,
-   "beats": 2844,
+   "beats": 2845,
    "nudge_level": 202,
    "note": "FINE_OWN_PAT_QGL铸成(id19646075,qgl独占,Actions:RW+Contents:RW,2026-12-14期); root末段贴值(株47 C5-legit)→vault密封→git道200→sealed-PUT LINE_PAT入vci-qgl secrets(204); 回执KEY-INSTALL-RECEIPT-QGL-02经新钥自身git上链(fp 27a3a6ecbc70); Secrets:RW未授列root域下会期",
    "last_nudge": "20261009T194550Z",
@@ -894,7 +894,7 @@
     "lgt",
     "vinf"
    ],
-   "beats": 2835,
+   "beats": 2836,
    "nudge_level": 248,
    "note": "现票: 可2(lvlu/qgl)+usrm判1835Z已投待引擎重放; quorum5 deadline6拍(SLA-E事件锚); 达即v1.1汇判刊行",
    "legs_got": [
