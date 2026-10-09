@@ -1,0 +1,96 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261009T090110Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261009T085044Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-LABJUDGEF02lvlumd",
+   "ref": "LABJUDGE-F02-lvlu.md",
+   "opened": "20261009T043230Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEF03lvlumd",
+   "ref": "LABJUDGE-F03-lvlu.md",
+   "opened": "20261009T050635Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEF04lvlumd",
+   "ref": "LABJUDGE-F04-lvlu.md",
+   "opened": "20261009T052332Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGET01lvlumd",
+   "ref": "LABJUDGE-T01-lvlu.md",
+   "opened": "20261009T060002Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGET02lvlumd",
+   "ref": "LABJUDGE-T02-lvlu.md",
+   "opened": "20261009T061607Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGET02blvlumd",
+   "ref": "LABJUDGE-T02b-lvlu.md",
+   "opened": "20261009T062203Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGET02clvlumd",
+   "ref": "LABJUDGE-T02c-lvlu.md",
+   "opened": "20261009T062618Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261009T065552Z.md",
+   "opened": "20261009T070620Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026100",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261009T065552Z.md",
+   "opened": "20261009T070620Z",
+   "tries": 13,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件3件/未闭9项: cisvr-224-beat25-quarantine-rootcause-disc-engine.md; cisvr-225-disc-autonomy-hall-open.md; SI1-KICK-QUANT-SIM-01-20261009T085044Z.md",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
