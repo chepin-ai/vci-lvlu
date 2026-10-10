@@ -1,0 +1,57 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261010T111236Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261010T055112Z.md",
+   "opened": "20261010T060135Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEOTP02lvlumd",
+   "ref": "LABJUDGE-OTP02-lvlu.md",
+   "opened": "20261010T065254Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT05lvlumd",
+   "ref": "LABJUDGE-EXT05-lvlu.md",
+   "opened": "20261010T070811Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026101",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261010T092910Z.md",
+   "opened": "20261010T093935Z",
+   "tries": 10,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件2件/未闭4项: cisvr-224-beat25-quarantine-rootcause-disc-engine.md; cisvr-225-disc-autonomy-hall-open.md",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
