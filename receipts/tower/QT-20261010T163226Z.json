@@ -1,0 +1,53 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261010T163226Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "VERIFY-V11-CALL-01-lvlu.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQUANTSIM012026101",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261010T092910Z.md",
+   "opened": "20261010T093935Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261010T132713Z.md",
+   "opened": "20261010T133732Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT06lvlumd",
+   "ref": "LABJUDGE-EXT06-lvlu.md",
+   "opened": "20261010T151656Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-VERIFYV11CALL01lvlumd",
+   "ref": "VERIFY-V11-CALL-01-lvlu.md",
+   "opened": "20261010T163226Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件1件/未闭4项: VERIFY-V11-CALL-01-lvlu.md",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
