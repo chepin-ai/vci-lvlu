@@ -1,0 +1,58 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261010T132713Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=2"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-LABJUDGEOTP02lvlumd",
+   "ref": "LABJUDGE-OTP02-lvlu.md",
+   "opened": "20261010T065254Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT05lvlumd",
+   "ref": "LABJUDGE-EXT05-lvlu.md",
+   "opened": "20261010T070811Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026101",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261010T092910Z.md",
+   "opened": "20261010T093935Z",
+   "tries": 24,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件1件/未闭3项: PLAN-QUEUE拍 fired=3 kicks=2",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 2
+ }
+}
