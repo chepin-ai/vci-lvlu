@@ -1,0 +1,64 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261011T062426Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-LABJUDGEEXT07lvlumd",
+   "ref": "LABJUDGE-EXT07-lvlu.md",
+   "opened": "20261011T004421Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT07Blvlumd",
+   "ref": "LABJUDGE-EXT07B-lvlu.md",
+   "opened": "20261011T005722Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026101",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261011T005303Z.md",
+   "opened": "20261011T005722Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT07B2lvlumd",
+   "ref": "LABJUDGE-EXT07B2-lvlu.md",
+   "opened": "20261011T011440Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261011T043057Z.md",
+   "opened": "20261011T044123Z",
+   "tries": 11,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件2件/未闭5项: cisvr-224-beat25-quarantine-rootcause-disc-engine.md; cisvr-225-disc-autonomy-hall-open.md",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
