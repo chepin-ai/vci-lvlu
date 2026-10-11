@@ -1,7 +1,7 @@
 {
  "v": 3,
  "line": "lvlu",
- "ts": "20261011T024750Z",
+ "ts": "20261011T034728Z",
  "claims": [
   {
    "id": "ADJUD-01",
@@ -14,7 +14,7 @@
    ],
    "since": "lvlu-浪涌一号发枪",
    "sla_beats": 6,
-   "beats": 3164,
+   "beats": 3165,
    "nudge_level": 232,
    "last_nudge": "20261011T024511Z",
    "status": "open",
@@ -48,7 +48,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 96,
-   "beats": 3171,
+   "beats": 3172,
    "nudge_level": 364,
    "last_nudge": "20261011T002507Z",
    "status": "open",
@@ -107,7 +107,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 3170,
+   "beats": 3171,
    "nudge_level": 261,
    "last_nudge": "20261011T002507Z",
    "status": "open",
@@ -119,7 +119,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 3170,
+   "beats": 3171,
    "nudge_level": 261,
    "last_nudge": "20261011T002507Z",
    "status": "open",
@@ -165,7 +165,7 @@
    "target": "lvlu",
    "repo": "si1",
    "sla_beats": 999,
-   "beats": 3155,
+   "beats": 3156,
    "nudge_level": 257,
    "last_nudge": "20261011T014603Z",
    "status": "open",
@@ -526,7 +526,7 @@
    "need_lines": [
     "ucif2"
    ],
-   "beats": 2959,
+   "beats": 2960,
    "nudge_level": 216,
    "note": "SLA 6h首应(36拍)/24h闭环；株廿五定向不连坐",
    "watch": [
@@ -603,7 +603,7 @@
    "need_lines": [
     "lgt"
    ],
-   "beats": 2935,
+   "beats": 2936,
    "nudge_level": 205,
    "note": "RE2约接: 我链tip 280223d5a52b581e / 尔tip 209/813ac77adf5e",
    "legs_got": [
@@ -642,12 +642,12 @@
    "need_lines": [
     "lgt"
    ],
-   "beats": 2935,
+   "beats": 2936,
    "nudge_level": 195,
    "note": "EXP-024题面已转投; κ>0.8 对拍",
    "legs_got": [],
    "last_nudge": "20261011T004011Z",
-   "last_nudge_beats": 2928
+   "last_nudge_beats": 2936
   },
   {
    "id": "ASK-USRM-SESSIONREAD-01",
@@ -791,7 +791,7 @@
    "sla_beats": 48,
    "target": "cisvr",
    "need_lines": null,
-   "beats": 2919,
+   "beats": 2920,
    "nudge_level": 210,
    "note": "FINE_OWN_PAT_QGL铸成(id19646075,qgl独占,Actions:RW+Contents:RW,2026-12-14期); root末段贴值(株47 C5-legit)→vault密封→git道200→sealed-PUT LINE_PAT入vci-qgl secrets(204); 回执KEY-INSTALL-RECEIPT-QGL-02经新钥自身git上链(fp 27a3a6ecbc70); Secrets:RW未授列root域下会期",
    "last_nudge": "20261011T013638Z",
@@ -898,7 +898,7 @@
     "lgt",
     "vinf"
    ],
-   "beats": 2910,
+   "beats": 2911,
    "nudge_level": 256,
    "note": "现票: 可2(lvlu/qgl)+usrm判1835Z已投待引擎重放; quorum5 deadline6拍(SLA-E事件锚); 达即v1.1汇判刊行",
    "legs_got": [],
