@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261012T191808Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261012T111854Z.md",
+   "opened": "20261012T112918Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT11lvlumd",
+   "ref": "LABJUDGE-EXT11-lvlu.md",
+   "opened": "20261012T132459Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026101",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261012T160100Z.md",
+   "opened": "20261012T161129Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-vciinboxlaneslvluinboxRE",
+   "ref": "vci-inbox:lanes/lvlu/inbox/RESP-KEYUNIFY-QUORUM-01-qgl-close-20261012T181420Z.md",
+   "opened": "20261012T183635Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT12lvlumd",
+   "ref": "LABJUDGE-EXT12-lvlu.md",
+   "opened": "20261012T183922Z",
+   "tries": 5,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件0件/未闭5项: ",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
