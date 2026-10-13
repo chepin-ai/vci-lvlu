@@ -2,10 +2,15 @@
 
 ```json
 {
- "ts": "20261013T070736Z",
+ "ts": "20261013T073939Z",
  "keyreq_done": [],
  "acks": [],
- "pending_si1": [],
+ "pending_si1": [
+  "EXP049-DONE",
+  "BLUEQUBIT-VERIFY",
+  "ORIGIN6-BONUS",
+  "WQB15-V02"
+ ],
  "note": "会话端醒后读本件+REBUILD.md→续办pending; 塔拍自治不候"
 }
 ```
