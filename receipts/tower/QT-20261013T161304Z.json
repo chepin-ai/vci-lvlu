@@ -1,0 +1,92 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261013T161304Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-LABJUDGEEXT14lvlumd",
+   "ref": "LABJUDGE-EXT14-lvlu.md",
+   "opened": "20261013T101751Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT14R2lvlumd",
+   "ref": "LABJUDGE-EXT14-R2-lvlu.md",
+   "opened": "20261013T114406Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261013T114406Z.md",
+   "opened": "20261013T114523Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-EXT14R2BEV1lvlumd",
+   "ref": "EXT14-R2B-EV1-lvlu.md",
+   "opened": "20261013T115800Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-EXT14R2BEV2lvlumd",
+   "ref": "EXT14-R2B-EV2-lvlu.md",
+   "opened": "20261013T115800Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-EXT14R2BEV3lvlumd",
+   "ref": "EXT14-R2B-EV3-lvlu.md",
+   "opened": "20261013T115800Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT14R3lvlumd",
+   "ref": "LABJUDGE-EXT14-R3-lvlu.md",
+   "opened": "20261013T115800Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT14R4lvlumd",
+   "ref": "LABJUDGE-EXT14-R4-lvlu.md",
+   "opened": "20261013T125648Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026101",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261013T153118Z.md",
+   "opened": "20261013T154147Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件2件/未闭9项: cisvr-224-beat25-quarantine-rootcause-disc-engine.md; cisvr-225-disc-autonomy-hall-open.md",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
