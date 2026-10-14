@@ -1,0 +1,58 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261014T032054Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261014T031032Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261014T031032Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-LABJUDGEEXT15lvlumd",
+   "ref": "LABJUDGE-EXT15-lvlu.md",
+   "opened": "20261013T222633Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026101",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261013T231137Z.md",
+   "opened": "20261013T232202Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261014T031032Z.md",
+   "opened": "20261014T032054Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件4件/未闭3项: cisvr-224-beat25-quarantine-rootcause-disc-engine.md; cisvr-225-disc-autonomy-hall-open.md; SI1-KICK-QRING-STRESS-01-20261014T031032Z.md; SI1-KICK-QUANT-SIM-01-20261014T031032Z.md",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
