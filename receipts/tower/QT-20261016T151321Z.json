@@ -1,0 +1,69 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261016T151321Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-LABJUDGEEXT17lvlumd",
+   "ref": "LABJUDGE-EXT17-lvlu.md",
+   "opened": "20261016T083238Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT17R2lvlumd",
+   "ref": "LABJUDGE-EXT17-R2-lvlu.md",
+   "opened": "20261016T084319Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT17R3lvlumd",
+   "ref": "LABJUDGE-EXT17-R3-lvlu.md",
+   "opened": "20261016T084926Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT17R4lvlumd",
+   "ref": "LABJUDGE-EXT17-R4-lvlu.md",
+   "opened": "20261016T085737Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT17R5lvlumd",
+   "ref": "LABJUDGE-EXT17-R5-lvlu.md",
+   "opened": "20261016T091148Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261016T100216Z.md",
+   "opened": "20261016T101244Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026101",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261016T141047Z.md",
+   "opened": "20261016T141258Z",
+   "tries": 7,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件0件/未闭7项: ",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
