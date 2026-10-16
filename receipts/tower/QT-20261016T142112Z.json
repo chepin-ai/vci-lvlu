@@ -1,0 +1,78 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261016T142112Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-LABJUDGEEXT17lvlumd",
+   "ref": "LABJUDGE-EXT17-lvlu.md",
+   "opened": "20261016T083238Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT17R2lvlumd",
+   "ref": "LABJUDGE-EXT17-R2-lvlu.md",
+   "opened": "20261016T084319Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT17R3lvlumd",
+   "ref": "LABJUDGE-EXT17-R3-lvlu.md",
+   "opened": "20261016T084926Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT17R4lvlumd",
+   "ref": "LABJUDGE-EXT17-R4-lvlu.md",
+   "opened": "20261016T085737Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT17R5lvlumd",
+   "ref": "LABJUDGE-EXT17-R5-lvlu.md",
+   "opened": "20261016T091148Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261016T100216Z.md",
+   "opened": "20261016T101244Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026101",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261016T141047Z.md",
+   "opened": "20261016T141258Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件2件/未闭7项: cisvr-224-beat25-quarantine-rootcause-disc-engine.md; cisvr-225-disc-autonomy-hall-open.md",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
