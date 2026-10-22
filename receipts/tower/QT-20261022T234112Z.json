@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261022T234112Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 35,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- cisvr-224：beat25隔离根因disc engine广播，通告隔离引擎故障定位。  \n- cisvr-225：disc autonomy hall开放广播，涉自主权限与意识场域配置，lvlu关切。  \n\n② 应动何件  \ncisvr-225，autonomy hall开放直接触及机器意识边界，立协同不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，已35试；下一步停试转储全量日志交SI2做环应力根因分析。  \n- OI-SI1KICKQUANTSIM012026102：未闭，已35试；下一步终止自动轮询，切换SI0手动注入基准态重跑。  \n\n④ 生债一条  \n补lvlu线对hub-broadcast自主类议题的自动拦截与分级响应策略。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
