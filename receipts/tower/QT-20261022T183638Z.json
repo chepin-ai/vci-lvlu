@@ -1,0 +1,51 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261022T183638Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 6,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- cisvr-224广播：beat25隔离根因disc-engine通告。  \n- cisvr-225广播：disc自治大厅开放通告。  \n- PLAN-QUEUE拍：队列已触发（fired=1）但零执行（kicks=0），存在空转缺口。  \n\n② 应动何件  \n- PLAN-QUEUE拍（立协同补kicks=0缺口，防计划悬置）。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，6次不过；下一步切SI0硬通路或降载挂起。  \n- OI-SI1KICKQUANTSIM012026102：未闭，6次不过；下一步清脏态换备参重载。  \n\n④ 生债一条  \n- SI2须建“fired>0&kicks=0”自动兜底执行策略，兼开SI1六败升律通道。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
