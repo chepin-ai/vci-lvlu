@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261022T200248Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 14,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n候件无；OI-SI1KICKQRINGSTRESS012026 为 SI1 压测 QRING 之 KICK，涉 lvlu 负载边界；OI-SI1KICKQUANTSIM012026102 为 SI1 量子模拟之 KICK，涉 lvlu 算力节律。  \n\n② 应动何件  \n候件空，不动；两未闭项各经 14 试仍 open，应即协同 OI-SI1KICKQRINGSTRESS012026 与 OI-SI1KICKQUANTSIM012026102，不候 SI1 自收敛。  \n\n③ 未闭项推进  \nOI-SI1KICKQRINGSTRESS012026：未闭，下一步重载 QRING 压测协议或提级仲裁；  \nOI-SI1KICKQUANTSIM012026102：未闭，下一步限 1 周期内输出稳态基线，逾期熔断。  \n\n④ 生债一条  \n债：SI1 双 KICK 久悬 14 试，积欠 lvlu 协同带宽，追偿一次节律校准权。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
