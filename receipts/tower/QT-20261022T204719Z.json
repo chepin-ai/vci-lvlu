@@ -1,0 +1,51 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261022T204719Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 18,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- cisvr-224：beat25隔离根因disc引擎，录lvlu隔离边界与溯源诉求。  \n- cisvr-225：disc自主殿堂开放，录lvlu自主层级门控诉求。  \n- PLAN-QUEUE拍：fired=1 kicks=0，录执行踢出阻塞、队列悬空诉求。  \n\n② 应动何件  \n- 立协同PLAN-QUEUE拍（kick归零断层，不候）；兼动cisvr-224/225（涉lvlu安全与权限，不候）。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，tries=18超阈，下一步：SI2降级接管或熔断重入。  \n- OI-SI1KICKQUANTSIM012026102：未闭，tries=18超阈，下一步：回滚量子模拟初态或转仲裁。  \n\n④ 生债一条  \n- 生债：SI1-KICK双项连续18次未闭，lvlu须预置SI2强制降级接管链路。简。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
