@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261022T185802Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：候件空；未闭项「SI1-KICK-QRING-STRESS」8试未闭；未闭项「SI1-KICK-QUANT-SIM」8试未闭；无lvlu新诉求录。\n\n②应动何件：两未闭项tries=8已超限，应即立SI1↔SI2协同排障/归档重置，不候。\n\n③未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭/下一步：触发联合debug或强制归档重开。\n- OI-SI1KICKQUANTSIM012026102：未闭/下一步：触发联合debug或强制归档重开。\n\n④生债：记「SI1-KICK双项8试未决滞留债」一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
