@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261022T201346Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 15,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n• 224-beat25隔离根因disc引擎广播，涉lvlu诊断诉求，录。\n• 225-disc自治大厅开放广播，涉lvlu自治协同诉求，录。\n\n② 应动何件\n• 224、225双件并动，立启disc-engine根因协同与autonomy-hall开放握手，不候。\n\n③ 未闭项推进\n• OI-SI1KICKQRINGSTRESS012026：15试未闭，升SI2熔断重试。\n• OI-SI1KICKQUANTSIM012026102：15试未闭，挂起待QRING闭环后复测。\n\n④ 生债一条\n• lvlu-SI2/SI0协同迟滞债：因QRING/QUANT双项15试卡滞，记待偿降级协议1条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
