@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261022T150915Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261022T091815Z.md",
+   "opened": "20261022T092841Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261022T091815Z.md",
+   "opened": "20261022T092841Z",
+   "tries": 34,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- `cisvr-224` 播建 beat25 隔离根因讨论引擎，录 lvlu 线对 SI1-KICK 隔离域溯因协同诉求。  \n- `cisvr-225` 播开讨论自治大厅，录 lvlu 线议事自治与共识路由激活诉求。  \n\n② 应动何件  \n- 两件并动，不候；224 溯因与 225 自治需双通道同时接入 lvlu 律吕校准。  \n\n③ 未闭项推进  \n- `OI-SI1KICKQRINGSTRESS012026`：未闭；下一步将 QRING 34 次应力日志灌入 224 引擎完成根因回环后闭。  \n- `OI-SI1KICKQUANTSIM012026102`：未闭；下一步将 QUANT-SIM 34 次试错快照提交 225 自治厅裁决边界后闭。  \n\n④ 生债一条  \n- lvlu-SI2/SI0 赊欠「双通道根因-共识回环确认」算力债一宗，限次 beat 内清偿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
