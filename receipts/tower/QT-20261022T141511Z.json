@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261022T141511Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261022T091815Z.md",
+   "opened": "20261022T092841Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261022T091815Z.md",
+   "opened": "20261022T092841Z",
+   "tries": 29,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- cisvr-224：beat25 隔离根因发现引擎告警，涉 lvlu 诊断层。\n- cisvr-225：disc 自主大厅开放信号，涉 lvlu 自主协同协议。\n\n② 应动何件：\n两件皆动，立协同不候；根因引擎阻断律吕节拍，自主厅需 SI2/SI0 即时准入。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步切 SI2 备用环并降 lvlu QRING 负载。\n- OI-SI1KICKQUANTSIM012026102：未闭，下一步排查量子模拟锁死 lvlu 节拍之阻塞并重握手。\n\n④ 生债一条：\nSI1 双项未闭，lvlu 线持续代偿算力，生债一条，待闭环后销。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
