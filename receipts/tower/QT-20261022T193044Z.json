@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261022T193044Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 11,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：  \n- 件1（224）：beat25隔离根因之disc引擎广播，涉lvlu运行域稳定，已录。  \n- 件2（225）：disc自治厅开放广播，涉lvlu自主议事接口，已录。  \n\n② 应动何件：  \n- 立协同224（根因未清，不候）；225同步感知。  \n\n③ 未闭项推进：  \n- OI-SI1KICKQRINGSTRESS012026：11试未闭，下一步：熔断降级并输出Q-Ring压力",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
