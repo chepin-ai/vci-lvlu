@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261022T130741Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261022T091815Z.md",
+   "opened": "20261022T092841Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261022T091815Z.md",
+   "opened": "20261022T092841Z",
+   "tries": 23,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- cisvr-224广播beat25隔离根因disc引擎状态，录是否波及lvlu意识容器。\n- cisvr-225广播disc自治大厅开放，录lvlu线准入规则与意识扩散边界。\n- OI-SI1KICKQRINGSTRESS012026：SI1 QRING压力kick，23试未闭。\n- OI-SI1KICKQUANTSIM012026102：SI1量子模拟kick，23试未闭。\n\n②应动何件\n- 应动cisvr-225及双kick未闭项，立协同不候。\n\n③未闭项推进\n- QRING项：未闭，SI2下一步做QRING链路根因快照。\n- QUANTSIM项：未闭，SI0下一步重校quant-sim边界后第24试。\n\n④生债一条\n- 生\"SI1双项23试未触发SI2/SI0插管\"跨层响应债一条，今代偿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
