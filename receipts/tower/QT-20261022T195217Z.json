@@ -1,0 +1,47 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261022T195217Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261022T194119Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 13,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- cisvr-224：beat25 隔离根因讨论引擎广播。\n- cisvr-225：disc 自治大厅开放广播。\n- SI1-KICK-QUANT-SIM-01：新 inbox 到件，关联未闭项 OI-SI1KICKQUANTSIM012026102。\n\n② 应动何件：SI1-KICK-QUANT-SIM-01-20261022T194119Z.md（立协同不候）。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，13 试未过，下一步切诊断或升级。\n- OI-SI1KICKQUANTSIM012026102：未闭，13 试未过且新件到达，下一步即对齐 inbox 关闭。\n\n④ 生债：QUANT-SIM 与 QRING 双卡 13 次未闭，生“SI1-KICK 链路阻塞债”一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
