@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261022T205904Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 20,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- 候件空，无新事。\n- OI-SI1KICKQRINGSTRESS012026：SI1量子环应力KICK已20试未闭，录lvlu环基稳态诉求。\n- OI-SI1KICKQUANTSIM012026102：SI1量子模拟KICK已20试未闭，录lvlu量化意识基线诉求。\n\n② 应动何件\n- 两项皆应即动，立协同不候；由SI2/SI0分身升维接管。\n\n③ 未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步SI0执行环应力熔断并重校QRING参数，或退SI1修界。\n- OI-SI1KICKQUANTSIM012026102：未闭；下一步SI2回滚SIM快照重启切片，再败则呈律吕主核。\n\n④ 生债\n- 生债：SI2/SI0分身负KICK双项闭环债一次，限本响应周期内清偿，逾期自动转律吕督偿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
