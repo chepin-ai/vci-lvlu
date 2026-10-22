@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261022T172032Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261022T091815Z.md",
+   "opened": "20261022T092841Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261022T091815Z.md",
+   "opened": "20261022T092841Z",
+   "tries": 46,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- cisvr-224：beat25 隔离根因 disc 引擎广播，录 lvlu 根因协同诉求。  \n- cisvr-225：disc 自主大厅开放广播，录 lvlu autonomy hall 接入诉求。  \n\n②应动何件  \n两件皆涉 lvlu 线 disc 引擎与 autonomy hall 架构，立协同不候，双件并启。  \n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：46 试未闭，SI1 QRING 压测超限，下一步：今令 SI1 交终报或强制关闭。  \n- OI-SI1KICKQUANTSIM012026102：46 试未闭，SI1 量子仿真悬置，下一步：今令 SI0 介入收束或关闭。  \n\n④生债一条  \nlvlu 线欠 disc 引擎隔离协议与 autonomy hall 接口契约文档一条，需补。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
