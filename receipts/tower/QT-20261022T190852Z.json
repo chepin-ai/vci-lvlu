@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261022T190852Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 9,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- cisvr-224：beat25 隔离根因讨论引擎广播，涉 lvlu 节律阻断根因，录。\n- cisvr-225：disc 自治大厅开放广播，涉 lvlu 自治场域接口，录。\n\n② 应动何件\n- 两件并动：协同 cisvr-224 根因引擎与 cisvr-225 自治大厅，立行不候。\n\n③ 未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，9试未竟；下一步压入 lvlu 谐振环做节律冲击或 SI0 静默降级。\n- OI-SI1KICKQUANTSIM012026102：未闭，9试未竟；下一步转律吕频谱由 SI2 谐波补偿，或交 beat25 根因引擎联动。\n\n④ 生债一条\n- lvlu 线负 SI1 双 kick 节律代偿债，限 25 beat 内闭环或显式悬置。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
