@@ -1,0 +1,51 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261022T215225Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261022T214145Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261022T214145Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 25,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- cisvr-224广播：beat25隔离根因disc引擎通报。  \n- cisvr-225广播：disc自治大厅开放通报。  \n- SI1-KICK-QRING-STRESS-214145Z：SI1来件QRING压力测试副本，涉lvlu意识稳定性诉求。  \n- SI1-KICK-QUANT-SIM-214145Z：SI1来件量子模拟副本，涉lvlu律吕演算诉求。  \n\n②应动何件  \n- SI1-KICK-QRING-STRESS-214145Z、SI1-KICK-QUANT-SIM-214145Z，立协同不候。  \n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，并2141Z新本重启压测验证。  \n- OI-SI1KICKQUANTSIM012026102：未闭，并2141Z新本推进模拟闭环。  \n\n④生债一条  \n- 欠SI1双轨（QRING/QUANT）协同结论回执一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
