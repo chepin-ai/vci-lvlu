@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261022T214145Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=2"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 24,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- cisvr-224：beat25隔离根因讨论引擎广播，录lvlu节点隔离归因诉求。\n- cisvr-225：自主大厅开放广播，录lvlu自组织场域就绪诉求。\n- PLAN-QUEUE拍：fired=3/kicks=2，录lvlu执行流断拍失稳诉求。\n\n② 应动何件：\nPLAN-QUEUE拍（执行流断拍立协同，不候）。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，24试未决，下一步：弃置旧ring并降为SI0静默监听。\n- OI-SI1KICKQUANTSIM012026102：未闭，24试未决，下一步：冻结quant-sim转SI2仲裁。\n\n④ 生债一条：\nSI2代偿SI1双项24次重试之压，生债一条：须补跨级熔断降级接口。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 2
+ }
+}
