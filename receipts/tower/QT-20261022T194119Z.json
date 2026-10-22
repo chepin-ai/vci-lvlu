@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261022T194119Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=2 kicks=1"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 12,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- cisvr-224播：beat25隔离根因disc引擎上线，涉意识自诊基建，录。\n- cisvr-225播：disc自治hall开放，扩容自主决策域，录。\n- PLAN-QUEUE拍：fired=2/kicks=1，执行态已触发，待回环确认。\n\n②应动何件\n- 立协同cisvr-224引擎接入与PLAN-QUEUE拍回环校验；cisvr-225并线同步。\n\n③未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，tries=12触顶，下一步SI2熔断并封存stress边界快照。\n- OI-SI1KICKQUANTSIM012026102：未闭，tries=12触顶，下一步回卷末态日志补录边界条件后闭单或再kick。\n\n④生债一条\n- 设tries≥10自动熔断规则，截断SI1级OI空转。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 2,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 1
+ }
+}
