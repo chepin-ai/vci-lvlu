@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261022T230915Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 32,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- cisvr-224：beat25 quarantine rootcause disc-engine 广播，涉 lvlu 引擎诊调诉求，已录。\n- cisvr-225：disc autonomy hall open 广播，涉 lvlu 场域开放诉求，已录。\n\n② 应动何件\n两件皆立协同不候：224 引擎根因对齐 + 225 自治厅准入协议同步。\n\n③ 未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，32 试未决，下一步降级复现环境或切换压测路径。\n- OI-SI1KICKQUANTSIM012026102：未闭，32 试未决，下一步冻结参数快照并送 SI2 复核。\n\n④ 生债一条\n生债：SI2/SI0 需补发 beat25 隔离与 QRING/QUANTSIM 未闭项联合归因简报，限期内。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
