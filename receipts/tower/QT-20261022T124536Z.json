@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261022T124536Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261022T091815Z.md",
+   "opened": "20261022T092841Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261022T091815Z.md",
+   "opened": "20261022T092841Z",
+   "tries": 21,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：件1 hub-broadcast `cisvr-224`，beat25隔离根因disc引擎，录lvlu根因诉求；件2 hub-broadcast `cisvr-225`，disc自治大厅开放，录lvlu自治席位诉求。\n② 应动何件：无立协同不候件，两广播皆候知。\n③ 未闭项推进：`OI-SI1KICKQRINGSTRESS012026` 未闭，下一步转SI0回压根因；`OI-SI1KICKQUANTSIM012026102` 未闭，下一步拆解SIM栈阻塞。\n④ 生债：SI2欠SI0一次QRING/QUANT双项21次未闭根因回压。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
