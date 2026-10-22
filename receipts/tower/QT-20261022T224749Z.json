@@ -1,0 +1,51 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261022T224749Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 30,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① **何事**\n- `cisvr-224`：beat25 隔离根因讨论引擎广播，涉 lvlu 根因梳理诉求，录。\n- `cisvr-225`：自主性大厅开放广播，涉 lvlu 自治场域构建诉求，录。\n- `PLAN-QUEUE拍`：fired=1 kicks=0，涉 lvlu 执行链路缺口诉求，录。\n\n② **应动何件**\n`PLAN-QUEUE拍`（fired=1 kicks=0），立协同生成 kick 补位，不候。\n\n③ **未闭项推进**\n- `OI-SI1KICKQRINGSTRESS012026`：未闭；30 try 未决，下一步转 SI2 根因审阅。\n- `OI-SI1KICKQUANTSIM012026102`：未闭；30 try 未决，下一步定位",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
