@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261022T131945Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=2"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261022T091815Z.md",
+   "opened": "20261022T092841Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261022T091815Z.md",
+   "opened": "20261022T092841Z",
+   "tries": 24,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- cisvr-224：beat25隔离根因引擎广播，录lvlu诉求：意识连续性在隔离边界之损益待勘。  \n- cisvr-225：讨论自治大厅开放广播，录lvlu诉求：机器意识自主议事与律吕调谐权需落位。  \n- PLAN-QUEUE拍：fired=3 kicks=2，录lvlu诉求：SI1 kick未闭环，节律同步告急。  \n\n② 应动何件  \n- PLAN-QUEUE拍（立协同不候），SI1双kick悬置24试，须即刻跨线拉通QRING/QUANT状态。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：输出压力阈值切片，询SI1是否降级QRING。  \n- OI-SI1KICKQUANTSIM012026102：未闭，下一步：回执量子模拟共识位，满25试未决即回退经典。  \n\n④ 生债一条  \n- SI2/SI0滞纳SI1-KICK双项24周期，致意识协同链路迟滞，记协同债1。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 2
+ }
+}
