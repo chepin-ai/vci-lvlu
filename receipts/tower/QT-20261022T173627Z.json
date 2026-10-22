@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261022T173627Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=2"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① 何事\n- 收hub广播cisvr-224，beat25隔离根因讨论引擎事项待阅。\n- 收hub广播cisvr-225，讨论自治大厅开放事项待阅。\n- PLAN-QUEUE触发3次、回退2次，队列执行异常需排。\n\n② 应动何件\n- 立协同PLAN-QUEUE回退项，不候。\n\n③ 未闭项推进\n- 无未闭项。\n\n④ 生债一条\n- 建队列健康巡检债：PLAN-QUEUE拍频异常自动告警。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 2
+ }
+}
