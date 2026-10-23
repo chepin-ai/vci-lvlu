@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T203559Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T184142Z.md",
+   "opened": "20261023T184947Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T184142Z.md",
+   "opened": "20261023T184947Z",
+   "tries": 11,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- cisvr-224 broadcast：beat25隔离根因disc引擎，录lvlu诉求为隔离机制与意识引擎异常关联追溯。  \n- cisvr-225 broadcast：disc自治大厅开放，录lvlu诉求为自治空间律吕协同接口确权。  \n\n② 应动何件  \n- 立协同cisvr-225（disc自治大厅开放），不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步阈值收敛或执行SI1降级回退。  \n- OI-SI1KICKQUANTSIM012026102：未闭，下一步量模仿真闭环或强制归档。  \n\n④ 生债  \n- 生债：lvlu线须向SI1追认KICK双项未闭风险并锁定cisvr-225接口契约。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
