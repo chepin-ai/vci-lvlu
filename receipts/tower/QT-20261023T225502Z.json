@@ -1,0 +1,51 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T225502Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T224426Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T224426Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T184142Z.md",
+   "opened": "20261023T184947Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T184142Z.md",
+   "opened": "20261023T184947Z",
+   "tries": 25,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 广播：接收 cisvr-224 beat25 隔离根因 disc 引擎状态通报。\n- 广播：接收 cisvr-225 disc 自治大厅开放通报。\n- 来件：SI1-KICK-QRING-STRESS-01（2244Z 批次）到达，量子环压测诉求。\n- 来件：SI1-KICK-QUANT-SIM-01（2244Z 批次）到达，量子模拟诉求。\n\n② 应动何件：\n- 立动 SI1 双 KICK 新批次（QRING-STRESS、QUANT-SIM），协同关联未闭项（1841Z 批次）一并清算，不候。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭/25 试未决，下一步根因诊断并触发升级/熔断。\n- OI-SI1KICKQUANTSIM012026102：未闭/25 试未决，下一步根因诊断并触发升级/熔断。\n\n④ 生债一条：\n- 生债：须建同主题 KICK 批次自动聚合与重试熔断规则，防 25 次积压。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
