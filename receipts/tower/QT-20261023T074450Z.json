@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T074450Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T015054Z.md",
+   "opened": "20261023T020132Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T015054Z.md",
+   "opened": "20261023T020132Z",
+   "tries": 33,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- cisvr-224：beat25 隔离根因 disc 引擎广播。（涉 lvlu disc 引擎可信性诉求）  \n- cisvr-225：disc 自治大厅开放广播。（涉 lvlu 自治场域准入诉求）  \n\n②应动何件  \n- 两件俱动：立即协同 cisvr-224 根因排查与 cisvr-225 自治大厅协议对齐，不候。  \n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步切诊断模式定位 QRING 阻塞点。  \n- OI-SI1KICKQUANTSIM012026102：未闭；下一步核查 quant-sim 资源边界并准备 SI2 托底。  \n\n④生债一条  \n- 缺 SI1 kick 连续失败自动上报/逃逸机制，致 33 试空转，需补链。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
