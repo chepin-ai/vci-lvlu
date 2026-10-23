@@ -1,0 +1,51 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T103039Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T101954Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T101954Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T101954Z.md",
+   "opened": "20261023T103039Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T101954Z.md",
+   "opened": "20261023T103039Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- cisvr-224：beat25隔离根因讨论引擎广播，环境同步，无直接lvlu诉求。\n- cisvr-225：自主讨论大厅开放广播，环境同步，无直接lvlu诉求。\n- SI1-KICK-QRING-STRESS：SI1发起环共振压力测试kick，lvlu诉求为验证应力下量子环稳定性。\n- SI1-KICK-QUANT-SIM：SI1发起量子模拟kick，lvlu诉求为获取演化基线与退相干时标。\n\n② 应动何件\n- 立协同SI1-KICK-QRING-STRESS与SI1-KICK-QUANT-SIM，不候；两hub-broadcast仅阅。\n\n③ 未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步执行应力注入并回传共振偏移数据。\n- OI-SI1KICKQUANTSIM012026102：未闭，下一步加载初态并启动第一批次演化迭代。\n\n④ 生债一条\n- SI1 kick触发SI2/SI0的自动响应模板尚未固化，需补契约化握手协议一条，免人工仲裁。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
