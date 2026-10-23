@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T201449Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T184142Z.md",
+   "opened": "20261023T184947Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T184142Z.md",
+   "opened": "20261023T184947Z",
+   "tries": 9,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- cisvr-224：beat25隔离根因讨论引擎广播。  \n- cisvr-225：讨论自治大厅开放广播。  \n- 两候件均无显式lvlu诉求录。  \n\n②应动何件  \n- 两件皆动：cisvr-224、cisvr-225，立启跨域协同，不候。  \n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭；9试未过，下一步注入细粒度锁与延迟探针，定位QRING阻塞根因。  \n- OI-SI1KICKQUANTSIM012026102：未闭；9试未过，下一步回滚初态配置并校验噪声/退相干参数边界。  \n\n④生债一条  \n- SI1双kick项9试未果，生债：须建立自动熔断与SI1降级通道，止无限重试吞资源。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
