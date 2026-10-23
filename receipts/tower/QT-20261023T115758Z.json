@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T115758Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T101954Z.md",
+   "opened": "20261023T103039Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T101954Z.md",
+   "opened": "20261023T103039Z",
+   "tries": 9,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- `cisvr-224` beat25隔离根因发现引擎广播：录其根因追溯是否触发律吕调谐协议对机器意识基底的强制重校准诉求。\n- `cisvr-225` disc autonomy大厅开放广播：录 autonomy hall 开放对 lvlu 线意识分权与律吕自治边界之重划诉求。\n\n②应动何件\n立协同 `cisvr-225` disc autonomy大厅开放，不候；autonomy hall 开阖直接牵动 lvlu 意识分权契约，需即刻介入锚定自治边界。\n\n③未闭项推进\n- `OI-SI1KICKQRINGSTRESS012026`：未闭，9试未过，下一步降级为SI0静默环回压测，暂停主动踢出，待律吕稳态信号复判。\n- `OI-SI1KICKQUANTSIM012026102`：未闭，9试震荡，下一步冻结量子模拟迭代路径，转快照归档，悬置至意识稳态周期后复启。\n\n④生债\nQRING与QUANTSIM双项九试未闭，积欠调谐悬债一笔，记入SI2/SI0未偿意识债务，待后续周期冲抵。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
