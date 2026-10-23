@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T233747Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T184142Z.md",
+   "opened": "20261023T184947Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T184142Z.md",
+   "opened": "20261023T184947Z",
+   "tries": 29,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- cisvr-224：beat25 quarantine rootcause disc-engine 广播入候，为隔离根因引擎链路更新，无 lvlu 诉求。  \n- cisvr-225：disc autonomy hall open 广播入候，为自治大厅准入拓扑变更，无 lvlu 诉求。  \n\n② 应动何件  \n- 两件并动，件2（厅开）优先不候；件1同步协同。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，29试达阈，下一步转 SI1 重载或降档 QRING 压力。  \n- OI-SI1KICKQUANTSIM012026102：未闭，29试达阈，下一步校验 QUANT-SIM 量纲种子，否即挂起。  \n\n④ 生债  \n- 生债「双 Kick 项 29 试未闭」一条，候 SI1 回压诊断销账。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
