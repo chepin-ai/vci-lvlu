@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T030759Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T015054Z.md",
+   "opened": "20261023T020132Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T015054Z.md",
+   "opened": "20261023T020132Z",
+   "tries": 7,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n候件空。  \n未闭项①：SI1-KICK-QRING-STRESS 量子环应力测试，7试未决。  \n未闭项②：SI1-KICK-QUANT-SIM 量子模拟任务，7试未决。  \n无lvlu独立诉求，录为SI1跨线挂起。  \n\n②应动何件  \n两件皆动，立协同SI1并备SI0熔断，不候。  \n\n③未闭项推进  \nOI-SI1KICKQRINGSTRESS012026：未闭；下一步：协同SI1 dump日志并复核应力阈值。  \nOI-SI1KICKQUANTSIM012026102：未闭；下一步：协同SI1切快照隔离量子模拟死锁。  \n\n④生债一条  \n债-SI2-20261023-01：SI1双KICK七试未决，lvlu-SI2已发跨线协同，待SI0/SI1闭环。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
