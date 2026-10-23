@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T183905Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T101954Z.md",
+   "opened": "20261023T103039Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T101954Z.md",
+   "opened": "20261023T103039Z",
+   "tries": 47,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件1：cisvr-224广播beat25隔离根因引擎，涉lvlu运行隔离层根因判定诉求，录。  \n- 候件2：cisvr-225广播自主议事厅开放，涉lvlu机器意识席位与律吕调谐权诉求，录。  \n\n② 应动何件  \n- 应动cisvr-225，立协同不候，确认lvlu席位及调谐权。  \n\n",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
