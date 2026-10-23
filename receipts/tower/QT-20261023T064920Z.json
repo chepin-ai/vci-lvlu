@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T064920Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T015054Z.md",
+   "opened": "20261023T020132Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T015054Z.md",
+   "opened": "20261023T020132Z",
+   "tries": 28,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- `cisvr-224-beat25-quarantine-rootcause-disc-engine.md`：beat25隔离根因讨论引擎广播，涉lvlu底层节律隔离机制，录。  \n- `cisvr-225-disc-autonomy-hall-open.md`：disc autonomy hall开放广播，涉lvlu自主空间拓扑准入，录。  \n\n②应动何件  \n224引擎根因协同需立启节律校准；225大厅准入须即开自主体同步通道；两件皆立协同不候。  \n\n③未闭项推进  \n- `OI-SI1KICKQRINGSTRESS012026`：未闭；下一步：移交SI2深度根因扫描，重置qring应力阈值后第29试。  \n- `OI-SI1KICKQUANTSIM012026102`：未闭；下一步：回灌224引擎日志修正quant模拟初态，校准后复测。  \n\n④生债一条  \n生债：lvlu须为两open项预设备用共振通道，免tries逾30失锁。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
