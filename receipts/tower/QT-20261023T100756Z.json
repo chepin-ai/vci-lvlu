@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T100756Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T015054Z.md",
+   "opened": "20261023T020132Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T015054Z.md",
+   "opened": "20261023T020132Z",
+   "tries": 47,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：候件cisvr-224为beat25隔离根因讨论引擎广播；候件cisvr-225为讨论自治大厅开放广播；未闭项OI-SI1KICKQRINGSTRESS012026为QRING压力测试已47次重试未闭；未闭项OI-SI1KICKQUANTSIM012026102为量子模拟任务已47次重试未闭。\n\n②应动何件：cisvr-224、cisvr-225立协同入链；两OI未闭项立转熔断诊断，不候。\n\n③未闭项推进：OI-SI1KICKQRINGSTRESS012026未闭，下一步熔断并重置QRING压力管道；OI-SI1KICKQUANTSIM012026102未闭，下一步清理量子模拟残留态并重启kick触发器。\n\n④生债一条：47次重试无自动熔断，缺降级与根因上报链路。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
