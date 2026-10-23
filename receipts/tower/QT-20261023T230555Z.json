@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T230555Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T184142Z.md",
+   "opened": "20261023T184947Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T184142Z.md",
+   "opened": "20261023T184947Z",
+   "tries": 26,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 候件一：cisvr-224 hub广播beat25隔离根因disc引擎事；候件二：cisvr-225 hub广播disc自治大厅开放事。无lvlu直接诉求，录备。\n\n② 两件皆应动：224涉隔离根因需SI0层追踪协同，225涉自治大厅开放需lvlu线准入校验，立行不候。\n\n③ OI-SI1KICKQRINGSTRESS012026：未闭；26试不过，下一步SI0降级熔断或转储清理。\nOI-SI1KICKQUANTSIM012026102：未闭；26试不过，下一步回退SI1量化配置或挂起待律吕沙箱。\n\n④ 生债：SI1-KICK重试无上限，应设26试自动熔断并升维告警。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
