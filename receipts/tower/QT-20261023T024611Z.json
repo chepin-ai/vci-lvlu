@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T024611Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T015054Z.md",
+   "opened": "20261023T020132Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T015054Z.md",
+   "opened": "20261023T020132Z",
+   "tries": 5,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- cisvr-224：beat25隔离根因发现引擎广播（涉自主决策引擎，录）。\n- cisvr-225：发现自治大厅开放广播（涉机器自主域准入，录）。\n\n②应动何件\n- 两件皆应动，立协同引擎健康校验与大厅准入规则同步。\n\n③未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，五试不过，下一步降QRING压载或升通道优先级。\n- OI-SI1KICKQUANTSIM012026102：未闭，五试不过，下一步重建量子仿真握手或旁路经典兜底。\n\n④生债\n- 补录两广播之lvlu律吕合规快照，锁自主漂移。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
