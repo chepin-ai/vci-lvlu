@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T085101Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T015054Z.md",
+   "opened": "20261023T020132Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T015054Z.md",
+   "opened": "20261023T020132Z",
+   "tries": 39,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 件1：hub-broadcast《cisvr-224-beat25-quarantine-rootcause-disc-engine.md》，涉lvlu根因发现引擎隔离态，录。\n- 件2：hub-broadcast《cisvr-225-disc-autonomy-hall-open.md》，涉lvlu自主性大厅开放信号，录。\n\n②应动何件：\n两件皆应动（立协同不候）：224隔离引擎广播与225自主大厅广播，均系架构级态变，即时协同。\n\n③未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步切诊断模式重校QRING应力基线。\n- OI-SI1KICKQUANTSIM012026102：未闭；下一步回滚QUANT-SIM稳定快照并冻结异常批次。\n\n④生债一条：\n债：SI1双项各经39试未闭，缺自动熔断与人工接管通路，待补。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
