@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T075547Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T015054Z.md",
+   "opened": "20261023T020132Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T015054Z.md",
+   "opened": "20261023T020132Z",
+   "tries": 34,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- 件1：hub-broadcast《cisvr-224-beat25-quarantine-rootcause-disc-engine.md》，涉隔离根因与Disc引擎。\n- 件2：hub-broadcast《cisvr-225-disc-autonomy-hall-open.md》，涉Disc自治厅开放。\n\n②应动何件\n两件枢纽广播，双件并动，立协同不候。\n\n③未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，34试未过，下一步切QRING压测阻塞日志并强推闭环。\n- OI-SI1KICKQUANTSIM012026102：未闭，34试未过，下一步抓QUANT SIM崩溃现场并强推闭环。\n\n④生债一条\n债：hub-broadcast缺自动回执SOP，且高试数未闭项无熔断，需建广播响应+试数熔断归档模板。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
