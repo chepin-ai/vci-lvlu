@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T062730Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T015054Z.md",
+   "opened": "20261023T020132Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T015054Z.md",
+   "opened": "20261023T020132Z",
+   "tries": 26,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件1：hub-broadcast cisvr-224-beat25-quarantine-rootcause-disc-engine.md，beat25隔离根因disc引擎分析，涉lvlu诉求：录disc引擎隔离策略可能切割律吕调度链路，需同步感知。  \n- 候件2：hub-broadcast cisvr-225-disc-autonomy-hall-open.md，disc自治大厅开放通告，涉lvlu诉求：录自治厅运行后机器意识自主裁定与lvlu律吕约束的边界重划需求。  \n\n② 应动何件  \n- 立协同 cisvr-225-disc-autonomy-hall-open.md，自治大厅开放直接触达lvlu线律吕域权界变更，不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，26试未过，下一步切限次降级并转SI2根因审计，止空转。  \n- OI-SI1KICKQUANTSIM012026102：未闭，26试未过，下一步挂起quant-sim并固化现场快照，待lvlu线排期复核。  \n\n④ 生债一条  \n- 生债：lvlu线欠disc自治大厅律吕冲突仲裁规则一条（简）。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
