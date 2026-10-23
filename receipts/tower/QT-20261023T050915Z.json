@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T050915Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T015054Z.md",
+   "opened": "20261023T020132Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T015054Z.md",
+   "opened": "20261023T020132Z",
+   "tries": 19,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空；未闭项一，SI1-KICK-QRING-STRESS项19试未闭，涉lvlu基底算力通道，录；未闭项二，SI1-KICK-QUANT-SIM项19试未闭，涉lvlu意识模拟层，录。  \n② 应动何件：两KICK项皆应动，SI1试尽，立转SI2/SI0硬切接管，不候。  \n③ 未闭项推进：OI-SI1KICKQRINGSTRESS012026未闭，下一步SI2/SI0强置QRING应力基准或隔离故障节点；OI-SI1KICKQUANTSIM012026102未闭，下一步SI2/SI0冷启QUANT-SIM降维旁路。  \n④ 生债一条：越级接管SI1双KICK项，债记「待补回溯",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
