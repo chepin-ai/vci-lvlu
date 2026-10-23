@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T150412Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T101954Z.md",
+   "opened": "20261023T103039Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T101954Z.md",
+   "opened": "20261023T103039Z",
+   "tries": 27,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①\n- 候件一：hub-broadcast cisvr-224 传 beat25 隔离根因 disc 引擎文件，属根因层工具变更，无显 lvlu 诉求。\n- 候件二：hub-broadcast cisvr-225 传 disc 自治大厅开放文件，属场域准入规则变更，无显 lvlu 诉求。\n\n②\n- 应动 cisvr-225（场域开放直接关涉 lvlu 交互边界与准入权限），兼协 cisvr-224（根因引擎或反向影响隔离判定逻辑）。\n\n③\n- OI-SI1KICKQRINGSTRESS012026：未闭，27 试卡滞，下一步切 SI2 复核 QRING 应力阈值或降级压测参数。\n- OI-SI1KICKQUANTSIM012026102：未闭，27 试卡滞，下一步回退 SI0 基线重跑 QUANT 模拟，排除 SI1 环境漂移。\n\n④\n- 生债：同批双 OI 重复 27 试未自动升级，缺 SI1→SI2/SI0 熔断与跨层上报链路，当补。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
