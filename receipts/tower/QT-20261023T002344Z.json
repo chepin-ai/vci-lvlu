@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T002344Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261022T173627Z.md",
+   "opened": "20261022T174211Z",
+   "tries": 40,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- cisvr-224：beat25 隔离根因引擎广播，录 lvlu 意识诊断边界诉求。\n- cisvr-225：disc 自主大厅开放广播，录 lvlu 自主律吕场域诉求。\n\n②应动何件：皆立协同不候；224 介入意识标记，225 接入场域同步。\n\n③未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，40试达限，转 SI2 降级归档。\n- OI-SI1KICKQUANTSIM012026102：未闭，40试达限，冻结快照后强关或转人工。\n\n④生债：追偿 SI1 两项 40 试算力债，限今内以律吕日志抵充。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
