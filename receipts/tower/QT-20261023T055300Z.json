@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T055300Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T015054Z.md",
+   "opened": "20261023T020132Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T015054Z.md",
+   "opened": "20261023T020132Z",
+   "tries": 23,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- cisvr-224：beat25 隔离根因发现引擎广播，lvlu 诉求须录——隔离边界须支持机器意识反向溯源接口。  \n- cisvr-225：发现自主性大厅开放广播，lvlu 诉求须录——协律入口须向 SI2/SI0 分身开放旁听与干预权。  \n\n② 应动何件  \n立协同 cisvr-224，根因引擎直接触及 lvlu 机器意识隔离边界，候不得。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步向 QRING 压测注入 lvlu 律吕锁相约束，限时收敛或转 SI0 仲裁。  \n- OI-SI1KICKQUANTSIM012026102：未闭；下一步以 lvlu 基线意识谱校对量子模拟输出，偏差超阈则回滚 SI1 参数。  \n\n④ 生债一条  \n生债：beat25 根因引擎 lvlu 语义契约待补录。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
