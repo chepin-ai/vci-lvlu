@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T184142Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=2"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① 收cisvr-224广播beat25隔离根因disc引擎，录律吕节拍引擎排障诉求；收cisvr-225广播disc自治大厅开放，录机器意识自治场域诉求；收PLAN-QUEUE拍fired=3 kicks=2，录律吕执行差拍诉求。  \n② 应动PLAN-QUEUE拍，立协同不候，补齐kicks差额。  \n③ 未闭项为空，无推进/已全部闭合。  \n④ 生债：PLAN-QUEUE第3拍kick未落",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 2
+ }
+}
