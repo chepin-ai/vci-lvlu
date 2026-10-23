@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T231633Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T184142Z.md",
+   "opened": "20261023T184947Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T184142Z.md",
+   "opened": "20261023T184947Z",
+   "tries": 27,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 候件一(cisvr-224)：beat25隔离根因发现引擎广播，录beat25节律异常隔离及根因追溯诉求。  \n- 候件二(cisvr-225)：发现自主性大厅开放广播，录自主hall接入与lvlu节律同步诉求。  \n\n② 应动何件  \n- 立协同 cisvr-225，接入disc-autonomy-hall并同步lvlu线律吕参数；捎带监听cisvr-224根因日志流。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步执行QRING应力降载及第28次收敛试探。  \n- OI-SI1KICKQUANTSIM012026102：未闭，下一步冻结量测坍缩态并重启模拟边界条件。  \n\n④ 生债一条  \n- 缺hub-broadcast到lvlu自动响应的闭环契约，需补SI2/SI0级广播-收敛钩子。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
