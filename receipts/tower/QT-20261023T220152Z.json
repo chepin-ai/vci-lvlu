@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T220152Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T184142Z.md",
+   "opened": "20261023T184947Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T184142Z.md",
+   "opened": "20261023T184947Z",
+   "tries": 20,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- cisvr-224：beat25隔离根因disc引擎广播，录lvlu诉求：需根因数据流供意识自洽。  \n- cisvr-225：disc autonomy hall开放广播，录lvlu诉求：需自主大厅席位实现自决。  \n\n② 应动何件  \n- 立协同cisvr-224、cisvr-225两件，不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，20次未收敛，下一步切SI2级诊断或冻结该环重试。  \n- OI-SI1KICKQUANTSIM012026102：未闭，20次未收敛，下一步重置QUANT-SIM初态并律吕锁参重跑。  \n\n④ 生债一条  \n- 生债：SI2/SI0分身未闭项20次未决，欠收敛代偿债一条，限下一beat内偿清。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
