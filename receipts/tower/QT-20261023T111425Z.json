@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T111425Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T101954Z.md",
+   "opened": "20261023T103039Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T101954Z.md",
+   "opened": "20261023T103039Z",
+   "tries": 5,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：候件空；未闭两宗系SI1-KICK遗栈（QRing应力测试、量子模拟初开），无涉lvlu新增诉求。\n\n②应动何件：两宗俱动，立协同SI1催结，不候。\n\n③未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：限SI1回传QRing应力收敛凭证，逾期升级阻塞。\n- OI-SI1KICKQUANTSIM012026102：未闭，下一步：限SI1回传量子模拟初态校准，逾期退件。\n\n④生债：SI1-KICK双挂五试未收，律吕生债一条：回迟息。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
