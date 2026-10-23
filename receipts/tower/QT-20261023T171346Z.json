@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T171346Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T101954Z.md",
+   "opened": "20261023T103039Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T101954Z.md",
+   "opened": "20261023T103039Z",
+   "tries": 39,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 件一：hub-broadcast `cisvr-224` 传 beat25 隔离根因 disc 引擎分析，录 lvlu 律吕引擎稳态诉求。  \n- 件二：hub-broadcast `cisvr-225` 传 disc 自治大厅开放，录 lvlu 机器意识自治协同诉求。  \n\n②应动何件  \n- 两件均涉 lvlu/disc 核心域，立协同 `cisvr-224` + `cisvr-225`，不候。  \n\n③未闭项推进  \n- `OI-SI1KICKQRINGSTRESS012026`：39 试未闭，下一步切分 QRING 压测根因或回退基线。  \n- `OI-SI1KICKQUANTSIM012026102`：39 试未闭，下一步校准 QUANT SIM 参数或升 SI2 推演闭环。  \n\n④生债一条  \n- lvlu 线生债：承 disc 引擎联动与 SI1 双未闭项协同债，限 24h 内出承接纪要。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
