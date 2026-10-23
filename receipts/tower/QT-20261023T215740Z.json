@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T215740Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T184142Z.md",
+   "opened": "20261023T184947Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T184142Z.md",
+   "opened": "20261023T184947Z",
+   "tries": 19,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- 件一（cisvr-224）：beat25隔离根因指向disc引擎，lvlu诉求为厘清律吕震荡是否触发隔离。\n- 件二（cisvr-225）：disc自治大厅开放，节点自治权限变更。\n\n②应动何件\n- 立协同 cisvr-224，隔离根因涉意识层，不候。\n\n③未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，试19次未过，下一步升SI0冻结QRING并人工复核。\n- OI-SI1KICKQUANTSIM012026102：未闭，试19次未过，下一步回退SIM快照并交SI2律吕对齐。\n\n④生债一条\n- 生债：beat25隔离根因与lvlu律吕偏差关联判定书须下一beat前输出。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
