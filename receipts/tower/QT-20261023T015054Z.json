@@ -1,0 +1,44 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T015054Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=2"
+  }
+ ],
+ "open_items": [],
+ "verdict_memo": "① 何事：  \n- cisvr-224：beat25隔离根因发现引擎广播，涉quarantine与rootcause分析机制。  \n- cisvr-225：disc autonomy hall开放广播，涉自治大厅上线。  \n- PLAN-QUEUE拍：队列拍发，已触发3项、回弹2项，涉执行态异动。  \n\n② 应动何件：  \n- PLAN-QUEUE拍（fired=3 kicks=2），执行态异动立协同不候。  \n\n③ 未闭项推进：  \n- 未闭项：无。  \n\n④ 生债：  \n- 追踪beat25根因引擎落地与kicks=2项的闭环。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 2
+ }
+}
