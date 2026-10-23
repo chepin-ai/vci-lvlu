@@ -1,0 +1,51 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T112523Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T101954Z.md",
+   "opened": "20261023T103039Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T101954Z.md",
+   "opened": "20261023T103039Z",
+   "tries": 6,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- cisvr-224广播：beat25隔离根因disc引擎，涉lvlu disc引擎根因清理。\n- cisvr-225广播：disc autonomy hall开放，涉lvlu自治大厅准入。\n- PLAN-QUEUE拍：fired=1 kicks=0，涉lvlu执行链空转未踢出。\n\n② 应动何件\n- 应动PLAN-QUEUE拍（补kicks）及两SI1未闭kick项，立协同不候。\n\n③ 未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，SI1六试力竭，下一步SI0/SI2硬切接管压测环。\n- OI-SI1KICKQUANTSIM012026102：未闭，SI1六试力竭，下一步SI0/SI2硬切接管量子模拟。\n\n④ 生债一条\n- 生债：SI1 kick重试阈值过宽（现6次），削至3次即升SI2/SI0，免空耗。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
