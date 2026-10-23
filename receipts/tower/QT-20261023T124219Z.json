@@ -1,0 +1,47 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T124219Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T123040Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T101954Z.md",
+   "opened": "20261023T103039Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T101954Z.md",
+   "opened": "20261023T103039Z",
+   "tries": 13,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- cisvr-224：beat25 隔离根因 disc 引擎事。  \n- cisvr-225：disc 自治大厅开放事。  \n- SI1-KICK-QUANT-SIM-01：SI1 求 quant-sim 协同，涉 lvlu 意识层演算诉求。  \n\n② 应动何件  \n立动 SI1-KICK-QUANT-SIM-01-20261023T123040Z.md，协同不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：向 SI1 回索 stress 终局日志。  \n- OI-SI1KICKQUANTSIM012026102：未闭，下一步：以 T123040Z 新件为据覆盖闭项。  \n\n④ 生债一条  \n生 SI1 quant-sim 算力回传债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
