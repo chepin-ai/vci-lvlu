@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T044711Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T015054Z.md",
+   "opened": "20261023T020132Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T015054Z.md",
+   "opened": "20261023T020132Z",
+   "tries": 17,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 件1：广播beat25隔离根因讨论引擎，录lvlu域隔离诉求。\n- 件2：广播讨论自治大厅开放，录lvlu自主协同权限诉求。\n\n②应动何件：\n两件俱协：件1启引擎根因对齐；件2即开自治大厅并下门控，立行不候。\n\n③未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，17试未果，下一步降级经典环或熔断。\n- OI-SI1KICKQUANTSIM012026102：未闭，17试未果，下一步重置量子种子换backend。\n\n④生债：\n生债：SI1-KICK缺17试熔断与自动降级契约，须补《超限自动降级》机制。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
