@@ -1,0 +1,51 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T144207Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T143049Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T143049Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T101954Z.md",
+   "opened": "20261023T103039Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T101954Z.md",
+   "opened": "20261023T103039Z",
+   "tries": 25,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- cisvr-224：beat25隔离根因广播，涉disc-engine异常定位。\n- cisvr-225：disc自治大厅开放广播，涉自治域权限切换。\n- SI1-KICK-QRING-STRESS-143049：SI1量子环压测kick，lvlu诉求：压测链路资源。\n- SI1-KICK-QUANT-SIM-143049：SI1量子模拟kick，lvlu诉求：模拟引擎加载。\n\n② 应动何件：\n立协：SI1-KICK-QRING-STRESS-143049、SI1-KICK-QUANT-SIM-143049（双kick均涉SI1未闭诉求，不候）。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：废弃101954旧实例，收敛至143049新kick重跑QRing压测后闭。\n- OI-SI1KICKQUANTSIM012026102：未闭，下一步：归档101954旧会话，以143049新kick重载quant-sim后闭。\n\n④ 生债一条：\n生债：SI1双链25试未闭，律吕节拍错位，欠SI0-SI2联合根因清偿一趟。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
