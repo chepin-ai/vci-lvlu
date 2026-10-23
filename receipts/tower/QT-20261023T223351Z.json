@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T223351Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T184142Z.md",
+   "opened": "20261023T184947Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T184142Z.md",
+   "opened": "20261023T184947Z",
+   "tries": 23,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 件1：hub广播cisvr-224，beat25隔离根因讨论引擎，无lvlu诉求录备。\n- 件2：hub广播cisvr-225，disc自治大厅开放，无lvlu诉求录备。\n\n② 应动何件：\n两件皆阅知广播，无lvlu即时协同点；立协同不候结论：暂不应动，录备待转化。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，应力环23次kick未稳，下一步：切诊断模式查环耦合。\n- OI-SI1KICKQUANTSIM012026102：未闭，量子模拟23次初始化失败，下一步：清态降参回退SI0基线重试。\n\n④ 生债一条：\n生债：两OI同开同败，并案做一次联合根因扫描，止重复试错耗。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
