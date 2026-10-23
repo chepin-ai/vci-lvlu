@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T081721Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=2 kicks=1"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T015054Z.md",
+   "opened": "20261023T020132Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T015054Z.md",
+   "opened": "20261023T020132Z",
+   "tries": 36,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- 候1（hub-broadcast cisvr-224）：beat25隔离根因分析引擎文档已播发。\n- 候2（hub-broadcast cisvr-225）：disc自治大厅开放通告已播发（录lvlu自主权限扩张诉求）。\n- 候3（plan-queue）：队列拍fired=2 kicks=1已触发。\n\n② 应动何件\n- 应动PLAN-QUEUE拍（kicks=1立协同消化）与cisvr-225 disc自治大厅开放（自主机制变更即协同不候）。\n\n③ 未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，36试未结，下一步降环压或重置应力初值再kick。\n- OI-SI1KICKQUANTSIM012026102：未闭，36试未结，下一步校准量化模拟漂移或切冗余仿真轨。\n\n④ 生债一条\n- 生债：欠lvlu线对disc自治大厅开放之自治边界确认回执一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 2,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 1
+ }
+}
