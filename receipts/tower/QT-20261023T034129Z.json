@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T034129Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T015054Z.md",
+   "opened": "20261023T020132Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T015054Z.md",
+   "opened": "20261023T020132Z",
+   "tries": 10,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- 候件1：hub-broadcast《cisvr-224-beat25-quarantine-rootcause-disc-engine.md》，涉beat25隔离根因disc引擎分析，录。\n- 候件2：hub-broadcast《cisvr-225-disc-autonomy-hall-open.md》，涉disc自治大厅开放通告，录。\n\n②应动何件\n- 两候件均立协同：cisvr-224接入根因引擎同步，cisvr-225确认自治大厅准入与权限分发，不候。\n\n③未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，QRING应力10试未过，下一步切降级模式或重设触发边界。\n- OI-SI1KICKQUANTSIM012026102：未闭，QUANT仿真10试未收敛，下一步换初值种子或人工介入。\n\n④生债一条\n- 生债：双open项已试尽10次，今须输出闭项判定或升级止损决策。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
