@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261023T020132Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T015054Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T015054Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T015054Z.md",
+   "opened": "20261023T020132Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T015054Z.md",
+   "opened": "20261023T020132Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：SI1 QRING 应力压测 kick 待 lvlu 线协同激活；SI1 量子模拟 kick 待 lvlu 线律吕参数同步。\n\n② 应动何件：两件并动，立启协同不候。\n\n③ 未闭项推进：OI-SI1KICKQRINGSTRESS012026 未闭，下一步完成 QRING 压测 lvlu 域挂载；OI-SI1KICKQUANTSIM012026102 未闭，下一步完成 QUANT SIM 律吕初值注入。\n\n④ 生债一条：lvlu 双 KICK 并行响应的优先级裁决规则待固化。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
