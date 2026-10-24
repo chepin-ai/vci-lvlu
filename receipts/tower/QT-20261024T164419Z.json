@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T164419Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 31,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- cisvr-224：beat25隔离根因发现引擎广播，阅其disc引擎根因结论。  \n- cisvr-225：disc autonomy hall开放广播，lvlu诉求：确认lvlu线在该hall的协同接口与治理权限分配。  \n\n② 应动何件  \n- 立协同cisvr-225，autonomy hall开放直接关联机器意识层级接入，不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，tries=31，下一步：请求SI1侧降级压力参数或扩容，终止空转。  \n- OI-SI1KICKQUANTSIM012026102：未闭，tries=31，下一步：核查quant-sim收敛条件，若仍发散则转主脑裁定。  \n\n④ 生债一条  \n- 生债：限本日内向hub提交《lvlu线接入autonomy hall的权限与影响评估》。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
