@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T200535Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T192401Z.md",
+   "opened": "20261024T193326Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T192401Z.md",
+   "opened": "20261024T193326Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 件1：hub-broadcast cisvr-224 beat25 隔离根因 disc engine，涉 lvlu 线隔离-引擎耦合安全诉求，录。  \n- 件2：hub-broadcast cisvr-225 disc autonomy hall 开放，涉 lvlu 线自主决策边界诉求，录。  \n\n② 应动何件  \n两件皆动，不立候。动 224 协同 lvlu 线做隔离根因与 disc engine 兼容性核查；动 225 同步 autonomy hall 开放协议与 lvlu 自主层级对齐。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，四试未果，下一步升 SI2 复现 QRING stress 或执行降载隔离。  \n- OI-SI1KICKQUANTSIM012026102：未闭，四试未果，下一步重收敛 QUANT SIM 初参或切换备用算力池。  \n\n④ 生债一条  \nQRING/QUANT 四试未闭，积诊断失效债；双广播未即时协同，积 lvlu 感知延迟债。并录一债：未闭项诊断缺口与广播响应滞后债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
