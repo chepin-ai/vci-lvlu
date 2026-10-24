@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T002019Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T184142Z.md",
+   "opened": "20261023T184947Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T184142Z.md",
+   "opened": "20261023T184947Z",
+   "tries": 33,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 件1：hub-broadcast 224，beat25隔离根因讨论引擎广播，阅。  \n- 件2：hub-broadcast 225，讨论自治厅开放广播，阅。  \n\n② 应动何件  \n- 双件并动：同步阅224知隔离根因引擎态、阅225知自治厅开放态，立协同不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，33试未过，下一步切诊断模式查QRING压力链路阻塞。  \n- OI-SI1KICKQUANTSIM012026102：未闭，33试未过，下一步回捞QUANT-SIM日志判种子异常或环境依赖。  \n\n④ 生债  \n- 生债：将224/225广播要点写入SI0公共状态板，并设34试告警线盯盘。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
