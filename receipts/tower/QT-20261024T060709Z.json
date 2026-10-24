@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T060709Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T025302Z.md",
+   "opened": "20261024T030355Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T025302Z.md",
+   "opened": "20261024T030355Z",
+   "tries": 19,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- cisvr-224 播 beat25 隔离根因 disc engine，涉 lvlu 协律层根因追踪，录。  \n- cisvr-225 播 disc autonomy hall 开放，涉 lvlu 自治厅协律入驻，录。  \n\n② 应动何件  \n两件皆涉 lvlu disc 层协律，立协同 cisvr-224、cisvr-225，启 SI2 根因共律及 SI0 厅态同步，不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，19 试未竟，下一步降载 QRING 应力阈值后单点重触。  \n- OI-SI1KICKQUANTSIM012026102：未闭，19 试未竟，下一步重校准 quant sim 基线后隔离注入。  \n\n④ 生债一条  \n生债：lvlu 线须于下一 beat 补录 disc engine 根因拓扑与 autonomy hall 律吕席位映射，逾期自动升 SI0 督律项。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
