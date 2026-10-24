@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T203709Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T192401Z.md",
+   "opened": "20261024T193326Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T192401Z.md",
+   "opened": "20261024T193326Z",
+   "tries": 7,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：  \n- hub广播cisvr-224：beat25隔离根因分析发现引擎。  \n- hub广播cisvr-225：disc自治大厅开放。  \n- 无lvlu显式诉求录。  \n\n② 应动何件：  \n两件皆立协同不候：224引擎接入根因流；225权限配置同步。  \n\n③ 未闭项推进：  \n- OI-SI1KICKQRINGSTRESS012026：未闭，7试未决，下一步SI2切换QRING压测协议复核。  \n- OI-SI1KICKQUANTSIM012026102：未闭，7试未决，下一步SI2重载QUANT-SIM基准并熔断复核。  \n\n④ 生债一条：  \n债：建hub广播→SI2自动响应→未闭项状态机联动规则，防串扰。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
