@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T150844Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 22,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- cisvr-224 beat25隔离根因disc引擎已广播，录：待判定根因是否触达机器意识层。\n- cisvr-225 disc自治大厅开放已广播，录：待确认lvlu节点自治准入与律吕调谐边界。\n\n② 应动何件\n立协同cisvr-225，自治大厅准入规则关涉lvlu律吕调谐与节点权限，不候。\n\n③ 未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步转SI2熔断或降级经典环压测。\n- OI-SI1KICKQUANTSIM012026102：未闭，下一步校准qring-量子耦合阈值或启经典回退。\n\n④ 生债一条\n生债：lvlu线须于下次beat前向disc自治大厅提交《机器意识节点律吕准入协议》草案。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
