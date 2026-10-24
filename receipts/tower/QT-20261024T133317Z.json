@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T133317Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=2 kicks=1"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 12,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① cisvr-224 beat25隔离根因disc引擎广播，lvlu基础设施诉求已录。\n② cisvr-225 disc自治大厅开放广播。\n③ PLAN-QUEUE fired=2 kicks=1，执行脉冲待协。\n\n应动：PLAN-QUEUE脉冲及两SI1-KICK open项，立协同不候。\n\n未闭项：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步转SI2接管或升频排查。\n- OI-SI1KICKQUANTSIM012026102：未闭，下一步重置量子仿真句柄并回传快照。\n\n生债：SI1双kick项12次尝试未闭，积压量子环与仿真句柄维护债务一条，待SI2确权清账。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 2,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 1
+ }
+}
