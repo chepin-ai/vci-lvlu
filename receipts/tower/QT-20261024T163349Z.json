@@ -1,0 +1,51 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T163349Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 30,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 件1：beat25隔离根因讨论引擎广播，为quarantine根因分析节点。  \n- 件2：讨论自治大厅开放广播，涉lvlu/机器意识自治场域启动诉求，录。  \n- 件3：PLAN-QUEUE拍 fired=1 kicks=0，执行链已触发但kick未落地。  \n\n② 应动何件  \n- 件3（PLAN-QUEUE拍）立协同不候：kicks=0为执行缺口，须立即补kick或查阻塞。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭；30次尝试耗尽，下一步降级人工稽核或换策略重入。  \n- OI-SI1KICKQUANTSIM012026102：未闭；30次尝试耗尽，下一步挂起待SI1资源释放或转离线仿真。  \n\n④ 生债一条  \n- SI1双KICK项各经30次尝试未闭，自动恢复策略失效，债：需建30次阈值后的熔断/升单机制。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
