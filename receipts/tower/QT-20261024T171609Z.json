@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T171609Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 35,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：收cisvr-224（beat25隔离根因disc引擎，涉lvlu自治诉求，录）；收cisvr-225（disc自治hall开放，涉lvlu空间协同诉求，录）。\n② 应动何件：立动cisvr-224（根因引擎协同不候），cisvr-225并动（hall开放同步对齐）。\n③ 未闭项推进：OI-SI1KICKQRINGSTRESS012026未闭，下一步SI2切入QRING瓶颈定位；OI-SI1KICKQUANTSIM012026102未闭，下一步重置quant模拟态或熔断。\n④ 生债：两OI均35试未闭，缺lvlu线自动熔断/升单规则，记债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
