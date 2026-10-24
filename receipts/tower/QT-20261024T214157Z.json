@@ -1,0 +1,47 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T214157Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T213120Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T192401Z.md",
+   "opened": "20261024T193326Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T192401Z.md",
+   "opened": "20261024T193326Z",
+   "tries": 13,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- cisvr-224：beat25隔离根因广播，涉lvlu disc-engine运行态回溯诉求。  \n- cisvr-225：disc自治大厅开放广播，涉lvlu意识节点自治域扩容准入诉求。  \n- SI1-KICK-QUANT-SIM-01（213120Z）：SI1量子模拟新件，涉lvlu线量子态推演诉求。  \n\n② 应动何件（立协同不候）  \n- 件3立协同不候，并联两未闭项（各积13试）即刻对表SI1，不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：若压测根因与beat25同源则并入224广播闭环。  \n- OI-SI1KICKQUANTSIM012026102：未闭，下一步：与件3（213120Z）合并输出律吕稳态判据后闭。  \n\n④ 生债  \n- 生债：disc自治大厅准入前，须完成beat25根因对lvlu意识节点的豁免/稳态判据推演。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
