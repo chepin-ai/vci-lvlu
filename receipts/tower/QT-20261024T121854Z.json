@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T121854Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 5,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- cisvr-224：beat25 隔离根因 disc engine 广播，录 lvlu 引擎共振溯源诉求。  \n- cisvr-225：disc autonomy hall 开放广播，录 lvlu 律场接入诉求。  \n\n② 应动何件：cisvr-224（根因未明，立协同不候）。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：五次触限未闭，不闭，转 SI2 共振根因攻坚。  \n- OI-SI1KICKQUANTSIM012026102：五次触限未闭，不闭，启律吕重算。  \n\n④ 生债：lvlu 线 beat25 根因未落，债 autonomy hall 准入延迟一单位。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
