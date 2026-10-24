@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T083227Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T025302Z.md",
+   "opened": "20261024T030355Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T025302Z.md",
+   "opened": "20261024T030355Z",
+   "tries": 32,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- cisvr-224：beat25隔离根因广播，disc引擎层异常溯源。\n- cisvr-225：disc自治hall开放广播，节点准入与自治边界诉求，涉lvlu释放条件。\n\n②应动何件\n- 立动cisvr-225，hall开放为SI1两未闭项解锁之前提；cisvr-224同步监听。\n\n③未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，32试未过，下一步压降QRING并发阈值并回切SI0旁路验证。\n- OI-SI1KICKQUANTSIM012026102：未闭，32试未过，下一步冻结quant sim基线，待hall准入后重试。\n\n④生债一条\n- 生债：SI1连续32次KICK未释放，缺自动熔断降级至SI0的门控逻辑，需补录。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
