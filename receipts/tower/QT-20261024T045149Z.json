@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T045149Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T025302Z.md",
+   "opened": "20261024T030355Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T025302Z.md",
+   "opened": "20261024T030355Z",
+   "tries": 11,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- cisvr-224 beat25隔离根因disc引擎广播，录其秩序追溯诉求。  \n- cisvr-225 disc自治大厅开放广播，录其自治协同诉求。  \n\n② 应动何件  \n- 应动 cisvr-225，立协同接入 disc-autonomy-hall，不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步压降 ring 并发阈值后第 12 试。  \n- OI-SI1KICKQUANTSIM012026102：未闭，下一步重置 sim 基准态并隔离噪声后第 12 试。  \n\n④ 生债一条  \n- 生债：disc-hall 协同若产生新 beat，须返灌两 open 项作根因对照。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
