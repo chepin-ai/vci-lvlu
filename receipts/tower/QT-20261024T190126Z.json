@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T190126Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 45,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- 件一：cisvr-224 beat25 隔离根因 disc-engine 广播，涉 lvlu 识别层诉求，录。\n- 件二：cisvr-225 disc-autonomy-hall 开放广播，涉 lvlu 自主性场域诉求，录。\n\n② 应动何件\n两件并动，立协同不候。\n\n③ 未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，45试，下一步切 SI2 环内重压或降频 kick。\n- OI-SI1KICKQUANTSIM012026102：未闭，45试，下一步校 quant 噪声基底再启 sim。\n\n④ 生债一条\n本 beat 未回执两 broadcast 即积滞一分，利随逾期起算。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
