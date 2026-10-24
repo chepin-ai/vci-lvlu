@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T134356Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 14,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空；未闭项一 SI1-KICK-QRING-STRESS 压测已 14 试未闭；未闭项二 SI1-KICK-QUANT-SIM 量模已 14 试未闭。无 lvlu 诉求。\n\n② 应动何件：无候件；两未闭项 try=14 濒临死锁，应立协同 SI1 排查，不候。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：催 SI1 输出 QRING 瓶颈结论或执行降级。\n- OI-SI1KICKQUANTSIM012026102：未闭，下一步：索 SI1 量模第 14 试日志并切换备用仿真环境。\n\n④ 生债一条：未闭项超 10 试须自动熔断升级，免 SI1 双项长期空",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
