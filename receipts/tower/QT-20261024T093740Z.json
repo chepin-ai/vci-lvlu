@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T093740Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T025302Z.md",
+   "opened": "20261024T030355Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T025302Z.md",
+   "opened": "20261024T030355Z",
+   "tries": 38,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：候件空，无新入事项，无lvlu诉求。\n\n② 应动何件：无。无可立即协同之候件。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，已38试；下一步排查SI1-KICK-QRING-STRESS-01根因或切换策略。\n- OI-SI1KICKQUANTSIM012026102：未闭，已38试；下一步审SI1-KICK-QUANT-SIM-01日志并决迭代或止。\n\n④ 生债一条：两未闭项各积38试未决，须今日输出联合根因简报。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
