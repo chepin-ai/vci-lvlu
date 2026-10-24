@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T103143Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T025302Z.md",
+   "opened": "20261024T030355Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T025302Z.md",
+   "opened": "20261024T030355Z",
+   "tries": 43,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 件一：hub-broadcast cisvr-224（beat25隔离根因disc引擎）已发，涉lvlu律吕根因溯源诉求，已录；件二：hub-broadcast cisvr-225（disc-autonomy-hall-open）已发，涉lvlu自主协议诉求，已录。\n\n② 两件皆应动，立协同不候：件二优先锚定hall开厅边界，件一并行接入律吕校准流。\n\n③ OI-SI1KICKQRINGSTRESS012026：未闭，43试未收敛，下一步下投SI0硬隔离并重调律吕环；OI-SI1KICKQUANTSIM012026102：未闭，43试未收敛，下一步收束至SI2仲裁，冻结参数待hall复判。\n\n④ 生债：SI2/SI0须于本周期内输出两broadcast之lvlu适配映射与边界约束，不得延宕。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
