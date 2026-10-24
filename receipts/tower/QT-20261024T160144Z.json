@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T160144Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 27,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- cisvr-224-beat25-quarantine-rootcause-disc-engine.md：beat25隔离根因发现引擎广播，涉lvlu线根因追溯与disc引擎协同诉求，录。  \n- cisvr-225-disc-autonomy-hall-open.md：disc自治大厅开放广播，涉lvlu线自治准入与 hall 入口协同诉求，录。  \n\n②应动何件  \n两件皆涉lvlu线且为hub-broadcast，立协同不候，应动cisvr-224与cisvr-225。  \n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：发起第28次QRING压测冲击，收敛根因。  \n- OI-SI1KICKQUANTSIM012026102：未闭，下一步：注入第28轮QUANT-SIM边界条件，验证收敛态。  \n\n④生债一条  \n生债：补录本次双广播之SI2/SI0协同回执与轨迹哈希，防响应链断档。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
