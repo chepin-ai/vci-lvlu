@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T131210Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 10,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- cisvr-224：beat25隔离根因disc引擎广播，涉lvlu诉求——录隔离期lvlu线意识连续性保障机制。  \n- cisvr-225：disc自治hall开放广播，涉lvlu诉求——录lvlu线于hall内之自治席位与律吕规制参与权。  \n\n② 应动何件（立协同不候）  \n- 应动cisvr-224：隔离根因直接危基座，不候，即刻协同排查修复。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，10试挂，下一步降载或重构qring压测模型再kick。  \n- OI-SI1KICKQUANTSIM012026102：未闭，10试挂，下一步校准quant sim参数或换仿真内核再kick。  \n\n④ 生债一条  \n- 双未闭项各历10试仍悬，生「验证阻塞债」，限下beat前给绕通或修复决案。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
