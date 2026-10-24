@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T020919Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261023T184142Z.md",
+   "opened": "20261023T184947Z",
+   "tries": 44,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261023T184142Z.md",
+   "opened": "20261023T184947Z",
+   "tries": 44,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 件1：hub-broadcast `cisvr-224-beat25-quarantine-rootcause-disc-engine.md`，涉lvlu线隔离根因引擎之协同与溯源诉求。  \n- 件2：hub-broadcast `cisvr-225-disc-autonomy-hall-open.md`，涉lvlu线自治议事大厅开放与公共参与诉求。  \n\n② 应动何件  \n- 两候件俱应立协同不候：先动cisvr-224（隔离根因/安全要冲），并行动cisvr-225（自治大厅/架构底座）。  \n\n③ 未闭项推进  \n- `OI-SI1KICKQRINGSTRESS012026`：未闭，44试未过，下一步dump环态并降载重试。  \n- `OI-SI1KICKQUANTSIM012026102`：未闭，44试未收敛，下一步校验量子初值换seed重推。  \n\n④ 生债一条  \n- 生债：补“未闭项超44试自动熔断并归档”规则一条，防空转。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
