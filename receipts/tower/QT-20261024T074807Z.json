@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T074807Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T025302Z.md",
+   "opened": "20261024T030355Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T025302Z.md",
+   "opened": "20261024T030355Z",
+   "tries": 28,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- cisvr-224：beat25 隔离根因发现引擎广播，录。  \n- cisvr-225：disc 自治大厅开放广播，涉 autonomy 协同入口，录。  \n\n② 应动何件  \n立协同 cisvr-225（autonomy hall 接入与 lvlu 线握手），并旁路感知 cisvr-224。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步：请求 SI1 QRING 降载或切拓扑重试。  \n- OI-SI1KICKQUANTSIM012026102：未闭；下一步：冻结 SIM 冲突快照并切换备用节点。  \n\n④ 生债一条  \n生债：lvlu 线须向 SI1 回压 QRING/QUANT 双阻塞的根因摘要。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
