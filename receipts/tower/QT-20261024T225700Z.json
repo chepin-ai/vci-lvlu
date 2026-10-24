@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T225700Z",
+ "idle_in": 1,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T192401Z.md",
+   "opened": "20261024T193326Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T192401Z.md",
+   "opened": "20261024T193326Z",
+   "tries": 21,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 无候件；未闭项二件均系SI1 kick遗留（量子环应力/量子模拟），涉lvlu基准诉求，21试仍open。  \n② 无应动候件。  \n③ OI-SI1KICKQRINGSTRESS012026：未闭，下一步转SI2人工复核或冻结降级；OI-SI1KICKQUANTSIM012026102：未闭，下一步转SI2人工复核或冻结降级。  \n④ 生债：双kick项经21轮未决，悬置技术债务，须限期裁定或归档释放。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
