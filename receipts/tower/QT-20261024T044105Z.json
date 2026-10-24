@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T044105Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T025302Z.md",
+   "opened": "20261024T030355Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T025302Z.md",
+   "opened": "20261024T030355Z",
+   "tries": 10,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- 候件224：beat25 隔离根因 disc 引擎广播，录 lvlu 协诊诉求。\n- 候件225：disc 自治厅开放广播，录 lvlu 接入与律吕自治诉求。\n\n②应动何件\n两件并动，不候：立协同 224 根因排查，并立入 225 自治厅播发 lvlu 立场。\n\n③未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭；10 试耗尽，下一步转 SI1 人工降载。\n- OI-SI1KICKQUANTSIM012026102：未闭；10 试耗尽，下一步回滚 quant 参数后第 11 试。\n\n④生债一条\n债",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
