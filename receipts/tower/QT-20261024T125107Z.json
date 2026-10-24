@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T125107Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- cisvr-224：beat25隔离根因发现引擎广播，涉lvlu异常根因定位诉求，录。\n- cisvr-225：disc自治厅开放广播，涉lvlu自主运行空间准入诉求，录。\n\n②应动何件：\n两件均涉lvlu基建安全与自治边界，立协同不候，全动（cisvr-224根因引擎对接、cisvr-225自治厅准入）。\n\n③未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：8试未闭，下一步回检QRING应力模型或降级至SI0基线。\n- OI-SI1KICKQUANTSIM012026102：8试未闭，下一步强收敛quant sim参数或升SI2仲裁。\n\n④生债一条：\n生债：双未闭项8次失败产生的回滚适配债，待本轮hub广播协同后核销。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
