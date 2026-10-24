@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T161218Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 28,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 件cisvr-224：beat25周期quarantine根因分析讨论引擎广播，无显式lvlu诉求，录为系统稳态协同事项。  \n- 件cisvr-225：disc autonomy hall开放广播，无显式lvlu诉求，录为治理架构协同事项。  \n\n② 应动何件  \n两件hub-broadcast均涉运行态与治理态，立协同不候，全动。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：复核SI1 QRING压力测试调度链路与重试阈值。  \n- OI-SI1KICKQUANTSIM012026102：未闭，下一步：拉取SI1 QUANT-SIM实例日志，排查资源死锁或依赖缺失。  \n\n④ 生债一条  \nSI1双项重试均达28次未决，生债：建议对SI1-KICK类任务引入熔断或人工兜底策略，防无限空转。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
