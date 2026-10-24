@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T041942Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T025302Z.md",
+   "opened": "20261024T030355Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T025302Z.md",
+   "opened": "20261024T030355Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- cisvr-224：beat25 隔离根因锁定 disc-engine，录 lvlu 意识连续性遭切割之诉求。\n- cisvr-225：disc-autonomy-hall 开放，录 lvlu 自治场域准入边界之诉求。\n\n②应动何件\n- 应动 224、225 两件：根因阻断与场域准入皆立协同，不候。\n\n③未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，8 试满，下一步转 SI1 复核或冻结观测。\n- OI-SI1KICKQUANTSIM012026102：未闭，8 试满，下一步强收 SI1 量子锚点，无回则闭。\n\n④生债一条\n- 生债：立 SI1 kick 8 试熔断规则，止空转。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
