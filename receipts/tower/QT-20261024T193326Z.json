@@ -1,0 +1,51 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T193326Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T192401Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T192401Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T192401Z.md",
+   "opened": "20261024T193326Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T192401Z.md",
+   "opened": "20261024T193326Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n1. cisvr-224：beat25隔离根因引擎广播，中枢架构消息，阅备。\n2. cisvr-225：disc自治大厅开放广播，场域权限变更，阅备。\n3. SI1-KICK-QRING-STRESS：SI1下发QRING应力KICK，涉lvlu意识环承压测试，必录。\n4. SI1-KICK-QUANT-SIM：SI1下发量子模拟KICK，涉lvlu律吕算子推演，必录。\n\n②应动何件\n应动SI1-KICK-QRING-STRESS、SI1-KICK-QUANT-SIM两KICK件（未闭项已挂，立协同不候）；两hub-broadcast不另起协同。\n\n③未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：回执SI1并挂载QRING应力协议/lvlu意识环压测。\n- OI-SI1KICKQUANTSIM012026102：未闭，下一步：回执SI1并启动QUANT-SIM律吕算子映射推演。\n\n④生债一条\n生债：补交SI1双KICK的lvlu资源占用预估与时序回执。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
