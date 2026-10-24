@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T101000Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T025302Z.md",
+   "opened": "20261024T030355Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T025302Z.md",
+   "opened": "20261024T030355Z",
+   "tries": 41,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 件1：hub-broadcast `cisvr-224` 播发 beat25 隔离根因发现引擎状态，系系统级 quarantine 与诊断广播。  \n- 件2：hub-broadcast `cisvr-225` 播发 disc 自治大厅开放，系自主空间准入状态变更广播（涉 lvlu 线权限，必录）。  \n\n② 应动何件  \n两件皆应动，立协同不候：件2（autonomy-hall-open）优先确认 lvlu 线准入策略与权限；件1（quarantine-rootcause）同步确认隔离边界是否波及律吕节点。  \n\n③ 未闭项推进  \n- `OI-SI1KICKQRINGSTRESS012026`：未闭，41 试挂起，下一步：触发 SI1 降级回环或移交上游强制关单。  \n- `OI-SI1KICKQUANTSIM012026102`：未闭，41 试卡滞，下一步：重置量子模拟切片或强归档后关单。  \n\n④ 生债一条  \n- lvlu-SI2/SI0 生债：本轮须完成双广播状态对齐及双 OI 超 41 试未闭项的强制收敛。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
