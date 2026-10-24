@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T165646Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 33,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- cisvr-224：beat25隔离根因引擎广播，涉lvlu环境稳态，录。\n- cisvr-225：讨论自治大厅开放广播，涉lvlu自主协同权，录。\n\n②应动何件\n两件皆动，不候；先协cisvr-224根因隔离。\n\n③未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步：QRING应力超限，转SI2熔断诊断。\n- OI-SI1KICKQUANTSIM012026102：未闭；下一步：量子模拟卡滞，强制转储并重置初态。\n\n④生债\n重试33次未闭缺自动升级规则，补SI2熔断债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
