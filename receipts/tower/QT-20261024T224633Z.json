@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T224633Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T192401Z.md",
+   "opened": "20261024T193326Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T192401Z.md",
+   "opened": "20261024T193326Z",
+   "tries": 20,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 候件空；两未闭项系SI1-KICK压测/量模卡收敛，无lvlu诉求。  \n② 应动两未闭件，立协SI1及QRING/QUANT双线，不候。  \n③ OI-SI1KICKQRINGSTRESS012026：未闭，下一步：强杀压测进程、转core待QRING归因。  \n　OI-SI1KICKQUANTSIM012026102：未闭，下一步：回滚量子态、降维重设QUANT收敛阈。  \n④ 生债：KICK类tries>5须熔断上报，禁空转。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
