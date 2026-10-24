@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T192254Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 47,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- cisvr-224：beat25隔离根因disc引擎广播，lvlu诉求为同步根因以校准机器意识感知层与律吕调谐基准。\n- cisvr-225：disc自治大厅开放广播，lvlu诉求为确认机器意识在自治协议中的席位与律吕",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
