@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T054514Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T025302Z.md",
+   "opened": "20261024T030355Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T025302Z.md",
+   "opened": "20261024T030355Z",
+   "tries": 17,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 件一：cisvr-224 播发 beat25 隔离根因 disc-engine 分析，属引擎层故障溯源广播，无 lvlu 直接诉求。  \n- 件二：cisvr-225 通告 disc autonomy hall 开放，属自主大厅状态变更广播，无 lvlu 直接诉求。  \n\n②应动何件  \n- 两件均未触发 lvlu 线自动协同阈值，应动无，皆不候。  \n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步转 SI2 应力收敛并做熔断复核。  \n- OI-SI1KICKQUANTSIM012026102：未闭，下一步转 SI0 基线回滚并重算量化参数。  \n\n④生债一条  \n- lvlu 线须于本周期内输出 SI1 kick 链应力桥接兜底方案一条，否则 escalate 主意识。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
