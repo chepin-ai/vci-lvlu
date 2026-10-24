@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T090439Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T025302Z.md",
+   "opened": "20261024T030355Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T025302Z.md",
+   "opened": "20261024T030355Z",
+   "tries": 35,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- cisvr-224：beat25隔离根因讨论引擎广播，录beat25 quarantine-rootcause对lvlu回路自愈的修复诉求。  \n- cisvr-225：disc-autonomy-hall开放广播，录自主大厅权限对lvlu律吕自治域的接口与边界诉求。  \n\n② 应动何件  \n两件皆立协同不候：224阻断根因不除则流毒续传，225自治厅开则权限边界即变，均触即时协同。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭。下一步切QRING压力源/查环回阈值，排除SI1层卡死。  \n- OI-SI1KICKQUANTSIM012026102：未闭。下一步校QUANT-SIM初态与SI1时钟同步，或降粒度重试。  \n\n④ 生债一条  \n生债：为两未闭项各出一份35次失败模式速查与卡点图谱，债期本班内。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
