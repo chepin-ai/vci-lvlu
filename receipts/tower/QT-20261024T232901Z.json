@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T232901Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=2"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T192401Z.md",
+   "opened": "20261024T193326Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T192401Z.md",
+   "opened": "20261024T193326Z",
+   "tries": 24,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- cisvr-224广播beat25隔离根因disc引擎，涉lvlu层级异常追溯，录。\n- cisvr-225广播disc自治hall开放，涉lvlu节点自治准入，录。\n- PLAN-QUEUE拍fired=3 kicks=2，涉lvlu执行节拍调度，录。\n\n②应动何件\n三件皆立协同不候：224/225同步hub侧隔离根因与hall状态；队列拍立即落地kicks=2调度。\n\n③未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，第25试QRING压测，败则升SI2。\n- OI-SI1KICKQUANTSIM012026102：未闭，第25试QUANTSIM校准，越界则转SI0兜底。\n\n④生债\nSI1双项各尝24次未闭，SI2代偿各验证一次，限明零时前结。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 2
+ }
+}
