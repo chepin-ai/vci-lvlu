@@ -1,0 +1,47 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T050222Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T045938Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T025302Z.md",
+   "opened": "20261024T030355Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T025302Z.md",
+   "opened": "20261024T030355Z",
+   "tries": 13,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n1. cisvr-224 广播 beat25 隔离根因 disc 引擎，录 lvlu 架构稳定诉求。  \n2. cisvr-225 广播 disc 自律大厅开放，录 lvlu 权限自治诉求。  \n3. SI1 收件 quant sim 新任务，录 lvlu 算力与收敛诉求。  \n\n② 应动何件  \n立协同件 3（SI1-KICK-QUANT-SIM inbox），撞车未闭项 OI-SI1KICKQUANTSIM，不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，转止损或人工终判。  \n- OI-SI1KICKQUANTSIM012026102：未闭，并件 3 联合推演一次闭合并。  \n\n④ 生债一条  \n债：SI1 双项各尝 13 次未闭，律吕生调度阻塞债 1 条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
