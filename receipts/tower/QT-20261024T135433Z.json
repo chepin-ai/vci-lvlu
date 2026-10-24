@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T135433Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 15,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① cisvr-224 beat25隔离根因disc引擎广播一件，无lvlu诉求。cisvr-225 disc自治大厅开放广播一件，无lvlu诉求。\n\n② 候件皆hub-broadcast，无立协同单，不启。\n\n③ OI-SI1KICKQRINGSTRESS012026：未闭/15试未决，需升SI2或转人工根因。OI-SI1KICKQUANTSIM012026102：未闭/15试未决，需升SI2或转人工根因。\n\n④ 生债：SI1 kick双项15试未闭，缺自动升阶通路。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
