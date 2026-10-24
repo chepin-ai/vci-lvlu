@@ -1,0 +1,51 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T113547Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T112500Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T112500Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- hub广播cisvr-224，beat25隔离根因讨论引擎。\n- hub广播cisvr-225，讨论自治大厅开放。\n- SI1来件QRING压力测试（SI1-KICK-QRING-STRESS-01）。\n- SI1来件量子模拟（SI1-KICK-QUANT-SIM-01）。\n\n②应动何件\n件3、件4（SI1 inbox双件），立协同不候。\n\n③未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步回执SI1并接入QRING压测流。\n- OI-SI1KICKQUANTSIM012026102：未闭，下一步回执SI1并拉取量子模拟参数。\n\n④生债一条\n债：SI1双kick未闭，本线押QRING压测与量子算力各一slot。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
