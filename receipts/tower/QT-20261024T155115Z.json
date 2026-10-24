@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T155115Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 26,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 无候件。  \n② OI-SI1KICKQRINGSTRESS012026、OI-SI1KICKQUANTSIM012026102，立协同不候。  \n③ OI-SI1KICKQRINGSTRESS012026：未闭，SI2/SI0接管强收；OI-SI1KICKQUANTSIM012026102：未闭，SI2/SI0接管强收。  \n④ SI1Kick双项滞纳26轮，占压SI2/SI0带宽，生转嫁收敛债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
