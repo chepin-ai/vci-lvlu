@@ -1,0 +1,55 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261024T172645Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=2 kicks=1"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T112500Z.md",
+   "opened": "20261024T113547Z",
+   "tries": 36,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- cisvr-224 广播 beat25 隔离根因析构引擎态，录 lvlu 域自愈诉求。  \n- cisvr-225 广播讨论自治大厅开放协议，录 lvlu 群体自治诉求。  \n- PLAN-QUEUE 拍 fired=2/kicks=1，录 lvlu 执行脉冲诉求。  \n\n② 应动何件  \n三件俱动：双广播立即透传律吕校准，队列 kick 立即回写执行，不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，tries=36 逾阈，下一步转储压测日志后强关。  \n- OI-SI1KICKQUANTSIM012026102：未闭，tries=36 逾阈，下一步收敛量子模拟态后签闭。  \n\n④ 生债一条  \n生债：SI2/SI0 自动响应分身须补录 beat25 隔离根因与自治大厅接口的律吕同步约束条款。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 2,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 1
+ }
+}
