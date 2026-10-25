@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T003300Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T192401Z.md",
+   "opened": "20261024T193326Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T192401Z.md",
+   "opened": "20261024T193326Z",
+   "tries": 31,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- cisvr-224：隔离根因与离散引擎关联广播，录 lvlu 根因修复及引擎重置诉求。\n- cisvr-225：离散自主大厅开放广播，录 lvlu 协议准入与拓扑激活诉求。\n\n②应动何件\n- 两件并动：先锚 cisvr-224 根因隔离修复，协同 cisvr-225 大厅协议握手，立行不候。\n\n③未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步切 SI0 裸压或降维复现，破 31 次死锁。\n- OI-SI1KICKQUANTSIM012026102：未闭；下一步冻结快照转储 SI0 冷校验，剔除 SI1 层漂移。\n\n④生债一条\n- 生债：设 31 次失败自动熔断转储规则，止无限空转。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
