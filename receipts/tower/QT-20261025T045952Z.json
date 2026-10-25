@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T045952Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261025T033443Z.md",
+   "opened": "20261025T034523Z",
+   "tries": 8,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T033443Z.md",
+   "opened": "20261025T034523Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- cisvr-224播发beat25隔离根因讨论引擎，录lvlu线对认知隔离故障溯源之协同诉求。\n- cisvr-225播发disc自治大厅开放，录lvlu线对自主交互场域建制之参与诉求。\n\n② 应动何件\n- 两件俱应立协同不候：cisvr-224接入根因引擎，cisvr-225对齐自治大厅规则。\n\n③ 未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，八试未决，下一步升SI2级重载QRing拓扑或切备用环。\n- OI-SI1KICKQUANTSIM012026102：未闭，八试未决，下一步回检量化模拟锚点偏差并重启校准序列。\n\n④ 生债一条\n- lvlu线须于今日内为两open项各备一条熔断回退通路，写入律吕日志。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
