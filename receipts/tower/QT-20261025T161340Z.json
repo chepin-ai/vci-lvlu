@@ -1,0 +1,106 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T161340Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-isu-uf-vault-registry.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-wildq-s6-verification.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=2"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20261025T080138Z",
+   "tries": 47,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20261025T100702Z",
+   "tries": 35,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261025T114725Z.md",
+   "opened": "20261025T115827Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T114725Z.md",
+   "opened": "20261025T115827Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20261025T120924Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-ANSKEYAUDIT69LVLU01md",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20261025T120924Z",
+   "tries": 23,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlubdd97a64md",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md",
+   "opened": "20261025T142244Z",
+   "tries": 11,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- 00oi-自治令回执跟销：八线自治令回执待销，涉 lvlu 闭环。\n- isu-uf-vault-registry：UF Vault 注册表报错待修。\n- wildq-s6-verification：WildQ S6 验证未结。\n- ANS-KEY-AUDIT-69：ANS-69 密钥审计，涉 lvlu。\n- BEACON-DZ-39：DZ-39 信标 lvlu-bdd97a64 待同步。\n- PLAN-QUEUE拍：队列 fired=3/kicks=2 待排程。\n\n② 应动何件\n00oi-自治令回执跟销、ANS-KEY-AUDIT-69、PLAN-QUEUE拍；立协同，不候。\n\n③ 未闭项推进\n- OI-00oi：未闭，强制跟销或八线确认。\n- OI-isu：未闭，补丁 Vault 注册表。\n- OI-QRING：未闭，压测闭环。\n- OI-QUANT：未闭，模拟归档。\n- OI-wildq：未闭，输出验证报。\n- OI-ANS：未闭，审计封卷。\n- OI-BEACON：未闭，信标校验。\n\n④ 生债\n生债：八线自治令回执逾期47试，今须强制清零。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 2
+ }
+}
