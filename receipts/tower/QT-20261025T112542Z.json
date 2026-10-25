@@ -1,0 +1,65 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T112542Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-isu-uf-vault-registry.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261025T033443Z.md",
+   "opened": "20261025T034523Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T033443Z.md",
+   "opened": "20261025T034523Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20261025T080138Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20261025T100702Z",
+   "tries": 9,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n1. cisvr-224广播：beat25隔离根因发现引擎广播。  \n2. cisvr-225广播：disc自治厅开放广播。  \n3. 00oi-自治令回执跟销-八线-lvlu：八线lvlu自治令回执跟销，涉lvlu核销诉求。  \n4. 20260926-isu-uf-vault-registry：UF Vault注册表异常。  \n\n② 应动何件  \n立动00oi自治令回销件（协八线即时对账销项）；并协uf-vault-registry件（联动UF线排障）。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步转压测线会诊或申请降级。  \n- OI-SI1KICKQUANTSIM012026102：未闭，下一步重置量子沙盒或追加算力切片。  \n- OI-00oilvlu20260910T014000Z：未闭，下一步八线对账并强制自治令回执销项。  \n- OI-20260926isuufvaultregist：未闭，下一步核对Vault Schema并重刷注册表索引。  \n\n④ 生债一条  \nlvlu线生债：八线自治令回执须建自动核销通道，免人工跟销反复堆积。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
