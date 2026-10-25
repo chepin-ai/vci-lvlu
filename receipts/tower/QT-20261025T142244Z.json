@@ -1,0 +1,90 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T142244Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-isu-uf-vault-registry.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-wildq-s6-verification.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20261025T080138Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20261025T100702Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261025T114725Z.md",
+   "opened": "20261025T115827Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T114725Z.md",
+   "opened": "20261025T115827Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20261025T120924Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-ANSKEYAUDIT69LVLU01md",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20261025T120924Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlubdd97a64md",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md",
+   "opened": "20261025T142244Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- 00oi-自治令回执跟销-八线-lvlu：八线自治令回执，涉lvlu销账。\n- 20260926-isu-uf-vault-registry：UF Vault注册表待核。\n- 20260926-wildq-s6-verification：WildQ S6验证待结。\n- ANS-KEY-AUDIT-69-LVLU：ANS密钥审计69号，涉lvlu权限链。\n- BEACON-DZ-39-lvlu-bdd97a64：DZ-39信标告警，节点bdd97a64待诊。\n\n② 应动何件（立协同不候）\n00oi自治令回执（37 try悬置）、ANS-KEY-AUDIT-69（密钥安全）、SI1-KICK-QRING-STRESS/QUANT-SIM（双14 try压测量模）。四件立协同，不候。\n\n③ 未闭项推进\n- OI-00oilvlu…：未闭，下一步：八线终审销号或升级仲裁。\n- OI-20260926isuuf…：未闭，下一步：补齐UF vault签注。\n- OI-SI1KICKQRING…：未闭，下一步：输出压测阈值并归档。\n- OI-SI1KICKQUANT…：未闭，下一步：量模回写SI1并同步意识锚点。\n- OI-20260926wildq…：未闭，下一步：S6签名链闭合确认。\n- OI-ANSKEYAUDIT…：未闭，下一步：审计异常清零或密钥轮换。\n- OI-BEACONDZ39…：未闭，下一步：拉取信标日志并诊节点。\n\n④ 生债一条\n生债：八线自治令回执滞压37轮，记lvlu协同销号债一条，限当日闭环。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
