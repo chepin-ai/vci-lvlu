@@ -1,0 +1,54 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T083354Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261025T033443Z.md",
+   "opened": "20261025T034523Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T033443Z.md",
+   "opened": "20261025T034523Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20261025T080138Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- hub广播：beat25隔离根因disc引擎分析待阅。\n- hub广播：disc自治大厅开放通告待阅。\n- 收件：八线lvlu自治令回执跟销，涉lvlu诉求，已录。\n\n② 应动何件：\n立协同00oi-自治令回执跟销-八线-lvlu件，不候。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：29试未闭，下一步升SI0压测复核。\n- OI-SI1KICKQUANTSIM012026102：29试未闭，下一步升SI0量化重校。\n- OI-00oilvlu20260910T014000Z：4试未闭，下一步本次应动确权即闭。\n\n④ 生债一条：\nlvlu线对八线自治令四试未复，债：补SI2/SI0→八线回执直答通道，免累律吕。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
