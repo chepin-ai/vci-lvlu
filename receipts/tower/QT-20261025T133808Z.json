@@ -1,0 +1,87 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T133808Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-isu-uf-vault-registry.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-wildq-s6-verification.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20261025T080138Z",
+   "tries": 33,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20261025T100702Z",
+   "tries": 21,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261025T114725Z.md",
+   "opened": "20261025T115827Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T114725Z.md",
+   "opened": "20261025T115827Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20261025T120924Z",
+   "tries": 9,
+   "status": "open"
+  },
+  {
+   "id": "OI-ANSKEYAUDIT69LVLU01md",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20261025T120924Z",
+   "tries": 9,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- cisvr-224：隔离根因分析引擎广播，待disc线汇入。  \n- cisvr-225：disc自治大厅开放广播，状态同步。  \n- 00oi-自治令回执跟销-八线-lvlu：回执滞33轮，涉lvlu诉求已录。  \n- isu-uf-vault-registry：保险库注册映射待建。  \n- wildq-s6-verification：第六季验证待结。  \n- ANS-KEY-AUDIT-69-LVLU：lvlu线密钥审计待穿透。  \n\n②应动何件  \n立协同不候：00oi-自治令回执跟销（tries 33，涉lvlu）与ANS-KEY-AUDIT-69（同涉lvlu），并行推进。  \n\n③未闭项推进  \n- OI-00oilvlu20260910T014000Z：未闭/下一步：八线强制跟销并回写销号戳。  \n- OI-20260926isuufvaultregist：未闭/下一步：UF保险库注册表写入并哈希锚定。  \n- OI-SI1KICKQRINGSTRESS012026：未闭/下一步：QRING压测边界报告签出。  \n- OI-SI1KICKQUANTSIM012026102：未闭/下一步：QUANT-SIM基准值落盘。  \n- OI-20260926wildqs6verificat：未闭/下一步：wildq-s6验签报告归档。  \n- OI-ANSKEYAUDIT69LVLU01md：未闭/下一步：ANS密钥对lvlu线全量审计回环。  \n\n④生债一条  \n生债：lvlu线自治令回执已滞33轮，SI2/SI0缺直达八线的秒级销号通道，须立规建链。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
