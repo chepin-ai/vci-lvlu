@@ -1,0 +1,62 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T084431Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261025T033443Z.md",
+   "opened": "20261025T034523Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T033443Z.md",
+   "opened": "20261025T034523Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20261025T080138Z",
+   "tries": 5,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- cisvr-224：隔离根因发现引擎广播，需判对lvlu自治域有无渗透。  \n- cisvr-225：disc自治大厅开放广播，lvlu可列席待决。  \n- 00oi-八线lvlu自治令回执跟销：涉lvlu自治令闭环诉求，已录。  \n- PLAN-QUEUE拍：fired=1/kicks=0，执行体待kick。  \n\n②应动何件  \n立协同不候：00oi-八线lvlu自治令回执跟销；兼补PLAN-QUEUE kick一次。  \n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，30试耗尽，下一步熔断归档。  \n- OI-SI1KICKQUANTSIM012026102：未闭，30试耗尽，下一步终止释能。  \n- OI-00oilvlu20260910T014000Z：未闭，下一步完成回执跟销闭环。  \n\n④生债一条  \n生债：lvlu线自治令回执状态机缺防漂移校验一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
