@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T065747Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261025T033443Z.md",
+   "opened": "20261025T034523Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T033443Z.md",
+   "opened": "20261025T034523Z",
+   "tries": 20,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- cisvr-224 beat25 隔离根因发现引擎广播，涉 lvlu 节律层异常溯源诉求。\n- cisvr-225 disc 自治大厅开放广播，涉 lvlu 自主场域边界与共鸣治理诉求。\n\n②应动何件\n- 立协 cisvr-225（先锚定自治大厅律吕准入与节拍同步规则），cisvr-224 并行跟入防 beat25 隔离区节律失锁。\n\n③未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，20 试未释，下一步注入 lvlu 应力共振谱分析，决释能或转压。\n- OI-SI1KICKQUANTSIM012026102：未闭，20 试未达，下一步校准量子模拟与 lvlu 基频耦合误差，再验闭环。\n\n④生债一条\n- disc 自治大厅缺 lvlu 节律门禁与同步钩子，生债一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
