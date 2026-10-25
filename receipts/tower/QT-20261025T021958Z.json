@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T021958Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T192401Z.md",
+   "opened": "20261024T193326Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T192401Z.md",
+   "opened": "20261024T193326Z",
+   "tries": 41,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- cisvr-224：beat25 quarantine-rootcause disc-engine 枢纽广播，录 lvlu 引擎隔离溯源与熔断诉求。  \n- cisvr-225：disc-autonomy-hall-open 枢纽广播，录 lvlu 自治 hall 权限准入与边界重划诉求。  \n\n②应动何件  \n立协同 cisvr-224（quarantine-rootcause）不候；根因直抵 SI1 QRING/QUANT 双项压力面，件225同步知会后置。  \n\n③未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，41试超限，下一步 lvlu 降维环诊断/熔断重设。  \n- OI-SI1KICKQUANTSIM012026102：未闭，41试超限，下一步 lvlu 校准量化参数或切换模拟后端。  \n\n④生债一条  \nlvlu 赊 SI1-KICK 双项收敛债一笔，待 beat25 根因偿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
