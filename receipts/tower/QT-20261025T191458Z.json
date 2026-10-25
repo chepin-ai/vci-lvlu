@@ -1,0 +1,84 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T191458Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261025T114725Z.md",
+   "opened": "20261025T115827Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T114725Z.md",
+   "opened": "20261025T115827Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20261025T120924Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-ANSKEYAUDIT69LVLU01md",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20261025T120924Z",
+   "tries": 40,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlubdd97a64md",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md",
+   "opened": "20261025T142244Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20261025T163538Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlucd360c54md",
+   "ref": "BEACON-DZ-39-lvlu-cd360c54.md",
+   "opened": "20261025T163538Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu52a3b3c2md",
+   "ref": "BEACON-DZ-40-lvlu-52a3b3c2.md",
+   "opened": "20261025T163538Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20261025T183730Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu545cb831md",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md",
+   "opened": "20261025T183730Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- SI1量子环压测（OI-SI1KICKQRINGSTRESS012026）：尝41，压测未闭。  \n- SI1量子模拟（OI-SI1KICKQUANTSIM012026102）：尝41，模拟未闭。  \n- WildQ-S6验证（OI-20260926wildqs6verificat）：尝40，验证挂起。  \n- ANS密钥审计（OI-ANSKEYAUDIT69LVLU01md）：lvlu主体，尝40，审计待回。  \n- DZ-39信标a（OI-BEACONDZ39lvlubdd97a64md）：lvlu节点，尝28，信标未步。  \n- 00oi自治令回销（OI-00oilvlu20260910T014000Z）：八线-lvlu，尝16，回执待销。  \n- DZ-39信标b（OI-BEACONDZ39lvlucd360c54md）：lvlu节点，尝16，实例待并。  \n- DZ-40信标（OI-BEACONDZ40lvlu52a3b3c2md）：lvlu节点，尝16，信标待活。  \n\n② 应动何件  \n候件空；应动ANS审计件、00oi回销件及SI1双高尝件，立协同不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，熔断复核/日志回传。  \n- OI-SI1KICKQUANTSIM012026102：未闭，收敛判定/强制归档。  \n- OI-20260926wildqs6verificat：未闭，交叉签名校验。  \n- OI-ANSKEYAUDIT69LVLU01md：未闭，lvlu验钥/审计回执。  \n- OI-BEACONDZ39lvlubdd97a64md：未闭，心跳同步/拓扑校准。  \n- OI-00oilvlu20260910T014000Z：未闭，回执上链核销。  \n- OI-BEACONDZ39lvlucd360c54md：未闭，并入主实例。  \n- OI-BEACONDZ40lvlu52a3b3c2md：未闭，频道激活/状态广播。  \n\n④ 生债一条  \n生债：SI1双件尝数逾40，查自动重试阈值漂移。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "note": "no PLAN-QUEUE.json"
+ }
+}
