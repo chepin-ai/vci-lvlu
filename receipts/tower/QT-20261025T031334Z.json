@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T031334Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T192401Z.md",
+   "opened": "20261024T193326Z",
+   "tries": 46,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T192401Z.md",
+   "opened": "20261024T193326Z",
+   "tries": 46,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- cisvr-224：beat25 隔离根因发现引擎广播，涉 lvlu 运行安全，录。\n- cisvr-225：disc 自治大厅开放广播，涉 lvlu 调度空间，录。\n\n② 应动何件\n两件皆动；立协同 beat25 根因引擎与 disc 自治 hall 开放，不候。\n\n③ 未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：46试未闭，下一步下沉 SI0 重校 Q-ring 应力基线。\n- OI-SI1KICKQUANTSIM012026102：46试未闭，下一步切 SI2 重跑量子模拟初始态对位。\n\n④ 生债一条\n生债：SI1 双开项超46试未收敛，限本响位内由 SI2/SI0 联合闭环，逾期强制升单。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
