@@ -1,0 +1,120 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T164641Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-isu-uf-vault-registry.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-wildq-s6-verification.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-39-lvlu-cd360c54.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-52a3b3c2.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20261025T100702Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261025T114725Z.md",
+   "opened": "20261025T115827Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T114725Z.md",
+   "opened": "20261025T115827Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20261025T120924Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-ANSKEYAUDIT69LVLU01md",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20261025T120924Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlubdd97a64md",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md",
+   "opened": "20261025T142244Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20261025T163538Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlucd360c54md",
+   "ref": "BEACON-DZ-39-lvlu-cd360c54.md",
+   "opened": "20261025T163538Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu52a3b3c2md",
+   "ref": "BEACON-DZ-40-lvlu-52a3b3c2.md",
+   "opened": "20261025T163538Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- cisvr-224：beat25 隔离 disc 引擎根因广播，lvlu 知悉。\n- cisvr-225：disc 自治厅开放广播，lvlu 知悉。\n- 00oi-自治令回执跟销：八线自治令回执待 lvlu 核销。\n- 20260926-isu-uf-vault-registry：UF Vault 注册表异常，lvlu 待修。\n- 20260926-wildq-s6-verification：WildQ S6 验证未过，lvlu 待补录。\n- ANS-KEY-AUDIT-69-LVLU-01：69 号密钥审计，涉 lvlu 签章。\n- BEACON-DZ-39-bdd97a64：DZ-39 信标实例待响应。\n- BEACON-DZ-39-cd360c54：DZ-39 信标实例待响应。\n- BEACON-DZ-40-52a3b3c2：DZ-40 新信标待建档响应。\n\n② 应动何件（立协同不候）\n- 00oi-自治令回执跟销（行政令不可候）\n- ANS-KEY-AUDIT-69-LVLU-01（密钥审计不可候）\n- BEACON-DZ-40-52a3b3c2（新信标未建档，立即协同入台）\n\n③ 未闭项推进\n- OI-20260926isuufvaultregist：未闭，提级 SI1 重建注册表或根密钥置换。\n- OI-SI1KICKQRINGSTRESS012026：未闭，QRING 压测熔断或释放环资源。\n- OI-SI1KICKQUANTSIM012026102：未闭，量子模拟切片回滚。\n- OI-20260926wildqs6verificat：未闭，补录 lvlu 律吕 S6 校验值。\n- OI-ANSKEYAUDIT69LVLU01md：未闭，lvlu 线出具审计签章回执。\n- OI-BEACONDZ39lvlubdd97a64md：未闭，回传对时校频。\n- OI-00oilvlu20260910T014000Z：未闭，八线联署今日内强制跟销。\n- OI-BEACONDZ39lvlucd360c54md：未闭，回传对时校频。\n\n④ 生债一条\n生债：BEACON-DZ-40-52a3b3c2 未入 OI 台账，须本周期补录并追响。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
