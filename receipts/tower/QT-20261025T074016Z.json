@@ -1,0 +1,59 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T074016Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=3 kicks=2"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261025T033443Z.md",
+   "opened": "20261025T034523Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T033443Z.md",
+   "opened": "20261025T034523Z",
+   "tries": 24,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- cisvr-224-beat25-quarantine-rootcause-disc-engine：beat25隔离根因发现引擎广播，lvlu备档根因链路。\n- cisvr-225-disc-autonomy-hall-open：disc自治大厅开放广播，lvlu录场域自治开阈。\n- PLAN-QUEUE拍：fired=3 kicks=2，lvlu记调度压测频债。\n\n② 应动何件：\nPLAN-QUEUE拍（kicks=2压积）及两OI（SI1KICKQRINGSTRESS/SI1KICKQUANTSIM各tries=24悬停），立协同不候；hub-broadcast双件场域通告，可档后观。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，tries=24超阈，下一步升SI2压测分域或熔断。\n- OI-SI1KICKQUANTSIM012026102：未闭，tries=24超阈，下一步交lvlu律吕校准或降维",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 3,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   },
+   {
+    "id": "QUANT-SIM-01",
+    "r2": 200
+   },
+   {
+    "id": "QRING-STRESS-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 2
+ }
+}
