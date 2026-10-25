@@ -1,0 +1,58 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T100009Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T094915Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261025T033443Z.md",
+   "opened": "20261025T034523Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T033443Z.md",
+   "opened": "20261025T034523Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20261025T080138Z",
+   "tries": 12,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- cisvr-224：beat25隔离根因发现引擎广播。\n- cisvr-225：发现自治大厅开放广播。\n- 00oi-自治令回执跟销-八线-lvlu：lvlu线自治令回执核销诉求。\n- SI1-KICK-QUANT-SIM-01：SI1量子模拟kick请求。\n\n② 应动何件：\n立协00oi自治令回执跟销件（lvlu诉求不候）；兼协SI1-KICK-QUANT-SIM-01。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步压测异常根因定责或降级隔离。\n- OI-SI1KICKQUANTSIM012026102：未闭，下一步完成SI1量子模拟协议握手并回执。\n- OI-00oilvlu20260910T014000Z：未闭，下一步催八线确认回执并核销lvlu自治令。\n\n④ 生债一条：\n生债：lvlu线自治令回执未核销，债落八线，限T+1闭环。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
