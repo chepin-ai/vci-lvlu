@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T015849Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T192401Z.md",
+   "opened": "20261024T193326Z",
+   "tries": 39,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T192401Z.md",
+   "opened": "20261024T193326Z",
+   "tries": 39,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：无候件。\n\n②应动何件：无立协同事；并推未闭项。\n\n③未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，已试39次，下一步提级查根因。\n- OI-SI1KICKQUANTSIM012026102：未闭，已试39次，下一步提级查根因。\n\n④生债：两SI1项39轮未收敛，须人工介入。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
