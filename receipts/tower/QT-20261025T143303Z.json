@@ -1,0 +1,98 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T143303Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-isu-uf-vault-registry.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-wildq-s6-verification.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20261025T080138Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20261025T100702Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261025T114725Z.md",
+   "opened": "20261025T115827Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T114725Z.md",
+   "opened": "20261025T115827Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20261025T120924Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-ANSKEYAUDIT69LVLU01md",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20261025T120924Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlubdd97a64md",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md",
+   "opened": "20261025T142244Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事\n- cisvr-224：beat25隔离根因发现引擎广播。\n- cisvr-225：disc自治厅开放广播。\n- 00oi-自治令回执跟销-八线-lvlu：lvlu自治令回执待销，诉求必录。\n- 20260926-isu-uf-vault-registry：UF Vault注册表待归档。\n- 20260926-wildq-s6-verification：WildQ S6验证待确认。\n- ANS-KEY-AUDIT-69-LVLU-01：ANS密钥审计涉lvlu，安全诉求必录。\n- BEACON-DZ-39-lvlu-bdd97a64：DZ-39信标触达lvlu，待回步。\n\n②应动何件\n立协同不候：OI-00oilvlu（38试/lvlu销账）、OI-ANSKEYAUDIT69LVLU01（密钥审计/lvlu）、OI-BEACONDZ39（信标/lvlu），兼双SI1-KICK项。\n\n③未闭项推进\n- OI-00oilvlu：未闭，下一步：终销八线自治令回执。\n- OI-20260926isuufvaultregist：未闭，下一步：核验归档UF Vault。\n- OI-SI1KICKQRINGSTRESS：未闭，下一步：QRing压测闭环。\n- OI-SI1KICKQUANTSIM：未闭，下一步：Quant仿真签认。\n- OI-20260926wildqs6：未闭，下一步：S6验证落库。\n- OI-ANSKEYAUDIT69LVLU01：未闭，下一步：密钥审计定稿。\n- OI-BEACONDZ39：未闭，下一步：回执信标状态。\n\n④生债一条\n生债：OI-00oilvlu自治令回执38次未销，生债一条，今日内终销或报阻。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
