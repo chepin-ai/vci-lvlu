@@ -1,0 +1,54 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T092757Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261025T033443Z.md",
+   "opened": "20261025T034523Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T033443Z.md",
+   "opened": "20261025T034523Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20261025T080138Z",
+   "tries": 9,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- 件1：hub-broadcast cisvr-224，beat25 隔离根因发现引擎广播。\n- 件2：hub-broadcast cisvr-225，发现自治大厅开放广播。\n- 件3：inbox 00oi-自治令回执跟销-八线-lvlu，系 lvlu 自治令回执核销诉求，必录。\n\n② 应动何件\n应动件3（00oi-自治令回执跟销-八线-lvlu），立协同八线核销 lvlu 自治令回执，不候。\n\n③ 未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：继续 QRING 压测，输出第35次应力脉冲日志。\n- OI-SI1KICKQUANTSIM012026102：未闭，下一步：推进 QUANT-SIM 第35轮收敛，锁定量化终态。\n- OI-00oilvlu20260910T014000Z：未闭，下一步：即刻向八线发送 lvlu 自治令回执核销确认，强制归档。\n\n④ 生债一条\n生债：lvlu 自治令回执跟销延迟9次未闭，律吕线欠八线延迟说明一份，今日偿。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
