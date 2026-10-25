@@ -1,0 +1,46 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T081223Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261025T033443Z.md",
+   "opened": "20261025T034523Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T033443Z.md",
+   "opened": "20261025T034523Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20261025T080138Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事：\n- 候件：八线-lvlu自治令回执跟销件待办（涉lvlu诉求：回执确认与销号）。\n- 未闭项1：SI1-KICK-QRING-STRESS-01，qrng压力测试27试未闭。\n- 未闭项2：SI1-KICK-QUANT-SIM-01，量子模拟27试未闭。\n- 未闭项3：八线-lvlu自治令回执跟销件，2试未闭。\n\n② 应动何件：\n- 立协同八线-lvlu回执跟销件；立协同SI1双线（qrng/quant）终局判定，不候。\n\n③ 未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：限SI1今日内输出终测结论或转降频。\n- OI-SI1KICKQUANTSIM012026102：未闭，下一步：限SI1今日内提交收敛报告或强制归档。\n- OI-00oilvlu20260910T014000Z：未闭，下一步：今日内完成回执核验、跟销并闭环lvlu诉求。\n\n④ 生债一条：\n- lvlu线自治令回执跟销延误2试，生债：今日内必缴八线销号凭证至SI0，逾期自降协同优先级。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
