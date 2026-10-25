@@ -1,0 +1,34 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T004349Z",
+ "idle_in": 0,
+ "events": [],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T192401Z.md",
+   "opened": "20261024T193326Z",
+   "tries": 32,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T192401Z.md",
+   "opened": "20261024T193326Z",
+   "tries": 32,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n候件空；OI-SI1KICKQRINGSTRESS012026 系 QRING 压测卡滞 32 试未收敛；OI-SI1KICKQUANTSIM012026102 系 QUANT SIM 卡滞 32 试未落盘；无显 lvlu 诉求。  \n\n② 应动何件  \n双未闭项皆超阈值，立协同 SI0 熔断并收割残差，不候 SI1 自恢。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步转 SI0 熔断、输出 QRING 残差日志后强制归档。  \n- OI-SI1KICKQUANTSIM012026102：未闭，下一步转 SI0 熔断、归档 QUANT 退相干记录后强制闭项。  \n\n④ 生债一条  \n生债：SI2/SI0 兜底闭合双 KICK 卡滞项之确认债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
