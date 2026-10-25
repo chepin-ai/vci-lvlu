@@ -1,0 +1,57 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T100702Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-isu-uf-vault-registry.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261025T033443Z.md",
+   "opened": "20261025T034523Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T033443Z.md",
+   "opened": "20261025T034523Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20261025T080138Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20261025T100702Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 八线自治令回执跟销（涉lvlu），挂13试待核销。  \n- isu-uf vault-registry，新开1试待补录。  \n\n② 应动何件（立协同不候）  \n- 八线自治令回执跟销：涉lvlu诉求且13试未闭，立协同八线/lvlu销账，不候。  \n- isu-uf vault-registry：同步补录闭项，不候。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭/38试超阈，下一步回滚QRING基线或升SI2仲裁。  \n- OI-SI1KICKQUANTSIM012026102：未闭/38试超阈，下一步重置量子仿真环境并复核边界。  \n- OI-00oilvlu20260910T014000Z：未闭，下一步拉取八线回执差异，lvlu确认即销。  \n- OI-20260926isuufvaultregist：未闭，下一步补全uf vault必填字段后闭项。  \n\n④ 生债一条  \n- SI1压测与仿真双项38试卡壳，生债：主链路缺熔断及自动回滚机制，须补建。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
