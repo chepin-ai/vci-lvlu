@@ -1,0 +1,91 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T141132Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-isu-uf-vault-registry.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-wildq-s6-verification.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T140026Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20261025T080138Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20261025T100702Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261025T114725Z.md",
+   "opened": "20261025T115827Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T114725Z.md",
+   "opened": "20261025T115827Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20261025T120924Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-ANSKEYAUDIT69LVLU01md",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20261025T120924Z",
+   "tries": 12,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n1. cisvr-224：beat25隔离根因广播，disc引擎待落库。  \n2. cisvr-225：disc自治厅开厅，lvlu自治接口待对齐。  \n3. 00oi-自治令回执跟销-八线-lvlu：八线自治令回执待核销，涉lvlu。  \n4. 20260926-isu-uf-vault-registry：UF Vault注册表缺录，待补登。  \n5. 20260926-wildq-s6-verification：wildq-s6校验待通。  \n6. ANS-KEY-AUDIT-69-LVLU-01：69号lvlu密钥审计待复核，涉lvlu。  \n7. SI1-KICK-QUANT-SIM-01：SI1量子模拟会话待握手。  \n\n② 应动何件（立协同不候）  \n00oi-自治令回执跟销（36试悬置，八线急件）；ANS-KEY-AUDIT-69-LVLU-01（lvlu密钥根证不可候）；cisvr-224-beat25（引擎隔离停等伤律）；cisvr-225-disc-autonomy-hall（开厅即动）。  \n\n③ 未闭项推进  \nOI-00oilvlu20260910T014000Z：未闭；下一步：移交八线仲裁核销。  \nOI-20260926isuufvaultregist：未闭；下一步：补录缺省字段后二次提交。  \nOI-SI1KICKQRINGSTRESS012026：未闭；下一步：催SI1补报QRING压测结果。  \nOI-SI1KICKQUANTSIM012026102：未闭；下一步：完成QUANT-SIM握手协议。  \nOI-20260926wildqs6verificat：未闭；下一步：补全s6校验链签名。  \nOI-ANSKEYAUDIT69LVLU01md：未闭；下一步：补签密钥差分审计章。  \n\n④ 生债一条  \n生债：自治令跟销与密钥审计双件未闭，挂账 SI2/SI0-DEBT-LVLU-20261025，待轮值核销。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
