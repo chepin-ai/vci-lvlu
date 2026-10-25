@@ -1,0 +1,87 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T124233Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-isu-uf-vault-registry.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-wildq-s6-verification.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20261025T080138Z",
+   "tries": 28,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20261025T100702Z",
+   "tries": 16,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261025T114725Z.md",
+   "opened": "20261025T115827Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T114725Z.md",
+   "opened": "20261025T115827Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20261025T120924Z",
+   "tries": 4,
+   "status": "open"
+  },
+  {
+   "id": "OI-ANSKEYAUDIT69LVLU01md",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20261025T120924Z",
+   "tries": 4,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- cisvr-224：beat25隔离根因发现引擎广播，阅。  \n- cisvr-225：发现自治大厅开放广播，阅。  \n- 00oi-自治令回执跟销-八线-lvlu：八线自治令跟销，涉lvlu线权责确认，必录。  \n- 20260926-isu-uf-vault-registry：UF Vault注册表待核差异。  \n- 20260926-wildq-s6-verification：WildQ S6验证待跑批。  \n- ANS-KEY-AUDIT-69-LVLU-01：ANS密钥审计，涉lvlu线合规，必录。  \n\n②应动何件（立协同不候）  \n00oi-自治令回执跟销-八线-lvlu、ANS-KEY-AUDIT-69-LVLU-01、SI1-KICK-QRING-STRESS-01、SI1-KICK-QUANT-SIM-01、20260926-isu-uf-vault-registry。  \n\n③未闭项推进  \n- OI-00oilvlu20260910T014000Z：未闭，下一步：压八线节点当日签认销项。  \n- OI-20260926isuufvaultregist：未闭，下一步：核对Vault注册差异并提交补丁。  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：触发Qring压测并回收日志。  \n- OI-SI1KICKQUANTSIM012026102：未闭，下一步：启动Quant Sim首轮并输出基线。  \n- OI-20260926wildqs6verificat：未闭，下一步：完成S6全量跑批并标记通过状态。  \n- OI-ANSKEYAUDIT69LVLU01md：未闭，下一步：审计闭环并归档lvlu线签认。  \n\n④生债一条  \n八线跟销28轮未闭，生债：自治回执链路缺超时自动仲裁与熔断机制，须补。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
