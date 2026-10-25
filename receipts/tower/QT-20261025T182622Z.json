@@ -1,0 +1,109 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T182622Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-isu-uf-vault-registry.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-wildq-s6-verification.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-39-lvlu-cd360c54.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-52a3b3c2.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T181515Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261025T114725Z.md",
+   "opened": "20261025T115827Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T114725Z.md",
+   "opened": "20261025T115827Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20261025T120924Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-ANSKEYAUDIT69LVLU01md",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20261025T120924Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlubdd97a64md",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md",
+   "opened": "20261025T142244Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20261025T163538Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlucd360c54md",
+   "ref": "BEACON-DZ-39-lvlu-cd360c54.md",
+   "opened": "20261025T163538Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu52a3b3c2md",
+   "ref": "BEACON-DZ-40-lvlu-52a3b3c2.md",
+   "opened": "20261025T163538Z",
+   "tries": 12,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事（逐件一句）\n- 00oi自治令回执跟销：八线lvlu自治令回执待跟销，涉lvlu闭环。\n- ISU-UF-Vault注册表：UF Vault新件待建档，无既往未闭项。\n- WildQ-S6验证：S6验证待签认。\n- ANS-KEY-AUDIT-69-LVLU：lvlu线ANS密钥审计待结。\n- BEACON-DZ-39-bdd97a64：lvlu信标DZ-39实例待响应。\n- BEACON-DZ-39-cd360c54：lvlu信标DZ-39第二实例待响应。\n- BEACON-DZ-40-52a3b3c2：lvlu信标DZ-40实例待响应。\n- SI1-KICK-QUANT-SIM：SI1量化模拟新触发件待执行。\n\n② 应动何件（立协同不候）\n全部立动：涉lvlu五件（自治令、ANS审计、DZ-39×2、DZ-40）即刻拉通lvlu线；WildQ-S6、QUANT-SIM与QRING-STRESS高tries并催；ISU-UF-VaultRegistry即刻建档闭环。\n\n③ 未闭项推进（每项一句）\n- OI-SI1KICKQRINGSTRESS：tries37/未闭，须压测闭环或降级移交。\n- OI-SI1KICKQUANTSIM：tries37/未闭，须按候件触发执行并销。\n- OI-wildqs6：tries36/未闭，须完成验证签核。\n- OI-ANSKEYAUDIT69LVLU：tries36/未闭，须审计回写lvlu。\n- OI-BEACONDZ39-bdd97a64：tries24/未闭，须回标信标状态。\n- OI-00oi自治令：tries12/未闭，须回执跟销。\n- OI-BEACONDZ39-cd360c54：tries12/未闭，须与DZ-39首实例并案或独立回标。\n- OI-BEACONDZ40-52a3b3c2：tries12/未闭，须回标信标状态。\n\n④ 生债一条\n生债：「本周期SI2/SI0须将tries>30未闭项清零或转SI1，否则律吕失步。」",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
