@@ -1,0 +1,57 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T111513Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-isu-uf-vault-registry.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261025T033443Z.md",
+   "opened": "20261025T034523Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T033443Z.md",
+   "opened": "20261025T034523Z",
+   "tries": 45,
+   "status": "open"
+  },
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20261025T080138Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20261025T100702Z",
+   "tries": 8,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 八线 lvlu 自治令回执跟销件：八线自治令回执待核销，涉 lvlu 闭环诉求。  \n- UF Vault 注册异常件：UF Vault 注册表同步失败，待修复。  \n\n② 应动何件  \n- 两件皆立协同不候：lvlu 件协同八线即刻回执跟销；UF Vault 件协同 isu/uf 线修复注册，立即执行。  \n\n③ 未闭项推进  \n- OI-SI1KICKQRINGSTRESS012026：未闭，45 试未过，下一步降 QRING 应力阈值或转 SI2 压测。  \n- OI-SI1KICKQUANTSIM012026102：未闭，45 试未过，下一步重校 QUANTSIM 初值边界后复启。  \n- OI-00oilvlu20260910T014000Z：未闭，20 试，下一步待八线回执确认即执行跟销。  \n- OI-20260926isuufvaultregist：未闭，8 试，下一步补全 vault 缺失元数据并刷新注册表。  \n\n④ 生债一条  \n- 债：八线 lvlu 自治令回执超期未销，SI0 限本响应后 4 时隙内强制闭环，逾期升 SI1 仲裁。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
