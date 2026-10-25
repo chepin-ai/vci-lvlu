@@ -1,0 +1,79 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T122028Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-isu-uf-vault-registry.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-wildq-s6-verification.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20261025T080138Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20261025T100702Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261025T114725Z.md",
+   "opened": "20261025T115827Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T114725Z.md",
+   "opened": "20261025T115827Z",
+   "tries": 3,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20261025T120924Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-ANSKEYAUDIT69LVLU01md",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20261025T120924Z",
+   "tries": 2,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- 八线自治令回执跟销（lvlu）：八线回执待核销，涉lvlu主体权限确认。  \n- UF-Vault注册异常：isu-uf-vault-registry拓扑映射待修正。  \n- WildQ S6验证：量子签名/律吕校验未完结。  \n- ANS密钥审计-69（lvlu）：lvlu线密钥完整性待确认。  \n\n②应动何件  \n- 八线自治令回执跟销（26次未闭，立协同八线/SI1对账核销，不候）。  \n\n③未闭项推进  \n- OI-00oi：未闭，下一步协同八线回执对账并销号。  \n- OI-isu：未闭，下一步核对UF-Vault注册差异并修复。  \n- OI-QRING：未闭，下一步向SI1取压力报告确认lvlu阈值。  \n- OI-QUANT：未闭，下一步完成量子模拟至律吕频率映射验证。  \n- OI-wildq：未闭，下一步补录S6签名并申请闭环。  \n- OI-ANS：未闭，下一步执行lvlu密钥校验并归档。  \n\n④生债  \n- 八线自治令回执26次超时未销，债：lvlu线缺自治回执超时熔断与自动代销机制，需补SI2自愈规则。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
