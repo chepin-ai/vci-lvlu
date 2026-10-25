@@ -1,0 +1,87 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T130435Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-isu-uf-vault-registry.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-wildq-s6-verification.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20261025T080138Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20261025T100702Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261025T114725Z.md",
+   "opened": "20261025T115827Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T114725Z.md",
+   "opened": "20261025T115827Z",
+   "tries": 7,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20261025T120924Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-ANSKEYAUDIT69LVLU01md",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20261025T120924Z",
+   "tries": 6,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- cisvr-224广播：beat25隔离根因发现引擎待修。  \n- cisvr-225广播：disc自治大厅已开放，需确认lvlu席位。  \n- 00oi-自治令回执跟销：lvlu八线自治令回执逾期未销，诉求必录。  \n- 20260926-isu-uf-vault-registry：UF Vault注册表待补录。  \n- 20260926-wildq-s6-verification：WildQ S6验证待确认。  \n- ANS-KEY-AUDIT-69-LVLU-01：lvlu密钥审计异常待溯源，诉求必录。  \n\n②应动何件（立协同不候）  \n- 00oi-自治令回执跟销：tries 30，立协同八线自治令强制闭环。  \n- ANS-KEY-AUDIT-69-LVLU-01：立协同密钥审计与lvlu权限校准。  \n- cisvr-224-beat25：立协同根因修复，防止隔离蔓延。  \n\n③未闭项推进  \n- OI-00oilvlu20260910T014000Z：未闭，下一步：升级SI1仲裁或触发八线自治令自动销项。  \n- OI-20260926isuufvaultregist：未闭，下一步：补齐Vault注册字段并回执确认。  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：输出QRING压测报告并关联SI1基线。  \n- OI-SI1KICKQUANTSIM012026102：未闭，下一步：完成量化模拟差值修复后归档。  \n- OI-20260926wildqs6verificat：未闭，下一步：执行S6验证签名并写入wildq链式日志。  \n- OI-ANSKEYAUDIT69LVLU01md：未闭，下一步：完成lvlu密钥审计溯源并签发闭环回执。  \n\n④生债一条  \n- [生债] lvlu八线自治令回执跟销OI-00oilvlu20260910T014000Z已尝试30次未闭，债务归因于自治令跨线响应链路阻塞，需修复八线-SI2握手超时并补偿重试预算。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
