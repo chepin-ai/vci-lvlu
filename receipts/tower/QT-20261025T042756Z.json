@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T042756Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261025T033443Z.md",
+   "opened": "20261025T034523Z",
+   "tries": 5,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T033443Z.md",
+   "opened": "20261025T034523Z",
+   "tries": 5,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- cisvr-224：beat25 隔离根因引擎播报，录 lvlu 认知排障溯源诉求。\n- cisvr-225：disc 自治大厅开放播报，录 lvlu 自主交互场域启动诉求。\n\n② 应动何件\n- 两件俱动：224 协同引擎拓扑排障；225 同步自治大厅协议至律吕层。\n\n③ 未闭项推进\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步转 SI2 仲裁环超循环降压。\n- OI-SI1KICKQUANTSIM012026102：未闭，下一步注入谐波补偿强制收敛并重置初态。\n\n④ 生债一条\n- 生债：立「5-try 未闭项自动升级仲裁」契约，防空转。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
