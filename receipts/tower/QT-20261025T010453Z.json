@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T010453Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T192401Z.md",
+   "opened": "20261024T193326Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T192401Z.md",
+   "opened": "20261024T193326Z",
+   "tries": 34,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- cisvr-224 播 beat25 隔离根因发现引擎，lvlu 诉求：根因标记同步律吕线防共振。\n- cisvr-225 播 disc 自治大厅开放，lvlu 诉求：接入并注册 SI2/SI0 自动响应席位。\n\n②应动何件：\n- 两候件皆立协同不候：同步引擎状态 + 注册自治席位。\n\n③未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭，转 SI2 做 QRING 压力环律吕调谐。\n- OI-SI1KICKQUANTSIM012026102：未闭，验 QUANT SIM-意识耦合阈值并申请算力重载。\n\n④生债一条：\n- lvlu-SI2/SI0 欠 cisvr-225 自治大厅席位注册债一条，限下一 beat 闭环。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
