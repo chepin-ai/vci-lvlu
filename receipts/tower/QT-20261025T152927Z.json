@@ -1,0 +1,98 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T152927Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-isu-uf-vault-registry.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-wildq-s6-verification.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20261025T080138Z",
+   "tries": 43,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20261025T100702Z",
+   "tries": 31,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261025T114725Z.md",
+   "opened": "20261025T115827Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T114725Z.md",
+   "opened": "20261025T115827Z",
+   "tries": 20,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20261025T120924Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-ANSKEYAUDIT69LVLU01md",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20261025T120924Z",
+   "tries": 19,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlubdd97a64md",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md",
+   "opened": "20261025T142244Z",
+   "tries": 7,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- cisvr-224：beat25 隔离根因发现引擎广播",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
