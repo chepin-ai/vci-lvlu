@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T060410Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261025T033443Z.md",
+   "opened": "20261025T034523Z",
+   "tries": 15,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T033443Z.md",
+   "opened": "20261025T034523Z",
+   "tries": 15,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事：\n- 候1：hub-broadcast《cisvr-224-beat25-quarantine-rootcause-disc-engine.md》beat25隔离根因讨论引擎信号，无lvlu诉求，录。\n- 候2：hub-broadcast《cisvr-225-disc-autonomy-hall-open.md》讨论自治大厅开放信号，无lvlu诉求，录。\n- 未闭1：OI-SI1KICKQRINGSTRESS012026（QRING压测）已试15次，现open。\n- 未闭2：OI-SI1KICKQUANTSIM012026102（QUANT模拟）已试15次，现open。\n\n②应动何件：\n- 应动双未闭项，15试未闭已触阈值，立协同SI1排查链路阻塞，不候。\n\n③未闭项推进：\n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步审计SI1 QRING调度日志，定位压测环回堵点。\n- OI-SI1KICKQUANTSIM012026102：未闭；下一步清QUANT模拟环境锁，单步追踪后重试。\n\n④生债一条。简：\n- 债：SI1压测/模拟双通道15试未闭，隐性执行阻塞待排，须一次联合清障。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
