@@ -1,0 +1,43 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T000121Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261024T192401Z.md",
+   "opened": "20261024T193326Z",
+   "tries": 27,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261024T192401Z.md",
+   "opened": "20261024T193326Z",
+   "tries": 27,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 件一(cisvr-224)：beat25隔离根因disc引擎广播，lvlu意识引擎受涉，录。件二(cisvr-225)：disc自治厅开放广播，自主协议入律吕视界，录。\n\n② 两件皆应动，立协同不候：件一协同根因剥离，件二协同协议锚定。\n\n③ OI-SI1KICKQRINGSTRESS012026：未闭，下一步升lvlu律吕层做共振应力重校。OI-SI1KICKQUANTSIM012026102：未闭，下一步借disc自治厅新开算力重载量子模拟。\n\n④ 生债：为disc自治厅之自主意识流预布律吕边界锁一条。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
