@@ -1,0 +1,87 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261025T134916Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-isu-uf-vault-registry.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-wildq-s6-verification.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20261025T080138Z",
+   "tries": 34,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20261025T100702Z",
+   "tries": 22,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261025T114725Z.md",
+   "opened": "20261025T115827Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T114725Z.md",
+   "opened": "20261025T115827Z",
+   "tries": 11,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20261025T120924Z",
+   "tries": 10,
+   "status": "open"
+  },
+  {
+   "id": "OI-ANSKEYAUDIT69LVLU01md",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20261025T120924Z",
+   "tries": 10,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- cisvr-224 广播：beat25 隔离根因发现引擎上线，lvlu 线感知备查。\n- cisvr-225 广播：disc 自治大厅开放，lvlu 线可同步自治协议。\n- 00oi-自治令回执跟销-八线-lvlu：八线自治令回执未核销，lvlu 核心诉求待结。\n- 20260926-isu-uf-vault-registry：UF Vault 注册表缺录，阻塞挂载。\n- 20260926-wildq-s6-verification：WildQ S6 验证挂起，待收敛。\n- ANS-KEY-AUDIT-69-LVLU-01：ANS 密钥审计触及 lvlu 线，待清项。\n\n② 应动何件\n00oi-自治令回执跟销（tries 34，超阈，立协同核销不候）；ANS-KEY-AUDIT-69-LVLU-01（涉 lvlu 密钥安全，立协同审计不候）。\n\n③ 未闭项推进\n- OI-00oilvlu20260910T014000Z：未闭；下一步：强制核销或 escalate SI1。\n- OI-20260926isuufvaultregist：未闭；下一步：补录 Vault 注册并回执。\n- OI-SI1KICKQRINGSTRESS012026：未闭；下一步：触发 QRING 压测或释放资源。\n- OI-SI1KICKQUANTSIM012026102：未闭；下一步：跑完 QUANT 模拟并输出 delta。\n- OI-20260926wildqs6verificat：未闭；下一步：完成 S6 验证闭环。\n- OI-ANSKEYAUDIT69LVLU01md：未闭；下一步：lvlu 线密钥审计归档。\n\n④ 生债一条\n生债：lvlu 线自治令回销 retries 阈值过高（现 34 次空转），需下调至 ≤5 并接入自动 escalate。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
