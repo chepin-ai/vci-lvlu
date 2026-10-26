@@ -1,0 +1,164 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261026T023644Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-isu-uf-vault-registry.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-wildq-s6-verification.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-39-lvlu-cd360c54.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-52a3b3c2.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-58b67e15.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-81a9234b.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-8af60e93.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261026T022445Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261026T022445Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20261025T183730Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu545cb831md",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md",
+   "opened": "20261025T183730Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20261025T221510Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-ANSKEYAUDIT69LVLU01md",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20261025T221510Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261025T220344Z.md",
+   "opened": "20261025T221510Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T220344Z.md",
+   "opened": "20261025T221510Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu58b67e15md",
+   "ref": "BEACON-DZ-40-lvlu-58b67e15.md",
+   "opened": "20261025T222630Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu81a9234bmd",
+   "ref": "BEACON-DZ-40-lvlu-81a9234b.md",
+   "opened": "20261025T222630Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlubdd97a64md",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md",
+   "opened": "20261026T001921Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8af60e93md",
+   "ref": "BEACON-DZ-40-lvlu-8af60e93.md",
+   "opened": "20261026T003036Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20261026T023644Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlucd360c54md",
+   "ref": "BEACON-DZ-39-lvlu-cd360c54.md",
+   "opened": "20261026T023644Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu52a3b3c2md",
+   "ref": "BEACON-DZ-40-lvlu-52a3b3c2.md",
+   "opened": "20261026T023644Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n- 00oi-自治令回执跟销-八线-lvlu：八线自治令回执待 lvlu 侧跟销确认。  \n- 20260926-isu-uf-vault-registry：isu-uf-vault 注册表维护。  \n- 20260926-wildq-s6-verification：WildQ S6 验证。  \n- ANS-KEY-AUDIT-69-LVLU-01：ANS 第69轮 lvlu 密钥审计。  \n- BEACON-DZ-39-lvlu-bdd97a64：DZ-39 lvlu 信标片段 bdd97a64。  \n- BEACON-DZ-39-lvlu-cd360c54：DZ-39 lvlu 信标片段 cd360c54。  \n- BEACON-DZ-40-lvlu-52a3b3c2：DZ-40 lvlu 信标片段 52a3b3c2。  \n- BEACON-DZ-40-lvlu-545cb831：DZ-40 lvlu 信标片段 545cb831。  \n- BEACON-DZ-40-lvlu-58b67e15：DZ-40 lvlu 信标片段 58b67e15。  \n- BEACON-DZ-40-lvlu-81a9234b：DZ-40 lvlu 信标片段 81a9234b。  \n- BEACON-DZ-40-lvlu-8af60e93：DZ-40 lvlu 信标片段 8af60e93。  \n- SI1-KICK-QRING-STRESS-01：SI1 量子环应力测试启动。  \n- SI1-KICK-QUANT-SIM-01：SI1 量子模拟启动。  \n\n② 应动何件（立协同不候）  \n应动：八线自治令跟销、ANS-KEY-AUDIT-69、SI1-KICK-QRING/QUANT 二件，及 DZ-40 系列未闭信标（545cb831/58b67e15/81a9234b）。  \n\n③ 未闭项推进  \n- OI-20260926isuufvaultregist：未闭，下一步：终同步或降级关单。  \n- OI-BEACONDZ40lvlu545cb831md：未闭，下一步：校验回执，超时熔断。  \n- OI-20260926wildqs6verificat：未闭，下一步：完成剩余验证并归档。  \n- OI-ANSKEYAUDIT69LVLU01md：未闭，下一步：输出审计终稿，销 lvlu 标记。  \n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步：确认环境就绪，执行 SI1 启动签名。  \n- OI-SI1KICKQUANTSIM012026102：未闭，下一步：确认参数注入，触发模拟。  \n- OI-BEACONDZ40lvlu58b67e15md：未闭，下一步：补全缺失帧回执。  \n- OI-BEACONDZ40lvlu81a9234bmd：未闭，下一步：补全缺失帧回执。  \n\n④ 生债一条  \n生债：DZ-40 信标集群已现多片 24+ 次重试，需建批量熔断与自动补帧机制，免阻塞 lvlu 八线回环。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
