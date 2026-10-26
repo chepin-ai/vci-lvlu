@@ -1,0 +1,156 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261026T003036Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-isu-uf-vault-registry.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-wildq-s6-verification.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-39-lvlu-cd360c54.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-52a3b3c2.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-58b67e15.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-81a9234b.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-8af60e93.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20261025T163538Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlucd360c54md",
+   "ref": "BEACON-DZ-39-lvlu-cd360c54.md",
+   "opened": "20261025T163538Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu52a3b3c2md",
+   "ref": "BEACON-DZ-40-lvlu-52a3b3c2.md",
+   "opened": "20261025T163538Z",
+   "tries": 38,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20261025T183730Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu545cb831md",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md",
+   "opened": "20261025T183730Z",
+   "tries": 26,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20261025T221510Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-ANSKEYAUDIT69LVLU01md",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20261025T221510Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261025T220344Z.md",
+   "opened": "20261025T221510Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T220344Z.md",
+   "opened": "20261025T221510Z",
+   "tries": 14,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu58b67e15md",
+   "ref": "BEACON-DZ-40-lvlu-58b67e15.md",
+   "opened": "20261025T222630Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu81a9234bmd",
+   "ref": "BEACON-DZ-40-lvlu-81a9234b.md",
+   "opened": "20261025T222630Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlubdd97a64md",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md",
+   "opened": "20261026T001921Z",
+   "tries": 2,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8af60e93md",
+   "ref": "BEACON-DZ-40-lvlu-8af60e93.md",
+   "opened": "20261026T003036Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事  \n1. 八线自治令回执跟销（涉lvlu核心诉求）。  \n2. UF Vault注册。  \n3. WildQ S6验证。  \n4. ANS密钥审计69号线（涉lvlu）。  \n5. 信标DZ-39(bdd97a64)。  \n6. 信标DZ-39(cd360c54)。  \n7. 信标DZ-40(52a3b3c2)。  \n8. 信标DZ-40(545cb831)。  \n9. 信标DZ-40(58b67e15)。  \n10. 信标DZ-40(81a9234b)。  \n11. 信标DZ-40(8af60e93)。  \n\n② 应动何件（立协同不候）  \n00oi自治令回执（38试悬置）、BEACON-DZ-39-cd360c54（38试）、BEACON-DZ-40-52a3b3c2（38试）、BEACON-DZ-40-545cb831（26试）、SI1-KICK-QRING-STRESS（候件缺录，补录立启）。  \n\n③ 未闭项推进  \n- OI-00oi：未闭，强跟销或升级八线仲裁。  \n- OI-BEACON-DZ-39-cd3：未闭，重放信标或标废。  \n- OI-BEACON-DZ-40-52a：未闭，重放信标或标废。  \n- OI-isu-uf：未闭，完注册回执。  \n- OI-BEACON-DZ-40-545：未闭，重放信标或标废。  \n- OI-wildq：未闭，出S6验证报归档。  \n- OI-ANS-KEY：未闭，完审计签回。  \n- OI-SI1：未闭，补录候件并启QRING压测。  \n\n④ 生债一条  \n生债：八线自治令回执已38试超期，今日内必闭环，否即触发SI3仲裁。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
