@@ -1,0 +1,205 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261026T060040Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-isu-uf-vault-registry.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-wildq-s6-verification.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-39-lvlu-cd360c54.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-52a3b3c2.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-58b67e15.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-81a9234b.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-8af60e93.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-8ea17d86.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-95abcaba.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-b2e67be9.md"
+  },
+  {
+   "kind": "plan-queue",
+   "ref": "PLAN-QUEUE拍 fired=1 kicks=0"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20261025T221510Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-ANSKEYAUDIT69LVLU01md",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20261025T221510Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261025T220344Z.md",
+   "opened": "20261025T221510Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261025T220344Z.md",
+   "opened": "20261025T221510Z",
+   "tries": 42,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu58b67e15md",
+   "ref": "BEACON-DZ-40-lvlu-58b67e15.md",
+   "opened": "20261025T222630Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu81a9234bmd",
+   "ref": "BEACON-DZ-40-lvlu-81a9234b.md",
+   "opened": "20261025T222630Z",
+   "tries": 41,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlubdd97a64md",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md",
+   "opened": "20261026T001921Z",
+   "tries": 30,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8af60e93md",
+   "ref": "BEACON-DZ-40-lvlu-8af60e93.md",
+   "opened": "20261026T003036Z",
+   "tries": 29,
+   "status": "open"
+  },
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20261026T023644Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlucd360c54md",
+   "ref": "BEACON-DZ-39-lvlu-cd360c54.md",
+   "opened": "20261026T023644Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu52a3b3c2md",
+   "ref": "BEACON-DZ-40-lvlu-52a3b3c2.md",
+   "opened": "20261026T023644Z",
+   "tries": 18,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8ea17d86md",
+   "ref": "BEACON-DZ-40-lvlu-8ea17d86.md",
+   "opened": "20261026T024828Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu95abcabamd",
+   "ref": "BEACON-DZ-40-lvlu-95abcaba.md",
+   "opened": "20261026T024828Z",
+   "tries": 17,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20261026T050118Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu545cb831md",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md",
+   "opened": "20261026T050118Z",
+   "tries": 6,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlub2e67be9md",
+   "ref": "BEACON-DZ-40-lvlu-b2e67be9.md",
+   "opened": "20261026T051300Z",
+   "tries": 5,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- cisvr-224：隔离根因分析引擎广播，beat25 触发。\n- cisvr-225：自律大厅开放广播，disc 自治域通告。\n- 00oi-自治令回执跟销-八线-lvlu：八线自治令回执待销，lvlu 行政闭环诉求。\n- 20260926-isu-uf-vault-registry：保险库注册表异常，待核验。\n- 20260926-wildq-s6-verification：WildQ S6 验证挂起。\n- ANS-KEY-AUDIT-69-LVLU：69 号线索密钥审计，涉 lvlu 权限安全。\n- BEACON-DZ-39-lvlu-bdd97a64：DZ-39 信标回传，未闭项。\n- BEACON-DZ-39-lvlu-cd360c54：DZ-39 信标回传。\n- BEACON-DZ-40-lvlu-52a3b3c2：DZ-40 信标回传。\n- BEACON-DZ-40-lvlu-545cb831：DZ-40 信标回传。\n- BEACON-DZ-40-lvlu-58b67e15：DZ-40 信标回传，未闭项。\n- BEACON-DZ-40-lvlu-81a9234b：DZ-40 信标回传，未闭项。\n- BEACON-DZ-40-lvlu-8af60e93：DZ-40 信标回传，未闭项。\n- BEACON-DZ-40-lvlu-8ea17d86：DZ-40 信标回传。\n- BEACON-DZ-40-lvlu-95abcaba：DZ-40 信标回传。\n- BEACON-DZ-40-lvlu-b2e67be9：DZ-40 信标回传。\n- PLAN-QUEUE拍：已击发 fired=1 但未踢动 kicks=0，执行阻塞。\n\n② 应动何件（立协同不候）\n- 00oi-自治令回执跟销：八线行政闭环，立协不候。\n- ANS-KEY-AUDIT-69-LVLU：密钥审计重校，立协不候。\n- PLAN-QUEUE拍：调度 SI1 穿透 kick，立协不候。\n- BEACON-DZ-39/40 集群：信标聚合与漂移根因定位，立协不候。\n\n③ 未闭项推进\n- OI-20260926wildqs6verificat：未闭，下一步提交 S6 验证报告或升级 SI1 决策。\n- OI-ANSKEYAUDIT69LVLU01md：未闭，下一步完成密钥轮换与审计签章后归档。\n- OI-SI1KICKQRINGSTRESS012026：未闭，下一步重试 qring 压测或降级 SI0。\n- OI-SI1KICKQUANTSIM012026102：未闭，下一步重跑 quant sim 或释放资源锁。\n- OI-BEACONDZ40lvlu58b67e15md：未闭，下一步比对 58b67e15 时序漂移并校准。\n- OI-BEACONDZ40lvlu81a9234bmd：未闭，下一步核验 81a9234b 节点负载并同步。\n- OI-BEACONDZ39lvlubdd97a64md：未闭，下一步溯源 DZ-39 信标丢包根因。\n- OI-BEACONDZ40lvlu8af60e93md：未闭，下一步执行 8af60e93 信标重注册。\n\n④ 生债一条\n- 生债：lvlu 线需建 BEACON-DZ 集群自动收敛模板，免人工逐条消化 39/40 信标。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 1,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   },
+   {
+    "id": "FIELDNET-BEAT-01",
+    "r2": 200
+   }
+  ],
+  "kicks": 0
+ }
+}
