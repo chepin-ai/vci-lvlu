@@ -37733,6 +37733,17 @@
     "ApB": "In Queue",
     "ApBp": "ERR:'quafu.qfasm.parsetab'"
    }
+  },
+  {
+   "ts": "20261027T054851Z",
+   "st": "In Queue",
+   "all": {
+    "probe": "In Queue",
+    "AB": "ERR:'[' was never closed (parsetab.py, line ",
+    "ABp": "In Queue",
+    "ApB": "In Queue",
+    "ApBp": "ERR:'quafu.qfasm.parsetab'"
+   }
   }
  ]
 }
