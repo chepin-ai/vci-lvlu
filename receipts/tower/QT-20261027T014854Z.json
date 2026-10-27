@@ -1,0 +1,295 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261027T014854Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-isu-uf-vault-registry.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-wildq-s6-verification.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-39-lvlu-cd360c54.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-52a3b3c2.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-58b67e15.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-81a9234b.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-8af60e93.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-8ea17d86.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-95abcaba.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-b2e67be9.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-b4ac52a5.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-c238de77.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-d78bd17e.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-e5e6f20d.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-f6ccd35d.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-fad1d735.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "CALIB-ALIGN-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "CALIB-TASK-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "CONSENSUS-CONF-EXEC-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "CONSENSUS-CONF-SAT-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DEMAND-FED-92-ACK-lvlu-20260912T034751Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DIRECT-93-lvlu-20260912T030532Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261027T013616Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261027T013616Z.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-BEACONDZ39lvlubdd97a64md",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md",
+   "opened": "20261026T191152Z",
+   "tries": 37,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8af60e93md",
+   "ref": "BEACON-DZ-40-lvlu-8af60e93.md",
+   "opened": "20261026T192306Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlud78bd17emd",
+   "ref": "BEACON-DZ-40-lvlu-d78bd17e.md",
+   "opened": "20261026T192306Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-CONSENSUSCONFEXEC01lvlum",
+   "ref": "CONSENSUS-CONF-EXEC-01-lvlu.md",
+   "opened": "20261026T192306Z",
+   "tries": 36,
+   "status": "open"
+  },
+  {
+   "id": "OI-00oilvlu20260910T014000Z",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md",
+   "opened": "20261026T211608Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ39lvlucd360c54md",
+   "ref": "BEACON-DZ-39-lvlu-cd360c54.md",
+   "opened": "20261026T211608Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu52a3b3c2md",
+   "ref": "BEACON-DZ-40-lvlu-52a3b3c2.md",
+   "opened": "20261026T211608Z",
+   "tries": 25,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu8ea17d86md",
+   "ref": "BEACON-DZ-40-lvlu-8ea17d86.md",
+   "opened": "20261026T212811Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu95abcabamd",
+   "ref": "BEACON-DZ-40-lvlu-95abcaba.md",
+   "opened": "20261026T212811Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlue5e6f20dmd",
+   "ref": "BEACON-DZ-40-lvlu-e5e6f20d.md",
+   "opened": "20261026T212811Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvluf6ccd35dmd",
+   "ref": "BEACON-DZ-40-lvlu-f6ccd35d.md",
+   "opened": "20261026T212811Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-CONSENSUSCONFSAT01lvlumd",
+   "ref": "CONSENSUS-CONF-SAT-01-lvlu.md",
+   "opened": "20261026T212811Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-DEMANDFED92ACKlvlu202609",
+   "ref": "DEMAND-FED-92-ACK-lvlu-20260912T034751Z.md",
+   "opened": "20261026T212811Z",
+   "tries": 24,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926isuufvaultregist",
+   "ref": "20260926-isu-uf-vault-registry.md",
+   "opened": "20261026T233637Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlu545cb831md",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md",
+   "opened": "20261026T233637Z",
+   "tries": 13,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlub2e67be9md",
+   "ref": "BEACON-DZ-40-lvlu-b2e67be9.md",
+   "opened": "20261026T234816Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-BEACONDZ40lvlufad1d735md",
+   "ref": "BEACON-DZ-40-lvlu-fad1d735.md",
+   "opened": "20261026T234816Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-DIRECT93lvlu20260912T030",
+   "ref": "DIRECT-93-lvlu-20260912T030532Z.md",
+   "opened": "20261026T234816Z",
+   "tries": 12,
+   "status": "open"
+  },
+  {
+   "id": "OI-20260926wildqs6verificat",
+   "ref": "20260926-wildq-s6-verification.md",
+   "opened": "20261027T014854Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-ANSKEYAUDIT69LVLU01md",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md",
+   "opened": "20261027T014854Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQRINGSTRESS012026",
+   "ref": "SI1-KICK-QRING-STRESS-01-20261027T013616Z.md",
+   "opened": "20261027T014854Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-SI1KICKQUANTSIM012026102",
+   "ref": "SI1-KICK-QUANT-SIM-01-20261027T013616Z.md",
+   "opened": "20261027T014854Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "① 何事\n- cisvr-224：隔离根因引擎广播，知照。\n- cisvr-225：自律厅开放广播，知照。\n- 00oi-自治令回执跟销：八线自治令回执，涉lvlu，待核销。\n- 20260926-isu-uf-vault-registry：UF保险库注册，待理。\n- 20260926-wildq-s6-verification：WildQ S6验证，待核。\n- ANS-KEY-AUDIT-69-LVLU-01：密钥审计，涉lvlu，待审结。\n- BEACON-DZ-39-lvlu-bdd97a64：DZ-39信标①，涉lvlu，待收敛。\n- BEACON-DZ-39-lvlu-cd360c54：DZ-39信标②，涉lvlu，待收敛。\n- BEACON-DZ-40-lvlu-(52a3b3c2/545cb831/58b67e15/81a9234b/8af60e93/8ea17d86/95abcaba/b2e67be9/b4ac52a5/c238de77/d78bd17e/e5e6f20d)：DZ-40信标群十二则，涉lvlu异常，待批量响应。\n\n② 应动何件（立协同不候）\n- 00oi-自治令回执跟销：立协同八线核销。\n- ANS-KEY-AUDIT-69-LVLU-01：立协同审计链路。\n- BEACON-DZ-39两则+DZ-40未闭四则（8af60e93/d78bd17e/52a3b3c2/8ea17d86）：立协同信标收敛。\n- CONSENSUS-CONF-EXEC-01-lvlu：立协同共识执行。\n\n③ 未闭项推进\n- OI-BEACONDZ39lvlubdd97a64md：未闭/37tries，升八线仲裁收敛。\n- OI-BEACONDZ40lvlu8af60e93md：未闭/36tries，批量对账。\n- OI-BEACONDZ40lvlud78bd17emd：未闭/36tries，引擎侧回收。\n- OI-CONSENSUSCONFEXEC01lvlum：未闭/36tries，lvlu签名推执行。\n- OI-00oilvlu20260910T014000Z：未闭/25tries，",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
