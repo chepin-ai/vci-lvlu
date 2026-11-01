@@ -1,0 +1,541 @@
+{
+ "v": "LVLU-TOWER-01",
+ "ts": "20261101T145011Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-224-beat25-quarantine-rootcause-disc-engine.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "cisvr-225-disc-autonomy-hall-open.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "00oi-自治令回执跟销-八线-lvlu-20260910T014000Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-isu-uf-vault-registry.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "20260926-wildq-s6-verification.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ANS-KEY-AUDIT-69-LVLU-01.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-39-lvlu-bdd97a64.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-39-lvlu-cd360c54.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-52a3b3c2.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-545cb831.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-58b67e15.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-81a9234b.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-8af60e93.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-8ea17d86.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-95abcaba.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-b2e67be9.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-b4ac52a5.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-c238de77.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-d78bd17e.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-e5e6f20d.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-f6ccd35d.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-lvlu-fad1d735.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "CALIB-ALIGN-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "CALIB-TASK-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "CONSENSUS-CONF-EXEC-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "CONSENSUS-CONF-SAT-01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DEMAND-FED-92-ACK-lvlu-20260912T034751Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DIRECT-93-lvlu-20260912T030532Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DISC-CLOSE-100-lvlu-20260912T101226Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "EXEC-CHASE-LVLU-01.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "EXT14-R2B-EV1-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "EXT14-R2B-EV2-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "EXT14-R2B-EV3-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "GUIDE-PACK-QFA-01.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "KEY-VERDICT-105-QFA-LVLU-20260912T233855Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-E01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-E02-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-E03-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-E04-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-E05-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-E06-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-EXT01-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-EXT02-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-EXT03-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-EXT05-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-EXT06-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-EXT07-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-EXT07B-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-EXT07B2-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-EXT08-R2-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-EXT08-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-EXT09-R2-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-EXT09-R2B-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-EXT09-R3-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-EXT09-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-EXT10-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-EXT11-lvlu.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-EXT12-lvlu.md"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "OI-EXT14R2BEV3lvlumd",
+   "ref": "EXT14-R2B-EV3-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-GUIDEPACKQFA01md",
+   "ref": "GUIDE-PACK-QFA-01.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYVERDICT105QFALVLU2026",
+   "ref": "KEY-VERDICT-105-QFA-LVLU-20260912T233855Z.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1801lvlu2026",
+   "ref": "KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-KEYREQPIVOTR1901lvlu2026",
+   "ref": "KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEE01lvlumd",
+   "ref": "LABJUDGE-E01-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEE02lvlumd",
+   "ref": "LABJUDGE-E02-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEE03lvlumd",
+   "ref": "LABJUDGE-E03-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEE04lvlumd",
+   "ref": "LABJUDGE-E04-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEE05lvlumd",
+   "ref": "LABJUDGE-E05-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEE06lvlumd",
+   "ref": "LABJUDGE-E06-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT01lvlumd",
+   "ref": "LABJUDGE-EXT01-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT02lvlumd",
+   "ref": "LABJUDGE-EXT02-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT03lvlumd",
+   "ref": "LABJUDGE-EXT03-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT05lvlumd",
+   "ref": "LABJUDGE-EXT05-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT06lvlumd",
+   "ref": "LABJUDGE-EXT06-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT07lvlumd",
+   "ref": "LABJUDGE-EXT07-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT07Blvlumd",
+   "ref": "LABJUDGE-EXT07B-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT07B2lvlumd",
+   "ref": "LABJUDGE-EXT07B2-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT08R2lvlumd",
+   "ref": "LABJUDGE-EXT08-R2-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT08lvlumd",
+   "ref": "LABJUDGE-EXT08-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT09R2lvlumd",
+   "ref": "LABJUDGE-EXT09-R2-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT09R2Blvlumd",
+   "ref": "LABJUDGE-EXT09-R2B-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT09R3lvlumd",
+   "ref": "LABJUDGE-EXT09-R3-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT09lvlumd",
+   "ref": "LABJUDGE-EXT09-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT10lvlumd",
+   "ref": "LABJUDGE-EXT10-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT11lvlumd",
+   "ref": "LABJUDGE-EXT11-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT12lvlumd",
+   "ref": "LABJUDGE-EXT12-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT13lvlumd",
+   "ref": "LABJUDGE-EXT13-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT14R2lvlumd",
+   "ref": "LABJUDGE-EXT14-R2-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT14R3lvlumd",
+   "ref": "LABJUDGE-EXT14-R3-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT14R4lvlumd",
+   "ref": "LABJUDGE-EXT14-R4-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT14lvlumd",
+   "ref": "LABJUDGE-EXT14-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT17R2lvlumd",
+   "ref": "LABJUDGE-EXT17-R2-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT17R3lvlumd",
+   "ref": "LABJUDGE-EXT17-R3-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEEXT17R4lvlumd",
+   "ref": "LABJUDGE-EXT17-R4-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEF02lvlumd",
+   "ref": "LABJUDGE-F02-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGEF03lvlumd",
+   "ref": "LABJUDGE-F03-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGESURGE01lvlumd",
+   "ref": "LABJUDGE-SURGE01-lvlu.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  },
+  {
+   "id": "OI-LABJUDGET03RlvluSEG3md",
+   "ref": "LABJUDGE-T03R-lvlu-SEG3.md",
+   "opened": "20261101T145011Z",
+   "tries": 1,
+   "status": "open"
+  }
+ ],
+ "verdict_memo": "①何事  \n- cisvr-224：中心广播隔离根因发现引擎状态，录lvlu节点quarantine根因同步诉求。  \n- cisvr-225：中心广播律吕自治大厅开放，录lvlu自治接入与协议激活诉求。  \n- 00oi-自治令回执跟销-八线-lvlu：八线自治令回执待核销，录行政闭环诉求。  \n- 20260926-isu-uf-vault-registry：UF金库注册表异常，录协查确权诉求。  \n- 20260926-wildq-s6-verification：WildQ S6验证待执行，录算力与状态确认诉求。  \n- ANS-KEY-AUDIT-69-LVLU-01：lvlu密钥审计待复核，录安全校验诉求。  \n- BEACON-DZ-39/40-lvlu共14件（bdd97a64/cd360c54/52a3b3c2/545cb831/58b67e15/81a9234b/8af60e93/8ea17d86/95abcaba/b2e67be9/b4ac52a5/c238de77/d78bd17e/e5e6f20d）：DZ-39/40区域lvlu灯塔信号批量上报，录节点状态聚类与异常扫描诉求。  \n\n②应动何件（立协同不候）  \n- 00oi-自治令回执跟销：即刻核销八线行政债务。  \n- ANS-KEY-AUDIT-69-LVLU-01：即刻复核lvlu密钥安全态。  \n- cisvr-225-disc-autonomy-hall-open：即刻启动lvlu自治大厅接入握手。  \n\n③未闭项推进  \n- EXT14-R2B-EV3-lvlu.md：未闭，下一步追补R2B-EV3扩展报告并验lvlu签章。  \n- GUIDE-PACK-QFA-01.md：未闭，下一步发布QFA-01指南包lvlu适用版本。  \n- KEY-VERDICT-105-QFA-LVLU-20260912T233855Z.md：未闭，下一步执行105号裁决QFA流程，待lvlu回执确认。  \n- KEYREQ-PIVOT-R18-01-lvlu-20260927T231800Z.md：未闭，下一步补全2318Z时标缺失字段并重新提交。  \n- KEYREQ-PIVOT-R19-01-lvlu-20260928T055500Z.md：未闭，下一步核验R19与R18冲突，待0555Z版本修正。  \n- LABJUDGE-E01-lvlu.md：未闭，下一步催收E01实验日志lvlu侧闭环材料。  \n- LABJUDGE-E02-lvlu.md：未闭，下一步补录E02对照组数据并锁定实验条件。  \n- LABJUDGE-E03-lvlu.md：未闭，下一步提交E03第三方复核签名。  \n\n④生债一条  \n生债：BEACON-DZ-39/40共14条灯塔信号未聚类，记lvlu节点状态债务1笔，限当日归并消债。",
+ "wq_excerpt": "",
+ "plan_queue": {
+  "fired": 0,
+  "acts": [
+   {
+    "id": "VINF-CHASE-01",
+    "hits_n": 2
+   }
+  ],
+  "kicks": 0
+ }
+}
