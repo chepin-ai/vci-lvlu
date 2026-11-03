@@ -1,0 +1,24 @@
+{
+  "verdict": "COMPILE-PASS",
+  "file": "CertCirc/CertCircLean01.lean",
+  "sha256": "b90e245a8d93ae38a38d8d0b6d7c50898395c42bbe1974fe4aa95205064032b2",
+  "bytes": 33563,
+  "ts": "2026-11-03T17:16:44Z",
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "leancert": "v4.34.1 (commit a5777840d9e69994c79a99879881c93e2bd0e6f6)",
+  "cfg": "{ taylorDepth := 30 }",
+  "theorem": "circ_unique_root : ∃! p, FinBoxMem p circBox ∧ SystemZero circSystem p",
+  "conjuncts": {
+    "AD-supported": "native_decide PASS",
+    "centerInside": "native_decide PASS",
+    "det_ne_zero": "exact-inverse witness (Units.mk + isUnit_iff_isUnit_det) PASS",
+    "contraction<1": "native_decide PASS (taylorDepth 30)",
+    "strict_inside": "native_decide PASS (taylorDepth 30)"
+  },
+  "python_crosscheck": {
+    "contraction_q": 4.102290716732853e-06,
+    "K_max_width": 8.204581433465707e-15,
+    "det": 6.24825189028171,
+    "negative_control": "rejected"
+  }
+}
