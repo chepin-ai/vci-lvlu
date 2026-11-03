@@ -44234,6 +44234,17 @@
     "ApB": "In Queue",
     "ApBp": "In Queue"
    }
+  },
+  {
+   "ts": "20261103T211249Z",
+   "st": "ERR:source code string cannot contain null b",
+   "all": {
+    "probe": "ERR:source code string cannot contain null b",
+    "AB": "In Queue",
+    "ABp": "In Queue",
+    "ApB": "In Queue",
+    "ApBp": "ERR:'quafu.qfasm.parsetab'"
+   }
   }
  ]
 }
