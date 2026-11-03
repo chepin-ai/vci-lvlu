@@ -1,0 +1,12 @@
+name = "fedkernelCertCirc"
+version = "0.1.0"
+defaultTargets = ["certCirc"]
+
+[[require]]
+name = "leancert"
+git = "https://github.com/alerad/leancert"
+rev = "v4.34.1"  # commit 7f91b6eb35; Zenodo 归档系列 10.5281/zenodo.21681348
+
+[[lean_lib]]
+name = "CertCirc"
+roots = ["CertCircLean01"]
