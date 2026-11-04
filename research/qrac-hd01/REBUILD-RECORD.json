@@ -1,0 +1,59 @@
+{
+  "experiment": "Q-RAC-HD-01 生成器重建 + 32q 满规模验证",
+  "ts": "2026-11-04T05:05:07Z",
+  "history": "原 k>=5 IQFT-cutoff 32q 生成器随沙箱回收丢失(代码搜索0命中确认); 本拍按 vci-qtlv/res/Q-RAC-HD-01.md 重建并超越原规模",
+  "architecture": {
+    "encoding": "Weyl X^x1 Z^x2; X 经 QFT 域加法器 (O(k)), Z 经按位 P (O(k)); 替代朴素递增器重复 O(x1*k^3)",
+    "decode": "B-=A 受控 QFT 减法 (O(k^2) cp) + 标准带swap IQFT@A; 读出 iA->x2, iB->(-x1) mod n",
+    "iqft_cutoff": "cutoff 截断角 < 2π/2^cutoff 的受控相位; 实测 cutoff>=k+1 无损",
+    "scale": "32q ops=774 depth=371 (对比朴素架构 502150 ops, 缩 650x)"
+  },
+  "results": {
+    "local_statevector": {
+      "d=4": "16/16 S=1.0",
+      "d=16": "15/15 S=1.0",
+      "d=64": "6/6 S=1.0",
+      "d=256_16q": "S=1.0",
+      "20q": "S=1.0",
+      "24q_d=4096": "S=1.0 (27.9s)"
+    },
+    "cutoff_curve_d64": {
+      "None": 1.0,
+      "10": 1.0,
+      "8": 1.0,
+      "7": 1.0,
+      "6": 0.9961,
+      "5": 0.9688
+    },
+    "bluequbit_cloud": {
+      "20q": {
+        "S": 1.0,
+        "shots": 64,
+        "runtime_ms": 256,
+        "cost": 0.0,
+        "job": "sxHFWNhIkeLBhHMn"
+      },
+      "32q_d=65536": {
+        "S": 1.0,
+        "shots": 32,
+        "est_runtime_s": 115.6,
+        "cost": 0.0
+      }
+    },
+    "qumulator_cloud": {
+      "bell_2q": "511/513 OK",
+      "tier_limits": "N1-20 depth<=20; N21-54 <=9; N55-105 <=8; N106-1000 <=7",
+      "rate_limit": "1 circuit/min/key",
+      "note": "免费层深度上限使 Q-RAC 完整协议(深度~k级)不可云端; 定位=浅层大位宽压测"
+    },
+    "zne_s3_ideal": "S=1.0 (折叠结构自检)",
+    "cal_circuits": "CAL0/CAL1 形状正确"
+  },
+  "engineering_lessons": [
+    "transpile 显式 basis ['u','cx'] + opt1 在本电路结构触发 qiskit 分解病态 -> 内核卡死(3次); 路径: transpile(qc, backend) 秒过",
+    "Aer MPS 对非局部 Bell 配对 (j,k+j) bond dim 2^k 结构爆炸 -> 大位宽走 BlueQubit 云端",
+    "Qumulator PyPI 'qumulator' 0.1.0 是错件(DMRG客户端); 真件 = github.com/qumulator/qumulator-sdk (v0.4.0)"
+  ],
+  "artifact": "ops/qrac/qrac_gen_v3.py",
+  "verdict": "GENERATOR-REBUILT-AND-32q-VERIFIED"
+}
