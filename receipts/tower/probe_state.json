@@ -10779,6 +10779,17 @@
     "ApB": "ERR:'[' was never closed (parsetab.py, line ",
     "ApBp": "In Queue"
    }
+  },
+  {
+   "ts": "20261126T160400Z",
+   "st": "In Queue",
+   "all": {
+    "probe": "In Queue",
+    "AB": "In Queue",
+    "ABp": "ERR:module 'quafu.qfasm.parsetab' has no att",
+    "ApB": "In Queue",
+    "ApBp": "In Queue"
+   }
   }
  ]
 }
