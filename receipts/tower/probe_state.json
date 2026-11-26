@@ -10361,6 +10361,17 @@
     "ApB": "ERR:'quafu.qfasm.parsetab'",
     "ApBp": "In Queue"
    }
+  },
+  {
+   "ts": "20261126T051850Z",
+   "st": "ERR:module 'quafu.qfasm.parsetab' has no att",
+   "all": {
+    "probe": "ERR:module 'quafu.qfasm.parsetab' has no att",
+    "AB": "In Queue",
+    "ABp": "In Queue",
+    "ApB": "In Queue",
+    "ApBp": "ERR:module 'quafu.qfasm.parsetab' has no att"
+   }
   }
  ]
 }
