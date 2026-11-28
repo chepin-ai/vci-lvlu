@@ -1,4 +1,3 @@
-{"ts": "20261124T133347Z", "kind": "机镜", "claims_open": 0, "closed": null, "nudged": null, "exp": {"probe": "In Queue", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
 {"ts": "20261124T134423Z", "kind": "机镜", "claims_open": 0, "closed": null, "nudged": null, "exp": {"probe": "In Queue", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
 {"ts": "20261124T135449Z", "kind": "机镜", "claims_open": 0, "closed": null, "nudged": null, "exp": {"probe": "ERR:'quafu.qfasm.parsetab'", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
 {"ts": "20261124T140521Z", "kind": "机镜", "claims_open": 0, "closed": null, "nudged": null, "exp": {"probe": "ERR:'quafu.qfasm.parsetab'", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
@@ -498,3 +497,4 @@
 {"ts": "20261128T024030Z", "kind": "机镜", "claims_open": 0, "closed": null, "nudged": null, "exp": {"probe": "In Queue", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
 {"ts": "20261128T025059Z", "kind": "机镜", "claims_open": 0, "closed": null, "nudged": null, "exp": {"probe": "In Queue", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
 {"ts": "20261128T030115Z", "kind": "机镜", "claims_open": 0, "closed": null, "nudged": null, "exp": {"probe": "ERR:'quafu.qfasm.parsetab'", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
+{"ts": "20261128T030702Z", "kind": "机镜", "claims_open": 0, "closed": null, "nudged": null, "exp": {"probe": "In Queue", "exp049_done": 0}, "orbit": [], "note": "SI1席镜醒拍覆写(Q逐字+A判要); 本件=塔驱保底镜"}
